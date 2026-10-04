@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "test:references": "jest --runInBand --config jest.references.config.cjs",
     "test:unit": "jest --runInBand",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",

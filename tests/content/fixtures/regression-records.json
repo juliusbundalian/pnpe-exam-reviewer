@@ -1,0 +1,535 @@
+[
+  {
+    "sourceKey": "comprehensive:I:5",
+    "sourceId": "comprehensive",
+    "section": "I",
+    "ordinal": 5,
+    "pageStart": 3,
+    "pageEnd": 3,
+    "rawPrompt": "_______________________________",
+    "rawChoices": [
+      {
+        "label": "A",
+        "text": "Inspect the site of the accident for leads"
+      },
+      {
+        "label": "B",
+        "text": "Follow the fleeing car"
+      },
+      {
+        "label": "C",
+        "text": "Take the victim to a hospital"
+      },
+      {
+        "label": "D",
+        "text": "Radio the description of the fleeing car to precinct headquarters"
+      },
+      {
+        "label": "E",
+        "text": "Inform a television station to break the news"
+      }
+    ],
+    "rawAnswer": "D. Radio the description of the fleeing car to precinct headquarters",
+    "rawExplanation": "Reporting the fleeing vehicle's description to precinct headquarters allows\nother officers to be alerted and helps coordinate the immediate response and apprehension\nof the suspect.",
+    "stimulus": null,
+    "issues": [
+      {
+        "code": "audited-source-defect",
+        "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+        "blocking": true
+      },
+      {
+        "code": "missing-stem",
+        "message": "Printed stem consists only of underscores",
+        "blocking": true
+      }
+    ],
+    "evidence": {
+      "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+      "locator": "evidence/reference-extraction/comprehensive/document.json#page=3",
+      "links": [],
+      "imageLocations": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:2",
+    "sourceId": "comprehensive",
+    "section": "IV",
+    "ordinal": 2,
+    "pageStart": 52,
+    "pageEnd": 52,
+    "rawPrompt": "The biologist ____________ that the Kyoto grass, also known as black grass, can\n____________ all kinds of weather conditions and ____________ lush even in cold months.",
+    "rawChoices": [
+      {
+        "label": "A",
+        "text": "Explains – tolerate – stay"
+      },
+      {
+        "label": "B",
+        "text": "Explained – tolerates – stay"
+      },
+      {
+        "label": "C",
+        "text": "Explains – tolerate – stays"
+      },
+      {
+        "label": "D",
+        "text": "Explain – tolerated – stays"
+      },
+      {
+        "label": "E",
+        "text": "Explains – tolerate – stay"
+      }
+    ],
+    "rawAnswer": "E. Explains – tolerate – stay",
+    "rawExplanation": "“Explains” agrees with the singular subject “biologist.” After can, the verbs\nmust be in their base forms: tolerate and stay.",
+    "stimulus": null,
+    "issues": [
+      {
+        "code": "audited-source-defect",
+        "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+        "blocking": true
+      }
+    ],
+    "evidence": {
+      "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+      "locator": "evidence/reference-extraction/comprehensive/document.json#page=52",
+      "links": [],
+      "imageLocations": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:V:11",
+    "sourceId": "comprehensive",
+    "section": "V",
+    "ordinal": 11,
+    "pageStart": 64,
+    "pageEnd": 64,
+    "rawPrompt": "Which is NOT a characteristic of the flower of the Dragon plant?",
+    "rawChoices": [
+      {
+        "label": "A",
+        "text": "Ornate"
+      },
+      {
+        "label": "B",
+        "text": "Fragrant"
+      },
+      {
+        "label": "C",
+        "text": "Edible"
+      },
+      {
+        "label": "D",
+        "text": "Bloom only at night"
+      },
+      {
+        "label": "E",
+        "text": "Fragrant"
+      }
+    ],
+    "rawAnswer": "C. Edible",
+    "rawExplanation": "The passage describes the flowers as ornate, beautiful, and fragrant, and\nstates that they bloom only at night. It does not say that the flowers are edible.",
+    "stimulus": null,
+    "issues": [
+      {
+        "code": "audited-source-defect",
+        "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+        "blocking": true
+      },
+      {
+        "code": "missing-passage",
+        "message": "Dragon fruit passage is absent from the source",
+        "blocking": true
+      }
+    ],
+    "evidence": {
+      "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+      "locator": "evidence/reference-extraction/comprehensive/document.json#page=64",
+      "links": [],
+      "imageLocations": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:V:12",
+    "sourceId": "comprehensive",
+    "section": "V",
+    "ordinal": 12,
+    "pageStart": 64,
+    "pageEnd": 65,
+    "rawPrompt": "Which of the following is NOT a health benefit of a Dragon fruit?",
+    "rawChoices": [
+      {
+        "label": "A",
+        "text": "Preventing memory loss"
+      },
+      {
+        "label": "B",
+        "text": "Aids in healing bruises"
+      },
+      {
+        "label": "C",
+        "text": "Helps in blood circulation"
+      },
+      {
+        "label": "D",
+        "text": "Control of blood glucose in diabetes"
+      },
+      {
+        "label": "E",
+        "text": "Helps control cancer"
+      }
+    ],
+    "rawAnswer": "B. Aids in healing bruises",
+    "rawExplanation": "The passage mentions preventing memory loss, controlling blood glucose\nlevels, anti-cancer activity, antioxidant properties, and aiding in wound healing. It does\nnot mention healing bruises.",
+    "stimulus": null,
+    "issues": [
+      {
+        "code": "audited-source-defect",
+        "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+        "blocking": true
+      },
+      {
+        "code": "missing-passage",
+        "message": "Dragon fruit passage is absent from the source",
+        "blocking": true
+      }
+    ],
+    "evidence": {
+      "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+      "locator": "evidence/reference-extraction/comprehensive/document.json#page=64",
+      "links": [],
+      "imageLocations": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:33",
+    "sourceId": "comprehensive",
+    "section": "VIII",
+    "ordinal": 33,
+    "pageStart": 103,
+    "pageEnd": 103,
+    "rawPrompt": "Select the most grammatically correct sentence from among the five given\nchoices.",
+    "rawChoices": [
+      {
+        "label": "a",
+        "text": "The downtown area, it is very depressing to see, which is normally bustling on Sundays,\nappeared deserted because of the recent bombing in Davao City."
+      },
+      {
+        "label": "b",
+        "text": "It is very depressing to see the downtown area which is normally bustling on Sundays,\nappeared deserted because of the recent bombing in Davao City."
+      },
+      {
+        "label": "c",
+        "text": "In Davao City, it is very depressing to see the downtown area appeared deserted which is\nnormally bustling on Sundays because of the recent bombing."
+      },
+      {
+        "label": "d",
+        "text": "Which is normally bustling in Sundays, the downtown area, it is very depressing to see\nappeared deserted because of the recent bombing in Davao City."
+      },
+      {
+        "label": "e",
+        "text": "Appeared deserted because of the recent bombing in Davao City, it is very depressing to\nsee the downtown area which is normally bustling on Sundays."
+      }
+    ],
+    "rawAnswer": "E. Appeared deserted because of the recent bombing in Davao City,\nit is very depressing to see the downtown area which is normally bustling on\nSundays.",
+    "rawExplanation": "E provides the clearest grammatical structure, with the downtown area as the\nobject of to see and the descriptive clauses properly placed.",
+    "stimulus": null,
+    "issues": [
+      {
+        "code": "audited-source-defect",
+        "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+        "blocking": true
+      },
+      {
+        "code": "confirmed-duplicate",
+        "message": "Same five alternatives and key at VIII33/34; both source occurrences retained",
+        "blocking": true
+      }
+    ],
+    "evidence": {
+      "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+      "locator": "evidence/reference-extraction/comprehensive/document.json#page=103",
+      "links": [],
+      "imageLocations": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:34",
+    "sourceId": "comprehensive",
+    "section": "VIII",
+    "ordinal": 34,
+    "pageStart": 103,
+    "pageEnd": 104,
+    "rawPrompt": "Select the most grammatically correct sentence from among the five given\nchoices.",
+    "rawChoices": [
+      {
+        "label": "a",
+        "text": "The downtown area, it is very depressing to see, which is normally bustling on Sundays,\nappeared deserted because of the recent bombing in Davao City."
+      },
+      {
+        "label": "b",
+        "text": "It is very depressing to see the downtown area which is normally bustling on Sundays,\nappeared deserted because of the recent bombing in Davao City."
+      },
+      {
+        "label": "c",
+        "text": "In Davao City, it is very depressing to see the downtown area appeared deserted which is\nnormally bustling on Sundays because of the recent bombing."
+      },
+      {
+        "label": "d",
+        "text": "Which is normally bustling in Sundays, the downtown area, it is very depressing to see\nappeared deserted because of the recent bombing in Davao City."
+      },
+      {
+        "label": "e",
+        "text": "Appeared deserted because of the recent bombing in Davao City, it is very depressing to\nsee the downtown area which is normally bustling on Sundays."
+      }
+    ],
+    "rawAnswer": "E. Appeared deserted because of the recent bombing in Davao City,\nit is very depressing to see the downtown area which is normally bustling on\nSundays.",
+    "rawExplanation": "E has the most logical arrangement of the ideas and avoids the awkward\nconstruction found in the other choices.",
+    "stimulus": null,
+    "issues": [
+      {
+        "code": "audited-source-defect",
+        "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+        "blocking": true
+      },
+      {
+        "code": "confirmed-duplicate",
+        "message": "Same five alternatives and key at VIII33/34; both source occurrences retained",
+        "blocking": true
+      }
+    ],
+    "evidence": {
+      "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+      "locator": "evidence/reference-extraction/comprehensive/document.json#page=103",
+      "links": [],
+      "imageLocations": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:X:8",
+    "sourceId": "comprehensive",
+    "section": "X",
+    "ordinal": 8,
+    "pageStart": 118,
+    "pageEnd": 118,
+    "rawPrompt": "20, 140, 260, 380, _____",
+    "rawChoices": [
+      {
+        "label": "a",
+        "text": "450"
+      },
+      {
+        "label": "b",
+        "text": "610"
+      },
+      {
+        "label": "c",
+        "text": "500"
+      },
+      {
+        "label": "d",
+        "text": "520"
+      }
+    ],
+    "rawAnswer": "D.) 520",
+    "rawExplanation": "Each term is increased by 120.\n20 + 120 = 140\n140 + 120 = 260\n260 + 120 = 380\n380 + 120 = 520",
+    "stimulus": null,
+    "issues": [
+      {
+        "code": "audited-source-defect",
+        "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+        "blocking": true
+      }
+    ],
+    "evidence": {
+      "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+      "locator": "evidence/reference-extraction/comprehensive/document.json#page=118",
+      "links": [],
+      "imageLocations": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:15",
+    "sourceId": "comprehensive",
+    "section": "XII",
+    "ordinal": 15,
+    "pageStart": 132,
+    "pageEnd": 132,
+    "rawPrompt": "Boxing is to ring as play is to",
+    "rawChoices": [
+      {
+        "label": "a",
+        "text": "cinema"
+      },
+      {
+        "label": "b",
+        "text": "coliseum"
+      },
+      {
+        "label": "b",
+        "text": "theater"
+      },
+      {
+        "label": "d",
+        "text": "gymnasium"
+      }
+    ],
+    "rawAnswer": "b.) theater",
+    "rawExplanation": "Boxing takes place in a ring, just as a play takes place in a theater.",
+    "stimulus": null,
+    "issues": [
+      {
+        "code": "audited-source-defect",
+        "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+        "blocking": true
+      }
+    ],
+    "evidence": {
+      "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+      "locator": "evidence/reference-extraction/comprehensive/document.json#page=132",
+      "links": [],
+      "imageLocations": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XV:1",
+    "sourceId": "comprehensive",
+    "section": "XV",
+    "ordinal": 1,
+    "pageStart": 149,
+    "pageEnd": 149,
+    "rawPrompt": null,
+    "rawChoices": null,
+    "rawAnswer": null,
+    "rawExplanation": null,
+    "stimulus": null,
+    "issues": [
+      {
+        "code": "image-only",
+        "message": "Observed numbered question and key are raster-only; transcription not approved",
+        "blocking": true
+      },
+      {
+        "code": "image-answer-leakage",
+        "message": "Source image exposes bold/underlined answer; never publish this asset",
+        "blocking": true
+      }
+    ],
+    "evidence": {
+      "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+      "locator": "evidence/reference-extraction/comprehensive/document.json#page=149",
+      "links": [],
+      "imageLocations": [
+        "evidence/reference-extraction/comprehensive/document.json#page=149&xref=341&bbox=73.5,339.25,525,616&image=images/7b65ad0dea6cc42b88652881fa4a12e39756173609c83969243451f7291397e1.png"
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XV:5",
+    "sourceId": "comprehensive",
+    "section": "XV",
+    "ordinal": 5,
+    "pageStart": 151,
+    "pageEnd": 151,
+    "rawPrompt": null,
+    "rawChoices": null,
+    "rawAnswer": null,
+    "rawExplanation": null,
+    "stimulus": null,
+    "issues": [
+      {
+        "code": "image-only",
+        "message": "Observed numbered question and key are raster-only; transcription not approved",
+        "blocking": true
+      },
+      {
+        "code": "image-answer-leakage",
+        "message": "Source image exposes bold/underlined answer; never publish this asset",
+        "blocking": true
+      },
+      {
+        "code": "audited-source-defect",
+        "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+        "blocking": true
+      }
+    ],
+    "evidence": {
+      "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+      "locator": "evidence/reference-extraction/comprehensive/document.json#page=151",
+      "links": [],
+      "imageLocations": [
+        "evidence/reference-extraction/comprehensive/document.json#page=151&xref=350&bbox=73.5,253.234375,525,436.984375&image=images/bba11fdc28d44dc557b49e5b61eada0e67a684e30739044cb9621f6e7e2724c2.png"
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XV:7",
+    "sourceId": "comprehensive",
+    "section": "XV",
+    "ordinal": 7,
+    "pageStart": 152,
+    "pageEnd": 152,
+    "rawPrompt": null,
+    "rawChoices": null,
+    "rawAnswer": null,
+    "rawExplanation": null,
+    "stimulus": null,
+    "issues": [
+      {
+        "code": "image-only",
+        "message": "Observed numbered question and key are raster-only; transcription not approved",
+        "blocking": true
+      },
+      {
+        "code": "image-answer-leakage",
+        "message": "Source image exposes bold/underlined answer; never publish this asset",
+        "blocking": true
+      },
+      {
+        "code": "audited-source-defect",
+        "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+        "blocking": true
+      }
+    ],
+    "evidence": {
+      "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+      "locator": "evidence/reference-extraction/comprehensive/document.json#page=152",
+      "links": [],
+      "imageLocations": [
+        "evidence/reference-extraction/comprehensive/document.json#page=152&xref=353&bbox=73.5,100.04685974121094,525,277.796875&image=images/a1f1dcad130da72f9742f5ce9f9c9e3ff6658f31ba3fb70fdb928c744fa21c9e.png"
+      ]
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:1",
+    "sourceId": "notes",
+    "section": "Current Events",
+    "ordinal": 1,
+    "pageStart": 17,
+    "pageEnd": 17,
+    "rawPrompt": "It is the country that hosted the Trump-Kim Summit last June 12, 2018.",
+    "rawChoices": null,
+    "rawAnswer": "Singapore",
+    "rawExplanation": null,
+    "stimulus": null,
+    "issues": [
+      {
+        "code": "answer-only",
+        "message": "No supplied distractors; authored conversion requires editorial approval",
+        "blocking": true
+      },
+      {
+        "code": "missing-time-context",
+        "message": "No reviewed as-of date, expiry or verification provenance",
+        "blocking": true
+      }
+    ],
+    "evidence": {
+      "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+      "locator": "evidence/reference-extraction/notes/document.json#page=17",
+      "links": [],
+      "imageLocations": []
+    }
+  }
+]
