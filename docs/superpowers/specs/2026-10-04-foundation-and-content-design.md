@@ -2,7 +2,7 @@
 
 Date: 2026-10-04
 
-Status: reviewed design draft awaiting the user's written-spec approval. This is not an implementation plan and does not authorize production provisioning or publication.
+Status: written specification approved by the user on 2026-10-04. Implementation plans are prepared separately for user review and execution-method selection. This specification does not authorize production provisioning or publication.
 
 ## 1. Purpose and delivery boundary
 
@@ -205,4 +205,4 @@ Implementation review must distinguish completed foundation features from later 
 
 ## 11. Review handoff
 
-This written specification is ready for user review. Approval permits invoking Superpowers writing-plans for this slice. The resulting plan must then be reviewed and an execution method selected before scaffolding or product implementation begins. In particular, the 75% practice threshold and later viewed-completion/concurrency proposals above are explicit reviewable defaults, not previously implied approvals.
+The user approved this written specification on 2026-10-04. Implementation planning proceeds in separate content-toolchain and mobile-foundation plans. Both plans require user review and an execution-method selection before scaffolding or product implementation begins. Later delivery-slice plans must preserve the decisions here, including the 75% practice threshold and viewed-progress semantics, unless the user requests a revision.

@@ -4,7 +4,7 @@ Date: 2026-10-03
 
 Status: repository/reference inspection complete; brainstorming in progress. This is a discovery report and a set of proposals, not an approved implementation specification or an implementation plan. No application has been scaffolded and no question has been published.
 
-Update 2026-10-04: the first-slice [written design specification](../superpowers/specs/2026-10-04-foundation-and-content-design.md) is drafted and self-reviewed for user approval. It supersedes outdated proposals here, particularly the answering-based or capped reviewer. This audit retains historical discussion and source evidence; it is not the execution contract.
+Update 2026-10-04: the first-slice [written design specification](../superpowers/specs/2026-10-04-foundation-and-content-design.md) is approved. The [content-toolchain plan](../superpowers/plans/2026-10-04-content-toolchain.md) and [mobile-foundation plan](../superpowers/plans/2026-10-04-mobile-foundation.md) are drafted and self-reviewed for plan approval and execution-method selection. The specification supersedes outdated proposals here, particularly the answering-based or capped reviewer. This audit retains historical discussion and source evidence; it is not the execution contract.
 
 ## 1. Agreed requirements and workflow
 
@@ -22,8 +22,8 @@ Superpowers architectural workflow checkpoints:
 - [x] Approve guest-first authentication and navigation in section 12.
 - [x] Review foundation architecture approaches and design sections with the user.
 - [x] Write and self-review the first-slice specification; commit at the written-spec handoff.
-- [ ] Obtain written-spec approval.
-- [ ] Use writing-plans to produce small, testable implementation tasks.
+- [x] Obtain written-spec approval.
+- [x] Use writing-plans to produce small, testable implementation tasks.
 - [ ] Review the implementation plan and select its execution method.
 
 The user has requested this process explicitly. Implementation, product dependency installation, and external Firebase provisioning have not begun.
