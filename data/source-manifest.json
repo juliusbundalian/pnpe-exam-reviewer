@@ -1,0 +1,23 @@
+[
+  {
+    "sourceId": "short",
+    "filename": "PNPE Reviewer.pdf",
+    "sha256": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+    "expectedPageCount": 6,
+    "expectedOccurrences": 20
+  },
+  {
+    "sourceId": "comprehensive",
+    "filename": "PNPE Reviewer (1).pdf",
+    "sha256": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+    "expectedPageCount": 153,
+    "expectedOccurrences": 477
+  },
+  {
+    "sourceId": "notes",
+    "filename": "PNPE Reviewer (2).pdf",
+    "sha256": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+    "expectedPageCount": 19,
+    "expectedOccurrences": 190
+  }
+]

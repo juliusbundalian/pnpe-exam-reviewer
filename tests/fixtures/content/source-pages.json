@@ -1,0 +1,24 @@
+[
+  {
+    "page": 150,
+    "text": "",
+    "blocks": [],
+    "links": [],
+    "imageRefs": [
+      "images/78525514332eb541da23ad8f3bd92956e443e17b450654938c63bb83c24a3afd.png",
+      "images/660de6c55106df459a944566e805cb5a2b0b9a892be9d88648800691f29286c3.png"
+    ],
+    "imagePlacements": [
+      {
+        "imageRef": "images/78525514332eb541da23ad8f3bd92956e443e17b450654938c63bb83c24a3afd.png",
+        "xref": 345,
+        "bbox": [73.5, 73.5, 525, 253.5]
+      },
+      {
+        "imageRef": "images/660de6c55106df459a944566e805cb5a2b0b9a892be9d88648800691f29286c3.png",
+        "xref": 346,
+        "bbox": [73.5, 259.234375, 525, 429.484375]
+      }
+    ]
+  }
+]
