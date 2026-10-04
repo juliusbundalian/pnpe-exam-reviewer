@@ -1,0 +1,10 @@
+.superpowers/
+.worktrees/
+references/
+docs/
+LICENSE
+coverage/
+evidence/
+data/generated/
+.venv/
+venv/
