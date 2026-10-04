@@ -176,3 +176,36 @@ test('byte bound splits metadata before the entry count bound', async () => {
   for (const shard of plan.shardDigests) expect(shard.bytes).toBeLessThanOrEqual(716800);
   expect(store.writes).toEqual([]);
 });
+test('no-op rejects head replaced during catalog verification', async () => {
+  class RacingReadStore extends MemoryImportStore {
+    race = false;
+    override async readShard(generation: string, id: string) {
+      const entries = await super.readShard(generation, id);
+      if (this.race) {
+        this.race = false;
+        await super.publishHead((await super.readHead()).revision, 'other-generation');
+      }
+      return entries;
+    }
+  }
+  const store = new RacingReadStore();
+  await apply(store);
+  store.race = true;
+  await expect(apply(store)).rejects.toThrow('Head changed');
+  expect(await store.readHead()).toEqual({ generation: 'other-generation', revision: 2 });
+});
+test('Unicode asset ordering uses canonical lexical order independent of locale', async () => {
+  const asset = (id: string) => ({
+    kind: 'image' as const,
+    id,
+    version: 1,
+    uri: 'bundled://fixture.png',
+    width: 1,
+    height: 1,
+    alt: 'Synthetic fixture',
+  });
+  const store = new MemoryImportStore();
+  const plan = await apply(store, [testQuestion({ prompt: [asset('ä'), asset('z')] })]);
+  const entries = await store.readShard(plan.generation, plan.shardDigests[0]!.id);
+  expect(entries[0]?.assets.map((item) => item.id)).toEqual(['z', 'ä']);
+});

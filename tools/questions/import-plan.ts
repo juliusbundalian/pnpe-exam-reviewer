@@ -75,9 +75,11 @@ function catalog(q: Question): CatalogEntry {
     ...(q.expiresAt ? { expiresAt: q.expiresAt } : {}),
     supportedKinds: [...new Set(blocks.map((b) => b.kind))].sort(),
     ...(q.stimulus ? { stimulus: { id: q.stimulus.id, version: q.stimulus.version } } : {}),
-    assets: [...new Map(assets.map((a) => [canonicalJson(a), a])).values()].sort((a, b) =>
-      canonicalJson(a).localeCompare(canonicalJson(b)),
-    ),
+    assets: [...new Map(assets.map((a) => [canonicalJson(a), a])).values()].sort((a, b) => {
+      const left = canonicalJson(a),
+        right = canonicalJson(b);
+      return left < right ? -1 : left > right ? 1 : 0;
+    }),
   };
 }
 function snapshot(questions: readonly Question[]) {
@@ -198,6 +200,10 @@ export async function applyImport(
   for (const shard of manifest.shardDigests)
     if (hash(await store.readShard(manifest.generation, shard.id)) !== shard.digest)
       throw new Error('Shard readback mismatch');
-  if (head.generation === manifest.generation) return;
+  if (head.generation === manifest.generation) {
+    if (canonicalJson(await store.readHead()) !== canonicalJson(manifest.expectedHead))
+      throw new Error('Head changed; new dry run required');
+    return;
+  }
   await store.publishHead(manifest.expectedHead.revision, manifest.generation);
 }
