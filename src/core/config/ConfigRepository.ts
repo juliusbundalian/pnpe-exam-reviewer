@@ -21,6 +21,7 @@ export class ConfigRepository {
     config: parseParameter('config', JSON.stringify(defaults.config)),
   };
   private readonly listeners = new Set<() => void>();
+  private readonly refreshedKeys = new Set<ConfigKey>();
   constructor(
     private readonly remote: RemoteConfigService,
     private readonly storage: KeyValueStore,
@@ -34,7 +35,8 @@ export class ConfigRepository {
         const input: unknown = JSON.parse(raw);
         const cached = envelope.safeParse(input);
         if (!cached.success) continue;
-        this.update(key, parseParameter(key, JSON.stringify(cached.data.value)));
+        if (!this.refreshedKeys.has(key))
+          this.update(key, parseParameter(key, JSON.stringify(cached.data.value)));
       } catch {
         /* Public defaults/last-known-good values survive unavailable storage. */
       }
@@ -54,6 +56,7 @@ export class ConfigRepository {
       } catch {
         continue;
       }
+      this.refreshedKeys.add(key);
       this.update(key, value);
       try {
         await this.storage.set(

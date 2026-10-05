@@ -1,5 +1,15 @@
+/// <reference types="node" />
 import type { ExpoConfig } from 'expo/config';
 import { version } from './package.json';
+import { existsSync } from 'node:fs';
+
+const iosFile = process.env.GOOGLE_SERVICES_IOS ?? '';
+const androidFile = process.env.GOOGLE_SERVICES_ANDROID ?? '';
+// Both platforms must be explicitly configured. No native configure call is
+// inserted into public-only builds, where no default Firebase app exists.
+const configured = Boolean(
+  iosFile && androidFile && existsSync(iosFile) && existsSync(androidFile),
+);
 
 const config: ExpoConfig = {
   name: 'PNPE Exam Reviewer',
@@ -7,9 +17,55 @@ const config: ExpoConfig = {
   version,
   scheme: 'pnpe',
   userInterfaceStyle: 'automatic',
-  ios: { bundleIdentifier: 'com.pnpe.exam.reviewer', supportsTablet: true },
-  android: { package: 'com.pnpe.exam.reviewer' },
-  plugins: ['expo-router', 'expo-dev-client', 'expo-splash-screen', 'expo-status-bar'],
+  ios: {
+    bundleIdentifier: 'com.pnpe.exam.reviewer',
+    supportsTablet: true,
+    ...(configured ? { googleServicesFile: iosFile } : {}),
+  },
+  android: {
+    package: 'com.pnpe.exam.reviewer',
+    ...(configured ? { googleServicesFile: androidFile } : {}),
+  },
+  extra: {
+    firebase: configured
+      ? {
+          mode: process.env.EXPO_PUBLIC_FIREBASE_MODE ?? 'configured',
+          projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID,
+          emulatorHost: process.env.EXPO_PUBLIC_FIREBASE_EMULATOR_HOST,
+        }
+      : { mode: 'unconfigured' },
+  },
+  plugins: [
+    'expo-router',
+    'expo-dev-client',
+    'expo-splash-screen',
+    'expo-status-bar',
+    ...(configured
+      ? ([
+          ['@react-native-firebase/app', { ios: { disableSPM: true } }],
+          '@react-native-firebase/auth',
+        ] as NonNullable<ExpoConfig['plugins']>)
+      : ['./plugins/withFirebaseCocoaPods.cjs']),
+    [
+      '@react-native-firebase/analytics',
+      { ios: { withoutAdIdSupport: true, googleAppMeasurementOnDeviceConversion: false } },
+    ],
+    [
+      'expo-build-properties',
+      {
+        ios: {
+          useFrameworks: 'static',
+          forceStaticLinking: [
+            'RNFBApp',
+            'RNFBAuth',
+            'RNFBFirestore',
+            'RNFBRemoteConfig',
+            'RNFBAnalytics',
+          ],
+        },
+      },
+    ],
+  ],
 };
 
 export default config;

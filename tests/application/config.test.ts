@@ -4,6 +4,34 @@ import { isAnnouncementVisible, parseParameter } from '../../src/core/config/sch
 import { AppError } from '../../src/core/errors/AppError';
 import { MemoryKeyValueStore, StubRemoteConfigService } from '../fixtures/config';
 
+test.each([true, false])(
+  'delayed cache respects valid remote freshness=%s per parameter',
+  async (valid) => {
+    let finish!: (value: string | null) => void;
+    const pending = new Promise<string | null>((resolve) => {
+      finish = resolve;
+    });
+    const storage = new MemoryKeyValueStore();
+    storage.get = (key) => (key === 'remote-config:app_info' ? pending : Promise.resolve(null));
+    const remote = new StubRemoteConfigService();
+    remote.parameters.app_info = valid
+      ? JSON.stringify({ ...defaults.app_info, appName: 'Fresh remote' })
+      : 'invalid';
+    const repo = new ConfigRepository(remote, storage);
+    const cacheRead = repo.loadCached();
+    await repo.refresh();
+    finish(
+      JSON.stringify({
+        schemaVersion: 1,
+        validatedAt: '2026-10-04T00:00:00Z',
+        value: { ...defaults.app_info, appName: 'Saved cache' },
+      }),
+    );
+    await cacheRead;
+    expect(repo.get('app_info').appName).toBe(valid ? 'Fresh remote' : 'Saved cache');
+  },
+);
+
 test('a valid near-limit parameter remains readable after cache envelope overhead', async () => {
   const remote = new StubRemoteConfigService();
   const storage = new MemoryKeyValueStore();

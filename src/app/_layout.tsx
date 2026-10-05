@@ -1,7 +1,10 @@
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { ThemeProvider, useTheme } from '../core/theme/ThemeProvider';
+import { useTheme } from '../core/theme/ThemeProvider';
+import Constants from 'expo-constants';
+import { PublicBootstrapProvider } from '../bootstrap/PublicBootstrapProvider';
+import { parseFirebaseEnvironment } from '../bootstrap/environment';
 import { asyncStorageKeyValueStore } from '../core/storage/AsyncStorageKeyValueStore';
 import { palettes } from '../core/theme/tokens';
 
@@ -19,9 +22,12 @@ function ThemedRoutes() {
 export default function RootLayout() {
   return (
     <SafeAreaProvider>
-      <ThemeProvider storage={asyncStorageKeyValueStore}>
+      <PublicBootstrapProvider
+        storage={asyncStorageKeyValueStore}
+        environment={parseFirebaseEnvironment(Constants.expoConfig?.extra?.firebase)}
+      >
         <ThemedRoutes />
-      </ThemeProvider>
+      </PublicBootstrapProvider>
     </SafeAreaProvider>
   );
 }

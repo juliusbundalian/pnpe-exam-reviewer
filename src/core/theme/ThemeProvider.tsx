@@ -5,8 +5,8 @@ import { createStore, type StoreApi } from 'zustand/vanilla';
 import type { KeyValueStore } from '../storage/KeyValueStore';
 import { palettes, type ThemeColors } from './tokens';
 
-export type Appearance = 'system' | 'light' | 'dark';
-const preferenceKey = 'pnpe.appearance';
+import { restoreAppearance, preferenceKey, type Appearance } from './appearance';
+export type { Appearance } from './appearance';
 type AppearanceState = { appearance: Appearance };
 type ThemeContextValue = {
   store: StoreApi<AppearanceState>;
@@ -14,34 +14,16 @@ type ThemeContextValue = {
 };
 const ThemeContext = createContext<ThemeContextValue | null>(null);
 
-function restoreAppearance(raw: string | null): Appearance {
-  if (raw === null) return 'system';
-  try {
-    const value: unknown = JSON.parse(raw);
-    if (
-      typeof value === 'object' &&
-      value !== null &&
-      'version' in value &&
-      value.version === 1 &&
-      'appearance' in value &&
-      (value.appearance === 'system' || value.appearance === 'light' || value.appearance === 'dark')
-    ) {
-      return value.appearance;
-    }
-  } catch {
-    /* Invalid preferences safely follow the OS. */
-  }
-  return 'system';
-}
-
 export function ThemeProvider({
   children,
   initialAppearance = 'system',
   storage,
+  restoreOnMount = true,
 }: {
   children: ReactNode;
   initialAppearance?: Appearance;
   storage?: KeyValueStore;
+  restoreOnMount?: boolean;
 }) {
   const [store] = useState(() =>
     createStore<AppearanceState>(() => ({ appearance: initialAppearance })),
@@ -49,8 +31,11 @@ export function ThemeProvider({
   const selected = useRef(false);
   const writes = useRef(Promise.resolve());
   useEffect(() => {
+    if (!selected.current) store.setState({ appearance: initialAppearance });
+  }, [initialAppearance, store]);
+  useEffect(() => {
     let active = true;
-    if (storage) {
+    if (storage && restoreOnMount) {
       void storage
         .get(preferenceKey)
         .then((raw) => {
@@ -63,7 +48,7 @@ export function ThemeProvider({
     return () => {
       active = false;
     };
-  }, [storage, store]);
+  }, [storage, store, restoreOnMount]);
 
   const setAppearance = async (appearance: Appearance) => {
     selected.current = true;

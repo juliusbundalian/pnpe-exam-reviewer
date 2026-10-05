@@ -26,7 +26,13 @@
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-native-firebase/analytics": "26.4.0",
+    "@react-native-firebase/app": "26.4.0",
+    "@react-native-firebase/auth": "26.4.0",
+    "@react-native-firebase/firestore": "26.4.0",
+    "@react-native-firebase/remote-config": "26.4.0",
     "expo": "57.0.26",
+    "expo-build-properties": "57.0.22",
     "expo-constants": "~57.0.20",
     "expo-dev-client": "~57.0.19",
     "expo-linking": "~57.0.11",
@@ -45,6 +51,8 @@
     "zustand": "5.0.15"
   },
   "devDependencies": {
+    "@babel/plugin-transform-dynamic-import": "7.29.7",
+    "@babel/plugin-transform-modules-commonjs": "7.29.7",
     "@testing-library/react-native": "13.3.3",
     "@types/jest": "29.5.14",
     "@types/node": "24.19.1",

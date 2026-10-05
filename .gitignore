@@ -16,3 +16,7 @@ __pycache__/
 !.env.example
 *.pem
 *service-account*.json
+google-services.json
+GoogleService-Info.plist
+/ios/
+/android/

@@ -1,4 +1,14 @@
 {
+  "react-native": {
+    "analytics_auto_collection_enabled": false,
+    "analytics_collection_deactivated": true,
+    "analytics_idfv_collection_enabled": false,
+    "google_analytics_adid_collection_enabled": false,
+    "google_analytics_ssaid_collection_enabled": false,
+    "google_analytics_automatic_screen_reporting_enabled": false,
+    "google_analytics_registration_with_ad_network_enabled": false,
+    "app_data_collection_default_enabled": false
+  },
   "firestore": {
     "rules": "firebase/firestore.rules",
     "indexes": "firebase/firestore.indexes.json"
