@@ -71,3 +71,25 @@ Public collection: `categories`; document ID must equal `categoryId`.
 `new FirebaseCategoryRepository(categorySdk, policy?)`; `CategorySdk.listCategories(): Promise<readonly unknown[]>`. `createCategorySdk(modularReadFacade)` performs exactly a categories collection read and rejects document/data ID mismatch. `CategoryMetadataPolicy` accepts `clock?: () => number` (epoch milliseconds), `metadataMaxAgeMs?: number`; default max age centrally exported as `DEFAULT_METADATA_MAX_AGE_MS = 24h`. Future or strictly older timestamps are unknown; exactly max-age remains known. This is display metadata policy, never session eligibility authority.
 
 Mobile: `await createNativeCategoryRepository(nativeServices.firestore, policy?)` from `nativeCategoryFacade.ts`; then `repository.list()`. It consumes the already initialized service. No implicit auth/navigation or official question fetch occurs.
+
+## Fix round 1 — Unicode whitespace contract
+
+Review correctly identified that RE2 `\s` excludes Unicode whitespace and vertical tab, while the shared profile validator uses JavaScript `trim()`. A whitespace-only U+00A0 profile could therefore be persisted and later rejected as empty by the domain validator.
+
+Added actual emulator create and update regressions for all 25 ECMAScript WhiteSpace/LineTerminator code points: U+0009–000D, U+0020, U+00A0, U+1680, U+2000–200A, U+2028–2029, U+202F, U+205F, U+3000, and U+FEFF. Added valid-name creation with internal U+00A0 and update with internal U+2028/U+FEFF. Existing valid internal newline coverage remains.
+
+Before modifying rules, ran:
+
+```sh
+JAVA_HOME='/Applications/Android Studio.app/Contents/jbr/Contents/Home' GOOGLE_APPLICATION_CREDENTIALS='/nonexistent/pnpe-emulator-no-adc.json' npm run test:emulator
+```
+
+Actual RED: `Test Suites: 1 failed, 1 passed, 2 total`; `Tests: 40 failed, 23 passed, 63 total`; exit 1. Both create and update regressions failed with `Expected request to fail, but it succeeded.` The existing six importer tests passed. This reproduced the review issue in actual Firestore rules rather than relying on a JavaScript regex proxy.
+
+Replaced the nonblank-name guard with an explicit RE2 hexadecimal character class matching JavaScript trim semantics; retained dot-all so internal whitespace/line terminators in nonempty valid names remain allowed. `profileSchema.ts` and its existing normalization behavior were not changed. All field, length, ownership, timestamp and immutable-creation restrictions remain intact.
+
+After correction, the identical emulator command produced actual GREEN: `PASS tests/firebase/rules.integration.test.ts`, `PASS tests/import/firestore.integration.test.ts`; `Test Suites: 2 passed, 2 total`; `Tests: 63 passed, 63 total`; exit 0. Only local Auth/Firestore `demo-pnpe` were used; fixture clearing, environment cleanup and emulator shutdown completed.
+
+`npm run typecheck && npm run lint && npm run format:check && git diff --check` exited 0: both strict TypeScript projects passed, ESLint passed, and Prettier reported all matched files use code style. No repeated full unit run was performed because the change touched only rules, emulator tests and this report. No production reads/writes/deployments, dependency changes, or native builds.
+
+Fix files: `firebase/firestore.rules`, `tests/firebase/rules.integration.test.ts`, this report. No unresolved concerns from this fix.

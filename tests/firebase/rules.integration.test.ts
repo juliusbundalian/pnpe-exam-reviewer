@@ -139,6 +139,60 @@ test('profile rejects added fields, bad names, changed creation time and client 
     updateDoc(ref, { displayName: 'Alice\nSmith', updatedAt: serverTimestamp() }),
   );
 });
+// ECMAScript WhiteSpace and LineTerminator code points removed by String.trim().
+const trimWhitespace = [
+  '\u0009',
+  '\u000a',
+  '\u000b',
+  '\u000c',
+  '\u000d',
+  '\u0020',
+  '\u00a0',
+  '\u1680',
+  '\u2000',
+  '\u2001',
+  '\u2002',
+  '\u2003',
+  '\u2004',
+  '\u2005',
+  '\u2006',
+  '\u2007',
+  '\u2008',
+  '\u2009',
+  '\u200a',
+  '\u2028',
+  '\u2029',
+  '\u202f',
+  '\u205f',
+  '\u3000',
+  '\ufeff',
+];
+test.each(trimWhitespace)(
+  'profile creation rejects trim-whitespace-only %p',
+  async (displayName) => {
+    const ref = doc(env.authenticatedContext('new-user').firestore(), 'users/new-user');
+    await assertFails(
+      setDoc(ref, { displayName, createdAt: serverTimestamp(), updatedAt: serverTimestamp() }),
+    );
+  },
+);
+test.each(trimWhitespace)('profile update rejects trim-whitespace-only %p', async (displayName) => {
+  const ref = doc(env.authenticatedContext('alice').firestore(), 'users/alice');
+  await assertFails(updateDoc(ref, { displayName, updatedAt: serverTimestamp() }));
+});
+test('profile accepts Unicode whitespace inside otherwise valid names on create and update', async () => {
+  const ref = doc(env.authenticatedContext('new-user').firestore(), 'users/new-user');
+  await assertSucceeds(
+    setDoc(ref, {
+      displayName: 'Alice\u00a0Smith',
+      createdAt: serverTimestamp(),
+      updatedAt: serverTimestamp(),
+    }),
+  );
+  await assertSucceeds(
+    updateDoc(ref, { displayName: 'Alice\u2028\ufeffSmith', updatedAt: serverTimestamp() }),
+  );
+});
 test('unimplemented paths and all profile subcollections remain denied', async () => {
   const db = env.authenticatedContext('alice').firestore();
   for (const path of [
