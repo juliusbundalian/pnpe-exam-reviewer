@@ -1,16 +1,16 @@
 import { Text, type TextProps } from 'react-native';
+import { forwardRef } from 'react';
 import { useTheme } from '../theme/ThemeProvider';
 import { typeScale } from '../theme/tokens';
 
-export function AppText({
-  variant = 'body',
-  tone = 'primary',
-  style,
-  ...props
-}: TextProps & {
+type AppTextProps = TextProps & {
   variant?: keyof typeof typeScale;
   tone?: 'primary' | 'secondary' | 'accent' | 'error';
-}) {
+};
+export const AppText = forwardRef<Text, AppTextProps>(function AppText(
+  { variant = 'body', tone = 'primary', style, ...props }: AppTextProps,
+  ref,
+) {
   const { colors } = useTheme();
   const color = {
     primary: colors.textPrimary,
@@ -18,5 +18,7 @@ export function AppText({
     accent: colors.primary,
     error: colors.error,
   }[tone];
-  return <Text {...props} allowFontScaling style={[typeScale[variant], { color }, style]} />;
-}
+  return (
+    <Text {...props} ref={ref} allowFontScaling style={[typeScale[variant], { color }, style]} />
+  );
+});
