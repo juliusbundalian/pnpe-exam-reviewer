@@ -1,3 +1,3 @@
 {
-  "extends": "./tsconfig.tools.json"
+  "extends": "./tsconfig.mobile.json"
 }

@@ -11,5 +11,16 @@ export default tseslint.config(
     ],
   },
   ...tseslint.configs.recommended,
+  {
+    files: ['src/**/*.{ts,tsx}'],
+    rules: {
+      'no-restricted-imports': [
+        'error',
+        {
+          patterns: ['firebase-admin', 'firebase-admin/*', 'firebase', 'firebase/*', '**/tools/**'],
+        },
+      ],
+    },
+  },
   { files: ['**/*.cjs'], languageOptions: { sourceType: 'commonjs' } },
 );
