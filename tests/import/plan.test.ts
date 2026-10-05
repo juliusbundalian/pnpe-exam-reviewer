@@ -1,6 +1,63 @@
 import { planImport, applyImport } from '../../tools/questions/import-plan';
 import { MemoryImportStore } from './memory-store';
 import { testQuestion } from '../fixtures/content/question';
+test('apply rechecks expiry and preserves previously stored historical revisions', async () => {
+  const old = testQuestion({ id: 'old', status: 'archived', expiresAt: '2021-01-01T00:00:00Z' });
+  const store = new MemoryImportStore({ revisions: [old] });
+  const q = testQuestion({ expiresAt: '2026-10-05T00:00:00Z' });
+  const before = () => new Date('2026-10-04T00:00:00Z');
+  const boundary = () => new Date('2026-10-05T00:00:00Z');
+  const plan = await planImport('demo-pnpe', [q], store, before);
+  await expect(
+    applyImport(
+      plan,
+      [q],
+      store,
+      { projectId: 'demo-pnpe', manifestDigest: plan.manifestDigest },
+      boundary,
+    ),
+  ).rejects.toThrow('EXPIRED');
+  expect(store.writes).toEqual([]);
+  expect(await store.readRevision(old.id, old.version)).toEqual(old);
+  await applyImport(
+    plan,
+    [q],
+    store,
+    { projectId: 'demo-pnpe', manifestDigest: plan.manifestDigest },
+    before,
+  );
+  expect(await store.readRevision(old.id, old.version)).toEqual(old);
+});
+test('one stimulus identity and version cannot name conflicting content', async () => {
+  const store = new MemoryImportStore();
+  const first = testQuestion({
+    stimulus: {
+      id: 'shared',
+      version: 1,
+      blocks: [{ kind: 'text', text: 'First passage', marks: [] }],
+    },
+  });
+  const conflicting = testQuestion({
+    id: 'second',
+    stimulus: {
+      id: 'shared',
+      version: 1,
+      blocks: [{ kind: 'text', text: 'Other passage', marks: [] }],
+    },
+  });
+  await expect(planImport('demo-pnpe', [first, conflicting], store)).rejects.toThrow('Stimulus');
+  expect(store.writes).toEqual([]);
+  await expect(
+    planImport('demo-pnpe', [first, { ...conflicting, stimulus: first.stimulus }], store),
+  ).resolves.toMatchObject({ questionCount: 2 });
+  await expect(
+    planImport(
+      'demo-pnpe',
+      [first, { ...conflicting, stimulus: { ...conflicting.stimulus!, version: 2 } }],
+      store,
+    ),
+  ).resolves.toMatchObject({ questionCount: 2 });
+});
 
 test('dry run performs no writes', async () => {
   const store = new MemoryImportStore();

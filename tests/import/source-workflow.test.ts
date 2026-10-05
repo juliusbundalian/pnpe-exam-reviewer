@@ -11,6 +11,7 @@ import { normalize } from '../../tools/questions/normalize';
 import { testQuestion } from '../fixtures/content/question';
 import { planImport } from '../../tools/questions/import-plan';
 import { MemoryImportStore } from './memory-store';
+import { reviewDigest } from '../../tools/questions/editorial';
 
 const question = testQuestion();
 const sourceKey = 'synthetic-test-only:fixture:1';
@@ -51,6 +52,112 @@ const overlay = {
   },
 };
 const sources = [{ sourceId: 'synthetic-test-only', sha256: '0'.repeat(64) }];
+test('reviewed transcription preserves a genuinely missing original answer', () => {
+  const transcribed = normalize({ ...record, rawAnswer: null });
+  const q = testQuestion({ sources: [{ ...question.sources[0]!, originalAnswer: null }] });
+  const review = {
+    issues: transcribed.issues,
+    resolutions: transcribed.issues
+      .filter((issue) => issue.blocking)
+      .map((issue) => ({
+        code: issue.code,
+        rationale: 'Manual transcription and independently checked answer',
+        evidence: ['Synthetic visual review worksheet'],
+      })),
+  };
+  const approved = {
+    ...overlay,
+    proposed: q,
+    review,
+    approval: { ...overlay.approval, digest: contentDigest(q), reviewDigest: reviewDigest(review) },
+  };
+  expect(
+    approvedPublication([transcribed], [approved], { [sourceKey]: q.id }, sources, [q]),
+  ).toEqual([q]);
+  const invented = testQuestion({ sources: [{ ...q.sources[0]!, originalAnswer: 'B' }] });
+  expect(() =>
+    approvedPublication(
+      [transcribed],
+      [
+        {
+          ...approved,
+          proposed: invented,
+          approval: { ...approved.approval, digest: contentDigest(invented) },
+        },
+      ],
+      { [sourceKey]: q.id },
+      sources,
+      [invented],
+    ),
+  ).toThrow('lineage');
+  expect(() =>
+    approvedPublication(
+      [transcribed],
+      [{ ...overlay, proposed: q, approval: { ...overlay.approval, digest: contentDigest(q) } }],
+      { [sourceKey]: q.id },
+      sources,
+      [q],
+    ),
+  ).toThrow('UNRESOLVED');
+});
+test.each([
+  { status: 'inactive' as const },
+  { status: 'archived' as const },
+  { expiresAt: '2026-10-05T00:00:00Z' },
+])('eligibility agrees across process, publication and import: %j', async (change) => {
+  const changed = testQuestion(change);
+  const approved = {
+    ...overlay,
+    proposed: changed,
+    approval: { ...overlay.approval, digest: contentDigest(changed) },
+  };
+  const now = () => new Date('2026-10-05T00:00:00Z');
+  const root = await mkdtemp(join(tmpdir(), 'pnpe-eligibility-'));
+  try {
+    const report = await processReferences(
+      root,
+      undefined,
+      {
+        candidates: async () => [candidate],
+        registry: async () => ({ [sourceKey]: question.id }),
+        overlays: async () => [approved],
+        sources,
+      },
+      now,
+    );
+    expect(report.occurrences).toBe(1);
+    expect(report.eligible).toBe(0);
+    expect(report.blockedApproved[0]?.issues[0]).toMatch(/INACTIVE|EXPIRED/);
+    expect(() =>
+      approvedPublication(
+        [candidate],
+        [approved],
+        { [sourceKey]: question.id },
+        sources,
+        [changed],
+        now,
+      ),
+    ).toThrow(/INACTIVE|EXPIRED/);
+    const store = new MemoryImportStore();
+    await expect(planImport('demo-pnpe', [changed], store, now)).rejects.toThrow(
+      /INACTIVE|EXPIRED/,
+    );
+    expect(store.writes).toEqual([]);
+  } finally {
+    await rm(root, { recursive: true });
+  }
+});
+test('expiry remains eligible immediately before its exclusive boundary', async () => {
+  const q = testQuestion({ expiresAt: '2026-10-05T00:00:00Z' });
+  await expect(
+    planImport(
+      'demo-pnpe',
+      [q],
+      new MemoryImportStore(),
+      () => new Date('2026-10-04T23:59:59.999Z'),
+    ),
+  ).resolves.toMatchObject({ questionCount: 1 });
+});
 test('process retains eligibility for supported approved text', async () => {
   const root = await mkdtemp(join(tmpdir(), 'pnpe-supported-'));
   try {

@@ -4,6 +4,43 @@ import { assignIdentity, allocateIdentity } from '../../tools/questions/identity
 import { paragraphFixture } from './fixtures/source-records';
 import regressionRecords from './fixtures/regression-records.json';
 import type { SourceRecord } from '../../tools/questions/parsers/types';
+test('identical image bytes at different source placements are exact duplicate suggestions', () => {
+  const first = paragraphFixture('Same passage');
+  first.evidence.imageLocations = [
+    `document.json#page=1&xref=2&bbox=0,0,1,1&image=images/${'a'.repeat(64)}.png`,
+  ];
+  const second = {
+    ...first,
+    sourceKey: 'comprehensive:VI:2',
+    evidence: {
+      ...first.evidence,
+      imageLocations: [`other.json#page=9&xref=7&bbox=4,4,9,9&image=images/${'a'.repeat(64)}.png`],
+    },
+  };
+  expect(duplicateReport([normalize(first), normalize(second)]).exact).toEqual([
+    ['comprehensive:VI:1', 'comprehensive:VI:2'],
+  ]);
+});
+test('short unrelated rendered content is not near-duplicated by DTO key noise', () => {
+  const rawChoices = Array.from({ length: 6 }, (_, index) => ({
+    label: String(index),
+    text: String(index),
+  }));
+  const first = normalize({
+    ...paragraphFixture('Cat'),
+    stimulus: null,
+    rawPrompt: 'Dog?',
+    rawChoices,
+  });
+  const second = normalize({
+    ...paragraphFixture('Sun'),
+    stimulus: null,
+    sourceKey: 'comprehensive:VI:2',
+    rawPrompt: 'Moon?',
+    rawChoices,
+  });
+  expect(duplicateReport([first, second]).near).toEqual([]);
+});
 
 test('normalization preserves negation and mathematical grouping', () => {
   expect(normalizeText('Which is NOT correct?')).toContain('NOT');

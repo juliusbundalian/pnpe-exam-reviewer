@@ -18,12 +18,14 @@ import { parseLarge } from './parsers/large';
 import { parseNotes } from './parsers/notes';
 import { duplicateReport } from './duplicates';
 import { taxonomy } from '../../src/features/content/domain/taxonomy';
+import { eligibilityIssues, productionClock, type EvaluationClock } from './eligibility';
 
 function assessPublication(
   candidates: readonly NormalizedCandidate[],
   overlays: readonly EditorialOverlay[],
   registry: IdentityRegistry,
   sources: readonly { sourceId: string; sha256: string }[],
+  now: Date,
 ) {
   const result = publicationSet(combineBySourceKey(candidates, overlays));
   if (result.errors.length) throw new Error(`Publication errors: ${canonicalJson(result.errors)}`);
@@ -83,6 +85,8 @@ function assessPublication(
           'Unsupported asset: no approved available learner asset inventory; evidence/key images cannot publish',
         );
       digestQuestions([q]);
+      const ineligible = eligibilityIssues(q, now);
+      if (ineligible.length) throw new Error(ineligible.join('; '));
       questions.push(q);
     } catch (error) {
       blockedApproved.push({
@@ -99,8 +103,9 @@ export function approvedPublication(
   registry: IdentityRegistry,
   sources: readonly { sourceId: string; sha256: string }[],
   published: unknown,
+  clock: EvaluationClock = productionClock,
 ): Question[] {
-  const result = assessPublication(candidates, overlays, registry, sources);
+  const result = assessPublication(candidates, overlays, registry, sources, clock());
   if (result.blockedApproved.length)
     throw new Error(`Publication errors: ${canonicalJson(result.blockedApproved)}`);
   if (!Array.isArray(published)) throw new Error('Published input must be an array');
@@ -208,6 +213,7 @@ export async function loadIdentityRegistry(root: string): Promise<IdentityRegist
 export async function loadApprovedPublication(
   root: string,
   registry?: IdentityRegistry,
+  clock: EvaluationClock = productionClock,
 ): Promise<Question[]> {
   return approvedPublication(
     await loadCandidates(root),
@@ -215,6 +221,7 @@ export async function loadApprovedPublication(
     registry ?? (await loadIdentityRegistry(root)),
     sourceRegistry,
     await readJson(join(root, 'data/questions.json')),
+    clock,
   );
 }
 interface ProcessLoaders {
@@ -227,6 +234,7 @@ export async function processReferences(
   root: string,
   output = 'data/generated/candidates.json',
   loaders?: ProcessLoaders,
+  clock: EvaluationClock = productionClock,
 ) {
   await safeGeneratedPath(root, output);
   const candidates = await (loaders?.candidates() ?? loadCandidates(root));
@@ -243,6 +251,7 @@ export async function processReferences(
     overlays,
     registry,
     loaders?.sources ?? sourceRegistry,
+    clock(),
   );
   const issues: Record<string, number> = {};
   for (const candidate of candidates)

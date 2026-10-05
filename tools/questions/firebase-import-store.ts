@@ -1,6 +1,7 @@
 import { Firestore, type DocumentReference } from 'firebase-admin/firestore';
 import { QuestionSchema, type Question } from '../../src/features/content/domain/question';
 import type { CatalogEntry, ImportStore } from './import-store';
+import { CatalogShardSchema } from './import-store';
 import { canonicalJson } from './editorial';
 import { checkedTarget } from './cli';
 import { assertFirestoreDocument } from './firestore-limits';
@@ -98,15 +99,15 @@ export class FirebaseImportStore implements ImportStore {
     id: string,
     entries: readonly CatalogEntry[],
   ): Promise<void> {
-    if (!entries.length || entries.length > 200) throw new Error('Invalid shard count');
-    await this.createImmutable(this.shard(generation, id), { entries });
+    await this.createImmutable(this.shard(generation, id), {
+      entries: CatalogShardSchema.parse(entries),
+    });
   }
   async readShard(generation: string, id: string): Promise<readonly CatalogEntry[]> {
     const snapshot = await this.shard(generation, id).get();
     if (!snapshot.exists) return [];
     const entries: unknown = snapshot.get('entries');
-    if (!Array.isArray(entries)) throw new Error('Invalid shard');
-    return entries as CatalogEntry[];
+    return CatalogShardSchema.parse(entries);
   }
   async publishHead(expectedRevision: number, generation: string): Promise<void> {
     if (

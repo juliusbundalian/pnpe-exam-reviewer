@@ -21,6 +21,17 @@ function approvedOverlay(q: Question): EditorialOverlay {
     approval: { reviewer: 'test-only', at: '2026-10-04T00:00:00Z', digest: contentDigest(q) },
   };
 }
+test('currentEvents taxonomy cannot bypass time-sensitive safeguards with a false flag', () => {
+  const q = testQuestion({
+    categoryId: 'generalInformation',
+    subcategoryId: 'currentEvents',
+    isCurrentEvent: false,
+  });
+  expect(publishable(approvedOverlay(q))).toEqual({
+    ok: false,
+    issues: ['QUESTION_SCHEMA_INVALID'],
+  });
+});
 
 test('editing an approved key invalidates approval', () => {
   const approved = approvedOverlay(testQuestion());

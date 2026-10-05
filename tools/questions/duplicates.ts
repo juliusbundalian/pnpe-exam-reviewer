@@ -9,7 +9,12 @@ export function fingerprint(candidate: NormalizedCandidate): string {
         candidate.proposed.choices?.map((choice) => choice.blocks) ?? null,
         candidate.proposed.stimulus?.blocks ?? null,
         candidate.original.evidence.imageLocations.length
-          ? candidate.original.evidence.imageLocations
+          ? candidate.original.evidence.imageLocations.map(
+              (location) =>
+                location.match(
+                  /(?:^|[&/])(?:image=images\/)?([a-f0-9]{64})\.[A-Za-z0-9]+(?:$|&)/,
+                )?.[1] ?? location,
+            )
           : null,
       ]),
     )
@@ -17,11 +22,13 @@ export function fingerprint(candidate: NormalizedCandidate): string {
 }
 function tokens(candidate: NormalizedCandidate): Set<string> {
   return new Set(
-    JSON.stringify([
-      candidate.proposed.prompt,
-      candidate.proposed.choices,
-      candidate.proposed.stimulus?.blocks,
-    ])
+    [
+      ...(candidate.proposed.prompt ?? []),
+      ...(candidate.proposed.choices?.flatMap((choice) => choice.blocks) ?? []),
+      ...(candidate.proposed.stimulus?.blocks ?? []),
+    ]
+      .map((block) => block.text)
+      .join(' ')
       .toLowerCase()
       .match(/[\p{L}\p{N}]+/gu) ?? [],
   );

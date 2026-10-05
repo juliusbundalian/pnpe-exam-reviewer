@@ -1,10 +1,22 @@
 import { sourceRegistry, verifySource } from '../../tools/questions/source-registry';
-import { sourcePageSchema } from '../../tools/questions/source-schema';
+import { sourcePageSchema, sourceDocumentSchema } from '../../tools/questions/source-schema';
 import { spawnSync } from 'node:child_process';
 import { mkdtempSync, writeFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import pages from '../fixtures/content/source-pages.json';
+test.each([[1], [1, 1], [2, 1]].map((numbers) => [numbers]))(
+  'documents reject missing, duplicate or out-of-order pages (%#)',
+  (numbers) => {
+    const document = {
+      sourceId: 'synthetic',
+      sha256: '0'.repeat(64),
+      pageCount: 2,
+      pages: numbers.map((page) => ({ page, text: '', blocks: [], links: [], imageRefs: [] })),
+    };
+    expect(sourceDocumentSchema.safeParse(document).success).toBe(false);
+  },
+);
 
 test('same filename is not evidence of the same reference', () => {
   expect(() => verifySource('short', new TextEncoder().encode('changed PDF'))).toThrow('checksum');

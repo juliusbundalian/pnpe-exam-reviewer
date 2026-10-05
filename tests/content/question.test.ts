@@ -1,6 +1,17 @@
 import { ContentBlockSchema } from '../../src/features/content/domain/content';
 import { QuestionSchema } from '../../src/features/content/domain/question';
 import { testQuestion } from '../fixtures/content/question';
+test('currentEvents taxonomy requires the current-event flag', () => {
+  expect(
+    QuestionSchema.safeParse(
+      testQuestion({
+        categoryId: 'generalInformation',
+        subcategoryId: 'currentEvents',
+        isCurrentEvent: false,
+      }),
+    ).success,
+  ).toBe(false);
+});
 
 test('correct choice identity and taxonomy are structural invariants', () => {
   expect(QuestionSchema.safeParse(testQuestion()).success).toBe(true);
@@ -14,6 +25,46 @@ test('correct choice identity and taxonomy are structural invariants', () => {
 
 test('current events cannot activate with unknown dates', () => {
   expect(QuestionSchema.safeParse(testQuestion({ isCurrentEvent: true })).success).toBe(false);
+});
+test('verification must cover the question as-of date', () => {
+  expect(
+    QuestionSchema.safeParse(
+      testQuestion({
+        asOfDate: '2026-10-04',
+        verification: {
+          asOfDate: '2026-10-03',
+          verifiedAt: '2026-10-04T00:00:00Z',
+          sourceUrl: 'https://example.com/primary',
+        },
+      }),
+    ).success,
+  ).toBe(false);
+});
+test('parsed revision freezes representative nested evidence and content values', () => {
+  const q = QuestionSchema.parse(
+    testQuestion({
+      prompt: [{ kind: 'text', text: 'Marked', marks: [{ start: 0, end: 6, role: 'target' }] }],
+      sources: [
+        {
+          ...testQuestion().sources[0]!,
+          corrections: [{ reason: 'Reviewed', evidenceLocator: 'worksheet' }],
+        },
+      ],
+      stimulus: {
+        id: 'passage',
+        version: 1,
+        blocks: [{ kind: 'text', text: 'Context', marks: [] }],
+      },
+    }),
+  );
+  expect(Object.isFrozen(q.choices[0])).toBe(true);
+  expect(Object.isFrozen(q.prompt[0])).toBe(true);
+  const block = q.prompt[0]!;
+  if (block.kind !== 'text') throw new Error('Expected text fixture');
+  expect(Object.isFrozen(block.marks[0])).toBe(true);
+  expect(Object.isFrozen(q.sources[0]?.pages)).toBe(true);
+  expect(Object.isFrozen(q.sources[0]?.corrections[0])).toBe(true);
+  expect(Object.isFrozen(q.stimulus?.blocks)).toBe(true);
 });
 
 test.each([

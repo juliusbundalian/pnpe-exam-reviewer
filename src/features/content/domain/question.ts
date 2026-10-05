@@ -17,7 +17,7 @@ const SourceRefSchema = z
       .refine((pages) => pages.end >= pages.start)
       .readonly(),
     originalChoiceLabels: z.array(nonempty).readonly(),
-    originalAnswer: nonempty,
+    originalAnswer: nonempty.nullable(),
     evidenceLocator: nonempty,
     links: z.array(z.url()).readonly(),
     imageLocations: z.array(nonempty).readonly(),
@@ -78,6 +78,8 @@ export const QuestionSchema = z
       ctx.addIssue({ code: 'custom', path: [path], message });
     if (!isTaxonomyPair(q.categoryId, q.subcategoryId))
       issue('subcategoryId', 'Invalid taxonomy pair');
+    if (q.subcategoryId === 'currentEvents' && !q.isCurrentEvent)
+      issue('isCurrentEvent', 'Current Events taxonomy requires time-sensitive safeguards');
     if (!q.choices.some((choice) => choice.id === q.correctChoiceId))
       issue('correctChoiceId', 'Unknown choice ID');
     if (new Set(q.choices.map((choice) => choice.id)).size !== q.choices.length)

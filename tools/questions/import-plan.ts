@@ -5,6 +5,7 @@ import { canonicalJson } from './editorial';
 import { contentDigest } from './publication';
 import type { CatalogEntry, ImportStore } from './import-store';
 import { assertFirestoreDocument, firestoreDocumentBytes } from './firestore-limits';
+import { eligibilityIssues, productionClock, type EvaluationClock } from './eligibility';
 
 const limit = 700 * 1024;
 const hash = (value: unknown) => createHash('sha256').update(canonicalJson(value)).digest('hex');
@@ -43,7 +44,16 @@ function validated(questions: readonly Question[]): Question[] {
     .map((q) => QuestionSchema.parse(q))
     .sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : a.version - b.version));
   const ids = new Set<string>();
+  const stimuli = new Map<string, string>();
   for (const q of sorted) {
+    if (q.stimulus) {
+      const key = canonicalJson([q.stimulus.id, q.stimulus.version]);
+      const content = canonicalJson(q.stimulus.blocks);
+      const previous = stimuli.get(key);
+      if (previous !== undefined && previous !== content)
+        throw new Error('Stimulus identity/version content conflict');
+      stimuli.set(key, content);
+    }
     if (
       !/^[A-Za-z0-9_-]+$/.test(q.id) ||
       Buffer.byteLength(q.id, 'utf8') > 1500 ||
@@ -155,9 +165,15 @@ export async function planImport(
   projectId: string,
   questions: readonly Question[],
   store: ImportStore,
+  clock: EvaluationClock = productionClock,
 ): Promise<ImportManifest> {
   if (!projectId.trim()) throw new Error('Import target required');
   const qs = validated(questions);
+  const now = clock();
+  for (const q of qs) {
+    const issues = eligibilityIssues(q, now);
+    if (issues.length) throw new Error(issues.join('; '));
+  }
   const { shards, ...metadata } = snapshot(qs);
   void shards;
   const creates: ImportManifest['creates'] = [],
@@ -177,6 +193,7 @@ export async function applyImport(
   questions: readonly Question[],
   store: ImportStore,
   confirm: { projectId: string; manifestDigest: string },
+  clock: EvaluationClock = productionClock,
 ): Promise<void> {
   const parsed = ImportManifestSchema.safeParse(rawManifest);
   if (!parsed.success) throw new Error('Manifest invalid');
@@ -186,6 +203,11 @@ export async function applyImport(
   if (confirm.manifestDigest !== manifestDigest || hash(body) !== manifestDigest)
     throw new Error('Manifest mismatch');
   const qs = validated(questions);
+  const now = clock();
+  for (const q of qs) {
+    const issues = eligibilityIssues(q, now);
+    if (issues.length) throw new Error(issues.join('; '));
+  }
   const { shards, ...metadata } = snapshot(qs);
   if (metadata.inputDigest !== manifest.inputDigest) throw new Error('Input changed');
   for (const key of Object.keys(metadata) as (keyof typeof metadata)[])

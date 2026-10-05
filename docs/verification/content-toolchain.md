@@ -1,7 +1,7 @@
 # Content toolchain verification
 
 Verified locally on 2026-10-04–05 in the isolated `pnpe-foundation` worktree. This is
-the Task 7 toolchain checkpoint, awaiting the controller's broad review. It is not
+the final content fix checkpoint from base `6f9d9da`, awaiting scoped re-review. It is not
 mobile-foundation acceptance, production deployment, or publication approval.
 
 ## Commands and measured acceptance
@@ -9,7 +9,7 @@ mobile-foundation acceptance, production deployment, or publication approval.
 | Command                                                                                                                                                                             | Result                                                                                                                |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | `npm ci` / pinned dependency install                                                                                                                                                | Admin 14.5.0, Tools 15.32.1; exact direct dev pins, no force/legacy peer options                                      |
-| `npm run test:unit`                                                                                                                                                                 | 9 suites, 137 tests pass; integration excluded                                                                        |
+| `npm run test:unit`                                                                                                                                                                 | 10 suites, 157 tests pass; integration excluded                                                                       |
 | `npm run test:references`                                                                                                                                                           | 1 suite, 7 tests pass with all supplied originals/evidence; no missing-prerequisite skip                              |
 | `npm run typecheck`                                                                                                                                                                 | Strict TypeScript passes, including dependency declarations                                                           |
 | `npm run lint`                                                                                                                                                                      | Pass                                                                                                                  |
@@ -40,7 +40,7 @@ retain their legitimate 10.5.0 dependencies.
 
 Sources account for short 20, comprehensive 477, and notes 190 occurrences (687,
 178 pages). There are 482 occurrences with one or more blocking issues, 0 approved
-reference questions, 1 exact duplicate group, and 196 near-duplicate pairs.
+reference questions, 1 exact duplicate group, and 169 near-duplicate pairs.
 Suggestions never merge/delete occurrences. Every one of the 15 requested
 subcategories has 0 approved items and is unavailable. Source/candidate counts
 are not publishable or unique-question counts.
@@ -84,8 +84,8 @@ Two measured processing runs preserve these exact hashes:
 | Artifact                                          | SHA-256                                                          |
 | ------------------------------------------------- | ---------------------------------------------------------------- |
 | candidates.json                                   | bf403d19a3e82466684c32a4cfa9615d1ca94771ecc4c6735afd47e51c8c86ef |
-| process-report.json                               | 57d0070261cc7333805aa5e311fb33d6990000393699b74e8f00673f4919964b |
-| process-report.md                                 | 43548b109e149a053ec2db9b78da10fc822ed54cc0260b421a26d2d0b5fa3f1f |
+| process-report.json                               | 76f5feedfdc2340252035ad7efa2d323027ebfa58e4a5a41e7c0c93f6cdee40c |
+| process-report.md                                 | 39d5dd939bd0d8a76341390cd4966bdd8ee1a4e847cf67471002067746deb455 |
 | identity-registry.json                            | 76dfdb31ef774865808d303ce592f786e6dea202ed08686a00aa03603232184b |
 | questions.json (empty array)                      | 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570 |
 | editorial/README.md (only current editorial file) | 98f31652f8438327a3106aebf75309eec4ffc7c9e55520ae5924533e5fff0770 |
@@ -121,8 +121,72 @@ that conflicts with the real 1,500-byte quota. The fixture now uses legal IDs an
 large synthetic asset URI metadata to retain its independent shard-splitting
 assertion. It is infrastructure-only test content and never runtime publication.
 A temporary-path expectation was corrected for macOS `/var` → `/private/var`
-canonical resolution. Watchman is disabled only in unit/integration Jest configs
-to avoid recrawl warnings; the actual reference suite still ran successfully.
+canonical resolution. Watchman is now disabled consistently in all three Jest
+configs; the actual reference suite passes without a Watchman warning.
+
+Final review fixes add a shared injectable eligibility clock (production default:
+current system time), reject inactive/archived revisions and expiry at or before
+evaluation, and preserve remote historical revisions. Processing retains valid
+ineligible approvals as candidates with reasons and contributes zero coverage;
+validate/import reject that input, and apply rechecks expiry before writes.
+Current Events taxonomy requires `isCurrentEvent: true`, so reviewed dates,
+provenance and factual review cannot be bypassed. Explicit null original-answer
+provenance can publish after evidenced blocker resolution; inventing a source
+answer still fails exact lineage and `correctChoiceId` remains required.
+
+Catalog reads/writes parse a shared bounded schema rather than asserting remote
+elements. Duplicate suggestions use image content hashes and rendered text tokens
+while preserving stimulus context and every occurrence. A publication snapshot
+rejects conflicting stimulus blocks under one ID/version before import writes.
+Focused regressions also cover nested freezing, verification/question as-of
+agreement, and missing/duplicate/out-of-order document pages. Fresh full gates:
+157 unit tests, 7 reference tests, 6 emulator tests, strict typecheck, lint and
+formatting pass. Two fresh processing runs produce the identical hashes above;
+PDFs, editorial README, registry and empty questions bytes match prior evidence.
+
+## Development dependency disposition (2026-10-05)
+
+Fresh `npm audit --json` exits 1 with 40 affected package nodes (35 high, 5
+moderate), rooted in OpenTelemetry core, basic-ftp, braces, re2 and uuid; propagated
+Jest nodes are not separate root defects. `npm audit --omit=dev --json` exits 0
+with zero findings. This does not establish developer-tool safety.
+
+- Tools → Pub/Sub → OpenTelemetry core 1.30.1: unbounded W3C baggage allocation;
+  [advisory](https://github.com/advisories/GHSA-8988-4f7v-96qf). Pub/Sub declares
+  `^1.30.1`; patched core is >=2.8.0, outside that range. Pub/Sub emulator and
+  tracing paths are installed; this wave executes Firestore only.
+- Tools → proxy-agent → pac-proxy-agent → get-uri → basic-ftp 5.3.1:
+  [listing parser CPU denial of service](https://github.com/advisories/GHSA-c475-qrg2-pj4r).
+  `get-uri/dist/ftp.js` calls `Client.list()`. The patched 6.2.2 is outside its
+  `^5.0.2` range. FTP/PAC retrieval is not exercised by localhost acceptance.
+- Jest → micromatch and Tools → chokidar → braces 3.0.3:
+  [deep-pattern stack exhaustion](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm).
+  Both Jest matching and Firestore rules watching are reachable developer paths.
+  Registry latest remains 3.0.3, still affected; trusted repository patterns do
+  not remove the installed risk.
+- Tools → superstatic → optional re2 1.24.1 loads successfully. Hosting regex
+  matching uses a new non-global Unicode expression on string paths; redirects
+  also use regex captures. Four reported advisories cover lastIndex crashes,
+  empty global-match loops, truncated-buffer heap disclosure and oversized
+  replacement crashes. [Heap-disclosure advisory](https://github.com/advisories/GHSA-j4r3-hg7j-8chg)
+  fixes the last affected range at 1.26.1. This bounded nonmajor update satisfies
+  superstatic's `^1.17.7`, but both 1.26.1 and 1.27.0 require Node
+  `^22.22.2 || ^24.15.0 || >=26.0.0`; measured Node is 24.3.0. Deferred rather
+  than accepting an unsupported runtime/native optional dependency or changing
+  the Node/toolchain contract. Hosting was not run, and no exploit was executed.
+- Tools → gaxios 6.7.1 → uuid 9.0.1:
+  [buffer-bound check advisory](https://github.com/advisories/GHSA-w5hq-g745-h8pq).
+  Gaxios uses v4 for multipart boundaries; the reported vulnerable APIs are
+  v3/v5/v6 with supplied buffers. Patched >=11.1.1 crosses its `^9.0.1` range.
+
+No safe bounded package change was established under the current runtime and
+direct pins, so package.json/lock remain untouched. No blind audit fix, major
+upgrade, peer override, or relaxed library checks were used. Residual tool risks
+remain open for a separately verified dependency/runtime maintenance slice.
+Registry deprecation notices remain relevant: uuid <=10 is unsupported, glob
+7.2.3 is unsupported with known vulnerabilities, and inflight 1.0.6 is unsupported
+and leaks memory. They were not silently treated as fixed or expanded into this
+content wave.
 
 SDK declaration root cause: Admin → Firestore 9.3.1 → firestore-api 0.2.0 →
 google-gax 5.0.8 → google-auth-library 10.5.0 → gtoken 8.0.0. The last ESM package
@@ -192,3 +256,7 @@ Ruling: reject table blocks during real publication/import preflight until a ver
 Ruling: add focused firestore-limits.ts storage-size preflight using documented value/map overhead and conservative document-name allowance — a valid question with many marks can fit700KiB JSON yet exceed actualFirestore1MiB; brief requires sizevalidation beforewrites — if wrong, conservative estimates may reject valid largequestions and need tuning; oversizedpartialwrites are avoided.
 
 Ruling: narrow the dependency override to @google-cloud/firestore-api@0.2.0 > google-gax@5.0.8 > google-auth-library10.9.1 — npm11.4 retained an invalid nestedTools/pubsub10.5 entry under blanketgaxoverride after freshci/dedupe; only Firestore API path consumes broken declarations — if wrong, Firestore path typing/runtime may need a different upstream patch; unrelatedTools dependency paths remain untouched.
+
+Ruling: implement the final review's three contract fixes and six minor boundary/test/tooling items in one final fix wave — they are bounded improvements to existing content behavior before mobile consumes it, and all deferred minors were triaged — if wrong, this wave may need scoped rollback; no editorial approvals, source rewrites, external publication, or new session features are authorized.
+
+Ruling: accept reviewer-declined areas as explicit delivery/release boundaries: mobile and session engines remain their later plans; source accuracy/conversions require human review; redistribution rights/primary-source authority require editorial release decisions; asset hosting/table codec remain blocked; live Firebase/ADC/override behavior remains unverified; malicious concurrent host mutation is outside the current local developer threat model — the spec intentionally defers these, while current eligibility and static path safeguards remain required — if wrong, later plans or threat modeling must expand before release and no completed-production claim is permissible.
