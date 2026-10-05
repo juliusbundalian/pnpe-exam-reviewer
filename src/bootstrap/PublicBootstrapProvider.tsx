@@ -10,8 +10,9 @@ import { systemClock } from '../core/clock/Clock';
 import type { FirebaseEnvironment } from './environment';
 import { initializePublicState, type PublicSnapshot, type PublicState } from './initialize';
 
-interface PublicDependencies {
+export interface PublicDependencies {
   config: ConfigRepository;
+  safeStorage: KeyValueStore;
   nativeServices(): Promise<NativeServices>;
 }
 const PublicContext = createContext<PublicDependencies | null>(null);

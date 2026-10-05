@@ -1,4 +1,5 @@
 import { Pressable, View } from 'react-native';
+import { useRef } from 'react';
 import { AppButton } from '../../../core/components/AppButton';
 import { AppScreen } from '../../../core/components/AppScreen';
 import { AppText } from '../../../core/components/AppText';
@@ -15,6 +16,8 @@ export function HomeScreen({
   displayName,
   onExplore,
   onMockExam,
+  onStartMockExam = onMockExam,
+  startsBlocked = false,
   onProgress,
   onBookmarks,
   model = initialHomePresentationModel,
@@ -22,11 +25,16 @@ export function HomeScreen({
   displayName?: string;
   onExplore: () => void;
   onMockExam: () => void;
-  onProgress: () => void;
-  onBookmarks: () => void;
+  onStartMockExam?: (target: View | null) => void;
+  startsBlocked?: boolean;
+  onProgress: (target: View | null) => void;
+  onBookmarks: (target: View | null) => void;
   model?: HomePresentationModel;
 }) {
   const { colors } = useTheme();
+  const progressTarget = useRef<View | null>(null);
+  const bookmarksTarget = useRef<View | null>(null);
+  const mockTarget = useRef<View | null>(null);
   return (
     <AppScreen>
       <AppText variant="heading">PNPE Exam Reviewer</AppText>
@@ -44,8 +52,18 @@ export function HomeScreen({
       </View>
       <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm }}>
         <AppButton variant="text" label="Mock Exam" onPress={onMockExam} />
-        <AppButton variant="text" label="Progress" onPress={onProgress} />
-        <AppButton variant="text" label="Saved Questions" onPress={onBookmarks} />
+        <AppButton
+          ref={progressTarget}
+          variant="text"
+          label="Progress"
+          onPress={() => onProgress(progressTarget.current)}
+        />
+        <AppButton
+          ref={bookmarksTarget}
+          variant="text"
+          label="Saved Questions"
+          onPress={() => onBookmarks(bookmarksTarget.current)}
+        />
       </View>
       <View>
         <AppText variant="heading" accessibilityRole="header">
@@ -98,7 +116,13 @@ export function HomeScreen({
           variant="caption"
           tone="secondary"
         >{`${model.mockExam.questionCount} questions · ${model.mockExam.durationMinutes} minutes · All four areas`}</AppText>
-        <AppButton variant="text" label="Start Mock Exam" onPress={onMockExam} />
+        <AppButton
+          ref={mockTarget}
+          variant="text"
+          label="Start Mock Exam"
+          disabled={startsBlocked}
+          onPress={() => onStartMockExam(mockTarget.current)}
+        />
       </View>
     </AppScreen>
   );

@@ -7,6 +7,7 @@ import { PublicBootstrapProvider } from '../bootstrap/PublicBootstrapProvider';
 import { parseFirebaseEnvironment } from '../bootstrap/environment';
 import { asyncStorageKeyValueStore } from '../core/storage/AsyncStorageKeyValueStore';
 import { palettes } from '../core/theme/tokens';
+import { NativeAppProviders } from '../bootstrap/AppProviders';
 
 function ThemedRoutes() {
   const { colors } = useTheme();
@@ -26,7 +27,9 @@ export default function RootLayout() {
         storage={asyncStorageKeyValueStore}
         environment={parseFirebaseEnvironment(Constants.expoConfig?.extra?.firebase)}
       >
-        <ThemedRoutes />
+        <NativeAppProviders>
+          <ThemedRoutes />
+        </NativeAppProviders>
       </PublicBootstrapProvider>
     </SafeAreaProvider>
   );

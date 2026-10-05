@@ -1,10 +1,12 @@
-import { Pressable, type PressableProps } from 'react-native';
+import { Pressable, type PressableProps, type View } from 'react-native';
+import type { Ref } from 'react';
 import { useTheme } from '../theme/ThemeProvider';
 import { radii, spacing, touchTarget } from '../theme/tokens';
 import { AppText } from './AppText';
 
 type Variant = { variant: 'primary' } | { variant: 'secondary' } | { variant: 'text' };
-export type AppButtonProps = Omit<PressableProps, 'children'> & Variant & { label: string };
+export type AppButtonProps = Omit<PressableProps, 'children'> &
+  Variant & { label: string; ref?: Ref<View> };
 
 export function AppButton({
   variant,

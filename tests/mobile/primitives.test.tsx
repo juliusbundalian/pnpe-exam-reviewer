@@ -3,6 +3,20 @@ import { AppButton } from '../../src/core/components/AppButton';
 import { AppScreen } from '../../src/core/components/AppScreen';
 import { EmptyView, ErrorView, LoadingView } from '../../src/core/components/StateViews';
 import { ThemeProvider } from '../../src/core/theme/ThemeProvider';
+import { createRef } from 'react';
+import type { View } from 'react-native';
+
+test('button forwards its native launch ref for accessibility focus restoration', () => {
+  const ref = createRef<View>();
+  const rendered = render(
+    <ThemeProvider>
+      <AppButton ref={ref} variant="primary" label="Launch" />
+    </ThemeProvider>,
+  );
+  expect(ref.current?.props.accessibilityLabel).toBe('Launch');
+  rendered.unmount();
+  expect(ref.current).toBeNull();
+});
 
 test.each(['light', 'dark'] as const)(
   'button exposes disabled state and adequate target in %s',

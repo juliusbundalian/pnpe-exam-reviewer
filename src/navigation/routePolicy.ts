@@ -1,4 +1,7 @@
-import type { AuthUser } from '../features/auth/domain/AuthenticationRepository';
+import type { AuthState, AuthUser } from '../features/auth/domain/AuthenticationRepository';
+export function permitsPersonalContent(auth: AuthState): boolean {
+  return auth.status === 'authenticated';
+}
 import {
   requiresOwner,
   type PendingIntent,

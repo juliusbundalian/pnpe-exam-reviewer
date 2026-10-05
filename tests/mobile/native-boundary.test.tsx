@@ -1,11 +1,31 @@
-import { render, screen, waitFor } from '@testing-library/react-native';
+import { screen, waitFor, renderRouter, act } from 'expo-router/testing-library';
+import { flushTransitions } from '../fixtures/auth-harness';
+import { Slot } from 'expo-router';
 import { initializeNativeFirebase } from '../../src/core/firebase/native';
 import { parseFirebaseEnvironment } from '../../src/bootstrap/environment';
 import { noOpAnalytics } from '../../src/core/analytics/AnalyticsService';
-import { ThemeProvider } from '../../src/core/theme/ThemeProvider';
-import HomeRoute from '../../src/app/index';
+import { NativeAppProviders } from '../../src/bootstrap/AppProviders';
 import { PublicBootstrapProvider } from '../../src/bootstrap/PublicBootstrapProvider';
 import { MemoryKeyValueStore } from '../fixtures/config';
+async function renderPublicHome(storage = new MemoryKeyValueStore()) {
+  const result = renderRouter(
+    {
+      appDir: `${process.cwd()}/src/app`,
+      overrides: {
+        _layout: () => (
+          <PublicBootstrapProvider storage={storage} environment={{ mode: 'unconfigured' }}>
+            <NativeAppProviders>
+              <Slot />
+            </NativeAppProviders>
+          </PublicBootstrapProvider>
+        ),
+      },
+    },
+    { initialUrl: '/' },
+  );
+  await act(flushTransitions);
+  return result;
+}
 
 jest.mock('@react-native-firebase/app', () => ({
   getApp: () => {
@@ -27,11 +47,7 @@ test('missing native configuration composes unavailable services and keeps Home 
   const services = await initializeNativeFirebase({ mode: 'unconfigured' });
   expect(services).toMatchObject({ available: false, remoteConfigMode: 'unavailable' });
   await expect(services.remoteConfig.fetch()).rejects.toThrow(/unavailable/i);
-  render(
-    <ThemeProvider>
-      <HomeRoute />
-    </ThemeProvider>,
-  );
+  await renderPublicHome();
   expect(screen.getByRole('button', { name: 'Explore reviewers' })).toBeVisible();
 });
 test('initialization shares one infrastructure lifetime', () => {
@@ -78,11 +94,7 @@ test('emulator boundary rejects production namespace and missing or unsafe hosts
 test('public composition exposes storage recovery and keeps Home interactive', async () => {
   const storage = new MemoryKeyValueStore();
   storage.failReads = true;
-  const rendered = render(
-    <PublicBootstrapProvider storage={storage} environment={{ mode: 'unconfigured' }}>
-      <HomeRoute />
-    </PublicBootstrapProvider>,
-  );
+  const rendered = await renderPublicHome(storage);
   expect(await screen.findByText(/saved settings are unavailable/i)).toBeVisible();
   expect(screen.getByRole('button', { name: 'Explore reviewers' })).toBeVisible();
   rendered.unmount();
@@ -94,11 +106,7 @@ test('recovery remains readable when stored appearance is dark', async () => {
     if (key === 'pnpe.appearance') return '{"version":1,"appearance":"dark"}';
     throw new Error('unavailable');
   };
-  const rendered = render(
-    <PublicBootstrapProvider storage={storage} environment={{ mode: 'unconfigured' }}>
-      <HomeRoute />
-    </PublicBootstrapProvider>,
-  );
+  const rendered = await renderPublicHome(storage);
   await screen.findByText(/saved settings are unavailable/i);
   await waitFor(() =>
     expect(screen.getByTestId('public-recovery-notice')).toHaveStyle({
