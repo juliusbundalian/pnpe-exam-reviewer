@@ -19,6 +19,80 @@ import { parseNotes } from './parsers/notes';
 import { duplicateReport } from './duplicates';
 import { taxonomy } from '../../src/features/content/domain/taxonomy';
 
+function assessPublication(
+  candidates: readonly NormalizedCandidate[],
+  overlays: readonly EditorialOverlay[],
+  registry: IdentityRegistry,
+  sources: readonly { sourceId: string; sha256: string }[],
+) {
+  const result = publicationSet(combineBySourceKey(candidates, overlays));
+  if (result.errors.length) throw new Error(`Publication errors: ${canonicalJson(result.errors)}`);
+  const questions: Question[] = [];
+  const blockedApproved: { sourceKey: string; issues: string[] }[] = [];
+  for (const entry of overlays.filter((overlay) => overlay.status === 'approved')) {
+    try {
+      const q = QuestionSchema.parse(entry.proposed);
+      if (assignIdentity(entry.sourceKey, registry) !== q.id)
+        throw new Error('Published identity mismatch');
+      const primary = candidates.find(
+        (candidate) => candidate.original.sourceKey === entry.sourceKey,
+      )!;
+      if (
+        !q.sources.some(
+          (source) =>
+            `${source.sourceId}:${source.section}:${source.originalNumber}` ===
+            primary.original.sourceKey,
+        )
+      )
+        throw new Error('Missing primary source lineage');
+      for (const source of q.sources) {
+        const registered = sources.find((item) => item.sourceId === source.sourceId);
+        if (!registered || registered.sha256 !== source.checksum)
+          throw new Error('Unregistered source publication');
+        const record = candidates.find(
+          (candidate) =>
+            candidate.original.sourceKey ===
+            `${source.sourceId}:${source.section}:${source.originalNumber}`,
+        )?.original;
+        if (
+          !record ||
+          source.checksum !== record.evidence.checksum ||
+          source.pages.start !== record.pageStart ||
+          source.pages.end !== record.pageEnd ||
+          source.evidenceLocator !== record.evidence.locator ||
+          source.originalAnswer !== record.rawAnswer ||
+          canonicalJson(source.originalChoiceLabels) !==
+            canonicalJson(record.rawChoices?.map((choice) => choice.label) ?? []) ||
+          canonicalJson(source.links) !== canonicalJson(record.evidence.links) ||
+          canonicalJson(source.imageLocations) !== canonicalJson(record.evidence.imageLocations)
+        )
+          throw new Error('Source lineage mismatch');
+      }
+      const blocks = [
+        ...q.prompt,
+        ...q.choices.flatMap((choice) => choice.blocks),
+        ...(q.explanation ?? []),
+        ...(q.stimulus?.blocks ?? []),
+      ];
+      if (blocks.some((block) => block.kind === 'table'))
+        throw new Error(
+          'Unsupported table transport: a Standard-compatible versioned codec is required',
+        );
+      if (blocks.some((block) => block.kind === 'image' || block.kind === 'diagram'))
+        throw new Error(
+          'Unsupported asset: no approved available learner asset inventory; evidence/key images cannot publish',
+        );
+      digestQuestions([q]);
+      questions.push(q);
+    } catch (error) {
+      blockedApproved.push({
+        sourceKey: entry.sourceKey,
+        issues: [error instanceof Error ? error.message : String(error)],
+      });
+    }
+  }
+  return { questions, blockedApproved };
+}
 export function approvedPublication(
   candidates: readonly NormalizedCandidate[],
   overlays: readonly EditorialOverlay[],
@@ -26,61 +100,9 @@ export function approvedPublication(
   sources: readonly { sourceId: string; sha256: string }[],
   published: unknown,
 ): Question[] {
-  const result = publicationSet(combineBySourceKey(candidates, overlays));
-  if (result.errors.length) throw new Error(`Publication errors: ${canonicalJson(result.errors)}`);
-  for (const entry of overlays.filter((overlay) => overlay.status === 'approved')) {
-    const q = QuestionSchema.parse(entry.proposed);
-    if (assignIdentity(entry.sourceKey, registry) !== q.id)
-      throw new Error('Published identity mismatch');
-    const primary = candidates.find(
-      (candidate) => candidate.original.sourceKey === entry.sourceKey,
-    )!;
-    if (
-      !q.sources.some(
-        (source) =>
-          `${source.sourceId}:${source.section}:${source.originalNumber}` ===
-          primary.original.sourceKey,
-      )
-    )
-      throw new Error('Missing primary source lineage');
-    for (const source of q.sources) {
-      const registered = sources.find((item) => item.sourceId === source.sourceId);
-      if (!registered || registered.sha256 !== source.checksum)
-        throw new Error('Unregistered source publication');
-      const record = candidates.find(
-        (candidate) =>
-          candidate.original.sourceKey ===
-          `${source.sourceId}:${source.section}:${source.originalNumber}`,
-      )?.original;
-      if (
-        !record ||
-        source.checksum !== record.evidence.checksum ||
-        source.pages.start !== record.pageStart ||
-        source.pages.end !== record.pageEnd ||
-        source.evidenceLocator !== record.evidence.locator ||
-        source.originalAnswer !== record.rawAnswer ||
-        canonicalJson(source.originalChoiceLabels) !==
-          canonicalJson(record.rawChoices?.map((choice) => choice.label) ?? []) ||
-        canonicalJson(source.links) !== canonicalJson(record.evidence.links) ||
-        canonicalJson(source.imageLocations) !== canonicalJson(record.evidence.imageLocations)
-      )
-        throw new Error('Source lineage mismatch');
-    }
-    const blocks = [
-      ...q.prompt,
-      ...q.choices.flatMap((choice) => choice.blocks),
-      ...(q.explanation ?? []),
-      ...(q.stimulus?.blocks ?? []),
-    ];
-    if (blocks.some((block) => block.kind === 'table'))
-      throw new Error(
-        'Unsupported table transport: a Standard-compatible versioned codec is required',
-      );
-    if (blocks.some((block) => block.kind === 'image' || block.kind === 'diagram'))
-      throw new Error(
-        'Unsupported asset: no approved available learner asset inventory; evidence/key images cannot publish',
-      );
-  }
+  const result = assessPublication(candidates, overlays, registry, sources);
+  if (result.blockedApproved.length)
+    throw new Error(`Publication errors: ${canonicalJson(result.blockedApproved)}`);
   if (!Array.isArray(published)) throw new Error('Published input must be an array');
   const parsed = published.map((q: unknown) => QuestionSchema.parse(q));
   // Compare the exact on-disk JSON structure too: schema defaults/transforms cannot mask edits.
@@ -195,20 +217,33 @@ export async function loadApprovedPublication(
     await readJson(join(root, 'data/questions.json')),
   );
 }
-export async function processReferences(root: string, output = 'data/generated/candidates.json') {
+interface ProcessLoaders {
+  candidates: () => Promise<NormalizedCandidate[]>;
+  registry: () => Promise<IdentityRegistry>;
+  overlays: () => Promise<EditorialOverlay[]>;
+  sources: readonly { sourceId: string; sha256: string }[];
+}
+export async function processReferences(
+  root: string,
+  output = 'data/generated/candidates.json',
+  loaders?: ProcessLoaders,
+) {
   await safeGeneratedPath(root, output);
-  const candidates = await loadCandidates(root);
-  const registry = await loadIdentityRegistry(root);
+  const candidates = await (loaders?.candidates() ?? loadCandidates(root));
+  const registry = await (loaders?.registry() ?? loadIdentityRegistry(root));
   const assigned = candidates.map((candidate) => ({
     id: assignIdentity(candidate.original.sourceKey, registry),
     ...candidate,
   }));
   if (new Set(assigned.map((candidate) => candidate.id)).size !== assigned.length)
     throw new Error('Duplicate identities');
-  const overlays = await loadOverlays(root);
-  const publication = publicationSet(combineBySourceKey(candidates, overlays));
-  if (publication.errors.length)
-    throw new Error(`Publication errors: ${canonicalJson(publication.errors)}`);
+  const overlays = await (loaders?.overlays() ?? loadOverlays(root));
+  const publication = assessPublication(
+    candidates,
+    overlays,
+    registry,
+    loaders?.sources ?? sourceRegistry,
+  );
   const issues: Record<string, number> = {};
   for (const candidate of candidates)
     for (const issue of candidate.issues.filter((item) => item.blocking))
@@ -217,6 +252,7 @@ export async function processReferences(root: string, output = 'data/generated/c
     occurrences: assigned.length,
     eligible: publication.questions.length,
     approvedOverlays: overlays.filter((overlay) => overlay.status === 'approved').length,
+    blockedApproved: publication.blockedApproved,
     blockingOccurrences: candidates.filter((candidate) =>
       candidate.issues.some((issue) => issue.blocking),
     ).length,
@@ -248,7 +284,7 @@ export async function processReferences(root: string, output = 'data/generated/c
       .map(([code, count]) => `- ${code}: ${count}`)
       .join(
         '\n',
-      )}\n\nExact duplicate groups: ${duplicates.exact.length}. Near duplicate pairs: ${duplicates.near.length}. Suggestions preserve all occurrences.\n\n${coverage.map((item) => `- ${item.categoryId}/${item.subcategoryId}: ${item.approved} approved${item.approved === 0 ? ' (unavailable)' : ''}`).join('\n')}\n`,
+      )}\n\nApproved publication blockers:\n${publication.blockedApproved.map((item) => `- ${item.sourceKey}: ${item.issues.join('; ')}`).join('\n') || 'None.'}\n\nExact duplicate groups: ${duplicates.exact.length}. Near duplicate pairs: ${duplicates.near.length}. Suggestions preserve all occurrences.\n\n${coverage.map((item) => `- ${item.categoryId}/${item.subcategoryId}: ${item.approved} approved${item.approved === 0 ? ' (unavailable)' : ''}`).join('\n')}\n`,
   );
   return report;
 }

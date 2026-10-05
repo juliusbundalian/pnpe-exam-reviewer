@@ -1,10 +1,16 @@
-import { mkdtemp, mkdir, symlink, rm, realpath, link, writeFile } from 'node:fs/promises';
+import { mkdtemp, mkdir, symlink, rm, realpath, link, writeFile, readFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { approvedPublication, safeGeneratedPath } from '../../tools/questions/source-workflow';
+import {
+  approvedPublication,
+  safeGeneratedPath,
+  processReferences,
+} from '../../tools/questions/source-workflow';
 import { contentDigest } from '../../tools/questions/publication';
 import { normalize } from '../../tools/questions/normalize';
 import { testQuestion } from '../fixtures/content/question';
+import { planImport } from '../../tools/questions/import-plan';
+import { MemoryImportStore } from './memory-store';
 
 const question = testQuestion();
 const sourceKey = 'synthetic-test-only:fixture:1';
@@ -45,6 +51,21 @@ const overlay = {
   },
 };
 const sources = [{ sourceId: 'synthetic-test-only', sha256: '0'.repeat(64) }];
+test('process retains eligibility for supported approved text', async () => {
+  const root = await mkdtemp(join(tmpdir(), 'pnpe-supported-'));
+  try {
+    const report = await processReferences(root, undefined, {
+      candidates: async () => [candidate],
+      registry: async () => ({ [sourceKey]: question.id }),
+      overlays: async () => [overlay],
+      sources,
+    });
+    expect(report.eligible).toBe(1);
+    expect(report.blockedApproved).toEqual([]);
+  } finally {
+    await rm(root, { recursive: true });
+  }
+});
 test('publication is reconstructed from authoritative overlays', () => {
   expect(
     approvedPublication([candidate], [overlay], { [sourceKey]: question.id }, sources, [question]),
@@ -124,6 +145,64 @@ test('approved table is rejected at the publication boundary', () => {
     ),
   ).toThrow('Unsupported');
 });
+test.each(['prompt', 'choices', 'explanation', 'stimulus'] as const)(
+  'process reports approved table in %s as ineligible without changing overlays',
+  async (location) => {
+    const table = { kind: 'table' as const, headers: ['Heading'], rows: [['Value']] };
+    const changed = testQuestion(
+      location === 'choices'
+        ? { choices: [{ id: 'c1', blocks: [table] }, question.choices[1]!] }
+        : location === 'stimulus'
+          ? { stimulus: { id: 'table', version: 1, blocks: [table] } }
+          : { [location]: [table] },
+    );
+    const approved = {
+      ...overlay,
+      proposed: changed,
+      approval: { ...overlay.approval, digest: contentDigest(changed) },
+    };
+    const root = await mkdtemp(join(tmpdir(), 'pnpe-process-'));
+    try {
+      await mkdir(join(root, 'data/editorial'), { recursive: true });
+      const file = join(root, 'data/editorial/approved.json');
+      const bytes = `${JSON.stringify(approved)}\n`;
+      await writeFile(file, bytes);
+      const report = await processReferences(root, undefined, {
+        candidates: async () => [candidate],
+        registry: async () => ({ [sourceKey]: question.id }),
+        overlays: async () => [approved],
+        sources,
+      });
+      expect(report.occurrences).toBe(1);
+      expect(report.eligible).toBe(0);
+      const artifact = JSON.parse(
+        await readFile(join(root, 'evidence/content-toolchain/process-report.json'), 'utf8'),
+      );
+      expect(
+        artifact.coverage.find(
+          (item: { subcategoryId: string }) => item.subcategoryId === 'basicConcepts',
+        ).approved,
+      ).toBe(0);
+      expect(artifact.blockedApproved).toEqual([
+        { sourceKey, issues: [expect.stringContaining('Unsupported table')] },
+      ]);
+      expect(
+        JSON.parse(await readFile(join(root, 'data/generated/candidates.json'), 'utf8')).candidates,
+      ).toHaveLength(1);
+      expect(await readFile(file, 'utf8')).toBe(bytes);
+      expect(() =>
+        approvedPublication([candidate], [approved], { [sourceKey]: question.id }, sources, [
+          changed,
+        ]),
+      ).toThrow('Unsupported');
+      const store = new MemoryImportStore();
+      await expect(planImport('demo-pnpe', [changed], store)).rejects.toThrow('Unsupported');
+      expect(store.writes).toEqual([]);
+    } finally {
+      await rm(root, { recursive: true });
+    }
+  },
+);
 test('generated output rejects hard links to protected source files', async () => {
   const root = await mkdtemp(join(tmpdir(), 'pnpe-link-'));
   try {

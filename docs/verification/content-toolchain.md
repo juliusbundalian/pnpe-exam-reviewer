@@ -9,7 +9,7 @@ mobile-foundation acceptance, production deployment, or publication approval.
 | Command                                                                                                                                                                             | Result                                                                                                                |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | `npm ci` / pinned dependency install                                                                                                                                                | Admin 14.5.0, Tools 15.32.1; exact direct dev pins, no force/legacy peer options                                      |
-| `npm run test:unit`                                                                                                                                                                 | 9 suites, 132 tests pass; integration excluded                                                                        |
+| `npm run test:unit`                                                                                                                                                                 | 9 suites, 137 tests pass; integration excluded                                                                        |
 | `npm run test:references`                                                                                                                                                           | 1 suite, 7 tests pass with all supplied originals/evidence; no missing-prerequisite skip                              |
 | `npm run typecheck`                                                                                                                                                                 | Strict TypeScript passes, including dependency declarations                                                           |
 | `npm run lint`                                                                                                                                                                      | Pass                                                                                                                  |
@@ -83,9 +83,9 @@ Two measured processing runs preserve these exact hashes:
 
 | Artifact                                          | SHA-256                                                          |
 | ------------------------------------------------- | ---------------------------------------------------------------- |
-| candidates.json                                   | 2313a90657bd5868fe487aa4d6cf59fe0d897c4f9c44e6b3956a8dccb31df2c8 |
-| process-report.json                               | 1910e99218a7d1cef68d5d7690aaa71a5617bbbb57489d94eb2ea114a464e57c |
-| process-report.md                                 | c8550d1826ef9cb041de0cf194e98fc219d8d94db3fbc1380d83483b89ca3399 |
+| candidates.json                                   | bf403d19a3e82466684c32a4cfa9615d1ca94771ecc4c6735afd47e51c8c86ef |
+| process-report.json                               | 57d0070261cc7333805aa5e311fb33d6990000393699b74e8f00673f4919964b |
+| process-report.md                                 | 43548b109e149a053ec2db9b78da10fc822ed54cc0260b421a26d2d0b5fa3f1f |
 | identity-registry.json                            | 76dfdb31ef774865808d303ce592f786e6dea202ed08686a00aa03603232184b |
 | questions.json (empty array)                      | 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570 |
 | editorial/README.md (only current editorial file) | 98f31652f8438327a3106aebf75309eec4ffc7c9e55520ae5924533e5fff0770 |
@@ -97,6 +97,17 @@ the observed dry-run manifest digest is
 Raw-file SHA and canonical content digest deliberately differ.
 
 ## Safety evidence and practical limits
+
+Review fix round 1 shares the complete publication eligibility assessment with
+processing. Approved overlays that fail identity, lineage, transport, asset, or
+document preflight gates contribute no eligible coverage and retain their
+`blockedApproved` source key and reasons in machine/human reports. Candidates and
+overlay bytes remain intact; stale editorial/source approvals remain fatal, and
+validate/import reject all blocked approvals. Four process table-location tests
+first reproduced eligible 1 instead of 0, then passed along with supported-text
+eligibility. Two real processing runs still account for 687 stable IDs, 482 raw
+source-blocked occurrences, and zero eligible approvals. The artifact hashes above
+reflect the added publication-blocker reporting fields.
 
 Focused RED/GREEN cycles covered 8 CLI gate tests, 7 publication/path tests,
 2 Firestore ID regressions, 4 unsupported table locations, a hard-link guard, and
