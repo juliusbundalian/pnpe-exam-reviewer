@@ -7,6 +7,38 @@ test('dry run performs no writes', async () => {
   await planImport('demo-pnpe', [testQuestion()], store);
   expect(store.writes).toEqual([]);
 });
+test.each(['q'.repeat(1501), '__reserved__'])(
+  'Firestore document ID limits are checked before any writes (case %#)',
+  async (id) => {
+    const store = new MemoryImportStore();
+    await expect(planImport('demo-pnpe', [testQuestion({ id })], store)).rejects.toThrow('ID');
+    expect(store.writes).toEqual([]);
+  },
+);
+test.each(['prompt', 'choices', 'explanation', 'stimulus'] as const)(
+  'unsupported nested-array table in %s fails before any snapshot write',
+  async (location) => {
+    const store = new MemoryImportStore();
+    const table = { kind: 'table' as const, headers: ['Heading'], rows: [['Value']] };
+    const q = testQuestion({
+      id: 'second',
+      ...(location === 'choices'
+        ? {
+            choices: [
+              { id: 'c1', blocks: [table] },
+              { id: 'c2', blocks: [{ kind: 'text' as const, text: 'Other', marks: [] }] },
+            ],
+          }
+        : location === 'stimulus'
+          ? { stimulus: { id: 'table-stimulus', version: 1, blocks: [table] } }
+          : { [location]: [table] }),
+    });
+    await expect(planImport('demo-pnpe', [testQuestion(), q], store)).rejects.toThrow(
+      'Unsupported',
+    );
+    expect(store.writes).toEqual([]);
+  },
+);
 
 test('wrong target confirmation rejects before writes', async () => {
   const store = new MemoryImportStore();
@@ -66,6 +98,22 @@ test('oversized revision rejects before writes', async () => {
       store,
     ),
   ).rejects.toThrow('700');
+  expect(store.writes).toEqual([]);
+});
+test('Firestore map overhead cannot bypass the canonical JSON byte limit', async () => {
+  const store = new MemoryImportStore();
+  const q = testQuestion({
+    id: 'second',
+    prompt: [
+      {
+        kind: 'text',
+        text: 'A',
+        marks: Array.from({ length: 18000 }, () => ({ start: 0, end: 1, role: 'target' as const })),
+      },
+    ],
+  });
+  expect(Buffer.byteLength(JSON.stringify(q))).toBeLessThan(716800);
+  await expect(planImport('demo-pnpe', [testQuestion(), q], store)).rejects.toThrow('Firestore');
   expect(store.writes).toEqual([]);
 });
 test('changed input and tampered manifest reject before writes', async () => {
@@ -168,7 +216,20 @@ test('duplicate logical IDs and invalid schema fail before writes', async () => 
 test('byte bound splits metadata before the entry count bound', async () => {
   const store = new MemoryImportStore();
   const questions = Array.from({ length: 180 }, (_, n) =>
-    testQuestion({ id: `${String(n).padStart(3, '0')}-${'x'.repeat(4096)}` }),
+    testQuestion({
+      id: `question-${n}`,
+      prompt: [
+        {
+          kind: 'image',
+          id: 'asset',
+          version: 1,
+          uri: `https://assets.example.test/${'x'.repeat(4096)}`,
+          width: 10,
+          height: 10,
+          alt: 'Synthetic catalog byte-bound fixture',
+        },
+      ],
+    }),
   );
   const plan = await planImport('demo-pnpe', questions, store);
   expect(plan.shardDigests).toHaveLength(2);

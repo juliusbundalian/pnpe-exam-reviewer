@@ -4,6 +4,7 @@ import { QuestionSchema, type Question } from '../../src/features/content/domain
 import { canonicalJson } from './editorial';
 import { contentDigest } from './publication';
 import type { CatalogEntry, ImportStore } from './import-store';
+import { assertFirestoreDocument, firestoreDocumentBytes } from './firestore-limits';
 
 const limit = 700 * 1024;
 const hash = (value: unknown) => createHash('sha256').update(canonicalJson(value)).digest('hex');
@@ -43,10 +44,26 @@ function validated(questions: readonly Question[]): Question[] {
     .sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : a.version - b.version));
   const ids = new Set<string>();
   for (const q of sorted) {
-    if (!/^[A-Za-z0-9_-]+$/.test(q.id)) throw new Error('Unsafe question document ID');
+    if (
+      !/^[A-Za-z0-9_-]+$/.test(q.id) ||
+      Buffer.byteLength(q.id, 'utf8') > 1500 ||
+      /^__.*__$/.test(q.id)
+    )
+      throw new Error('Unsafe question document ID');
     if (ids.has(q.id)) throw new Error('Duplicate logical question ID in snapshot');
     ids.add(q.id);
     if (bytes(q) > limit) throw new Error('Revision exceeds 700 KiB');
+    const blocks = [
+      ...q.prompt,
+      ...q.choices.flatMap((choice) => choice.blocks),
+      ...(q.explanation ?? []),
+      ...(q.stimulus?.blocks ?? []),
+    ];
+    if (blocks.some((block) => block.kind === 'table'))
+      throw new Error(
+        'Unsupported table transport: Standard edition cannot store nested row arrays',
+      );
+    assertFirestoreDocument(q);
   }
   return sorted;
 }
@@ -102,8 +119,17 @@ function snapshot(questions: readonly Question[]) {
       entries = [];
     };
     for (const entry of groups.get(key)!) {
-      if (bytes({ entries: [entry] }) > limit) throw new Error('Catalog entry exceeds 700 KiB');
-      if (entries.length === 200 || bytes({ entries: [...entries, entry] }) > limit) flush();
+      if (
+        bytes({ entries: [entry] }) > limit ||
+        firestoreDocumentBytes({ entries: [entry] }) > limit
+      )
+        throw new Error('Catalog entry exceeds 700 KiB');
+      if (
+        entries.length === 200 ||
+        bytes({ entries: [...entries, entry] }) > limit ||
+        firestoreDocumentBytes({ entries: [...entries, entry] }) > limit
+      )
+        flush();
       entries.push(entry);
     }
     flush();

@@ -9,6 +9,9 @@ venv/
 __pycache__/
 *.pyc
 .env
+/references/
+*-debug.log
+.firebase/
 .env.*
 !.env.example
 *.pem

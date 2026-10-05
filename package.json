@@ -2,7 +2,18 @@
   "name": "pnpe-exam-reviewer",
   "version": "0.1.0",
   "private": true,
+  "overrides": {
+    "@google-cloud/firestore-api@0.2.0": {
+      "google-gax@5.0.8": {
+        "google-auth-library": "10.9.1"
+      }
+    }
+  },
   "scripts": {
+    "process:references": "tsx tools/questions/cli.ts process",
+    "validate:questions": "tsx tools/questions/cli.ts validate",
+    "import:questions": "tsx tools/questions/cli.ts import",
+    "test:emulator": "firebase emulators:exec --only firestore --project demo-pnpe \"jest --config jest.integration.config.cjs --runInBand\"",
     "test:references": "jest --runInBand --config jest.references.config.cjs",
     "test:unit": "jest --runInBand",
     "typecheck": "tsc --noEmit",
@@ -16,6 +27,8 @@
     "@types/jest": "29.5.14",
     "@types/node": "24.19.1",
     "eslint": "9.39.5",
+    "firebase-admin": "14.5.0",
+    "firebase-tools": "15.32.1",
     "jest": "29.7.0",
     "prettier": "3.9.9",
     "ts-jest": "29.4.14",
