@@ -1,6 +1,7 @@
 {
   "indexes": [],
   "fieldOverrides": [
+    { "collectionGroup": "categories", "fieldPath": "*", "indexes": [] },
     { "collectionGroup": "versions", "fieldPath": "*", "indexes": [] },
     { "collectionGroup": "shards", "fieldPath": "*", "indexes": [] }
   ]

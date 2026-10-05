@@ -1,5 +1,5 @@
 import type { Profile, ProfileRepository } from '../domain/ProfileRepository';
-import { PROFILE_DISPLAY_NAME_MAX_LENGTH } from '../domain/ProfileRepository';
+import { validateProfile } from './profileSchema';
 import { AppError } from '../../../core/errors/AppError';
 import { sdkErrorCode } from './mapAuthError';
 export interface ProfileSdk {
@@ -26,19 +26,6 @@ export class FirebaseProfileRepository implements ProfileRepository {
       throw mapProfileError(error);
     }
   }
-}
-function validateProfile(value: unknown): Profile {
-  if (
-    typeof value !== 'object' ||
-    value === null ||
-    !('displayName' in value) ||
-    typeof value.displayName !== 'string'
-  )
-    throw new AppError('invalid-profile');
-  const displayName = value.displayName.trim();
-  if (!displayName || displayName.length > PROFILE_DISPLAY_NAME_MAX_LENGTH)
-    throw new AppError('invalid-profile');
-  return { displayName };
 }
 function validateUid(uid: string): void {
   if (
