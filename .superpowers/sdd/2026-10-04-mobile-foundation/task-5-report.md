@@ -44,3 +44,15 @@ All focused commands were `npm run test:unit -- tests/application/auth-coordinat
 - `npm run lint` — exit 0, no lint findings.
 - `npm run format:check` — exit 0; `All matched files use Prettier code style!`.
 - No mobile presentation files changed; pure application tests cover this task. Native/runtime routing integration remains Task 8.
+
+## Review fix round 1
+
+Verified both review findings against the actual transition order using the receiving-code-review and systematic-debugging skills alongside TDD. Voluntary entry and account changes invalidated the pending restoration revision without arranging deletion of its unseen durable value. Separately, resolving observations did not hide an existing guest prompt/form or retain the chosen form for guest recovery.
+
+Added three delayed-read regression cases (both voluntary entry methods and an account switch) that instantiate a subsequent coordinator against the same store and detect stale callback replay. Added four prompt/sign-in/registration/password-reset cases asserting immediate suspension on resolving and the same guest selection and intent on recovery.
+
+`npm run test:unit -- tests/application/auth-coordinator.test.ts` RED: `7 failed, 36 passed, 43 total`. The three restart cases incorrectly resumed `stable-operation-7`; resolving cases retained the prompt or active form. After the fix: GREEN `43 passed, 43 total`.
+
+Fix: voluntary entry and account invalidation now schedule cache removal even before restoration populates an in-memory intent; account invalidation also disables restoration retry. Resolving immediately hides prompt/form, while the selected auth form is retained independently and restored only after guest resolution. No public API change; Task 6/8 continue rendering the existing snapshot and using retry/cancel.
+
+Post-fix `npm run typecheck` passed both strict tools/mobile checks; `npm run lint`, `npm run format:check`, and `git diff --check` passed. The full unit suite was not repeated, as instructed. Existing storage-outage limitations remain documented above.

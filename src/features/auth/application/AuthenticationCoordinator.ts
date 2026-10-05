@@ -61,7 +61,7 @@ export class AuthenticationCoordinator {
   private request: Promise<void> | null = null;
   private needsRestore = true;
   private needsClear = false;
-  private requestedScreen: 'signIn' | 'registration' | null = null;
+  private requestedScreen: Exclude<CoordinatorState['screen'], 'none'> | null = null;
   private knownUid: string | null = null;
 
   constructor(
@@ -125,12 +125,13 @@ export class AuthenticationCoordinator {
           (auth.status === 'authenticated' && this.knownUid !== auth.user.uid))
       ) {
         this.revision++;
+        this.needsRestore = false;
         const hadIntent = this.state.pendingIntent !== null;
         this.clearState();
         if (hadIntent) {
           this.handlers.returnTo({ type: 'home' });
-          void this.clearCache();
         }
+        void this.clearCache();
       }
       if (auth.status === 'authenticated') this.knownUid = auth.user.uid;
       else if (auth.status === 'guest') this.knownUid = null;
@@ -138,6 +139,7 @@ export class AuthenticationCoordinator {
         this.knownUid = auth.previousUid;
       this.update({
         auth,
+        ...(auth.status === 'resolving' ? { promptOpen: false, screen: 'none' as const } : {}),
         ...(auth.status === 'recoveryRequired'
           ? {
               promptOpen: false,
@@ -204,6 +206,7 @@ export class AuthenticationCoordinator {
   private async process(generation: number): Promise<void> {
     if (this.disposed || this.signingOut || generation !== this.generation) return;
     const { auth, pendingIntent, origin } = this.state;
+    if (auth.status === 'resolving') return;
     if (auth.status === 'recoveryRequired') {
       this.update({
         promptOpen: false,
@@ -238,10 +241,10 @@ export class AuthenticationCoordinator {
         this.clearState();
         this.handlers.returnTo(origin);
       }
-    } else if (pendingIntent && auth.status === 'guest' && this.state.screen === 'none') {
-      this.update({ promptOpen: true });
     } else if (origin && auth.status === 'guest' && this.requestedScreen) {
       this.choose(this.requestedScreen);
+    } else if (pendingIntent && auth.status === 'guest' && this.state.screen === 'none') {
+      this.update({ promptOpen: true });
     }
   }
 
@@ -297,8 +300,9 @@ export class AuthenticationCoordinator {
     }
   }
 
-  private choose(screen: CoordinatorState['screen']): void {
+  private choose(screen: Exclude<CoordinatorState['screen'], 'none'>): void {
     if (this.state.auth.status !== 'guest' || !this.state.origin || this.signingOut) return;
+    this.requestedScreen = screen;
     this.update({ screen, promptOpen: false });
   }
   chooseSignIn(): void {
@@ -316,6 +320,7 @@ export class AuthenticationCoordinator {
     if (this.disposed || this.signingOut || this.state.pendingIntent) return;
     this.revision++;
     this.needsRestore = false;
+    void this.clearCache();
     this.requestedScreen = screen;
     this.update({ origin: parsed.data });
     this.choose(screen);

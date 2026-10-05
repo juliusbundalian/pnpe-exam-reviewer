@@ -423,3 +423,73 @@ test('a failed sign in leaves the selected form and intent available for another
     id,
   );
 });
+
+test.each(['beginSignIn', 'beginRegistration'] as const)(
+  '%s during delayed restoration removes the superseded intent across restart',
+  async (entry) => {
+    const store = cachedAttempt();
+    const read = deferred<string | null>();
+    store.get.mockImplementationOnce(() => read.promise);
+    const h = createAuthHarness({ store });
+    await flushTransitions();
+    h.coordinator[entry]({ type: 'menu' });
+    read.resolve(store.values.get(INTENT_STORAGE_KEY) ?? null);
+    await h.emitAuthenticated('user-a');
+    expect(h.returnTo).toHaveBeenCalledWith({ type: 'menu' });
+    h.coordinator.dispose();
+    const restarted = createAuthHarness({
+      store,
+      state: { status: 'authenticated', user: authUser('user-a') },
+    });
+    await flushTransitions();
+    expect(restarted.resume).not.toHaveBeenCalled();
+    expect(store.values.size).toBe(0);
+  },
+);
+
+test('account change during delayed restoration clears the unseen intent across restart', async () => {
+  const store = cachedAttempt();
+  const read = deferred<string | null>();
+  store.get.mockImplementationOnce(() => read.promise);
+  const h = createAuthHarness({
+    store,
+    state: { status: 'authenticated', user: authUser('user-a') },
+  });
+  await flushTransitions();
+  h.repository.emit({ status: 'authenticated', user: authUser('user-b') });
+  read.resolve(store.values.get(INTENT_STORAGE_KEY) ?? null);
+  await flushTransitions();
+  h.coordinator.dispose();
+  const restarted = createAuthHarness({
+    store,
+    state: { status: 'authenticated', user: authUser('user-a') },
+  });
+  await flushTransitions();
+  expect(restarted.resume).not.toHaveBeenCalled();
+  expect(store.values.size).toBe(0);
+});
+
+test.each(['none', 'signIn', 'registration', 'passwordReset'] as const)(
+  'resolving suspends %s presentation then restores the guest selection',
+  async (screen) => {
+    const h = createAuthHarness();
+    await h.coordinator.requireAuthentication({ type: 'openProfile' }, { type: 'home' });
+    if (screen === 'signIn') h.coordinator.chooseSignIn();
+    if (screen === 'registration') h.coordinator.chooseRegistration();
+    if (screen === 'passwordReset') h.coordinator.choosePasswordReset();
+    const id = h.coordinator.getSnapshot().pendingIntent?.id;
+    h.repository.emit({ status: 'resolving' });
+    expect(h.coordinator.getSnapshot()).toMatchObject({
+      promptOpen: false,
+      screen: 'none',
+      pendingIntent: { id },
+    });
+    h.repository.emit({ status: 'guest' });
+    await flushTransitions();
+    expect(h.coordinator.getSnapshot()).toMatchObject({
+      promptOpen: screen === 'none',
+      screen,
+      pendingIntent: { id },
+    });
+  },
+);
