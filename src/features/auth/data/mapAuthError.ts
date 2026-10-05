@@ -18,5 +18,7 @@ const codes: Readonly<Record<string, AppErrorCode>> = {
   'auth/user-disabled': 'account-disabled',
 };
 export function mapAuthError(error: unknown): AppError {
-  return new AppError(codes[sdkErrorCode(error) ?? ''] ?? 'authentication-unavailable');
+  const code = sdkErrorCode(error) ?? '';
+  const mapped = Object.hasOwn(codes, code) ? codes[code] : undefined;
+  return new AppError(mapped ?? 'authentication-unavailable');
 }

@@ -9,6 +9,7 @@ import {
   type ProfileModularSdk,
 } from '../../src/features/auth/data/FirebaseProfileRepository';
 import type { AuthState } from '../../src/features/auth/domain/AuthenticationRepository';
+import { mapAuthError } from '../../src/features/auth/data/mapAuthError';
 
 const user = { uid: 'owner', email: 'user@example.test', displayName: null };
 function authAdapterHarness(error?: unknown) {
@@ -68,6 +69,23 @@ test.each([
     message: 'SECRET SDK DETAIL',
   });
   expect(h.observed).not.toContainEqual({ status: 'guest' });
+});
+test.each([
+  { code: 'toString' },
+  { code: 'constructor' },
+  { code: '__proto__' },
+  null,
+  undefined,
+  'SECRET SDK DETAIL',
+  42,
+  false,
+])('unknown external error %p maps to a typed friendly fallback', (error) => {
+  const mapped = mapAuthError(error);
+  expect(mapped).toMatchObject({
+    code: 'authentication-unavailable',
+    message: 'Authentication is unavailable. Please try again later.',
+    userMessage: 'Authentication is unavailable. Please try again later.',
+  });
 });
 test('observation distinguishes resolving, guest, authentication and recovery; unsubscribes', () => {
   const h = authAdapterHarness();
