@@ -3,12 +3,14 @@ import { useAppDependencies, useAuthentication, useConfig } from '../bootstrap/A
 import { ProtectedRoute } from './ProtectedRoute';
 import { FeatureAvailabilityScreen } from '../core/components/FeatureAvailabilityScreen';
 import { ProfileScreen } from '../features/auth/presentation/ProfileScreen';
+import { useSafeBack } from './useSafeBack';
 export function PersonalRoute({
   destination,
 }: {
   destination: 'profile' | 'progress' | 'bookmarks' | 'exam-history';
 }) {
   const router = useRouter();
+  const onBack = useSafeBack();
   const { profiles } = useAppDependencies();
   const { auth } = useAuthentication();
   const { features } = useConfig('config');
@@ -28,7 +30,7 @@ export function PersonalRoute({
   return (
     <ProtectedRoute action={action}>
       {destination === 'profile' && auth.status === 'authenticated' ? (
-        <ProfileScreen key={auth.user.uid} user={auth.user} profiles={profiles} />
+        <ProfileScreen key={auth.user.uid} user={auth.user} profiles={profiles} onBack={onBack} />
       ) : (
         <FeatureAvailabilityScreen
           title={

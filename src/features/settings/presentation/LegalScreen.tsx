@@ -4,7 +4,15 @@ import { schemas } from '../../../core/config/schemas';
 import { AppScreen } from '../../../core/components/AppScreen';
 import { AppText } from '../../../core/components/AppText';
 import { AppButton } from '../../../core/components/AppButton';
-export function LegalScreen({ title, url }: { title: string; url: string }) {
+export function LegalScreen({
+  title,
+  url,
+  onBack,
+}: {
+  title: string;
+  url: string;
+  onBack(): void;
+}) {
   const [failed, setFailed] = useState(false);
   const parsed = schemas.app_info.shape.termsUrl.safeParse(url);
   const valid = parsed.success && parsed.data !== '';
@@ -20,6 +28,7 @@ export function LegalScreen({ title, url }: { title: string; url: string }) {
   }
   return (
     <AppScreen>
+      <AppButton variant="text" label="Back" onPress={onBack} />
       <AppText variant="title">{title}</AppText>
       {valid ? (
         <>

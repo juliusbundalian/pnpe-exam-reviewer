@@ -1,8 +1,10 @@
 import { AppScreen } from '../../../core/components/AppScreen';
 import { AppText } from '../../../core/components/AppText';
-export function AboutScreen({ version }: { version: string }) {
+import { AppButton } from '../../../core/components/AppButton';
+export function AboutScreen({ version, onBack }: { version: string; onBack(): void }) {
   return (
     <AppScreen>
+      <AppButton variant="text" label="Back" onPress={onBack} />
       <AppText variant="title">About PNPE Exam Reviewer</AppText>
       <AppText>Version {version}</AppText>
       <AppText>

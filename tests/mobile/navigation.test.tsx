@@ -10,6 +10,47 @@ function harness(options: Parameters<typeof createAppHarness>[0] = {}) {
 afterEach(() => {
   harnesses.splice(0).forEach((h) => h.dispose());
 });
+test.each(['/auth/sign-in', '/auth/register', '/auth/forgot-password'])(
+  'already authenticated direct entry to %s returns to public Home',
+  async (url) => {
+    const h = harness({ initialAuth: { status: 'authenticated', user: authUser('alice') } });
+    const result = await h.render(url);
+    expect(await screen.findByText('Explore reviewers')).toBeVisible();
+    expect(result.getPathname()).toBe('/');
+    expect(screen.queryByText(/Authentication is being checked/)).toBeNull();
+  },
+);
+test('Profile opened from cold Menu has an accessible return even after tab replacement', async () => {
+  const h = harness({ initialAuth: { status: 'authenticated', user: authUser('alice') } });
+  const result = await h.render('/menu');
+  fireEvent.press(screen.getByRole('button', { name: 'Profile' }));
+  await waitFor(() => expect(result.getPathname()).toBe('/profile'));
+  fireEvent.press(await screen.findByRole('button', { name: 'Back' }));
+  expect(await screen.findByText('Explore reviewers')).toBeVisible();
+  expect(result.getPathname()).toBe('/');
+});
+test.each([
+  ['/profile', '/'],
+  ['/appearance', '/'],
+  ['/about', '/'],
+  ['/privacy', '/'],
+  ['/terms', '/'],
+  ['/review/generalInformation', '/review'],
+  ['/review/generalInformation/constitutionAndLaws', '/review'],
+])('direct entry to %s has an accessible return with a safe fallback', async (url, fallback) => {
+  const h = harness({ initialAuth: { status: 'authenticated', user: authUser('alice') } });
+  const result = await h.render(url);
+  fireEvent.press(await screen.findByRole('button', { name: 'Back' }));
+  await waitFor(() => expect(result.getPathname()).toBe(fallback));
+});
+test('public settings return to the preceding screen when history exists', async () => {
+  const h = harness();
+  const result = await h.render('/menu');
+  fireEvent.press(screen.getByRole('button', { name: 'Appearance' }));
+  await waitFor(() => expect(result.getPathname()).toBe('/appearance'));
+  fireEvent.press(screen.getByRole('button', { name: 'Back' }));
+  await waitFor(() => expect(result.getPathname()).toBe('/menu'));
+});
 test('guest cold launch opens Home without Login', async () => {
   const h = harness();
   await h.render('/');

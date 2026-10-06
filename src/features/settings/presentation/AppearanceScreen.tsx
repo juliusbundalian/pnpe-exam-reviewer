@@ -3,11 +3,12 @@ import { useTheme } from '../../../core/theme/ThemeProvider';
 import { AppScreen } from '../../../core/components/AppScreen';
 import { AppText } from '../../../core/components/AppText';
 import { AppButton } from '../../../core/components/AppButton';
-export function AppearanceScreen() {
+export function AppearanceScreen({ onBack }: { onBack(): void }) {
   const { appearance, setAppearance } = useTheme();
   const [error, setError] = useState(false);
   return (
     <AppScreen>
+      <AppButton variant="text" label="Back" onPress={onBack} />
       <AppText variant="title">Appearance</AppText>
       {(['system', 'light', 'dark'] as const).map((value) => (
         <AppButton

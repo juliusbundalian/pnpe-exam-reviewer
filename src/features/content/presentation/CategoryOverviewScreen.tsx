@@ -32,6 +32,7 @@ export function CategoryOverviewScreen({
     );
   return (
     <AppScreen>
+      {category ? <AppButton variant="text" label="Back" onPress={onBack} /> : null}
       <AppText variant="title">{category?.label ?? 'Reviewers'}</AppText>
       <AppText>
         Study all eligible published questions in this category, with the correct answer and

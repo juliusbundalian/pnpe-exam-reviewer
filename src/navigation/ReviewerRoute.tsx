@@ -8,6 +8,7 @@ import { SubcategoryOverviewScreen } from '../features/content/presentation/Subc
 import { FeatureAvailabilityScreen } from '../core/components/FeatureAvailabilityScreen';
 import { ProtectedRoute } from './ProtectedRoute';
 import { startBlock } from './startAvailability';
+import { useSafeBack } from './useSafeBack';
 export function ReviewerRoute() {
   const params = useLocalSearchParams<{
     categoryId?: string;
@@ -15,6 +16,7 @@ export function ReviewerRoute() {
     stage?: string;
   }>();
   const router = useRouter();
+  const onBack = useSafeBack({ type: 'reviewerOverview' });
   const { categories } = useAppDependencies();
   const navigation = useAppNavigation();
   const config = useConfig('app_info');
@@ -33,7 +35,6 @@ export function ReviewerRoute() {
   }, [categories]);
   const category = taxonomy.find((entry) => entry.id === params.categoryId);
   const child = category?.subcategories.find((entry) => entry.id === params.subcategoryId);
-  const onBack = () => router.replace('/review');
   if ((params.categoryId && !category) || (params.subcategoryId && !child))
     return <FeatureAvailabilityScreen title="Not Found" onBack={onBack} />;
   const action = category
@@ -58,6 +59,7 @@ export function ReviewerRoute() {
     return (
       <SubcategoryOverviewScreen
         title={child.label}
+        onBack={onBack}
         blocked={blocked}
         availability={
           overview?.subcategories.find((entry) => entry.subcategoryId === child.id)

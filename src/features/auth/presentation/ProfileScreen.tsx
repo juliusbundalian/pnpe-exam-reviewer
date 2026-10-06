@@ -4,7 +4,15 @@ import type { Profile, ProfileRepository } from '../domain/ProfileRepository';
 import { AppScreen } from '../../../core/components/AppScreen';
 import { AppText } from '../../../core/components/AppText';
 import { AppButton } from '../../../core/components/AppButton';
-export function ProfileScreen({ user, profiles }: { user: AuthUser; profiles: ProfileRepository }) {
+export function ProfileScreen({
+  user,
+  profiles,
+  onBack,
+}: {
+  user: AuthUser;
+  profiles: ProfileRepository;
+  onBack(): void;
+}) {
   const [attempt, setAttempt] = useState(0);
   const [state, setState] = useState<{
     uid: string;
@@ -29,6 +37,7 @@ export function ProfileScreen({ user, profiles }: { user: AuthUser; profiles: Pr
   const status = state.uid === user.uid ? state.status : 'loading';
   return (
     <AppScreen>
+      <AppButton variant="text" label="Back" onPress={onBack} />
       <AppText variant="title">Profile</AppText>
       <AppText>{user.email ?? 'No email is available.'}</AppText>
       <AppText>Account ID: {user.uid}</AppText>

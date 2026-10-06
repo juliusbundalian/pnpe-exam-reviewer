@@ -1,4 +1,4 @@
-import { Slot } from 'expo-router';
+import { Stack } from 'expo-router';
 import { act, renderRouter } from 'expo-router/testing-library';
 import { ThemeProvider } from '../../src/core/theme/ThemeProvider';
 import { AppProviders } from '../../src/bootstrap/AppProviders';
@@ -92,7 +92,7 @@ export function createAppHarness({
             _layout: () => (
               <ThemeProvider storage={storage}>
                 <AppProviders dependencies={dependencies}>
-                  <Slot />
+                  <Stack screenOptions={{ headerShown: false }} />
                 </AppProviders>
               </ThemeProvider>
             ),

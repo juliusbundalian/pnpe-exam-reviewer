@@ -8,17 +8,20 @@ import type { Availability } from '../domain/CategoryRepository';
 export function SubcategoryOverviewScreen({
   title,
   onStart,
+  onBack,
   blocked,
   availability,
 }: {
   title: string;
   onStart(target: AccessibilityFocusTarget | null): void;
+  onBack(): void;
   blocked: string | null;
   availability?: Availability;
 }) {
   const target = useRef<View | null>(null);
   return (
     <AppScreen>
+      <AppButton variant="text" label="Back" onPress={onBack} />
       <AppText variant="title">{title}</AppText>
       <AppText>
         Study all eligible published questions in this subcategory. Correct answers and explanations
