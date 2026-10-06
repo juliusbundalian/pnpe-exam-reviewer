@@ -1,7 +1,12 @@
-import { screen, fireEvent, act } from 'expo-router/testing-library';
+import { screen, fireEvent, act, renderRouter, within, waitFor } from 'expo-router/testing-library';
+import { Stack } from 'expo-router';
+import { ScrollView, StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { AppProviders } from '../../src/bootstrap/AppProviders';
+import { ThemeProvider } from '../../src/core/theme/ThemeProvider';
 import { createAppHarness } from '../fixtures/app-harness';
 import { defaults } from '../../src/core/config/defaults';
-import { deferred } from '../fixtures/auth-harness';
+import { deferred, flushTransitions } from '../fixtures/auth-harness';
 import type { NativeServices } from '../../src/core/firebase/native';
 const harnesses: ReturnType<typeof createAppHarness>[] = [];
 function harness(options: Parameters<typeof createAppHarness>[0]) {
@@ -51,4 +56,86 @@ test('Home observes validated config changes instead of hardcoded presentation c
     await h.dependencies.config.refresh();
   });
   expect(await screen.findByText(/150 questions · 90 minutes/)).toBeVisible();
+});
+
+async function renderDarkRecovery(h: ReturnType<typeof createAppHarness>) {
+  const result = renderRouter(
+    {
+      appDir: `${process.cwd()}/src/app`,
+      overrides: {
+        _layout: () => (
+          <ThemeProvider initialAppearance="dark">
+            <AppProviders dependencies={h.dependencies}>
+              <Stack screenOptions={{ headerShown: false }} />
+            </AppProviders>
+          </ThemeProvider>
+        ),
+      },
+    },
+    { initialUrl: '/' },
+  );
+  await act(flushTransitions);
+  return result;
+}
+
+function expectRecoveryLayout(message: RegExp) {
+  const notice = screen.getByTestId('app-recovery-notices');
+  expect(notice).toHaveStyle({
+    backgroundColor: '#101925',
+    maxHeight: '40%',
+    flexShrink: 1,
+  });
+  const safeArea = screen
+    .UNSAFE_getAllByType(SafeAreaView)
+    .find((view) => view.props.testID === 'app-recovery-notices');
+  expect(safeArea?.props.edges).toEqual(['top', 'left', 'right']);
+  const scroll = screen
+    .UNSAFE_getAllByType(ScrollView)
+    .find((view) => view.props.testID === 'app-recovery-notices-scroll');
+  expect(scroll).toBeDefined();
+  expect(StyleSheet.flatten(scroll?.props.contentContainerStyle)).toEqual(
+    expect.objectContaining({ padding: 12, gap: 8 }),
+  );
+  expect(scroll?.props.keyboardShouldPersistTaps).toBe('handled');
+  const alert = within(notice).getByRole('alert');
+  expect(alert).toHaveTextContent(message);
+  expect(alert).toHaveStyle({ color: '#eef3fc' });
+  expect(alert.props.allowFontScaling).toBe(true);
+  expect(alert.props.numberOfLines).toBeUndefined();
+}
+
+test('auth recovery has a themed safe-area scroll region and retry preserves public Home', async () => {
+  const h = harness({ initialAuth: { status: 'recoveryRequired', previousUid: 'alice' } });
+  await renderDarkRecovery(h);
+  expectRecoveryLayout(/Authentication is unavailable/);
+  expect(screen.getByRole('button', { name: 'Explore reviewers' })).toBeVisible();
+  h.auth.state = { status: 'guest' };
+  fireEvent.press(screen.getByRole('button', { name: 'Retry authentication' }));
+  await waitFor(() => expect(screen.queryByTestId('app-recovery-notices')).toBeNull());
+  expect(h.dependencies.coordinator.getSnapshot().auth.status).toBe('guest');
+  expect(screen.getByRole('button', { name: 'Explore reviewers' })).toBeVisible();
+});
+
+test('profile recovery uses the same safe-area scroll region and retry saves the profile only', async () => {
+  const h = harness({ profileFailure: true });
+  await renderDarkRecovery(h);
+  await act(async () => {
+    await h.dependencies.registration.register('alice@example.test', 'Passw0rd!xx', 'Alice');
+    await flushTransitions();
+  });
+  expectRecoveryLayout(/Your account is ready, but your profile could not be saved/);
+  h.profiles.save.mockResolvedValueOnce(undefined);
+  fireEvent.press(screen.getByRole('button', { name: 'Retry Profile Save' }));
+  await waitFor(() => expect(screen.queryByTestId('app-recovery-notices')).toBeNull());
+  expect(h.auth.register).toHaveBeenCalledTimes(1);
+  expect(h.profiles.save).toHaveBeenCalledTimes(2);
+  expect(screen.getByRole('button', { name: 'Explore reviewers' })).toBeVisible();
+});
+
+test('healthy composition adds no recovery region or empty safe-area padding', async () => {
+  const h = harness({});
+  await renderDarkRecovery(h);
+  expect(screen.queryByTestId('app-recovery-notices')).toBeNull();
+  expect(screen.queryByTestId('app-recovery-notices-scroll')).toBeNull();
+  expect(screen.getByRole('button', { name: 'Explore reviewers' })).toBeVisible();
 });

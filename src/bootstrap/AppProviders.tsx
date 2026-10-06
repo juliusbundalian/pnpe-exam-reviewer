@@ -11,6 +11,7 @@ import { usePathname, useRouter } from 'expo-router';
 import type { AccessibilityFocusTarget } from '../core/components/AppModal';
 import { AppText } from '../core/components/AppText';
 import { AppButton } from '../core/components/AppButton';
+import { RecoveryNotices } from './RecoveryNotices';
 import { AuthRequiredModal } from '../features/auth/presentation/AuthRequiredModal';
 import type { ProtectedAction, SafeOrigin } from '../features/auth/application/intents';
 import { actionDestination, originDestination, publicOrigin } from '../navigation/destinations';
@@ -109,31 +110,35 @@ export function AppProviders({
           },
         }}
       >
-        {state.recoveryMessage ? (
-          <>
-            <AppText accessibilityRole="alert">{state.recoveryMessage}</AppText>
-            <AppButton
-              variant="text"
-              label="Retry authentication"
-              onPress={() => {
-                void dependencies.coordinator.retry();
-              }}
-            />
-          </>
-        ) : null}
-        {registration.status === 'profileRecovery' ? (
-          <>
-            <AppText accessibilityRole="alert">
-              Your account is ready, but your profile could not be saved. {registration.message}
-            </AppText>
-            <AppButton
-              variant="secondary"
-              label="Retry Profile Save"
-              onPress={() => {
-                void dependencies.registration.retryProfile();
-              }}
-            />
-          </>
+        {state.recoveryMessage || registration.status === 'profileRecovery' ? (
+          <RecoveryNotices>
+            {state.recoveryMessage ? (
+              <>
+                <AppText accessibilityRole="alert">{state.recoveryMessage}</AppText>
+                <AppButton
+                  variant="text"
+                  label="Retry authentication"
+                  onPress={() => {
+                    void dependencies.coordinator.retry();
+                  }}
+                />
+              </>
+            ) : null}
+            {registration.status === 'profileRecovery' ? (
+              <>
+                <AppText accessibilityRole="alert">
+                  Your account is ready, but your profile could not be saved. {registration.message}
+                </AppText>
+                <AppButton
+                  variant="secondary"
+                  label="Retry Profile Save"
+                  onPress={() => {
+                    void dependencies.registration.retryProfile();
+                  }}
+                />
+              </>
+            ) : null}
+          </RecoveryNotices>
         ) : null}
         {children}
         <AuthRequiredModal
