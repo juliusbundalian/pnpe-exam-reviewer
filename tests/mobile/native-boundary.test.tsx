@@ -172,6 +172,53 @@ test('emulator services use the isolated SDK app and explicit local ports, never
   });
 });
 
+test('emulator options pass the installed native SDK validation before creating isolated services', async () => {
+  const createNativeApp = jest.fn(async () => {});
+  jest.doMock('@react-native-firebase/app/dist/module/internal/registry/nativeModule', () => ({
+    getAppModule: () => ({ initializeApp: createNativeApp }),
+  }));
+  jest.doMock('@react-native-firebase/app', () => {
+    const registry = jest.requireActual<{
+      initializeApp: typeof import('@react-native-firebase/app').initializeApp;
+    }>('@react-native-firebase/app/dist/module/internal/registry/app');
+    return {
+      initializeApp: registry.initializeApp,
+      getApp: () => {
+        throw new Error('Emulator services must never use the default app');
+      },
+    };
+  });
+  jest.doMock('@react-native-firebase/auth', () => ({
+    getAuth: (app: unknown) => ({ app }),
+    connectAuthEmulator: jest.fn(),
+  }));
+  jest.doMock('@react-native-firebase/firestore', () => ({
+    getFirestore: (app: unknown) => ({ app }),
+    connectFirestoreEmulator: jest.fn(),
+  }));
+  await jest.isolateModulesAsync(async () => {
+    const native = await import('../../src/core/firebase/native');
+    const services = await native.initializeNativeFirebase({
+      mode: 'emulator',
+      projectId: 'demo-pnpe',
+      emulatorHost: '10.0.2.2',
+    });
+    expect(services).toMatchObject({
+      available: true,
+      auth: { app: { name: 'pnpe-emulator', options: { projectId: 'demo-pnpe' } } },
+      firestore: { app: { name: 'pnpe-emulator', options: { projectId: 'demo-pnpe' } } },
+      remoteConfigMode: 'emulator-defaults-not-live',
+    });
+    expect(createNativeApp).toHaveBeenCalledWith(
+      expect.objectContaining({
+        databaseURL: 'http://10.0.2.2:9000?ns=demo-pnpe',
+        storageBucket: 'demo-pnpe.appspot.com',
+      }),
+      { name: 'pnpe-emulator', automaticDataCollectionEnabled: false },
+    );
+  });
+});
+
 test('live Remote Config applies defaults and timeout and returns raw strings for repository validation', async () => {
   const app = { name: '[DEFAULT]', options: { projectId: 'owner-project' } };
   const config = {

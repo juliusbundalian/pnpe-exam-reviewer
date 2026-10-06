@@ -58,6 +58,10 @@ async function initialize(environment: FirebaseEnvironment): Promise<NativeServi
             appId: `1:1234567890:${Platform.OS === 'ios' ? 'ios' : 'android'}:0123456789abcdef`,
             apiKey: 'demo-pnpe-emulator-only',
             messagingSenderId: '1234567890',
+            // RNFirebase requires Database/Storage metadata for native app creation.
+            // These services are unused; the URL and bucket identify only the demo project.
+            databaseURL: `http://${environment.emulatorHost}:9000?ns=demo-pnpe`,
+            storageBucket: 'demo-pnpe.appspot.com',
           },
           { name: 'pnpe-emulator', automaticDataCollectionEnabled: false },
         )
