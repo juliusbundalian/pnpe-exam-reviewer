@@ -69,18 +69,25 @@ test('boundary scanner catches imports, exports and dynamic imports but ignores 
       import type { Auth } from '@react-native-firebase/auth';
       export { value } from 'firebase-admin/app';
       const tool = import('../../../../tools/questions/cli');
+      export { other } from '../../../../tools/other';
+      void import('../../../../tools');
+      import { publicValue } from '../../../core/firebase/publicValue';
     `,
     );
-    expect(findForbiddenImports(root, ['firebase-admin', 'tools/questions'])).toHaveLength(3);
+    expect(findForbiddenImports(root, ['firebase-admin', 'tools'])).toEqual([
+      'features/auth/presentation/Example.tsx: @react-native-firebase/auth',
+      'features/auth/presentation/Example.tsx: firebase-admin/app',
+      'features/auth/presentation/Example.tsx: ../../../../tools/questions/cli',
+      'features/auth/presentation/Example.tsx: ../../../../tools/other',
+      'features/auth/presentation/Example.tsx: ../../../../tools',
+    ]);
   } finally {
     rmSync(root, { recursive: true });
   }
 });
 
-test('mobile source never imports Admin SDK or question tooling; native SDK stays in adapters', () => {
-  expect(findForbiddenImports('src', ['firebase-admin', 'firebase', 'tools/questions'])).toEqual(
-    [],
-  );
+test('mobile source never imports Admin SDK or repository tooling; native SDK stays in adapters', () => {
+  expect(findForbiddenImports('src', ['firebase-admin', 'firebase', 'tools'])).toEqual([]);
 });
 
 test.each([
@@ -129,4 +136,62 @@ test('ESLint rejects dynamic data imports in presentation', () => {
   );
   const [result] = JSON.parse(run.stdout) as { messages: { ruleId: string }[] }[];
   expect(result?.messages.some((message) => message.ruleId === 'no-restricted-syntax')).toBe(true);
+});
+
+test.each([
+  ['src/core/Example.ts', '../../tools/other', 'static'],
+  ['src/core/Example.ts', '../../tools/other', 'dynamic'],
+  ['src/core/Example.ts', '../../tools', 'static'],
+  ['src/core/firebase/Example.ts', '../../../tools/other', 'dynamic'],
+  ['src/features/auth/data/Example.ts', '../../../../tools/other', 'dynamic'],
+  ['src/features/auth/domain/Example.ts', 'react', 'dynamic'],
+  ['src/features/auth/domain/Example.ts', 'react-native', 'dynamic'],
+  ['src/features/auth/application/Example.ts', 'expo-router', 'dynamic'],
+])('ESLint rejects %s importing %s (%s)', (filePath, dependency, kind) => {
+  const run = spawnSync(
+    process.execPath,
+    [
+      'node_modules/eslint/bin/eslint.js',
+      '--stdin',
+      '--stdin-filename',
+      filePath,
+      '--format',
+      'json',
+    ],
+    {
+      input:
+        kind === 'static'
+          ? `export { value } from '${dependency}';`
+          : `void import('${dependency}');`,
+      encoding: 'utf8',
+    },
+  );
+  const [result] = JSON.parse(run.stdout) as { messages: { ruleId: string }[] }[];
+  expect(result?.messages.map((message) => message.ruleId)).toContain(
+    kind === 'static' ? 'no-restricted-imports' : 'no-restricted-syntax',
+  );
+});
+
+test.each([
+  ['src/core/firebase/Example.ts', '@react-native-firebase/auth'],
+  ['src/features/auth/data/Example.ts', '@react-native-firebase/firestore'],
+  ['src/features/auth/presentation/Example.tsx', '../../../core/firebase/publicValue'],
+])('ESLint permits infrastructure dependency in %s: %s', (filePath, dependency) => {
+  for (const input of [`export { value } from '${dependency}';`, `void import('${dependency}');`]) {
+    const run = spawnSync(
+      process.execPath,
+      [
+        'node_modules/eslint/bin/eslint.js',
+        '--stdin',
+        '--stdin-filename',
+        filePath,
+        '--format',
+        'json',
+      ],
+      { input, encoding: 'utf8' },
+    );
+    const [result] = JSON.parse(run.stdout) as { messages: { ruleId: string }[] }[];
+    expect(result?.messages).toEqual([]);
+    expect(run.status).toBe(0);
+  }
 });

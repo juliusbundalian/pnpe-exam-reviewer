@@ -24,12 +24,16 @@ export default tseslint.config(
           patterns: [
             { regex: '^firebase-admin/' },
             { regex: '^firebase/' },
-            { group: ['**/tools/**'] },
+            { regex: '(^|/)tools(/|$)' },
           ],
         },
       ],
       'no-restricted-syntax': [
         'error',
+        {
+          selector: 'ImportExpression[source.value=/(^|\\/)tools(\\/|$)/]',
+          message: 'Mobile code must not load repository developer tools.',
+        },
         {
           selector: 'ImportExpression[source.value=/^firebase(-admin)?(\\/|$)/]',
           message: 'Mobile code must not load Admin or web Firebase SDKs.',
@@ -43,6 +47,10 @@ export default tseslint.config(
     rules: {
       'no-restricted-syntax': [
         'error',
+        {
+          selector: 'ImportExpression[source.value=/(^|\\/)tools(\\/|$)/]',
+          message: 'Mobile code must not load repository developer tools.',
+        },
         {
           selector: 'ImportExpression[source.value=/^firebase(-admin)?(\\/|$)/]',
           message: 'Mobile code must not load Admin or web Firebase SDKs.',
@@ -60,7 +68,7 @@ export default tseslint.config(
             { regex: '^firebase-admin/' },
             { regex: '^firebase/' },
             { regex: '^@react-native-firebase/' },
-            { group: ['**/tools/**'] },
+            { regex: '(^|/)tools(/|$)' },
           ],
         },
       ],
@@ -71,6 +79,10 @@ export default tseslint.config(
     rules: {
       'no-restricted-syntax': [
         'error',
+        {
+          selector: 'ImportExpression[source.value=/(^|\\/)tools(\\/|$)/]',
+          message: 'Mobile code must not load repository developer tools.',
+        },
         {
           selector: 'ImportExpression[source.value=/^firebase(-admin)?(\\/|$)/]',
           message: 'Mobile code must not load Admin or web Firebase SDKs.',
@@ -91,7 +103,8 @@ export default tseslint.config(
           patterns: [
             { regex: '^firebase(-admin)?/' },
             { regex: '^@react-native-firebase/' },
-            { group: ['**/tools/**', '**/data/**'] },
+            { regex: '(^|/)tools(/|$)' },
+            { group: ['**/data/**'] },
           ],
         },
       ],
@@ -102,6 +115,14 @@ export default tseslint.config(
     rules: {
       'no-restricted-syntax': [
         'error',
+        {
+          selector: 'ImportExpression[source.value=/^(react|react-native|expo-router)$/]',
+          message: 'Domain/application code cannot depend on UI packages.',
+        },
+        {
+          selector: 'ImportExpression[source.value=/(^|\\/)tools(\\/|$)/]',
+          message: 'Mobile code must not load repository developer tools.',
+        },
         {
           selector: 'ImportExpression[source.value=/^firebase(-admin)?(\\/|$)/]',
           message: 'Mobile code must not load Admin or web Firebase SDKs.',
@@ -123,7 +144,8 @@ export default tseslint.config(
           patterns: [
             { regex: '^firebase(-admin)?/' },
             { regex: '^@react-native-firebase/' },
-            { group: ['**/tools/**', '**/data/**', '**/presentation/**', '**/components/**'] },
+            { regex: '(^|/)tools(/|$)' },
+            { group: ['**/data/**', '**/presentation/**', '**/components/**'] },
           ],
         },
       ],
