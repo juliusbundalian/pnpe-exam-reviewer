@@ -8,3 +8,6 @@ evidence/
 data/generated/
 .venv/
 venv/
+ios/
+android/
+.expo/

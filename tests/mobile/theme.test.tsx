@@ -2,6 +2,7 @@ import { act, fireEvent, render, screen, waitFor } from '@testing-library/react-
 import { Pressable, Text, useColorScheme } from 'react-native';
 import { ThemeProvider, useTheme } from '../../src/core/theme/ThemeProvider';
 import type { KeyValueStore } from '../../src/core/storage/KeyValueStore';
+import { deferred } from '../fixtures/auth-harness';
 
 jest.mock('react-native/Libraries/Utilities/useColorScheme', () => ({
   __esModule: true,
@@ -36,6 +37,44 @@ function memoryStore(value: string | null = null): KeyValueStore {
     },
   };
 }
+
+test('rapid appearance choices serialize writes and a rejected write does not poison later choices', async () => {
+  const pending = deferred<void>();
+  const persisted: string[] = [];
+  let choose!: ReturnType<typeof useTheme>['setAppearance'];
+  function QueueProbe() {
+    const theme = useTheme();
+    choose = theme.setAppearance;
+    return <Text>{theme.appearance}</Text>;
+  }
+  const storage = memoryStore();
+  storage.set = async (_key, value) => {
+    persisted.push(JSON.parse(value).appearance as string);
+    if (persisted.length === 1) await pending.promise;
+  };
+  render(
+    <ThemeProvider storage={storage}>
+      <QueueProbe />
+    </ThemeProvider>,
+  );
+  let first!: Promise<void>;
+  let second!: Promise<void>;
+  await act(async () => {
+    first = choose('dark').catch(() => undefined);
+    second = choose('light');
+    await Promise.resolve();
+  });
+  expect(screen.getByText('light')).toBeVisible();
+  expect(persisted).toEqual(['dark']);
+  await act(async () => {
+    pending.reject(new Error('disk unavailable'));
+    await first;
+    await second;
+  });
+  expect(persisted).toEqual(['dark', 'light']);
+  await act(async () => choose('system'));
+  expect(persisted).toEqual(['dark', 'light', 'system']);
+});
 
 test('dark choice persists a versioned value and restores on another mount', async () => {
   const storage = memoryStore();

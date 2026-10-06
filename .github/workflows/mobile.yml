@@ -1,0 +1,33 @@
+name: Mobile foundation
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm run format:check
+      - run: npm run test:unit
+      - run: npm run test:mobile
+      - run: npm run test:emulator
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: /nonexistent/pnpe-emulator-no-adc.json
+      - run: npx expo install --check
+      - run: npx expo-doctor
+# No native credentials, deployment, remote EAS build, or production writes.
+# Device and screen-reader acceptance is a separate mandatory local gate.

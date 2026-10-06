@@ -8,6 +8,9 @@ export default tseslint.config(
       'references/**',
       '.superpowers/**',
       '.worktrees/**',
+      'ios/**',
+      'android/**',
+      '.expo/**',
     ],
   },
   ...tseslint.configs.recommended,
@@ -58,6 +61,69 @@ export default tseslint.config(
             { regex: '^firebase/' },
             { regex: '^@react-native-firebase/' },
             { group: ['**/tools/**'] },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    files: ['src/features/**/{domain,application,presentation}/**/*.{ts,tsx}'],
+    rules: {
+      'no-restricted-syntax': [
+        'error',
+        {
+          selector: 'ImportExpression[source.value=/^firebase(-admin)?(\\/|$)/]',
+          message: 'Mobile code must not load Admin or web Firebase SDKs.',
+        },
+        {
+          selector: 'ImportExpression[source.value=/^@react-native-firebase\\//]',
+          message: 'Native Firebase belongs in infrastructure adapters.',
+        },
+        {
+          selector: 'ImportExpression[source.value=/(^|\\/)(data|tools)\\//]',
+          message: 'Use domain ports instead of importing data adapters or developer tools.',
+        },
+      ],
+      'no-restricted-imports': [
+        'error',
+        {
+          paths: ['firebase-admin', 'firebase'],
+          patterns: [
+            { regex: '^firebase(-admin)?/' },
+            { regex: '^@react-native-firebase/' },
+            { group: ['**/tools/**', '**/data/**'] },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    files: ['src/features/**/{domain,application}/**/*.{ts,tsx}'],
+    rules: {
+      'no-restricted-syntax': [
+        'error',
+        {
+          selector: 'ImportExpression[source.value=/^firebase(-admin)?(\\/|$)/]',
+          message: 'Mobile code must not load Admin or web Firebase SDKs.',
+        },
+        {
+          selector: 'ImportExpression[source.value=/^@react-native-firebase\\//]',
+          message: 'Native Firebase belongs in infrastructure adapters.',
+        },
+        {
+          selector:
+            'ImportExpression[source.value=/(^|\\/)(data|tools|presentation|components)\\//]',
+          message: 'Domain/application code cannot depend on adapters or UI.',
+        },
+      ],
+      'no-restricted-imports': [
+        'error',
+        {
+          paths: ['firebase-admin', 'firebase', 'react', 'react-native', 'expo-router'],
+          patterns: [
+            { regex: '^firebase(-admin)?/' },
+            { regex: '^@react-native-firebase/' },
+            { group: ['**/tools/**', '**/data/**', '**/presentation/**', '**/components/**'] },
           ],
         },
       ],

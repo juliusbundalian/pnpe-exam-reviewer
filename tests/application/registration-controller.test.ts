@@ -9,6 +9,38 @@ function harness() {
   controller.synchronizeAuth({ status: 'guest' });
   return { auth, profiles, controller };
 }
+test.each([
+  ['guest', false],
+  ['guest', true],
+  ['other-account', false],
+  ['other-account', true],
+] as const)(
+  'late profile save after %s cannot restore old account state, failure=%s',
+  async (transition, failure) => {
+    const { auth, profiles, controller } = harness();
+    const pending = deferred<void>();
+    profiles.save.mockImplementation(() => pending.promise);
+    auth.register.mockImplementation(async () => {
+      controller.synchronizeAuth({ status: 'authenticated', user: authUser('user-a') });
+      return authUser('user-a');
+    });
+    const work = controller.register('person@example.test', 'secret', 'Person');
+    await Promise.resolve();
+    expect(profiles.save).toHaveBeenCalledTimes(1);
+    controller.synchronizeAuth(
+      transition === 'guest'
+        ? { status: 'guest' }
+        : { status: 'authenticated', user: authUser('user-b') },
+    );
+    if (failure) pending.reject(new Error('offline'));
+    else pending.resolve();
+    await work;
+    expect(controller.getSnapshot()).toMatchObject({ status: 'idle', user: null });
+    await controller.retryProfile();
+    expect(profiles.save).toHaveBeenCalledTimes(1);
+    controller.dispose();
+  },
+);
 test('account creation survives observer navigation and failed profile save retries only profile', async () => {
   const { auth, profiles, controller } = harness();
   auth.register.mockImplementation(async () => {

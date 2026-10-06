@@ -210,3 +210,41 @@ test('live Remote Config applies defaults and timeout and returns raw strings fo
     expect(fetchAndActivate).toHaveBeenCalledTimes(1);
   });
 });
+
+test.each([true, false])(
+  'configured native initialization checks project before Auth/Firestore, match=%s',
+  async (matches) => {
+    const app = { name: '[DEFAULT]', options: { projectId: 'owner-project' } };
+    const auth = { app };
+    const firestore = { app };
+    const getAuth = jest.fn(() => auth);
+    const getFirestore = jest.fn(() => firestore);
+    jest.doMock('@react-native-firebase/app', () => ({ getApp: () => app }));
+    jest.doMock('@react-native-firebase/auth', () => ({ getAuth }));
+    jest.doMock('@react-native-firebase/firestore', () => ({ getFirestore }));
+    jest.doMock('@react-native-firebase/remote-config', () => ({
+      getRemoteConfig: () => ({ app, defaultConfig: {}, settings: {} }),
+    }));
+    await jest.isolateModulesAsync(async () => {
+      const native = await import('../../src/core/firebase/native');
+      const result = native.initializeNativeFirebase({
+        mode: 'configured',
+        projectId: matches ? 'owner-project' : 'wrong-project',
+      });
+      if (matches) {
+        await expect(result).resolves.toMatchObject({
+          available: true,
+          auth,
+          firestore,
+          remoteConfigMode: 'live',
+        });
+        expect(getAuth).toHaveBeenCalledWith(app);
+        expect(getFirestore).toHaveBeenCalledWith(app);
+      } else {
+        await expect(result).rejects.toThrow('Firebase project does not match');
+        expect(getAuth).not.toHaveBeenCalled();
+        expect(getFirestore).not.toHaveBeenCalled();
+      }
+    });
+  },
+);

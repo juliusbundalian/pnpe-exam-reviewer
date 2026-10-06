@@ -212,6 +212,10 @@ test('storage and network failures preserve usable values and notify successful 
   expect(updates).toBeGreaterThan(0);
   unsubscribe();
   const before = updates;
+  remote.parameters.config = JSON.stringify(defaults.config);
+  await repo.refresh();
+  expect(repo.get('config').reviewer.shuffleQuestions).toBe(true);
+  expect(updates).toBe(before);
   remote.failFetch = true;
   await repo.refresh();
   expect(updates).toBe(before);
@@ -278,6 +282,22 @@ test('rejects oversized UTF-8 payloads before parsing, bounded text and arrays',
       }),
     ),
   ).toThrow(AppError);
+});
+
+test('valid multibyte JSON is bounded by UTF-8 bytes rather than character count', () => {
+  const payload = (character: string) =>
+    JSON.stringify({
+      ...defaults.data,
+      studyTips: Array.from({ length: 14 }, (_, i) => ({
+        id: String(i),
+        title: 'Tip',
+        body: character.repeat(10000),
+      })),
+    });
+  expect(parseParameter('data', payload('a')).studyTips).toHaveLength(14);
+  expect(payload('é').length).toBeLessThan(262144);
+  expect(Buffer.byteLength(payload('é'), 'utf8')).toBeGreaterThan(262144);
+  expect(() => parseParameter('data', payload('é'))).toThrow(AppError);
 });
 
 test('required scalar fields reject unsupported values while additive fields are ignored', () => {
