@@ -243,18 +243,69 @@ The unavailable-auth notice appears against/over the status bar in these images;
 safe-area placement needs a dedicated visual check. No runtime fix was inferred
 from the uncontrolled interaction sequence.
 
-Device automation stopped once shared user ownership was confirmed. The running
-app and Metro at localhost:8081 were left available for the user's testing.
-Guest/authenticated cold Home, controlled public browsing, prompt cancellation,
-Menu login/reset/registration, return intent, logout/account switching,
-dark/light/System, large text, keyboard overlap, native network failure,
-VoiceOver/TalkBack modal focus, and actual owner Remote Config fetch remain
-**unverified** pending a dedicated device session or explicit user observations.
-The Android AVD has TalkBack installed, but actual speech/focus was not verified.
-Configured native builds and native demo-app Auth/Firestore acceptance have not
-been run. Live Remote Config acceptance is read-only; all auth/profile test
-writes must stay in demo-pnpe emulators. Passing JS/emulator tests are not a
-substitute for these remaining native checks.
+## Controlled Android continuation, 2026-10-06
+
+The user authorized a dedicated Android emulator session and temporary settings,
+and explicitly chose to leave iOS blocked. The earlier uncontrolled observations
+above are superseded by these controlled checks. Local screenshots/XML/build logs
+are retained under ignored `evidence/mobile-foundation/continuation/`.
+
+A configured native Android prebuild and build using the owner's ignored native
+file paths succeeded: Gradle **BUILD SUCCESSFUL in 3m15s**, 566 tasks (412 executed,
+122 from cache, 32 up to date), APK installed. Runtime Auth/Firestore testing used
+only the named `pnpe-emulator` app against local `demo-pnpe` services. No production
+account/profile writes, deployment, Remote Config publication or content import
+occurred.
+
+| Controlled Android check | Observed result |
+| --- | --- |
+| Guest and authenticated cold launch | Both launch Home; guest has no unsolicited auth prompt. |
+| Public browsing | Fixed taxonomy and subcategory content reachable; unavailable question counts remain explicit. |
+| Prompt cancellation | Maybe Later returns to the initiating Mock Exam overview. |
+| Menu authentication | Native SDK registration/sign-in/logout and neutral password-reset acknowledgement work against local emulators. |
+| Profile persistence/account switching | Local profile contains only displayName/createdAt/updatedAt; two accounts display their own names after switching back. |
+| Retained intent | Start Mock Exam -> authentication -> Mock Exam preflight; no unavailable question session/timer is invented. |
+| Auth form cancellation | Reset acknowledgement -> Return to Sign In -> Back returns Menu after the cancellation-race fix. |
+| Light/dark/System and large text | Recovery notice readable below status bar; appearance controls reachable at font scale 1.5; System follows OS dark changes. |
+| Keyboard | Actual registration fields and submission reachable with keyboard open at normal and 1.5 font scale; sign-in controls also visible at 1.5. |
+| Network loss | Wi-Fi/data disabled and emulator host unreachable; public reviewers remain readable, authenticated identity/Sign Out remain available. Connectivity restored. |
+| TalkBack | Service bound with spoken feedback; heading focus and dismissal restoration visually verified. Progress and Saved Questions receive restored focus; audible speech is unverified. |
+
+Read-only owner Remote Config was exercised on a separate configured cold launch.
+The installed Android SDK's private fetch metadata reports successful status `-1`
+(confirmed against installed Firebase Config 23.1.0 constants), fresh fetch time
+1791274624672, five-second timeout and one-hour minimum interval. Activated cache
+has template version 0 and no remote parameters. Home renders bundled defaults;
+this proves native fetch/activation, not validation of owner-supplied nonempty
+`app_info`, `data`, or `config` values. Only metadata and parameter names were
+inspected; owner configuration/credential contents were not printed or staged.
+Metro was returned to emulator mode afterward.
+
+Independent scoped reviews approved architecture boundary fixes (`948acfc`),
+themed safe-area recovery notices (`54ac6ec`), required isolated native app options
+(`4638525`), and auth-route cancellation (`9b18561`). Android focus restoration
+checkpoint `7edce65` failed the native recheck despite passing synthetic tests.
+The supported Android host hover-enter event in `07434f6` restores TalkBack focus
+after native app-window return: Progress stayed focused after a probe dismissal,
+and a noninstrumented cold-launch check restored Saved Questions after Android
+Back. Heading and iOS behavior are preserved. Diagnostics were removed; no fixed
+time delay was added. Independent scoped source re-review approved the fix with
+no new Critical/Important findings.
+
+Final controller checks on the permanent candidate passed: **316/316 unit tests
+(19 suites), 102/102 mobile tests (10 suites)**. Both strict TypeScript projects,
+bare ESLint, Prettier and whitespace checks also passed in final controller
+verification. The earlier
+63/63 actual local Auth/Firestore integration and 7/7 reference tests remain
+recorded; unchanged rules/content were not redundantly rerun. Publication
+eligibility remains zero. Expo dependencies and Doctor 21/21 passed during this
+continuation; no dependency changes followed.
+
+A single React startup warning about updating an unmounted component occurred in
+an earlier run; later controlled cold launches did not reproduce it. This is not
+a claim that every development/native log is warning-free. TalkBack and temporary
+settings are restored after device checks. iOS native/Firebase/VoiceOver remains
+blocked at the user's direction; Task 9 and the foundation remain incomplete.
 
 ## Release gates
 
