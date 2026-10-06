@@ -1,6 +1,7 @@
-import { useEffect, useRef, type ReactNode } from 'react';
+import { useEffect, useLayoutEffect, useRef, type ReactNode } from 'react';
 import {
   AccessibilityInfo,
+  AppState,
   findNodeHandle,
   Modal,
   Platform,
@@ -35,10 +36,23 @@ export function AppModal({
   const { colors } = useTheme();
   const heading = useRef<Text>(null);
   const wasVisible = useRef(visible);
-  useEffect(() => {
-    if (wasVisible.current && !visible && Platform.OS !== 'ios') focus(restoreFocusTarget?.current);
+  const pendingRestore = useRef(false);
+  useLayoutEffect(() => {
+    pendingRestore.current = wasVisible.current && !visible;
     wasVisible.current = visible;
-  }, [visible, restoreFocusTarget]);
+  }, [visible]);
+  useEffect(() => {
+    if (Platform.OS !== 'android') return;
+    // Android Modal has no onDismiss; wait until its native dialog releases
+    // focus to the app window instead of competing with the dismissal animation.
+    const subscription = AppState.addEventListener('focus', () => {
+      if (!wasVisible.current && pendingRestore.current) {
+        pendingRestore.current = false;
+        focus(restoreFocusTarget?.current);
+      }
+    });
+    return () => subscription.remove();
+  }, [restoreFocusTarget]);
   return (
     <Modal
       visible={visible}

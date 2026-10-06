@@ -1,10 +1,30 @@
 import { render, screen, userEvent } from '@testing-library/react-native';
 import { AuthRequiredModal } from '../../src/features/auth/presentation/AuthRequiredModal';
 import { ThemeProvider } from '../../src/core/theme/ThemeProvider';
-import { AccessibilityInfo, Modal, Platform, View } from 'react-native';
+import { AccessibilityInfo, AppState, Modal, Platform, View } from 'react-native';
 import * as Native from 'react-native';
 import { createRef } from 'react';
 import { act } from '@testing-library/react-native';
+
+beforeEach(() => jest.clearAllMocks());
+afterEach(() => jest.restoreAllMocks());
+
+function mockNativeWindowFocus() {
+  const listeners = new Set<() => void>();
+  const subscribe = jest
+    .spyOn(AppState, 'addEventListener')
+    .mockImplementation((event, listener) => {
+      const callback = () => listener('active');
+      if (event === 'focus') listeners.add(callback);
+      return { remove: () => listeners.delete(callback) };
+    });
+  return {
+    emit() {
+      act(() => listeners.forEach((listener) => listener()));
+    },
+    restore: () => subscribe.mockRestore(),
+  };
+}
 
 test.each(['light', 'dark'] as const)(
   'prompt buttons dispatch only their selected action in %s',
@@ -43,13 +63,14 @@ test.each(['ios', 'android'] as const)(
   'modal focuses heading and restores launcher in %s',
   (platform) => {
     const os = jest.replaceProperty(Platform, 'OS', platform);
+    const windowFocus = mockNativeWindowFocus();
     const setFocus = jest
       .spyOn(AccessibilityInfo, 'setAccessibilityFocus')
       .mockImplementation(() => {});
+    const launcher = createRef<View>();
     const nodeHandle = jest
       .spyOn(jest.requireActual<typeof Native>('react-native'), 'findNodeHandle')
-      .mockReturnValue(42);
-    const launcher = createRef<View>();
+      .mockImplementation((target) => (target === launcher.current ? 42 : 41));
     const props = {
       title: 'Sign in to continue',
       message: 'Continue',
@@ -68,6 +89,9 @@ test.each(['ios', 'android'] as const)(
     act(() => screen.UNSAFE_getByType(Modal).props.onShow());
     expect(nodeHandle).toHaveBeenCalled();
     expect(setFocus).toHaveBeenCalledTimes(1);
+    expect(setFocus).toHaveBeenLastCalledWith(41);
+    windowFocus.emit();
+    expect(setFocus).toHaveBeenCalledTimes(1);
     const dismiss = screen.UNSAFE_getByType(Modal).props.onDismiss;
     tree.rerender(
       <ThemeProvider>
@@ -75,13 +99,62 @@ test.each(['ios', 'android'] as const)(
         <AuthRequiredModal visible={false} {...props} />
       </ThemeProvider>,
     );
+    expect(setFocus).toHaveBeenCalledTimes(1);
     if (platform === 'ios') act(() => dismiss());
+    else windowFocus.emit();
+    expect(setFocus).toHaveBeenCalledTimes(2);
+    expect(setFocus).toHaveBeenLastCalledWith(42);
+    windowFocus.emit();
     expect(setFocus).toHaveBeenCalledTimes(2);
     setFocus.mockRestore();
     nodeHandle.mockRestore();
+    windowFocus.restore();
     os.restore();
   },
 );
+
+test('Android cancels stale restoration when reopened or unmounted before native window focus', () => {
+  const os = jest.replaceProperty(Platform, 'OS', 'android');
+  const windowFocus = mockNativeWindowFocus();
+  const setFocus = jest
+    .spyOn(AccessibilityInfo, 'setAccessibilityFocus')
+    .mockImplementation(() => {});
+  const launcher = createRef<View>();
+  const nodeHandle = jest
+    .spyOn(jest.requireActual<typeof Native>('react-native'), 'findNodeHandle')
+    .mockImplementation((target) => (target === launcher.current ? 42 : 41));
+  const props = {
+    title: 'Sign in to continue',
+    message: 'Continue',
+    onCancel: jest.fn(),
+    onSignIn: jest.fn(),
+    onRegister: jest.fn(),
+    restoreFocusTarget: launcher,
+  };
+  const prompt = (visible: boolean, mounted = true) => (
+    <ThemeProvider>
+      <View ref={launcher} />
+      {mounted ? <AuthRequiredModal visible={visible} {...props} /> : null}
+    </ThemeProvider>
+  );
+  const tree = render(prompt(true), { createNodeMock: () => ({}) });
+  act(() => screen.UNSAFE_getByType(Modal).props.onShow());
+  tree.rerender(prompt(false));
+  expect(setFocus).toHaveBeenCalledTimes(1);
+  tree.rerender(prompt(true));
+  act(() => screen.UNSAFE_getByType(Modal).props.onShow());
+  windowFocus.emit();
+  expect(setFocus).toHaveBeenCalledTimes(2);
+  expect(setFocus).toHaveBeenLastCalledWith(41);
+  tree.rerender(prompt(false));
+  tree.rerender(prompt(false, false));
+  windowFocus.emit();
+  expect(setFocus).toHaveBeenCalledTimes(2);
+  setFocus.mockRestore();
+  nodeHandle.mockRestore();
+  windowFocus.restore();
+  os.restore();
+});
 
 test('hidden prompt exposes no controls', () => {
   render(
