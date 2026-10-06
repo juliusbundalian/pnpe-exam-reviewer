@@ -67,6 +67,9 @@ test.each(['ios', 'android'] as const)(
     const setFocus = jest
       .spyOn(AccessibilityInfo, 'setAccessibilityFocus')
       .mockImplementation(() => {});
+    const sendEvent = jest
+      .spyOn(AccessibilityInfo, 'sendAccessibilityEvent')
+      .mockImplementation(() => {});
     const launcher = createRef<View>();
     const nodeHandle = jest
       .spyOn(jest.requireActual<typeof Native>('react-native'), 'findNodeHandle')
@@ -92,6 +95,7 @@ test.each(['ios', 'android'] as const)(
     expect(setFocus).toHaveBeenLastCalledWith(41);
     windowFocus.emit();
     expect(setFocus).toHaveBeenCalledTimes(1);
+    expect(sendEvent).not.toHaveBeenCalled();
     const dismiss = screen.UNSAFE_getByType(Modal).props.onDismiss;
     tree.rerender(
       <ThemeProvider>
@@ -100,13 +104,23 @@ test.each(['ios', 'android'] as const)(
       </ThemeProvider>,
     );
     expect(setFocus).toHaveBeenCalledTimes(1);
-    if (platform === 'ios') act(() => dismiss());
-    else windowFocus.emit();
-    expect(setFocus).toHaveBeenCalledTimes(2);
-    expect(setFocus).toHaveBeenLastCalledWith(42);
+    expect(sendEvent).not.toHaveBeenCalled();
+    if (platform === 'ios') {
+      act(() => dismiss());
+      expect(setFocus).toHaveBeenCalledTimes(2);
+      expect(setFocus).toHaveBeenLastCalledWith(42);
+      expect(sendEvent).not.toHaveBeenCalled();
+    } else {
+      windowFocus.emit();
+      expect(sendEvent).toHaveBeenCalledTimes(1);
+      expect(sendEvent).toHaveBeenCalledWith(launcher.current, 'viewHoverEnter');
+      expect(setFocus).toHaveBeenCalledTimes(1);
+    }
     windowFocus.emit();
-    expect(setFocus).toHaveBeenCalledTimes(2);
+    expect(setFocus).toHaveBeenCalledTimes(platform === 'ios' ? 2 : 1);
+    expect(sendEvent).toHaveBeenCalledTimes(platform === 'android' ? 1 : 0);
     setFocus.mockRestore();
+    sendEvent.mockRestore();
     nodeHandle.mockRestore();
     windowFocus.restore();
     os.restore();
@@ -118,6 +132,9 @@ test('Android cancels stale restoration when reopened or unmounted before native
   const windowFocus = mockNativeWindowFocus();
   const setFocus = jest
     .spyOn(AccessibilityInfo, 'setAccessibilityFocus')
+    .mockImplementation(() => {});
+  const sendEvent = jest
+    .spyOn(AccessibilityInfo, 'sendAccessibilityEvent')
     .mockImplementation(() => {});
   const launcher = createRef<View>();
   const nodeHandle = jest
@@ -150,8 +167,40 @@ test('Android cancels stale restoration when reopened or unmounted before native
   tree.rerender(prompt(false, false));
   windowFocus.emit();
   expect(setFocus).toHaveBeenCalledTimes(2);
+  expect(sendEvent).not.toHaveBeenCalled();
   setFocus.mockRestore();
+  sendEvent.mockRestore();
   nodeHandle.mockRestore();
+  windowFocus.restore();
+  os.restore();
+});
+
+test('Android skips launcher restoration when its host ref is null', () => {
+  const os = jest.replaceProperty(Platform, 'OS', 'android');
+  const windowFocus = mockNativeWindowFocus();
+  const sendEvent = jest
+    .spyOn(AccessibilityInfo, 'sendAccessibilityEvent')
+    .mockImplementation(() => {});
+  const launcher = createRef<View>();
+  const prompt = (visible: boolean) => (
+    <ThemeProvider>
+      <AuthRequiredModal
+        visible={visible}
+        title="Sign in"
+        message="Continue"
+        onCancel={jest.fn()}
+        onSignIn={jest.fn()}
+        onRegister={jest.fn()}
+        restoreFocusTarget={launcher}
+      />
+    </ThemeProvider>
+  );
+  const tree = render(prompt(true));
+  tree.rerender(prompt(false));
+  windowFocus.emit();
+  windowFocus.emit();
+  expect(sendEvent).not.toHaveBeenCalled();
+  sendEvent.mockRestore();
   windowFocus.restore();
   os.restore();
 });

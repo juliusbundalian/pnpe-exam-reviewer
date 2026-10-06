@@ -48,7 +48,10 @@ export function AppModal({
     const subscription = AppState.addEventListener('focus', () => {
       if (!wasVisible.current && pendingRestore.current) {
         pendingRestore.current = false;
-        focus(restoreFocusTarget?.current);
+        const target = restoreFocusTarget?.current;
+        // TalkBack follows hover-enter to the launcher; input-focus events can
+        // leave accessibility focus on another node after the dialog closes.
+        if (target) AccessibilityInfo.sendAccessibilityEvent(target, 'viewHoverEnter');
       }
     });
     return () => subscription.remove();
