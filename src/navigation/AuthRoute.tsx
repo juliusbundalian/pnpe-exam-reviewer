@@ -11,8 +11,8 @@ export function AuthRoute({ screen }: { screen: 'signIn' | 'registration' | 'pas
   const state = useAuthentication();
   const { origin } = useAppNavigation();
   const router = useRouter();
-  // Once this route participates in a coordinator flow, only the coordinator
-  // consumes its intent and chooses the destination after authentication.
+  // Once this route participates, the coordinator owns completion/cancellation.
+  // A cleared flow must not restart while its return navigation is still pending.
   const participatedInFlow = useRef(false);
   if (state.origin || state.pendingIntent) participatedInFlow.current = true;
   useEffect(() => {
@@ -24,7 +24,7 @@ export function AuthRoute({ screen }: { screen: 'signIn' | 'registration' | 'pas
       router.replace(originDestination(origin.current));
   }, [origin, router, state.auth.status, state.screen]);
   useEffect(() => {
-    if (state.auth.status === 'guest' && state.screen === 'none') {
+    if (state.auth.status === 'guest' && !participatedInFlow.current && state.screen === 'none') {
       if (screen === 'registration') coordinator.beginRegistration(origin.current);
       else {
         coordinator.beginSignIn(origin.current);

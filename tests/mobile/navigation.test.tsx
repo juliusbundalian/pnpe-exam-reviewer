@@ -20,6 +20,56 @@ test.each(['/auth/sign-in', '/auth/register', '/auth/forgot-password'])(
     expect(screen.queryByText(/Authentication is being checked/)).toBeNull();
   },
 );
+test.each([
+  ['/auth/sign-in', 'signIn', 'Sign In'],
+  ['/auth/register', 'registration', 'Create Account'],
+  ['/auth/forgot-password', 'passwordReset', 'Reset Password'],
+])('guest direct entry to %s starts its initial auth flow', async (url, form, heading) => {
+  const h = harness();
+  const result = await h.render(url);
+  expect(result.getPathname()).toBe(url);
+  expect(h.dependencies.coordinator.getSnapshot().screen).toBe(form);
+  expect(await screen.findByRole('header', { name: heading })).toBeVisible();
+});
+
+test('Back after a password-reset roundtrip stays cancelled while the return navigation is delayed', async () => {
+  const h = harness();
+  const delayedReturns: (() => void)[] = [];
+  const bindNavigation = h.dependencies.bindNavigation;
+  h.dependencies.bindNavigation = (handlers) =>
+    bindNavigation({
+      ...handlers,
+      returnTo: (origin) => delayedReturns.push(() => handlers.returnTo(origin)),
+    });
+  const result = await h.render('/menu');
+  fireEvent.press(screen.getByRole('button', { name: 'Sign In' }));
+  await waitFor(() => expect(result.getPathname()).toBe('/auth/sign-in'));
+  fireEvent.press(screen.getByRole('button', { name: 'Forgot Password?' }));
+  await waitFor(() => expect(result.getPathname()).toBe('/auth/forgot-password'));
+  fireEvent.changeText(screen.getByLabelText('Email'), 'alice@example.test');
+  fireEvent.press(screen.getByRole('button', { name: 'Send Reset Email' }));
+  expect(await screen.findByText(/If an account exists for this email/)).toBeVisible();
+  fireEvent.press(screen.getByRole('button', { name: 'Return to Sign In' }));
+  await waitFor(() => expect(result.getPathname()).toBe('/auth/sign-in'));
+  fireEvent.press(screen.getByRole('button', { name: 'Back' }));
+  await act(flushTransitions);
+  // The auth route remains mounted while the native navigator processes returnTo.
+  expect(result.getPathname()).toBe('/auth/sign-in');
+  expect(h.dependencies.coordinator.getSnapshot()).toMatchObject({
+    screen: 'none',
+    origin: null,
+    pendingIntent: null,
+  });
+  expect(delayedReturns).toHaveLength(1);
+  await act(async () => {
+    delayedReturns[0]!();
+    await flushTransitions();
+  });
+  await waitFor(() => expect(result.getPathname()).toBe('/menu'));
+  expect(h.dependencies.coordinator.getSnapshot().screen).toBe('none');
+  expect(screen.queryByLabelText('Password')).toBeNull();
+});
+
 test('Profile opened from cold Menu has an accessible return even after tab replacement', async () => {
   const h = harness({ initialAuth: { status: 'authenticated', user: authUser('alice') } });
   const result = await h.render('/menu');
