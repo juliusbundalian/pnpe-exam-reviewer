@@ -237,7 +237,7 @@ These are actual observation/recording times; message timestamp metadata was not
 
 ## Local demo catalog verification (Task 5)
 
-On 2026-10-07, the exact approved full publication was imported through the guarded CLI into `demo-pnpe` at `127.0.0.1:8080`. Discovery confirmed the existing hub/Auth process 33310 (4400/9099), Firestore process 33383 (8080/9150), and Metro process 33425 (8081). All remained running afterward. No reset, snapshot import, rules deployment, production credential access or mobile change was performed against these services.
+On 2026-10-07, the exact approved full publication was imported through the guarded CLI into `demo-pnpe` at `127.0.0.1:8080`. The controller reported observing the existing hub/Auth process 33310 (4400/9099), Firestore process 33383 (8080/9150), and Metro process 33425 (8081) before and after the operation. Standalone retained initial/final Auth and Metro process history is incomplete, so historical continuity is a controller observation rather than independently established by archived snapshots. No reset, snapshot import, rules deployment, production credential access or mobile change was performed against these services.
 
 The inspected manifest had an empty prior head (generation null, revision 0), twenty creates (`q-000001`–`q-000020`, all version 1), zero noops and ten shards. Literal digest confirmation applied twenty questions. Evidence is retained under ignored `evidence/editorial/short-initial/` with unique `task5-` filenames.
 

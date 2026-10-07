@@ -1,3 +1,4 @@
+import * as fs from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { mkdtemp, readFile, rm, mkdir, symlink, link, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
@@ -7,6 +8,11 @@ import { normalize } from '../../tools/questions/normalize';
 import { canonicalJson, type EditorialOverlay } from '../../tools/questions/editorial';
 import { contentDigest } from '../../tools/questions/publication';
 import { buildReviewPacket, writeReviewPacket } from '../../tools/questions/review-packet';
+
+jest.mock('node:fs/promises', () => ({
+  __esModule: true,
+  ...jest.requireActual('node:fs/promises'),
+}));
 
 const question = testQuestion();
 const lineage = question.sources[0]!;
@@ -242,6 +248,33 @@ test('writer reserves immutable directory and preserves existing symlink/hardlin
     await expect(writeReviewPacket(root, packet)).rejects.toThrow();
     expect(await readFile(owner, 'utf8')).toBe('owner evidence');
   } finally {
+    await rm(root, { recursive: true, force: true });
+  }
+});
+
+test('partial write failure preserves the first artifact and refuses retry', async () => {
+  const root = await mkdtemp(join(tmpdir(), 'review-packet-partial-'));
+  const packet = build();
+  const destination = join(root, 'evidence/editorial/fixture', packet.manifest.packetDigest);
+  const realWrite = fs.writeFile;
+  const injected = jest.spyOn(fs, 'writeFile').mockImplementation(async (...args) => {
+    if (String(args[0]).endsWith(join(packet.manifest.packetDigest, 'manifest.json')))
+      throw new Error('injected manifest write failure');
+    return realWrite(...args);
+  });
+  try {
+    await expect(writeReviewPacket(root, packet)).rejects.toThrow(
+      'injected manifest write failure',
+    );
+    const surviving = await readFile(join(destination, 'review.md'));
+    expect(surviving).toEqual(Buffer.from(packet.markdown));
+    expect(await fs.readdir(destination)).toEqual(['review.md']);
+    injected.mockRestore();
+    await expect(writeReviewPacket(root, packet)).rejects.toThrow();
+    expect(await readFile(join(destination, 'review.md'))).toEqual(surviving);
+    expect(await fs.readdir(destination)).toEqual(['review.md']);
+  } finally {
+    injected.mockRestore();
     await rm(root, { recursive: true, force: true });
   }
 });

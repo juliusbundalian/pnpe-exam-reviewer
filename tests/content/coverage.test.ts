@@ -187,3 +187,18 @@ test('reviewed image remains blocked without supported learner transport', () =>
     coverageReport([candidate], [overlay], [], clock).bySource[0]!.counts.approvedBlocked,
   ).toBe(1);
 });
+
+test('same eligible ID with changed content rejects the revision mismatch', () => {
+  const { candidate, overlay, question } = fixture();
+  expect(
+    coverageReport([candidate], [overlay], [question], clock).bySource[0]!.counts.approvedEligible,
+  ).toBe(1);
+  const changed = testQuestion({
+    ...question,
+    explanation: [{ kind: 'text', text: 'Changed explanation', marks: [] }],
+  });
+  expect(changed.id).toBe(question.id);
+  expect(() => coverageReport([candidate], [overlay], [changed], clock)).toThrow(
+    `Eligible revision mismatch: ${question.id}`,
+  );
+});

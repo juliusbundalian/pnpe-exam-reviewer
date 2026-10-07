@@ -4,9 +4,11 @@ import { coverageReport } from './coverage';
 import { buildReviewPacket, writeReviewPacket } from './review-packet';
 import { loadApprovedPublication, loadCandidates, loadOverlays } from './source-workflow';
 
-async function main(): Promise<void> {
-  const root = resolve(__dirname, '../..');
-  if (process.argv.length !== 3 || process.argv[2] !== 'short-initial')
+export async function prepareReview(
+  args: readonly string[],
+  root = resolve(__dirname, '../..'),
+): Promise<void> {
+  if (args.length !== 1 || args[0] !== 'short-initial')
     throw new Error('Use prepare-review.ts short-initial');
   const candidates = await loadCandidates(root);
   const overlays = await loadOverlays(root);
@@ -36,7 +38,8 @@ async function main(): Promise<void> {
       `${quota.categoryId}: shortage ${quota.shortage} (eligible ${quota.eligible}/${quota.required})`,
     );
 }
-main().catch((error: unknown) => {
-  console.error(error instanceof Error ? error.message : String(error));
-  process.exitCode = 1;
-});
+if (require.main === module)
+  prepareReview(process.argv.slice(2)).catch((error: unknown) => {
+    console.error(error instanceof Error ? error.message : String(error));
+    process.exitCode = 1;
+  });
