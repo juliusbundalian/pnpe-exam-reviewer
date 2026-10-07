@@ -4,6 +4,18 @@ This workflow validates content and stages immutable Firestore snapshots. It
 does not create a Firebase project, deploy rules, or implement the mobile/session
 engine. All questions remain staged until exact human approvals exist.
 
+The owner confirmed that delivery covers the full usable reference corpus,
+not just the minimum needed for one Mock Exam. There are 687 extracted source
+occurrences: 20 short MCQs, 477 comprehensive entries and 190 answer-only notes.
+The first 20 are approved and published; all 667 remaining occurrences still
+require editorial disposition. Process every occurrence and publish every sound,
+approved logical question, continuing after the 150-question exam quotas are met.
+Retain duplicate lineage and visibly blocked material; do not invent missing
+alternatives or assume occurrences equal unique publishable questions.
+
+Reviewer consumes all eligible questions in the selected category/subcategory.
+A Mock Exam selects 150 from the larger bank under its category quotas.
+
 ## Local prerequisites
 
 Install Node 24, Python 3, uv, and Java 21 for Firebase emulators. Run

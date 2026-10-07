@@ -413,6 +413,12 @@ git commit -m "docs: verify approved editorial demo catalog"
 
 ## Completion and continuation
 
+Owner clarification after the first batch: continue editorial processing across
+all 667 remaining extracted occurrences and publish every sound approved logical
+question. Meeting the 150-question Mock Exam quotas is a readiness checkpoint,
+not completion of the reference bank. Keep all occurrences accounted for,
+including duplicates, answer-only conversions and material that remains blocked.
+
 The prepared checkpoint is all 20 overlays plus the immutable packet, actual research and honest coverage. It is not approved publication. The publication checkpoint requires the exact owner reply and passing digest/source checks; demo readiness additionally requires matching catalog readback.
 
 Choose later bounded batches from actual category shortages; every later batch repeats preparation, packet generation, exact owner approval and full-publication validation. Do not pretend a fixed number of reviewed source occurrences guarantees 150 distinct eligible questions. If the preserved corpus cannot fill a category or needs unsupported assets, report the shortage and seek a separately reviewed authored batch/capability design.

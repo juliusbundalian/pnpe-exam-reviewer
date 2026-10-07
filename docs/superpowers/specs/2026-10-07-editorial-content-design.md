@@ -31,6 +31,12 @@ Deliver in this order:
 A 20-question batch cannot support the default 150-question Mock Exam. A smaller
 development fixture is a test fixture, not a completed real exam or publication.
 
+Owner clarification: the delivery target is the full usable reference question
+bank. Process all 687 occurrences and publish every sound, explicitly approved
+logical question. The exam quotas are readiness minimums, not a cap or a stopping
+condition for editorial work. Reviewer includes all eligible questions in its
+selected category/subcategory; each Mock Exam selects from the larger bank.
+
 ## 2. Inputs and preservation
 
 Reuse verified `references/`, `evidence/reference-extraction/`,
