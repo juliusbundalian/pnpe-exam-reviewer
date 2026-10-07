@@ -1,0 +1,987 @@
+[
+  {
+    "key": "comprehensive:IV:1",
+    "answer": 2,
+    "explanation": "Shelf life is singular, so ranges agrees. Quality and texture are two coordinated nouns; their verb is plural deteriorate. Therefore choice B completes both clauses. The source's singular treatment of the pair is unjustified.",
+    "changes": ["Corrected source key A to B because quality and texture require plural agreement."]
+  },
+  {
+    "key": "comprehensive:IV:2",
+    "answer": 5,
+    "explanation": "Singular biologist takes explains. Modal can governs both base forms tolerate and stay. After removing the identical A alternative, original E is the unique completion; B/C/D each use an incorrect verb form.",
+    "removeChoices": ["choice-1"],
+    "changes": [
+      "Removed duplicated correct alternative A; kept source correct choice E as choice-5, all surviving stable IDs and all original labels in lineage."
+    ]
+  },
+  {
+    "key": "comprehensive:IV:3",
+    "answer": 1,
+    "explanation": "Were requires the past participle painted in the passive clause. After is, soothing describes the color as an adjective; soothe is a verb and cannot serve there."
+  },
+  {
+    "key": "comprehensive:IV:4",
+    "answer": 4,
+    "explanation": "Are blessed requires the past participle blessed. Idea-generating forms a compound meaning producing ideas. Once the also-grammatical idea-making competitor is explicitly removed, D is unique; A and B incorrectly use bare bless after are.",
+    "removeChoices": ["choice-3"],
+    "changes": [
+      "Removed grammatically plausible competing compound Blessed\u2013making, retaining stable IDs1,2,4 and complete original label lineage."
+    ]
+  },
+  {
+    "key": "comprehensive:IV:5",
+    "answer": 1,
+    "explanation": "Can't takes base-form find. The second clause is an imperative with understood you, so plan is also the base form. Only A supplies both."
+  },
+  {
+    "key": "comprehensive:IV:6",
+    "answer": 2,
+    "explanation": "At present requires the present form use with plural farms; plural machines takes cut. Past used contradicts the added present-time scope.",
+    "prompt": "At present, many farms also ______ machines, which _____ down on the number of people needed to farm the land.",
+    "changes": [
+      "Added explicit present-time scope to distinguish the existing present alternative from a grammatical but unintended past-tense reading."
+    ]
+  },
+  {
+    "key": "comprehensive:IV:7",
+    "answer": 1,
+    "explanation": "The plural subject leaves governs both present verbs, take in and use. Singular takes/uses do not agree, and mixed used is unsupported by the parallel present description."
+  },
+  {
+    "key": "comprehensive:IV:8",
+    "answer": 3,
+    "explanation": "The explicitly dated 2009 event calls for past hit and used. Hit has the same spelling in past and base forms; alternatives using present hits conflict with the historical clause."
+  },
+  {
+    "key": "comprehensive:IV:9",
+    "answer": 2,
+    "explanation": "At present fixes the main clause in the present: plural we takes don't and plural things takes make. Didn't would refer to a past rather than the stated current practice.",
+    "prompt": "At present, we _______ use fake ingredients or things that _______ perfume last long.",
+    "changes": [
+      "Added explicit present-time scope to distinguish the existing present alternative from a grammatical but unintended past-tense reading."
+    ]
+  },
+  {
+    "key": "comprehensive:IV:10",
+    "answer": 1,
+    "explanation": "Able fits are able to. Will predicts a future result, but should can express expectation and would can express a conditional attitude in this context. No grammar rule uniquely forces will.",
+    "open": "Several modal completions are possible; the prompt does not specify the intended meaning strongly enough for a unique key."
+  },
+  {
+    "key": "comprehensive:IV:11",
+    "answer": 1,
+    "explanation": "Decided can introduce coordinated infinitives to go back and [to] take up. The shared to permits the base form take up. Other choices either fail subject agreement or insert a finite verb into that infinitival coordination."
+  },
+  {
+    "key": "comprehensive:IV:12",
+    "answer": 2,
+    "explanation": "The authored tense instruction requires future-prediction will feel and habitual simple-present gets agreeing with singular the other one. A fails agreement, C uses conditional would, and D uses past got.",
+    "prompt": "Complete using a future prediction in the first blank and a simple-present verb for habitual treatment in the second: At times, a sibling _________ bad because of the perception that the other one __________ better treatment, like being given more material things.",
+    "changes": [
+      "Added explicit future-prediction and simple-present completion requirements, rather than pretending the original unqualified sentence uniquely chose these tenses."
+    ]
+  },
+  {
+    "key": "comprehensive:IV:13",
+    "answer": 4,
+    "explanation": "Nowadays fixes the reporting as a current general belief. Plural fathers takes think and the infinitive to takes base survive; past thought no longer fits the stated current reporting.",
+    "prompt": "Nowadays, some fathers ________ that making their children tough will enable them to __________ in a hostile world.",
+    "changes": [
+      "Added explicit present-time scope to distinguish the existing present alternative from a grammatical but unintended past-tense reading."
+    ]
+  },
+  {
+    "key": "comprehensive:IV:14",
+    "answer": 4,
+    "explanation": "Singular it takes begins; you takes need. Begin and begun cannot be finite present verbs agreeing with it, and needs does not agree with you."
+  },
+  {
+    "key": "comprehensive:IV:15",
+    "answer": 1,
+    "explanation": "Currently makes both coordinated relative-clause verbs present. Singular one hotel takes reflects and mirrors, while past reflected/mirrored would not match the current description.",
+    "prompt": "If there is one hotel in the country that currently __________ and ___________ the history of its host country, it would be the Manila Hotel.",
+    "changes": [
+      "Added explicit present-time scope to distinguish the existing present alternative from a grammatical but unintended past-tense reading."
+    ]
+  },
+  {
+    "key": "comprehensive:IV:16",
+    "answer": 3,
+    "explanation": "Plural extracts takes were in the passive. In the revised parallel purpose construction, helping to improve and to enhance both use base infinitives. Thus C supplies were and enhance. The original as well as enhance lacked a matching parallel construction.",
+    "prompt": "Some foreign fruit and herb extracts _________ added because of their potency in helping to improve health and wellness and to _________ the taste of the drink.",
+    "changes": [
+      "Reworded the purpose clause to helping to improve ... and to enhance so the original C alternative fits genuine parallel infinitives; no health claim is independently certified by this grammar exercise."
+    ]
+  },
+  {
+    "key": "comprehensive:IV:17",
+    "answer": 2,
+    "explanation": "Medical science is a singular subject and its pronoun it is singular. Their present verbs are tends and regards. Only B gives agreeing present forms in both clauses."
+  },
+  {
+    "key": "comprehensive:IV:18",
+    "answer": 1,
+    "explanation": "Cannot be forms a passive with past participle separated. Without is a preposition taking the gerund causing. Only A fits both constructions."
+  },
+  {
+    "key": "comprehensive:IV:19",
+    "answer": 4,
+    "explanation": "Singular it takes sounds. Borrowed is a participial adjective modifying script, while borrows is finite and cannot directly modify that noun. The prompt needs the article a before borrowed script.",
+    "prompt": "His story is so fantastic it __________ more like a ___________ script from a soap opera than true happenings from real life.",
+    "changes": ["Inserted the missing indefinite article a before the second blank."]
+  },
+  {
+    "key": "comprehensive:IV:20",
+    "answer": 1,
+    "explanation": "The explicitly authored simple-past instruction requires became and made. Make is present and becomes is present, so only A meets both tense requirements. This does not claim that the original relative clause had to match the main-clause tense.",
+    "prompt": "Use the simple past in both blanks: He __________ one of those individuals who ________ it a point to leave a sterling record of hard work and conscientious behaviour in his trail.",
+    "changes": [
+      "Added a simple-past instruction for both blanks to distinguish originally possible past and habitual present readings."
+    ]
+  },
+  {
+    "key": "comprehensive:IV:21",
+    "answer": 2,
+    "explanation": "Was situates the causal event in the past, so propelled follows naturally. Propelled one guest to takes base invite. D incorrectly uses invites after to; A/C shift the event out of its stated past setting."
+  },
+  {
+    "key": "comprehensive:IV:22",
+    "answer": 1,
+    "explanation": "Having introduces the perfect participial phrase having built. Main-clause he requires either thought (past) or thinks (present); think in D does not agree. Only A combines built with an agreeing finite verb."
+  },
+  {
+    "key": "comprehensive:IV:23",
+    "answer": 3,
+    "explanation": "The explicit present-day habit takes present gives and knows, both agreeing with singular she. Gave refers to a past action and does not fit the stipulated habitual present construction.",
+    "prompt": "As a present-day habit, she _________ everything in teaching, even her secrets in baking and chocolate arts because she __________ that it's a win-win situation for her and her students.",
+    "changes": [
+      "Added explicit present-time scope to distinguish the existing present alternative from a grammatical but unintended past-tense reading."
+    ]
+  },
+  {
+    "key": "comprehensive:IV:24",
+    "answer": 2,
+    "explanation": "The frame it is then selects present start. Have requires past participle created, not base create, in the embedded present perfect. B supplies both required forms."
+  },
+  {
+    "key": "comprehensive:IV:25",
+    "answer": 1,
+    "explanation": "To requires base slow. The relative subject something is singular and takes comes. Only A supplies slow and comes."
+  },
+  {
+    "key": "comprehensive:IV:26",
+    "answer": 4,
+    "subcategory": "vocabulary",
+    "taxonomy": "Distinguishes the near-spelled nouns prize and price by meaning.",
+    "explanation": "A prize is an awarded object that can be sold; price is the amount charged. The singular article a requires singular price. Only D states that he sells his prize at a price."
+  },
+  {
+    "key": "comprehensive:IV:27",
+    "answer": 3,
+    "explanation": "He takes singular believes. His belief is a singular noun and therefore requires has. With that minimal correction to the original have, C supplies the correct verb and noun. None of the original alternatives works with uncorrected have.",
+    "prompt": "He _______ that his ________ has a scientific basis.",
+    "changes": [
+      "Changed have to has to agree with the original singular belief alternative; retained original C key only for the repaired prompt."
+    ]
+  },
+  {
+    "key": "comprehensive:IV:28",
+    "answer": 2,
+    "subcategory": "vocabulary",
+    "taxonomy": "Distinguishes taught (instruction) from thought (belief) by meaning.",
+    "explanation": "Taught means gave instruction and thought means considered or believed. B yields the coherent sentence that the teacher taught something he thought was right; the other combinations reverse or repeat meanings incorrectly."
+  },
+  {
+    "key": "comprehensive:IV:29",
+    "answer": 3,
+    "explanation": "Was requires past participle advised. Give requires the noun advice as its object; advise is a verb and adviced is not the standard past form. Only C fits."
+  },
+  {
+    "key": "comprehensive:IV:30",
+    "answer": 2,
+    "subcategory": "vocabulary",
+    "taxonomy": "Tests the distinct meanings of adopt and adapt in a grammatical sentence.",
+    "explanation": "Adopted means took up or chose the new method; adapting means adjusting to weather and is a gerund after of. B is unique after explicitly removing D, which could instead mean modified the method. A and C use adopting (taking up) as the adjustment to weather and do not fit the intended relation.",
+    "removeChoices": ["choice-4"],
+    "changes": [
+      "Corrected source key D to B for the adopted-a-method reading; removed competing grammatical D reading (modified a method) while retaining surviving stable choice IDs1\u20133 and all original labels."
+    ]
+  },
+  {
+    "key": "comprehensive:II:1",
+    "answer": 3,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Daze denotes impaired or confused awareness, closest here to stupor; shock can describe its cause rather than that mental state.",
+    "prompt": "Which option is closest in meaning to \"daze\" in this sentence?\n\nThe old woman was still in a daze after she was nearly run over by a\nspeeding car near the market.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:2",
+    "answer": 1,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Haste denotes speed and urgency; leisureliness is its opposite, while calm and reluctance do not denote speed.",
+    "prompt": "Which option is closest in meaning to \"haste\" in this sentence?\n\nTwo men emerged from a nearby grocery in great haste carrying a\nbagful of grocery items.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:3",
+    "answer": 1,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Enveloped describes surrounding or covering completely, so engulfed preserves the sense. Unfolded is unrelated; hid emphasizes concealment instead of enclosure.",
+    "prompt": "Which option is closest in meaning to \"enveloped\" in this sentence?\n\nShe runs as fast as she could to avoid being caught until darkness\nenveloped her completely.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:4",
+    "answer": 2,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "A recess is a temporary break in proceedings, making break the intended synonym. Suspension is also a plausible interruption and requires contextual distinction.",
+    "prompt": "Which option is closest in meaning to \"recess\" in this sentence?\n\nThe talk with the opposing party will resume after a month's recess of\nthe delegates in the bilateral conference.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+    "open": "The explicit authored focus resolves missing marking, but original alternatives contain overlapping synonyms (break/suspension or escape/outing) that need a sharper meaning distinction."
+  },
+  {
+    "key": "comprehensive:II:5",
+    "answer": 4,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "A gaffe is an embarrassing mistake, which blunder names; a scandal or scene may result but is not the mistake itself.",
+    "prompt": "Which option is closest in meaning to \"gaffe\" in this sentence?\n\nThe lecturer made a big gaffe when he shouted at one of the students\nwho could not answer his question.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:6",
+    "answer": 1,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Unbecoming means unsuitable for the person or role, hence inappropriate; inaccurate concerns truth and proper reverses the meaning.",
+    "prompt": "Which option is closest in meaning to \"unbecoming\" in this sentence?\n\nThe things she was saying were most unbecoming of a Theology\nteacher of her rank.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:7",
+    "answer": 3,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Accountable means responsible and answerable for conduct; applause or compensation are consequences rather than responsibility.",
+    "prompt": "Which option is closest in meaning to \"accountable\" in this sentence?\n\nEvery government official will be accountable for his/her action.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:8",
+    "answer": 1,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Downplay means minimize apparent seriousness; soften is the closest available approximation, whereas ignore and forget remove attention instead.",
+    "prompt": "Which option is closest in meaning to \"downplay\" in this sentence?\n\nLet us not try to downplay the atrocities committed by the terrorists in\nother countries, particularly in Syria and some countries in Africa.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:9",
+    "answer": 4,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Overt describes behavior openly observable, hence visible, the opposite of hidden or unknown.",
+    "prompt": "Which option is closest in meaning to \"overt\" in this sentence?\n\nThe witness testified that the suspect's actions were overt and were\nobservable by the former.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:10",
+    "answer": 2,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Negligent describes failure to exercise proper care, so careless is the closest meaning. Unable indicates incapacity, suitable appropriateness, and lacking an unspecified shortage. The original B repeated the target itself; the authored synonym repairs that defect.",
+    "prompt": "Which option is closest in meaning to \"negligent\" in this sentence?\n\nIf your nanny lets you go without your packed lunch, she would be\nnegligent in her responsibilities as your guardian.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+      "Replaced self-identical alternative Negligent with authored synonym Careless; source alternative remains preserved through original labels and audit."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+    "choices": ["Unable", "Careless", "Suitable", "Lacking"]
+  },
+  {
+    "key": "comprehensive:II:11",
+    "answer": 1,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Undue means exceeding a proper limit, hence excessive; little reverses the scale and unbelievable does not address propriety.",
+    "prompt": "Which option is closest in meaning to \"undue\" in this sentence?\n\nSome local officials in several towns in the country take undue\nadvantage of ignorant people.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:12",
+    "answer": 3,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Utmost denotes the highest possible degree; extreme is nearest among the options, while minimum is opposite.",
+    "prompt": "Which option is closest in meaning to \"utmost\" in this sentence?\n\nPatients in the hospitals, even the poor ones, should be attended\nwith utmost care and courtesy.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:13",
+    "answer": 2,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Sobresaliente describes outstanding or excellent performance; outstanding is the closest direct rendering rather than merely commendable.",
+    "prompt": "Which option is closest in meaning to \"sobresaliente\" in this sentence?\n\nShe was included in the dean's list because her grades and\nperformance in all her subjects were sobresaliente.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:14",
+    "answer": 4,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Relaxing a grip makes it less tight, so loosened is the synonym; tightened and tensed reverse the action.",
+    "prompt": "Which option is closest in meaning to \"relaxed\" in this sentence?\n\nThe nurse relaxed her grip on her patient's arm and allowed him to\nincline his back gently on the couch.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:15",
+    "answer": 1,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Chaos denotes disorder, which can include noise but is broader than crying, shouting or cursing.",
+    "prompt": "Which option is closest in meaning to \"chaos\" in this sentence?\n\nThe sound of chaos from the scene of the crime grew as media\nreporters arrived to make a report.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:16",
+    "answer": 1,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "A sanctuary offers safety or refuge, hence haven. Church, resort and den name places without necessarily expressing that protective role.",
+    "prompt": "Which option is closest in meaning to \"sanctuary\" in this sentence?\n\nThe search for our own personal sanctuary gets more pressing every\nday as we go through various stresses in life, increasing violence in the\ncountry and the world, terrorist attacks, ridiculous politics and traffic in\nEDSA.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:17",
+    "answer": 3,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Harmony means agreement or compatibility, so accord fits. Dissonance and conflict are opposite senses.",
+    "prompt": "Which option is closest in meaning to \"harmony\" in this sentence?\n\nSunshine and fresh air go a long way in making you feel happier and\nin harmony with the world.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:18",
+    "answer": 1,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Convenient in this description means well suited or easy to undertake, nearest to suitable; refreshing and pleasant describe effects rather than suitability.",
+    "prompt": "Which option is closest in meaning to \"convenient\" in this sentence?\n\nWalking is the most universally recommended activity, convenient\nand a safe form of exercise for diabetics.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:19",
+    "answer": 3,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Ingenuity is inventive cleverness, so inventiveness fits; reputation and sincerity do not express creation of ideas.",
+    "prompt": "Which option is closest in meaning to \"ingenuity\" in this sentence?\n\nIn its effort to introduce and exhibit Filipino ingenuity, a group of\nBatangue\u00f1os is presenting an impressive array of products showcasing\ntheir creativity.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:20",
+    "answer": 2,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "To immerse oneself is to become deeply engaged or absorbed. Absorb is the nearest option but does not substitute with exactly the same transitive/reflexive construction.",
+    "prompt": "Which option is closest in meaning to \"immerse\" in this sentence?\n\nThe artist's house is surrounded by trees, so it's easy to immerse\nhimself in the natural surroundings to get good design ideas.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:21",
+    "answer": 1,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "A getaway is an escape or short departure from everyday pressures; escape captures that purpose, though outing is also plausible for a short trip.",
+    "prompt": "Which option is closest in meaning to \"getaway\" in this sentence?\n\nAfter living in the province for a while, you quickly realize that a\ngetaway to quiet the nerves and relax the senses is necessary to cope\nwith the chaotic pace in the city.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+    "open": "The explicit authored focus resolves missing marking, but original alternatives contain overlapping synonyms (break/suspension or escape/outing) that need a sharper meaning distinction."
+  },
+  {
+    "key": "comprehensive:II:22",
+    "answer": 3,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Indoors means inside a building, exactly C. Open field and open air are outdoors, and hidden does not locate a person inside.",
+    "prompt": "Which option is closest in meaning to \"indoors\" in this sentence?\n\nWith most of us spending most of our lives indoors, a green building\nis the healthy, responsible, common-sense choice for a better life, while\naddressing our concerns on the environment.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:23",
+    "answer": 4,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "To debunk is to show a claim false, hence disprove, rather than accept, welcome or agree with it.",
+    "prompt": "Which option is closest in meaning to \"debunks\" in this sentence?\n\nAn interior decorator debunks the common misconception in this\ncountry that moving and settling in takes only a week.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:24",
+    "answer": 1,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Fuel is an energy source; power is the nearest available meaning. Strength and stamina describe capacity, rather than the source supplying it.",
+    "prompt": "Which option is closest in meaning to \"fuel\" in this sentence?\n\nThe body gets its fuel from glucose by breaking down the\ncarbohydrates you eat.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:25",
+    "answer": 2,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Topnotch denotes the highest quality, hence first-class. Elegant describes style and expensive describes cost, neither guaranteeing quality. Excellent was also correct and has been transparently removed.",
+    "prompt": "Which option is closest in meaning to \"topnotch\" in this sentence?\n\nAround a man-made lagoon just beyond the beach club are casitas,\nwhich offer topnotch accommodations to beach club members and\nguests, as well as round-the-clock room service.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+      "Removed equally correct synonym Excellent; retained original choice IDs 2\u20134 and original labels A\u2013D in lineage."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+    "removeChoices": ["choice-1"]
+  },
+  {
+    "key": "comprehensive:II:26",
+    "answer": 1,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Elicited means drew out a response, hence evoked. Deserved expresses merit, not causation of a response.",
+    "prompt": "Which option is closest in meaning to \"elicited\" in this sentence?\n\nHis remark elicited different reactions from the crowd.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:27",
+    "answer": 3,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "A recipient receives something, hence receiver; donor and giver reverse the direction of transfer.",
+    "prompt": "Which option is closest in meaning to \"recipient\" in this sentence?\n\nThe recipient of a study grant abroad is a newcomer in the company.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:28",
+    "answer": 2,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Relinquished means gave up or surrendered possession or office. Gave up is correct; secured and perfected do not mean surrender. Abandoned overlapped with gave up and was transparently removed.",
+    "prompt": "Which option is closest in meaning to \"relinquished\" in this sentence?\n\nWhen some ugly rumors spread in the neighborhood, he immediately\nrelinquished his position in the association.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+      "Removed overlapping synonym Abandoned; retained original choice IDs 1\u20133 and all original labels in lineage."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+    "removeChoices": ["choice-4"]
+  },
+  {
+    "key": "comprehensive:II:29",
+    "answer": 4,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Unsung means not celebrated or acknowledged; unacknowledged is closest. Praised, admired and recognized reverse the intended lack of recognition.",
+    "prompt": "Which option is closest in meaning to \"unsung\" in this sentence?\n\nThe street sweepers and the garbage collectors belong to the\nunsung heroes in our society.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:30",
+    "answer": 3,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "A fortnight is fourteen days, so fortnightly means every two weeks, not four weeks or any number of months.",
+    "prompt": "Which option is closest in meaning to \"fortnightly\" in this sentence?\n\nThe magazine comes out fortnightly.",
+    "changes": [
+      "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking."
+    ],
+    "resolution": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative."
+  },
+  {
+    "key": "comprehensive:II:31",
+    "answer": 3,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Expletives here are swear words or offensive expressions, so dirty words is closest; anger is a feeling and sarcasm a mode of speech.",
+    "target": "expletives",
+    "changes": [
+      "Restored the selectively bold source target as a target span after visual page review; original instructions mention underlining but these source pages use bold."
+    ]
+  },
+  {
+    "key": "comprehensive:II:32",
+    "answer": 4,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Ambulant means moving about rather than fixed in one place, exactly D. Noise and attention-seeking do not express mobility.",
+    "target": "ambulant",
+    "changes": [
+      "Restored the selectively bold source target as a target span after visual page review; original instructions mention underlining but these source pages use bold."
+    ]
+  },
+  {
+    "key": "comprehensive:II:33",
+    "answer": 3,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "The actual bold target is flush out, a verb phrase meaning remove or wash out. None of poison, urine, waste or virus is a synonymous verb phrase. The source key C instead treats the unmarked noun toxins as its target.",
+    "target": "flush out",
+    "open": "Actual visual target is flush out, but all alternatives are nouns and none means remove/wash out; source answer explanation addresses unmarked toxins. Requires a reviewed question repair rather than target inference.",
+    "openCodes": [],
+    "resolution": "Visual PDF page41 establishes selectively bold flush out as the target; restored exactly, while a separate actual answer/alternatives mismatch remains blocked.",
+    "changes": [
+      "Restored actual source target flush out, not unmarked toxins inferred from the erroneous explanation."
+    ]
+  },
+  {
+    "key": "comprehensive:II:34",
+    "answer": 3,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Dainty delicacy describes fine, delicate appearance; exquisitely fine in appearance retains that precision, rather than just attractiveness.",
+    "target": "dainty delicacy",
+    "changes": [
+      "Restored the selectively bold source target as a target span after visual page review; original instructions mention underlining but these source pages use bold."
+    ]
+  },
+  {
+    "key": "comprehensive:II:35",
+    "answer": 2,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Scampered means ran with quick small steps; ran is the nearest alternative. Walked is slower and exited says only that someone left.",
+    "target": "scampered",
+    "changes": [
+      "Restored the selectively bold source target as a target span after visual page review; original instructions mention underlining but these source pages use bold."
+    ]
+  },
+  {
+    "key": "comprehensive:II:36",
+    "answer": 1,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "A dent is an inward depression or indentation, resembling a dimple. A hole or opening penetrates the surface and a break need not be indented.",
+    "target": "dent",
+    "changes": [
+      "Restored the selectively bold source target as a target span after visual page review; original instructions mention underlining but these source pages use bold."
+    ]
+  },
+  {
+    "key": "comprehensive:II:37",
+    "answer": 2,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Abruptly means suddenly, contrasting with slowly or smoothly; briefly measures duration rather than onset.",
+    "target": "abruptly",
+    "changes": [
+      "Restored the selectively bold source target as a target span after visual page review; original instructions mention underlining but these source pages use bold."
+    ]
+  },
+  {
+    "key": "comprehensive:II:38",
+    "answer": 1,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "To gravitate toward someone is to be drawn or attracted toward them, so A fits; move away and repel reverse the direction.",
+    "target": "gravitate",
+    "changes": [
+      "Restored the selectively bold source target as a target span after visual page review; original instructions mention underlining but these source pages use bold."
+    ]
+  },
+  {
+    "key": "comprehensive:II:39",
+    "answer": 4,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Extinguished describes a fire put out. Prevented would mean stopping it before it started, rather than ending its burning.",
+    "target": "extinguished",
+    "changes": [
+      "Restored the selectively bold source target as a target span after visual page review; original instructions mention underlining but these source pages use bold."
+    ]
+  },
+  {
+    "key": "comprehensive:II:40",
+    "answer": 3,
+    "subcategory": "vocabulary",
+    "taxonomy": "Compares contextual word meanings rather than testing grammar or factual claims.",
+    "explanation": "Ameliorating means improving or making better; changing alone does not guarantee improvement and beautifying narrows the kind of change.",
+    "target": "ameliorating",
+    "changes": [
+      "Restored the selectively bold source target as a target span after visual page review; original instructions mention underlining but these source pages use bold."
+    ]
+  },
+  {
+    "key": "comprehensive:III:1",
+    "answer": 4,
+    "explanation": "But coordinates contrasting independent clauses: growth is contrasted with weakness. Although expresses contrast too but subordinates, contrary to the explicit authored instruction.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings."
+    ],
+    "prompt": "Use a coordinating conjunction expressing contrast.\n\nAs diabetes retina problems get worse, new blood vessels grow ____________ these\nnew blood vessels are weak."
+  },
+  {
+    "key": "comprehensive:III:2",
+    "answer": 1,
+    "explanation": "That introduces a relative clause whose subject is the apparatus. The other options cannot supply the missing relative subject before can be purchased.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": []
+  },
+  {
+    "key": "comprehensive:III:3",
+    "answer": 3,
+    "explanation": "Where introduces a place-associated relative clause in which you can have a range of cheeses. Which/that would leave you can have a range without the required relationship to the platter; the place construction is the available completion.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": []
+  },
+  {
+    "key": "comprehensive:III:4",
+    "answer": 2,
+    "explanation": "Until marks the time through which the engagement continues. When locates an event, since marks a starting point or cause, and because/for supply reasons rather than an endpoint.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings."
+    ],
+    "prompt": "Select the connector marking the endpoint of the engagement.\n\nShe kept the guest engaged __________ the food was served."
+  },
+  {
+    "key": "comprehensive:III:5",
+    "answer": 5,
+    "explanation": "And adds the experience to the tasting as a coordinated verb phrase. To creates a purpose relation, but a contrast, and then/therefore are adverbs rather than coordinating conjunctions.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings."
+    ],
+    "prompt": "Use a coordinating conjunction that adds a second related action.\n\nWe tasted 12 different wines __________ experienced different scents and flavors."
+  },
+  {
+    "key": "comprehensive:III:6",
+    "answer": 5,
+    "explanation": "Which introduces a relative clause referring to the ground form and supplies its subject. And/so/but do not supply a subject before makes; to requires base make rather than makes.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": ["Added a comma before the nonrestrictive which clause."],
+    "prompt": "Some spices come in ground form, _________ makes it rather easy to just measure out a\nteaspoonful or more to make herbal tea."
+  },
+  {
+    "key": "comprehensive:III:7",
+    "answer": 1,
+    "explanation": "Before places informing earlier than the start of renovation. While/when locate simultaneity, if a condition, and then is not a subordinating connector here.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings."
+    ],
+    "prompt": "Choose the connector meaning earlier than.\n\nMike makes it a point to inform all the members of the family about the project\n___________ he begins any renovation project."
+  },
+  {
+    "key": "comprehensive:III:8",
+    "answer": 4,
+    "explanation": "While explicitly frames the leaving within the ongoing interval of sleeping. Because/since give cause, when identifies a time, and but coordinates contrast rather than this duration relation.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings."
+    ],
+    "prompt": "Choose the connector meaning throughout the time that.\n\nHe packed his things and left ____________ I was sleeping."
+  },
+  {
+    "key": "comprehensive:III:9",
+    "answer": 2,
+    "explanation": "If introduces the stated resourcefulness condition. When presents time or expected occurrence; unless reverses the condition, and should cannot precede we become in this uninverted clause.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings."
+    ],
+    "prompt": "Use the connector introducing a condition, meaning on condition that.\n\nEverything we need to do can be achieved ____________ we become resourceful\nenough."
+  },
+  {
+    "key": "comprehensive:III:10",
+    "answer": 3,
+    "explanation": "That introduces the relative clause modifying palm trees. Which is equally grammatical and to can introduce purpose, so both alternatives are explicitly removed to retain the intended unique relative-pronoun completion; who incorrectly refers to trees as persons.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+      "Removed a competing valid alternative while preserving all surviving stable choice IDs and full original labels; removal rationale appears in the independent explanation."
+    ],
+    "prompt": "Use a relative pronoun to introduce the trees' function.\n\nThe perimeter of the house was planted with different kinds of palm trees __________\nshield the windows from the heat and filter the polluted air in the area.",
+    "removeChoices": ["choice-2", "choice-4"]
+  },
+  {
+    "key": "comprehensive:III:11",
+    "answer": 2,
+    "explanation": "Since can subordinate the reason they are soothing. For can introduce a reason too but coordinates rather than subordinates; but contrasts, until gives an endpoint, and while gives time/contrast.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings."
+    ],
+    "prompt": "Use a subordinating conjunction introducing the reason.\n\nStick to simpler color schemes such as earth tones and neutrals __________ they are\nsoothing to the eyes."
+  },
+  {
+    "key": "comprehensive:III:12",
+    "answer": 1,
+    "explanation": "Who refers to the human teacher and supplies the relative-clause subject. That can also refer to people, so its competing correct alternative is removed; which is inappropriate for this human referent and having does not govern finite offered.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Removed a competing valid alternative while preserving all surviving stable choice IDs and full original labels; removal rationale appears in the independent explanation."
+    ],
+    "removeChoices": ["choice-3"]
+  },
+  {
+    "key": "comprehensive:III:13",
+    "answer": 3,
+    "explanation": "Although subordinates the uncertainty as a concession despite which she applied. But expresses contrast through coordination; because/since express cause and when time.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings."
+    ],
+    "prompt": "Use a subordinating conjunction expressing concession.\n\nShe applied for the job __________ she was not sure if her father would allow her to\nwork in another company."
+  },
+  {
+    "key": "comprehensive:III:14",
+    "answer": 4,
+    "explanation": "Since introduces the prior wait as the reason for the renovation timing. For also gives a reason but coordinates; while marks simultaneity and so consequence. The authored function instruction establishes since without pretending the unqualified source compelled it.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings."
+    ],
+    "prompt": "Use a subordinating conjunction expressing a reason.\n\nAs of press time, the unit is being renovated _________ the owner had to wait for the\nformer tenant's lease to expire."
+  },
+  {
+    "key": "comprehensive:III:15",
+    "answer": 2,
+    "explanation": "And adds the heritage-sharing idea to the liking for food. But would contrast, so derive a result, because supply a subordinate cause, and then is an adverb.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings."
+    ],
+    "prompt": "Use a coordinating conjunction adding a related idea.\n\nFilipinos generally love to eat, ________ we should do so because we want to share and\ncelebrate our culinary heritage with our family."
+  },
+  {
+    "key": "comprehensive:III:16",
+    "answer": 3,
+    "explanation": "And adds texture and taste to the freshness description. But/yet-style contrast would need an opposing relation, while subordinates, and so signals a consequence rather than addition.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings."
+    ],
+    "prompt": "Use a coordinating conjunction adding another description.\n\nThe traditional kesong puti is fresh __________ it has a solid texture, soft consistency,\nand a salty, sweet creamy taste."
+  },
+  {
+    "key": "comprehensive:III:17",
+    "answer": 1,
+    "explanation": "In spite combines with the supplied of into in spite of, expressing concession. Because of instead expresses cause; all/more/beside do not express despite.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings."
+    ],
+    "prompt": "Choose the expression meaning despite.\n\nChristmas is the time of the year for merry-making, song and dance, food and drink to\noverflow, and yet, ____________ of this outward show, there is a special meaning\nunderneath all of our merriment."
+  },
+  {
+    "key": "comprehensive:III:18",
+    "answer": 4,
+    "explanation": "As long as introduces a condition meaning provided that. So long as is also standard with this meaning, so original A is explicitly removed; the remaining if/for/not cannot form the expression.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Removed a competing valid alternative while preserving all surviving stable choice IDs and full original labels; removal rationale appears in the independent explanation."
+    ],
+    "removeChoices": ["choice-1"]
+  },
+  {
+    "key": "comprehensive:III:19",
+    "answer": 3,
+    "explanation": "Others refers to the contrasting different group. They would refer back to the same people; some/most/more specify quantities instead of directly expressing the other group. A semicolon replaces the comma splice.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+      "Replaced comma splice with a semicolon."
+    ],
+    "prompt": "Refer to a different group from the first group of some people.\n\nSome people get comfortable in a lifestyle that they can afford to give up; ___________\nrealize just how hard it is to be an entrepreneur and never try."
+  },
+  {
+    "key": "comprehensive:III:20",
+    "answer": 1,
+    "explanation": "So presents overcoming aversion as the practical consequence of selling being critical. But contrasts, for gives cause, as subordinates cause/time, and that does not coordinate these clauses.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings."
+    ],
+    "prompt": "Use a coordinating conjunction expressing a consequence.\n\nSelling is absolutely critical to your success, __________ if you have an aversion to it,\nyou'd better get over that fast."
+  },
+  {
+    "key": "comprehensive:III:21",
+    "answer": 3,
+    "explanation": "The comma introduces a nonrestrictive relative clause about hostile acts, whose subject is which. That does not introduce this nonrestrictive construction; some/those would introduce an unconnected independent subject and where denotes a place.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": []
+  },
+  {
+    "key": "comprehensive:III:22",
+    "answer": 3,
+    "explanation": "Because connects the second idea as a reason for the first. So would reverse the causal direction and but contrast; who/that do not fit this complete second clause. This checks grammar rather than authenticating the historical attribution.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings."
+    ],
+    "prompt": "Use a subordinating conjunction giving the asserted reason.\n\nThe State recognizes the vital role of the youth in nation building ___________\naccording to our national hero, the youth is the hope of the land."
+  },
+  {
+    "key": "comprehensive:III:23",
+    "answer": 2,
+    "explanation": "But contrasts being underrated with being ideal. For would give a reason for underrated status, a causal relationship the source explanation incorrectly asserts. The authored contrast instruction makes B unique.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+      "Corrected source key C (For) to B (But) for the explicitly requested contrast."
+    ],
+    "prompt": "Use a coordinating conjunction expressing contrast.\n\nIt's underrated as a form of exercise, __________ walking is ideal for people of all ages\nand fitness levels who want to be more active."
+  },
+  {
+    "key": "comprehensive:III:24",
+    "answer": 3,
+    "explanation": "That supplies the relative-clause subject for clothing. Which is also grammatical in a restrictive clause and is therefore explicitly removed; because supplies no subject before allows, and to would require allow.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Removed a competing valid alternative while preserving all surviving stable choice IDs and full original labels; removal rationale appears in the independent explanation."
+    ],
+    "removeChoices": ["choice-1"]
+  },
+  {
+    "key": "comprehensive:III:25",
+    "answer": 4,
+    "explanation": "However is the contrasting conjunctive adverb; but/yet/and are coordinating conjunctions and while subordinates. A semicolon before and comma after however correctly separates the independent clauses.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+      "Corrected aerobic noun to aerobics and replaced comma splice with semicolon before however."
+    ],
+    "prompt": "Use a conjunctive adverb expressing contrast.\n\nHigh-impact aerobics can generate vertical impact forces similar to running;\n____________, the impact forces are delivered mostly to the forefoot."
+  },
+  {
+    "key": "comprehensive:III:26",
+    "answer": 1,
+    "explanation": "But contrasts early departure with late arrival. So gives consequence, and addition, while/since subordination. The extra comma after the connector is removed for a normal coordinated sentence.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+      "Removed unnecessary comma after but."
+    ],
+    "prompt": "Use a coordinating conjunction expressing contrast.\n\nThey left very early, ________ the heavy traffic in EDSA prevented them from arriving\non time."
+  },
+  {
+    "key": "comprehensive:III:27",
+    "answer": 1,
+    "explanation": "Since presents finishing the work early as the reason for receiving the early bonus, not the reverse causal direction in the source explanation. Because was equally correct and is removed; for coordinates and the other remaining connectors contrast.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+      "Removed a competing valid alternative while preserving all surviving stable choice IDs and full original labels; removal rationale appears in the independent explanation.",
+      "Corrected finish their deadline to finish their work; independently corrected causal explanation."
+    ],
+    "prompt": "Use a subordinating conjunction giving the reason for the early bonus.\n\nThey received their bonus early _________ they were able to finish their work ahead\nof time.",
+    "removeChoices": ["choice-5"]
+  },
+  {
+    "key": "comprehensive:III:28",
+    "answer": 2,
+    "explanation": "When places the pocketing at the time of seeing the teacher. After places it later, because/for express cause, and upon cannot directly precede the finite clause he sees.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings."
+    ],
+    "prompt": "Choose the connector meaning at the time that.\n\nMark puts his cell phone in his pocket ____________ he sees his teacher approaching\nhim."
+  },
+  {
+    "key": "comprehensive:III:29",
+    "answer": 3,
+    "explanation": "Even combines with the already supplied if to create even if, a concession that the possible nonpayment does not change the lending. No if is missing from the actual prompt; the source explanation's defect claim is mistaken.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [],
+    "resolution": "Actual prompt already contains if after the blank, so original Even correctly forms even if; full original prompt inspection disproves the source explanation that if is missing."
+  },
+  {
+    "key": "comprehensive:III:30",
+    "answer": 2,
+    "explanation": "Unless means except if, making the instruction the exception to not going. If/when/because would assign different conditional, temporal or causal meanings.",
+    "taxonomy": "Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "changes": [
+      "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings."
+    ],
+    "prompt": "Choose the connector meaning except if.\n\nHe is not going _________ you tell him to."
+  }
+]

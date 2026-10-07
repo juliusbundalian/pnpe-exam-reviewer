@@ -1,0 +1,3596 @@
+[
+  {
+    "sourceKey": "comprehensive:III:1",
+    "proposed": {
+      "id": "q-000136",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Use a coordinating conjunction expressing contrast.\n\nAs diabetes retina problems get worse, new blood vessels grow ____________ these\nnew blood vessels are weak.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Therefore",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Since",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Because",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "But",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Although",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "1",
+          "pages": {
+            "start": 43,
+            "end": 43
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "D. But",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=43",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-1"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "But coordinates contrasting independent clauses: growth is contrasted with weakness. Although expresses contrast too but subordinates, contrary to the explicit authored instruction.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=43",
+      "docs/verification/editorial-full-corpus-task1.md#iii-1"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:2",
+    "proposed": {
+      "id": "q-000137",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "The mini-trampoline is a great aerobic training apparatus ___________ can be purchased\nat most sporting goods stores.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "That",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "However",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "But",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Nevertheless",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Such",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "2",
+          "pages": {
+            "start": 44,
+            "end": 44
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "A. That",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=44",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "That introduces a relative clause whose subject is the apparatus. The other options cannot supply the missing relative subject before can be purchased.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=44",
+      "docs/verification/editorial-full-corpus-task1.md#iii-2"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:3",
+    "proposed": {
+      "id": "q-000138",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Another favorite is a cheese platter __________ you can have a range from strong,\npungent cheeses to the soft and creamy.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Which",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "That",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Where",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "However",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Although",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "3",
+          "pages": {
+            "start": 44,
+            "end": 44
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "C. Where",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=44",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Where introduces a place-associated relative clause in which you can have a range of cheeses. Which/that would leave you can have a range without the required relationship to the platter; the place construction is the available completion.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=44",
+      "docs/verification/editorial-full-corpus-task1.md#iii-3"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:4",
+    "proposed": {
+      "id": "q-000139",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Select the connector marking the endpoint of the engagement.\n\nShe kept the guest engaged __________ the food was served.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Since",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Until",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "When",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Because",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "For",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "4",
+          "pages": {
+            "start": 44,
+            "end": 44
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "B. Until",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=44",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-4"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Until marks the time through which the engagement continues. When locates an event, since marks a starting point or cause, and because/for supply reasons rather than an endpoint.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=44",
+      "docs/verification/editorial-full-corpus-task1.md#iii-4"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:5",
+    "proposed": {
+      "id": "q-000140",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Use a coordinating conjunction that adds a second related action.\n\nWe tasted 12 different wines __________ experienced different scents and flavors.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "To",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Then",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "But",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Therefore",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "And",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "5",
+          "pages": {
+            "start": 44,
+            "end": 45
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "E. And",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=44",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-5"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "And adds the experience to the tasting as a coordinated verb phrase. To creates a purpose relation, but a contrast, and then/therefore are adverbs rather than coordinating conjunctions.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=44",
+      "docs/verification/editorial-full-corpus-task1.md#iii-5"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:6",
+    "proposed": {
+      "id": "q-000141",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Some spices come in ground form, _________ makes it rather easy to just measure out a\nteaspoonful or more to make herbal tea.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "And",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "So",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "But",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "To",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Which",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "6",
+          "pages": {
+            "start": 45,
+            "end": 45
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "E. Which",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=45",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Added a comma before the nonrestrictive which clause.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-6"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Which introduces a relative clause referring to the ground form and supplies its subject. And/so/but do not supply a subject before makes; to requires base make rather than makes.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=45",
+      "docs/verification/editorial-full-corpus-task1.md#iii-6"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:7",
+    "proposed": {
+      "id": "q-000142",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the connector meaning earlier than.\n\nMike makes it a point to inform all the members of the family about the project\n___________ he begins any renovation project.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Before",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "While",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "When",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Then",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "If",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "7",
+          "pages": {
+            "start": 45,
+            "end": 45
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "A. Before",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=45",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-7"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Before places informing earlier than the start of renovation. While/when locate simultaneity, if a condition, and then is not a subordinating connector here.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=45",
+      "docs/verification/editorial-full-corpus-task1.md#iii-7"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:8",
+    "proposed": {
+      "id": "q-000143",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the connector meaning throughout the time that.\n\nHe packed his things and left ____________ I was sleeping.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "When",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Because",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Since",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "While",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "But",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "8",
+          "pages": {
+            "start": 45,
+            "end": 45
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "D. While",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=45",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-8"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "While explicitly frames the leaving within the ongoing interval of sleeping. Because/since give cause, when identifies a time, and but coordinates contrast rather than this duration relation.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=45",
+      "docs/verification/editorial-full-corpus-task1.md#iii-8"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:9",
+    "proposed": {
+      "id": "q-000144",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Use the connector introducing a condition, meaning on condition that.\n\nEverything we need to do can be achieved ____________ we become resourceful\nenough.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Should",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "If",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "When",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "So",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Unless",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "9",
+          "pages": {
+            "start": 45,
+            "end": 46
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "B. If",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=45",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-9"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "If introduces the stated resourcefulness condition. When presents time or expected occurrence; unless reverses the condition, and should cannot precede we become in this uninverted clause.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=45",
+      "docs/verification/editorial-full-corpus-task1.md#iii-9"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:10",
+    "proposed": {
+      "id": "q-000145",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Use a relative pronoun to introduce the trees' function.\n\nThe perimeter of the house was planted with different kinds of palm trees __________\nshield the windows from the heat and filter the polluted air in the area.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Who",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "That",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "And",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "10",
+          "pages": {
+            "start": 46,
+            "end": 46
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "C. That",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=46",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-10"
+            },
+            {
+              "reason": "Removed a competing valid alternative while preserving all surviving stable choice IDs and full original labels; removal rationale appears in the independent explanation.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-10"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "That introduces the relative clause modifying palm trees. Which is equally grammatical and to can introduce purpose, so both alternatives are explicitly removed to retain the intended unique relative-pronoun completion; who incorrectly refers to trees as persons.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=46",
+      "docs/verification/editorial-full-corpus-task1.md#iii-10"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "That introduces the relative clause modifying palm trees. Which is equally grammatical and to can introduce purpose, so both alternatives are explicitly removed to retain the intended unique relative-pronoun completion; who incorrectly refers to trees as persons.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=46",
+            "docs/verification/editorial-full-corpus-task1.md#iii-10"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:11",
+    "proposed": {
+      "id": "q-000146",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Use a subordinating conjunction introducing the reason.\n\nStick to simpler color schemes such as earth tones and neutrals __________ they are\nsoothing to the eyes.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "For",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Since",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "But",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Until",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "While",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "11",
+          "pages": {
+            "start": 46,
+            "end": 46
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "B. Since",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=46",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-11"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Since can subordinate the reason they are soothing. For can introduce a reason too but coordinates rather than subordinates; but contrasts, until gives an endpoint, and while gives time/contrast.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=46",
+      "docs/verification/editorial-full-corpus-task1.md#iii-11"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:12",
+    "proposed": {
+      "id": "q-000147",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "I met a yoga teacher ______ offered a practice that was purely organic and feminine,\nunlike the technical training from yoga institution in our school.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Who",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "And",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Which",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Having",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "12",
+          "pages": {
+            "start": 46,
+            "end": 46
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "A. Who",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=46",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Removed a competing valid alternative while preserving all surviving stable choice IDs and full original labels; removal rationale appears in the independent explanation.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-12"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Who refers to the human teacher and supplies the relative-clause subject. That can also refer to people, so its competing correct alternative is removed; which is inappropriate for this human referent and having does not govern finite offered.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=46",
+      "docs/verification/editorial-full-corpus-task1.md#iii-12"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:13",
+    "proposed": {
+      "id": "q-000148",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Use a subordinating conjunction expressing concession.\n\nShe applied for the job __________ she was not sure if her father would allow her to\nwork in another company.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Because",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "But",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Although",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Since",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "When",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "13",
+          "pages": {
+            "start": 47,
+            "end": 47
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "C. Although",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=47",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-13"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Although subordinates the uncertainty as a concession despite which she applied. But expresses contrast through coordination; because/since express cause and when time.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=47",
+      "docs/verification/editorial-full-corpus-task1.md#iii-13"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:14",
+    "proposed": {
+      "id": "q-000149",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Use a subordinating conjunction expressing a reason.\n\nAs of press time, the unit is being renovated _________ the owner had to wait for the\nformer tenant's lease to expire.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "But",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "While",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "For",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Since",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "So",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "14",
+          "pages": {
+            "start": 47,
+            "end": 47
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "D. Since",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=47",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-14"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Since introduces the prior wait as the reason for the renovation timing. For also gives a reason but coordinates; while marks simultaneity and so consequence. The authored function instruction establishes since without pretending the unqualified source compelled it.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=47",
+      "docs/verification/editorial-full-corpus-task1.md#iii-14"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:15",
+    "proposed": {
+      "id": "q-000150",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Use a coordinating conjunction adding a related idea.\n\nFilipinos generally love to eat, ________ we should do so because we want to share and\ncelebrate our culinary heritage with our family.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "But",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "And",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "So",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Because",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Then",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "15",
+          "pages": {
+            "start": 47,
+            "end": 47
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "B. And",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=47",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-15"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "And adds the heritage-sharing idea to the liking for food. But would contrast, so derive a result, because supply a subordinate cause, and then is an adverb.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=47",
+      "docs/verification/editorial-full-corpus-task1.md#iii-15"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:16",
+    "proposed": {
+      "id": "q-000151",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Use a coordinating conjunction adding another description.\n\nThe traditional kesong puti is fresh __________ it has a solid texture, soft consistency,\nand a salty, sweet creamy taste.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "That",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "But",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "And",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "While",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "So",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "16",
+          "pages": {
+            "start": 47,
+            "end": 48
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "C. And",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=47",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-16"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "And adds texture and taste to the freshness description. But/yet-style contrast would need an opposing relation, while subordinates, and so signals a consequence rather than addition.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=47",
+      "docs/verification/editorial-full-corpus-task1.md#iii-16"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:17",
+    "proposed": {
+      "id": "q-000152",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the expression meaning despite.\n\nChristmas is the time of the year for merry-making, song and dance, food and drink to\noverflow, and yet, ____________ of this outward show, there is a special meaning\nunderneath all of our merriment.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "In spite",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "All",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Because",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Beside",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "More",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "17",
+          "pages": {
+            "start": 48,
+            "end": 48
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "A. In spite",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=48",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-17"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "In spite combines with the supplied of into in spite of, expressing concession. Because of instead expresses cause; all/more/beside do not express despite.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=48",
+      "docs/verification/editorial-full-corpus-task1.md#iii-17"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:18",
+    "proposed": {
+      "id": "q-000153",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "You can break up your activity into 10-minute chunks, _______ long as you're doing your\nactivity at a moderate intensity.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "If",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "For",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "As",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Not",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "18",
+          "pages": {
+            "start": 48,
+            "end": 48
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "D. As",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=48",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Removed a competing valid alternative while preserving all surviving stable choice IDs and full original labels; removal rationale appears in the independent explanation.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-18"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "As long as introduces a condition meaning provided that. So long as is also standard with this meaning, so original A is explicitly removed; the remaining if/for/not cannot form the expression.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=48",
+      "docs/verification/editorial-full-corpus-task1.md#iii-18"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:19",
+    "proposed": {
+      "id": "q-000154",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Refer to a different group from the first group of some people.\n\nSome people get comfortable in a lifestyle that they can afford to give up; ___________\nrealize just how hard it is to be an entrepreneur and never try.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Some",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Most",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Others",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "They",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "More",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "19",
+          "pages": {
+            "start": 48,
+            "end": 48
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "C. Others",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=48",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-19"
+            },
+            {
+              "reason": "Replaced comma splice with a semicolon.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-19"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Others refers to the contrasting different group. They would refer back to the same people; some/most/more specify quantities instead of directly expressing the other group. A semicolon replaces the comma splice.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=48",
+      "docs/verification/editorial-full-corpus-task1.md#iii-19"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:20",
+    "proposed": {
+      "id": "q-000155",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Use a coordinating conjunction expressing a consequence.\n\nSelling is absolutely critical to your success, __________ if you have an aversion to it,\nyou'd better get over that fast.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "So",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "That",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "But",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "For",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "As",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "20",
+          "pages": {
+            "start": 49,
+            "end": 49
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "A. So",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=49",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-20"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "So presents overcoming aversion as the practical consequence of selling being critical. But contrasts, for gives cause, as subordinates cause/time, and that does not coordinate these clauses.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=49",
+      "docs/verification/editorial-full-corpus-task1.md#iii-20"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:21",
+    "proposed": {
+      "id": "q-000156",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "What is not healthy about sibling rivalry is when children learn to express sibling rivalry\nthrough hostile acts, _________ may be unintentionally taught by parents themselves.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "That",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Some",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Which",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Those",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Where",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "21",
+          "pages": {
+            "start": 49,
+            "end": 49
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "C. Which",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=49",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The comma introduces a nonrestrictive relative clause about hostile acts, whose subject is which. That does not introduce this nonrestrictive construction; some/those would introduce an unconnected independent subject and where denotes a place.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=49",
+      "docs/verification/editorial-full-corpus-task1.md#iii-21"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:22",
+    "proposed": {
+      "id": "q-000157",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Use a subordinating conjunction giving the asserted reason.\n\nThe State recognizes the vital role of the youth in nation building ___________\naccording to our national hero, the youth is the hope of the land.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Who",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "That",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Because",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "So",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "But",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "22",
+          "pages": {
+            "start": 49,
+            "end": 49
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "C. Because",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=49",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-22"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Because connects the second idea as a reason for the first. So would reverse the causal direction and but contrast; who/that do not fit this complete second clause. This checks grammar rather than authenticating the historical attribution.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=49",
+      "docs/verification/editorial-full-corpus-task1.md#iii-22"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:23",
+    "proposed": {
+      "id": "q-000158",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Use a coordinating conjunction expressing contrast.\n\nIt's underrated as a form of exercise, __________ walking is ideal for people of all ages\nand fitness levels who want to be more active.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "That",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "But",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "For",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "And",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "So",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "23",
+          "pages": {
+            "start": 49,
+            "end": 50
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "C. For",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=49",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-23"
+            },
+            {
+              "reason": "Corrected source key C (For) to B (But) for the explicitly requested contrast.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-23"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "But contrasts being underrated with being ideal. For would give a reason for underrated status, a causal relationship the source explanation incorrectly asserts. The authored contrast instruction makes B unique.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=49",
+      "docs/verification/editorial-full-corpus-task1.md#iii-23"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "But contrasts being underrated with being ideal. For would give a reason for underrated status, a causal relationship the source explanation incorrectly asserts. The authored contrast instruction makes B unique.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=49",
+            "docs/verification/editorial-full-corpus-task1.md#iii-23"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:24",
+    "proposed": {
+      "id": "q-000159",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "When walking wear loose-fitting clothing __________ allows you to move freely.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Because",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "That",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "To",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Maybe",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "24",
+          "pages": {
+            "start": 50,
+            "end": 50
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "C. That",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=50",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Removed a competing valid alternative while preserving all surviving stable choice IDs and full original labels; removal rationale appears in the independent explanation.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-24"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "That supplies the relative-clause subject for clothing. Which is also grammatical in a restrictive clause and is therefore explicitly removed; because supplies no subject before allows, and to would require allow.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=50",
+      "docs/verification/editorial-full-corpus-task1.md#iii-24"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:25",
+    "proposed": {
+      "id": "q-000160",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Use a conjunctive adverb expressing contrast.\n\nHigh-impact aerobics can generate vertical impact forces similar to running;\n____________, the impact forces are delivered mostly to the forefoot.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "But",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "While",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Yet",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "However",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "And",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "25",
+          "pages": {
+            "start": 50,
+            "end": 50
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "D. However",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=50",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-25"
+            },
+            {
+              "reason": "Corrected aerobic noun to aerobics and replaced comma splice with semicolon before however.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-25"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "However is the contrasting conjunctive adverb; but/yet/and are coordinating conjunctions and while subordinates. A semicolon before and comma after however correctly separates the independent clauses.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=50",
+      "docs/verification/editorial-full-corpus-task1.md#iii-25"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:26",
+    "proposed": {
+      "id": "q-000161",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Use a coordinating conjunction expressing contrast.\n\nThey left very early, ________ the heavy traffic in EDSA prevented them from arriving\non time.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "But",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "So",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "While",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "And",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Since",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "26",
+          "pages": {
+            "start": 50,
+            "end": 50
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "A. But",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=50",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-26"
+            },
+            {
+              "reason": "Removed unnecessary comma after but.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-26"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "But contrasts early departure with late arrival. So gives consequence, and addition, while/since subordination. The extra comma after the connector is removed for a normal coordinated sentence.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=50",
+      "docs/verification/editorial-full-corpus-task1.md#iii-26"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:27",
+    "proposed": {
+      "id": "q-000162",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Use a subordinating conjunction giving the reason for the early bonus.\n\nThey received their bonus early _________ they were able to finish their work ahead\nof time.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Since",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Although",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "For",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "But",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "27",
+          "pages": {
+            "start": 50,
+            "end": 51
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "A. Since",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=50",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-27"
+            },
+            {
+              "reason": "Removed a competing valid alternative while preserving all surviving stable choice IDs and full original labels; removal rationale appears in the independent explanation.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-27"
+            },
+            {
+              "reason": "Corrected finish their deadline to finish their work; independently corrected causal explanation.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-27"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Since presents finishing the work early as the reason for receiving the early bonus, not the reverse causal direction in the source explanation. Because was equally correct and is removed; for coordinates and the other remaining connectors contrast.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=50",
+      "docs/verification/editorial-full-corpus-task1.md#iii-27"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "Since presents finishing the work early as the reason for receiving the early bonus, not the reverse causal direction in the source explanation. Because was equally correct and is removed; for coordinates and the other remaining connectors contrast.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=50",
+            "docs/verification/editorial-full-corpus-task1.md#iii-27"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:28",
+    "proposed": {
+      "id": "q-000163",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the connector meaning at the time that.\n\nMark puts his cell phone in his pocket ____________ he sees his teacher approaching\nhim.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Because",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "When",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "After",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Upon",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "For",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "28",
+          "pages": {
+            "start": 51,
+            "end": 51
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "B. When",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=51",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-28"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "When places the pocketing at the time of seeing the teacher. After places it later, because/for express cause, and upon cannot directly precede the finite clause he sees.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=51",
+      "docs/verification/editorial-full-corpus-task1.md#iii-28"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:29",
+    "proposed": {
+      "id": "q-000164",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Sam lends his friend a big amount of money ____________ if he is sure his friend will\nnot pay it back.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "But",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "So",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Even",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Although",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "That",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "29",
+          "pages": {
+            "start": 51,
+            "end": 51
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "C. Even",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=51",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Even combines with the already supplied if to create even if, a concession that the possible nonpayment does not change the lending. No if is missing from the actual prompt; the source explanation's defect claim is mistaken.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=51",
+      "docs/verification/editorial-full-corpus-task1.md#iii-29"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "Actual prompt already contains if after the blank, so original Even correctly forms even if; full original prompt inspection disproves the source explanation that if is missing.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=51",
+            "docs/verification/editorial-full-corpus-task1.md#iii-29"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:III:30",
+    "proposed": {
+      "id": "q-000165",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the connector meaning except if.\n\nHe is not going _________ you tell him to.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "If",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Unless",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "When",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Because",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "III",
+          "originalNumber": "30",
+          "pages": {
+            "start": 51,
+            "end": 51
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "B. Unless",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=51",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit grammatical relation or function instruction because the original sentence allowed multiple different meanings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iii-30"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Unless means except if, making the instruction the exception to not going. If/when/because would assign different conditional, temporal or causal meanings.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects relative pronouns, clause connectors and logical grammatical relations within sentences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=51",
+      "docs/verification/editorial-full-corpus-task1.md#iii-30"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  }
+]

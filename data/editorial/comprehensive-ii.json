@@ -1,0 +1,5055 @@
+[
+  {
+    "sourceKey": "comprehensive:II:1",
+    "proposed": {
+      "id": "q-000096",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"daze\" in this sentence?\n\nThe old woman was still in a daze after she was nearly run over by a\nspeeding car near the market.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Fright",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Alarm",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Stupor",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Shock",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "1",
+          "pages": {
+            "start": 31,
+            "end": 31
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "C. Stupor",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=31",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-1"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Daze denotes impaired or confused awareness, closest here to stupor; shock can describe its cause rather than that mental state.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=31",
+      "docs/verification/editorial-full-corpus-task1.md#ii-1"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=31",
+            "docs/verification/editorial-full-corpus-task1.md#ii-1"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:2",
+    "proposed": {
+      "id": "q-000097",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"haste\" in this sentence?\n\nTwo men emerged from a nearby grocery in great haste carrying a\nbagful of grocery items.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Speed",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Leisureliness",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Calm",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Reluctance",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "2",
+          "pages": {
+            "start": 31,
+            "end": 32
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Speed",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=31",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-2"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Haste denotes speed and urgency; leisureliness is its opposite, while calm and reluctance do not denote speed.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=31",
+      "docs/verification/editorial-full-corpus-task1.md#ii-2"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=31",
+            "docs/verification/editorial-full-corpus-task1.md#ii-2"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:3",
+    "proposed": {
+      "id": "q-000098",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"enveloped\" in this sentence?\n\nShe runs as fast as she could to avoid being caught until darkness\nenveloped her completely.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Engulfed",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Hid",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Swallowed",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Unfolded",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "3",
+          "pages": {
+            "start": 32,
+            "end": 32
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Engulfed",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=32",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-3"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Enveloped describes surrounding or covering completely, so engulfed preserves the sense. Unfolded is unrelated; hid emphasizes concealment instead of enclosure.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=32",
+      "docs/verification/editorial-full-corpus-task1.md#ii-3"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=32",
+            "docs/verification/editorial-full-corpus-task1.md#ii-3"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:4",
+    "proposed": {
+      "id": "q-000099",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"recess\" in this sentence?\n\nThe talk with the opposing party will resume after a month's recess of\nthe delegates in the bilateral conference.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Travel",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Break",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Stint",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Suspension",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "4",
+          "pages": {
+            "start": 32,
+            "end": 32
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "B. Break",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=32",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-4"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A recess is a temporary break in proceedings, making break the intended synonym. Suspension is also a plausible interruption and requires contextual distinction.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims. Open: The explicit authored focus resolves missing marking, but original alternatives contain overlapping synonyms (break/suspension or escape/outing) that need a sharper meaning distinction.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=32",
+      "docs/verification/editorial-full-corpus-task1.md#ii-4"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "editorial-ambiguity",
+          "blocking": true,
+          "message": "The explicit authored focus resolves missing marking, but original alternatives contain overlapping synonyms (break/suspension or escape/outing) that need a sharper meaning distinction."
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=32",
+            "docs/verification/editorial-full-corpus-task1.md#ii-4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:5",
+    "proposed": {
+      "id": "q-000100",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"gaffe\" in this sentence?\n\nThe lecturer made a big gaffe when he shouted at one of the students\nwho could not answer his question.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Scandal",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Scene",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Joke",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Blunder",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "5",
+          "pages": {
+            "start": 32,
+            "end": 33
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "D. Blunder",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=32",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-5"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A gaffe is an embarrassing mistake, which blunder names; a scandal or scene may result but is not the mistake itself.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=32",
+      "docs/verification/editorial-full-corpus-task1.md#ii-5"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=32",
+            "docs/verification/editorial-full-corpus-task1.md#ii-5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:6",
+    "proposed": {
+      "id": "q-000101",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"unbecoming\" in this sentence?\n\nThe things she was saying were most unbecoming of a Theology\nteacher of her rank.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Inappropriate",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Inaccurate",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Proper",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Unwelcome",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "6",
+          "pages": {
+            "start": 33,
+            "end": 33
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Inappropriate",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=33",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-6"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Unbecoming means unsuitable for the person or role, hence inappropriate; inaccurate concerns truth and proper reverses the meaning.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=33",
+      "docs/verification/editorial-full-corpus-task1.md#ii-6"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=33",
+            "docs/verification/editorial-full-corpus-task1.md#ii-6"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:7",
+    "proposed": {
+      "id": "q-000102",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"accountable\" in this sentence?\n\nEvery government official will be accountable for his/her action.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Applauded",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Compensated",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Responsible",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Approached",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "7",
+          "pages": {
+            "start": 33,
+            "end": 33
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "C. Responsible",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=33",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-7"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Accountable means responsible and answerable for conduct; applause or compensation are consequences rather than responsibility.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=33",
+      "docs/verification/editorial-full-corpus-task1.md#ii-7"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=33",
+            "docs/verification/editorial-full-corpus-task1.md#ii-7"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:8",
+    "proposed": {
+      "id": "q-000103",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"downplay\" in this sentence?\n\nLet us not try to downplay the atrocities committed by the terrorists in\nother countries, particularly in Syria and some countries in Africa.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Soften",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Ignore",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Forget",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Imitate",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "8",
+          "pages": {
+            "start": 33,
+            "end": 34
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Soften",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=33",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-8"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Downplay means minimize apparent seriousness; soften is the closest available approximation, whereas ignore and forget remove attention instead.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=33",
+      "docs/verification/editorial-full-corpus-task1.md#ii-8"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=33",
+            "docs/verification/editorial-full-corpus-task1.md#ii-8"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:9",
+    "proposed": {
+      "id": "q-000104",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"overt\" in this sentence?\n\nThe witness testified that the suspect's actions were overt and were\nobservable by the former.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Unknown",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Suspicious",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Hidden",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Visible",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "9",
+          "pages": {
+            "start": 34,
+            "end": 34
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "D. Visible",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=34",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-9"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Overt describes behavior openly observable, hence visible, the opposite of hidden or unknown.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=34",
+      "docs/verification/editorial-full-corpus-task1.md#ii-9"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=34",
+            "docs/verification/editorial-full-corpus-task1.md#ii-9"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:10",
+    "proposed": {
+      "id": "q-000105",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"negligent\" in this sentence?\n\nIf your nanny lets you go without your packed lunch, she would be\nnegligent in her responsibilities as your guardian.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Unable",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Careless",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Suitable",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Lacking",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "10",
+          "pages": {
+            "start": 34,
+            "end": 34
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "B. Negligent",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=34",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-10"
+            },
+            {
+              "reason": "Replaced self-identical alternative Negligent with authored synonym Careless; source alternative remains preserved through original labels and audit.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-10"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Negligent describes failure to exercise proper care, so careless is the closest meaning. Unable indicates incapacity, suitable appropriateness, and lacking an unspecified shortage. The original B repeated the target itself; the authored synonym repairs that defect.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=34",
+      "docs/verification/editorial-full-corpus-task1.md#ii-10"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=34",
+            "docs/verification/editorial-full-corpus-task1.md#ii-10"
+          ]
+        },
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=34",
+            "docs/verification/editorial-full-corpus-task1.md#ii-10"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:11",
+    "proposed": {
+      "id": "q-000106",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"undue\" in this sentence?\n\nSome local officials in several towns in the country take undue\nadvantage of ignorant people.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Excessive",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Unthinkable",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Little",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Unbelievable",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "11",
+          "pages": {
+            "start": 34,
+            "end": 35
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Excessive",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=34",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-11"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Undue means exceeding a proper limit, hence excessive; little reverses the scale and unbelievable does not address propriety.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=34",
+      "docs/verification/editorial-full-corpus-task1.md#ii-11"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=34",
+            "docs/verification/editorial-full-corpus-task1.md#ii-11"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:12",
+    "proposed": {
+      "id": "q-000107",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"utmost\" in this sentence?\n\nPatients in the hospitals, even the poor ones, should be attended\nwith utmost care and courtesy.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Ardent",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Minimum",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Extreme",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Usual",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "12",
+          "pages": {
+            "start": 35,
+            "end": 35
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "C. Extreme",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=35",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-12"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Utmost denotes the highest possible degree; extreme is nearest among the options, while minimum is opposite.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=35",
+      "docs/verification/editorial-full-corpus-task1.md#ii-12"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=35",
+            "docs/verification/editorial-full-corpus-task1.md#ii-12"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:13",
+    "proposed": {
+      "id": "q-000108",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"sobresaliente\" in this sentence?\n\nShe was included in the dean's list because her grades and\nperformance in all her subjects were sobresaliente.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Impressive",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Outstanding",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Amazing",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Commendable",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "13",
+          "pages": {
+            "start": 35,
+            "end": 35
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "B. Outstanding",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=35",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-13"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Sobresaliente describes outstanding or excellent performance; outstanding is the closest direct rendering rather than merely commendable.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=35",
+      "docs/verification/editorial-full-corpus-task1.md#ii-13"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=35",
+            "docs/verification/editorial-full-corpus-task1.md#ii-13"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:14",
+    "proposed": {
+      "id": "q-000109",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"relaxed\" in this sentence?\n\nThe nurse relaxed her grip on her patient's arm and allowed him to\nincline his back gently on the couch.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Tightened",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Quieted",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Tensed",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Loosened",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "14",
+          "pages": {
+            "start": 35,
+            "end": 36
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "D. Loosened",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=35",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-14"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Relaxing a grip makes it less tight, so loosened is the synonym; tightened and tensed reverse the action.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=35",
+      "docs/verification/editorial-full-corpus-task1.md#ii-14"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=35",
+            "docs/verification/editorial-full-corpus-task1.md#ii-14"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:15",
+    "proposed": {
+      "id": "q-000110",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"chaos\" in this sentence?\n\nThe sound of chaos from the scene of the crime grew as media\nreporters arrived to make a report.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Disorder",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Crying",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Shouting",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Cursing",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "15",
+          "pages": {
+            "start": 36,
+            "end": 36
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Disorder",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=36",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-15"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Chaos denotes disorder, which can include noise but is broader than crying, shouting or cursing.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=36",
+      "docs/verification/editorial-full-corpus-task1.md#ii-15"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=36",
+            "docs/verification/editorial-full-corpus-task1.md#ii-15"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:16",
+    "proposed": {
+      "id": "q-000111",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"sanctuary\" in this sentence?\n\nThe search for our own personal sanctuary gets more pressing every\nday as we go through various stresses in life, increasing violence in the\ncountry and the world, terrorist attacks, ridiculous politics and traffic in\nEDSA.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Haven",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Resort",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Church",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Den",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "16",
+          "pages": {
+            "start": 36,
+            "end": 36
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Haven",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=36",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-16"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A sanctuary offers safety or refuge, hence haven. Church, resort and den name places without necessarily expressing that protective role.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=36",
+      "docs/verification/editorial-full-corpus-task1.md#ii-16"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=36",
+            "docs/verification/editorial-full-corpus-task1.md#ii-16"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:17",
+    "proposed": {
+      "id": "q-000112",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"harmony\" in this sentence?\n\nSunshine and fresh air go a long way in making you feel happier and\nin harmony with the world.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Dissonance",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Symmetry",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Accord",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Conflict",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "17",
+          "pages": {
+            "start": 36,
+            "end": 37
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "C. Accord",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=36",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-17"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Harmony means agreement or compatibility, so accord fits. Dissonance and conflict are opposite senses.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=36",
+      "docs/verification/editorial-full-corpus-task1.md#ii-17"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=36",
+            "docs/verification/editorial-full-corpus-task1.md#ii-17"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:18",
+    "proposed": {
+      "id": "q-000113",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"convenient\" in this sentence?\n\nWalking is the most universally recommended activity, convenient\nand a safe form of exercise for diabetics.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Suitable",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Refreshing",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Wholesome",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Pleasant",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "18",
+          "pages": {
+            "start": 37,
+            "end": 37
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Suitable",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=37",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-18"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Convenient in this description means well suited or easy to undertake, nearest to suitable; refreshing and pleasant describe effects rather than suitability.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=37",
+      "docs/verification/editorial-full-corpus-task1.md#ii-18"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=37",
+            "docs/verification/editorial-full-corpus-task1.md#ii-18"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:19",
+    "proposed": {
+      "id": "q-000114",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"ingenuity\" in this sentence?\n\nIn its effort to introduce and exhibit Filipino ingenuity, a group of\nBatangueños is presenting an impressive array of products showcasing\ntheir creativity.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Reputation",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Sincerity",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Inventiveness",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Expertise",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "19",
+          "pages": {
+            "start": 37,
+            "end": 37
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "C. Inventiveness",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=37",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-19"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Ingenuity is inventive cleverness, so inventiveness fits; reputation and sincerity do not express creation of ideas.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=37",
+      "docs/verification/editorial-full-corpus-task1.md#ii-19"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=37",
+            "docs/verification/editorial-full-corpus-task1.md#ii-19"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:20",
+    "proposed": {
+      "id": "q-000115",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"immerse\" in this sentence?\n\nThe artist's house is surrounded by trees, so it's easy to immerse\nhimself in the natural surroundings to get good design ideas.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Swim",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Absorb",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Attach",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Stick",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "20",
+          "pages": {
+            "start": 37,
+            "end": 38
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "B. Absorb",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=37",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-20"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "To immerse oneself is to become deeply engaged or absorbed. Absorb is the nearest option but does not substitute with exactly the same transitive/reflexive construction.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=37",
+      "docs/verification/editorial-full-corpus-task1.md#ii-20"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=37",
+            "docs/verification/editorial-full-corpus-task1.md#ii-20"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:21",
+    "proposed": {
+      "id": "q-000116",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"getaway\" in this sentence?\n\nAfter living in the province for a while, you quickly realize that a\ngetaway to quiet the nerves and relax the senses is necessary to cope\nwith the chaotic pace in the city.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Escape",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Outing",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Travel",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Practice",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "21",
+          "pages": {
+            "start": 38,
+            "end": 38
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Escape",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=38",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-21"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A getaway is an escape or short departure from everyday pressures; escape captures that purpose, though outing is also plausible for a short trip.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims. Open: The explicit authored focus resolves missing marking, but original alternatives contain overlapping synonyms (break/suspension or escape/outing) that need a sharper meaning distinction.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=38",
+      "docs/verification/editorial-full-corpus-task1.md#ii-21"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "editorial-ambiguity",
+          "blocking": true,
+          "message": "The explicit authored focus resolves missing marking, but original alternatives contain overlapping synonyms (break/suspension or escape/outing) that need a sharper meaning distinction."
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=38",
+            "docs/verification/editorial-full-corpus-task1.md#ii-21"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:22",
+    "proposed": {
+      "id": "q-000117",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"indoors\" in this sentence?\n\nWith most of us spending most of our lives indoors, a green building\nis the healthy, responsible, common-sense choice for a better life, while\naddressing our concerns on the environment.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Open field",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Open air",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "In a house or building",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Hidden",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "22",
+          "pages": {
+            "start": 38,
+            "end": 38
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "C. In a house or building",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=38",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-22"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Indoors means inside a building, exactly C. Open field and open air are outdoors, and hidden does not locate a person inside.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=38",
+      "docs/verification/editorial-full-corpus-task1.md#ii-22"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=38",
+            "docs/verification/editorial-full-corpus-task1.md#ii-22"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:23",
+    "proposed": {
+      "id": "q-000118",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"debunks\" in this sentence?\n\nAn interior decorator debunks the common misconception in this\ncountry that moving and settling in takes only a week.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Accepts",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Welcomes",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Agrees",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Disproves",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "23",
+          "pages": {
+            "start": 38,
+            "end": 39
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "D. Disproves",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=38",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-23"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "To debunk is to show a claim false, hence disprove, rather than accept, welcome or agree with it.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=38",
+      "docs/verification/editorial-full-corpus-task1.md#ii-23"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=38",
+            "docs/verification/editorial-full-corpus-task1.md#ii-23"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:24",
+    "proposed": {
+      "id": "q-000119",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"fuel\" in this sentence?\n\nThe body gets its fuel from glucose by breaking down the\ncarbohydrates you eat.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Power",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Strength",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Inspiration",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Stamina",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "24",
+          "pages": {
+            "start": 39,
+            "end": 39
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Power",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=39",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-24"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Fuel is an energy source; power is the nearest available meaning. Strength and stamina describe capacity, rather than the source supplying it.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=39",
+      "docs/verification/editorial-full-corpus-task1.md#ii-24"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=39",
+            "docs/verification/editorial-full-corpus-task1.md#ii-24"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:25",
+    "proposed": {
+      "id": "q-000120",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"topnotch\" in this sentence?\n\nAround a man-made lagoon just beyond the beach club are casitas,\nwhich offer topnotch accommodations to beach club members and\nguests, as well as round-the-clock room service.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "First-class",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Elegant",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Expensive",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "25",
+          "pages": {
+            "start": 39,
+            "end": 39
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "B. First-class",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=39",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-25"
+            },
+            {
+              "reason": "Removed equally correct synonym Excellent; retained original choice IDs 2–4 and original labels A–D in lineage.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-25"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Topnotch denotes the highest quality, hence first-class. Elegant describes style and expensive describes cost, neither guaranteeing quality. Excellent was also correct and has been transparently removed.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=39",
+      "docs/verification/editorial-full-corpus-task1.md#ii-25"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=39",
+            "docs/verification/editorial-full-corpus-task1.md#ii-25"
+          ]
+        },
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=39",
+            "docs/verification/editorial-full-corpus-task1.md#ii-25"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:26",
+    "proposed": {
+      "id": "q-000121",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"elicited\" in this sentence?\n\nHis remark elicited different reactions from the crowd.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Evoked",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Accorded",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Deserved",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Followed",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "26",
+          "pages": {
+            "start": 39,
+            "end": 40
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Evoked",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=39",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-26"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Elicited means drew out a response, hence evoked. Deserved expresses merit, not causation of a response.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=39",
+      "docs/verification/editorial-full-corpus-task1.md#ii-26"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=39",
+            "docs/verification/editorial-full-corpus-task1.md#ii-26"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:27",
+    "proposed": {
+      "id": "q-000122",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"recipient\" in this sentence?\n\nThe recipient of a study grant abroad is a newcomer in the company.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Organizer",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Donor",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Receiver",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Giver",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "27",
+          "pages": {
+            "start": 40,
+            "end": 40
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "C. Receiver",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=40",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-27"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A recipient receives something, hence receiver; donor and giver reverse the direction of transfer.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=40",
+      "docs/verification/editorial-full-corpus-task1.md#ii-27"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=40",
+            "docs/verification/editorial-full-corpus-task1.md#ii-27"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:28",
+    "proposed": {
+      "id": "q-000123",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"relinquished\" in this sentence?\n\nWhen some ugly rumors spread in the neighborhood, he immediately\nrelinquished his position in the association.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Secured",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Gave up",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Perfected",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "28",
+          "pages": {
+            "start": 40,
+            "end": 40
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "B. Gave up",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=40",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-28"
+            },
+            {
+              "reason": "Removed overlapping synonym Abandoned; retained original choice IDs 1–3 and all original labels in lineage.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-28"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Relinquished means gave up or surrendered possession or office. Gave up is correct; secured and perfected do not mean surrender. Abandoned overlapped with gave up and was transparently removed.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=40",
+      "docs/verification/editorial-full-corpus-task1.md#ii-28"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=40",
+            "docs/verification/editorial-full-corpus-task1.md#ii-28"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:29",
+    "proposed": {
+      "id": "q-000124",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"unsung\" in this sentence?\n\nThe street sweepers and the garbage collectors belong to the\nunsung heroes in our society.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Praised",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Admired",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Recognized",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Unacknowledged",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "29",
+          "pages": {
+            "start": 40,
+            "end": 40
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "D. Unacknowledged",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=40",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-29"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Unsung means not celebrated or acknowledged; unacknowledged is closest. Praised, admired and recognized reverse the intended lack of recognition.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=40",
+      "docs/verification/editorial-full-corpus-task1.md#ii-29"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=40",
+            "docs/verification/editorial-full-corpus-task1.md#ii-29"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:30",
+    "proposed": {
+      "id": "q-000125",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which option is closest in meaning to \"fortnightly\" in this sentence?\n\nThe magazine comes out fortnightly.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Every four weeks",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Every four months",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Every two weeks",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Every two months",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "30",
+          "pages": {
+            "start": 41,
+            "end": 41
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "C. Every two weeks",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=41",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-30"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A fortnight is fourteen days, so fortnightly means every two weeks, not four weeks or any number of months.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=41",
+      "docs/verification/editorial-full-corpus-task1.md#ii-30"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "The rendered source has no distinguishable target. An explicitly authored instruction now names the editorially selected word; its contextual meaning was independently compared with every original alternative.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=41",
+            "docs/verification/editorial-full-corpus-task1.md#ii-30"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:31",
+    "proposed": {
+      "id": "q-000126",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "He rushed out of the room because he cannot take his employer's expletives.",
+          "marks": [
+            {
+              "start": 64,
+              "end": 74,
+              "role": "target"
+            }
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Anger",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Insult",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Dirty words",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Sarcasm",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "31",
+          "pages": {
+            "start": 41,
+            "end": 41
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "C. Dirty words",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=41",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Restored the selectively bold source target as a target span after visual page review; original instructions mention underlining but these source pages use bold.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-31"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Expletives here are swear words or offensive expressions, so dirty words is closest; anger is a feeling and sarcasm a mode of speech.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=41",
+      "docs/verification/editorial-full-corpus-task1.md#ii-31"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "Expletives here are swear words or offensive expressions, so dirty words is closest; anger is a feeling and sarcasm a mode of speech.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=41",
+            "docs/verification/editorial-full-corpus-task1.md#ii-31"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:32",
+    "proposed": {
+      "id": "q-000127",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "The police run after two ambulant vendors who threw their litters on the sidewalk.",
+          "marks": [
+            {
+              "start": 25,
+              "end": 33,
+              "role": "target"
+            }
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Attention-seeker",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Occupying the sidewalk",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Very noisy",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Moving about from place to place",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "32",
+          "pages": {
+            "start": 41,
+            "end": 41
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "D. Moving about from place to place",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=41",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Restored the selectively bold source target as a target span after visual page review; original instructions mention underlining but these source pages use bold.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-32"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Ambulant means moving about rather than fixed in one place, exactly D. Noise and attention-seeking do not express mobility.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=41",
+      "docs/verification/editorial-full-corpus-task1.md#ii-32"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "Ambulant means moving about rather than fixed in one place, exactly D. Noise and attention-seeking do not express mobility.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=41",
+            "docs/verification/editorial-full-corpus-task1.md#ii-32"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:33",
+    "proposed": {
+      "id": "q-000128",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Green juice made by blending different combinations of fruits and vegetables flush out\ntoxins from the body.",
+          "marks": [
+            {
+              "start": 77,
+              "end": 86,
+              "role": "target"
+            }
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Poison",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Urine",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Waste",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Virus",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "33",
+          "pages": {
+            "start": 41,
+            "end": 41
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "C. Waste",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=41",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Restored actual source target flush out, not unmarked toxins inferred from the erroneous explanation.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-33"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The actual bold target is flush out, a verb phrase meaning remove or wash out. None of poison, urine, waste or virus is a synonymous verb phrase. The source key C instead treats the unmarked noun toxins as its target.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims. Open: Actual visual target is flush out, but all alternatives are nouns and none means remove/wash out; source answer explanation addresses unmarked toxins. Requires a reviewed question repair rather than target inference.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=41",
+      "docs/verification/editorial-full-corpus-task1.md#ii-33"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "editorial-ambiguity",
+          "blocking": true,
+          "message": "Actual visual target is flush out, but all alternatives are nouns and none means remove/wash out; source answer explanation addresses unmarked toxins. Requires a reviewed question repair rather than target inference."
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "Visual PDF page41 establishes selectively bold flush out as the target; restored exactly, while a separate actual answer/alternatives mismatch remains blocked.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=41",
+            "docs/verification/editorial-full-corpus-task1.md#ii-33"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:34",
+    "proposed": {
+      "id": "q-000129",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "His creations are characterized by elegance, artistic grace and dainty delicacy.",
+          "marks": [
+            {
+              "start": 64,
+              "end": 79,
+              "role": "target"
+            }
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Stylishly beautiful",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Very attractive",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Exquisitely fine in appearance",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Artistically excellent",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "34",
+          "pages": {
+            "start": 42,
+            "end": 42
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "C. Exquisitely fine in appearance",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=42",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Restored the selectively bold source target as a target span after visual page review; original instructions mention underlining but these source pages use bold.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-34"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Dainty delicacy describes fine, delicate appearance; exquisitely fine in appearance retains that precision, rather than just attractiveness.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=42",
+      "docs/verification/editorial-full-corpus-task1.md#ii-34"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "Dainty delicacy describes fine, delicate appearance; exquisitely fine in appearance retains that precision, rather than just attractiveness.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=42",
+            "docs/verification/editorial-full-corpus-task1.md#ii-34"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:35",
+    "proposed": {
+      "id": "q-000130",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Upon seeing the police officer, he scampered away leaving all his belongings on the\nsidewalk.",
+          "marks": [
+            {
+              "start": 35,
+              "end": 44,
+              "role": "target"
+            }
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Walked",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Ran",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Jumped",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Exited",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "35",
+          "pages": {
+            "start": 42,
+            "end": 42
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "B. Ran",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=42",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Restored the selectively bold source target as a target span after visual page review; original instructions mention underlining but these source pages use bold.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-35"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Scampered means ran with quick small steps; ran is the nearest alternative. Walked is slower and exited says only that someone left.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=42",
+      "docs/verification/editorial-full-corpus-task1.md#ii-35"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "Scampered means ran with quick small steps; ran is the nearest alternative. Walked is slower and exited says only that someone left.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=42",
+            "docs/verification/editorial-full-corpus-task1.md#ii-35"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:36",
+    "proposed": {
+      "id": "q-000131",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "There was a small dent in the hood of the victim's car.",
+          "marks": [
+            {
+              "start": 18,
+              "end": 22,
+              "role": "target"
+            }
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Dimple",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Hole",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Break",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Opening",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "36",
+          "pages": {
+            "start": 42,
+            "end": 42
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Dimple",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=42",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Restored the selectively bold source target as a target span after visual page review; original instructions mention underlining but these source pages use bold.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-36"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A dent is an inward depression or indentation, resembling a dimple. A hole or opening penetrates the surface and a break need not be indented.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=42",
+      "docs/verification/editorial-full-corpus-task1.md#ii-36"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "A dent is an inward depression or indentation, resembling a dimple. A hole or opening penetrates the surface and a break need not be indented.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=42",
+            "docs/verification/editorial-full-corpus-task1.md#ii-36"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:37",
+    "proposed": {
+      "id": "q-000132",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "The bus abruptly stopped, creating frightened shrieks from the passengers.",
+          "marks": [
+            {
+              "start": 8,
+              "end": 16,
+              "role": "target"
+            }
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Slowly",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Suddenly",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Briefly",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Smoothly",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "37",
+          "pages": {
+            "start": 42,
+            "end": 42
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "B. Suddenly",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=42",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Restored the selectively bold source target as a target span after visual page review; original instructions mention underlining but these source pages use bold.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-37"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Abruptly means suddenly, contrasting with slowly or smoothly; briefly measures duration rather than onset.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=42",
+      "docs/verification/editorial-full-corpus-task1.md#ii-37"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "Abruptly means suddenly, contrasting with slowly or smoothly; briefly measures duration rather than onset.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=42",
+            "docs/verification/editorial-full-corpus-task1.md#ii-37"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:38",
+    "proposed": {
+      "id": "q-000133",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "All the female guests at the party gravitate toward the very handsome son of the host\nfamily.",
+          "marks": [
+            {
+              "start": 35,
+              "end": 44,
+              "role": "target"
+            }
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Be drawn",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Be tempted",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Move away",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Repel",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "38",
+          "pages": {
+            "start": 42,
+            "end": 43
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Be drawn",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=42",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Restored the selectively bold source target as a target span after visual page review; original instructions mention underlining but these source pages use bold.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-38"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "To gravitate toward someone is to be drawn or attracted toward them, so A fits; move away and repel reverse the direction.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=42",
+      "docs/verification/editorial-full-corpus-task1.md#ii-38"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "To gravitate toward someone is to be drawn or attracted toward them, so A fits; move away and repel reverse the direction.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=42",
+            "docs/verification/editorial-full-corpus-task1.md#ii-38"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:39",
+    "proposed": {
+      "id": "q-000134",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Because of the cooperation of all barangay officials, the fire was quickly extinguished.",
+          "marks": [
+            {
+              "start": 75,
+              "end": 87,
+              "role": "target"
+            }
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Spread",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Prevented",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Established",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Put out",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "39",
+          "pages": {
+            "start": 43,
+            "end": 43
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "D. Put out",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=43",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Restored the selectively bold source target as a target span after visual page review; original instructions mention underlining but these source pages use bold.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-39"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Extinguished describes a fire put out. Prevented would mean stopping it before it started, rather than ending its burning.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=43",
+      "docs/verification/editorial-full-corpus-task1.md#ii-39"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "Extinguished describes a fire put out. Prevented would mean stopping it before it started, rather than ending its burning.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=43",
+            "docs/verification/editorial-full-corpus-task1.md#ii-39"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:II:40",
+    "proposed": {
+      "id": "q-000135",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "She enrolled in a speech clinic, ameliorating her diction and pronunciation.",
+          "marks": [
+            {
+              "start": 33,
+              "end": 45,
+              "role": "target"
+            }
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Strengthening",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Beautifying",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Improving",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Changing",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "II",
+          "originalNumber": "40",
+          "pages": {
+            "start": 43,
+            "end": 43
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "C. Improving",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=43",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Restored the selectively bold source target as a target span after visual page review; original instructions mention underlining but these source pages use bold.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-40"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Ameliorating means improving or making better; changing alone does not guarantee improvement and beautifying narrows the kind of change.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=43",
+      "docs/verification/editorial-full-corpus-task1.md#ii-40"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "marked-target-review",
+          "message": "Vocabulary target marking requires visual review; explanation cannot establish target",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "marked-target-review",
+          "rationale": "Ameliorating means improving or making better; changing alone does not guarantee improvement and beautifying narrows the kind of change.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=43",
+            "docs/verification/editorial-full-corpus-task1.md#ii-40"
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,25 @@
+import fs from 'node:fs/promises';
+import {loadCandidates,loadIdentityRegistry,loadOverlays,loadApprovedPublication} from '/Users/juliusjervinbundalian/Documents/GitHub/pnpe-exam-reviewer/.worktrees/editorial-content/tools/questions/source-workflow';
+import {QuestionSchema} from '/Users/juliusjervinbundalian/Documents/GitHub/pnpe-exam-reviewer/.worktrees/editorial-content/src/features/content/domain/question';
+import {EditorialOverlaySchema} from '/Users/juliusjervinbundalian/Documents/GitHub/pnpe-exam-reviewer/.worktrees/editorial-content/tools/questions/editorial';
+import {duplicateReport} from '/Users/juliusjervinbundalian/Documents/GitHub/pnpe-exam-reviewer/.worktrees/editorial-content/tools/questions/duplicates';
+const root='/Users/juliusjervinbundalian/Documents/GitHub/pnpe-exam-reviewer/.worktrees/editorial-content';
+const candidates=await loadCandidates(root), registry=await loadIdentityRegistry(root), now=new Date().toISOString();
+const rows=JSON.parse(await fs.readFile('/tmp/pnpe-task1-decisions.json','utf8'));
+const blocks=(s:string)=>[{kind:'text',text:s,marks:[]}];
+let audit='# Full-corpus task 1 editorial verification\n\nThis is a bounded checkpoint, not completion of all 312 assigned occurrences. Each entry below was read from authoritative loadCandidates, including its full source explanation and shared context. The explanation records an independent language check rather than treating the source key as proof. No approvals or publication changes are made.\n\n';
+const overlays=[];
+for(const row of rows){const c=candidates.find(x=>x.original.sourceKey===row.key)!;const o=c.original;
+const proposed:any={id:registry[o.sourceKey],version:1,categoryId:row.category??'communicationSkills',subcategoryId:row.subcategory??'grammar',prompt:blocks(row.prompt??o.rawPrompt),choices:o.rawChoices!.map((x,i)=>({id:`choice-${i+1}`,blocks:blocks(row.choices?.[i]??x.text)})).filter((x:any)=>!row.removeChoices?.includes(x.id)),correctChoiceId:`choice-${row.answer}`,choiceOrderPolicy:'fixed',sources:[{sourceId:o.sourceId,checksum:o.evidence.checksum,section:o.section,originalNumber:String(o.ordinal),pages:{start:o.pageStart,end:o.pageEnd},originalChoiceLabels:o.rawChoices!.map(x=>x.label),originalAnswer:o.rawAnswer,evidenceLocator:o.evidence.locator,links:o.evidence.links,imageLocations:o.evidence.imageLocations,corrections:(row.changes??[]).map((reason:string)=>({reason,evidenceLocator:`docs/verification/editorial-full-corpus-task1.md#${o.section.toLowerCase()}-${o.ordinal}`}))}],createdAt:now,updatedAt:now,status:'active',isCurrentEvent:false,explanation:blocks(row.explanation)};
+if(row.target){let start=proposed.prompt[0].text.indexOf(row.target);if(start<0)throw Error('target missing');proposed.prompt[0].marks=[{start,end:start+row.target.length,role:'target'}];}
+const evidence=[o.evidence.locator,`docs/verification/editorial-full-corpus-task1.md#${o.section.toLowerCase()}-${o.ordinal}`];
+const resolutions=c.issues.filter(x=>x.blocking&&!row.openCodes?.includes(x.code)).map(x=>({code:x.code,rationale:row.resolution??row.explanation,evidence}));
+const issues=[...c.issues,...(row.open?[{code:'editorial-ambiguity',blocking:true,message:row.open}]:[])];
+const overlay={sourceKey:o.sourceKey,proposed,rationale:`Independent language review. Taxonomy ${proposed.categoryId}/${proposed.subcategoryId}: ${row.taxonomy??'Selects grammatical completions through agreement, tense, verb forms or word class.'}${row.open?' Open: '+row.open:''}`,evidence,status:row.open?'draft':'needsReview',review:{issues,resolutions}};
+if(!row.open)QuestionSchema.parse(proposed);EditorialOverlaySchema.parse(overlay);overlays.push(overlay);
+audit+=`## ${o.section}-${o.ordinal}\n\nSource: ${o.sourceKey}; pages ${o.pageStart}-${o.pageEnd}; source answer ${o.rawAnswer}. Proposed choice: ${row.answer}. Status: ${overlay.status}.\n\n${row.explanation}\n\nTaxonomy: ${overlay.rationale}\n\nChanges: ${(row.changes??[]).join(' ')||'Original prompt and alternatives retained; explanation authored.'}\n\nOpen: ${row.open??'None.'}\n\n`;
+}
+for(const sec of [...new Set(rows.map((x:any)=>x.key.split(':')[1]))])await fs.writeFile(`${root}/data/editorial/comprehensive-${String(sec).toLowerCase()}.json`,JSON.stringify(overlays.filter(x=>x.sourceKey.split(':')[1]===sec),null,2)+'\n');
+const duplicates=duplicateReport(candidates);await fs.writeFile('/tmp/pnpe-task1-duplicates.json',JSON.stringify(duplicates,null,2));
+await fs.writeFile(`${root}/docs/verification/editorial-full-corpus-task1.md`,audit);
+await loadOverlays(root);const approved=await loadApprovedPublication(root);console.log({timestamp:now,count:overlays.length,needsReview:overlays.filter(x=>x.status==='needsReview').length,draft:overlays.filter(x=>x.status==='draft').length,approved:approved.length});

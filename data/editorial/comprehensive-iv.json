@@ -1,0 +1,3296 @@
+[
+  {
+    "sourceKey": "comprehensive:IV:1",
+    "proposed": {
+      "id": "q-000166",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "The shelf life of kesong puti ____________ from one to two days from purchase at room\ntemperature to one week when refrigerated, to an indefinite period when frozen, but its\nquality and texture ________________ if it is kept for a long period of time.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Ranges – deteriorates",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Ranges – deteriorate",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Ranged – deteriorate",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Range – deteriorate",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Ranges – deteriorated",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "1",
+          "pages": {
+            "start": 52,
+            "end": 52
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "A. Ranges – deteriorates",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=52",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Corrected source key A to B because quality and texture require plural agreement.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iv-1"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Shelf life is singular, so ranges agrees. Quality and texture are two coordinated nouns; their verb is plural deteriorate. Therefore choice B completes both clauses. The source's singular treatment of the pair is unjustified.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=52",
+      "docs/verification/editorial-full-corpus-task1.md#iv-1"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "Shelf life is singular, so ranges agrees. Quality and texture are two coordinated nouns; their verb is plural deteriorate. Therefore choice B completes both clauses. The source's singular treatment of the pair is unjustified.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=52",
+            "docs/verification/editorial-full-corpus-task1.md#iv-1"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:2",
+    "proposed": {
+      "id": "q-000167",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "The biologist ____________ that the Kyoto grass, also known as black grass, can\n____________ all kinds of weather conditions and ____________ lush even in cold months.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Explained – tolerates – stay",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Explains – tolerate – stays",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Explain – tolerated – stays",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Explains – tolerate – stay",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "2",
+          "pages": {
+            "start": 52,
+            "end": 52
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "E. Explains – tolerate – stay",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=52",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Removed duplicated correct alternative A; kept source correct choice E as choice-5, all surviving stable IDs and all original labels in lineage.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iv-2"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Singular biologist takes explains. Modal can governs both base forms tolerate and stay. After removing the identical A alternative, original E is the unique completion; B/C/D each use an incorrect verb form.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=52",
+      "docs/verification/editorial-full-corpus-task1.md#iv-2"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "duplicate-alternative",
+          "message": "Repeated rendered alternatives need editorial resolution",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "Singular biologist takes explains. Modal can governs both base forms tolerate and stay. After removing the identical A alternative, original E is the unique completion; B/C/D each use an incorrect verb form.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=52",
+            "docs/verification/editorial-full-corpus-task1.md#iv-2"
+          ]
+        },
+        {
+          "code": "duplicate-alternative",
+          "rationale": "Singular biologist takes explains. Modal can governs both base forms tolerate and stay. After removing the identical A alternative, original E is the unique completion; B/C/D each use an incorrect verb form.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=52",
+            "docs/verification/editorial-full-corpus-task1.md#iv-2"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:3",
+    "proposed": {
+      "id": "q-000168",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "The walls in the rooms were _____________ in a cool color, light green, which is\n____________ to the eyes.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Painted – soothing",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Painted – soothe",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Paints – soothing",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Paint – soothing",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Painting – soothing",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "3",
+          "pages": {
+            "start": 52,
+            "end": 52
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "A. Painted – soothing",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=52",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Were requires the past participle painted in the passive clause. After is, soothing describes the color as an adjective; soothe is a verb and cannot serve there.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=52",
+      "docs/verification/editorial-full-corpus-task1.md#iv-3"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:4",
+    "proposed": {
+      "id": "q-000169",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Many natural-born entrepreneurs are ___________ with a mind that is an\nidea-_____________ machine.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Bless – generating",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Bless – inventing",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Blessed – generating",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "4",
+          "pages": {
+            "start": 52,
+            "end": 53
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "D. Blessed – generating",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=52",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Removed grammatically plausible competing compound Blessed–making, retaining stable IDs1,2,4 and complete original label lineage.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iv-4"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Are blessed requires the past participle blessed. Idea-generating forms a compound meaning producing ideas. Once the also-grammatical idea-making competitor is explicitly removed, D is unique; A and B incorrectly use bare bless after are.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=52",
+      "docs/verification/editorial-full-corpus-task1.md#iv-4"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:5",
+    "proposed": {
+      "id": "q-000170",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Everyone has a need for some level of certainty, so if you can't ___________ it in your\nbusiness, _________ on finding it elsewhere.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Find – plan",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Finds – plan",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Found – plan",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Find – plans",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "5",
+          "pages": {
+            "start": 53,
+            "end": 53
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Find – plan",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=53",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Can't takes base-form find. The second clause is an imperative with understood you, so plan is also the base form. Only A supplies both.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=53",
+      "docs/verification/editorial-full-corpus-task1.md#iv-5"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:6",
+    "proposed": {
+      "id": "q-000171",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "At present, many farms also ______ machines, which _____ down on the number of people needed to farm the land.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Uses – cut",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Use – cut",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Used – cut",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Use – cuts",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "6",
+          "pages": {
+            "start": 53,
+            "end": 53
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "B. Use – cut",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=53",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Added explicit present-time scope to distinguish the existing present alternative from a grammatical but unintended past-tense reading.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iv-6"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "At present requires the present form use with plural farms; plural machines takes cut. Past used contradicts the added present-time scope.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=53",
+      "docs/verification/editorial-full-corpus-task1.md#iv-6"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:7",
+    "proposed": {
+      "id": "q-000172",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "The leaves of the tree _________ sunlight and _____ water and food from the roots to\nmake the tree grow and to reproduce.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Take in – use",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Take in – uses",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Takes in – uses",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Takes in – used",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "7",
+          "pages": {
+            "start": 53,
+            "end": 53
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Take in – use",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=53",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The plural subject leaves governs both present verbs, take in and use. Singular takes/uses do not agree, and mixed used is unsupported by the parallel present description.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=53",
+      "docs/verification/editorial-full-corpus-task1.md#iv-7"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:8",
+    "proposed": {
+      "id": "q-000173",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "When Ondoy _____ Manila hard in 2009, a good Samaritan __________ his Land Rover\nto help with relief operations in Marikina and Pasig, because it's the only vehicle that can do\nthe job during those critical hours.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Hits – uses",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Hits – used",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Hit – used",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Hits – using",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "8",
+          "pages": {
+            "start": 54,
+            "end": 54
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "C. Hit – used",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=54",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The explicitly dated 2009 event calls for past hit and used. Hit has the same spelling in past and base forms; alternatives using present hits conflict with the historical clause.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=54",
+      "docs/verification/editorial-full-corpus-task1.md#iv-8"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:9",
+    "proposed": {
+      "id": "q-000174",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "At present, we _______ use fake ingredients or things that _______ perfume last long.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Don't – makes",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Don't – make",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Didn't – make",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Doesn't – make",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "9",
+          "pages": {
+            "start": 54,
+            "end": 54
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "B. Don't – make",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=54",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Added explicit present-time scope to distinguish the existing present alternative from a grammatical but unintended past-tense reading.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iv-9"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "At present fixes the main clause in the present: plural we takes don't and plural things takes make. Didn't would refer to a past rather than the stated current practice.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=54",
+      "docs/verification/editorial-full-corpus-task1.md#iv-9"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:10",
+    "proposed": {
+      "id": "q-000175",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "I feel that even if we are ________ to do a lot of things, not everybody ___________ be\nhappy with our performance.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Able – will",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Able – shall",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Able – would",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Able – should",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "10",
+          "pages": {
+            "start": 54,
+            "end": 54
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Able – will",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=54",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Able fits are able to. Will predicts a future result, but should can express expectation and would can express a conditional attitude in this context. No grammar rule uniquely forces will.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class. Open: Several modal completions are possible; the prompt does not specify the intended meaning strongly enough for a unique key.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=54",
+      "docs/verification/editorial-full-corpus-task1.md#iv-10"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "editorial-ambiguity",
+          "blocking": true,
+          "message": "Several modal completions are possible; the prompt does not specify the intended meaning strongly enough for a unique key."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:11",
+    "proposed": {
+      "id": "q-000176",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "After several failures, Pablo _________ to go back to school and _________ his MBA at\nthe number one university in Japan.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Decided – take up",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Decide – takes up",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Decides – took up",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Decided – takes up",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "11",
+          "pages": {
+            "start": 54,
+            "end": 54
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Decided – take up",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=54",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Decided can introduce coordinated infinitives to go back and [to] take up. The shared to permits the base form take up. Other choices either fail subject agreement or insert a finite verb into that infinitival coordination.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=54",
+      "docs/verification/editorial-full-corpus-task1.md#iv-11"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:12",
+    "proposed": {
+      "id": "q-000177",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Complete using a future prediction in the first blank and a simple-present verb for habitual treatment in the second: At times, a sibling _________ bad because of the perception that the other one __________ better treatment, like being given more material things.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Will feel – get",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Will feel – gets",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Would feel – gets",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Will feel – got",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "12",
+          "pages": {
+            "start": 55,
+            "end": 55
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "B. Will feel – gets",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=55",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Added explicit future-prediction and simple-present completion requirements, rather than pretending the original unqualified sentence uniquely chose these tenses.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iv-12"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The authored tense instruction requires future-prediction will feel and habitual simple-present gets agreeing with singular the other one. A fails agreement, C uses conditional would, and D uses past got.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=55",
+      "docs/verification/editorial-full-corpus-task1.md#iv-12"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:13",
+    "proposed": {
+      "id": "q-000178",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Nowadays, some fathers ________ that making their children tough will enable them to __________ in a hostile world.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Thought – survive",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Thinks – survives",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Think – survives",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Think – survive",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "13",
+          "pages": {
+            "start": 55,
+            "end": 55
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "D. Think – survive",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=55",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Added explicit present-time scope to distinguish the existing present alternative from a grammatical but unintended past-tense reading.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iv-13"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Nowadays fixes the reporting as a current general belief. Plural fathers takes think and the infinitive to takes base survive; past thought no longer fits the stated current reporting.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=55",
+      "docs/verification/editorial-full-corpus-task1.md#iv-13"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:14",
+    "proposed": {
+      "id": "q-000179",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "It all ________ with being conscious about depression and the willingness to accept that\nyou _________ help.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Begin – need",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Begun – need",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Begins – needs",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Begins – need",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "14",
+          "pages": {
+            "start": 55,
+            "end": 55
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "D. Begins – need",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=55",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Singular it takes begins; you takes need. Begin and begun cannot be finite present verbs agreeing with it, and needs does not agree with you.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=55",
+      "docs/verification/editorial-full-corpus-task1.md#iv-14"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:15",
+    "proposed": {
+      "id": "q-000180",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "If there is one hotel in the country that currently __________ and ___________ the history of its host country, it would be the Manila Hotel.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Reflects – mirrors",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Reflected – mirrored",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Reflect – mirror",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Reflects – mirror",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "15",
+          "pages": {
+            "start": 55,
+            "end": 55
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Reflects – mirrors",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=55",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Added explicit present-time scope to distinguish the existing present alternative from a grammatical but unintended past-tense reading.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iv-15"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Currently makes both coordinated relative-clause verbs present. Singular one hotel takes reflects and mirrors, while past reflected/mirrored would not match the current description.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=55",
+      "docs/verification/editorial-full-corpus-task1.md#iv-15"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:16",
+    "proposed": {
+      "id": "q-000181",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Some foreign fruit and herb extracts _________ added because of their potency in helping to improve health and wellness and to _________ the taste of the drink.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Were – enhanced",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Was – enhance",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Were – enhance",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Was – enhances",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "16",
+          "pages": {
+            "start": 56,
+            "end": 56
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "C. Were – enhance",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=56",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Reworded the purpose clause to helping to improve ... and to enhance so the original C alternative fits genuine parallel infinitives; no health claim is independently certified by this grammar exercise.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iv-16"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Plural extracts takes were in the passive. In the revised parallel purpose construction, helping to improve and to enhance both use base infinitives. Thus C supplies were and enhance. The original as well as enhance lacked a matching parallel construction.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=56",
+      "docs/verification/editorial-full-corpus-task1.md#iv-16"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:17",
+    "proposed": {
+      "id": "q-000182",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Medical science ______ to look at the cause of illness purely from the physical\nstandpoint because it _______ man simply as a machine composed of electrical circuits and\nchemical interactions.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Tend – regard",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Tends – regards",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Tends – regarded",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Tend – regards",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "17",
+          "pages": {
+            "start": 56,
+            "end": 56
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "B. Tends – regards",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=56",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Medical science is a singular subject and its pronoun it is singular. Their present verbs are tends and regards. Only B gives agreeing present forms in both clauses.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=56",
+      "docs/verification/editorial-full-corpus-task1.md#iv-17"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:18",
+    "proposed": {
+      "id": "q-000183",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "A human being cannot be _________ from any of his various components or parts\nwithout _________ injury or harm to his whole being.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Separated – causing",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Separate – causing",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Separated – cause",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Separates – causing",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "18",
+          "pages": {
+            "start": 56,
+            "end": 56
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Separated – causing",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=56",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Cannot be forms a passive with past participle separated. Without is a preposition taking the gerund causing. Only A fits both constructions.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=56",
+      "docs/verification/editorial-full-corpus-task1.md#iv-18"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:19",
+    "proposed": {
+      "id": "q-000184",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "His story is so fantastic it __________ more like a ___________ script from a soap opera than true happenings from real life.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Sound – borrowed",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Sound – borrows",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Sounds – borrows",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Sounds – borrowed",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "19",
+          "pages": {
+            "start": 56,
+            "end": 57
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "D. Sounds – borrowed",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=56",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Inserted the missing indefinite article a before the second blank.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iv-19"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Singular it takes sounds. Borrowed is a participial adjective modifying script, while borrows is finite and cannot directly modify that noun. The prompt needs the article a before borrowed script.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=56",
+      "docs/verification/editorial-full-corpus-task1.md#iv-19"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:20",
+    "proposed": {
+      "id": "q-000185",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Use the simple past in both blanks: He __________ one of those individuals who ________ it a point to leave a sterling record of hard work and conscientious behaviour in his trail.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Became – made",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Became – make",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Becomes – makes",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Becomes – made",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "20",
+          "pages": {
+            "start": 57,
+            "end": 57
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Became – made",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=57",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Added a simple-past instruction for both blanks to distinguish originally possible past and habitual present readings.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iv-20"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The explicitly authored simple-past instruction requires became and made. Make is present and becomes is present, so only A meets both tense requirements. This does not claim that the original relative clause had to match the main-clause tense.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=57",
+      "docs/verification/editorial-full-corpus-task1.md#iv-20"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:21",
+    "proposed": {
+      "id": "q-000186",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "His popularity was so extensive it __________ one guest to __________ him to work for his\nhotel in the Middle East.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Propel – invite",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Propelled – invite",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Propels – invite",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Propelled – invites",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "21",
+          "pages": {
+            "start": 57,
+            "end": 57
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "B. Propelled – invite",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=57",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Was situates the causal event in the past, so propelled follows naturally. Propelled one guest to takes base invite. D incorrectly uses invites after to; A/C shift the event out of its stated past setting.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=57",
+      "docs/verification/editorial-full-corpus-task1.md#iv-21"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:22",
+    "proposed": {
+      "id": "q-000187",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Having __________ a name in the hotel industry in Dubai, he _________ of bringing it to\nanother level.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Built – thought",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Builds – thinks",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Build – thought",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Built – think",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "22",
+          "pages": {
+            "start": 57,
+            "end": 57
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Built – thought",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=57",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Having introduces the perfect participial phrase having built. Main-clause he requires either thought (past) or thinks (present); think in D does not agree. Only A combines built with an agreeing finite verb.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=57",
+      "docs/verification/editorial-full-corpus-task1.md#iv-22"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:23",
+    "proposed": {
+      "id": "q-000188",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "As a present-day habit, she _________ everything in teaching, even her secrets in baking and chocolate arts because she __________ that it's a win-win situation for her and her students.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Gave – knows",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Gave – know",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Gives – knows",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Give – knows",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "23",
+          "pages": {
+            "start": 57,
+            "end": 58
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "C. Gives – knows",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=57",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Added explicit present-time scope to distinguish the existing present alternative from a grammatical but unintended past-tense reading.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iv-23"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The explicit present-day habit takes present gives and knows, both agreeing with singular she. Gave refers to a past action and does not fit the stipulated habitual present construction.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=57",
+      "docs/verification/editorial-full-corpus-task1.md#iv-23"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:24",
+    "proposed": {
+      "id": "q-000189",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "It is then that we _________ questioning whether the life we have __________ and the\ngoals we are pursuing are what we truly want.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Started – created",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Start – created",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Started – create",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Start – create",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "24",
+          "pages": {
+            "start": 58,
+            "end": 58
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "B. Start – created",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=58",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The frame it is then selects present start. Have requires past participle created, not base create, in the embedded present perfect. B supplies both required forms.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=58",
+      "docs/verification/editorial-full-corpus-task1.md#iv-24"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:25",
+    "proposed": {
+      "id": "q-000190",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "The desire to _________ down is obviously something that __________ at a certain stage of\nlife.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Slow – comes",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Slow – come",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Slows – comes",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Slows – come",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "25",
+          "pages": {
+            "start": 58,
+            "end": 58
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "A. Slow – comes",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=58",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "To requires base slow. The relative subject something is singular and takes comes. Only A supplies slow and comes.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=58",
+      "docs/verification/editorial-full-corpus-task1.md#iv-25"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:26",
+    "proposed": {
+      "id": "q-000191",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "He sells his _______ at a staggering _______.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Price – prize",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Prize – prices",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Prized – prices",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Prize – price",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "26",
+          "pages": {
+            "start": 58,
+            "end": 59
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "D. Prize – price",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=58",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A prize is an awarded object that can be sold; price is the amount charged. The singular article a requires singular price. Only D states that he sells his prize at a price.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Distinguishes the near-spelled nouns prize and price by meaning.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=58",
+      "docs/verification/editorial-full-corpus-task1.md#iv-26"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:27",
+    "proposed": {
+      "id": "q-000192",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "He _______ that his ________ has a scientific basis.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Believes – believe",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Believe – beliefs",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Believes – belief",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Beliefs – believe",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "27",
+          "pages": {
+            "start": 59,
+            "end": 59
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "C. Believes – belief",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=59",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Changed have to has to agree with the original singular belief alternative; retained original C key only for the repaired prompt.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iv-27"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "He takes singular believes. His belief is a singular noun and therefore requires has. With that minimal correction to the original have, C supplies the correct verb and noun. None of the original alternatives works with uncorrected have.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=59",
+      "docs/verification/editorial-full-corpus-task1.md#iv-27"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "He takes singular believes. His belief is a singular noun and therefore requires has. With that minimal correction to the original have, C supplies the correct verb and noun. None of the original alternatives works with uncorrected have.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=59",
+            "docs/verification/editorial-full-corpus-task1.md#iv-27"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:28",
+    "proposed": {
+      "id": "q-000193",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "The teacher _________ something he ________ was right.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Thought – taught",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Taught – thought",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Taught – think",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Thought – thought",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "28",
+          "pages": {
+            "start": 59,
+            "end": 59
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "B. Taught – thought",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=59",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Taught means gave instruction and thought means considered or believed. B yields the coherent sentence that the teacher taught something he thought was right; the other combinations reverse or repeat meanings incorrectly.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Distinguishes taught (instruction) from thought (belief) by meaning.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=59",
+      "docs/verification/editorial-full-corpus-task1.md#iv-28"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:29",
+    "proposed": {
+      "id": "q-000194",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "He was _________ not to give ________ when it is not sought.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Adviced – advise",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Advised – adviced",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Advised – advice",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Adviced – advised",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "29",
+          "pages": {
+            "start": 59,
+            "end": 59
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "C. Advised – advice",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=59",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Was requires past participle advised. Give requires the noun advice as its object; advise is a verb and adviced is not the standard past form. Only C fits.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Selects grammatical completions through agreement, tense, verb forms or word class.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=59",
+      "docs/verification/editorial-full-corpus-task1.md#iv-29"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:IV:30",
+    "proposed": {
+      "id": "q-000195",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "vocabulary",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "He ___________ a new method of __________ to the changing weather.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Adapted – adopting",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Adopted – adapting",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Adopted – adopting",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "IV",
+          "originalNumber": "30",
+          "pages": {
+            "start": 59,
+            "end": 60
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "D. Adapted – adapting",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=59",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Corrected source key D to B for the adopted-a-method reading; removed competing grammatical D reading (modified a method) while retaining surviving stable choice IDs1–3 and all original labels.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iv-30"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:08:49.270Z",
+      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Adopted means took up or chose the new method; adapting means adjusting to weather and is a gerund after of. B is unique after explicitly removing D, which could instead mean modified the method. A and C use adopting (taking up) as the adjustment to weather and do not fit the intended relation.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Tests the distinct meanings of adopt and adapt in a grammatical sentence.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=59",
+      "docs/verification/editorial-full-corpus-task1.md#iv-30"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "Adopted means took up or chose the new method; adapting means adjusting to weather and is a gerund after of. B is unique after explicitly removing D, which could instead mean modified the method. A and C use adopting (taking up) as the adjustment to weather and do not fit the intended relation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=59",
+            "docs/verification/editorial-full-corpus-task1.md#iv-30"
+          ]
+        }
+      ]
+    }
+  }
+]
