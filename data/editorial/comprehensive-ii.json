@@ -80,8 +80,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -204,8 +204,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -328,8 +328,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -415,16 +415,6 @@
               "marks": []
             }
           ]
-        },
-        {
-          "id": "choice-4",
-          "blocks": [
-            {
-              "kind": "text",
-              "text": "Suspension",
-              "marks": []
-            }
-          ]
         }
       ],
       "correctChoiceId": "choice-2",
@@ -448,28 +438,32 @@
             {
               "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-4"
+            },
+            {
+              "reason": "Removed overlapping synonym Suspension, preserving original surviving choice IDs1–3 and all source labels.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-4"
             }
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "A recess is a temporary break in proceedings, making break the intended synonym. Suspension is also a plausible interruption and requires contextual distinction.",
+          "text": "A recess is a temporary break in proceedings, so break is correct. Travel means moving between places and stint a period of work/service, neither names the meeting pause. Suspension can also express interruption and has been explicitly removed.",
           "marks": []
         }
       ]
     },
-    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims. Open: The explicit authored focus resolves missing marking, but original alternatives contain overlapping synonyms (break/suspension or escape/outing) that need a sharper meaning distinction.",
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=32",
       "docs/verification/editorial-full-corpus-task1.md#ii-4"
     ],
-    "status": "draft",
+    "status": "needsReview",
     "review": {
       "issues": [
         {
@@ -481,11 +475,6 @@
           "code": "editorial-review",
           "message": "Source assertion is not editorial approval",
           "blocking": false
-        },
-        {
-          "code": "editorial-ambiguity",
-          "blocking": true,
-          "message": "The explicit authored focus resolves missing marking, but original alternatives contain overlapping synonyms (break/suspension or escape/outing) that need a sharper meaning distinction."
         }
       ],
       "resolutions": [
@@ -581,8 +570,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -705,8 +694,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -829,8 +818,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -953,8 +942,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -1077,8 +1066,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -1205,8 +1194,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -1342,8 +1331,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -1466,8 +1455,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -1590,8 +1579,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -1714,8 +1703,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -1838,8 +1827,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -1962,8 +1951,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -2086,8 +2075,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -2210,8 +2199,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -2334,8 +2323,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -2458,8 +2447,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -2527,16 +2516,6 @@
           ]
         },
         {
-          "id": "choice-2",
-          "blocks": [
-            {
-              "kind": "text",
-              "text": "Outing",
-              "marks": []
-            }
-          ]
-        },
-        {
           "id": "choice-3",
           "blocks": [
             {
@@ -2578,28 +2557,32 @@
             {
               "reason": "Authored an explicit vocabulary-focus instruction; the original PDF has no distinguishable target span. This is an editorially selected word supported by contextual meaning and alternatives, not restored original marking.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-21"
+            },
+            {
+              "reason": "Removed overlapping synonym Outing, preserving original surviving choice IDs1,3,4 and all source labels.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#ii-21"
             }
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "A getaway is an escape or short departure from everyday pressures; escape captures that purpose, though outing is also plausible for a short trip.",
+          "text": "Getaway here describes escaping from the stressful city routine, so escape is the closest meaning. Travel names movement or a journey without necessarily implying relief/escape; practice is unrelated. Outing could also describe a getaway and has been transparently removed.",
           "marks": []
         }
       ]
     },
-    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims. Open: The explicit authored focus resolves missing marking, but original alternatives contain overlapping synonyms (break/suspension or escape/outing) that need a sharper meaning distinction.",
+    "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Compares contextual word meanings rather than testing grammar or factual claims.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=38",
       "docs/verification/editorial-full-corpus-task1.md#ii-21"
     ],
-    "status": "draft",
+    "status": "needsReview",
     "review": {
       "issues": [
         {
@@ -2611,11 +2594,6 @@
           "code": "editorial-review",
           "message": "Source assertion is not editorial approval",
           "blocking": false
-        },
-        {
-          "code": "editorial-ambiguity",
-          "blocking": true,
-          "message": "The explicit authored focus resolves missing marking, but original alternatives contain overlapping synonyms (break/suspension or escape/outing) that need a sharper meaning distinction."
         }
       ],
       "resolutions": [
@@ -2711,8 +2689,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -2835,8 +2813,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -2959,8 +2937,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -3077,8 +3055,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -3214,8 +3192,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -3338,8 +3316,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -3456,8 +3434,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -3580,8 +3558,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -3704,8 +3682,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -3834,8 +3812,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -3964,8 +3942,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -4094,8 +4072,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -4229,8 +4207,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -4359,8 +4337,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -4489,8 +4467,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -4619,8 +4597,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -4749,8 +4727,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -4879,8 +4857,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -5009,8 +4987,8 @@
           ]
         }
       ],
-      "createdAt": "2026-10-07T12:08:49.270Z",
-      "updatedAt": "2026-10-07T12:08:49.270Z",
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [

@@ -1,0 +1,1712 @@
+[
+  {
+    "sourceKey": "comprehensive:X:1",
+    "proposed": {
+      "id": "q-000395",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "60, 58, 116, 114, ______",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "112",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "248",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "118",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "228",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "X",
+          "originalNumber": "1",
+          "pages": {
+            "start": 115,
+            "end": 115
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "C.) 118",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=115",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Corrected erroneous source key using the independently checked recurrence and existing correct alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#x-1"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Alternate minus2 and times2:60−2=58;58×2=116;116−2=114;114×2=228. Source C118 is inconsistent; D228 is correct.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/patternAnalysis: Infers and checks numerical or algebraic sequence rules across all supplied steps.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=115",
+      "docs/verification/editorial-full-corpus-task1.md#x-1"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "Alternate minus2 and times2:60−2=58;58×2=116;116−2=114;114×2=228. Source C118 is inconsistent; D228 is correct.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=115",
+            "docs/verification/editorial-full-corpus-task1.md#x-1"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:X:2",
+    "proposed": {
+      "id": "q-000396",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Use a/2 to mean one half multiplied by a. Continue the sequence with the repeating increment pattern: a/2, 1+a/2, 1+a, 2+a, ______.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "3 + 1/2a",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "2 + (3/2)a",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "a + 2a",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "3 + 1/4a",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "X",
+          "originalNumber": "2",
+          "pages": {
+            "start": 115,
+            "end": 115
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "A.) 3 + 1/2a",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=115",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Clarified ambiguous half-a transport as a/2, restored the missing separator between first two terms, and corrected source key A to existing B after independent increments.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#x-2"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Write half a as a/2. Consecutive differences are1,a/2,1, so the next addition a/2 gives2+a+a/2=2+3a/2. Original B's2+1½a represents this result. A3+a/2 is not generated by that alternating rule.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/patternAnalysis: Infers and checks numerical or algebraic sequence rules across all supplied steps.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=115",
+      "docs/verification/editorial-full-corpus-task1.md#x-2"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "Write half a as a/2. Consecutive differences are1,a/2,1, so the next addition a/2 gives2+a+a/2=2+3a/2. Original B's2+1½a represents this result. A3+a/2 is not generated by that alternating rule.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=115",
+            "docs/verification/editorial-full-corpus-task1.md#x-2"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:X:3",
+    "proposed": {
+      "id": "q-000397",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Continue the pattern: X, 8X², 27X³, 64X⁴, ______.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "125X⁵",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "225X⁵",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "115X⁵",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "215X⁵",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "X",
+          "originalNumber": "3",
+          "pages": {
+            "start": 116,
+            "end": 116
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "A.) 125X5",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=116",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Restored explicit exponent notation supported by the source explanation, preserving coefficient values and alternatives.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#x-3"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Coefficients1,8,27,64 are1³,2³,3³,4³ and exponents on X increase1,2,3,4. The next term is5³X⁵=125X⁵.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/patternAnalysis: Infers and checks numerical or algebraic sequence rules across all supplied steps.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=116",
+      "docs/verification/editorial-full-corpus-task1.md#x-3"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:X:4",
+    "proposed": {
+      "id": "q-000398",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "27, 27, 135, 135, ______",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "625",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "725",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "715",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "675",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "X",
+          "originalNumber": "4",
+          "pages": {
+            "start": 116,
+            "end": 116
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "D.) 675",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=116",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Repeated pairs grow by factor5:27,27;135,135; next135×5=675. Equivalently alternate times1 and times5.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/patternAnalysis: Infers and checks numerical or algebraic sequence rules across all supplied steps.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=116",
+      "docs/verification/editorial-full-corpus-task1.md#x-4"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:X:5",
+    "proposed": {
+      "id": "q-000399",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "16, 64, 25, 125, 36, _____",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "214",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "218",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "220",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "216",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "X",
+          "originalNumber": "5",
+          "pages": {
+            "start": 116,
+            "end": 117
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "D.) 216",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=116",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The terms are paired squares and cubes of consecutive integers:4²=16,4³=64;5²=25,5³=125;6²=36,6³=216.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/patternAnalysis: Infers and checks numerical or algebraic sequence rules across all supplied steps.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=116",
+      "docs/verification/editorial-full-corpus-task1.md#x-5"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:X:6",
+    "proposed": {
+      "id": "q-000400",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "1/2 + X, 1 +2X, 1 1/2 + 3X, 2 + 4X, _____",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "2 1/2 + 5X",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "2 1/4 + 5X",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "3 + 5X",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "2 X 5X",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "X",
+          "originalNumber": "6",
+          "pages": {
+            "start": 117,
+            "end": 117
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "A.) 2 1/2 + 5X",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=117",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Each step adds1/2+X. From2+4X this yields5/2+5X, which is original A2½+5X.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/patternAnalysis: Infers and checks numerical or algebraic sequence rules across all supplied steps.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=117",
+      "docs/verification/editorial-full-corpus-task1.md#x-6"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:X:7",
+    "proposed": {
+      "id": "q-000401",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "68, 80, 102, 134, 176, ____",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "318",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "218",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "228",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "238",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "X",
+          "originalNumber": "7",
+          "pages": {
+            "start": 117,
+            "end": 118
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "B.) 218",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=117",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Corrected erroneous source key using the independently checked recurrence and existing correct alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#x-7"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Differences are12,22,32,42, increasing by10. Next difference52 gives176+52=228, original C rather than source B218.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/patternAnalysis: Infers and checks numerical or algebraic sequence rules across all supplied steps.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=117",
+      "docs/verification/editorial-full-corpus-task1.md#x-7"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "Differences are12,22,32,42, increasing by10. Next difference52 gives176+52=228, original C rather than source B218.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=117",
+            "docs/verification/editorial-full-corpus-task1.md#x-7"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:X:8",
+    "proposed": {
+      "id": "q-000402",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "20, 140, 260, 380, _____",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "450",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "610",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "500",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "520",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "X",
+          "originalNumber": "8",
+          "pages": {
+            "start": 118,
+            "end": 118
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "D.) 520",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=118",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Corrected erroneous source key using the independently checked recurrence and existing correct alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#x-8"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Constant differences140−20=120,260−140=120,380−260=120 require380+120=500. Source keyD520 and its final addition are arithmetic errors; C500 is correct.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/patternAnalysis: Infers and checks numerical or algebraic sequence rules across all supplied steps.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=118",
+      "docs/verification/editorial-full-corpus-task1.md#x-8"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "Constant differences140−20=120,260−140=120,380−260=120 require380+120=500. Source keyD520 and its final addition are arithmetic errors; C500 is correct.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=118",
+            "docs/verification/editorial-full-corpus-task1.md#x-8"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:X:9",
+    "proposed": {
+      "id": "q-000403",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "100 + 9X, 110X, 120 + 110X, 130 + 120X, ______",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "150 + 110X",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "140 + 130X",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "140 + 110X",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "150 + 100X",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "X",
+          "originalNumber": "9",
+          "pages": {
+            "start": 118,
+            "end": 118
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "B.) 140 + 130X",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=118",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The final complete terms120+110X and130+120X suggest adding10+10X, yielding140+130X. But100+9X and110X do not obey that rule. Several different missing-digit/term repairs are possible; B is only a provisional continuation of the last two terms.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/patternAnalysis: Infers and checks numerical or algebraic sequence rules across all supplied steps. Open: The first two algebraic terms do not match the subsequent proposed constant-increment pattern; missing or corrupted coefficients cannot be uniquely restored from actual source evidence.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=118",
+      "docs/verification/editorial-full-corpus-task1.md#x-9"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "editorial-ambiguity",
+          "blocking": true,
+          "message": "The first two algebraic terms do not match the subsequent proposed constant-increment pattern; missing or corrupted coefficients cannot be uniquely restored from actual source evidence."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:X:10",
+    "proposed": {
+      "id": "q-000404",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "60, 6600, 666000, 66660000, ________",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "666660",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "6666600000",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "666600000",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "66666000",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "X",
+          "originalNumber": "10",
+          "pages": {
+            "start": 118,
+            "end": 119
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "B.) 6666600000",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=118",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The digit strings contain1,2,3,4 copies of6 followed by equal numbers of zeroes. Next is five6s followed by five zeroes:6666600000.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/patternAnalysis: Infers and checks numerical or algebraic sequence rules across all supplied steps.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=118",
+      "docs/verification/editorial-full-corpus-task1.md#x-10"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:X:11",
+    "proposed": {
+      "id": "q-000405",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "27, 26, 28, 27, 29, ______.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "28",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "26",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "30",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "32",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "X",
+          "originalNumber": "11",
+          "pages": {
+            "start": 119,
+            "end": 119
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "A.) 28",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=119",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Alternating differences−1,+2 repeat:27→26→28→27→29→28. The next term is28.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/patternAnalysis: Infers and checks numerical or algebraic sequence rules across all supplied steps.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=119",
+      "docs/verification/editorial-full-corpus-task1.md#x-11"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:X:12",
+    "proposed": {
+      "id": "q-000406",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "1/2, 3/4, 1, 1 1/4, _____.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "2",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "1 3/4",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "1 1/2",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "2 1/4",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "X",
+          "originalNumber": "12",
+          "pages": {
+            "start": 119,
+            "end": 120
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "C.) 1 1/2",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=119",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Quarter-step progression:1/2,3/4,1,5/4,6/4. Since6/4=3/2, the next term is1½.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/patternAnalysis: Infers and checks numerical or algebraic sequence rules across all supplied steps.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=119",
+      "docs/verification/editorial-full-corpus-task1.md#x-12"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:X:13",
+    "proposed": {
+      "id": "q-000407",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Find the missing term in the series 15, 70, 180, 400 ______.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "840",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "835",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "813",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "812",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "870",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "X",
+          "originalNumber": "13",
+          "pages": {
+            "start": 120,
+            "end": 120
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "A.) 850",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=120",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored a correction to erroneous alternative A850→840, derived from every given recurrence step; not claimed as an original printed alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#x-13"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The recurrence is next=2(current+20):2(15+20)=70;2(70+20)=180;2(180+20)=400;2(400+20)=840. Original options contain no840; the proposed A transparently replaces erroneous850 with840.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/patternAnalysis: Infers and checks numerical or algebraic sequence rules across all supplied steps.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=120",
+      "docs/verification/editorial-full-corpus-task1.md#x-13"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "The recurrence is next=2(current+20):2(15+20)=70;2(70+20)=180;2(180+20)=400;2(400+20)=840. Original options contain no840; the proposed A transparently replaces erroneous850 with840.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=120",
+            "docs/verification/editorial-full-corpus-task1.md#x-13"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:X:14",
+    "proposed": {
+      "id": "q-000408",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Find the missing term in the series 25XYZ, 16XYZ, 9XYZ, 4XYZ,\n________.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "XYZ",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "2XYZ",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "100XYZ",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "-4XYZ",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "-XYZ",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "X",
+          "originalNumber": "14",
+          "pages": {
+            "start": 120,
+            "end": 121
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "A.) XYZ",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=120",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Coefficients descend as5²,4²,3²,2², so next1²=1. Keeping XYZ unchanged gives XYZ.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/patternAnalysis: Infers and checks numerical or algebraic sequence rules across all supplied steps.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=120",
+      "docs/verification/editorial-full-corpus-task1.md#x-14"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:X:15",
+    "proposed": {
+      "id": "q-000409",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "What is the last term in the series 15, 54, 171, 522, ______.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "1575",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "1580",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "1525",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "1535",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "1550",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "X",
+          "originalNumber": "15",
+          "pages": {
+            "start": 121,
+            "end": 121
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "A.) 1575",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=121",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The recurrence next=3(current+3) checks all steps:3(15+3)=54;3(54+3)=171;3(171+3)=522;3(522+3)=1575.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/patternAnalysis: Infers and checks numerical or algebraic sequence rules across all supplied steps.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=121",
+      "docs/verification/editorial-full-corpus-task1.md#x-15"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  }
+]

@@ -1,0 +1,2137 @@
+[
+  {
+    "sourceKey": "comprehensive:XII:1",
+    "proposed": {
+      "id": "q-000425",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Crib is to nursery as oven is to",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "LPB",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "baking",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "kitchen",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "cooking",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "1",
+          "pages": {
+            "start": 128,
+            "end": 128
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "c.) kitchen",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=128",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A crib is an object kept in a nursery; an oven is an object kept in a kitchen. Baking and cooking are activities rather than rooms, and LPB is not a corresponding room.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=128",
+      "docs/verification/editorial-full-corpus-task1.md#xii-1"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:2",
+    "proposed": {
+      "id": "q-000426",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Feeding bottle is to milk as pail is to",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "water",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "laundry",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "basin",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "2",
+          "pages": {
+            "start": 128,
+            "end": 129
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "a.) water",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=128",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Removed competing valid or overlapping relation alternatives, retaining original stable IDs of survivors and all original labels; independent explanation names the removed relationship.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#xii-2"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A feeding bottle contains milk and a pail commonly contains water. Laundry is a task/items and basin a separate container. Liquid is also an overlapping possible content category and is transparently removed.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=128",
+      "docs/verification/editorial-full-corpus-task1.md#xii-2"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:3",
+    "proposed": {
+      "id": "q-000427",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Match the guide-to-dependent relationship: Parents – children.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "king - queen",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "teachers - students",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "mother - father",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "sister - brother",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "3",
+          "pages": {
+            "start": 129,
+            "end": 129
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "b.) teachers - students",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=129",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Made the intended guide-to-dependent analogy relation explicit without claiming biological descent and teaching are identical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#xii-3"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Parents guide their children and teachers guide their students. King/queen, mother/father and sister/brother are paired peers rather than an educator-to-dependent relationship.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=129",
+      "docs/verification/editorial-full-corpus-task1.md#xii-3"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:4",
+    "proposed": {
+      "id": "q-000428",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Sadness -tear",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "loyal - honest",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "hopelessness - emptiness",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "homesick - abroad",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "happiness - laughter",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "4",
+          "pages": {
+            "start": 129,
+            "end": 129
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "d.) happiness - laughter",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=129",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Sadness can produce the observable expression tears, while happiness can produce laughter. Hopelessness/emptiness names related inner states rather than state and outward expression; the other pairs do not preserve that relation.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=129",
+      "docs/verification/editorial-full-corpus-task1.md#xii-4"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:5",
+    "proposed": {
+      "id": "q-000429",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "For organisms kept in purpose-built household containers: plant is to pot as goldfish is to ______.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "pool",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "fountain",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "lake",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "aquarium",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "5",
+          "pages": {
+            "start": 129,
+            "end": 129
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "d.) aquarium",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=129",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Specified household container relation to distinguish other waters that can contain fish.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#xii-5"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A pot is a purpose-built home container for a plant; an aquarium is a purpose-built home container for a goldfish. A pool/fountain/lake can contain fish but does not match the household-kept container relation as specifically.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=129",
+      "docs/verification/editorial-full-corpus-task1.md#xii-5"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:6",
+    "proposed": {
+      "id": "q-000430",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Tomato-ketchup",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "onion - steak",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "sugarcane - sugar",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "6",
+          "pages": {
+            "start": 129,
+            "end": 130
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "d.) sugarcane - sugar",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=129",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Removed competing valid or overlapping relation alternatives, retaining original stable IDs of survivors and all original labels; independent explanation names the removed relationship.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#xii-6"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Tomato is processed into ketchup and sugarcane into sugar. Tamarind in sinigang and vinegar in pickles are also ingredient-to-product relationships, so both competing examples are removed to make the intended main-material processing relation unique.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=129",
+      "docs/verification/editorial-full-corpus-task1.md#xii-6"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:7",
+    "proposed": {
+      "id": "q-000431",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Lotion is to skin as coconut oil is to",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "sprain",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "hair",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "wound",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "pain",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "7",
+          "pages": {
+            "start": 130,
+            "end": 130
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "b.) hair",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=130",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Skin is the body surface receiving lotion; hair is the body part receiving coconut oil. Sprain, wound and pain name problems rather than the parallel body-part category; this does not claim medical treatment efficacy.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=130",
+      "docs/verification/editorial-full-corpus-task1.md#xii-7"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:8",
+    "proposed": {
+      "id": "q-000432",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Bride - groom",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "artist - singer",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "secretary - treasurer",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "girlfriend - boyfriend",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "painter - sculptor",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "8",
+          "pages": {
+            "start": 130,
+            "end": 130
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "c.) girlfriend - boyfriend",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=130",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Bride/groom are conventional corresponding romantic partners at a wedding, as girlfriend/boyfriend are corresponding partners in a romantic relationship. Artist/singer and painter/sculptor are occupations, and secretary/treasurer distinct offices.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=130",
+      "docs/verification/editorial-full-corpus-task1.md#xii-8"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:9",
+    "proposed": {
+      "id": "q-000433",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Teacher - instructor",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "farmer - tiller",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "fisherman - shrimp",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "buyer - seller",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "director - cinema",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "9",
+          "pages": {
+            "start": 130,
+            "end": 130
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "a.) farmer - tiller",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=130",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Teacher/instructor are near-synonyms for a teaching role. Farmer/tiller are near-synonyms when tiller denotes a person who cultivates soil; buyer/seller are opposing transaction roles, and the other pairs relate people to objects or venues.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=130",
+      "docs/verification/editorial-full-corpus-task1.md#xii-9"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:10",
+    "proposed": {
+      "id": "q-000434",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Umbrella - rain",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "shoes - flood",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "cinema - movie",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "jacket - cold",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "toothbrush - teeth",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "10",
+          "pages": {
+            "start": 130,
+            "end": 131
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "c.) jacket - cold",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=130",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "An umbrella offers protection against rain and a jacket against cold. Shoes/flood is not the ordinary protective pairing; cinema/movie is venue/content and toothbrush/teeth tool/object of cleaning.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=130",
+      "docs/verification/editorial-full-corpus-task1.md#xii-10"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:11",
+    "proposed": {
+      "id": "q-000435",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Palay - rice",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "fish - fried",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "wheat - flour",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "11",
+          "pages": {
+            "start": 131,
+            "end": 131
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "d.) wheat - flour",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=131",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Removed competing valid or overlapping relation alternatives, retaining original stable IDs of survivors and all original labels; independent explanation names the removed relationship.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#xii-11"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Palay is unprocessed paddy turned into rice, and wheat becomes flour. Corn/flakes and potato/chips can also describe processing, so both competing valid pairs are explicitly removed; fish/fried has an adjective rather than a named product.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=131",
+      "docs/verification/editorial-full-corpus-task1.md#xii-11"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:12",
+    "proposed": {
+      "id": "q-000436",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "duck - quack",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "cat - kittens",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "dog - bite",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "bird - fly",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "pig - oink",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "12",
+          "pages": {
+            "start": 131,
+            "end": 131
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "d.) pig - oink",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=131",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A duck makes the sound quack and a pig the sound oink. Cat/kittens is parent/offspring, dog/bite and bird/fly are animal/actions rather than sound names.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=131",
+      "docs/verification/editorial-full-corpus-task1.md#xii-12"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:13",
+    "proposed": {
+      "id": "q-000437",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Bus is to passenger as restaurant is to",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "diner",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "chef",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "celebrant",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "13",
+          "pages": {
+            "start": 131,
+            "end": 131
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "a.) diner",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=131",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Removed competing valid or overlapping relation alternatives, retaining original stable IDs of survivors and all original labels; independent explanation names the removed relationship.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#xii-13"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A passenger is a bus's named user and a diner a restaurant's named eating customer. Client can also broadly describe a restaurant customer and is removed; chef is a worker and celebrant a party role rather than the ordinary service-user noun.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=131",
+      "docs/verification/editorial-full-corpus-task1.md#xii-13"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:14",
+    "proposed": {
+      "id": "q-000438",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Expensive is to cheap as fast is to",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "quick",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "haste",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "slow",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "speedy",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "14",
+          "pages": {
+            "start": 131,
+            "end": 132
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "c.) slow",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=131",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Expensive/cheap are opposites on price and fast/slow opposites on speed. Quick and speedy are synonyms of fast; haste is a related noun rather than the opposite adjective.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=131",
+      "docs/verification/editorial-full-corpus-task1.md#xii-14"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:15",
+    "proposed": {
+      "id": "q-000439",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "A boxing contest is to ring as a stage play is to ______.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "cinema",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "coliseum",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "theater",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "gymnasium",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "15",
+          "pages": {
+            "start": 132,
+            "end": 132
+          },
+          "originalChoiceLabels": ["a", "b", "b", "d"],
+          "originalAnswer": "b.) theater",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=132",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Clarified stage-play venue and resolved duplicate source labels by answer text theater to stable choice-3; original duplicated labels retained in lineage.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#xii-15"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A boxing contest takes place in a ring and a stage play in a theater. The source duplicates labelb for coliseum and theater, but the answer text identifies theater unambiguously; stable third choice ID resolves it without rewriting original label lineage.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=132",
+      "docs/verification/editorial-full-corpus-task1.md#xii-15"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "duplicate-label",
+          "message": "Repeated source label cannot uniquely address an answer",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "A boxing contest takes place in a ring and a stage play in a theater. The source duplicates labelb for coliseum and theater, but the answer text identifies theater unambiguously; stable third choice ID resolves it without rewriting original label lineage.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=132",
+            "docs/verification/editorial-full-corpus-task1.md#xii-15"
+          ]
+        },
+        {
+          "code": "duplicate-label",
+          "rationale": "A boxing contest takes place in a ring and a stage play in a theater. The source duplicates labelb for coliseum and theater, but the answer text identifies theater unambiguously; stable third choice ID resolves it without rewriting original label lineage.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=132",
+            "docs/verification/editorial-full-corpus-task1.md#xii-15"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "A boxing contest takes place in a ring and a stage play in a theater. The source duplicates labelb for coliseum and theater, but the answer text identifies theater unambiguously; stable third choice ID resolves it without rewriting original label lineage.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=132",
+            "docs/verification/editorial-full-corpus-task1.md#xii-15"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:16",
+    "proposed": {
+      "id": "q-000440",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Hut is to small as mansion is to",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "high",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "wide",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "big",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "sturdy",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "16",
+          "pages": {
+            "start": 132,
+            "end": 132
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "c.) big",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=132",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The pairing contrasts usual size: a hut is small, a mansion big. High/wide name specific dimensions and sturdy construction strength rather than the general size opposition.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=132",
+      "docs/verification/editorial-full-corpus-task1.md#xii-16"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:17",
+    "proposed": {
+      "id": "q-000441",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Match each room to the activity named by its usual primary purpose, using activity nouns: bathroom is to bath as bedroom is to ______.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "rest",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "sleep",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "relax",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "retire",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "17",
+          "pages": {
+            "start": 132,
+            "end": 132
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "b.) sleep",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=132",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Specified primary activity nouns: sleep matches sleeping, while rest is broader and relax/retire are supplied as verbs.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#xii-17"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Bathing is the primary named bathroom activity and sleeping the primary bedroom activity. Rest, relax and retire overlap with bedroom use, so the unqualified source relation is not uniquely determined; an authored primary-activity clarification is needed.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=132",
+      "docs/verification/editorial-full-corpus-task1.md#xii-17"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:18",
+    "proposed": {
+      "id": "q-000442",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Edible describes food fit to be eaten. In ordinary public-supply terminology, which noun is conventionally modified by potable to mean fit for drinking?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "milk",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "water",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "juice",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "coffee",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "18",
+          "pages": {
+            "start": 132,
+            "end": 133
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "b.) water",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=132",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Converted nonunique drinks analogy into an explicitly authored vocabulary-collocation question; original four drink choices and source water key preserved.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#xii-18"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Edible means fit for eating and potable means fit for drinking. All four alternatives can be drinkable, so the original analogy does not uniquely distinguish water. A vocabulary-collocation revision specifically asks which noun potable ordinarily modifies in public supply terminology.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=132",
+      "docs/verification/editorial-full-corpus-task1.md#xii-18"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:19",
+    "proposed": {
+      "id": "q-000443",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Gourmet is to food as connoisseur is to",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "winde",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "coffee",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "condiment",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "tea",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "19",
+          "pages": {
+            "start": 133,
+            "end": 133
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "b.) coffee",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=133",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A gourmet appreciates food, while a connoisseur can have expertise in wine, coffee, tea or other subjects. Coffee is not uniquely entailed; winde is also an apparent spelling defect whose intended form is not assumed as source evidence. The supplied coffee key remains provisional.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations. Open: Connoisseur has no unique object domain: coffee, tea and potentially intended wine are all possible. The source provides no field-specific context, and apparent winde cannot be silently restored or excluded to force coffee.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=133",
+      "docs/verification/editorial-full-corpus-task1.md#xii-19"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "editorial-ambiguity",
+          "blocking": true,
+          "message": "Connoisseur has no unique object domain: coffee, tea and potentially intended wine are all possible. The source provides no field-specific context, and apparent winde cannot be silently restored or excluded to force coffee."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XII:20",
+    "proposed": {
+      "id": "q-000444",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "wordAnalogy",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Masseur is to massage as chauffeur is to ______.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "hairstyle",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "drive",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "manicure",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "cut",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XII",
+          "originalNumber": "20",
+          "pages": {
+            "start": 133,
+            "end": 133
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "b.) drive",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=133",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Corrected source occupation spelling chauffer to chauffeur.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#xii-20"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A masseur performs massage and a chauffeur drives. Hairstyle, manicure and cut are not the chauffeur's service. Chauffeur is the supported standard spelling of the occupation misspelled chauffer in the prompt.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy criticalThinking/wordAnalogy: Matches a semantic relationship between two word pairs while excluding different relations.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=133",
+      "docs/verification/editorial-full-corpus-task1.md#xii-20"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  }
+]

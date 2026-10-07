@@ -1,0 +1,1631 @@
+[
+  {
+    "sourceKey": "comprehensive:V:1",
+    "proposed": {
+      "id": "q-000196",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "readingComprehension",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "According to the passage, why can't the root structure expand sufficiently to nourish and\nproperly anchor the tree?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The hole in which the tree is planted is too deep.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "There isn't enough oxygen to ensure proper growth.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The hole in which the tree is planted is too narrow.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The tree does not receive enough sunlight.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The soil is stony, which prevents the roots from spreading.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "V",
+          "originalNumber": "1",
+          "pages": {
+            "start": 60,
+            "end": 60
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "C. The hole in which the tree is planted is too narrow.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=60",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored according-to-the-passage framing to distinguish textual claims from independently certified facts.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-1"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The first paragraph directly links a too-narrow hole to insufficient root expansion. Excessive depth is linked instead to lack of oxygen; sunlight and stony soil are not stated as the cause in this passage.",
+          "marks": []
+        }
+      ],
+      "stimulus": {
+        "id": "comprehensive:V:Passage 1",
+        "version": 1,
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Passage 1\nThe most common mistake when planting a tree is digging a hole that is both too deep and\ntoo narrow. Too deep and the roots don't have access to sufficient oxygen to ensure proper\ngrowth. Too narrow and the root structure can't expand sufficiently to nourish and properly\nanchor the tree.\nAs a general rule, trees should be transplanted no deeper than the soil in which they were\noriginally grown. The width of the hole should be at least 3 times the diameter of the root ball\nor container or the spread of the roots in the case of bare root trees. This will provide the\ntree with enough worked earth for its root structure.",
+            "marks": []
+          }
+        ]
+      }
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Answers depend on explicit statements, paragraph relations or the author's conclusions in preserved shared passages.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=60",
+      "docs/verification/editorial-full-corpus-task1.md#v-1"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:V:2",
+    "proposed": {
+      "id": "q-000197",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "readingComprehension",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "According to the passage, in the case of bare root trees, what will provide the tree with enough\nworked earth for its root structure to establish itself?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Narrow digging hole.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The width of the hole should be at least 3 times the spread of the roots.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Too deep digging hole.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Having no access to sufficient oxygen.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Receiving insufficient oxygen.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "V",
+          "originalNumber": "2",
+          "pages": {
+            "start": 60,
+            "end": 61
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "B. The width of the hole should be at least 3 times the diameter of the\nroot ball.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=60",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored according-to-the-passage framing to distinguish textual claims from independently certified facts.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-2"
+            },
+            {
+              "reason": "Corrected B from root-ball diameter to root spread for bare-root trees using the actual preserved passage.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-2"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "For bare-root trees, the second paragraph uses the spread of the roots as the width reference, not a root ball. The repaired B correctly specifies at least three times that spread; the other options provide no workable wider soil area.",
+          "marks": []
+        }
+      ],
+      "stimulus": {
+        "id": "comprehensive:V:Passage 1",
+        "version": 1,
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Passage 1\nThe most common mistake when planting a tree is digging a hole that is both too deep and\ntoo narrow. Too deep and the roots don't have access to sufficient oxygen to ensure proper\ngrowth. Too narrow and the root structure can't expand sufficiently to nourish and properly\nanchor the tree.\nAs a general rule, trees should be transplanted no deeper than the soil in which they were\noriginally grown. The width of the hole should be at least 3 times the diameter of the root ball\nor container or the spread of the roots in the case of bare root trees. This will provide the\ntree with enough worked earth for its root structure.",
+            "marks": []
+          }
+        ]
+      }
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Answers depend on explicit statements, paragraph relations or the author's conclusions in preserved shared passages.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=60",
+      "docs/verification/editorial-full-corpus-task1.md#v-2"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "For bare-root trees, the second paragraph uses the spread of the roots as the width reference, not a root ball. The repaired B correctly specifies at least three times that spread; the other options provide no workable wider soil area.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=60",
+            "docs/verification/editorial-full-corpus-task1.md#v-2"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:V:3",
+    "proposed": {
+      "id": "q-000198",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "readingComprehension",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "According to Passage 1, which effect of planting a tree too deeply is explicitly stated?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Wither at once.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Grow very fast.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Grow very slowly.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The roots lack access to sufficient oxygen.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Properly anchor the tree.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "V",
+          "originalNumber": "3",
+          "pages": {
+            "start": 61,
+            "end": 61
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "D. Be inaccessible to sufficient oxygen.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=61",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored according-to-the-passage framing to distinguish textual claims from independently certified facts.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-3"
+            },
+            {
+              "reason": "Narrowed the stem to the specific textual relation or level of detail so other supported statements do not become competing answers.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-3"
+            },
+            {
+              "reason": "Corrected the awkward D wording to the actual passage claim.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-3"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The passage explicitly says excessive depth keeps the roots from sufficient oxygen. It does not state immediate withering or a specific slower growth rate, and proper anchoring is a desired outcome rather than the stated excessive-depth effect.",
+          "marks": []
+        }
+      ],
+      "stimulus": {
+        "id": "comprehensive:V:Passage 1",
+        "version": 1,
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Passage 1\nThe most common mistake when planting a tree is digging a hole that is both too deep and\ntoo narrow. Too deep and the roots don't have access to sufficient oxygen to ensure proper\ngrowth. Too narrow and the root structure can't expand sufficiently to nourish and properly\nanchor the tree.\nAs a general rule, trees should be transplanted no deeper than the soil in which they were\noriginally grown. The width of the hole should be at least 3 times the diameter of the root ball\nor container or the spread of the roots in the case of bare root trees. This will provide the\ntree with enough worked earth for its root structure.",
+            "marks": []
+          }
+        ]
+      }
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Answers depend on explicit statements, paragraph relations or the author's conclusions in preserved shared passages.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=61",
+      "docs/verification/editorial-full-corpus-task1.md#v-3"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:V:4",
+    "proposed": {
+      "id": "q-000199",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "readingComprehension",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "According to Passage 1, which option gives the precise transplant-depth rule relative to the tree's original growing depth?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The digging hole should not be too deep.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "It should be transplanted no deeper than the soil in which it was originally grown.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The digging hole should not be too narrow.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The roots should have access to sufficient oxygen.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The root structure should expand sufficiently.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "V",
+          "originalNumber": "4",
+          "pages": {
+            "start": 61,
+            "end": 61
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "B. It should be transplanted no deeper than the soil in which it was\noriginally grown.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=61",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored according-to-the-passage framing to distinguish textual claims from independently certified facts.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-4"
+            },
+            {
+              "reason": "Narrowed the stem to the specific textual relation or level of detail so other supported statements do not become competing answers.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-4"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The general-rule sentence specifies no deeper than the soil in which it was originally grown. B states that relative depth precisely; A is a vague prohibition and the other alternatives concern width, oxygen or expansion rather than the original-depth rule.",
+          "marks": []
+        }
+      ],
+      "stimulus": {
+        "id": "comprehensive:V:Passage 1",
+        "version": 1,
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Passage 1\nThe most common mistake when planting a tree is digging a hole that is both too deep and\ntoo narrow. Too deep and the roots don't have access to sufficient oxygen to ensure proper\ngrowth. Too narrow and the root structure can't expand sufficiently to nourish and properly\nanchor the tree.\nAs a general rule, trees should be transplanted no deeper than the soil in which they were\noriginally grown. The width of the hole should be at least 3 times the diameter of the root ball\nor container or the spread of the roots in the case of bare root trees. This will provide the\ntree with enough worked earth for its root structure.",
+            "marks": []
+          }
+        ]
+      }
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Answers depend on explicit statements, paragraph relations or the author's conclusions in preserved shared passages.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=61",
+      "docs/verification/editorial-full-corpus-task1.md#v-4"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:V:5",
+    "proposed": {
+      "id": "q-000200",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "readingComprehension",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "According to the passage, in a police tactical raid, when do suspect-based actions occur?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "When the officer focuses on his own actions.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "When the officer controls his own emotions.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "When an officer does not focus solely on the suspect.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "When an officer becomes too overwhelmed with the quick capture of the offender.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "When things get out of control quickly.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "V",
+          "originalNumber": "5",
+          "pages": {
+            "start": 62,
+            "end": 62
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "D. When an officer becomes too overwhelmed with the quick capture\nof the offender.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=62",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored according-to-the-passage framing to distinguish textual claims from independently certified facts.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-5"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The passage defines suspect-based actions as becoming overwhelmed by quick capture and forgetting the surrounding situation. D restates that definition; loss of control is described as a consequence rather than the initiating condition.",
+          "marks": []
+        }
+      ],
+      "stimulus": {
+        "id": "comprehensive:V:Passage 2",
+        "version": 1,
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Passage 2\nWhile most police actions are suspect-based, tactical thinking is officer-based.\nSuspect-based actions occur when we become too overwhelmed with the quick capture of\nthe offender and forget about everything else going on around us. In this situation, things\ncan get out of control quickly. This results in cross-fires, improper handcuffing techniques,\nand total convergence on the offender by all officers. It leaves no one to provide cover.\nIdeally, an officer should not focus solely on the suspect. The officer should focus on his/her\nown actions rather than what the suspect is doing. By maintaining this focus, you become\nmore effective in controlling your own emotions. You make stronger tactical decisions and\nonly escalate the force, if necessary. This internal focus protects you and allows you to make\nsound decisions. This is the officer-based approach to solving any difficult situation.",
+            "marks": []
+          }
+        ]
+      }
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Answers depend on explicit statements, paragraph relations or the author's conclusions in preserved shared passages.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=62",
+      "docs/verification/editorial-full-corpus-task1.md#v-5"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:V:6",
+    "proposed": {
+      "id": "q-000201",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "readingComprehension",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "According to Passage 2, which option gives the overall immediate situation before the passage lists specific tactical consequences?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The offender is caught immediately.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The offender is killed instantly.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "No one provides cover to comrades.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "There is an improper handcuffing technique.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Things can get out of control quickly.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "V",
+          "originalNumber": "6",
+          "pages": {
+            "start": 62,
+            "end": 62
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "E. Things can get out of control quickly.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=62",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored according-to-the-passage framing to distinguish textual claims from independently certified facts.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-6"
+            },
+            {
+              "reason": "Narrowed the stem to the specific textual relation or level of detail so other supported statements do not become competing answers.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-6"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The text first says things can get out of control quickly, then lists cross-fires, improper handcuffing and loss of cover. E is the overall situation asked for; C/D are later specific consequences also supported by the passage.",
+          "marks": []
+        }
+      ],
+      "stimulus": {
+        "id": "comprehensive:V:Passage 2",
+        "version": 1,
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Passage 2\nWhile most police actions are suspect-based, tactical thinking is officer-based.\nSuspect-based actions occur when we become too overwhelmed with the quick capture of\nthe offender and forget about everything else going on around us. In this situation, things\ncan get out of control quickly. This results in cross-fires, improper handcuffing techniques,\nand total convergence on the offender by all officers. It leaves no one to provide cover.\nIdeally, an officer should not focus solely on the suspect. The officer should focus on his/her\nown actions rather than what the suspect is doing. By maintaining this focus, you become\nmore effective in controlling your own emotions. You make stronger tactical decisions and\nonly escalate the force, if necessary. This internal focus protects you and allows you to make\nsound decisions. This is the officer-based approach to solving any difficult situation.",
+            "marks": []
+          }
+        ]
+      }
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Answers depend on explicit statements, paragraph relations or the author's conclusions in preserved shared passages.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=62",
+      "docs/verification/editorial-full-corpus-task1.md#v-6"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:V:7",
+    "proposed": {
+      "id": "q-000202",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "readingComprehension",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "According to Passage 2, what should the officer primarily focus on?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Focus on what the suspect is doing.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Make a sound decision.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Focus on his own actions.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Learn the proper handcuffing technique.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Control his emotions.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "V",
+          "originalNumber": "7",
+          "pages": {
+            "start": 62,
+            "end": 63
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "C. Focus on his own actions.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=62",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored according-to-the-passage framing to distinguish textual claims from independently certified facts.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-7"
+            },
+            {
+              "reason": "Narrowed the stem to the specific textual relation or level of detail so other supported statements do not become competing answers.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-7"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The text explicitly contrasts focusing solely on the suspect with focusing on the officer's own actions. C names that focus; sound decisions and emotion control are benefits of maintaining it, not the object of focus.",
+          "marks": []
+        }
+      ],
+      "stimulus": {
+        "id": "comprehensive:V:Passage 2",
+        "version": 1,
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Passage 2\nWhile most police actions are suspect-based, tactical thinking is officer-based.\nSuspect-based actions occur when we become too overwhelmed with the quick capture of\nthe offender and forget about everything else going on around us. In this situation, things\ncan get out of control quickly. This results in cross-fires, improper handcuffing techniques,\nand total convergence on the offender by all officers. It leaves no one to provide cover.\nIdeally, an officer should not focus solely on the suspect. The officer should focus on his/her\nown actions rather than what the suspect is doing. By maintaining this focus, you become\nmore effective in controlling your own emotions. You make stronger tactical decisions and\nonly escalate the force, if necessary. This internal focus protects you and allows you to make\nsound decisions. This is the officer-based approach to solving any difficult situation.",
+            "marks": []
+          }
+        ]
+      }
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Answers depend on explicit statements, paragraph relations or the author's conclusions in preserved shared passages.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=62",
+      "docs/verification/editorial-full-corpus-task1.md#v-7"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:V:8",
+    "proposed": {
+      "id": "q-000203",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "readingComprehension",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "According to Passage 2, which option includes all the listed possible consequences when things get out of control?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Cross-fires could happen.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Improper handcuffing technique may happen.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Total convergence on the offender by all officers.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "No one to provide cover.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "All of the above.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "V",
+          "originalNumber": "8",
+          "pages": {
+            "start": 63,
+            "end": 63
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "E. All of the above.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=63",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored according-to-the-passage framing to distinguish textual claims from independently certified facts.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-8"
+            },
+            {
+              "reason": "Narrowed the stem to the specific textual relation or level of detail so other supported statements do not become competing answers.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-8"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The passage lists cross-fires, improper handcuffing, convergence of all officers and absence of cover. A–D each capture one, and all of the above includes every listed consequence.",
+          "marks": []
+        }
+      ],
+      "stimulus": {
+        "id": "comprehensive:V:Passage 2",
+        "version": 1,
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Passage 2\nWhile most police actions are suspect-based, tactical thinking is officer-based.\nSuspect-based actions occur when we become too overwhelmed with the quick capture of\nthe offender and forget about everything else going on around us. In this situation, things\ncan get out of control quickly. This results in cross-fires, improper handcuffing techniques,\nand total convergence on the offender by all officers. It leaves no one to provide cover.\nIdeally, an officer should not focus solely on the suspect. The officer should focus on his/her\nown actions rather than what the suspect is doing. By maintaining this focus, you become\nmore effective in controlling your own emotions. You make stronger tactical decisions and\nonly escalate the force, if necessary. This internal focus protects you and allows you to make\nsound decisions. This is the officer-based approach to solving any difficult situation.",
+            "marks": []
+          }
+        ]
+      }
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Answers depend on explicit statements, paragraph relations or the author's conclusions in preserved shared passages.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=63",
+      "docs/verification/editorial-full-corpus-task1.md#v-8"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:V:9",
+    "proposed": {
+      "id": "q-000204",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "readingComprehension",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "According to Passage 3, what conclusion does the author draw from the three cave-selection criteria?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The Neanderthal cavemen discovered Feng Shui.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Not all caves are safe to live in.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Some caves are accessible to a water source.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "They are aware of the effects of placement in their environment.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Some caves held the high ground in the area.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "V",
+          "originalNumber": "9",
+          "pages": {
+            "start": 63,
+            "end": 64
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "D. They are aware of the effects of placement in their environment.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=63",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored according-to-the-passage framing to distinguish textual claims from independently certified facts.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-9"
+            },
+            {
+              "reason": "Narrowed the stem to the specific textual relation or level of detail so other supported statements do not become competing answers.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-9"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The author explicitly concludes that ancestors were naturally aware of placement effects. D states this conclusion; high ground and water access are supporting observations, while discovering Feng Shui is not claimed. This is textual interpretation, not independent certification of the passage's historical claims.",
+          "marks": []
+        }
+      ],
+      "stimulus": {
+        "id": "comprehensive:V:Passage 3 – Feng Shui",
+        "version": 1,
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Passage 3 – Feng Shui\nFeng Shui is often referred to as the art of placement. How you place your furniture,\npossessions, and yourself within your surroundings largely determines your life experience\nat every level. Feng Shui offers a unique way of looking at yourself and your environment,\nand it provides a way of bringing balance, comfort, and harmony into your environment in a\nmanner that is difficult to achieve by any other means.\nInteresting bits of historical Feng Shui confirmation are starting to emerge. For example,\nrecent scientific research indicates that 28,000 years ago, Neanderthal cavemen (located in\npresent-day Croatia) chose which caves to live in based on three criteria:\nThe caves held the high ground in the area, the surrounding area was easily seen from the\nentrance of the cave, and the water source was easily accessible. These findings show that\neven our ancestors were naturally aware of the effects of placement in their environment.\nInterestingly enough, all three of these criteria are in harmony with the basic principles of\nFeng Shui, which has evolved and become more sophisticated along with humankind. Thus,\nFeng Shui is as relevant and beneficial to humankind today as it was 28,000 years ago.",
+            "marks": []
+          }
+        ]
+      }
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Answers depend on explicit statements, paragraph relations or the author's conclusions in preserved shared passages.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=63",
+      "docs/verification/editorial-full-corpus-task1.md#v-9"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:V:10",
+    "proposed": {
+      "id": "q-000205",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "readingComprehension",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "According to the final sentence of Passage 3, what conclusion does the author draw about Feng Shui today compared with ancient times?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The Neanderthal cavemen were the first people to practice Feng Shui.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "These cavemen were the first recipient of the benefits of Feng Shui.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Feng Shui is as relevant and beneficial to humankind today as it was in the days of the\nNeanderthal cavemen.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Feng Shui provides a way of bringing balance and harmony into the environment.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Feng Shui has evolved and become more sophisticated.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "V",
+          "originalNumber": "10",
+          "pages": {
+            "start": 64,
+            "end": 64
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "C. Feng Shui is as relevant and beneficial to humankind today as it\nwas in the days of the Neanderthal cavemen.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=64",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored according-to-the-passage framing to distinguish textual claims from independently certified facts.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-10"
+            },
+            {
+              "reason": "Narrowed the stem to the specific textual relation or level of detail so other supported statements do not become competing answers.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-10"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The final sentence asserts equal relevance and benefit today and 28,000 years ago, matching C. Other options are either earlier statements or unsupported first-practitioner assertions. The question tests the author's conclusion, not endorsement of the factual or metaphysical claim.",
+          "marks": []
+        }
+      ],
+      "stimulus": {
+        "id": "comprehensive:V:Passage 3 – Feng Shui",
+        "version": 1,
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Passage 3 – Feng Shui\nFeng Shui is often referred to as the art of placement. How you place your furniture,\npossessions, and yourself within your surroundings largely determines your life experience\nat every level. Feng Shui offers a unique way of looking at yourself and your environment,\nand it provides a way of bringing balance, comfort, and harmony into your environment in a\nmanner that is difficult to achieve by any other means.\nInteresting bits of historical Feng Shui confirmation are starting to emerge. For example,\nrecent scientific research indicates that 28,000 years ago, Neanderthal cavemen (located in\npresent-day Croatia) chose which caves to live in based on three criteria:\nThe caves held the high ground in the area, the surrounding area was easily seen from the\nentrance of the cave, and the water source was easily accessible. These findings show that\neven our ancestors were naturally aware of the effects of placement in their environment.\nInterestingly enough, all three of these criteria are in harmony with the basic principles of\nFeng Shui, which has evolved and become more sophisticated along with humankind. Thus,\nFeng Shui is as relevant and beneficial to humankind today as it was 28,000 years ago.",
+            "marks": []
+          }
+        ]
+      }
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Answers depend on explicit statements, paragraph relations or the author's conclusions in preserved shared passages.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=64",
+      "docs/verification/editorial-full-corpus-task1.md#v-10"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:V:11",
+    "proposed": {
+      "id": "q-000206",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "readingComprehension",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which is NOT a characteristic of the flower of the Dragon plant?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Ornate",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Fragrant",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Edible",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Bloom only at night",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "V",
+          "originalNumber": "11",
+          "pages": {
+            "start": 64,
+            "end": 64
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "C. Edible",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=64",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Removed duplicated Fragrant alternative E, retaining original surviving stable IDs and full original labels; missing passage still blocks reviewability.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#v-11"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "No Dragon plant passage exists in the authoritative source context. The source explanation asserts characteristics, but absence of an edible claim in an unavailable passage cannot establish a NOT-stated answer; C is retained only as the best source-supported provisional key.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Answers depend on explicit statements, paragraph relations or the author's conclusions in preserved shared passages. Open: The required shared Dragon fruit passage is absent. The source explanation cannot substitute for missing reading context; no missing passage or health claims are invented.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=64",
+      "docs/verification/editorial-full-corpus-task1.md#v-11"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "missing-passage",
+          "message": "Dragon fruit passage is absent from the source",
+          "blocking": true
+        },
+        {
+          "code": "duplicate-alternative",
+          "message": "Repeated rendered alternatives need editorial resolution",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "editorial-ambiguity",
+          "blocking": true,
+          "message": "The required shared Dragon fruit passage is absent. The source explanation cannot substitute for missing reading context; no missing passage or health claims are invented."
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "duplicate-alternative",
+          "rationale": "No Dragon plant passage exists in the authoritative source context. The source explanation asserts characteristics, but absence of an edible claim in an unavailable passage cannot establish a NOT-stated answer; C is retained only as the best source-supported provisional key.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=64",
+            "docs/verification/editorial-full-corpus-task1.md#v-11"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:V:12",
+    "proposed": {
+      "id": "q-000207",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "readingComprehension",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which of the following is NOT a health benefit of a Dragon fruit?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Preventing memory loss",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Aids in healing bruises",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Helps in blood circulation",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Control of blood glucose in diabetes",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Helps control cancer",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "V",
+          "originalNumber": "12",
+          "pages": {
+            "start": 64,
+            "end": 65
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "B. Aids in healing bruises",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=64",
+          "links": [],
+          "imageLocations": [],
+          "corrections": []
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The required Dragon fruit passage is absent. Without it, none of the claimed health-benefit alternatives or the source's NOT-mentioned distinction can be independently established. B remains a provisional source key, not a verified medical claim.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Answers depend on explicit statements, paragraph relations or the author's conclusions in preserved shared passages. Open: The required shared Dragon fruit passage is absent. The source explanation cannot substitute for missing reading context; no missing passage or health claims are invented.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=64",
+      "docs/verification/editorial-full-corpus-task1.md#v-12"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "missing-passage",
+          "message": "Dragon fruit passage is absent from the source",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "editorial-ambiguity",
+          "blocking": true,
+          "message": "The required shared Dragon fruit passage is absent. The source explanation cannot substitute for missing reading context; no missing passage or health claims are invented."
+        }
+      ],
+      "resolutions": []
+    }
+  }
+]

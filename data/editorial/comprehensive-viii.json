@@ -1,0 +1,4386 @@
+[
+  {
+    "sourceKey": "comprehensive:VIII:1",
+    "proposed": {
+      "id": "q-000338",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the sentence that puts both saving and paying under the same are willing to construction, in saving-then-paying order. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "People, to make their home more beautiful and luxurious, save up and are willing to pay\na good amount of money.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "To make their home more beautiful and luxurious, people save up and are willing to pay a\ngood amount of money.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "People are willing to pay a good amount of money and save up to make their home more\nbeautiful and luxurious.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "People save up and are willing to pay a good amount of money to make their home more\nbeautiful and luxurious.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "People are willing to save up and pay a good amount of money to make their home more\nbeautiful and luxurious.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "1",
+          "pages": {
+            "start": 90,
+            "end": 90
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "E. People are willing to save up and pay a good amount of money to\nmake their home more beautiful and luxurious.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=90",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-1"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "E uses willing to save up and pay, with shared to and both activities within the willingness clause. C reverses their order; A/B/D make saving an independent finite action instead of including it in that shared construction. They are not all ungrammatical; the authored syntax condition distinguishes E.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=90",
+      "docs/verification/editorial-full-corpus-task1.md#viii-1"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:2",
+    "proposed": {
+      "id": "q-000339",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose a sentence that starts with a concessive While clause, places the complete idea-of-going-to-see-ghosts object before appealing, and then gives the main clause. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Some people find the idea of going to haunted places to see ghosts as appealing while\nsuch actions are detrimental at a spiritual level.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "While some people find the idea of going to haunted places to see ghosts appealing,\nsuch actions are detrimental at a spiritual level.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "At a spiritual level, while some people find the idea of going to haunted places to see\nghosts as appealing, such actions are detrimental.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Such actions are detrimental at a spiritual level, while some people find the idea of going\nto haunted places as appealing.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "While some people find the idea as appealing of going to haunted places, such actions\nare detrimental at a spiritual level.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "2",
+          "pages": {
+            "start": 91,
+            "end": 91
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "B. While some people find the idea of going to haunted places to see\nghosts as appealing, such actions are detrimental at a spiritual level.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=91",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-2"
+            },
+            {
+              "reason": "Authored alternative correction  as appealing →  appealing, preserving original alternative in authoritative source evidence and stable choice ID.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-2"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "B supplies the complete introductory while clause and following main clause. A does not begin with it, C begins with a location phrase, D reverses the clauses and E splits the noun complement awkwardly. Find an idea appealing is the cleaner standard construction; the unnecessary as is removed in B.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=91",
+      "docs/verification/editorial-full-corpus-task1.md#viii-2"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:3",
+    "proposed": {
+      "id": "q-000340",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the sentence whose subject is some older men and whose coordinated verbs first express their realization and then their not trying. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Older men realize just how hard it is to be an entrepreneur and some never try.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Just how hard to be an entrepreneur, some older men realize and never try.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Some older men realize just how hard it is to be an entrepreneur and never try.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Some older men realize and never try just how hard it is to be an entrepreneur.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "To be an entrepreneur, some older men realize and never try just how hard it is.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "3",
+          "pages": {
+            "start": 91,
+            "end": 91
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "C. Some older men realize just how hard it is to be an entrepreneur\nand never try.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=91",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-3"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "C makes some older men the shared subject of realize and never try, with the how-hard complement attached to realize. A uses a broader initial group and a separate some subject; D/E make the difficulty complement follow try improperly, and B lacks the finite it is.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=91",
+      "docs/verification/editorial-full-corpus-task1.md#viii-3"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:4",
+    "proposed": {
+      "id": "q-000341",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose a sentence that begins with the year, brackets the parenthetical book title with paired commas, and then gives the passive adaptation and contributors. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "In 1961, the book, How to Succeed, was adapted into a musical with songs by Frank\nLoesser and a libretto by Abe Burrows, with minor inputs by others.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "With minor inputs by others, the book, How to Succeed was adapted into a musical with\nsongs by Frank Loesser and libretto by Abe Burrows in 1961.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "With songs by Frank Loesser and a libretto by Abe Burrows, with minor inputs by others,\nthe book, How to Succeed was adapted into a musical in 1961.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The book, How to Succeed was adapted into a musical in 1961 with songs by Frank\nLoesser and a libretto by Abe Burrows, with minor inputs by others.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The book, How to Succeed, in 1961, was adapted into a musical with songs by Frank\nLoesser and libretto by Abe Burrows with minor inputs by others.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "4",
+          "pages": {
+            "start": 91,
+            "end": 92
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "A. In 1961, the book, How to Succeed, was adapted into a musical\nwith songs by Frank Loesser and a libretto by Abe Burrows, with minor inputs by\nothers.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=91",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-4"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A meets the requested time-first structure and pairs commas around How to Succeed. B/C/D omit a closing appositive comma; E moves the year inside the subject/verb span and does not follow the requested structure. This is syntax analysis, not independent verification of theatre history.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=91",
+      "docs/verification/editorial-full-corpus-task1.md#viii-4"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:5",
+    "proposed": {
+      "id": "q-000342",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose a direct definition beginning with Dance as the subject and placing its movement description after art form. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "A performance art from is dance, consisting of purposefully selected sequence of human\nmovement.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Consisting of purposefully selected sequence of human movement, dance is a\nperformance art form.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Dance , consisting of purposefully selected sequences of human movement is a\nperformance art form.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "A performance art form consisting of purposefully selected sequences of human\nmovement is dance.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Dance is a performance art form consisting of purposefully selected sequences of human\nmovement.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "5",
+          "pages": {
+            "start": 92,
+            "end": 92
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "E. Dance is a performance art form consisting of purposefully\nselected sequences of human movement.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=92",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-5"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "E is the subject-first definition and attaches consisting ... to art form. D is a grammatical inverted definition but violates the requested structure; A misspells form, B lacks a determiner for singular sequence and C leaves its inserted modifier comma unpaired.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=92",
+      "docs/verification/editorial-full-corpus-task1.md#viii-5"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:6",
+    "proposed": {
+      "id": "q-000343",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the sentence beginning with a first-time adverbial and ending with a place description that directly locates the square outside the theater. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Right outside the theater for the first time ever, the Bolshoi recently livestreamed a\nperformance on an outdoor screen in Teatralnaya Square.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Recently, the Bolshoi live-streamed a performance on an outdoor screen in Teatralnaya,\nSquare, right outside the theater for the first time ever.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The Bolshoi recently live-streamed a performance on an outdoor screen in Teatralnaya\nSquare, right outside the theater for the first time ever.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "For the first time ever, the Bolshoi recently live-streamed a performance on an outdoor\nscreen in Teatralnaya Square, right outside the theater.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The Bolshoi, for the first time ever, recently live-streamed a performance on an outdoor\nscreen in Teatralnaya Square, right outside the theater.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "6",
+          "pages": {
+            "start": 92,
+            "end": 92
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "D. For the first time ever, the Bolshoi recently live-streamed a\nperformance on an outdoor screen in Teatralnaya Square, right outside the theater.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=92",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-6"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "D begins with the requested event adverbial and places right outside the theater adjacent to the square. E is grammatical but inserts the event adverbial after its subject; A/C attach the first-time phrase at other positions, and B splits the place name with a comma.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=92",
+      "docs/verification/editorial-full-corpus-task1.md#viii-6"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:7",
+    "proposed": {
+      "id": "q-000344",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the corrected sentence that starts with the program phrase and then states whom the organization recognizes. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The Ninoy Aquino Parks and Wildlife recognizes licensed anglers through two separate\nprogram who catch exceptionally larged bird.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The Ninoy Aquino Parks and Wildlife reconizes licensed anglers who catch\nexceptionally large bird through two separate programs.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Through two separate programs, the Ninoy Aquino Parks and Wildlife recognizes\nlicensed anglers who catch exceptionally large birds.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "LIcensed anglers who catch exceptionally large bird, the Ninoy Aquino Parks and\nWildlife recognizes through two separate programs.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Licensed anglers, the Ninoy Aquino Parks and Wildlife recognizes through two separate\nprograms who catch exceptionally large bird.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "7",
+          "pages": {
+            "start": 93,
+            "end": 93
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "C. Through two separate programs, the Ninoy Aquino Parks and\nWildlife recognizes licensed anglers who catch exceptionally large bird.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=93",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-7"
+            },
+            {
+              "reason": "Authored alternative correction large bird. → large birds., preserving original alternative in authoritative source evidence and stable choice ID.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-7"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "C is the requested program-first structure, followed by organization, verb and licensed-anglers relative clause. Its original large bird is an undetermined singular count noun and is corrected to large birds. The institutional scenario remains quoted source wording, not verification that anglers catch birds or that these programs exist.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=93",
+      "docs/verification/editorial-full-corpus-task1.md#viii-7"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "C is the requested program-first structure, followed by organization, verb and licensed-anglers relative clause. Its original large bird is an undetermined singular count noun and is corrected to large birds. The institutional scenario remains quoted source wording, not verification that anglers catch birds or that these programs exist.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=93",
+            "docs/verification/editorial-full-corpus-task1.md#viii-7"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:8",
+    "proposed": {
+      "id": "q-000345",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose a subject-first declarative sentence placing the global comparison after the marine-biodiversity phrase. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The country's surrounding waters reportedly have the highest level of marine\nbiodiversity in the world.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "In the world, the country's surrounding waters reportedly have the highest level of\nmarine biodiversity.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The country's surrounding waters, in the world, reportedly have the highest level of\nmarine biodiversity.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Reportedly have the highest level of marine biodiversity, the country's surrounding\nwaters in the world.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The highest level of marine biodiversity, the country's surrounding waters reportedly have\nin the world.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "8",
+          "pages": {
+            "start": 93,
+            "end": 93
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "A. The country's surrounding waters reportedly have the highest\nlevel of marine biodiversity in the world.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=93",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-8"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A places the possessive waters subject before have and attaches in the world to highest level. B begins with the comparison, C interrupts the subject with it, D lacks ordinary declarative order and E fronts the complement. Several are possible stylistic orders; the explicit authored structure identifies A.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=93",
+      "docs/verification/editorial-full-corpus-task1.md#viii-8"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:9",
+    "proposed": {
+      "id": "q-000346",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose a sentence beginning Russia also announced and attaching the stress explanation directly to the reported death rather than to Russia's announcement. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Russia, due to emotional stress, also announced earlier the suicide of another soldier.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Earlier, the suicide of another soldier due to emotional stress, Russia also announced.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Due to emotional stress, Russia also announced earlier the suicide of anothersoldier.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Russia also announced earlier the suicide of another soldier due to emotional stress.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Also, Russia announced earlier the suicide of another soldier due to emotional stress.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "9",
+          "pages": {
+            "start": 93,
+            "end": 94
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "D. Russia also announced earlier the suicide of another soldier due\nto emotional stress.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=93",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-9"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "D retains the subject-plus-also-plus-verb opening and places due to emotional stress by the soldier's suicide. A/C can attach stress to the announcing entity, B fronts the object and E begins with also. This is attachment analysis, not historical or mental-health causation verification.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=93",
+      "docs/verification/editorial-full-corpus-task1.md#viii-9"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:10",
+    "proposed": {
+      "id": "q-000347",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the sentence that states the explosive identification first and adds its invention description immediately after the named substance. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "In warfare and mining, the first widely used explosive invented in 9th century China was\nblack powder.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Black powder was the first widely used explosive in warfare and mining, invented in 9th\ncentury China.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The first widely used explosive, invented in 9th century China, in warfare and mining\nwas black powder.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Invented in 9th century China, the first widely used explosive in warfare and mining\nwas black powder.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The first widely used explosive in warfare and mining was black powder, invented in 9th\ncentury China.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "10",
+          "pages": {
+            "start": 94,
+            "end": 94
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "E. The first widely used explosive in warfare and mining was black\npowder, invented in 9th century China.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=94",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-10"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "E gives the identifying clause then places invented ... beside black powder. A/C/D insert or front the invention description and B instead starts with the substance as subject. The authored placement constraint avoids pretending every other grammatically possible order is wrong.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=94",
+      "docs/verification/editorial-full-corpus-task1.md#viii-10"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:11",
+    "proposed": {
+      "id": "q-000348",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose a present-tense sentence with the fence subject followed by its two material/foliage descriptions before the finite verb, without a comma isolating the basic subject alone. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "A fence built from rows of undulating recycled wood, softened by tropical foliage,\nestablishes the individuality of the owner.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Built from rows of undulating recycled wood, a fence softened by tropical foliage,\nestablishes the individuality of the owner.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Softened by tropical foliage, a fence built from undulating recycled wood established\nthe inividuality of the owner.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "A fence, softened by tropical foliage, built from undulating recycled wood, establishes\nthe individuality of the owner.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "A fence, establishes the individuality of the owner, built from undulating recycled\nwood, softened by tropical foliage.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "11",
+          "pages": {
+            "start": 94,
+            "end": 95
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "A. A fence built from rows of undulating recycled wood, softened by\ntropical foliage, establishes the individuality of the owner.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=94",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-11"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A attaches built ... and softened ... to the fence before establishes. B inserts an unnecessary comma between its whole subject and verb; C is past and misspells individuality; D's comma before built produces awkward unpaired insertion and E separates subject from establishes.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=94",
+      "docs/verification/editorial-full-corpus-task1.md#viii-11"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:12",
+    "proposed": {
+      "id": "q-000349",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the sentence that uses the gerund phrase Having someone as subject and places the location directly after someone. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Having someone to find parking space for you is significant stress buster in Metro Manila.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Having someone to find parking space of your in Metro Manila is a significant stress\nbuster.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "A significant stress buster is having someone to find parking space for you in Metro\nManila.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "A significant stress buster in Metro Manila is having someone to find parking space for\nyou.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Having someone in Metro Manila to find parking space for you is a significant stress\nbuster.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "12",
+          "pages": {
+            "start": 95,
+            "end": 95
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "E. Having someone in Metro Manila to find parking space for you is a\nsignificant stress buster.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=95",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-12"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "E matches the requested gerund subject and location placement and includes a significant stress buster. A omits a before the singular count predicate; B has of your; C/D are grammatical inverted definitions with different requested subjects.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=95",
+      "docs/verification/editorial-full-corpus-task1.md#viii-12"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:13",
+    "proposed": {
+      "id": "q-000350",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the subject-first sentence that places the participial clearly-stating phrase after the complete participation clause. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Clearly stating options, goals and targets, people with diabetes should participate in\nthe decision-making process.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "In the decision-making process, people with diabetes should participate, clearly stating\noptions, goals and targets.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "People with diabetes should participate in the decision-making process, clearly stating\noptions, goals and targets.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Clearly stating options, goals and targets, people with diabetes in the decision-making\nprocess should participate.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "In the decision-making process, people with diabetes, clearly stating options, goals\nand targets should participate.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "13",
+          "pages": {
+            "start": 95,
+            "end": 95
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "C. People with diabetes should participate in the decision-making\nprocess, clearly stating options, goals and targets.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=95",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-13"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "C begins with people with diabetes and appends the participial phrase to their participation. A places that phrase first, B fronts a prepositional phrase, D displaces the predicate and E leaves a participial insertion inadequately punctuated. The claim is quoted exercise wording, not medical advice.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=95",
+      "docs/verification/editorial-full-corpus-task1.md#viii-13"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:14",
+    "proposed": {
+      "id": "q-000351",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "In formal prose, choose ordinary subject–verb order with an adverb modifying surprised. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The suspect was real surprised when he saw us.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Really surprised was the suspect when he saw us.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Surprised really was the suspect when he saw us.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The suspect was really surprised when he saw us.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "When the suspect saw us, he was real surprised.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "14",
+          "pages": {
+            "start": 95,
+            "end": 96
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "D. The suspect was really surprised when he saw us.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=95",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-14"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "D uses really as an adverb modifying surprised and ordinary subject–verb order. A/E use colloquial real as that modifier; B is marked inversion rather than the requested normal order, and C misplaces really.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=95",
+      "docs/verification/editorial-full-corpus-task1.md#viii-14"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:15",
+    "proposed": {
+      "id": "q-000352",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose a sentence starting with the circulation-problems subject and inserting its disease-name description before the main predicate without separating the basic subject from its modifiers. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Problems with blood circulation in the legs, called peripheral vascular disease,\nmay also be a problem and can cause leg pain.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "In the legs, problems with blood circulation, called peripheral vascular disease, may also\nbe a problem and can cause leg pain.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Called peripheral vascular disease, problems with blood circulation in the legs, may\nalso be a problem and can cause leg pain.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Problems with blood circulation in the legs, may also be a problem and can cause leg\npain, called peripheral vascular disease.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "In the legs, called peripheral vascular disease, problems with blood circulation may\nalso be a problem and can cause leg pain.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "15",
+          "pages": {
+            "start": 96,
+            "end": 96
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "A. Problems with blood circulation in the legs, called peripheral\nvascular disease, may also be a problem and can cause leg pain.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=96",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-15"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A puts the disease-name appositive beside the circulation-problems phrase before may ... . B begins with a location phrase, C unnecessarily separates subject and predicate, D attaches the disease name at the end and E fronts a modifier whose attachment is unclear. The sentence's medical assertion is not independently certified here.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=96",
+      "docs/verification/editorial-full-corpus-task1.md#viii-15"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:16",
+    "proposed": {
+      "id": "q-000353",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose a sentence beginning Research has shown that and placing the including phrase directly after the women-and-men group it describes. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Research has shown that for women and men of all ages, strengthening exercises are\nsafe and effective, including those not in perfect health.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Research has shown that strengthening exercises for women and men of all ages,\nincluding those not in perfect health are safe and effective.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "For women and men of all ages, including those not in perfect health, research has\nshown that strengthening exercises are safe and effective.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Including those not in perfect health, research has shown that strengthening exercises\nare safe and effective for women and men of all ages.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Research has shown that strengthening exercises are safe and effective for women and\nmen of all ages, including those not in perfect health.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "16",
+          "pages": {
+            "start": 96,
+            "end": 96
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "E. Research has shown that strengthening exercises are safe and\neffective for women and men of all ages, including those not in perfect health.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=96",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-16"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "E makes including those ... adjacent to women and men of all ages. A leaves that group away from the including phrase, B omits the closing comma, C begins with a group phrase and D dangles including away from its human referent. The exercise checks attachment, not the blanket safety claim.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=96",
+      "docs/verification/editorial-full-corpus-task1.md#viii-16"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:17",
+    "proposed": {
+      "id": "q-000354",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "In formal prose, choose the sentence using a subordinating conjunction rather than prepositional like before the finite comparison clause. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The victim was fond of athletics as other boys are.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The victim was fond of athletics like other boys are.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The victim was fond of athletics similar to other boys are.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Like other boys are, the victim was fond of athletics.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The victim was fond of athletics just like other boys are.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "17",
+          "pages": {
+            "start": 97,
+            "end": 97
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "B. The victim was fond of athletics like other boys are.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=97",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-17"
+            },
+            {
+              "reason": "Changed source key B to A under the explicitly stated formal-conjunction criterion, acknowledging contemporary conjunctive like can also be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-17"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A uses as before other boys are. Like may also function as a conjunction in contemporary usage, so B/E cannot be declared universally ungrammatical; the explicit formal-conjunction criterion selects A. Similar to in C cannot govern this finite clause, while D uses like. Source B is changed transparently.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=97",
+      "docs/verification/editorial-full-corpus-task1.md#viii-17"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:18",
+    "proposed": {
+      "id": "q-000355",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the correctly spelled sentence in which e-commerce and the rise of the global economy jointly cause the competitive opening. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The business world's competitive floodgates have opened Ecommerce and the rise of the\nglobal economy.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Ecommerce and the rise of the global economy have opened the business world's\ncompetitive floodgates.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The rise of the global economy have opened Ecommerce and the business world's\ncompetitive floodgates.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Ecommerce have opened the business world's competitive floodgates and the rise of the\nglobal economy.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Ecommerce and the business world's competitive floodgates have opened the rise of the\nglobal economy.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "18",
+          "pages": {
+            "start": 97,
+            "end": 97
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "B. Ecommerce and the rise of the global economy have opened the\nbusiness world's competitive gloodgates.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=97",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-18"
+            },
+            {
+              "reason": "Authored alternative correction gloodgates → floodgates, preserving original alternative in authoritative source evidence and stable choice ID.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-18"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "B has the compound subject and agreeing have opened, preserving the stated cause-to-result relation. Its typo gloodgates is repaired to floodgates. A/E reverse the causal subject and object; C/D have singular subjects mismatched with have.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=97",
+      "docs/verification/editorial-full-corpus-task1.md#viii-18"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "B has the compound subject and agreeing have opened, preserving the stated cause-to-result relation. Its typo gloodgates is repaired to floodgates. A/E reverse the causal subject and object; C/D have singular subjects mismatched with have.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=97",
+            "docs/verification/editorial-full-corpus-task1.md#viii-18"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:19",
+    "proposed": {
+      "id": "q-000356",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the sentence starting with The relentless drive to win, treating competitive spirit as a parenthetical renaming, and then making the success-factor statement. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Competitive spirit, the relentless drive to win, is a critical success factor that will only\nincrease in value as the competition gap grow.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The relentless drive to win, competitive spirit, is a critical success factor which will\nonly increase in value as the competition gap grows.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "A critical success factor which will only increase in value as the competition gap grows in\ncompetitive spirit, the relentless drive to win.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The relentless drive to win, a critical success factor that will only increase in value as the\ncompetition gap grows is competitive spirit.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Competitive spirit, a critical success factor that will only increase in value as the\ncompetition gap grows is the relentless drive to win.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "19",
+          "pages": {
+            "start": 97,
+            "end": 98
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "B. The relentless drive to win, competitive spirit is a critical success\nfactor which will only increase in value as the competition gap grows.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=97",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-19"
+            },
+            {
+              "reason": "Authored alternative correction competitive spirit is → competitive spirit, is, preserving original alternative in authoritative source evidence and stable choice ID.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-19"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "B needs a comma after competitive spirit to close the appositive; the proposal supplies it. A incorrectly uses grow for singular gap; C is a fragment and D/E leave inserted descriptions without a closing comma. The repair establishes a complete apposition rather than trusting the source's claimed correctness.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=97",
+      "docs/verification/editorial-full-corpus-task1.md#viii-19"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:20",
+    "proposed": {
+      "id": "q-000357",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the sentence beginning with existential There are and using a plural possessive referring to the patrol types in the contrasting clause. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The organizational principles are the same in many types of patrol that are their in a\npolice department.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "There are many types of patrol in a police department but the same are the principles of\ntheir organization.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Many types of patrol are their in a police department, but their organizational principles\nare the same.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "There are many types of patrol in a police department, but its organizational principles\nare the same.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "There are many types of patrol in a police department, but their principles of\norganization are the same.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "20",
+          "pages": {
+            "start": 98,
+            "end": 98
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "E. There are many types of patrol in a police department, but their\nprinciples of organization are the same.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=98",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-20"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "E uses There are to introduce types and their to refer back to them. A/C confuse locative there with possessive their; B has a different reversed predicate; D's singular its changes the referent to the department, so it fails the specified types-reference.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=98",
+      "docs/verification/editorial-full-corpus-task1.md#viii-20"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:21",
+    "proposed": {
+      "id": "q-000358",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the correctly spelled sentence beginning with a when-clause, followed by coordinated start and try imperatives. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Start slowly when walking and try to build your walking reime gradually.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "When walking, start slowly and try to build your walking regime gradually.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "To build your walking regime gradually, try when walking to start slowly.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Try to build your walking reimge gradually when walking and start slowly.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Try to build your walking regime gradually and start slowly when walking.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "21",
+          "pages": {
+            "start": 98,
+            "end": 98
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "B. When walking, start slowly and try to build your walking regime\ngradually.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=98",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-21"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "B starts When walking and coordinates start slowly and try to build. A/D contain reime/reimge misspellings, C begins with a purpose phrase and E puts try before start. Those alternate orders are not necessarily grammatical errors; the authored structure determines B.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=98",
+      "docs/verification/editorial-full-corpus-task1.md#viii-21"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:22",
+    "proposed": {
+      "id": "q-000359",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the sentence beginning with a causal because-of phrase, followed by a normal passive naming clause. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Ritual dances are usually called \"religious dances\" because of their purpose.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Usually called \"religious dances\" because of their purpose are ritual dances.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Because of their purpose, ritual dances are usually called \"religious dances.\"",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Called \"religious dances\", because of their purpose usually are ritual dances.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Ritual dances, because of their purpose are usually called \"religious dances\".",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "22",
+          "pages": {
+            "start": 98,
+            "end": 99
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "C. Because of their purpose, ritual dances are usually called\n\"religious dances.\"",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=98",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-22"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "C fronts Because of their purpose and follows with ritual dances are ... called. A is grammatical but places the cause at the end; B/D invert the clause and E leaves its internal cause comma unpaired.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=98",
+      "docs/verification/editorial-full-corpus-task1.md#viii-22"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:23",
+    "proposed": {
+      "id": "q-000360",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose a sentence making fruits the subject and using a complete by-which relative construction to express their role as the means. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Ti disseminate seeds, fruits are the means of the angiosperms.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Seeds are disseminated by angiosperms through fruits.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "By which angiosperms disseminate seeds, fruits are the means.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Fruits are the means by which angiosperms disseminate seeds.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Angiosperms by which disseminate seeds, the means are fruits.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "23",
+          "pages": {
+            "start": 99,
+            "end": 99
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "D. Fruits are the means by which angiosperms disseminate seeds.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=99",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-23"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "D supplies Fruits are the means by which ... with an intact relative clause. B is a grammatical passive with seeds as its subject but fails the requested structure; A has Ti and other alternatives dislocate or fragment the relative construction.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=99",
+      "docs/verification/editorial-full-corpus-task1.md#viii-23"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:24",
+    "proposed": {
+      "id": "q-000361",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose a subject-first definition beginning with the military's task and then stating its two coordinated functions. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The prosecution of war against another state and the defense of the state and its citizens\nis usually the task of the military.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The defense of the state and its citizens is usually the task of the military and the\nprosecution of war against another state.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Usually , the task of the military is defined as defense of the state and its citizens and the\nprosecution of war against another state.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Defined as the defense of the state and its citizens and the prosecution of war against\nanother state is usually the task of the military.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The task of the military is usually defined as defense of the state and its citizens,\nand the prosecution of war against another state.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "24",
+          "pages": {
+            "start": 99,
+            "end": 99
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "E. The task of hte military is usually defined as defense of the state\nand its citizens, and the prosecution of war against another state.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=99",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-24"
+            },
+            {
+              "reason": "Authored alternative correction hte → the, preserving original alternative in authoritative source evidence and stable choice ID.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-24"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "E fits that structure once hte is corrected to the. A has coordinated prosecution and defense followed by singular is, B attaches prosecution as a task-sharing agent, C/D use different fronted/inverted structures. The question analyzes the quoted definition's grammar, not a legal allocation of powers.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=99",
+      "docs/verification/editorial-full-corpus-task1.md#viii-24"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "E fits that structure once hte is corrected to the. A has coordinated prosecution and defense followed by singular is, B attaches prosecution as a task-sharing agent, C/D use different fronted/inverted structures. The question analyzes the quoted definition's grammar, not a legal allocation of powers.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=99",
+            "docs/verification/editorial-full-corpus-task1.md#viii-24"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:25",
+    "proposed": {
+      "id": "q-000362",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the option with two coordinated full clauses, each expressly stating the police force as subject, preserving the source's administrative assertion. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The Philippine National Police is part of the Department of the Interior and Local\nGovernment and it is administered and controlled by the National Police Commission.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The Philippine National Police is administered and controlled by the National Police\nCommission and is part of the Department of the Interior and Local Government.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Controlled and administered by the Department of the Interior and Local Government, the\nPhilippine National Police is part of the National Police Commission.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Part of the National Police Commission, the Philippine National Police is administered\nand controlled by the Department of the Interior and Local Government.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Part of the Department of the Interior and Local Government, the National Police\nCommission administered and controlled the Philippine National Police.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "25",
+          "pages": {
+            "start": 99,
+            "end": 100
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "A. The Philippine National Police is part of the Department of the\nInterior and Local Government and it is administered and controlled by the National\nPolice Commission.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=99",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-25"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A contains PNP is ... and it is ... as two full coordinated clauses. B shares a subject across predicates; C/D invert institutional roles and E makes the commission the main subject. Grammatical distinctions do not independently establish legal accuracy of the administrative assertion. Primary institutional evidence: Constitution ArtXVIsec6, RA6975sec6 and RA8551sec5 support commission control and DILG placement as distinct propositions. Both A and B are supported; only A meets the authored separate-clause requirement.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "https://lawphil.net/consti/cons1987.html",
+      "https://www.lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html",
+      "https://lawphil.net/statutes/repacts/ra1998/ra_8551_1998.html",
+      "docs/verification/editorial-content.md#q19",
+      "evidence/reference-extraction/comprehensive/document.json#page=99",
+      "docs/verification/editorial-full-corpus-task1.md#viii-25"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T12:21:09Z",
+        "rationale": "Controller independently opened current primary sources at the recorded time: Constitution ArtXVIsec6 places national police administration/control in national police commission; RA6975sec6 lists PNP among DILG bureaus; RA8551sec5 specifies administrative control and operational supervision. A and B are both institutionally supported; authored compound-clause structure uniquely selects A without declaring B factually wrong."
+      }
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:26",
+    "proposed": {
+      "id": "q-000363",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the normal subject-first sentence placing equally directly before entitled and without discrimination at the end. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "We are all equally entitled to our human rights without discrimination.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Equally entitled to our human rights, we are all without discrimination.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Without discrimination, we are all equally entitled to our human rights.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "All equally entitled to our human rights, we are without discrimination.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "We are all entitled equally to our human rights without discrimination.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "26",
+          "pages": {
+            "start": 100,
+            "end": 100
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "A. We are all equally entitled to our human rights without\ndiscrimination.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=100",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-26"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A places the adverb before its participial adjective and ends with the non-discrimination phrase. C/E are grammatical but use different explicitly constrained positions; B/D introduce marked inverted phrases. Source clarity preferences alone are not treated as universal grammar rules.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=100",
+      "docs/verification/editorial-full-corpus-task1.md#viii-26"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:27",
+    "proposed": {
+      "id": "q-000364",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the sentence whose subject is the principle of universality and whose predicate identifies it as the cornerstone, without reversing that relation. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Of human rights, the principle of universality is the cornerstone of international human\nrights law.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The cornerstone of international human rights law is the human rights of the principle of\nuniversality.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The principle of universality of human rights is the cornerstone of international human\nrights law.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The international human rights law is the cornerstone of the universality of human rights.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "International human rights law is the cornerstone of the principle of universality of the\nhuman rights.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "27",
+          "pages": {
+            "start": 100,
+            "end": 101
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "C. The principle of universality of human rights is the cornerstone of\ninternational human rights law.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=100",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-27"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "C preserves the specified subject and predicate relation. A dislocates of human rights, B garbles the noun complements, and D/E reverse which idea is called the cornerstone. This is syntax/meaning preservation, not independent legal commentary.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=100",
+      "docs/verification/editorial-full-corpus-task1.md#viii-27"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:28",
+    "proposed": {
+      "id": "q-000365",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose an active subject-first sentence with three parallel infinitives, each explicitly repeating to, after the international-law phrase. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Under international law, States assume obligations and duties to respect, to protect and\nfulfill human rights.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "States assume obligations and duties under international law to respect, to protect and to\nfulfill human rights.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "To respect, to protect and to fulfill human rights, States assume obligations and duties\nunder international law.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Obligations and duties are assumed by States under international law to respect, to\nprotect and to fulfill human rights.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "States under international law assume obligations and duties under international law to\nrespect, to protect and to fullfill human rights.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "28",
+          "pages": {
+            "start": 101,
+            "end": 101
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "B. States assume obligations and duties under international law to\nrespect, to protect and to fulfill human rights.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=101",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-28"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "B puts States first and repeats to respect, to protect and to fulfill in parallel after under international law. A's shared to before fulfill is grammatical too but does not meet explicit repetition; C fronts the infinitives, D is passive and E misspells fulfill.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=101",
+      "docs/verification/editorial-full-corpus-task1.md#viii-28"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:29",
+    "proposed": {
+      "id": "q-000366",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose a sentence starting with the review attribution and then using building muscles as the active subject of three coordinated present verbs. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "According to a review in a magazine journal, building muscles improves your health,\nreduces injury risk and improves your running performance.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Building muscles, according to a review in a magazine journal, improves your running\nperformance, improves your health, and reduces injury risk.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Building muscles improves your health, reduces injury risk, and, according to a review in\na magazine journal, improves your running performance.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Improves your health, reduces injury risk and according to a review in a magazine\njournal, building muscles improves your running performance.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "According to a review in a magazine journal, your health is improved, injury risk is\nreduced and running performance is improved by building muscles.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "29",
+          "pages": {
+            "start": 101,
+            "end": 101
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "A. According to a review in a magazine journal, building muscles\nimproves your health, reduces injury risk and improves your running performance.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=101",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-29"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A follows the attribution with the gerund subject and improves, reduces, improves. B/C put the attribution elsewhere, D is a fragment and E uses passive subjects/predicates. The exercise evaluates clause structure, not medical efficacy claims.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=101",
+      "docs/verification/editorial-full-corpus-task1.md#viii-29"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:30",
+    "proposed": {
+      "id": "q-000367",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose a correctly spaced sentence with the gerund activity as subject and the at-the-gym phrase inside that activity description. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Sticking to a regular class at the gym is an easy way to automate cross-training.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "To automate cross-training, sticking to a regular class at the gym is an easy way.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "An easy way to automate cross-training is sticking to a regular class at thegym.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "At the gym, sticking to a regular class is an easy way to automate cross-training.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Sticking to a regular class is an easy way at the gym to automate cross-training.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "30",
+          "pages": {
+            "start": 101,
+            "end": 102
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "A. Sticking to a regular class at the gym is an easy way to automate\ncross-training.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=101",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-30"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A makes Sticking to a regular class at the gym the subject. B fronts purpose, C begins with the predicate and contains thegym, D fronts location and E displaces the location into the predicate. Some alternate orders remain grammatical; the authored structural contract distinguishes A.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=101",
+      "docs/verification/editorial-full-corpus-task1.md#viii-30"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:31",
+    "proposed": {
+      "id": "q-000368",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose a sentence beginning Police officers, with closely directly after work and before the collaborator list. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "With members of the criminal justice system, social workers, schools, local businesses,\nhealth trusts, housing authorities, town planners and community groups, police officers work\nclosely.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Police officers closely work with members of the criminal justice system, social workers,\nschools, local businesses, health trusts, housing authorities, town planners and community\ngroups.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Police officers work closely with members of the criminal justice system, social workers,\nschools, local businesses, health trusts, housing authorities, town planners and community\ngroups.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Social workers work closely with members of the criminal justice system, schools, local\nbusinesses, health trusts, housing authorities, town planners, community groups and the\npolice officers.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Police officers and community groups closely work with members of the criminal justice\nsystem, social workers, schools, local businesses, health trusts, housing authorities and\ntown planners.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "31",
+          "pages": {
+            "start": 102,
+            "end": 102
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "C. Police officers work closely with members of the criminal justice\nsystem, social workers, schools, local businesses, health trusts, housing authorities,\ntown planners and community groups.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=102",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-31"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "C has Police officers work closely with ... . B is grammatical but places closely before work; A fronts the collaborators and D/E change the subject or collaborator roles. Explicit adverb placement and role preservation establish the choice.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=102",
+      "docs/verification/editorial-full-corpus-task1.md#viii-31"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:32",
+    "proposed": {
+      "id": "q-000369",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose a correctly spelled sentence in which the climbers, rather than mountains, possess the adventurous spirit. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The mountains draw climbers who love the natural world and possess an adventurous\nspirit.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Climbers the mountain draw who love the natural word and possess and adventurous\nspirit.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Climbers who possess and adventurous spirit and love the natural world the mountains\ndraw.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Possessing an adventurous spirit, the mountains draw climbers who love the natural\nworld.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The climbers are drawn by the mountains who love the natural world and possess\nand adventurous spirit.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "32",
+          "pages": {
+            "start": 102,
+            "end": 103
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "A. The mountains draw climbers who love the natural world and\nposses an adventurous spirit.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=102",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-32"
+            },
+            {
+              "reason": "Authored alternative correction posses an → possess an, preserving original alternative in authoritative source evidence and stable choice ID.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-32"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A attaches who ... possess to climbers, after repairing posses to possess. B/C/E use and where an is needed and garble order/attachment; D's opening possessing phrase wrongly modifies mountains.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=102",
+      "docs/verification/editorial-full-corpus-task1.md#viii-32"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "A attaches who ... possess to climbers, after repairing posses to possess. B/C/E use and where an is needed and garble order/attachment; D's opening possessing phrase wrongly modifies mountains.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=102",
+            "docs/verification/editorial-full-corpus-task1.md#viii-32"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:33",
+    "proposed": {
+      "id": "q-000370",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the edited complete sentence that directly describes the area as appearing deserted, using a dependent causal phrase and a properly attached relative description. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The downtown area, it is very depressing to see, which is normally bustling on Sundays,\nappeared deserted because of the recent bombing in Davao City.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "It is very depressing to see the downtown area which is normally bustling on Sundays,\nappeared deserted because of the recent bombing in Davao City.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "In Davao City, it is very depressing to see the downtown area appeared deserted which is\nnormally bustling on Sundays because of the recent bombing.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Which is normally bustling in Sundays, the downtown area, it is very depressing to see\nappeared deserted because of the recent bombing in Davao City.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "It is very depressing to see the downtown area, which is normally bustling on Sundays, appear deserted because of the recent bombing in Davao City.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "33",
+          "pages": {
+            "start": 103,
+            "end": 103
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "E. Appeared deserted because of the recent bombing in Davao City,\nit is very depressing to see the downtown area which is normally bustling on\nSundays.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=103",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-33"
+            },
+            {
+              "reason": "Authored a grammatical replacement for malformed E, preserving all original alternatives in authoritative evidence and source key in lineage.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-33"
+            }
+          ]
+        },
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "34",
+          "pages": {
+            "start": 103,
+            "end": 104
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "E. Appeared deserted because of the recent bombing in Davao City,\nit is very depressing to see the downtown area which is normally bustling on\nSundays.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=103",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Confirmed duplicate occurrence retained on winning logical question; duplicate overlay is explicitly rejected as a second publishable identity.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-34"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "All original alternatives are malformed or badly attached; E's appeared deserted is a finite verb phrase stranded in an introductory modifier. The proposal changes E into a grammatical complete sentence with to see the area appear deserted and brackets the area's nonrestrictive description. This is an authored repair, not endorsement of the original key as printed.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=103",
+      "docs/verification/editorial-full-corpus-task1.md#viii-33"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "confirmed-duplicate",
+          "message": "Same five alternatives and key at VIII33/34; both source occurrences retained",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "Compared full authoritative prompt, all alternatives and keys for VIII33/34: they are exact duplicates. Winner33 retains both sourceRefs;34 is explicitly rejected as an additional publishable logical identity. E is a disclosed grammatical revision verified by the complete infinitive/complement and relative-clause structure.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=103",
+            "docs/verification/editorial-full-corpus-task1.md#viii-33"
+          ]
+        },
+        {
+          "code": "confirmed-duplicate",
+          "rationale": "Compared full authoritative prompt, all alternatives and keys for VIII33/34: they are exact duplicates. Winner33 retains both sourceRefs;34 is explicitly rejected as an additional publishable logical identity. E is a disclosed grammatical revision verified by the complete infinitive/complement and relative-clause structure.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=103",
+            "docs/verification/editorial-full-corpus-task1.md#viii-33"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:34",
+    "proposed": {
+      "id": "q-000371",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the edited complete sentence that directly describes the area as appearing deserted, using a dependent causal phrase and a properly attached relative description. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The downtown area, it is very depressing to see, which is normally bustling on Sundays,\nappeared deserted because of the recent bombing in Davao City.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "It is very depressing to see the downtown area which is normally bustling on Sundays,\nappeared deserted because of the recent bombing in Davao City.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "In Davao City, it is very depressing to see the downtown area appeared deserted which is\nnormally bustling on Sundays because of the recent bombing.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Which is normally bustling in Sundays, the downtown area, it is very depressing to see\nappeared deserted because of the recent bombing in Davao City.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "It is very depressing to see the downtown area, which is normally bustling on Sundays, appear deserted because of the recent bombing in Davao City.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "34",
+          "pages": {
+            "start": 103,
+            "end": 104
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "E. Appeared deserted because of the recent bombing in Davao City,\nit is very depressing to see the downtown area which is normally bustling on\nSundays.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=103",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-34"
+            },
+            {
+              "reason": "Authored a grammatical replacement for malformed E, preserving all original alternatives in authoritative evidence and source key in lineage.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-34"
+            },
+            {
+              "reason": "Explicit duplicate disposition: publishable winner is comprehensive:VIII:33; stable registry IDs remain untouched and no approval is stamped.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-34"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "This occurrence repeats VIII33's exact prompt, five alternatives and source key. Its malformed E is repaired only as the same logical question; occurrence34 is explicitly rejected as a second publishable identity, while its full source lineage is retained by winner33.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=103",
+      "docs/verification/editorial-full-corpus-task1.md#viii-34"
+    ],
+    "status": "rejected",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "confirmed-duplicate",
+          "message": "Same five alternatives and key at VIII33/34; both source occurrences retained",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "Compared full authoritative prompt, all alternatives and keys for VIII33/34: they are exact duplicates. Winner33 retains both sourceRefs;34 is explicitly rejected as an additional publishable logical identity. E is a disclosed grammatical revision verified by the complete infinitive/complement and relative-clause structure.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=103",
+            "docs/verification/editorial-full-corpus-task1.md#viii-34"
+          ]
+        },
+        {
+          "code": "confirmed-duplicate",
+          "rationale": "Compared full authoritative prompt, all alternatives and keys for VIII33/34: they are exact duplicates. Winner33 retains both sourceRefs;34 is explicitly rejected as an additional publishable logical identity. E is a disclosed grammatical revision verified by the complete infinitive/complement and relative-clause structure.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=103",
+            "docs/verification/editorial-full-corpus-task1.md#viii-34"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:VIII:35",
+    "proposed": {
+      "id": "q-000372",
+      "version": 1,
+      "categoryId": "communicationSkills",
+      "subcategoryId": "grammar",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Choose the subject-first comparison stating that the2016 remake fares worse than the1959 original, with the movie title correctly integrated into the noun phrase. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The 2016 remake of the 1959 classic movie, Ben-Hur pales in comparison with the\noriginal.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The 2016 remake of the classic movie Ben-Hur pales in comparison with the 1959\noriginal.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Ben-Hur, the 2016 remake of the original pales in comparison with the 1959 classic\nmovie.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The remake of the original Ben-Hur, 1959 classic movie pales in comparison with the\n2016.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The original Ben-Hur, the 1959 classic movie pales in comparison with the remake of\n2016.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "35",
+          "pages": {
+            "start": 104,
+            "end": 104
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "B. The 2016 remake of the classic movie, Ben-Hur pales in\ncomparison with the 1959 original.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=104",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-35"
+            },
+            {
+              "reason": "Authored alternative correction movie, Ben-Hur → movie Ben-Hur, preserving original alternative in authoritative source evidence and stable choice ID.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-35"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "B preserves the requested comparison after removing the comma that incorrectly isolates Ben-Hur without a closing comma. A/C similarly have incomplete appositive punctuation; D is broken and E reverses the comparison. The evaluation is quoted opinion, not independent film criticism.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=104",
+      "docs/verification/editorial-full-corpus-task1.md#viii-35"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": []
+    }
+  }
+]
