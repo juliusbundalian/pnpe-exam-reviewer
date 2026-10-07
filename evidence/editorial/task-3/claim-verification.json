@@ -1857,16 +1857,16 @@
     "sourceUrl": "https://lawphil.net/executive/execord/eo2016/eo_2_2016.html",
     "retainedText": "evidence/editorial/task-3/research/eo2.txt",
     "retrievedAt": "2026-10-07T16:27:35.251164+00:00",
-    "verifiedAt": "2026-10-07T16:52:17.344Z",
-    "verificationBasis": "Recovery claim/provision audit and visual inspection where listed",
-    "provision": "Sections 2–4",
+    "verifiedAt": "2026-10-07T17:03:57.644Z",
+    "verificationBasis": "Fix-round recovery audit of exact EO sections 2–4 and 7; refined private-company scope distractor",
+    "provision": "Sections 2–4 and 7",
     "authoredStem": "What right is operationalized in executive-branch offices by Executive Order 2 of 2016?",
     "authoredAlternatives": [
       "Access to information on matters of public concern",
       "An unconditional right to all classified documents",
-      "A right to bypass all government record exceptions"
+      "A right to obtain records directly from privately owned companies"
     ],
     "correctConcept": "Access to information on matters of public concern",
-    "uniqueAnswerAndDistractorRationale": "EO 2 section 2 addresses information of public concern; sections 3–4 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims."
+    "uniqueAnswerAndDistractorRationale": "EO 2 section 2 covers executive-branch government offices, including government-owned or controlled corporations; section 3 provides access to information and official records. Section 4 preserves legal exceptions and section 7 safeguards personal information, so classified documents are not unconditionally accessible. The separate scope distractor wrongly extends this government-record request mechanism directly to privately owned companies. The qualified access concept remains the sole supported right."
   }
 ]

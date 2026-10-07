@@ -4393,28 +4393,31 @@
           "imageLocations": [],
           "corrections": [
             {
-              "reason": "No MCQ authored: Original Police Service Anniversary claim lacks dated policy context; retained PNA fetch contains unrelated Facebook fallback content, and alternative PNP direct retrieval was forbidden. Search leads also suggest anniversary policy changed; no current claim certified.",
+              "reason": "No MCQ authored: The historical identity/inauguration claim requires direct primary corroboration of the 8 August 1901 inauguration date and Philippine Constabulary naming. Act No. 175, enacted 18 July 1901, establishes the Insular Constabulary under the Civil Governor, but its retained text does not specify the August 8 inauguration or establish the original gendarmerie/direct-reporting characterization. The retained PNA research lead contains unrelated fallback content and attempted PNP institutional pages were inaccessible, so the date is not certified. An authored statutory-identity conversion would materially overlap PNP18; retain this separate original occurrence as a historical evidence-gap draft pending a primary institutional or archival record.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#pnp-law-and-history-30"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T17:03:57.644Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Original Police Service Anniversary claim lacks dated policy context; retained PNA fetch contains unrelated Facebook fallback content, and alternative PNP direct retrieval was forbidden. Search leads also suggest anniversary policy changed; no current claim certified.",
+          "text": "The historical identity/inauguration claim requires direct primary corroboration of the 8 August 1901 inauguration date and Philippine Constabulary naming. Act No. 175, enacted 18 July 1901, establishes the Insular Constabulary under the Civil Governor, but its retained text does not specify the August 8 inauguration or establish the original gendarmerie/direct-reporting characterization. The retained PNA research lead contains unrelated fallback content and attempted PNP institutional pages were inaccessible, so the date is not certified. An authored statutory-identity conversion would materially overlap PNP18; retain this separate original occurrence as a historical evidence-gap draft pending a primary institutional or archival record.",
           "marks": []
         }
       ]
     },
-    "rationale": "No MCQ authored: Original Police Service Anniversary claim lacks dated policy context; retained PNA fetch contains unrelated Facebook fallback content, and alternative PNP direct retrieval was forbidden. Search leads also suggest anniversary policy changed; no current claim certified.",
+    "rationale": "No MCQ authored: The historical identity/inauguration claim requires direct primary corroboration of the 8 August 1901 inauguration date and Philippine Constabulary naming. Act No. 175, enacted 18 July 1901, establishes the Insular Constabulary under the Civil Governor, but its retained text does not specify the August 8 inauguration or establish the original gendarmerie/direct-reporting characterization. The retained PNA research lead contains unrelated fallback content and attempted PNP institutional pages were inaccessible, so the date is not certified. An authored statutory-identity conversion would materially overlap PNP18; retain this separate original occurrence as a historical evidence-gap draft pending a primary institutional or archival record.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=11",
-      "docs/verification/editorial-full-corpus-task3.md#pnp-law-and-history-30"
+      "docs/verification/editorial-full-corpus-task3.md#pnp-law-and-history-30",
+      "https://lawphil.net/statutes/acts/act1901/act_175_1901.html",
+      "evidence/editorial/task-3/research/act175.txt",
+      "evidence/editorial/task-3/historical-claim-assessment.json"
     ],
     "status": "draft",
     "review": {
@@ -4447,7 +4450,7 @@
         {
           "code": "task3-unresolved",
           "blocking": true,
-          "message": "notes:PNP Law and History:30: Original Police Service Anniversary claim lacks dated policy context; retained PNA fetch contains unrelated Facebook fallback content, and alternative PNP direct retrieval was forbidden. Search leads also suggest anniversary policy changed; no current claim certified."
+          "message": "notes:PNP Law and History:30: The historical identity/inauguration claim requires direct primary corroboration of the 8 August 1901 inauguration date and Philippine Constabulary naming. Act No. 175, enacted 18 July 1901, establishes the Insular Constabulary under the Civil Governor, but its retained text does not specify the August 8 inauguration or establish the original gendarmerie/direct-reporting characterization. The retained PNA research lead contains unrelated fallback content and attempted PNP institutional pages were inaccessible, so the date is not certified. An authored statutory-identity conversion would materially overlap PNP18; retain this separate original occurrence as a historical evidence-gap draft pending a primary institutional or archival record."
         }
       ],
       "resolutions": []

@@ -213,7 +213,13 @@
     "retrievedAt": "2026-10-07T16:27:35.081992+00:00",
     "claimSupport": "used with item-specific provisions in claim-verification.json",
     "retainedPath": "evidence/editorial/task-3/research/act175.txt",
-    "sha256": "2dc35efd680eded9de5927f154e8b1d6076a7aeedcdc84a0194b91c3b0b01365"
+    "sha256": "2dc35efd680eded9de5927f154e8b1d6076a7aeedcdc84a0194b91c3b0b01365",
+    "additionalHistoricalAssessment": {
+      "sourceKey": "notes:PNP Law and History:30",
+      "assessedAt": "2026-10-07T17:03:57.644Z",
+      "supported": "18 July 1901 enactment establishes Insular Constabulary under Civil Governor",
+      "unverified": "8 August 1901 inauguration date and full historical naming/characterization; no such date in this text"
+    }
   },
   {
     "id": "ra10963",
@@ -362,14 +368,16 @@
     "url": "https://pro3.pnp.gov.ph/history/",
     "retrievalStatus": "failed",
     "retrievedAt": null,
-    "claimSupport": "not certified for completed proposals"
+    "claimSupport": "not certified for completed proposals",
+    "PNP30ResearchDisposition": "Historical identity/inauguration corroboration lead only; failed or unrelated payload provides no direct date verification."
   },
   {
     "id": "pnp-history6",
     "url": "https://bcpo.pro6.pnp.gov.ph/history/",
     "retrievalStatus": "failed",
     "retrievedAt": null,
-    "claimSupport": "not certified for completed proposals"
+    "claimSupport": "not certified for completed proposals",
+    "PNP30ResearchDisposition": "Historical identity/inauguration corroboration lead only; failed or unrelated payload provides no direct date verification."
   },
   {
     "id": "blotter",
@@ -582,14 +590,16 @@
     "url": "https://pro3.pnp.gov.ph/history/",
     "retrievalStatus": "failed",
     "retrievedAt": null,
-    "claimSupport": "not certified for completed proposals"
+    "claimSupport": "not certified for completed proposals",
+    "PNP30ResearchDisposition": "Historical identity/inauguration corroboration lead only; failed or unrelated payload provides no direct date verification."
   },
   {
     "id": "pnp-history6",
     "url": "https://bcpo.pro6.pnp.gov.ph/history/",
     "retrievalStatus": "failed",
     "retrievedAt": null,
-    "claimSupport": "not certified for completed proposals"
+    "claimSupport": "not certified for completed proposals",
+    "PNP30ResearchDisposition": "Historical identity/inauguration corroboration lead only; failed or unrelated payload provides no direct date verification."
   },
   {
     "id": "blotter",
@@ -731,7 +741,8 @@
     "claimSupport": "Rejected as claim support: unrelated Facebook fallback payload, no relevant text",
     "recoveryAuditAt": "2026-10-07T16:53:00.774549+00:00",
     "retainedPath": "evidence/editorial/task-3/research/pcanniversary.txt",
-    "sha256": "e1d2b5a6d6ff82cfb51fdd4e0c42c3b794ab170f6916c79c4ba6d19f0b37377c"
+    "sha256": "e1d2b5a6d6ff82cfb51fdd4e0c42c3b794ab170f6916c79c4ba6d19f0b37377c",
+    "PNP30ResearchDisposition": "Historical identity/inauguration corroboration lead only; failed or unrelated payload provides no direct date verification."
   },
   {
     "id": "pillarsreport",
@@ -896,7 +907,8 @@
     "retrievalStatus": "failed",
     "retrievedAt": null,
     "claimSupport": "not certified for completed proposals",
-    "error": "HTTP Error 403: Forbidden"
+    "error": "HTTP Error 403: Forbidden",
+    "PNP30ResearchDisposition": "Historical identity/inauguration corroboration lead only; failed or unrelated payload provides no direct date verification."
   },
   {
     "id": "bjmpmanual2",
@@ -971,7 +983,8 @@
     "retrievalStatus": "failed",
     "retrievedAt": null,
     "claimSupport": "not certified for completed proposals",
-    "error": "HTTP Error 403: Forbidden"
+    "error": "HTTP Error 403: Forbidden",
+    "PNP30ResearchDisposition": "Historical identity/inauguration corroboration lead only; failed or unrelated payload provides no direct date verification."
   },
   {
     "id": "pnpanniversaryhttp",
@@ -979,7 +992,8 @@
     "retrievalStatus": "failed",
     "retrievedAt": null,
     "claimSupport": "not certified for completed proposals",
-    "error": "HTTP Error 403: Forbidden"
+    "error": "HTTP Error 403: Forbidden",
+    "PNP30ResearchDisposition": "Historical identity/inauguration corroboration lead only; failed or unrelated payload provides no direct date verification."
   },
   {
     "id": "ra10607",

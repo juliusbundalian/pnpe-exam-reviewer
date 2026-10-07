@@ -3614,7 +3614,7 @@
           "blocks": [
             {
               "kind": "text",
-              "text": "A right to bypass all government record exceptions",
+              "text": "A right to obtain records directly from privately owned companies",
               "marks": []
             }
           ]
@@ -3659,25 +3659,25 @@
           "imageLocations": [],
           "corrections": [
             {
-              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4. EO 2 section 2 addresses information of public concern; sections 3–4 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims.",
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4 and 7. EO 2 section 2 covers executive-branch government offices, including government-owned or controlled corporations; section 3 provides access to information and official records. Section 4 preserves legal exceptions and section 7 safeguards personal information, so classified documents are not unconditionally accessible. The separate scope distractor wrongly extends this government-record request mechanism directly to privately owned companies. The qualified access concept remains the sole supported right.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-32"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T17:03:57.644Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "EO 2 section 2 addresses information of public concern; sections 3–4 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims.",
+          "text": "EO 2 section 2 covers executive-branch government offices, including government-owned or controlled corporations; section 3 provides access to information and official records. Section 4 preserves legal exceptions and section 7 safeguards personal information, so classified documents are not unconditionally accessible. The separate scope distractor wrongly extends this government-record request mechanism directly to privately owned companies. The qualified access concept remains the sole supported right.",
           "marks": []
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4. EO 2 section 2 addresses information of public concern; sections 3–4 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4 and 7. EO 2 section 2 covers executive-branch government offices, including government-owned or controlled corporations; section 3 provides access to information and official records. Section 4 preserves legal exceptions and section 7 safeguards personal information, so classified documents are not unconditionally accessible. The separate scope distractor wrongly extends this government-record request mechanism directly to privately owned companies. The qualified access concept remains the sole supported right.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=19",
       "docs/verification/editorial-full-corpus-task3.md#current-events-32",
@@ -3716,7 +3716,7 @@
       "resolutions": [
         {
           "code": "answer-only",
-          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4. EO 2 section 2 addresses information of public concern; sections 3–4 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims.",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4 and 7. EO 2 section 2 covers executive-branch government offices, including government-owned or controlled corporations; section 3 provides access to information and official records. Section 4 preserves legal exceptions and section 7 safeguards personal information, so classified documents are not unconditionally accessible. The separate scope distractor wrongly extends this government-record request mechanism directly to privately owned companies. The qualified access concept remains the sole supported right.",
           "evidence": [
             "evidence/reference-extraction/notes/document.json#page=19",
             "docs/verification/editorial-full-corpus-task3.md#current-events-32",
@@ -3726,7 +3726,7 @@
         },
         {
           "code": "missing-time-context",
-          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4. EO 2 section 2 addresses information of public concern; sections 3–4 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims.",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4 and 7. EO 2 section 2 covers executive-branch government offices, including government-owned or controlled corporations; section 3 provides access to information and official records. Section 4 preserves legal exceptions and section 7 safeguards personal information, so classified documents are not unconditionally accessible. The separate scope distractor wrongly extends this government-record request mechanism directly to privately owned companies. The qualified access concept remains the sole supported right.",
           "evidence": [
             "evidence/reference-extraction/notes/document.json#page=19",
             "docs/verification/editorial-full-corpus-task3.md#current-events-32",
@@ -3736,7 +3736,7 @@
         },
         {
           "code": "missing-choices",
-          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4. EO 2 section 2 addresses information of public concern; sections 3–4 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims.",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4 and 7. EO 2 section 2 covers executive-branch government offices, including government-owned or controlled corporations; section 3 provides access to information and official records. Section 4 preserves legal exceptions and section 7 safeguards personal information, so classified documents are not unconditionally accessible. The separate scope distractor wrongly extends this government-record request mechanism directly to privately owned companies. The qualified access concept remains the sole supported right.",
           "evidence": [
             "evidence/reference-extraction/notes/document.json#page=19",
             "docs/verification/editorial-full-corpus-task3.md#current-events-32",
@@ -3746,7 +3746,7 @@
         },
         {
           "code": "unresolved-key",
-          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4. EO 2 section 2 addresses information of public concern; sections 3–4 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims.",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4 and 7. EO 2 section 2 covers executive-branch government offices, including government-owned or controlled corporations; section 3 provides access to information and official records. Section 4 preserves legal exceptions and section 7 safeguards personal information, so classified documents are not unconditionally accessible. The separate scope distractor wrongly extends this government-record request mechanism directly to privately owned companies. The qualified access concept remains the sole supported right.",
           "evidence": [
             "evidence/reference-extraction/notes/document.json#page=19",
             "docs/verification/editorial-full-corpus-task3.md#current-events-32",
@@ -3757,8 +3757,8 @@
       ],
       "factualVerification": {
         "sourceUrl": "https://lawphil.net/executive/execord/eo2016/eo_2_2016.html",
-        "verifiedAt": "2026-10-07T16:52:17.344Z",
-        "rationale": "Verified Sections 2–4. EO 2 section 2 addresses information of public concern; sections 3–4 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims."
+        "verifiedAt": "2026-10-07T17:03:57.644Z",
+        "rationale": "Verified Sections 2–4 and 7. EO 2 section 2 covers executive-branch government offices, including government-owned or controlled corporations; section 3 provides access to information and official records. Section 4 preserves legal exceptions and section 7 safeguards personal information, so classified documents are not unconditionally accessible. The separate scope distractor wrongly extends this government-record request mechanism directly to privately owned companies. The qualified access concept remains the sole supported right."
       }
     }
   },

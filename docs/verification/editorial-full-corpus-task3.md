@@ -2,13 +2,15 @@
 
 All 190 authoritative notes occurrences are accounted for. The 110 complete conversions are authored proposals requiring independent review and exact owner approval; 80 remain individually blocked. All stems and alternatives in complete conversions were authored. Original answers and empty original choice labels are retained in lineage. No missing except list was guessed.
 
-| Source section | Status counts |
-| --- | --- |
-| Philippine Constitution | {"needsReview":26} |
-| Philippine History | {"draft":42,"needsReview":8} |
-| PNP Law and History | {"needsReview":21,"draft":9} |
-| Criminal Justice System | {"needsReview":45,"draft":4} |
-| Current Events | {"draft":25,"needsReview":10} |
+Fix round 1 revisits PNP30’s historical inauguration assertion and Current32’s FOI scope alternative. Counts remain unchanged. Current32’s exact EO provisions were re-audited at 2026-10-07T17:03:57.644Z; its updated per-item verification supersedes the initial recovery timestamp. PNP30’s partial statutory assessment does not certify the original inauguration date.
+
+| Source section          | Status counts                 |
+| ----------------------- | ----------------------------- |
+| Philippine Constitution | {"needsReview":26}            |
+| Philippine History      | {"draft":42,"needsReview":8}  |
+| PNP Law and History     | {"needsReview":21,"draft":9}  |
+| Criminal Justice System | {"needsReview":45,"draft":4}  |
+| Current Events          | {"draft":25,"needsReview":10} |
 
 Current Events section labels were not used as taxonomy. Ten supported proposals assess specific statutes or a judicial remedy and belong to constitutionAndLaws with isCurrentEvent=false. No currentEvents question was completed; obsolete or historical trivia remains blocked. Historical enactment questions explicitly identify the original statute where later implementation may differ.
 
@@ -1409,11 +1411,11 @@ Independent concept and distractor rationale: Section 21 amending RA6975 section
 
 ## pnp-law-and-history-30
 
-Status: draft. No MCQ authored: Original Police Service Anniversary claim lacks dated policy context; retained PNA fetch contains unrelated Facebook fallback content, and alternative PNP direct retrieval was forbidden. Search leads also suggest anniversary policy changed; no current claim certified.
+Status: draft. No MCQ authored: The historical identity/inauguration claim requires direct primary corroboration of the 8 August 1901 inauguration date and Philippine Constabulary naming. Act No. 175, enacted 18 July 1901, establishes the Insular Constabulary under the Civil Governor, but its retained text does not specify the August 8 inauguration or establish the original gendarmerie/direct-reporting characterization. The retained PNA research lead contains unrelated fallback content and attempted PNP institutional pages were inaccessible, so the date is not certified. An authored statutory-identity conversion would materially overlap PNP18; retain this separate original occurrence as a historical evidence-gap draft pending a primary institutional or archival record.
 
 Original answer: Philippine Constabulary. Original PDF pages: 11–11.
 
-Open issue: Original Police Service Anniversary claim lacks dated policy context; retained PNA fetch contains unrelated Facebook fallback content, and alternative PNP direct retrieval was forbidden. Search leads also suggest anniversary policy changed; no current claim certified.
+Open issue: The historical identity/inauguration claim requires direct primary corroboration of the 8 August 1901 inauguration date and Philippine Constabulary naming. Act No. 175, enacted 18 July 1901, establishes the Insular Constabulary under the Civil Governor, but its retained text does not specify the August 8 inauguration or establish the original gendarmerie/direct-reporting characterization. The retained PNA research lead contains unrelated fallback content and attempted PNP institutional pages were inaccessible, so the date is not certified. An authored statutory-identity conversion would materially overlap PNP18; retain this separate original occurrence as a historical evidence-gap draft pending a primary institutional or archival record.
 
 ## criminal-justice-system-1
 
@@ -2598,21 +2600,21 @@ Open issue: League founding and motive are historical sports/business trivia out
 
 ## current-events-32
 
-Status: needsReview. Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4. EO 2 section 2 addresses information of public concern; sections 3–4 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims.
+Status: needsReview. Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4 and 7. EO 2 section 2 covers executive-branch government offices, including government-owned or controlled corporations; section 3 provides access to information and official records. Section 4 preserves legal exceptions and section 7 safeguards personal information, so classified documents are not unconditionally accessible. The separate scope distractor wrongly extends this government-record request mechanism directly to privately owned companies. The qualified access concept remains the sole supported right.
 
 Original answer: Freedom of Information. Original PDF pages: 19–19.
 
 Authored stem: What right is operationalized in executive-branch offices by Executive Order 2 of 2016?
 
-- choice-1: A right to bypass all government record exceptions
+- choice-1: A right to obtain records directly from privately owned companies
 - choice-2: Access to information on matters of public concern
 - choice-3: An unconditional right to all classified documents
 
 Proposed correct choice: choice-2. Taxonomy: generalInformation/constitutionAndLaws.
 
-Primary source: https://lawphil.net/executive/execord/eo2016/eo_2_2016.html. Supporting provision: Sections 2–4. Actually verified at 2026-10-07T16:52:17.344Z. Recovery claim/provision audit and visual inspection where listed.
+Primary source: https://lawphil.net/executive/execord/eo2016/eo_2_2016.html. Supporting provision: Sections 2–4 and 7. Actually verified at 2026-10-07T17:03:57.644Z. Fix-round recovery audit of exact EO sections 2–4 and 7; refined private-company scope distractor.
 
-Independent concept and distractor rationale: EO 2 section 2 addresses information of public concern; sections 3–4 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims.
+Independent concept and distractor rationale: EO 2 section 2 covers executive-branch government offices, including government-owned or controlled corporations; section 3 provides access to information and official records. Section 4 preserves legal exceptions and section 7 safeguards personal information, so classified documents are not unconditionally accessible. The separate scope distractor wrongly extends this government-record request mechanism directly to privately owned companies. The qualified access concept remains the sole supported right.
 
 ## current-events-33
 

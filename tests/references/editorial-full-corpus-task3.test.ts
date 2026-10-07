@@ -71,3 +71,20 @@ test('all 190 notes retain source lineage, stable identity, source issues and ho
   }
   expect(await loadApprovedPublication(root)).toHaveLength(20);
 });
+
+test('PNP30 reviews the preserved 1901 inauguration claim without certifying an unsupported date', async () => {
+  const c = (await loadCandidates(root)).find(
+    (c) => c.original.sourceKey === 'notes:PNP Law and History:30',
+  )!;
+  const o = (await loadOverlays(root)).find((o) => o.sourceKey === c.original.sourceKey)!;
+  const q = o.proposed as { prompt: { text: string }[] };
+  expect(c.original.rawPrompt).toMatch(/inaugurated.*August 8, 1901/);
+  expect(q.prompt[0]!.text).toBe(c.original.rawPrompt);
+  expect(o.status).toBe('draft');
+  expect(o.rationale).toContain('8 August 1901 inauguration date');
+  expect(o.rationale).toContain('Act No. 175');
+  expect(o.rationale).toContain('PNP18');
+  expect(o.rationale).not.toMatch(/Police Service Anniversary|current.policy|anniversary policy/);
+  expect(o.review?.factualVerification).toBeUndefined();
+  expect(o.evidence).toContain('https://lawphil.net/statutes/acts/act1901/act_175_1901.html');
+});

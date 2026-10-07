@@ -1240,11 +1240,11 @@
     "choices": [
       "Access to information on matters of public concern",
       "An unconditional right to all classified documents",
-      "A right to bypass all government record exceptions"
+      "A right to obtain records directly from privately owned companies"
     ],
-    "explanation": "EO 2 section 2 addresses information of public concern; sections 3\u20134 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims.",
+    "explanation": "EO 2 section 2 covers executive-branch government offices, including government-owned or controlled corporations; section 3 provides access to information and official records. Section 4 preserves legal exceptions and section 7 safeguards personal information, so classified documents are not unconditionally accessible. The separate scope distractor wrongly extends this government-record request mechanism directly to privately owned companies. The qualified access concept remains the sole supported right.",
     "source": "eo2",
-    "provision": "Sections 2\u20134",
+    "provision": "Sections 2\u20134 and 7",
     "tax": "constitutionAndLaws"
   },
   "notes:Criminal Justice System:18": {

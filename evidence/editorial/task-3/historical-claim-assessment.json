@@ -1,0 +1,15 @@
+{
+  "sourceKey": "notes:PNP Law and History:30",
+  "assessedAt": "2026-10-07T17:03:57.644Z",
+  "originalClaim": "Identity of national gendarmerie inaugurated August 8, 1901, with American-government reporting characterization",
+  "originalAnswer": "Philippine Constabulary",
+  "partialPrimarySource": {
+    "url": "https://lawphil.net/statutes/acts/act1901/act_175_1901.html",
+    "retainedPath": "evidence/editorial/task-3/research/act175.txt",
+    "enactmentDate": "18 July 1901",
+    "supportedText": "An Insular Constabulary is hereby established under the general supervision of the Civil Governor",
+    "unsupportedInThisText": "8 August 1901 inauguration and complete original naming/characterization"
+  },
+  "disposition": "draft; no date certified and no complete factualVerification attached",
+  "duplicateConsideration": "PNP18 already tests the statutory establishment/identity in Act175; a second statutory-only conversion would materially overlap and is not created. Separate occurrence preserved for Task4 reconciliation."
+}
