@@ -233,3 +233,24 @@ All 687 occurrences remain accounted for across 178 pages: short 20 approved eli
 Acceptance RED recorded two expected failures before stamping (needsReview status and absent approval). GREEN: question validation reports 20 eligible; reference tests 9/9; focused publication/import/source-workflow tests 79/79; tools and mobile typecheck pass; whitespace check passes. Public redistribution rights and the decoder advisory remain separate release gates.
 
 These are actual observation/recording times; message timestamp metadata was not exposed. Earlier pre-approval status and coverage sections are preserved as checkpoint history; this publication section records the current approved state.
+
+
+## Local demo catalog verification (Task 5)
+
+On 2026-10-07, the exact approved full publication was imported through the guarded CLI into `demo-pnpe` at `127.0.0.1:8080`. Discovery confirmed the existing hub/Auth process 33310 (4400/9099), Firestore process 33383 (8080/9150), and Metro process 33425 (8081). All remained running afterward. No reset, snapshot import, rules deployment, production credential access or mobile change was performed against these services.
+
+The inspected manifest had an empty prior head (generation null, revision 0), twenty creates (`q-000001`–`q-000020`, all version 1), zero noops and ten shards. Literal digest confirmation applied twenty questions. Evidence is retained under ignored `evidence/editorial/short-initial/` with unique `task5-` filenames.
+
+- Approved packet digest: `547ce4e6164e2ad39a978beb6c112600d629f61d311fe8df62048bb4bf4198d8`.
+- Full canonical publication/import input digest: `08e3da4233884a532f4292312a4a3e11e1cf1a5d91764147ca766eaefd5e6994`.
+- Inspected/apply manifest digest: `7dace9c28a3ada803a996da260e389fd1deb2a32784d7f44997eab2b732850df` (`task5-demo-import.json`).
+- Read-back catalog generation: `3fb47bd7ebc36303bdb30ac3e58e1ed47de2ca65a455e50466039e1d363a0a3f`, head revision 1.
+- Repeat dry-run digest: `c7e65fd5e8e8e67de033d248efeabc6dfa9b269c4525707bd4e98f1f9d5b4b29` (`task5-demo-repeat.json`): zero creates, twenty noops; identical input, generation and shard metadata.
+
+Readback through `FirebaseImportStore.readHead`, `readShard` and `readRevision` matched every ID/version, all twenty canonical payload digests, all ten shard digests/counts and the total of twenty. Full readback is in `task5-readback.json`; replay source is archived as `task5-readback.ts.txt` so lint treats it as evidence.
+
+Safeguards passed before apply: unit suite 21 suites / 336 tests; isolated Firestore import integration 1 suite / 6 tests. Integration used a temporary Firestore-only emulator on 8185, hub 4405, logging 4505 and websocket 9155 with existing rules/index paths, cached JAR/dependencies and Android Studio Java. Its reset hooks affected only 8185; `emulators:exec` stopped only that temporary instance. The existing rules integration suite was intentionally excluded because it hardcodes 8080 and deletes demo data; rules are unchanged and foundation verification evidence remains applicable.
+
+Final gates passed: references 2 suites / 9 tests (including preserved source accounting/checksums), tools and mobile typechecks, lint, repository format check, question validation (20 eligible), and whitespace. Shared domain/mobile behavior did not change, so no mobile regression rerun was required. Exact command/output evidence is retained in the ignored Task 5 report and logs.
+
+No unresolved first-packet rows remain. The 667 comprehensive/note occurrences remain unavailable and unmapped; corpus accounting remains 687 across 178 pages. Eligible category counts remain 4/4/4/8 and shortages remain General Information 31, Communication Skills 36, Quantitative Reasoning 21, Critical Thinking 42. Default Mock Exam quotas remain 35/40/25/50 (150 total); this catalog does not establish full-exam readiness or visible Reviewer/Mock functionality. Subsequent batches require exact review/approval; Reviewer/bookmarks and Mock Exam/results continue under separate specifications. Redistribution rights and the decoder advisory remain public-release gates.
