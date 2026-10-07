@@ -2,7 +2,7 @@
 
 Date: 2026-10-07
 
-Status: written specification awaiting owner review. The owner approved the
+Status: approved by the owner on 2026-10-07. The owner approved the
 sequence content → Reviewer/bookmarks → Mock Exam/results. This document defines
 the content stage; it does not approve individual questions or production writes.
 
