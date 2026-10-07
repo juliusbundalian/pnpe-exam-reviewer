@@ -1,0 +1,3998 @@
+[
+  {
+    "sourceKey": "comprehensive:XIV:1",
+    "proposed": {
+      "id": "q-000460",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange the stages of producing a printed, bound book from manuscript to finished product.\nA. script || B. book || C. layout || D. print || E. bind",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ABCDE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ACDEB",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BACDE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "DCBAE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CABDE",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "1",
+          "pages": {
+            "start": 141,
+            "end": 141
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "b.) ACDEB",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=141",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-1"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Use the production stages of a printed bound book: a manuscript/script is laid out, printed and bound, yielding the book. ACDEB is the only option respecting these dependencies.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Use the production stages of a printed bound book: a manuscript/script is laid out, printed and bound, yielding the book. ACDEB is the only option respecting these dependencies. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=141",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-1"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=141",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-1"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:2",
+    "proposed": {
+      "id": "q-000461",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange the listed stages of making steamed leche flan from ingredients to finished dish.\nA. mix || B. steam || C. leche flan || D. eggs || E. mold",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "DAEBC",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ACBED",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CAEBD",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "EBACD",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "DBAEC",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "2",
+          "pages": {
+            "start": 141,
+            "end": 141
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "a.) DAEBC",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=141",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-2"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Eggs are ingredients; mixing creates custard, which enters the mold before steaming, yielding leche flan. DAEBC alone satisfies these cooking dependencies.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Eggs are ingredients; mixing creates custard, which enters the mold before steaming, yielding leche flan. DAEBC alone satisfies these cooking dependencies. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=141",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-2"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=141",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-2"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:3",
+    "proposed": {
+      "id": "q-000462",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange these stages for making a shirt by cutting fabric pieces before sewing them together.\nA. textile || B. measure || C. cut || D. shirt || E. sew",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ACBED",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ABECD",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ABDCE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ABCED",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "AEBCD",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "3",
+          "pages": {
+            "start": 141,
+            "end": 141
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "b.) ABECD",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=141",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative. Replaced malformed six-letter distractorA ACEBED with five-letter permutationACBED; preserved original in source evidence.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-3"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Textile is measured, then cut into pieces, then sewn, yielding a shirt. ABCED (D) is the only supplied option with cutting before sewing and the finished shirt last; source B reverses cut/sew.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Textile is measured, then cut into pieces, then sewn, yielding a shirt. ABCED (D) is the only supplied option with cutting before sewing and the finished shirt last; source B reverses cut/sew. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative. Replaced malformed six-letter distractorA ACEBED with five-letter permutationACBED; preserved original in source evidence.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=141",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-3"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "Textile is measured, then cut into pieces, then sewn, yielding a shirt. ABCED (D) is the only supplied option with cutting before sewing and the finished shirt last; source B reverses cut/sew.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=141",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-3"
+          ]
+        },
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=141",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-3"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:4",
+    "proposed": {
+      "id": "q-000463",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange a fruit-bearing tree’s development from seed to fruit.\nA. fruit || B. seedling || C. flower || D. tree || E. seed",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BEACD",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "EBCDA",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BEDCA",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "EBDCA",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ECBDA",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "4",
+          "pages": {
+            "start": 141,
+            "end": 142
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "d.) EBDCA",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=141",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-4"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A seed germinates into a seedling, grows into a mature tree, flowers and produces fruit; EBDCA alone follows the stated life cycle.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "A seed germinates into a seedling, grows into a mature tree, flowers and produces fruit; EBDCA alone follows the stated life cycle. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=141",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-4"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=141",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:5",
+    "proposed": {
+      "id": "q-000464",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange these time units from shortest to longest duration.\nA. year || B. day || C. month || D. century || E. week",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BACDE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BCEAD",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BECAD",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BADEC",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BDECA",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "5",
+          "pages": {
+            "start": 142,
+            "end": 142
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "d.) BADEC",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=142",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-5"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Compare durations: day1, week7days, month28–31days, year365/366days, century100years. Strict increasing order BECAD is choiceC; source D is incorrect.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Compare durations: day1, week7days, month28–31days, year365/366days, century100years. Strict increasing order BECAD is choiceC; source D is incorrect. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=142",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-5"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "Compare durations: day1, week7days, month28–31days, year365/366days, century100years. Strict increasing order BECAD is choiceC; source D is incorrect.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=142",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-5"
+          ]
+        },
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=142",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:6",
+    "proposed": {
+      "id": "q-000465",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "A. train || B. bus || C. motorcycle || D. tricycle || E. jeep",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CDBEA",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CEDBA",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CDABE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CADBE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CDEBA",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "6",
+          "pages": {
+            "start": 142,
+            "end": 142
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "e.) CDEBA",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=142",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Vehicle labels alone do not establish a strict size, capacity, speed or wheel-count order: train lengths vary and buses/jeepneys vary; motorcycles/tricycles can overlap in capacity. No supplied quantitative comparisons establish a unique sequence.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-6"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Vehicle labels alone do not establish a strict size, capacity, speed or wheel-count order: train lengths vary and buses/jeepneys vary; motorcycles/tricycles can overlap in capacity. No supplied quantitative comparisons establish a unique sequence.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Vehicle labels alone do not establish a strict size, capacity, speed or wheel-count order: train lengths vary and buses/jeepneys vary; motorcycles/tricycles can overlap in capacity. No supplied quantitative comparisons establish a unique sequence. Open: Missing vehicle sizes/capacities or other objective ordering criterion; a guessed typical ranking would not certify a unique answer.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=142",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-6"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task2-unresolved",
+          "blocking": true,
+          "message": "Missing vehicle sizes/capacities or other objective ordering criterion; a guessed typical ranking would not certify a unique answer."
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "The exercise belongs to criticalThinking/logicalReasoning; its separate stated blocker remains unresolved.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=142",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-6"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:7",
+    "proposed": {
+      "id": "q-000466",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange this schooling path from earliest to latest, with preparatory schooling after day care.\nA. day care || B. college || C. high school || D. elementary || E. prep",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "AEDCB",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "AECDB",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "EADCB",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "EABCD",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "EACDB",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "7",
+          "pages": {
+            "start": 142,
+            "end": 143
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "a.) AEDCB",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=142",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-7"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Day care precedes preparatory schooling, then elementary, high school and college in the specified educational path; AEDCB is unique among options.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Day care precedes preparatory schooling, then elementary, high school and college in the specified educational path; AEDCB is unique among options. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=142",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-7"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=142",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-7"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:8",
+    "proposed": {
+      "id": "q-000467",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange these crop-production stages from soil preparation to sale.\nA. planting || B. plowing || C. weeding || D. harvesting || E. selling",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BCADE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BACED",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CBADE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CBAED",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BACDE",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "8",
+          "pages": {
+            "start": 143,
+            "end": 143
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "e.) BACDE",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=143",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-8"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Plowing prepares soil, planting establishes crops, weeding maintains them, harvesting collects yield, selling disposes of harvest. BACDE is unique among alternatives.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Plowing prepares soil, planting establishes crops, weeding maintains them, harvesting collects yield, selling disposes of harvest. BACDE is unique among alternatives. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=143",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-8"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=143",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-8"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:9",
+    "proposed": {
+      "id": "q-000468",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange the tasks for laundry that is ironed while dry, then folded for storage before being worn.\nA. ironing || B. washing || C. drying | D. folding || E. wearing",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BCDAE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "EBDCA",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BCADE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BDCAE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "EBCAD",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "9",
+          "pages": {
+            "start": 143,
+            "end": 143
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "c.) BCADE",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=143",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-9"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Wash clothes, dry them, iron the dry clothes, fold them, then wear them. Only BCADE respects drying before ironing and wearing last in this explicitly stated laundry task.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Wash clothes, dry them, iron the dry clothes, fold them, then wear them. Only BCADE respects drying before ironing and wearing last in this explicitly stated laundry task. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=143",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-9"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=143",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-9"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:10",
+    "proposed": {
+      "id": "q-000469",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange these events for a person who becomes ill, dies, and is embalmed before a wake and funeral.\nA. death || B. wake || C. embalm || D.funeral || E. sick",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "EACBD",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "AECDB",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "EABCD",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ABCDE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "EBACD",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "10",
+          "pages": {
+            "start": 143,
+            "end": 143
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "e.) AECBD",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=143",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored correct A EACBD and distinct DABCDE/EEBACD distractors; original duplicate alternatives and source E key retained in lineage. Explicit embalming-before-wake scenario supplies a meaningful condition.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-10"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Illness precedes death; in this embalmed-body scenario embalming precedes the wake, which precedes funeral. EACBD is uniquely the corrected A alternative; the source contains no correct sequence and duplicates C/D and B/E.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Illness precedes death; in this embalmed-body scenario embalming precedes the wake, which precedes funeral. EACBD is uniquely the corrected A alternative; the source contains no correct sequence and duplicates C/D and B/E. Authored repair: Authored correct A EACBD and distinct DABCDE/EEBACD distractors; original duplicate alternatives and source E key retained in lineage. Explicit embalming-before-wake scenario supplies a meaningful condition.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=143",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-10"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "duplicate-alternative",
+          "message": "Repeated rendered alternatives need editorial resolution",
+          "blocking": true
+        },
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "Illness precedes death; in this embalmed-body scenario embalming precedes the wake, which precedes funeral. EACBD is uniquely the corrected A alternative; the source contains no correct sequence and duplicates C/D and B/E.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=143",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-10"
+          ]
+        },
+        {
+          "code": "duplicate-alternative",
+          "rationale": "Illness precedes death; in this embalmed-body scenario embalming precedes the wake, which precedes funeral. EACBD is uniquely the corrected A alternative; the source contains no correct sequence and duplicates C/D and B/E.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=143",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-10"
+          ]
+        },
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=143",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-10"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:11",
+    "proposed": {
+      "id": "q-000470",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange the words in alphabetical order.\nA. blister || B. blunder || C. bliss || D. blend || E. bland",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ABDCE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "EDCAB",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BDEAC",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "EACBD",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BEACD",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "11",
+          "pages": {
+            "start": 144,
+            "end": 144
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "b.) EDCAB",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=144",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-11"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Compare spellings lexicographically: bland(bl a) < blend(bl e) < bliss(bl is) < blister(bl it) < blunder(bl u). EDCAB is the only option matching ascending alphabetical order.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Compare spellings lexicographically: bland(bl a) < blend(bl e) < bliss(bl is) < blister(bl it) < blunder(bl u). EDCAB is the only option matching ascending alphabetical order. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=144",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-11"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=144",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-11"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:12",
+    "proposed": {
+      "id": "q-000471",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange the stages from seedling growth to making a corsage. Here plant means a mature flowering plant.\nA. flower || B. bud || C. plant || D. seedling || E. corsage",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BACED",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BADCE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "DCBAE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "DBCAE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "DCABE",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "12",
+          "pages": {
+            "start": 144,
+            "end": 144
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "d.) DBCAE",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=144",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-12"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Seedling grows into a mature plant, which develops a bud, then flower; flower is made into corsage. DCBAE (C), not source D, follows these dependencies.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Seedling grows into a mature plant, which develops a bud, then flower; flower is made into corsage. DCBAE (C), not source D, follows these dependencies. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=144",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-12"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "Seedling grows into a mature plant, which develops a bud, then flower; flower is made into corsage. DCBAE (C), not source D, follows these dependencies.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=144",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-12"
+          ]
+        },
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=144",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-12"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:13",
+    "proposed": {
+      "id": "q-000472",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange this simplified sequence in which heating drives evaporation and the resulting rainfall causes a flood.\nA. rain || B. heat || C. flood || D. cloud || E. evaporation",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "EBDAC",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "EADBC",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "AEBDC",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "EDABC",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BEDAC",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "13",
+          "pages": {
+            "start": 144,
+            "end": 144
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "e.) BEDAC",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=144",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-13"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "In this simplified cycle heat enables evaporation; vapour forms clouds; rainfall can then cause a flood. BEDAC alone follows the causal sequence, without claiming every rain floods.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "In this simplified cycle heat enables evaporation; vapour forms clouds; rainfall can then cause a flood. BEDAC alone follows the causal sequence, without claiming every rain floods. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=144",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-13"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=144",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-13"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:14",
+    "proposed": {
+      "id": "q-000473",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange conventional courtship milestones from first meeting to wedding.\nA. wedding || B. meeting || C. courting || D. steady || E. engage",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BCDEA",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BEDCA",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BCEDA",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CBDEA",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "EDBCA",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "14",
+          "pages": {
+            "start": 144,
+            "end": 145
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "a.) BCDEA",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=144",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-14"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "In the stated relationship scenario the people first meet, court, become a steady couple, get engaged and marry. BCDEA alone puts engagement before the wedding without reversing the earlier relationship stages.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "In the stated relationship scenario the people first meet, court, become a steady couple, get engaged and marry. BCDEA alone puts engagement before the wedding without reversing the earlier relationship stages. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=144",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-14"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=144",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-14"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:15",
+    "proposed": {
+      "id": "q-000474",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange these event stages for an entrant who joins the event after completing registration and later celebrates a win.\nA. registers || B. competes || C. joins || D. wins || E. celebrates",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ACBDE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ABCDE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CABDE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CADBE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ACDBE",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "15",
+          "pages": {
+            "start": 145,
+            "end": 145
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "a.) ACBDE",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=145",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-15"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Registration precedes joining an event; competition precedes winning; celebration of the win follows it. ACBDE is unique for the entrant described.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Registration precedes joining an event; competition precedes winning; celebration of the win follows it. ACBDE is unique for the entrant described. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=145",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-15"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=145",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-15"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:16",
+    "proposed": {
+      "id": "q-000475",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "A. sugar || B. cream || C. hot water || D. coffee || E. drink",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CABDE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "DABCE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CBADE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CDABE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CABED",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "16",
+          "pages": {
+            "start": 145,
+            "end": 145
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "d.) CDABE",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=145",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Hot water, coffee, sugar and cream can be combined in several orders. CABDE, CBADE, CDABE and DABCE can describe plausible preparations; only drinking last is forced. The source D does not distinguish its method from other valid recipes.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-16"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Hot water, coffee, sugar and cream can be combined in several orders. CABDE, CBADE, CDABE and DABCE can describe plausible preparations; only drinking last is forced. The source D does not distinguish its method from other valid recipes.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Hot water, coffee, sugar and cream can be combined in several orders. CABDE, CBADE, CDABE and DABCE can describe plausible preparations; only drinking last is forced. The source D does not distinguish its method from other valid recipes. Open: No specified recipe or meaningful ingredient-order dependency; several alternatives are defensible.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=145",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-16"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task2-unresolved",
+          "blocking": true,
+          "message": "No specified recipe or meaningful ingredient-order dependency; several alternatives are defensible."
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "The exercise belongs to criticalThinking/logicalReasoning; its separate stated blocker remains unresolved.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=145",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-16"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:17",
+    "proposed": {
+      "id": "q-000476",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange family events from a couple’s wedding to baptism of their first child; assume conception occurs after their honeymoon.\nA. honeymoon || B. wed || C. baptize || D. give birth || E. pregnant",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BEADC",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BAEDC",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BCDEA",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BADEC",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ABEDC",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "17",
+          "pages": {
+            "start": 145,
+            "end": 145
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "d.) BADEC",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=145",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-17"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "In the specified family scenario wedding precedes honeymoon; pregnancy precedes birth; infant baptism follows birth. BAEDC (B) alone respects all stages. Source D places birth before pregnancy.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "In the specified family scenario wedding precedes honeymoon; pregnancy precedes birth; infant baptism follows birth. BAEDC (B) alone respects all stages. Source D places birth before pregnancy. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=145",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-17"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "In the specified family scenario wedding precedes honeymoon; pregnancy precedes birth; infant baptism follows birth. BAEDC (B) alone respects all stages. Source D places birth before pregnancy.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=145",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-17"
+          ]
+        },
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=145",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-17"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:18",
+    "proposed": {
+      "id": "q-000477",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "A. grandfather || B. father || C. grandson || D. daughter || E. son",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ABEDC",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ABCED",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ABDEC",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ABECD",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BADEC",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "18",
+          "pages": {
+            "start": 146,
+            "end": 146
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "a.) ABEDC",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=146",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Grandfather and father may precede a child generation, but son and daughter do not establish relative age and might name different family relationships. No family tree or ages identifies the unique placement of D and E.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-18"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Grandfather and father may precede a child generation, but son and daughter do not establish relative age and might name different family relationships. No family tree or ages identifies the unique placement of D and E.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Grandfather and father may precede a child generation, but son and daughter do not establish relative age and might name different family relationships. No family tree or ages identifies the unique placement of D and E. Open: Missing family relationships and ages; cannot order son and daughter uniquely without inventing a family.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=146",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-18"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task2-unresolved",
+          "blocking": true,
+          "message": "Missing family relationships and ages; cannot order son and daughter uniquely without inventing a family."
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "The exercise belongs to criticalThinking/logicalReasoning; its separate stated blocker remains unresolved.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=146",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-18"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:19",
+    "proposed": {
+      "id": "q-000478",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "For this yam-jam recipe, whole yams are boiled until soft before being ground; the ground yam is then cooked into jam. Arrange the listed stages.\nA. boil || B. yam || C. grind || D. jam || E. cook",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ACEDB",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CABED",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BACED",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BCADE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BCAED",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "19",
+          "pages": {
+            "start": 146,
+            "end": 146
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "e.) BCAED",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=146",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative. Replaced malformed distractorB CAVED (undefinedV) with distinct permutationCABED; preserved original in source evidence.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-19"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Whole yam is boiled until soft, then ground, then cooked into jam. BACED (C) alone puts boiling before grinding and finished jam last; source E reverses boiling/grinding. This is a deliberately disclosed recipe scenario, not a universal cooking rule.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Whole yam is boiled until soft, then ground, then cooked into jam. BACED (C) alone puts boiling before grinding and finished jam last; source E reverses boiling/grinding. This is a deliberately disclosed recipe scenario, not a universal cooking rule. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative. Replaced malformed distractorB CAVED (undefinedV) with distinct permutationCABED; preserved original in source evidence.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=146",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-19"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=146",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-19"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:20",
+    "proposed": {
+      "id": "q-000479",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange training, ordination and office milestones for a Catholic seminarian eventually elected pope; assume the candidate has become a bishop before election.\nA. priest || B. seminarian || C. deacon || D. pope || E. bishop",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BACED",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BCAED",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CBAED",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CBADE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ABCED",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "20",
+          "pages": {
+            "start": 146,
+            "end": 146
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "b.) BCAED",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=146",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-20"
+            }
+          ]
+        },
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "26",
+          "pages": {
+            "start": 148,
+            "end": 148
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "a.) BCDAE",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=148",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-26"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "For this stated vocation path seminarian training precedes diaconal ordination, priesthood, episcopal consecration and later election as pope. BCAED alone follows it. Pope is an office held by a bishop, not a fourth sacramental order.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "For this stated vocation path seminarian training precedes diaconal ordination, priesthood, episcopal consecration and later election as pope. BCAED alone follows it. Pope is an office held by a bishop, not a fourth sacramental order. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=146",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-20",
+      "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann998-1165_en.html",
+      "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib2-cann330-367_en.html"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=146",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-20",
+            "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann998-1165_en.html",
+            "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib2-cann330-367_en.html"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann998-1165_en.html",
+        "verifiedAt": "2026-10-07T16:00:32Z",
+        "rationale": "For this stated vocation path seminarian training precedes diaconal ordination, priesthood, episcopal consecration and later election as pope. BCAED alone follows it. Pope is an office held by a bishop, not a fourth sacramental order."
+      }
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:21",
+    "proposed": {
+      "id": "q-000480",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Using Hallmark’s anniversary-gift list, arrange these themes by increasing wedding-anniversary number (flower refers to the fruit-or-flowers theme).\nA. cotton || B. leather || C. wood || D. paper || E. flower",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ABCDE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CDAEB",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "DCABE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "EABDC",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "DABEC",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "21",
+          "pages": {
+            "start": 146,
+            "end": 147
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "d.) EABDC",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=146",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-21"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Hallmark’s named list maps paper1, cotton2, leather3, fruit/flowers4, wood5. Sorting those anniversary numbers gives DABEC (E), uniquely. Source D is incompatible.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Hallmark’s named list maps paper1, cotton2, leather3, fruit/flowers4, wood5. Sorting those anniversary numbers gives DABEC (E), uniquely. Source D is incompatible. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=146",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-21",
+      "https://ideas.hallmark.com/articles/anniversary-ideas/anniversary-gifts-by-year/"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "Hallmark’s named list maps paper1, cotton2, leather3, fruit/flowers4, wood5. Sorting those anniversary numbers gives DABEC (E), uniquely. Source D is incompatible.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=146",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-21",
+            "https://ideas.hallmark.com/articles/anniversary-ideas/anniversary-gifts-by-year/"
+          ]
+        },
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=146",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-21",
+            "https://ideas.hallmark.com/articles/anniversary-ideas/anniversary-gifts-by-year/"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://ideas.hallmark.com/articles/anniversary-ideas/anniversary-gifts-by-year/",
+        "verifiedAt": "2026-10-07T16:00:32Z",
+        "rationale": "Hallmark’s named list maps paper1, cotton2, leather3, fruit/flowers4, wood5. Sorting those anniversary numbers gives DABEC (E), uniquely. Source D is incompatible."
+      }
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:22",
+    "proposed": {
+      "id": "q-000481",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Using Hallmark’s anniversary-gift list, arrange these themes by increasing wedding-anniversary number.\nA. silk || B. gold jewelry || C. steel || D. lace || E. crystal",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CDABE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ABDCE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ECBDA",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CADBE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "DCABE",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "22",
+          "pages": {
+            "start": 147,
+            "end": 147
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "c.) ECBDA",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=147",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Named the independently verified Hallmark gift convention, replaced outdated ivory with its gold-jewelry14th theme, and corrected C toD by sorting years.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-22"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The independently read Hallmark list maps steel11, silk/linen12, lace13, gold jewelry14, crystal15. Replacing the source’s ivory theme with Hallmark’s gold-jewelry theme, ascending years produce CADBE (D), uniquely. Source C is incorrect under this explicitly named convention.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "The independently read Hallmark list maps steel11, silk/linen12, lace13, gold jewelry14, crystal15. Replacing the source’s ivory theme with Hallmark’s gold-jewelry theme, ascending years produce CADBE (D), uniquely. Source C is incorrect under this explicitly named convention. Authored repair: Named the independently verified Hallmark gift convention, replaced outdated ivory with its gold-jewelry14th theme, and corrected C toD by sorting years.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=147",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-22",
+      "https://ideas.hallmark.com/articles/anniversary-ideas/anniversary-gifts-by-year/"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "The independently read Hallmark list maps steel11, silk/linen12, lace13, gold jewelry14, crystal15. Replacing the source’s ivory theme with Hallmark’s gold-jewelry theme, ascending years produce CADBE (D), uniquely. Source C is incorrect under this explicitly named convention.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=147",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-22",
+            "https://ideas.hallmark.com/articles/anniversary-ideas/anniversary-gifts-by-year/"
+          ]
+        },
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=147",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-22",
+            "https://ideas.hallmark.com/articles/anniversary-ideas/anniversary-gifts-by-year/"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://ideas.hallmark.com/articles/anniversary-ideas/anniversary-gifts-by-year/",
+        "verifiedAt": "2026-10-07T16:00:32Z",
+        "rationale": "The independently read Hallmark list maps steel11, silk/linen12, lace13, gold jewelry14, crystal15. Replacing the source’s ivory theme with Hallmark’s gold-jewelry theme, ascending years produce CADBE (D), uniquely. Source C is incorrect under this explicitly named convention."
+      }
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:23",
+    "proposed": {
+      "id": "q-000482",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "For X > 0, arrange these quantities in increasing numerical order: A. (1/4)X; B. (1/2)X; C. (3/4)X; D. X; E. (5/4)X.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ABCDE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "DBACE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "DABCE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ADBCE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BACDE",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "23",
+          "pages": {
+            "start": 147,
+            "end": 147
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "a.) ABCDE",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=147",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-23"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "For X>0, multiplying 1/4<1/2<3/4<1<5/4 byX preserves strict inequalities. ABCDE alone is ascending. For negativeX order reverses and X0 ties, hence the editorial positive-domain constraint is necessary.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "For X>0, multiplying 1/4<1/2<3/4<1<5/4 byX preserves strict inequalities. ABCDE alone is ascending. For negativeX order reverses and X0 ties, hence the editorial positive-domain constraint is necessary. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=147",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-23"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "For X>0, multiplying 1/4<1/2<3/4<1<5/4 byX preserves strict inequalities. ABCDE alone is ascending. For negativeX order reverses and X0 ties, hence the editorial positive-domain constraint is necessary.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=147",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-23"
+          ]
+        },
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=147",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-23"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:24",
+    "proposed": {
+      "id": "q-000483",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "A. Scorpio || B. Pisces || C. Aquarius || D. Capricorn || E. Sagittarius",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BACDE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "EADCB",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "AEDCB",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CABDE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "DABEC",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "24",
+          "pages": {
+            "start": 147,
+            "end": 148
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "c.) AEDCB",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=147",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "AEDCB resembles Scorpio→Sagittarius→Capricorn→Aquarius→Pisces in a conventional zodiac cycle crossing a year boundary. But no cycle start, year interval or astrological convention is supplied; alphabetical or January-first ordering differs. A current primary convention/date reference and meaningful criterion are still required.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-24"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "AEDCB resembles Scorpio→Sagittarius→Capricorn→Aquarius→Pisces in a conventional zodiac cycle crossing a year boundary. But no cycle start, year interval or astrological convention is supplied; alphabetical or January-first ordering differs. A current primary convention/date reference and meaningful criterion are still required.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "AEDCB resembles Scorpio→Sagittarius→Capricorn→Aquarius→Pisces in a conventional zodiac cycle crossing a year boundary. But no cycle start, year interval or astrological convention is supplied; alphabetical or January-first ordering differs. A current primary convention/date reference and meaningful criterion are still required. Open: Unspecified zodiac ordering convention and start/interval; no primary-source verification retained for a proposed repair.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=147",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-24"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task2-unresolved",
+          "blocking": true,
+          "message": "Unspecified zodiac ordering convention and start/interval; no primary-source verification retained for a proposed repair."
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "The exercise belongs to criticalThinking/logicalReasoning; its separate stated blocker remains unresolved.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=147",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-24"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:25",
+    "proposed": {
+      "id": "q-000484",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange the planets by increasing orbital distance from the Sun.\nA. Jupiter || B. Venus || C. Mercury || D. Earth || E. Mars",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CBDEA",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BCDEA",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BEDCA",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "ABCDE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "DECBA",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "25",
+          "pages": {
+            "start": 148,
+            "end": 148
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "a.) CBDEA",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=148",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-25"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "NASA lists the first five planets from the Sun as Mercury, Venus, Earth, Mars, Jupiter. Mapping labels gives CBDEA; all other options violate that distance order.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "NASA lists the first five planets from the Sun as Mercury, Venus, Earth, Mars, Jupiter. Mapping labels gives CBDEA; all other options violate that distance order. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=148",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-25",
+      "https://science.nasa.gov/solar-system/planets/"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "NASA lists the first five planets from the Sun as Mercury, Venus, Earth, Mars, Jupiter. Mapping labels gives CBDEA; all other options violate that distance order.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=148",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-25",
+            "https://science.nasa.gov/solar-system/planets/"
+          ]
+        },
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=148",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-25",
+            "https://science.nasa.gov/solar-system/planets/"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://science.nasa.gov/solar-system/planets/",
+        "verifiedAt": "2026-10-07T15:58:09Z",
+        "rationale": "NASA lists the first five planets from the Sun as Mercury, Venus, Earth, Mars, Jupiter. Mapping labels gives CBDEA; all other options violate that distance order."
+      }
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:26",
+    "proposed": {
+      "id": "q-000485",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange training, ordination and office milestones for a Catholic seminarian eventually elected pope; assume the candidate has become a bishop before election.\nA. Bishop || B. Seminarian || C. Deacon || D. Priest || E. Pope",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BCDAE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BDCAE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CBDAE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "DBCAE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "AEDCB",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "26",
+          "pages": {
+            "start": 148,
+            "end": 148
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "a.) BCDAE",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=148",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-26"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Same explicitly stated vocation-path reasoning as XIV20 with relabeled nouns: seminarian B, deacon C, priest D, bishop A, pope E. BCDAE alone respects that path; Pope is an office, not a distinct sacramental order.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Same explicitly stated vocation-path reasoning as XIV20 with relabeled nouns: seminarian B, deacon C, priest D, bishop A, pope E. BCDAE alone respects that path; Pope is an office, not a distinct sacramental order. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative. Duplicate disposition: rejected occurrence; retained both source references in comprehensive:XIV:20; stable registry unchanged.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=148",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-26",
+      "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann998-1165_en.html",
+      "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib2-cann330-367_en.html"
+    ],
+    "status": "rejected",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=148",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-26",
+            "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann998-1165_en.html",
+            "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib2-cann330-367_en.html"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann998-1165_en.html",
+        "verifiedAt": "2026-10-07T16:00:32Z",
+        "rationale": "Same explicitly stated vocation-path reasoning as XIV20 with relabeled nouns: seminarian B, deacon C, priest D, bishop A, pope E. BCDAE alone respects that path; Pope is an office, not a distinct sacramental order."
+      }
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:27",
+    "proposed": {
+      "id": "q-000486",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange these observances by their dates from January through December in a Philippine calendar year.\nA. Christmas || B. Labor Day || C. New Year || D. Valentines || E. All\nSaints' Day",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CBAED",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CDBEA",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CBDAE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "DCBEA",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "CBEDA",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "27",
+          "pages": {
+            "start": 148,
+            "end": 149
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "b.) CDBEA",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=148",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-27"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Within one Philippine calendar year the dates are New Year Jan1, Valentine Feb14, Labor DayMay1, AllSaintsNov1, ChristmasDec25; sorting yields CDBEA, only B.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Within one Philippine calendar year the dates are New Year Jan1, Valentine Feb14, Labor DayMay1, AllSaintsNov1, ChristmasDec25; sorting yields CDBEA, only B. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=148",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-27"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=148",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-27"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIV:28",
+    "proposed": {
+      "id": "q-000487",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Arrange these stages of a film production in which dubbing is performed in post-production after shooting.\nA. Shooting || B. Screenplay || C. Dubbing || D. Casting || E. Showing",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BCDAE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BDCAE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BDACE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "DBACE",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "BCDEA",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "28",
+          "pages": {
+            "start": 149,
+            "end": 149
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "b.) BDCAE (d.) is also identical)",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=149",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Corrected key to existing C BDACE; authored distinct distractorDDBACE to replace duplicateB/D. Specified post-production dubbing, preserving the five film-production terms.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-28"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "In the specified film-production workflow screenplay precedes casting, shooting, post-production dubbing and showing. BDACE (C) alone satisfies the sequence; source B/D wrongly put dubbing before shooting and duplicate each other.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "In the specified film-production workflow screenplay precedes casting, shooting, post-production dubbing and showing. BDACE (C) alone satisfies the sequence; source B/D wrongly put dubbing before shooting and duplicate each other. Authored repair: Corrected key to existing C BDACE; authored distinct distractorDDBACE to replace duplicateB/D. Specified post-production dubbing, preserving the five film-production terms.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=149",
+      "docs/verification/editorial-full-corpus-task2.md#xiv-28"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "duplicate-alternative",
+          "message": "Repeated rendered alternatives need editorial resolution",
+          "blocking": true
+        },
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "In the specified film-production workflow screenplay precedes casting, shooting, post-production dubbing and showing. BDACE (C) alone satisfies the sequence; source B/D wrongly put dubbing before shooting and duplicate each other.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=149",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-28"
+          ]
+        },
+        {
+          "code": "duplicate-alternative",
+          "rationale": "In the specified film-production workflow screenplay precedes casting, shooting, post-production dubbing and showing. BDACE (C) alone satisfies the sequence; source B/D wrongly put dubbing before shooting and duplicate each other.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=149",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-28"
+          ]
+        },
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=149",
+            "docs/verification/editorial-full-corpus-task2.md#xiv-28"
+          ]
+        }
+      ]
+    }
+  }
+]

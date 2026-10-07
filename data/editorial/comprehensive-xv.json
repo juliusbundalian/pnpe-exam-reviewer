@@ -1,0 +1,1128 @@
+[
+  {
+    "sourceKey": "comprehensive:XV:1",
+    "proposed": {
+      "id": "q-000488",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XV",
+          "originalNumber": "1",
+          "pages": {
+            "start": 149,
+            "end": 149
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": null,
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=149",
+          "links": [],
+          "imageLocations": [
+            "evidence/reference-extraction/comprehensive/document.json#page=149&xref=341&bbox=73.5,339.25,525,616&image=images/7b65ad0dea6cc42b88652881fa4a12e39756173609c83969243451f7291397e1.png"
+          ],
+          "corrections": [
+            {
+              "reason": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV1 on originalPDFpages149–149; its own rawprompt is absent and rawchoices are 0.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xv-1"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV1 on originalPDFpages149–149; its own rawprompt is absent and rawchoices are 0.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV1 on originalPDFpages149–149; its own rawprompt is absent and rawchoices are 0. Open: Image/diagram-dependent question requires separately reviewed accessible learner assets and capability; retain this occurrence and source defects explicitly. Specific occurrenceXV1, pages149–149.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=149",
+      "docs/verification/editorial-full-corpus-task2.md#xv-1"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "image-only",
+          "message": "Observed numbered question and key are raster-only; transcription not approved",
+          "blocking": true
+        },
+        {
+          "code": "image-answer-leakage",
+          "message": "Source image exposes bold/underlined answer; never publish this asset",
+          "blocking": true
+        },
+        {
+          "code": "missing-prompt",
+          "message": "No usable source stem; source wording retained",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task2-unresolved",
+          "blocking": true,
+          "message": "Image/diagram-dependent question requires separately reviewed accessible learner assets and capability; retain this occurrence and source defects explicitly. Specific occurrenceXV1, pages149–149."
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "The exercise belongs to criticalThinking/patternAnalysis; its separate stated blocker remains unresolved.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=149",
+            "docs/verification/editorial-full-corpus-task2.md#xv-1"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XV:2",
+    "proposed": {
+      "id": "q-000489",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XV",
+          "originalNumber": "2",
+          "pages": {
+            "start": 150,
+            "end": 150
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": null,
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=150",
+          "links": [],
+          "imageLocations": [
+            "evidence/reference-extraction/comprehensive/document.json#page=150&xref=345&bbox=73.5,73.5,525,253.5&image=images/78525514332eb541da23ad8f3bd92956e443e17b450654938c63bb83c24a3afd.png"
+          ],
+          "corrections": [
+            {
+              "reason": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV2 on originalPDFpages150–150; its own rawprompt is absent and rawchoices are 0.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xv-2"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV2 on originalPDFpages150–150; its own rawprompt is absent and rawchoices are 0.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV2 on originalPDFpages150–150; its own rawprompt is absent and rawchoices are 0. Open: Image/diagram-dependent question requires separately reviewed accessible learner assets and capability; retain this occurrence and source defects explicitly. Specific occurrenceXV2, pages150–150.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=150",
+      "docs/verification/editorial-full-corpus-task2.md#xv-2"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "image-only",
+          "message": "Observed numbered question and key are raster-only; transcription not approved",
+          "blocking": true
+        },
+        {
+          "code": "image-answer-leakage",
+          "message": "Source image exposes bold/underlined answer; never publish this asset",
+          "blocking": true
+        },
+        {
+          "code": "missing-prompt",
+          "message": "No usable source stem; source wording retained",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task2-unresolved",
+          "blocking": true,
+          "message": "Image/diagram-dependent question requires separately reviewed accessible learner assets and capability; retain this occurrence and source defects explicitly. Specific occurrenceXV2, pages150–150."
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "The exercise belongs to criticalThinking/patternAnalysis; its separate stated blocker remains unresolved.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=150",
+            "docs/verification/editorial-full-corpus-task2.md#xv-2"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XV:3",
+    "proposed": {
+      "id": "q-000490",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XV",
+          "originalNumber": "3",
+          "pages": {
+            "start": 150,
+            "end": 150
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": null,
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=150",
+          "links": [],
+          "imageLocations": [
+            "evidence/reference-extraction/comprehensive/document.json#page=150&xref=346&bbox=73.5,259.234375,525,429.484375&image=images/660de6c55106df459a944566e805cb5a2b0b9a892be9d88648800691f29286c3.png"
+          ],
+          "corrections": [
+            {
+              "reason": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV3 on originalPDFpages150–150; its own rawprompt is absent and rawchoices are 0.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xv-3"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV3 on originalPDFpages150–150; its own rawprompt is absent and rawchoices are 0.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV3 on originalPDFpages150–150; its own rawprompt is absent and rawchoices are 0. Open: Image/diagram-dependent question requires separately reviewed accessible learner assets and capability; retain this occurrence and source defects explicitly. Specific occurrenceXV3, pages150–150.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=150",
+      "docs/verification/editorial-full-corpus-task2.md#xv-3"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "image-only",
+          "message": "Observed numbered question and key are raster-only; transcription not approved",
+          "blocking": true
+        },
+        {
+          "code": "image-answer-leakage",
+          "message": "Source image exposes bold/underlined answer; never publish this asset",
+          "blocking": true
+        },
+        {
+          "code": "missing-prompt",
+          "message": "No usable source stem; source wording retained",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task2-unresolved",
+          "blocking": true,
+          "message": "Image/diagram-dependent question requires separately reviewed accessible learner assets and capability; retain this occurrence and source defects explicitly. Specific occurrenceXV3, pages150–150."
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "The exercise belongs to criticalThinking/patternAnalysis; its separate stated blocker remains unresolved.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=150",
+            "docs/verification/editorial-full-corpus-task2.md#xv-3"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XV:4",
+    "proposed": {
+      "id": "q-000491",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XV",
+          "originalNumber": "4",
+          "pages": {
+            "start": 151,
+            "end": 151
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": null,
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=151",
+          "links": [],
+          "imageLocations": [
+            "evidence/reference-extraction/comprehensive/document.json#page=151&xref=349&bbox=73.5,73.5,525,247.5&image=images/504bed69c8f38c31944687cd9d14aa7d25586002e18f002dd54e473f9e6296a5.png"
+          ],
+          "corrections": [
+            {
+              "reason": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV4 on originalPDFpages151–151; its own rawprompt is absent and rawchoices are 0.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xv-4"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV4 on originalPDFpages151–151; its own rawprompt is absent and rawchoices are 0.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV4 on originalPDFpages151–151; its own rawprompt is absent and rawchoices are 0. Open: Image/diagram-dependent question requires separately reviewed accessible learner assets and capability; retain this occurrence and source defects explicitly. Specific occurrenceXV4, pages151–151.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=151",
+      "docs/verification/editorial-full-corpus-task2.md#xv-4"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "image-only",
+          "message": "Observed numbered question and key are raster-only; transcription not approved",
+          "blocking": true
+        },
+        {
+          "code": "image-answer-leakage",
+          "message": "Source image exposes bold/underlined answer; never publish this asset",
+          "blocking": true
+        },
+        {
+          "code": "missing-prompt",
+          "message": "No usable source stem; source wording retained",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task2-unresolved",
+          "blocking": true,
+          "message": "Image/diagram-dependent question requires separately reviewed accessible learner assets and capability; retain this occurrence and source defects explicitly. Specific occurrenceXV4, pages151–151."
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "The exercise belongs to criticalThinking/patternAnalysis; its separate stated blocker remains unresolved.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=151",
+            "docs/verification/editorial-full-corpus-task2.md#xv-4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XV:5",
+    "proposed": {
+      "id": "q-000492",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XV",
+          "originalNumber": "5",
+          "pages": {
+            "start": 151,
+            "end": 151
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": null,
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=151",
+          "links": [],
+          "imageLocations": [
+            "evidence/reference-extraction/comprehensive/document.json#page=151&xref=350&bbox=73.5,253.234375,525,436.984375&image=images/bba11fdc28d44dc557b49e5b61eada0e67a684e30739044cb9621f6e7e2724c2.png"
+          ],
+          "corrections": [
+            {
+              "reason": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV5 on originalPDFpages151–151; its own rawprompt is absent and rawchoices are 0.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xv-5"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV5 on originalPDFpages151–151; its own rawprompt is absent and rawchoices are 0.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV5 on originalPDFpages151–151; its own rawprompt is absent and rawchoices are 0. Open: Image/diagram-dependent question requires separately reviewed accessible learner assets and capability; retain this occurrence and source defects explicitly. Specific occurrenceXV5, pages151–151.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=151",
+      "docs/verification/editorial-full-corpus-task2.md#xv-5"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "image-only",
+          "message": "Observed numbered question and key are raster-only; transcription not approved",
+          "blocking": true
+        },
+        {
+          "code": "image-answer-leakage",
+          "message": "Source image exposes bold/underlined answer; never publish this asset",
+          "blocking": true
+        },
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "missing-prompt",
+          "message": "No usable source stem; source wording retained",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task2-unresolved",
+          "blocking": true,
+          "message": "Image/diagram-dependent question requires separately reviewed accessible learner assets and capability; retain this occurrence and source defects explicitly. Specific occurrenceXV5, pages151–151."
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "The exercise belongs to criticalThinking/patternAnalysis; its separate stated blocker remains unresolved.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=151",
+            "docs/verification/editorial-full-corpus-task2.md#xv-5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XV:6",
+    "proposed": {
+      "id": "q-000493",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which expression is NOT algebraically equivalent to the other four?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "3(3+3XY)/9",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "6(6+6XY)/36",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "10(10+10XY)/100",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "5(15+5XY)/25",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "8(8+8XY)/64",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XV",
+          "originalNumber": "6",
+          "pages": {
+            "start": 151,
+            "end": 152
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "d.) 5(15+5XY)25\\frac{5(15+5XY)}{25}",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=151",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Removed the source’s malformed duplicated inline/TeX strings and reconstructed the displayed fractional expressions as unambiguous text; checked identity symbolically for all variables.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xv-6"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Reconstructed fractions from the printed literal TeX on page151. For anyX,Y, A3(3+3XY)/9=1+XY; B6(6+6XY)/36=1+XY; C10(10+10XY)/100=1+XY; E8(8+8XY)/64=1+XY. D5(15+5XY)/25=3+XY, differing by2 for allX,Y. D is uniquely not algebraically equivalent.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Reconstructed fractions from the printed literal TeX on page151. For anyX,Y, A3(3+3XY)/9=1+XY; B6(6+6XY)/36=1+XY; C10(10+10XY)/100=1+XY; E8(8+8XY)/64=1+XY. D5(15+5XY)/25=3+XY, differing by2 for allX,Y. D is uniquely not algebraically equivalent. Authored repair: Removed the source’s malformed duplicated inline/TeX strings and reconstructed the displayed fractional expressions as unambiguous text; checked identity symbolically for all variables.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=151",
+      "docs/verification/editorial-full-corpus-task2.md#xv-6",
+      "evidence/editorial/task-2/pdf-snapshots/page-151.png"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "Reconstructed fractions from the printed literal TeX on page151. For anyX,Y, A3(3+3XY)/9=1+XY; B6(6+6XY)/36=1+XY; C10(10+10XY)/100=1+XY; E8(8+8XY)/64=1+XY. D5(15+5XY)/25=3+XY, differing by2 for allX,Y. D is uniquely not algebraically equivalent.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=151",
+            "docs/verification/editorial-full-corpus-task2.md#xv-6",
+            "evidence/editorial/task-2/pdf-snapshots/page-151.png"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XV:7",
+    "proposed": {
+      "id": "q-000494",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XV",
+          "originalNumber": "7",
+          "pages": {
+            "start": 152,
+            "end": 152
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": null,
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=152",
+          "links": [],
+          "imageLocations": [
+            "evidence/reference-extraction/comprehensive/document.json#page=152&xref=353&bbox=73.5,100.04685974121094,525,277.796875&image=images/a1f1dcad130da72f9742f5ce9f9c9e3ff6658f31ba3fb70fdb928c744fa21c9e.png"
+          ],
+          "corrections": [
+            {
+              "reason": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV7 on originalPDFpages152–152; its own rawprompt is absent and rawchoices are 0.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xv-7"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV7 on originalPDFpages152–152; its own rawprompt is absent and rawchoices are 0.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV7 on originalPDFpages152–152; its own rawprompt is absent and rawchoices are 0. Open: Image/diagram-dependent question requires separately reviewed accessible learner assets and capability; retain this occurrence and source defects explicitly. Specific occurrenceXV7, pages152–152.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=152",
+      "docs/verification/editorial-full-corpus-task2.md#xv-7"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "image-only",
+          "message": "Observed numbered question and key are raster-only; transcription not approved",
+          "blocking": true
+        },
+        {
+          "code": "image-answer-leakage",
+          "message": "Source image exposes bold/underlined answer; never publish this asset",
+          "blocking": true
+        },
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "missing-prompt",
+          "message": "No usable source stem; source wording retained",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task2-unresolved",
+          "blocking": true,
+          "message": "Image/diagram-dependent question requires separately reviewed accessible learner assets and capability; retain this occurrence and source defects explicitly. Specific occurrenceXV7, pages152–152."
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "The exercise belongs to criticalThinking/patternAnalysis; its separate stated blocker remains unresolved.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=152",
+            "docs/verification/editorial-full-corpus-task2.md#xv-7"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XV:8",
+    "proposed": {
+      "id": "q-000495",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XV",
+          "originalNumber": "8",
+          "pages": {
+            "start": 152,
+            "end": 152
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": null,
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=152",
+          "links": [],
+          "imageLocations": [
+            "evidence/reference-extraction/comprehensive/document.json#page=152&xref=354&bbox=73.5,283.5234375,525,448.5234375&image=images/110756d9696d8c127829fff8c1cd15e451052ad8fdee50e5a201b55e266ec354.png"
+          ],
+          "corrections": [
+            {
+              "reason": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV8 on originalPDFpages152–152; its own rawprompt is absent and rawchoices are 0.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xv-8"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV8 on originalPDFpages152–152; its own rawprompt is absent and rawchoices are 0.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV8 on originalPDFpages152–152; its own rawprompt is absent and rawchoices are 0. Open: Image/diagram-dependent question requires separately reviewed accessible learner assets and capability; retain this occurrence and source defects explicitly. Specific occurrenceXV8, pages152–152.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=152",
+      "docs/verification/editorial-full-corpus-task2.md#xv-8"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "image-only",
+          "message": "Observed numbered question and key are raster-only; transcription not approved",
+          "blocking": true
+        },
+        {
+          "code": "image-answer-leakage",
+          "message": "Source image exposes bold/underlined answer; never publish this asset",
+          "blocking": true
+        },
+        {
+          "code": "missing-prompt",
+          "message": "No usable source stem; source wording retained",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task2-unresolved",
+          "blocking": true,
+          "message": "Image/diagram-dependent question requires separately reviewed accessible learner assets and capability; retain this occurrence and source defects explicitly. Specific occurrenceXV8, pages152–152."
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "The exercise belongs to criticalThinking/patternAnalysis; its separate stated blocker remains unresolved.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=152",
+            "docs/verification/editorial-full-corpus-task2.md#xv-8"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XV:9",
+    "proposed": {
+      "id": "q-000496",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XV",
+          "originalNumber": "9",
+          "pages": {
+            "start": 152,
+            "end": 152
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": null,
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=152",
+          "links": [],
+          "imageLocations": [
+            "evidence/reference-extraction/comprehensive/document.json#page=152&xref=355&bbox=73.5,492.796875,525,658.546875&image=images/935214d7b3885816db8d9e9ebbf5a1835d2a6ef98284802ee911eaf9a4c318ed.png"
+          ],
+          "corrections": [
+            {
+              "reason": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV9 on originalPDFpages152–152; its own rawprompt is absent and rawchoices are 0.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xv-9"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV9 on originalPDFpages152–152; its own rawprompt is absent and rawchoices are 0.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV9 on originalPDFpages152–152; its own rawprompt is absent and rawchoices are 0. Open: Image/diagram-dependent question requires separately reviewed accessible learner assets and capability; retain this occurrence and source defects explicitly. Specific occurrenceXV9, pages152–152.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=152",
+      "docs/verification/editorial-full-corpus-task2.md#xv-9"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "image-only",
+          "message": "Observed numbered question and key are raster-only; transcription not approved",
+          "blocking": true
+        },
+        {
+          "code": "image-answer-leakage",
+          "message": "Source image exposes bold/underlined answer; never publish this asset",
+          "blocking": true
+        },
+        {
+          "code": "missing-prompt",
+          "message": "No usable source stem; source wording retained",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task2-unresolved",
+          "blocking": true,
+          "message": "Image/diagram-dependent question requires separately reviewed accessible learner assets and capability; retain this occurrence and source defects explicitly. Specific occurrenceXV9, pages152–152."
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "The exercise belongs to criticalThinking/patternAnalysis; its separate stated blocker remains unresolved.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=152",
+            "docs/verification/editorial-full-corpus-task2.md#xv-9"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XV:10",
+    "proposed": {
+      "id": "q-000497",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "patternAnalysis",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Cross the odd one out.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XV",
+          "originalNumber": "10",
+          "pages": {
+            "start": 153,
+            "end": 153
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "d.)",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=153",
+          "links": [],
+          "imageLocations": [
+            "evidence/reference-extraction/comprehensive/document.json#page=153&xref=358&bbox=62.25,102.9375,139.5,405.1875&image=images/a0bbf890724ad1e5ad5d236600836d5dcc531dcaf2c24b403451455e1603d8b7.png"
+          ],
+          "corrections": [
+            {
+              "reason": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV10 on originalPDFpages153–153; its own rawprompt is present but diagram-dependent and rawchoices are 0.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xv-10"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV10 on originalPDFpages153–153; its own rawprompt is present but diagram-dependent and rawchoices are 0.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "The numbered occurrence depends on a source diagram/image or absent accessible alternatives. Answer-marked source imagery is evidence only; no learner-asset approval, accessible reconstruction or hosting contract exists for this occurrence. This is occurrenceXV10 on originalPDFpages153–153; its own rawprompt is present but diagram-dependent and rawchoices are 0. Open: Image/diagram-dependent question requires separately reviewed accessible learner assets and capability; retain this occurrence and source defects explicitly. Specific occurrenceXV10, pages153–153.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=153",
+      "docs/verification/editorial-full-corpus-task2.md#xv-10"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "asset-review",
+          "message": "Diagram requires reviewed accessible asset before publication",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task2-unresolved",
+          "blocking": true,
+          "message": "Image/diagram-dependent question requires separately reviewed accessible learner assets and capability; retain this occurrence and source defects explicitly. Specific occurrenceXV10, pages153–153."
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "The exercise belongs to criticalThinking/patternAnalysis; its separate stated blocker remains unresolved.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=153",
+            "docs/verification/editorial-full-corpus-task2.md#xv-10"
+          ]
+        }
+      ]
+    }
+  }
+]

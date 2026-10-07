@@ -1,0 +1,1898 @@
+[
+  {
+    "sourceKey": "comprehensive:XI:1",
+    "proposed": {
+      "id": "q-000410",
+      "version": 1,
+      "categoryId": "quantitativeReasoning",
+      "subcategoryId": "basicConcepts",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Write 2.5% in fraction form.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "1/4",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "1/4000",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "1/40",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "1/400",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XI",
+          "originalNumber": "1",
+          "pages": {
+            "start": 121,
+            "end": 121
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "C.) 1/40",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=121",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "2.5%=2.5/100=25/1,000=1/40; uniquely C.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xi-1"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "2.5%=2.5/100=25/1,000=1/40; uniquely C.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "2.5%=2.5/100=25/1,000=1/40; uniquely C.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=121",
+      "docs/verification/editorial-full-corpus-task2.md#xi-1"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned quantitativeReasoning/basicConcepts because the proposal assesses basicConcepts as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=121",
+            "docs/verification/editorial-full-corpus-task2.md#xi-1"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XI:2",
+    "proposed": {
+      "id": "q-000411",
+      "version": 1,
+      "categoryId": "quantitativeReasoning",
+      "subcategoryId": "problemSolving",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "A long-sleeved polo is priced at ₱600. If a man is given 15% discount,\nhow much\nwould be his change for his ₱600?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "70",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "90",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "80",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "75",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XI",
+          "originalNumber": "2",
+          "pages": {
+            "start": 122,
+            "end": 122
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "B.) 90",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=122",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Discount0.15×600=90; price510; paying600 gives90 change, uniquely B.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xi-2"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Discount0.15×600=90; price510; paying600 gives90 change, uniquely B.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Discount0.15×600=90; price510; paying600 gives90 change, uniquely B.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=122",
+      "docs/verification/editorial-full-corpus-task2.md#xi-2"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned quantitativeReasoning/problemSolving because the proposal assesses problemSolving as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=122",
+            "docs/verification/editorial-full-corpus-task2.md#xi-2"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XI:3",
+    "proposed": {
+      "id": "q-000412",
+      "version": 1,
+      "categoryId": "quantitativeReasoning",
+      "subcategoryId": "problemSolving",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "A basket contains X number of ripe mangoes. If 9 mangoes are to be\nadded to 5\ntimes the number of mangoes in the basket, the result is 69 mangoes. How many\nmangoes are there in the basket originally?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "30",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "15",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "24",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "12",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XI",
+          "originalNumber": "3",
+          "pages": {
+            "start": 122,
+            "end": 122
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "D.) 12",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=122",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "5X+9=69 implies5X=60, so X=12; uniquely D.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xi-3"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "5X+9=69 implies5X=60, so X=12; uniquely D.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "5X+9=69 implies5X=60, so X=12; uniquely D.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=122",
+      "docs/verification/editorial-full-corpus-task2.md#xi-3"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned quantitativeReasoning/problemSolving because the proposal assesses problemSolving as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=122",
+            "docs/verification/editorial-full-corpus-task2.md#xi-3"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XI:4",
+    "proposed": {
+      "id": "q-000413",
+      "version": 1,
+      "categoryId": "quantitativeReasoning",
+      "subcategoryId": "problemSolving",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "A hundred sheets of 24\" x 36\" glossy paper for magazine cover is\npriced at ₱1,200.\nHOw much is the cost of 750 sheets?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱7,500",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱9,000",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱8,500",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱8,000",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XI",
+          "originalNumber": "4",
+          "pages": {
+            "start": 122,
+            "end": 123
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "B.) ₱9,000",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=122",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "100 sheets cost1,200, hence12/sheet;750×12=9,000, uniquely B, assuming unchanged unit rate.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xi-4"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "100 sheets cost1,200, hence12/sheet;750×12=9,000, uniquely B, assuming unchanged unit rate.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "100 sheets cost1,200, hence12/sheet;750×12=9,000, uniquely B, assuming unchanged unit rate.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=122",
+      "docs/verification/editorial-full-corpus-task2.md#xi-4"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned quantitativeReasoning/problemSolving because the proposal assesses problemSolving as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=122",
+            "docs/verification/editorial-full-corpus-task2.md#xi-4"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XI:5",
+    "proposed": {
+      "id": "q-000414",
+      "version": 1,
+      "categoryId": "quantitativeReasoning",
+      "subcategoryId": "problemSolving",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "If 9 yards is equal to 27 feet, how many yards are there in 216 feet?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "84",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "68",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "72",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "74",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XI",
+          "originalNumber": "5",
+          "pages": {
+            "start": 123,
+            "end": 123
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "C.) 72",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=123",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "9yards=27feet, so3feet/yard;216/3=72yards, uniquely C.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xi-5"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "9yards=27feet, so3feet/yard;216/3=72yards, uniquely C.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "9yards=27feet, so3feet/yard;216/3=72yards, uniquely C.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=123",
+      "docs/verification/editorial-full-corpus-task2.md#xi-5"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned quantitativeReasoning/problemSolving because the proposal assesses problemSolving as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=123",
+            "docs/verification/editorial-full-corpus-task2.md#xi-5"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XI:6",
+    "proposed": {
+      "id": "q-000415",
+      "version": 1,
+      "categoryId": "quantitativeReasoning",
+      "subcategoryId": "problemSolving",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "The area of a square rice field is 441 square meters. If the owner of the\nfield wants to enclose it with chicken wire, how many meters of chicken\nwire does he need to enclose it completely?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "84 meters",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "86 meters",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "96 meters",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "72 meters",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XI",
+          "originalNumber": "6",
+          "pages": {
+            "start": 123,
+            "end": 124
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "a.) 84 meters",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=123",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Square side√441=21m; perimeter4×21=84m, uniquely A; no gate or overlap is specified.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xi-6"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Square side√441=21m; perimeter4×21=84m, uniquely A; no gate or overlap is specified.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Square side√441=21m; perimeter4×21=84m, uniquely A; no gate or overlap is specified.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=123",
+      "docs/verification/editorial-full-corpus-task2.md#xi-6"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned quantitativeReasoning/problemSolving because the proposal assesses problemSolving as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=123",
+            "docs/verification/editorial-full-corpus-task2.md#xi-6"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XI:7",
+    "proposed": {
+      "id": "q-000416",
+      "version": 1,
+      "categoryId": "quantitativeReasoning",
+      "subcategoryId": "problemSolving",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Three years ago, Harry was 24 years old. Harry’s only niece was one-eighth of Harry’s age then. How old is the niece now?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "9",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "7",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "8",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "6",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XI",
+          "originalNumber": "7",
+          "pages": {
+            "start": 124,
+            "end": 124
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "d.) 6",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=124",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced inconsistent gendered pronouns without altering the age relationship.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xi-7"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Three years ago niece age24/8=3; now3+3=6, uniquely D. Harry’s gender/pronoun inconsistency is removed without changing ages.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Three years ago niece age24/8=3; now3+3=6, uniquely D. Harry’s gender/pronoun inconsistency is removed without changing ages. Authored repair: Replaced inconsistent gendered pronouns without altering the age relationship.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=124",
+      "docs/verification/editorial-full-corpus-task2.md#xi-7"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned quantitativeReasoning/problemSolving because the proposal assesses problemSolving as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=124",
+            "docs/verification/editorial-full-corpus-task2.md#xi-7"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XI:8",
+    "proposed": {
+      "id": "q-000417",
+      "version": 1,
+      "categoryId": "quantitativeReasoning",
+      "subcategoryId": "problemSolving",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Before making any purchases, Martin has money in his wallet. A ₱60,000 TV costs one-third of that original amount, and a ₱15,000 DVD player costs one-twelfth of the same original amount. How much money did he originally have?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱175,000",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱180,000",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱150,000",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱160,000",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XI",
+          "originalNumber": "8",
+          "pages": {
+            "start": 124,
+            "end": 125
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "b.) ₱180,000",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=124",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored clarification that both fractions refer to the original pre-purchase wallet amount, not a sequential balance.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xi-8"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Both prices imply the original wallet amount:60,000×3=180,000 and15,000×12=180,000. Thus180,000, uniquely B; this is the pre-purchase amount, not105,000 remaining.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Both prices imply the original wallet amount:60,000×3=180,000 and15,000×12=180,000. Thus180,000, uniquely B; this is the pre-purchase amount, not105,000 remaining. Authored repair: Authored clarification that both fractions refer to the original pre-purchase wallet amount, not a sequential balance.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=124",
+      "docs/verification/editorial-full-corpus-task2.md#xi-8"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned quantitativeReasoning/problemSolving because the proposal assesses problemSolving as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=124",
+            "docs/verification/editorial-full-corpus-task2.md#xi-8"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XI:9",
+    "proposed": {
+      "id": "q-000418",
+      "version": 1,
+      "categoryId": "quantitativeReasoning",
+      "subcategoryId": "problemSolving",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "A roll of decorative abaca thread is 600 ft. long. Express this length in\nyards.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "150 yards",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "180 yards",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "200 yards",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "250 yards",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XI",
+          "originalNumber": "9",
+          "pages": {
+            "start": 125,
+            "end": 125
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "c.) 200 yards",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=125",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "600feet÷3feet/yard=200yards, uniquely C.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xi-9"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "600feet÷3feet/yard=200yards, uniquely C.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "600feet÷3feet/yard=200yards, uniquely C.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=125",
+      "docs/verification/editorial-full-corpus-task2.md#xi-9"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned quantitativeReasoning/problemSolving because the proposal assesses problemSolving as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=125",
+            "docs/verification/editorial-full-corpus-task2.md#xi-9"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XI:10",
+    "proposed": {
+      "id": "q-000419",
+      "version": 1,
+      "categoryId": "quantitativeReasoning",
+      "subcategoryId": "problemSolving",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Find the average speed of the PNR train travelling 120 kilometers in 6\nhours.",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "30kph",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "20kph",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "45kph",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "26kph",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XI",
+          "originalNumber": "10",
+          "pages": {
+            "start": 125,
+            "end": 126
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "b.) 20kph",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=125",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Average speed=total distance/elapsed time=120km/6h=20km/h, uniquely B.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xi-10"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Average speed=total distance/elapsed time=120km/6h=20km/h, uniquely B.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Average speed=total distance/elapsed time=120km/6h=20km/h, uniquely B.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=125",
+      "docs/verification/editorial-full-corpus-task2.md#xi-10"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned quantitativeReasoning/problemSolving because the proposal assesses problemSolving as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=125",
+            "docs/verification/editorial-full-corpus-task2.md#xi-10"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XI:11",
+    "proposed": {
+      "id": "q-000420",
+      "version": 1,
+      "categoryId": "quantitativeReasoning",
+      "subcategoryId": "problemSolving",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Mario is buying a square rice field at ₱1,500 per square meter. If the\narea of the rice field is 500 sq. meters, how much is the cost of the rice\nfield?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱750,000",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱650,000",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱550,000",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱715,000",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱600,000",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XI",
+          "originalNumber": "11",
+          "pages": {
+            "start": 126,
+            "end": 126
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "a.) ₱750,000",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=126",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "500m²×1,500/m²=750,000; uniquely A. Shape is irrelevant to multiplication by area.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xi-11"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "500m²×1,500/m²=750,000; uniquely A. Shape is irrelevant to multiplication by area.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "500m²×1,500/m²=750,000; uniquely A. Shape is irrelevant to multiplication by area.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=126",
+      "docs/verification/editorial-full-corpus-task2.md#xi-11"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned quantitativeReasoning/problemSolving because the proposal assesses problemSolving as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=126",
+            "docs/verification/editorial-full-corpus-task2.md#xi-11"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XI:12",
+    "proposed": {
+      "id": "q-000421",
+      "version": 1,
+      "categoryId": "quantitativeReasoning",
+      "subcategoryId": "problemSolving",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "A rectangular rice field measures 25 meters by 40 meters and costs ₱1,500 per square meter. What is its total price?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱2,000,000",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱1,500,000",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱1,000,000",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱1,800,000",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XI",
+          "originalNumber": "12",
+          "pages": {
+            "start": 126,
+            "end": 126
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "b.) ₱1,500,000",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=126",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Made the revised rectangular field self-contained; retained the supplied dimensions and unit price, not XI11’s500m².",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xi-12"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The revised rectangular field has area25×40=1,000m²; at1,500/m² cost1,500,000, uniquely B. The source refers back to XI11 but changes the area; standalone wording explicitly replaces that field.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "The revised rectangular field has area25×40=1,000m²; at1,500/m² cost1,500,000, uniquely B. The source refers back to XI11 but changes the area; standalone wording explicitly replaces that field. Authored repair: Made the revised rectangular field self-contained; retained the supplied dimensions and unit price, not XI11’s500m².",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=126",
+      "docs/verification/editorial-full-corpus-task2.md#xi-12"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "The revised rectangular field has area25×40=1,000m²; at1,500/m² cost1,500,000, uniquely B. The source refers back to XI11 but changes the area; standalone wording explicitly replaces that field.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=126",
+            "docs/verification/editorial-full-corpus-task2.md#xi-12"
+          ]
+        },
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned quantitativeReasoning/problemSolving because the proposal assesses problemSolving as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=126",
+            "docs/verification/editorial-full-corpus-task2.md#xi-12"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XI:13",
+    "proposed": {
+      "id": "q-000422",
+      "version": 1,
+      "categoryId": "quantitativeReasoning",
+      "subcategoryId": "problemSolving",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Ramil needs ₱27,000 to pay for his monthly rental of the condo unit\nhe is occupying.\nIf the company where he works gives him 6% commission on products sold, how much\nshould his sales be to yield the amount he needs?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱350,000",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱420,000",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱500,000",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱450,000",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XI",
+          "originalNumber": "13",
+          "pages": {
+            "start": 126,
+            "end": 127
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "d.) ₱450,000",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=126",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "0.06×sales=27,000 implies sales=27,000/0.06=450,000, uniquely D.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xi-13"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "0.06×sales=27,000 implies sales=27,000/0.06=450,000, uniquely D.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "0.06×sales=27,000 implies sales=27,000/0.06=450,000, uniquely D.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=126",
+      "docs/verification/editorial-full-corpus-task2.md#xi-13"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned quantitativeReasoning/problemSolving because the proposal assesses problemSolving as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=126",
+            "docs/verification/editorial-full-corpus-task2.md#xi-13"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XI:14",
+    "proposed": {
+      "id": "q-000423",
+      "version": 1,
+      "categoryId": "quantitativeReasoning",
+      "subcategoryId": "problemSolving",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Rina earns a gross monthly salary of ₱15,000. Her loan deduction is 3% of that salary and her withholding-tax deduction is 5% of that same salary. How much remains after both deductions?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱14,200",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱13,500",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱13,800",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "₱14,000",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XI",
+          "originalNumber": "14",
+          "pages": {
+            "start": 127,
+            "end": 127
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "c.) ₱13,800",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=127",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Corrected3& to3% and explicitly stated both deductions use gross salary; these are hypothetical problem quantities, not verified tax rules.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xi-14"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Both deductions are percentages of gross15,000:3%=450 and5%=750; net15,000−450−750=13,800, uniquely C. The source glyph3& is repaired to3% and the common gross base is explicitly authored.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Both deductions are percentages of gross15,000:3%=450 and5%=750; net15,000−450−750=13,800, uniquely C. The source glyph3& is repaired to3% and the common gross base is explicitly authored. Authored repair: Corrected3& to3% and explicitly stated both deductions use gross salary; these are hypothetical problem quantities, not verified tax rules.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=127",
+      "docs/verification/editorial-full-corpus-task2.md#xi-14"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "Both deductions are percentages of gross15,000:3%=450 and5%=750; net15,000−450−750=13,800, uniquely C. The source glyph3& is repaired to3% and the common gross base is explicitly authored.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=127",
+            "docs/verification/editorial-full-corpus-task2.md#xi-14"
+          ]
+        },
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned quantitativeReasoning/problemSolving because the proposal assesses problemSolving as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=127",
+            "docs/verification/editorial-full-corpus-task2.md#xi-14"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XI:15",
+    "proposed": {
+      "id": "q-000424",
+      "version": 1,
+      "categoryId": "quantitativeReasoning",
+      "subcategoryId": "problemSolving",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "A brand new TV set with Youtube channel is priced at ₱26,500. If the\nstore selling\nthe TV set is giving the first ten buyers a ₱3,180 discount, what percent is that of the\ntotal price of the TV set?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "10%",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "12%",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "9%",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "15%",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XI",
+          "originalNumber": "15",
+          "pages": {
+            "start": 128,
+            "end": 128
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "b.) 12%",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=128",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Percent=3,180/26,500×100=12%; uniquely B.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xi-15"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Percent=3,180/26,500×100=12%; uniquely B.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Percent=3,180/26,500×100=12%; uniquely B.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=128",
+      "docs/verification/editorial-full-corpus-task2.md#xi-15"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned quantitativeReasoning/problemSolving because the proposal assesses problemSolving as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=128",
+            "docs/verification/editorial-full-corpus-task2.md#xi-15"
+          ]
+        }
+      ]
+    }
+  }
+]

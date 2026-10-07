@@ -1,0 +1,2042 @@
+[
+  {
+    "sourceKey": "comprehensive:XIII:1",
+    "proposed": {
+      "id": "q-000445",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "logicalReasoning",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Answer from the information in the passage. At their girl's night out, Rizza arrived at the venue at 9pm. Gemma\narrived ten minutes earlier while Jean arrived five minutes after Rizza. If\nCathy arrived five minutes after Gemma, what time did she arrive at the\nvenue?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "8:45pm",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "9:05pm",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "8:55pm",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "9:10pm",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "none of the above",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIII",
+          "originalNumber": "1",
+          "pages": {
+            "start": 133,
+            "end": 134
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "c.) 8:55pm",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=133",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Gemma arrives8:50pm (ten minutes before9pm); Cathy arrives five minutes later8:55pm. Jean’s9:05pm is irrelevant; uniquely C.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiii-1"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Gemma arrives8:50pm (ten minutes before9pm); Cathy arrives five minutes later8:55pm. Jean’s9:05pm is irrelevant; uniquely C.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Gemma arrives8:50pm (ten minutes before9pm); Cathy arrives five minutes later8:55pm. Jean’s9:05pm is irrelevant; uniquely C.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=133",
+      "docs/verification/editorial-full-corpus-task2.md#xiii-1"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/logicalReasoning because the proposal assesses logicalReasoning as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=133",
+            "docs/verification/editorial-full-corpus-task2.md#xiii-1"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIII:2",
+    "proposed": {
+      "id": "q-000446",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "deduction",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Answer from the information in the passage. One of the complications of diabetes is eye damage which is called\nretinopathy. This is a disease of the retina that results in impairment or\nloss of vision. More than a year ago, Joey's father was diagnosed to\nhave diabetes because his eyes were itchy. Is he suffering from\nretinopathy?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "No",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Very definitely",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Yes",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Cannot be determined from the information given",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Impossible",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIII",
+          "originalNumber": "2",
+          "pages": {
+            "start": 134,
+            "end": 134
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "a.) no",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=134",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced the source’s unjustified definitive diagnosis/no key with a non-diagnostic inference; D wording is an authored uncertainty alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiii-2"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Diabetes increases risk but neither diagnosis nor itchy eyes establishes retinopathy. The supplied facts leave it possible, not certain and not ruled out. D is revised to “Cannot be determined from the information given,” uniquely rejecting all definitive alternatives. NEI states early retinopathy can be asymptomatic and diagnosis needs an eye exam; the source’s definitive “no” is not valid.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Diabetes increases risk but neither diagnosis nor itchy eyes establishes retinopathy. The supplied facts leave it possible, not certain and not ruled out. D is revised to “Cannot be determined from the information given,” uniquely rejecting all definitive alternatives. NEI states early retinopathy can be asymptomatic and diagnosis needs an eye exam; the source’s definitive “no” is not valid. Authored repair: Replaced the source’s unjustified definitive diagnosis/no key with a non-diagnostic inference; D wording is an authored uncertainty alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=134",
+      "docs/verification/editorial-full-corpus-task2.md#xiii-2",
+      "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/diabetic-retinopathy"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "audited-source-defect",
+          "message": "Audit identified an unresolved source defect; inspect original evidence before revision",
+          "blocking": true
+        },
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "audited-source-defect",
+          "rationale": "Diabetes increases risk but neither diagnosis nor itchy eyes establishes retinopathy. The supplied facts leave it possible, not certain and not ruled out. D is revised to “Cannot be determined from the information given,” uniquely rejecting all definitive alternatives. NEI states early retinopathy can be asymptomatic and diagnosis needs an eye exam; the source’s definitive “no” is not valid.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=134",
+            "docs/verification/editorial-full-corpus-task2.md#xiii-2",
+            "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/diabetic-retinopathy"
+          ]
+        },
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/deduction because the proposal assesses deduction as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=134",
+            "docs/verification/editorial-full-corpus-task2.md#xiii-2",
+            "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/diabetic-retinopathy"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/diabetic-retinopathy",
+        "verifiedAt": "2026-10-07T16:00:32Z",
+        "rationale": "Diabetes increases risk but neither diagnosis nor itchy eyes establishes retinopathy. The supplied facts leave it possible, not certain and not ruled out. D is revised to “Cannot be determined from the information given,” uniquely rejecting all definitive alternatives. NEI states early retinopathy can be asymptomatic and diagnosis needs an eye exam; the source’s definitive “no” is not valid."
+      }
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIII:3",
+    "proposed": {
+      "id": "q-000447",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "deduction",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Answer from the information in the passage. Karate was once written with characters meaning “Chinese hand.” Later its name was written with characters meaning “empty hand.” According to this passage, which of the following sentences is supported?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The Chinese people are good in karate.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Karate became popular when it was introduced into Japan.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The original name for karate was kara.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The translation \"empty hand\" was first used in 1722 when karate was introduced into\nJapan.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "None of the above.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIII",
+          "originalNumber": "3",
+          "pages": {
+            "start": 134,
+            "end": 135
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "e.) None of the above.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=134",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Removed unsupported1722 first-use claim and reduced the passage to the independently supported change of written meaning. Alternatives and E key remain.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiii-3"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The revised passage states the change of meaning only. It does not say Chinese people are good at karate, that the art became popular, that kara alone was the original name, or that empty-hand was used in1722. Thus E, none of A–D, is uniquely supported. JKA says exact emergence is uncertain; JSKA supports the change in meaning. The unsupported1722 claim is removed.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "The revised passage states the change of meaning only. It does not say Chinese people are good at karate, that the art became popular, that kara alone was the original name, or that empty-hand was used in1722. Thus E, none of A–D, is uniquely supported. JKA says exact emergence is uncertain; JSKA supports the change in meaning. The unsupported1722 claim is removed. Authored repair: Removed unsupported1722 first-use claim and reduced the passage to the independently supported change of written meaning. Alternatives and E key remain.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=134",
+      "docs/verification/editorial-full-corpus-task2.md#xiii-3",
+      "https://jska.jp/history",
+      "https://www.jka.or.jp/en/about-jka/history/"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/deduction because the proposal assesses deduction as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=134",
+            "docs/verification/editorial-full-corpus-task2.md#xiii-3",
+            "https://jska.jp/history",
+            "https://www.jka.or.jp/en/about-jka/history/"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://jska.jp/history",
+        "verifiedAt": "2026-10-07T16:01:36Z",
+        "rationale": "The revised passage states the change of meaning only. It does not say Chinese people are good at karate, that the art became popular, that kara alone was the original name, or that empty-hand was used in1722. Thus E, none of A–D, is uniquely supported. JKA says exact emergence is uncertain; JSKA supports the change in meaning. The unsupported1722 claim is removed."
+      }
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIII:4",
+    "proposed": {
+      "id": "q-000448",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "deduction",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Answer from the information in the passage. The passage describes Aguinaldo as eager to fight for Philippine independence when he joined the Katipunan in1895. He became president of the revolutionary government at Tejeros on March22,1897. What is expressly supported by this paragraph?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Aguinaldo executed Bonifacio to gain total leadership of the revolution against Spain.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Aguinaldo competed with Bonifacio for the leadership of a secret society of\nrevolutionaries.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Aguinaldo took up with a secret society of revolutionaries because he was eager to fight\nfor the cause of Philippine Independence.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Aguinaldo invited Bonifacio to join him in his fight for Philippine Independence.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "All of the above.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIII",
+          "originalNumber": "4",
+          "pages": {
+            "start": 135,
+            "end": 135
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "c.) Aguinaldo took up with a secret society of revolutionaries\nbecause he was eager to fight for the cause of Philippine Independence.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=135",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced the disputed execution-to-leadership chronology with NHCP’s dated presidency; preserved the source-described motive as passage content, not a independently proved psychological claim.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiii-4"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The first sentence expressly supplies Aguinaldo’s motive for joining; C restates it. A adds execution and motive; B adds competition; D reverses who joined; E includes those unsupported alternatives. NHCP verifies1895 membership and March22,1897 presidency; the source’s second sentence implying total leadership only after Bonifacio’s execution is replaced by that dated fact.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "The first sentence expressly supplies Aguinaldo’s motive for joining; C restates it. A adds execution and motive; B adds competition; D reverses who joined; E includes those unsupported alternatives. NHCP verifies1895 membership and March22,1897 presidency; the source’s second sentence implying total leadership only after Bonifacio’s execution is replaced by that dated fact. Authored repair: Replaced the disputed execution-to-leadership chronology with NHCP’s dated presidency; preserved the source-described motive as passage content, not a independently proved psychological claim.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=135",
+      "docs/verification/editorial-full-corpus-task2.md#xiii-4",
+      "https://philhistoricsites.nhcp.gov.ph/registry_database/emilio-aguinaldo-y-famy-1869-1964/"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/deduction because the proposal assesses deduction as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=135",
+            "docs/verification/editorial-full-corpus-task2.md#xiii-4",
+            "https://philhistoricsites.nhcp.gov.ph/registry_database/emilio-aguinaldo-y-famy-1869-1964/"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://philhistoricsites.nhcp.gov.ph/registry_database/emilio-aguinaldo-y-famy-1869-1964/",
+        "verifiedAt": "2026-10-07T16:01:36Z",
+        "rationale": "The first sentence expressly supplies Aguinaldo’s motive for joining; C restates it. A adds execution and motive; B adds competition; D reverses who joined; E includes those unsupported alternatives. NHCP verifies1895 membership and March22,1897 presidency; the source’s second sentence implying total leadership only after Bonifacio’s execution is replaced by that dated fact."
+      }
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIII:5",
+    "proposed": {
+      "id": "q-000449",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "deduction",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Answer from the information in the passage. Acupuncture is generally considered safe when performed by an\nexperienced practitioner using sterile needles. Improperly performed\nacupuncture can cause potentially serious side effects. Which of the\nfollowing sentences is true?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "When performed by an experienced practitioner, acupuncture is safe even with any kind\nof needles.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "When performed by inexperienced practitioners using sterile needles, acupuncture is\ngenerally safe.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "When performed improperly, acupuncture can cause potentially serious side effects.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "An experienced practitioner of acupuncture uses any kind of needles.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Acupuncture is unsafe when performed by inexperienced practitioners.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIII",
+          "originalNumber": "5",
+          "pages": {
+            "start": 135,
+            "end": 136
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "c.) When performed improperly, acupuncture can cause potentially\nserious side effects.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=135",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "The passage’s second sentence expressly supports C: improper acupuncture can have serious side effects. A/D ignore sterile needles; B ignores experience; E asserts categorical unsafety, stronger than possible adverse effects. NCCIH supports the safety caveats.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiii-5"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The passage’s second sentence expressly supports C: improper acupuncture can have serious side effects. A/D ignore sterile needles; B ignores experience; E asserts categorical unsafety, stronger than possible adverse effects. NCCIH supports the safety caveats.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "The passage’s second sentence expressly supports C: improper acupuncture can have serious side effects. A/D ignore sterile needles; B ignores experience; E asserts categorical unsafety, stronger than possible adverse effects. NCCIH supports the safety caveats.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=135",
+      "docs/verification/editorial-full-corpus-task2.md#xiii-5",
+      "https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/deduction because the proposal assesses deduction as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=135",
+            "docs/verification/editorial-full-corpus-task2.md#xiii-5",
+            "https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety",
+        "verifiedAt": "2026-10-07T16:00:32Z",
+        "rationale": "The passage’s second sentence expressly supports C: improper acupuncture can have serious side effects. A/D ignore sterile needles; B ignores experience; E asserts categorical unsafety, stronger than possible adverse effects. NCCIH supports the safety caveats."
+      }
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIII:6",
+    "proposed": {
+      "id": "q-000450",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "deduction",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Answer from the information in the passage. When two groups of hikers meet on a steep trail, a custom has\ndeveloped in some areas whereby the group moving uphill has the\nright-of-way. This sentence tells us that:",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The group moving uphill is so dangerous that the group moving downhill should give way.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The group moving downhill is tired; they need rest.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The group moving downhill is always ready to give way to the group moving uphill.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The group moving downhill waits until the group moving uphill has passed before proceeding down.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIII",
+          "originalNumber": "6",
+          "pages": {
+            "start": 136,
+            "end": 136
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "d.) The group moving downhill waits until the group moving uphill\nhas passed bybefore proceeding to go down.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=136",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Corrected fused words passed bybefore in D; retained the local-convention qualifier.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiii-6"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Right-of-way requires downhill hikers to yield until uphill hikers pass, D. Danger, tiredness and universal readiness are not stated. NPS independently supports the stated hiking convention and notes signage can vary.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Right-of-way requires downhill hikers to yield until uphill hikers pass, D. Danger, tiredness and universal readiness are not stated. NPS independently supports the stated hiking convention and notes signage can vary. Authored repair: Corrected fused words passed bybefore in D; retained the local-convention qualifier.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=136",
+      "docs/verification/editorial-full-corpus-task2.md#xiii-6",
+      "https://www.nps.gov/articles/hikingetiquette.htm"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/deduction because the proposal assesses deduction as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=136",
+            "docs/verification/editorial-full-corpus-task2.md#xiii-6",
+            "https://www.nps.gov/articles/hikingetiquette.htm"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://www.nps.gov/articles/hikingetiquette.htm",
+        "verifiedAt": "2026-10-07T16:01:36Z",
+        "rationale": "Right-of-way requires downhill hikers to yield until uphill hikers pass, D. Danger, tiredness and universal readiness are not stated. NPS independently supports the stated hiking convention and notes signage can vary."
+      }
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIII:7",
+    "proposed": {
+      "id": "q-000451",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "deduction",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Answer from the information in the passage. The crossing of glaciers is potentially hazardous because of the\npotential for\ncrevasses. These giant cracks in the ice are not always visible as snow can be blown\nand freeze over the top to make a snow bridge. To cross a glacier the use of a rope,\ncrampons and ice axes are usually required. Which of the following sentences is true?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The crossing of glaciers is dangerous because there are potential giant cracks\nin the ice which are not always visible.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Without a rope, nobody can cross glaciers.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "A leader is required for a group to cross glaciers safely.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Crevasses in the ice are used to make a snow bridge.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Crossing of glaciers is not hazardous if one has an ice axe.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIII",
+          "originalNumber": "7",
+          "pages": {
+            "start": 136,
+            "end": 137
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "a.) The crossing of glaciers is dangerous because there are potential\ngiant cracks in the ice which are not always visible.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=136",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "The passage says hidden crevasses create danger, A. B says nobody without rope, stronger than usually required; C adds a leader; D reverses how snow bridges form; E falsely makes one tool sufficient for safety. NASA confirms snow can conceal cracks; NPS supports equipment and cautions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiii-7"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The passage says hidden crevasses create danger, A. B says nobody without rope, stronger than usually required; C adds a leader; D reverses how snow bridges form; E falsely makes one tool sufficient for safety. NASA confirms snow can conceal cracks; NPS supports equipment and cautions.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "The passage says hidden crevasses create danger, A. B says nobody without rope, stronger than usually required; C adds a leader; D reverses how snow bridges form; E falsely makes one tool sufficient for safety. NASA confirms snow can conceal cracks; NPS supports equipment and cautions.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=136",
+      "docs/verification/editorial-full-corpus-task2.md#xiii-7",
+      "https://science.nasa.gov/earth/earth-observatory/out-of-the-crevasse-field/",
+      "https://home.nps.gov/articles/backpackingak.htm"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/deduction because the proposal assesses deduction as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=136",
+            "docs/verification/editorial-full-corpus-task2.md#xiii-7",
+            "https://science.nasa.gov/earth/earth-observatory/out-of-the-crevasse-field/",
+            "https://home.nps.gov/articles/backpackingak.htm"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://science.nasa.gov/earth/earth-observatory/out-of-the-crevasse-field/",
+        "verifiedAt": "2026-10-07T16:01:36Z",
+        "rationale": "The passage says hidden crevasses create danger, A. B says nobody without rope, stronger than usually required; C adds a leader; D reverses how snow bridges form; E falsely makes one tool sufficient for safety. NASA confirms snow can conceal cracks; NPS supports equipment and cautions."
+      }
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIII:8",
+    "proposed": {
+      "id": "q-000452",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "deduction",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Answer from the information in the passage. After the development of agriculture, hunting was usually a significant\ncontributor to\nthe human food supply. The supplementary meat and materials from hunting included\nprotein, bone for implements, sinew for cordage, fur, feathers, rawhide and leather used\nin clothing. Which of the following claims is NOT supported by this passage?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Hunting contributes to the human food supply.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The bone of the animals caught in hunting can be made into implements.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Hunting is the main source of meat for the population.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "We can get clothing materials from the animals caught in hunting.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Hunting is considered a significant contributor to the human food supply even after\nthe development of agriculture.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIII",
+          "originalNumber": "8",
+          "pages": {
+            "start": 137,
+            "end": 137
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "c.) Hunting is the main source of meat for the population.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=137",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Changed not true to not supported so the passage’s silence does not become proof of falsity.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiii-8"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "C claims hunting is the main source; the passage only calls it significant/supplementary. A/B/D/E restate contributions and materials. The authored question asks which claim is NOT supported, rather than treating absence of support as proof of falsity.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "C claims hunting is the main source; the passage only calls it significant/supplementary. A/B/D/E restate contributions and materials. The authored question asks which claim is NOT supported, rather than treating absence of support as proof of falsity. Authored repair: Changed not true to not supported so the passage’s silence does not become proof of falsity.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=137",
+      "docs/verification/editorial-full-corpus-task2.md#xiii-8"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/deduction because the proposal assesses deduction as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=137",
+            "docs/verification/editorial-full-corpus-task2.md#xiii-8"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIII:9",
+    "proposed": {
+      "id": "q-000453",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "deduction",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Answer from the information in the passage. In business, you will not succeed if you are not determined. Hard work\nis not the only\nrequirement to succeed in business.You must have the courage to invest your money\neven if there's a risk of losing to competitors. Which of the following sentences is true\nabout succeeding in business?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Hard work is all you need to succeed in business.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Competitors are the main hindrance to succeed in business.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "If you are ready to go into business even if you may lose your money in the\nprocess, you can possibly succeed.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "You can succeed if you have a lot of money.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIII",
+          "originalNumber": "9",
+          "pages": {
+            "start": 137,
+            "end": 138
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "c.) If you are ready to go into business even if you may lose your\nmoney in the process, you can possibly succeed.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=137",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "C cautiously says success is possible with willingness to risk investment. A claims hard work alone, B blames competitors as the main obstacle, D makes wealth sufficient. None follows from the passage’s necessary-condition language.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiii-9"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "C cautiously says success is possible with willingness to risk investment. A claims hard work alone, B blames competitors as the main obstacle, D makes wealth sufficient. None follows from the passage’s necessary-condition language.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "C cautiously says success is possible with willingness to risk investment. A claims hard work alone, B blames competitors as the main obstacle, D makes wealth sufficient. None follows from the passage’s necessary-condition language.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=137",
+      "docs/verification/editorial-full-corpus-task2.md#xiii-9"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/deduction because the proposal assesses deduction as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=137",
+            "docs/verification/editorial-full-corpus-task2.md#xiii-9"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIII:10",
+    "proposed": {
+      "id": "q-000454",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "deduction",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Answer from the information in the passage. Wild animals are dangerous. Dogs are not wild animals. What can you\nconclude?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Dogs are not dangerous.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Dogs should be treated like members of the family.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Only wild animals can bring danger to people.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The premises do not determine whether dogs are dangerous.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIII",
+          "originalNumber": "10",
+          "pages": {
+            "start": 138,
+            "end": 138
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "d.) Even dogs can be dangerous.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=138",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored D repair expresses the independently proved absence of a dog-danger conclusion, replacing the unentailed source claim.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiii-10"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Wild→dangerous and dog→not wild do not imply dog→not dangerous or dog→dangerous. A countermodel with safe dogs and another with dangerous dogs each satisfies the premises. Replace D with “The premises do not determine whether dogs are dangerous”; only that conclusion is warranted.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Wild→dangerous and dog→not wild do not imply dog→not dangerous or dog→dangerous. A countermodel with safe dogs and another with dangerous dogs each satisfies the premises. Replace D with “The premises do not determine whether dogs are dangerous”; only that conclusion is warranted. Authored repair: Authored D repair expresses the independently proved absence of a dog-danger conclusion, replacing the unentailed source claim.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=138",
+      "docs/verification/editorial-full-corpus-task2.md#xiii-10"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/deduction because the proposal assesses deduction as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=138",
+            "docs/verification/editorial-full-corpus-task2.md#xiii-10"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIII:11",
+    "proposed": {
+      "id": "q-000455",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "deduction",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Answer from the information in the passage. Police officer REynaldo Reyes believes that once a police, always a\npolice. His guiding principle in his job as a police is that he is a police\nanytime, anywhere. What doyou think will he do if he is not on duty and\nsees a man snatched a bag of a woman in\nthe street?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Just watch what will happen next.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Run after the snatcher to arrest him.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Call a police nearby to report the incident.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Leave the scene he is not on duty anyway.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIII",
+          "originalNumber": "11",
+          "pages": {
+            "start": 138,
+            "end": 139
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d"],
+          "originalAnswer": "b.) Run after the snatcher to arrest him.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=138",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "The officer’s slogan suggests willingness to act, but gives no training, immediate threat, ability to pursue safely or nearby assistance. Both pursuit and calling nearby police are compatible with the stated principle; the source’s B is not uniquely entailed.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiii-11"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The officer’s slogan suggests willingness to act, but gives no training, immediate threat, ability to pursue safely or nearby assistance. Both pursuit and calling nearby police are compatible with the stated principle; the source’s B is not uniquely entailed.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "The officer’s slogan suggests willingness to act, but gives no training, immediate threat, ability to pursue safely or nearby assistance. Both pursuit and calling nearby police are compatible with the stated principle; the source’s B is not uniquely entailed. Open: The stated police principle does not uniquely select pursuit over calling nearby police; missing safety/situation constraints cannot be supplied from the key.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=138",
+      "docs/verification/editorial-full-corpus-task2.md#xiii-11"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task2-unresolved",
+          "blocking": true,
+          "message": "The stated police principle does not uniquely select pursuit over calling nearby police; missing safety/situation constraints cannot be supplied from the key."
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "The exercise belongs to criticalThinking/deduction; its separate stated blocker remains unresolved.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=138",
+            "docs/verification/editorial-full-corpus-task2.md#xiii-11"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIII:12",
+    "proposed": {
+      "id": "q-000456",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "deduction",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Answer from the information in the passage. The elementary students from Barangay Ibabang Buhangin have to\ncross the river\nand walk a distance of one and a half kilometers to reach their school. During rainy\ndays, these students cannot come to school because most of the time, the river\noverflows. Which of the following sentences is true?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The students are afraid of the rain that they don't want to report for their classes.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The distance after crossing the river prevents them from going to school during rainy\ndays.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Their parents are against them going to school because of the train.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "It is dangerous to cross the river during rainy days because the river\noverflows.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "There are no classes during rainy days.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-4",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIII",
+          "originalNumber": "12",
+          "pages": {
+            "start": 139,
+            "end": 139
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "d.) It is dangerous to cross the river during rainy days because the\nriver overflows.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=139",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "D fits the stated causal link between overflow and inability to cross. A invents fear of rain, B incorrectly blames distance, C invents parents’ prohibition, E asserts cancellation. This is a passage inference, not a verified report about a real barangay.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiii-12"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "D fits the stated causal link between overflow and inability to cross. A invents fear of rain, B incorrectly blames distance, C invents parents’ prohibition, E asserts cancellation. This is a passage inference, not a verified report about a real barangay.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "D fits the stated causal link between overflow and inability to cross. A invents fear of rain, B incorrectly blames distance, C invents parents’ prohibition, E asserts cancellation. This is a passage inference, not a verified report about a real barangay.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=139",
+      "docs/verification/editorial-full-corpus-task2.md#xiii-12"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/deduction because the proposal assesses deduction as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=139",
+            "docs/verification/editorial-full-corpus-task2.md#xiii-12"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIII:13",
+    "proposed": {
+      "id": "q-000457",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "deduction",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Answer from the information in the passage. The vegetables plants in the plantation are usually washed out by\nflood when there\nare typhoons and continuous rains. The result is high prices of vegetables in the market.\nWhich of the following claims is NOT supported by this passage?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The supply of vegetables is less when there is typhoon or continuous rain.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Flood is one of the causes of the destruction of vegetables plants in the plantations.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Vegetables taste better when there is typhoon or continuous rain.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "When there is flood or continuous rain, prices of vegetables usually go up.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Vegetables are washed out when there is flooding.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIII",
+          "originalNumber": "13",
+          "pages": {
+            "start": 139,
+            "end": 140
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "c.) Vegetables taste better when there is typhoon or continuous rain.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=139",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Changed not true to not supported; the passage does not prove taste assertions false.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiii-13"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "C adds taste improvement, unsupported by the passage. A/B/D/E concern lost crops and reduced supply with higher prices. Authored question asks NOT supported, avoiding the claim that an unmentioned assertion must be false.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "C adds taste improvement, unsupported by the passage. A/B/D/E concern lost crops and reduced supply with higher prices. Authored question asks NOT supported, avoiding the claim that an unmentioned assertion must be false. Authored repair: Changed not true to not supported; the passage does not prove taste assertions false.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=139",
+      "docs/verification/editorial-full-corpus-task2.md#xiii-13"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/deduction because the proposal assesses deduction as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=139",
+            "docs/verification/editorial-full-corpus-task2.md#xiii-13"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIII:14",
+    "proposed": {
+      "id": "q-000458",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "deduction",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Answer from the information in the passage. The war of the government against drugs pushers and users is\nescalating and many\nare being killed by the police and other unidentified killers. Which of the following\nsentences is true?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The policemen are brave.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "the pushers and users who were killed fought the police.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The people who were killed were iether users or pushers.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Users and pushers are hard to catch.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The war of the government against drug users and pushers is becoming more\nintense.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-5",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIII",
+          "originalNumber": "14",
+          "pages": {
+            "start": 140,
+            "end": 140
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "e.) The war of the government against drug users and pushers is\nbecoming more intense.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=140",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "E restates “escalating” as becoming more intense. A/B/C/D add bravery, resistance, guilt of all killed, or difficulty of catching suspects. However the source’s undated asserted real-world killings cannot be independently dated/verified from the supplied paragraph; do not publish it as current factual context.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiii-14"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "E restates “escalating” as becoming more intense. A/B/C/D add bravery, resistance, guilt of all killed, or difficulty of catching suspects. However the source’s undated asserted real-world killings cannot be independently dated/verified from the supplied paragraph; do not publish it as current factual context.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "E restates “escalating” as becoming more intense. A/B/C/D add bravery, resistance, guilt of all killed, or difficulty of catching suspects. However the source’s undated asserted real-world killings cannot be independently dated/verified from the supplied paragraph; do not publish it as current factual context. Open: Undated real-world killings assertion has no independently supported temporal/factual context; preserve the passage and its E inference as a blocked proposal.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=140",
+      "docs/verification/editorial-full-corpus-task2.md#xiii-14"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task2-unresolved",
+          "blocking": true,
+          "message": "Undated real-world killings assertion has no independently supported temporal/factual context; preserve the passage and its E inference as a blocked proposal."
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "The exercise belongs to criticalThinking/deduction; its separate stated blocker remains unresolved.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=140",
+            "docs/verification/editorial-full-corpus-task2.md#xiii-14"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sourceKey": "comprehensive:XIII:15",
+    "proposed": {
+      "id": "q-000459",
+      "version": 1,
+      "categoryId": "criticalThinking",
+      "subcategoryId": "deduction",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Answer from the information in the passage. A TV commercial for a bath soap for men shows a girl talking to the\naudience that\nshe likes the soap too. What does this imply?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The soap can also be used by women.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The soap is strictly for men.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "The soap is good for children.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-4",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Men should only use that bath soap and no other.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-5",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "That bath soap smells good.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIII",
+          "originalNumber": "15",
+          "pages": {
+            "start": 140,
+            "end": 140
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "a.) The soap can also be used by women.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=140",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Corrected batch soap to bath soap in the prompt and source-derived alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiii-15"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A is the natural implication of a female speaker saying she uses/likes the soap: the product is not exclusive to men. B contradicts that use; C/D/E add claims absent from the commercial. Corrected batch to bath; the commercial is a hypothetical passage.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "A is the natural implication of a female speaker saying she uses/likes the soap: the product is not exclusive to men. B contradicts that use; C/D/E add claims absent from the commercial. Corrected batch to bath; the commercial is a hypothetical passage. Authored repair: Corrected batch soap to bath soap in the prompt and source-derived alternative.",
+    "evidence": [
+      "evidence/reference-extraction/comprehensive/document.json#page=140",
+      "docs/verification/editorial-full-corpus-task2.md#xiii-15"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "taxonomy-review",
+          "message": "Section alone does not establish an approved requested subcategory",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "taxonomy-review",
+          "rationale": "Assigned criticalThinking/deduction because the proposal assesses deduction as explained in the item-specific derivation.",
+          "evidence": [
+            "evidence/reference-extraction/comprehensive/document.json#page=140",
+            "docs/verification/editorial-full-corpus-task2.md#xiii-15"
+          ]
+        }
+      ]
+    }
+  }
+]
