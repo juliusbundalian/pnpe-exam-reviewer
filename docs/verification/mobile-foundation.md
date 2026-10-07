@@ -1,11 +1,18 @@
 # Mobile foundation verification and handoff
 
-Status: **BLOCKED pending native/device acceptance**. This is an implementation
+Status: **iOS build and Firebase flows verified; remaining device acceptance and
+whole-branch review pending**. This is an implementation
 checkpoint, not a completed foundation or release approval. Automated JS tests
 cannot establish native Firebase integration, screen-reader focus, keyboard
 visibility, or physical-device behavior. No publication, editorial approval,
 deployed rules, store identity registration, remote build, or production writes
 are implied.
+
+The user deferred Android TalkBack and iOS VoiceOver verification on 2026-10-06.
+These checks are excluded from current acceptance and are not blockers for this
+slice. Existing accessibility behavior and recorded evidence remain; deferred
+checks are not claimed as passed. The user resumed iOS build and Firebase work on
+2026-10-07; the earlier iOS setup blocker is resolved, as recorded below.
 
 ## Scope and architecture
 
@@ -304,13 +311,81 @@ continuation; no dependency changes followed.
 A single React startup warning about updating an unmounted component occurred in
 an earlier run; later controlled cold launches did not reproduce it. This is not
 a claim that every development/native log is warning-free. TalkBack and temporary
-settings are restored after device checks. iOS native/Firebase/VoiceOver remains
-blocked at the user's direction; Task 9 and the foundation remain incomplete.
+settings are restored after device checks. Android TalkBack and iOS VoiceOver
+verification are now deferred by the user. iOS native build and Firebase checks
+were blocked at that checkpoint; the 2026-10-07 continuation below supersedes
+that status. Task 9 and the foundation are not declared complete.
+
+## Controlled iOS continuation, 2026-10-07
+
+The user resumed iOS build and Firebase flow checks after accepting the Xcode
+license. Xcode **27.0 (27A266a)** now accepts the installed iOS **18.5** simulator
+runtime. Device Hub (`com.apple.dt.Devices`) exposes the simulator controls in this
+Xcode version. The previous Xcode 26.5 destination failure is historical.
+
+Both owner Firebase files now live in the ignored worktree root. Their formats,
+matching Firebase project IDs, Android package and iOS bundle identifiers were
+validated without printing their contents. Configured iOS prebuild and CocoaPods
+installation succeeded. `expo run:ios --device FFC1BAA2-881B-4513-B947-39F5374FF480
+--no-bundler` exited 0: **Build Succeeded, 0 errors, 3 warnings**, app installed and
+opened on iPhone 16 Pro. Warnings concern dependency analysis of native build
+scripts; no warning-free build is claimed.
+
+Actual native emulator initialization initially failed with
+`app/unknown` / `FirebaseInstallations I-FIS008000`. The synthetic demo API key
+was too short and lacked the required leading `A`. The installed iOS pod validator
+requires 39 URL-safe characters beginning with `A`. Commit **1532d36** changes only
+the demo key to a clearly synthetic value satisfying that format, with a regression
+covering the iOS bridge contract and the installed RNFirebase JS registry on both
+platforms. The existing demo app ID already satisfies the installed validator.
+Named-app isolation, disabled data collection and local emulator endpoints remain.
+No owner credentials are used as a fallback. RED: 1 failure / 11 passes; GREEN:
+18 focused tests. Independent scoped review approved spec and quality, with no new
+Critical/Important findings. The permanent candidate passed actual cold relaunch.
+
+All Auth/Firestore checks below use the isolated `pnpe-emulator` native SDK app,
+`demo-pnpe`, Auth `127.0.0.1:9099` and Firestore `127.0.0.1:8080`. No live Auth
+account, production profile write, deployment or content publication occurred.
+
+| Controlled iOS check | Observed result |
+| --- | --- |
+| Guest and authenticated cold launch | Home renders without unsolicited authentication; native session persists after restart. |
+| Public browsing | Category and subcategory screens remain reachable, including Constitution; unavailable question counts remain explicit. |
+| Registration and profile | Actual form creates a local account; Profile shows `iOS Reviewer`. Read-only local Firestore inspection confirms only displayName/createdAt/updatedAt, with timestamp fields. |
+| Sign-in and logout | Actual native forms sign in successfully; Sign Out returns Menu to guest actions. |
+| Account switching | A second existing demo account shows `SecondAndroidReviewer`; switching back restores `iOS Reviewer`. |
+| Password reset and cancellation | Neutral acknowledgement appears; Return to Sign In then Back returns Menu. No reset credential was changed. |
+| Protected intent and cancellation | Maybe Later returns to Mock Exam overview; sign-in from Start Mock Exam resumes preflight with 150 questions/180 minutes and explicit unavailable-session notice. No timer starts. |
+| Dark recovery notice | Text remains readable below the status bar and Appearance controls remain reachable. Original System app appearance restored. |
+
+A separate configured cold launch verified **read-only native iOS Remote Config**.
+SDK metadata reports `lastFetchStatus: success`, fresh `fetchTimeMillis:
+1791338281613`, five-second fetch timeout and one-hour minimum interval. Parameters
+`app_info`, `data`, and `config` all report source `default`; there are zero remote
+parameter names. This proves a successful native fetch/activation with bundled
+fallbacks, not validation of a nonempty owner payload. Only status/source metadata
+was recorded. The temporary configured Metro server on 8083 was stopped, and the
+app returned to local emulator mode on 8082, guest Home, System appearance.
+Android Metro on 8081 and existing local emulators were preserved.
+
+Fresh final source verification: **316/316 unit tests (19 suites)** and **103/103
+mobile tests (10 suites)** passed, alongside both strict typechecks, ESLint,
+formatting and diff checks. Native build and screenshots/metadata are retained in
+ignored `evidence/mobile-foundation/continuation/ios-*` files. No owner files are
+staged. Temporary diagnostics lived under `/tmp`, not product source.
+
+Remaining iOS acceptance includes software-keyboard visibility, enlarged text,
+System following OS appearance changes, and network-loss behavior. Those were
+not established by this Firebase-focused session. VoiceOver and TalkBack remain
+explicitly deferred, not failed or passed. Whole-branch review/integration and
+runtime dependency release blockers remain separate; this report does not declare
+the foundation complete.
 
 ## Release gates
 
-Resolve mandatory device/VoiceOver/TalkBack acceptance and runtime dependency
-blockers. Supply real privacy/terms/support content, account deletion and data
+Resolve remaining iOS device acceptance, whole-branch review and runtime dependency
+blockers. TalkBack and VoiceOver verification are deferred from the current scope
+by the user; revisit them when that scope is resumed. Supply real privacy/terms/support content, account deletion and data
 retention processes, legal rights to all redistributed source content, editorial
 approval, and reviewed Firebase rules/environment deployment. Account deletion is
 not implemented in this slice. Store review, signing, production rules deployment,
