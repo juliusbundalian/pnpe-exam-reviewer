@@ -71,6 +71,30 @@ available learner-asset inventory. Editorial asset review alone is insufficient.
 Answer-key/evidence images must never become learner prompt assets. Hosting,
 availability, licensing, and client capability review precede future asset support.
 
+## Preparing the first owner packet
+
+Run `npx tsx tools/questions/prepare-review.ts short-initial` once for the exact
+unapproved revision set. This positional command accepts no extra arguments. It
+loads all authoritative occurrences and overlays and validates the entire on-disk
+approved publication before computing coverage or reserving a packet directory.
+It requires all twenty short overlays and rejects approval fields. It creates
+immutable `review.md`, `manifest.json`, `overlays.json` and `coverage.json` under
+`evidence/editorial/short-initial/<packetDigest>/`; repeating an identical run
+fails exclusive directory creation. It does not publish or connect to Firebase.
+
+Coverage assigns one disposition per occurrence and reports source, category,
+all fifteen subcategories and unmapped material. Parser answers and taxonomy
+hints do not make absent overlays publishable. Approved expired revisions are
+separate from other approved blockers, including unsupported assets/tables.
+Quota readiness uses distinct validated eligible logical IDs and the frozen
+35/40/25/50 requirements. Duplicate or unsupported eligible input fails.
+
+The [first editorial verification record](verification/editorial-content.md)
+links the exact packet, digest manifest, open rows and real shortages. The owner
+must approve that exact batch or an explicit subset plus a reviewer label before
+approval stamps, publication or import. Development authorization does not grant
+editorial approval. Packet artifacts are ignored and never committed.
+
 ## Dry run and explicit apply
 
 The input is the **entire approved publication snapshot, not a delta**. Omitted

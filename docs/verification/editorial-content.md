@@ -178,11 +178,36 @@ Source comparison: C. 21 years old; independently derived choice choice-3. Origi
 - [Primary/legal supporting source](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/4042) — verified 2026-10-07T07:34:25Z; supports the claims identified above.
 - [Primary/legal supporting source](https://lawphil.net/statutes/repacts/ra2009/ra_9708_2009.html) — verified 2026-10-07T07:34:25Z; supports the claims identified above.
 - [Primary/legal supporting source](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/86469) — verified 2026-10-07T07:34:25Z; supports the claims identified above.
-- [Primary/legal supporting source](https://www.napolcom.gov.ph/) — verified 2026-10-07T07:34:25Z; supports the claims identified above.
-- [Primary/legal supporting source](https://mail.napolcom.gov.ph/pid/index.html) — verified 2026-10-07T07:34:25Z; supports the claims identified above.
+- [NAPOLCOM, “12,372 Qualify in NAPOLCOM-Administered PNP Eligibility Examinations,” June 25, 2026](https://mail.napolcom.gov.ph/pid/index.html) — identifies the April 19, 2026 examination and its civilian 21–30 eligibility window and temporary Patrolman/Patrolwoman examinees. This dated announcement is examination-only context, not authority for appointment-age qualifications. The dated entry was independently reopened during Task 3; source and overlay revisions remain unchanged.
 
 Additional amendment check: [RA 11549, Section 2](https://lawphil.net/statutes/repacts/ra2021/ra_11549_2021.html) changes PNP height requirements while leaving Section 30(j) unchanged. The 21–40 language in Section 4 concerns BuCor personnel and must not be transferred to PNP. Official indexed excerpts were checked against the full Act to distinguish those scopes. Verified 2026-10-07T07:37:26Z.
 
 ## Safeguards and limitations
 
 All explanations are authored, not represented as source quotations. Finite patterns are made explicit; Q3 specifies formal grammar, Q5 supplies a calmness cue, Q13 specifies the classification criterion, Q16 specifies quarter-turns. Q19 retains DILG as the key only after replacing the defective control question with statutory departmental placement. Q20 retains 21 only after explicitly excluding statutory age waivers and updating rank wording. Official 2026 NAPOLCOM entrance-examination announcements separately indicate civilian examinees aged 21–30 and temporary Patrolman/Patrolwoman appointments; those examination criteria do not establish the appointment rule. The former 30-or-younger examination information is not used to infer an appointment minimum. Statutory knowledge items are not currentEvents; future law changes require reverification. Independent editorial review and exact owner approval remain outstanding. No unresolved factual conflict remains in these narrowed proposals. Source checksums and full test evidence are recorded in the task report.
+
+## Exact first packet and coverage
+
+Packet digest: `547ce4e6164e2ad39a978beb6c112600d629f61d311fe8df62048bb4bf4198d8`.
+
+The ignored owner artifacts are [review.md](../../evidence/editorial/short-initial/547ce4e6164e2ad39a978beb6c112600d629f61d311fe8df62048bb4bf4198d8/review.md), [manifest.json](../../evidence/editorial/short-initial/547ce4e6164e2ad39a978beb6c112600d629f61d311fe8df62048bb4bf4198d8/manifest.json), `overlays.json`, and `coverage.json` in that same immutable directory. All 20 rows were reconstructed against authoritative originals and compared with the stored Markdown, manifest and overlays. Content/review/overlay digests match. No approval fields exist.
+
+Every short-source row Q1–Q20 remains open for owner editorial approval. All 20 are schema-valid `needsReview` candidates with resolved authoritative blockers; no first-packet row has an unresolved source/schema/transport blocker. They are potential eligible revisions after exact approval and publication validation, not currently eligible questions. The 687 occurrences remain accounted for: short 20 needsReview, comprehensive 477 unavailable, notes 190 unavailable. All 667 unavailable occurrences are unmapped in editorial coverage because no schema-valid editorial proposal exists; parser guesses are not editorial taxonomy.
+
+| Category               | Needs review | Eligible | Default requirement | Shortage |
+| ---------------------- | -----------: | -------: | ------------------: | -------: |
+| General Information    |            4 |        0 |                  35 |       35 |
+| Communication Skills   |            4 |        0 |                  40 |       40 |
+| Quantitative Reasoning |            4 |        0 |                  25 |       25 |
+| Critical Thinking      |            8 |        0 |                  50 |       50 |
+
+All fifteen subcategories are present in `coverage.json`, including Data Interpretation (zero eligible). There are no per-subcategory quotas. The default exam is not ready. Approval of all twenty would still leave category shortages 31, 36, 21 and 42, provided every approved revision passes the authoritative publication checks.
+
+Next proposed bounded corpus batch: inspect the comprehensive source's section X pattern-analysis occurrences as a complete source-context group, prioritizing the largest eligible shortage (Critical Thinking: 50). Keep shared stimulus and extraction defects together; if the section exceeds a reviewable batch, split only at verified context boundaries. No subsequent batch is approved or authored by this proposal. Legal verification and authored conversion of answer-only notes remain separate work.
+
+Archived tooling evidence: the Task 1 authoring helper was renamed from
+`evidence/editorial/task-1/author.cjs` to `evidence/editorial/task-1/author.cjs.txt`
+under the controller's ruling so repository lint treats it as research evidence.
+Both paths' content SHA-256 was
+`11f4feabfea8b86f5d0e28cd811378376f8db3b49ae186b22dfca44c27a4b7a9`.
+Replay requires copying it back to a `.cjs` path; no evidence bytes were changed.
