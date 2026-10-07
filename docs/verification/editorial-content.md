@@ -1,0 +1,188 @@
+# Short-source editorial verification
+
+Prepared for owner review; 20 needsReview overlays, zero approvals. No publication or import. Verification performed 2026-10-07T07:34:25Z (UTC), from current primary-source searches and statute/Constitution text. Official E-Library direct opens sometimes returned internal errors; official indexed excerpts were corroborated with full Lawphil statutory text. Dates identify actual research time, not document metadata.
+
+Taxonomy authority: `src/features/content/domain/taxonomy.ts` and the foundation design `docs/superpowers/specs/2026-10-04-foundation-and-content-design.md`. PNP institutional abbreviation belongs to criminalJusticeSystem, since it identifies the policing institution; it is not a general-history-to-pnpHistory inference. Statutory departmental placement and appointment qualifications belong to constitutionAndLaws.
+
+## Q1
+
+Taxonomy: `criticalThinking/wordAnalogy` — operator-to-vehicle word analogy.
+
+Independent derivation: A pilot operates an airplane, just as a driver operates a car. Road is a route, engine is a component, and passenger is a person transported; none preserves the operator-to-vehicle relation.
+
+Source comparison: B. Car; independently derived choice choice-2. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Original stem and alternatives retained.
+
+## Q2
+
+Taxonomy: `communicationSkills/vocabulary` — synonym recognition.
+
+Independent derivation: Diligent describes careful, persistent effort. Hardworking is the closest alternative. Lazy and careless contradict that effort; slow describes speed rather than dedication.
+
+Source comparison: B. Hardworking; independently derived choice choice-2. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Original stem and alternatives retained.
+
+## Q3
+
+Taxonomy: `communicationSkills/grammar` — formal subject–verb agreement.
+
+Independent derivation: In formal written English, each is singular and takes was. The plural noun officers inside the of-phrase does not control agreement. Neither is also singular in this formal convention, and list takes is. Conversational plural agreement with neither is excluded by the revised stem.
+
+Source comparison: B. Each of the officers was present.; independently derived choice choice-2. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Stem clarified as recorded in lineage corrections; original alternatives/order and source answer retained.
+
+## Q4
+
+Taxonomy: `communicationSkills/vocabulary` — antonym recognition.
+
+Independent derivation: Abundant means plentiful; scarce means insufficient or in short supply. Plentiful is a synonym, while large and rich do not express the required opposite.
+
+Source comparison: B. Scarce; independently derived choice choice-2. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Original stem and alternatives retained.
+
+## Q5
+
+Taxonomy: `communicationSkills/vocabulary` — contextual vocabulary completion.
+
+Independent derivation: Composed means calm and self-controlled. The explicit calmness cue selects it over agitated, confused, and reckless. Completing a patrol on time alone would not establish an emotional state, so the cue was added.
+
+Source comparison: B. Composed; independently derived choice choice-2. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Stem clarified as recorded in lineage corrections; original alternatives/order and source answer retained.
+
+## Q6
+
+Taxonomy: `quantitativeReasoning/basicConcepts` — direct percentage calculation.
+
+Independent derivation: The solved fraction is 45/60 = 3/4 = 0.75. Multiplying by 100 gives 75%. The other percentages do not equal the stated fraction.
+
+Source comparison: C. 75%; independently derived choice choice-3. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Original stem and alternatives retained.
+
+## Q7
+
+Taxonomy: `quantitativeReasoning/problemSolving` — allocation word problem.
+
+Independent derivation: The allocation has 5 + 3 + 2 = 10 equal parts. Each part is ₱200,000/10 = ₱20,000; training receives two parts, or ₱40,000. ₱60,000 and ₱100,000 are the admin and patrol shares; ₱20,000 is only one part.
+
+Source comparison: B. ₱40,000; independently derived choice choice-2. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Original stem and alternatives retained.
+
+## Q8
+
+Taxonomy: `criticalThinking/patternAnalysis` — constant multiplicative pattern, despite quantitative source section.
+
+Independent derivation: Under the stated constant doubling rule, 5 × 2 = 10, 10 × 2 = 20, and 20 × 2 = 40. The next term is 40 × 2 = 80. The other choices break the stated rule; a finite list alone could admit other invented rules.
+
+Source comparison: C. 80; independently derived choice choice-3. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Stem clarified as recorded in lineage corrections; original alternatives/order and source answer retained.
+
+## Q9
+
+Taxonomy: `quantitativeReasoning/problemSolving` — constant-rate word problem.
+
+Independent derivation: The constant rate is 40/2 = 20 reports per hour. In 5 hours it yields 20 × 5 = 100 reports. The other totals require different rates.
+
+Source comparison: C. 100; independently derived choice choice-3. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Original stem and alternatives retained.
+
+## Q10
+
+Taxonomy: `quantitativeReasoning/problemSolving` — simultaneous age equations.
+
+Independent derivation: Let the current ages be s and f. Then f = 3s and f + 10 = 2(s + 10). Substitution gives 3s + 10 = 2s + 20, so s = 10. Check: the father is now 30; in ten years their ages are 40 and 20. No other choice satisfies both equations.
+
+Source comparison: B. 10 years old; independently derived choice choice-2. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Original stem and alternatives retained.
+
+## Q11
+
+Taxonomy: `criticalThinking/deduction` — necessary conclusion from universal premise.
+
+Independent derivation: The premise puts every police officer in the trained group. Since Rico is a police officer, he is trained. Criminal status is unspecified; reversing the implication to all trained people being officers is invalid; not trained contradicts the premises.
+
+Source comparison: B. Rico is trained.; independently derived choice choice-2. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Original stem and alternatives retained.
+
+## Q12
+
+Taxonomy: `criticalThinking/patternAnalysis` — alphabet-position pattern.
+
+Independent derivation: The stated rule advances two alphabet positions each time: A(1), C(3), E(5), G(7), I(9). H, J, and K do not continue that rule. Without an explicit rule, arbitrary finite-sequence continuations are possible.
+
+Source comparison: B. I; independently derived choice choice-2. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Stem clarified as recorded in lineage corrections; original alternatives/order and source answer retained.
+
+## Q13
+
+Taxonomy: `criticalThinking/logicalReasoning` — classification by physical quantity.
+
+Independent derivation: Kilometer, meter, and centimeter are units of length. Kilogram is a unit of mass, making it the sole alternative outside the specified length class. This groups by the physical quantity measured, rather than by spelling or prefixes.
+
+Source comparison: C. Kilogram; independently derived choice choice-3. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Stem clarified as recorded in lineage corrections; original alternatives/order and source answer retained.
+
+## Q14
+
+Taxonomy: `criticalThinking/deduction` — contrapositive deduction.
+
+Independent derivation: Let R mean rain and C mean cancellation. The premises are R → C and not C. Modus tollens yields not R. Rain would require cancellation, contrary to the premise; delay is not stated, and a definite conclusion follows.
+
+Source comparison: B. It did not rain.; independently derived choice choice-2. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Original stem and alternatives retained.
+
+## Q15
+
+Taxonomy: `criticalThinking/patternAnalysis` — successive-difference pattern.
+
+Independent derivation: The consecutive differences are 1, 2, 3, and 4. With the specified rule that each difference increases by one, the next difference is 5 and the next term is 12 + 5 = 17. The other choices require a different next difference. Arbitrary alternative sequence rules are excluded by the stem.
+
+Source comparison: C. 17; independently derived choice choice-3. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Stem clarified as recorded in lineage corrections; original alternatives/order and source answer retained.
+
+## Q16
+
+Taxonomy: `criticalThinking/logicalReasoning` — orientation through sequential turns.
+
+Independent derivation: Treating each left turn as a quarter-turn, the headings are north → west → south. Two left turns rotate the heading by 180 degrees; north, east, and west therefore do not fit.
+
+Source comparison: C. South; independently derived choice choice-3. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Stem clarified as recorded in lineage corrections; original alternatives/order and source answer retained.
+
+## Q17
+
+Taxonomy: `generalInformation/criminalJusticeSystem` — policing institution in the criminal justice system.
+
+Independent derivation: PNP is the abbreviation for Philippine National Police, the police organization established by Republic Act No. 6975. The other expansions do not name that statutory organization.
+
+Source comparison: B. Philippine National Police; independently derived choice choice-2. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Original stem and alternatives retained.
+
+- [Primary/legal supporting source](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/21922) — verified 2026-10-07T07:34:25Z; supports the claims identified above.
+- [Primary/legal supporting source](https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html) — verified 2026-10-07T07:34:25Z; supports the claims identified above.
+
+## Q18
+
+Taxonomy: `generalInformation/constitutionAndLaws` — constitutional assignment of legislative power.
+
+Independent derivation: Article VI, Section 1 of the 1987 Constitution assigns legislative power to Congress, composed of the Senate and House of Representatives, subject to the reservation for initiative and referendum. This identifies the Legislative branch. The Executive and Judicial branches have different constitutional powers.
+
+Source comparison: B. Legislative; independently derived choice choice-2. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Stem clarified as recorded in lineage corrections; original alternatives/order and source answer retained.
+
+- [Primary/legal supporting source](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/3/353) — verified 2026-10-07T07:34:25Z; supports the claims identified above.
+- [Primary/legal supporting source](https://lawphil.net/consti/cons1987.html) — verified 2026-10-07T07:34:25Z; supports the claims identified above.
+
+## Q19
+
+Taxonomy: `generalInformation/constitutionAndLaws` — statutory institutional placement and control.
+
+Independent derivation: Republic Act No. 6975, Sections 4 and 6, places the PNP within the reorganized Department of the Interior and Local Government. This departmental placement is distinct from NAPOLCOM administrative control and operational supervision under Section 14 as amended by Republic Act No. 8551, Section 5. The Constitution, Article XVI, Section 6, assigns administration and control of the national police force to a national police commission.
+
+Source comparison: B. Department of the Interior and Local Government (DILG); independently derived choice choice-2. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Stem clarified as recorded in lineage corrections; original alternatives/order and source answer retained.
+
+- [Primary/legal supporting source](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/21922) — verified 2026-10-07T07:34:25Z; supports the claims identified above.
+- [Primary/legal supporting source](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/4042) — verified 2026-10-07T07:34:25Z; supports the claims identified above.
+- [Primary/legal supporting source](https://lawphil.net/statutes/repacts/ra1998/ra_8551_1998.html) — verified 2026-10-07T07:34:25Z; supports the claims identified above.
+- [Primary/legal supporting source](https://lawphil.net/consti/cons1987.html) — verified 2026-10-07T07:34:25Z; supports the claims identified above.
+
+## Q20
+
+Taxonomy: `generalInformation/constitutionAndLaws` — statutory appointment qualification and rank terminology.
+
+Independent derivation: The ordinary statutory minimum for a new PNP applicant is 21 years, with an ordinary maximum of 30, under Section 30(j) of Republic Act No. 6975 as amended by Republic Acts Nos. 8551 and 9708. This stem excludes age waivers: Republic Act No. 8551, Section 15, allows specified initial-appointment waivers with a lower age boundary of 20. Republic Act No. 11200 uses Patrolman/Patrolwoman in place of the former PO1 terminology. Appointment qualifications are distinct from eligibility to sit a NAPOLCOM entrance examination.
+
+Source comparison: C. 21 years old; independently derived choice choice-3. Original prompt, choices and explanation were read from authoritative loadCandidates parser output retained in ignored evidence. Stem clarified as recorded in lineage corrections; original alternatives/order and source answer retained.
+
+- [Primary/legal supporting source](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/4042) — verified 2026-10-07T07:34:25Z; supports the claims identified above.
+- [Primary/legal supporting source](https://lawphil.net/statutes/repacts/ra2009/ra_9708_2009.html) — verified 2026-10-07T07:34:25Z; supports the claims identified above.
+- [Primary/legal supporting source](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/86469) — verified 2026-10-07T07:34:25Z; supports the claims identified above.
+- [Primary/legal supporting source](https://www.napolcom.gov.ph/) — verified 2026-10-07T07:34:25Z; supports the claims identified above.
+- [Primary/legal supporting source](https://mail.napolcom.gov.ph/pid/index.html) — verified 2026-10-07T07:34:25Z; supports the claims identified above.
+
+Additional amendment check: [RA 11549, Section 2](https://lawphil.net/statutes/repacts/ra2021/ra_11549_2021.html) changes PNP height requirements while leaving Section 30(j) unchanged. The 21–40 language in Section 4 concerns BuCor personnel and must not be transferred to PNP. Official indexed excerpts were checked against the full Act to distinguish those scopes. Verified 2026-10-07T07:37:26Z.
+
+## Safeguards and limitations
+
+All explanations are authored, not represented as source quotations. Finite patterns are made explicit; Q3 specifies formal grammar, Q5 supplies a calmness cue, Q13 specifies the classification criterion, Q16 specifies quarter-turns. Q19 retains DILG as the key only after replacing the defective control question with statutory departmental placement. Q20 retains 21 only after explicitly excluding statutory age waivers and updating rank wording. Official 2026 NAPOLCOM entrance-examination announcements separately indicate civilian examinees aged 21–30 and temporary Patrolman/Patrolwoman appointments; those examination criteria do not establish the appointment rule. The former 30-or-younger examination information is not used to infer an appointment minimum. Statutory knowledge items are not currentEvents; future law changes require reverification. Independent editorial review and exact owner approval remain outstanding. No unresolved factual conflict remains in these narrowed proposals. Source checksums and full test evidence are recorded in the task report.
