@@ -1,7 +1,7 @@
 # Mobile foundation verification and handoff
 
-Status: **iOS build and Firebase flows verified; remaining device acceptance and
-whole-branch review pending**. This is an implementation
+Status: **device checks verified and final source review approved; Expo
+compatibility checks failing**. This is an implementation
 checkpoint, not a completed foundation or release approval. Automated JS tests
 cannot establish native Firebase integration, screen-reader focus, keyboard
 visibility, or physical-device behavior. No publication, editorial approval,
@@ -382,17 +382,83 @@ formatting and diff checks. Native build and screenshots/metadata are retained i
 ignored `evidence/mobile-foundation/continuation/ios-*` files. No owner files are
 staged. Temporary diagnostics lived under `/tmp`, not product source.
 
-Remaining iOS acceptance includes software-keyboard visibility, enlarged text,
-System following OS appearance changes, and network-loss behavior. Those were
-not established by this Firebase-focused session. VoiceOver and TalkBack remain
-explicitly deferred, not failed or passed. Whole-branch review/integration and
-runtime dependency release blockers remain separate; this report does not declare
-the foundation complete.
+The follow-up device session below completes the remaining controlled checks.
+VoiceOver and TalkBack remain explicitly deferred, not failed or passed. Branch
+integration and dependency release blockers remain separate; this report does
+not declare the foundation complete.
+
+## Final review and device follow-up, 2026-10-07
+
+The user authorized reopening closed emulators. Local Firebase services and
+Android/iOS Metro were restarted; ephemeral emulator accounts from earlier
+sessions were not assumed to survive. No production writes or owner-file changes
+occurred. A disposable account was prepared through local Auth REST for the
+connection-loss check, then signed in through the actual native iOS form.
+
+On iPhone 16 Pro/iOS 18.5, actual Settings Larger Text was set to 64% of the
+accessibility range. Create Account scrolls to Sign In Instead and Back. After
+scrolling, the focused Confirm Password field is visible above the software
+keyboard; dragging dismisses the keyboard and exposes the lower controls. Earlier
+ineffective gestures did not reproduce in this controlled check. The Device Hub
+inspector value alone is not proof of native font size. Settings was returned to
+50% of the standard range with Larger Accessibility Sizes off. System appearance
+followed OS Dark to Light live. Final state: guest, app System, OS Light,
+VoiceOver off, Capture Keyboard off.
+
+The local Auth/Firestore service processes were temporarily paused with SIGSTOP
+and resumed with SIGCONT. Public reviewers remained reachable, Menu retained the
+native authenticated identity and Sign Out, and a cold restart opened Home and
+retained that identity on Menu. This is a Firebase service-outage/network-failure
+simulation, not a claim that all simulator network interfaces or host internet
+were disabled. Services were resumed and the disposable account signed out.
+Evidence: `ios-registration-large-keyboard.png`,
+`ios-firebase-outage-auth-preserved.png`, and
+`ios-firebase-outage-cold-auth.png` under the ignored continuation directory.
+
+The whole-branch review identified four Important and two Minor source findings.
+Commit `02bbd96` adds safe auth recovery with Retry/Back, visible public pending
+request cancellation, independent config cache operations, correct semver build
+and prerelease comparison, maintenance content inside Home's safe scroll area,
+Home identity and Menu Guest User/Progress, and precise dependency reachability
+wording. Independent scoped re-review approved all six fixes with no introduced
+Critical or Important findings. Version comparison reads configured Expo app metadata derived from
+package.json, not native binary version fields; this foundation has no OTA
+version updates. A 10,000-character maintenance notice has structural/component
+scroll coverage; no live owner maintenance payload was published for a native
+check. Actual iOS unavailable Progress -> Cancel request stays on Home, and
+`pnpe://profile` -> Back to public browsing returns Home. Both devices were returned
+to local emulator mode. Android reopened and cold-started public Home; the current
+computer-control session does not expose Android touch controls, so no new Android
+touch acceptance is claimed.
+
+Post-fix worker gates pass: **318 unit tests (19 suites), 130 mobile tests (11
+suites)**, both strict TypeScript projects, ESLint, formatting and whitespace.
+Fresh controller integration checks pass **63/63 actual local Firebase tests**
+and **7/7 reference tests**, reusing the running demo services. Tests reset only
+local disposable Firestore data.
+
+Fresh online Expo validation now fails: `expo install --check` exit 1 and
+Doctor **20/21**, solely for four patch-version mismatches. The October 6 SDK 57
+patches expect Expo 57.0.27, Constants 57.0.21, Linking 57.0.12 and Router 57.0.25;
+installed versions remain 57.0.26/57.0.20/57.0.11/57.0.24. Earlier recorded checks
+passed before this updated recommendation. Official SDK-57
+[Expo changelog](https://github.com/expo/expo/blob/sdk-57/packages/expo/CHANGELOG.md)
+and [Router changelog](https://github.com/expo/expo/blob/sdk-57/packages/expo-router/CHANGELOG.md)
+record the releases; Router includes a route-parsing/loader-key fix. Package
+metadata for Router 57.0.25 still depends on query-string ^7.1.3, so those patches
+alone do not establish decoder advisory remediation. No versions, lockfile or
+native projects were changed in this review wave. Dependency maintenance must
+restore compatibility gates and separately address the recorded advisory.
+
+Host storage had about **1.3 GiB available** before these checks. The owner was
+asked to make roughly 10 GiB available for dependency updates and native rebuilds;
+no files or caches were deleted. Task 9 remains incomplete while required Expo
+compatibility checks fail. No merge, push, deployment or scratch cleanup occurred.
 
 ## Release gates
 
-Resolve remaining iOS device acceptance, whole-branch review and runtime dependency
-blockers. TalkBack and VoiceOver verification are deferred from the current scope
+Resolve failing Expo compatibility checks, branch integration and
+runtime dependency blockers. TalkBack and VoiceOver verification are deferred from the current scope
 by the user; revisit them when that scope is resumed. Supply real privacy/terms/support content, account deletion and data
 retention processes, legal rights to all redistributed source content, editorial
 approval, and reviewed Firebase rules/environment deployment. Account deletion is
@@ -439,3 +505,8 @@ Ruling: export PublicDependencies support type and safeStorage:KeyValueStore poi
 Ruling: add typed native View ref forwarding to AppButton and update native-boundary tests to the moved actual Home wrapper/harness while preserving startup assertions — integration found PressableProps does not include ref despite Task6 report assumption; prompt focus restoration needs initiating-control handles and Task8 explicitly removes old index route — if wrong, button typing/test composition needs revision; no visual change or weakened missing-config/hanging-startup coverage is permitted.
 
 Ruling: retain pinned Expo Router dependency and document GHSA-vcc3-ghjq-m6fr as a runtime release blocker instead of overriding decode-uri-component to0.5.0 — upstream query-string7.1.3 requires CJS function/^0.2.2 while patched0.5.0 is ESM-only/outside range, so blind override breaks routing and an adapter/SDK migration exceeds this verification task — if wrong, a compatible smaller patch may have been missed; affected deep-link query parsing remains vulnerable until a reviewed supported remediation, and this branch is not release-ready.
+
+
+Ruling: use configured Expo app version derived from package.json for minimum-version gating in this foundation, explicitly not binary version fields — no OTA version changes enabled and existing installed APIs expose manifest metadata; if wrong, add native binary-version integration before introducing OTA/version divergence.
+
+Ruling: retain reviewed dependency pins through this final source fix wave and record newly failing online compatibility checks for a separate maintenance slice — the October 6 patches change routing and need independent verification/native rebuilds, while host space of 1.3 GiB constrains builds; if wrong, this delays a small compatible patch update, but no failing gate is hidden or waived.
