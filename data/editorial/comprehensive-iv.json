@@ -2979,7 +2979,7 @@
       "prompt": [
         {
           "kind": "text",
-          "text": "The teacher _________ something he ________ was right.",
+          "text": "Complete the sentence to mean that the teacher gave instruction in something he believed was correct: The teacher _________ something he ________ was right.",
           "marks": []
         }
       ],
@@ -3042,17 +3042,22 @@
           "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=59",
           "links": [],
           "imageLocations": [],
-          "corrections": []
+          "corrections": [
+            {
+              "reason": "Independent review round1: Added the intended gave-instruction/believed-correct meaning, rather than treating other meaningful completions as inherently wrong.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#iv-28"
+            }
+          ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Taught means gave instruction and thought means considered or believed. B yields the coherent sentence that the teacher taught something he thought was right; the other combinations reverse or repeat meanings incorrectly.",
+          "text": "Taught means gave instruction and thought means believed. B matches the explicitly authored instruction-to-belief meaning. A instead makes the main action a belief about his teaching; D makes both actions beliefs. Those are possible original readings, but they do not state that he gave instruction as this revised prompt requires. C uses an uninflected think in the past belief clause.",
           "marks": []
         }
       ]
@@ -3060,7 +3065,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/vocabulary: Distinguishes taught (instruction) from thought (belief) by meaning.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=59",
-      "docs/verification/editorial-full-corpus-task1.md#iv-28"
+      "docs/verification/editorial-full-corpus-task1.md#iv-28",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {

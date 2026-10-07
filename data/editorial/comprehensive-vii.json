@@ -2641,26 +2641,26 @@
       "prompt": [
         {
           "kind": "text",
-          "text": "Select the numbered source target with an error, or No error if all listed targets are correct. Evaluate language usage, not the factual truth of the source sentence. Whether jumping in (1) or hopping of (2), a bus ride to the provinces (3) is never (4) complete without food. No error (5).",
+          "text": "Select the numbered source target with an error, or No error if all listed targets are correct. Evaluate language usage, not the factual truth of the source sentence. Whether you are jumping in (1) or hopping of (2), your ride to the provinces (3) is never (4) complete without food. No error (5).",
           "marks": [
             {
-              "start": 175,
-              "end": 185,
+              "start": 183,
+              "end": 193,
               "role": "target"
             },
             {
-              "start": 193,
-              "end": 203,
+              "start": 201,
+              "end": 211,
               "role": "target"
             },
             {
-              "start": 215,
-              "end": 236,
+              "start": 222,
+              "end": 243,
               "role": "target"
             },
             {
-              "start": 244,
-              "end": 249,
+              "start": 251,
+              "end": 256,
               "role": "target"
             }
           ]
@@ -2751,18 +2751,22 @@
             {
               "reason": "Prefixed alternatives with their original target numbers, distinguishing repeated word forms without changing stable choice IDs.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vii-17"
+            },
+            {
+              "reason": "Independent review round1: Applied the previously declared collateral sentence repair to actual learner content, including the explicit actor; recomputed every preserved target span.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vii-17"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "The particle for leaving a vehicle is off, so hopping of is incorrect. The original introductory participial phrase also dangled on a bus ride; that unmarked construction is repaired while retaining the target error.",
+          "text": "The explicit you are now supplies the actor for jumping in and hopping of, so the introductory clause no longer dangles on a bus ride. The particle for leaving the bus is off, not of; target2 is the remaining error. Your ride to the provinces and is never form a grammatical main clause. Targets1,3 and4 are preserved as the visually supported source phrases.",
           "marks": []
         }
       ]
@@ -2770,7 +2774,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Tests agreement, inflection, idioms, articles, word class and punctuation in visually inspected source targets.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=84",
-      "docs/verification/editorial-full-corpus-task1.md#vii-17"
+      "docs/verification/editorial-full-corpus-task1.md#vii-17",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -2789,10 +2794,11 @@
       "resolutions": [
         {
           "code": "marked-target-review",
-          "rationale": "PDFKit visual review of pages81–90 established the numbered target phrases; preserved exact source focus in marked-text spans and alternatives. Independent explanation verifies actual usage rather than trusting the key.",
+          "rationale": "PDFKit visual review of pages81–90 established the numbered target phrases; preserved exact source focus in marked-text spans and alternatives. Independent explanation verifies actual usage rather than trusting the key. Retained source renders now provide checkable visual evidence; recomputed learner spans select the same target phrases after the disclosed surrounding-word repair.",
           "evidence": [
             "evidence/reference-extraction/comprehensive/document.json#page=84",
-            "docs/verification/editorial-full-corpus-task1.md#vii-17"
+            "docs/verification/editorial-full-corpus-task1.md#vii-17",
+            "evidence/editorial/task-1/visual-review-round1/manifest.json"
           ]
         }
       ]
@@ -5294,7 +5300,7 @@
       "prompt": [
         {
           "kind": "text",
-          "text": "Select the numbered source target with an error, or No error if all listed targets are correct. Evaluate language usage, not the factual truth of the source sentence. To get (1) the health benefits from walking (2), it needs (3) to be of moderate-intensity (4) aerobic activity. No error (5).",
+          "text": "Select the numbered source target with an error, or No error if all listed targets are correct. Evaluate language usage, not the factual truth of the source sentence. To get (1) health benefits, people engage in walking (2), which needs (3) to be a moderate-intensity (4) aerobic activity. No error (5).",
           "marks": [
             {
               "start": 167,
@@ -5302,18 +5308,18 @@
               "role": "target"
             },
             {
-              "start": 203,
-              "end": 210,
+              "start": 212,
+              "end": 219,
               "role": "target"
             },
             {
-              "start": 219,
-              "end": 224,
+              "start": 231,
+              "end": 236,
               "role": "target"
             },
             {
-              "start": 238,
-              "end": 256,
+              "start": 249,
+              "end": 267,
               "role": "target"
             }
           ]
@@ -5404,18 +5410,22 @@
             {
               "reason": "Prefixed alternatives with their original target numbers, distinguishing repeated word forms without changing stable choice IDs.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vii-33"
+            },
+            {
+              "reason": "Independent review round1: Applied the previously declared collateral sentence repair to actual learner content, including the explicit actor and complete a moderate-intensity aerobic activity predicate; recomputed every preserved target span.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vii-33"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "The marked infinitive, gerund, singular needs and compound modifier are all individually valid. However the unmarked phrase of moderate-intensity aerobic activity is malformed as a description of walking, and the introductory purpose phrase has an unclear actor; an authored grammatical framing repairs those defects before retaining No error.",
+          "text": "People is the explicit actor of the introductory purpose clause To get health benefits. Walking is the gerund object of in and the singular antecedent of which needs. The complete predicate a moderate-intensity aerobic activity includes the required article and removes the malformed of phrase. All four target forms are now grammatically valid, supporting No error for the actual revised sentence; this grammar exercise does not independently certify the health assertion.",
           "marks": []
         }
       ]
@@ -5423,7 +5433,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Tests agreement, inflection, idioms, articles, word class and punctuation in visually inspected source targets.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=88",
-      "docs/verification/editorial-full-corpus-task1.md#vii-33"
+      "docs/verification/editorial-full-corpus-task1.md#vii-33",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -5442,10 +5453,11 @@
       "resolutions": [
         {
           "code": "marked-target-review",
-          "rationale": "PDFKit visual review of pages81–90 established the numbered target phrases; preserved exact source focus in marked-text spans and alternatives. Independent explanation verifies actual usage rather than trusting the key.",
+          "rationale": "PDFKit visual review of pages81–90 established the numbered target phrases; preserved exact source focus in marked-text spans and alternatives. Independent explanation verifies actual usage rather than trusting the key. Retained source renders now provide checkable visual evidence; recomputed learner spans select the same target phrases after the disclosed surrounding-word repair.",
           "evidence": [
             "evidence/reference-extraction/comprehensive/document.json#page=88",
-            "docs/verification/editorial-full-corpus-task1.md#vii-33"
+            "docs/verification/editorial-full-corpus-task1.md#vii-33",
+            "evidence/editorial/task-1/visual-review-round1/manifest.json"
           ]
         }
       ]

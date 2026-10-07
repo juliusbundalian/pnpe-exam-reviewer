@@ -1,0 +1,10 @@
+import PDFKit
+import AppKit
+let doc=PDFDocument(url:URL(fileURLWithPath:CommandLine.arguments[1]))!
+let output=CommandLine.arguments[2]
+for n in Array(31...43)+Array(81...90) {
+ let page=doc.page(at:n-1)!
+ let img=page.thumbnail(of:NSSize(width:1200,height:1600),for:.mediaBox)
+ let png=NSBitmapImageRep(data:img.tiffRepresentation!)!.representation(using:.png,properties:[:])!
+ try! png.write(to:URL(fileURLWithPath:"\(output)/source-page-\(n).png"))
+}

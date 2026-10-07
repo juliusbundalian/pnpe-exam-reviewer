@@ -330,13 +330,15 @@ Open: None.
 
 Source: comprehensive:IV:28; pages 59-59; source answer B. Taught – thought. Proposed choice: 2. Status: needsReview.
 
-Taught means gave instruction and thought means considered or believed. B yields the coherent sentence that the teacher taught something he thought was right; the other combinations reverse or repeat meanings incorrectly.
+Taught means gave instruction and thought means believed. B matches the explicitly authored instruction-to-belief meaning. A instead makes the main action a belief about his teaching; D makes both actions beliefs. Those are possible original readings, but they do not state that he gave instruction as this revised prompt requires. C uses an uninflected think in the past belief clause.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/vocabulary: Distinguishes taught (instruction) from thought (belief) by meaning.
 
 Changes: Original prompt and alternatives retained; explanation authored.
 
 Open: None.
+
+Round1 repair: Added the intended gave-instruction/believed-correct meaning, rather than treating other meaningful completions as inherently wrong.
 
 ## IV-29
 
@@ -1414,61 +1416,71 @@ Open: None.
 
 Source: comprehensive:VI:6; pages 66-66; source answer B. Letter B. Proposed choice: 2. Status: needsReview.
 
-Sentence B introduces the background. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. B and C could otherwise exchange introductory functions, so the explicit authored outline is necessary. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence B introduces the background. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-7
 
 Source: comprehensive:VI:7; pages 66-66; source answer C. Letter C. Proposed choice: 3. Status: needsReview.
 
-Sentence C explains the term's meaning. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. B and C could otherwise exchange introductory functions, so the explicit authored outline is necessary. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence C explains the term's meaning. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-8
 
 Source: comprehensive:VI:8; pages 66-66; source answer E. Letter E. Proposed choice: 5. Status: needsReview.
 
-Sentence E contrasts yoga with a physical-only view. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. B and C could otherwise exchange introductory functions, so the explicit authored outline is necessary. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence E contrasts yoga with a physical-only view. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-9
 
 Source: comprehensive:VI:9; pages 66-67; source answer D. Letter D. Proposed choice: 4. Status: needsReview.
 
-Sentence D states the broader potential claimed. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. B and C could otherwise exchange introductory functions, so the explicit authored outline is necessary. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence D states the broader potential claimed. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-10
 
 Source: comprehensive:VI:10; pages 67-67; source answer A. Letter A. Proposed choice: 1. Status: needsReview.
 
-Sentence A states the lifestyle result claimed. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. B and C could otherwise exchange introductory functions, so the explicit authored outline is necessary. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence A states the lifestyle result claimed. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-11
 
@@ -1486,13 +1498,15 @@ Open: None.
 
 Source: comprehensive:VI:12; pages 67-67; source answer C. Letter C. Proposed choice: 3. Status: needsReview.
 
-Sentence C describes the two elements. A introduces wind and water as components of the term. C describes the pair. E's They also refers back to that pair and develops air; D's And water completes that parallel survival discussion. B's combined qualities then summarizes effects of the pair. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+C says that wind and water both flow, move and circulate, identifying their shared physical behavior. E instead discusses survival needs and develops the air example; B discusses climatic and lifestyle effects. A explains the term's two words and D discusses water's survival role. Those other descriptions do not state the pair's shared physical behavior.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Narrowed describes-the-two-elements to their shared physical behavior, distinguishing the survival and effects descriptions.
 
 ## VI-13
 
@@ -1534,61 +1548,71 @@ Open: None.
 
 Source: comprehensive:VI:16; pages 68-68; source answer D. Letter D. Proposed choice: 4. Status: needsReview.
 
-Sentence D defines the activity. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. The setting and techniques are not forced into unique positions by reference alone; the authored outline supplies that progression. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence D defines the activity. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it. Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: Fight are → Fish are.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-17
 
 Source: comprehensive:VI:17; pages 68-68; source answer B. Letter B. Proposed choice: 2. Status: needsReview.
 
-Sentence B extends it to other aquatic animals. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. The setting and techniques are not forced into unique positions by reference alone; the authored outline supplies that progression. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence B extends it to other aquatic animals. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it. Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: Fight are → Fish are.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-18
 
 Source: comprehensive:VI:18; pages 68-69; source answer A. Letter A. Proposed choice: 1. Status: needsReview.
 
-Sentence A states the usual wild setting. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. The setting and techniques are not forced into unique positions by reference alone; the authored outline supplies that progression. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence A states the usual wild setting. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it. Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: Fight are → Fish are.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-19
 
 Source: comprehensive:VI:19; pages 69-69; source answer E. Letter E. Proposed choice: 5. Status: needsReview.
 
-Sentence E lists techniques. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. The setting and techniques are not forced into unique positions by reference alone; the authored outline supplies that progression. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence E lists techniques. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it. Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: Fight are → Fish are.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-20
 
 Source: comprehensive:VI:20; pages 69-69; source answer C. Letter C. Proposed choice: 3. Status: needsReview.
 
-Sentence C clarifies excluded activities. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. The setting and techniques are not forced into unique positions by reference alone; the authored outline supplies that progression. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence C clarifies excluded activities. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it. Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: Fight are → Fish are.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-21
 
@@ -1810,13 +1834,15 @@ Open: None.
 
 Source: comprehensive:VI:39; pages 73-73; source answer C. Letter C. Proposed choice: 3. Status: needsReview.
 
-Sentence C adds the economic cost. B introduces the people. E introduces postponed death for years, anchoring A's This added time. C's These final years and also shift from A's personal costs to economic ones; D repeats economically costly while expanding the source's critique. These are the author's assertions for cohesion analysis, not medical advice. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+C refers back to the additional years with These final years and states their economic cost. D also mentions economic costs, but its subject is medical treatments and it additionally judges them unnecessary or harmful, so it fails the stated scope. A describes personal suffering, B care needs and E postponed death. The question distinguishes the author's financial-burden statement from a separate treatment critique.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Narrowed the cost question to the additional years themselves and excluded the separate necessity/harm critique.
 
 ## VI-40
 
@@ -1834,61 +1860,71 @@ Open: None.
 
 Source: comprehensive:VI:41; pages 74-74; source answer B. Letter B. Proposed choice: 2. Status: needsReview.
 
-Sentence B introduces cultural history. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. Those latter three could be reordered without breaking syntax; the authored international-to-personal-to-local outline makes the requested order explicit. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence B introduces cultural history. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-42
 
 Source: comprehensive:VI:42; pages 74-74; source answer D. Letter D. Proposed choice: 4. Status: needsReview.
 
-Sentence D continues the popularization account. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. Those latter three could be reordered without breaking syntax; the authored international-to-personal-to-local outline makes the requested order explicit. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence D continues the popularization account. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-43
 
 Source: comprehensive:VI:43; pages 74-74; source answer E. Letter E. Proposed choice: 5. Status: needsReview.
 
-Sentence E supplies the international estimate. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. Those latter three could be reordered without breaking syntax; the authored international-to-personal-to-local outline makes the requested order explicit. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence E supplies the international estimate. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-44
 
 Source: comprehensive:VI:44; pages 74-74; source answer C. Letter C. Proposed choice: 3. Status: needsReview.
 
-Sentence C connects to personal experience. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. Those latter three could be reordered without breaking syntax; the authored international-to-personal-to-local outline makes the requested order explicit. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence C connects to personal experience. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-45
 
 Source: comprehensive:VI:45; pages 74-74; source answer A. Letter A. Proposed choice: 1. Status: needsReview.
 
-Sentence A gives a local example. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. Those latter three could be reordered without breaking syntax; the authored international-to-personal-to-local outline makes the requested order explicit. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence A gives a local example. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-46
 
@@ -1954,61 +1990,71 @@ Open: None.
 
 Source: comprehensive:VI:51; pages 76-76; source answer Letter A. Proposed choice: 1. Status: needsReview.
 
-Sentence A defines pollution. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. The list could naturally occur earlier too; its final position depends on the explicitly authored outline, not a unique original sequence. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence A defines pollution. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it. Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: are they elements → are the elements.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-52
 
 Source: comprehensive:VI:52; pages 76-76; source answer Letter D. Proposed choice: 4. Status: needsReview.
 
-Sentence D defines pollutants. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. The list could naturally occur earlier too; its final position depends on the explicitly authored outline, not a unique original sequence. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence D defines pollutants. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it. Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: are they elements → are the elements.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-53
 
 Source: comprehensive:VI:53; pages 76-76; source answer Letter B. Proposed choice: 2. Status: needsReview.
 
-Sentence B describes ecosystem effects. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. The list could naturally occur earlier too; its final position depends on the explicitly authored outline, not a unique original sequence. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence B describes ecosystem effects. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it. Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: are they elements → are the elements.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-54
 
 Source: comprehensive:VI:54; pages 76-76; source answer Letter E. Proposed choice: 5. Status: needsReview.
 
-Sentence E expands the effects narrative. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. The list could naturally occur earlier too; its final position depends on the explicitly authored outline, not a unique original sequence. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence E expands the effects narrative. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it. Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: are they elements → are the elements.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-55
 
 Source: comprehensive:VI:55; pages 76-76; source answer Letter C. Proposed choice: 3. Status: needsReview.
 
-Sentence C lists forms. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. The list could naturally occur earlier too; its final position depends on the explicitly authored outline, not a unique original sequence. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence C lists forms. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it. Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: are they elements → are the elements.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-56
 
@@ -2134,181 +2180,211 @@ Open: None.
 
 Source: comprehensive:VI:66; pages 79-79; source answer Letter C. Proposed choice: 3. Status: needsReview.
 
-Sentence C identifies the place. C supplies the place for D and B's It. D locates it and B describes features. A and E offer two independent recognitions and could exchange positions; the explicit authored magazine-then-CNNGo outline makes their order unique. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence C identifies the place. C supplies the place for D and B's It. D locates it and B describes features. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-67
 
 Source: comprehensive:VI:67; pages 79-79; source answer Letter D. Proposed choice: 4. Status: needsReview.
 
-Sentence D gives distances. C supplies the place for D and B's It. D locates it and B describes features. A and E offer two independent recognitions and could exchange positions; the explicit authored magazine-then-CNNGo outline makes their order unique. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence D gives distances. C supplies the place for D and B's It. D locates it and B describes features. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-68
 
 Source: comprehensive:VI:68; pages 79-79; source answer Letter B. Proposed choice: 2. Status: needsReview.
 
-Sentence B describes features. C supplies the place for D and B's It. D locates it and B describes features. A and E offer two independent recognitions and could exchange positions; the explicit authored magazine-then-CNNGo outline makes their order unique. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence B describes features. C supplies the place for D and B's It. D locates it and B describes features. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-69
 
 Source: comprehensive:VI:69; pages 79-79; source answer Letter A. Proposed choice: 1. Status: needsReview.
 
-Sentence A gives the magazine recognition. C supplies the place for D and B's It. D locates it and B describes features. A and E offer two independent recognitions and could exchange positions; the explicit authored magazine-then-CNNGo outline makes their order unique. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence A gives the magazine recognition. C supplies the place for D and B's It. D locates it and B describes features. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-70
 
 Source: comprehensive:VI:70; pages 79-79; source answer Letter E. Proposed choice: 5. Status: needsReview.
 
-Sentence E gives the CNNGo recognition. C supplies the place for D and B's It. D locates it and B describes features. A and E offer two independent recognitions and could exchange positions; the explicit authored magazine-then-CNNGo outline makes their order unique. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence E gives the CNNGo recognition. C supplies the place for D and B's It. D locates it and B describes features. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-71
 
 Source: comprehensive:VI:71; pages 79-80; source answer Letter C. Proposed choice: 3. Status: needsReview.
 
-Sentence C introduces the feast. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. The explicit outline fixes chronology-detail stages without independently endorsing the excerpt's historical or festival-date assertions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence C introduces the feast. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-72
 
 Source: comprehensive:VI:72; pages 80-80; source answer Letter A. Proposed choice: 1. Status: needsReview.
 
-Sentence A supplies the stated dates. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. The explicit outline fixes chronology-detail stages without independently endorsing the excerpt's historical or festival-date assertions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence A supplies the stated dates. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-73
 
 Source: comprehensive:VI:73; pages 80-80; source answer Letter D. Proposed choice: 4. Status: needsReview.
 
-Sentence D describes observance. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. The explicit outline fixes chronology-detail stages without independently endorsing the excerpt's historical or festival-date assertions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence D describes observance. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-74
 
 Source: comprehensive:VI:74; pages 80-80; source answer Letter E. Proposed choice: 5. Status: needsReview.
 
-Sentence E gives broad history. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. The explicit outline fixes chronology-detail stages without independently endorsing the excerpt's historical or festival-date assertions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence E gives broad history. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-75
 
 Source: comprehensive:VI:75; pages 80-80; source answer Letter B. Proposed choice: 2. Status: needsReview.
 
-Sentence B adds a specific historical detail. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. The explicit outline fixes chronology-detail stages without independently endorsing the excerpt's historical or festival-date assertions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence B adds a specific historical detail. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-76
 
 Source: comprehensive:VI:76; pages 80-80; source answer Letter D. Proposed choice: 4. Status: needsReview.
 
-Sentence D introduces the island. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. The authored outline fixes appeal before the inventory rather than claiming the inventory could never appear earlier. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence D introduces the island. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-77
 
 Source: comprehensive:VI:77; pages 81-81; source answer Letter E. Proposed choice: 5. Status: needsReview.
 
-Sentence E elaborates its appeal. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. The authored outline fixes appeal before the inventory rather than claiming the inventory could never appear earlier. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence E elaborates its appeal. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-78
 
 Source: comprehensive:VI:78; pages 81-81; source answer Letter B. Proposed choice: 2. Status: needsReview.
 
-Sentence B gives the beach inventory. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. The authored outline fixes appeal before the inventory rather than claiming the inventory could never appear earlier. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence B gives the beach inventory. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-79
 
 Source: comprehensive:VI:79; pages 81-81; source answer Letter C. Proposed choice: 3. Status: needsReview.
 
-Sentence C selects a particular beach from that set. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. The authored outline fixes appeal before the inventory rather than claiming the inventory could never appear earlier. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence C selects a particular beach from that set. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VI-80
 
 Source: comprehensive:VI:80; pages 81-81; source answer Letter A. Proposed choice: 1. Status: needsReview.
 
-Sentence A states the returning-tourist effect. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. The authored outline fixes appeal before the inventory rather than claiming the inventory could never appear earlier. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
+Sentence A states the returning-tourist effect. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.
 
 Changes: Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.
 
 Open: None.
+
+Round1 repair: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.
 
 ## VII-1
 
@@ -2506,13 +2582,15 @@ Open: None.
 
 Source: comprehensive:VII:17; pages 84-84; source answer hopping of (2) - should be hopping off. Proposed choice: 2. Status: needsReview.
 
-The particle for leaving a vehicle is off, so hopping of is incorrect. The original introductory participial phrase also dangled on a bus ride; that unmarked construction is repaired while retaining the target error.
+The explicit you are now supplies the actor for jumping in and hopping of, so the introductory clause no longer dangles on a bus ride. The particle for leaving the bus is off, not of; target2 is the remaining error. Your ride to the provinces and is never form a grammatical main clause. Targets1,3 and4 are preserved as the visually supported source phrases.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/grammar: Tests agreement, inflection, idioms, articles, word class and punctuation in visually inspected source targets.
 
 Changes: Replaced parser overbroad segment alternatives with the actual selectively bold source target phrases, retaining original stable choice IDs. Source uses bold rather than the underlining stated in its instructions. Repaired unmarked collateral defects to isolate the intended targets: Whether jumping in (1) or hopping of (2), a bus ride to the provinces (3) is never (4) complete without food. → Whether you are jumping in (1) or hopping of (2), your ride to the provinces (3) is never (4) complete without food.. Normalized extraction line wraps to spaces without changing source words. Prefixed alternatives with their original target numbers, distinguishing repeated word forms without changing stable choice IDs.
 
 Open: None.
+
+Round1 repair: Applied the previously declared collateral sentence repair to actual learner content, including the explicit actor; recomputed every preserved target span.
 
 ## VII-18
 
@@ -2698,13 +2776,15 @@ Open: None.
 
 Source: comprehensive:VII:33; pages 88-88; source answer No error (5). Proposed choice: 5. Status: needsReview.
 
-The marked infinitive, gerund, singular needs and compound modifier are all individually valid. However the unmarked phrase of moderate-intensity aerobic activity is malformed as a description of walking, and the introductory purpose phrase has an unclear actor; an authored grammatical framing repairs those defects before retaining No error.
+People is the explicit actor of the introductory purpose clause To get health benefits. Walking is the gerund object of in and the singular antecedent of which needs. The complete predicate a moderate-intensity aerobic activity includes the required article and removes the malformed of phrase. All four target forms are now grammatically valid, supporting No error for the actual revised sentence; this grammar exercise does not independently certify the health assertion.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/grammar: Tests agreement, inflection, idioms, articles, word class and punctuation in visually inspected source targets.
 
 Changes: Replaced parser overbroad segment alternatives with the actual selectively bold source target phrases, retaining original stable choice IDs. Source uses bold rather than the underlining stated in its instructions. Repaired unmarked collateral defects to isolate the intended targets: To get (1) the health benefits from walking (2), it needs (3) to be of moderate-intensity (4) aerobic activity. → To get (1) health benefits, people engage in walking (2), which needs (3) to be moderate-intensity (4) aerobic activity.. Normalized extraction line wraps to spaces without changing source words. Prefixed alternatives with their original target numbers, distinguishing repeated word forms without changing stable choice IDs.
 
 Open: None.
+
+Round1 repair: Applied the previously declared collateral sentence repair to actual learner content, including the explicit actor and complete a moderate-intensity aerobic activity predicate; recomputed every preserved target span.
 
 ## VII-34
 
@@ -3581,13 +3661,15 @@ Open: None.
 Source: comprehensive:VIII:20; pages 98-98; source answer E. There are many types of patrol in a police department, but their
 principles of organization are the same.. Proposed choice: 5. Status: needsReview.
 
-E uses There are to introduce types and their to refer back to them. A/C confuse locative there with possessive their; B has a different reversed predicate; D's singular its changes the referent to the department, so it fails the specified types-reference.
+E introduces patrol types with There are, then uses their principles of organization as subject, are as verb, and the same as complement. B also has the correct existential opening and plural reference, but inverts the second clause as the same are the principles; it fails the newly explicit ordinary order. A/C misuse their for there, and D uses singular its for the department rather than the plural patrol types.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.
 
 Changes: Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.
 
 Open: None.
+
+Round1 repair: Added ordinary subject–verb–complement order to the second-clause criterion; B had also satisfied the earlier broader constraint.
 
 ## VIII-21
 
@@ -3711,13 +3793,15 @@ Open: None.
 Source: comprehensive:VIII:30; pages 101-102; source answer A. Sticking to a regular class at the gym is an easy way to automate
 cross-training.. Proposed choice: 1. Status: needsReview.
 
-A makes Sticking to a regular class at the gym the subject. B fronts purpose, C begins with the predicate and contains thegym, D fronts location and E displaces the location into the predicate. Some alternate orders remain grammatical; the authored structural contract distinguishes A.
+A begins directly with the full gerund subject Sticking to a regular class at the gym. B also has that gerund subject internally, but begins with a fronted purpose phrase, which the revised prompt explicitly excludes. C begins with the predicate and contains thegym; D fronts location; E puts at the gym in the predicate rather than within the subject.
 
 Taxonomy: Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.
 
 Changes: Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.
 
 Open: None.
+
+Round1 repair: Required the gerund subject at the start without a fronted purpose/location phrase; B had satisfied the previous internal-subject requirement.
 
 ## VIII-31
 
@@ -3815,3 +3899,9 @@ For VIII25, the controller independently verified the current primary sources at
 Actual final checks: authoritative loadCandidates verifies all687 corpus occurrences and registered PDF checksums; loadOverlays parses the complete overlay set; QuestionSchema parses all312 scoped proposals, including drafts and rejected duplicate; stable IDs, original answers/labels/pages/checksums/locators/links/assets and canonical issues are checked by the real-corpus test. Shared stimulus equality and duplicate winner/lineage are also checked. Full reference suite passes3suites/12tests, tools typecheck passes, focused ESLint passes, and validate:questions returns eligible20. SHA256 matches for all six controller baseline files: three PDFs, registry, approved short overlay and data/questions.json. No approval stamp, publication write or import occurred. Final formatter/whitespace checks run before commit. Root performs broader unit/mobile/lint checks at final reconciliation.
 
 The initial new-test typecheck failure (missing non-null assertions) was corrected before the passing rerun. Authoring helpers are archived only as text; no executable ignored scratch authoring code is introduced into the repository. The first100 checkpoint artifacts are retained as historical evidence; the final authoring archive and decisions represent this complete312 preparation.
+
+## Independent review round 1
+
+Fixed all five Important groups (seven source keys) and removed stale outline explanations. The earlier declarations of VII17/VII33 repairs had not reached learner content because exact multiline replacement strings did not match extracted line wraps. This round edits the actual text and recomputes every mark. VII33 also supplies the article a required for the predicate. Existing creation dates and original lineage stay intact; changed proposals receive actual edit timestamps. Previous authoring archives and commits retain historical evidence.
+
+Retained visual evidence: evidence/editorial/task-1/visual-review-round1/source-page-31.png through source-page-43.png, and source-page-81.png through source-page-90.png. Manifest records all23 PNG checksums, exact source checksum, rendering time and native PDFKit method. Page84 establishes jumping in/hopping of/ride to the provinces/never; page88 establishes To get/walking/needs/moderate-intensity. New learner framing changes surrounding words while retaining these marked phrases. The original source PDFs and extraction symlink were only read.

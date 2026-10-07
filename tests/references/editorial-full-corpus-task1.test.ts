@@ -110,3 +110,50 @@ test('shared context and duplicate disposition preserve every original source oc
     expect(source.pages).toEqual({ start: original.pageStart, end: original.pageEnd });
   }
 });
+
+test('review repairs exist in learner content with recomputed source-target spans', async () => {
+  const overlays = await loadOverlays(root);
+  const question = (key: string) =>
+    QuestionSchema.parse(overlays.find((o) => o.sourceKey === key)!.proposed);
+  const text = (key: string) => {
+    const block = question(key).prompt[0]!;
+    if (block.kind !== 'text') throw new Error('Expected text learner prompt');
+    return block;
+  };
+  const seventeen = text('comprehensive:VII:17');
+  expect(seventeen.text).toMatch(/Whether you are jumping in \(1\) or hopping of \(2\), your ride/);
+  expect(seventeen.text).not.toContain('Whether jumping in');
+  expect(seventeen.marks.map((m) => seventeen.text.slice(m.start, m.end))).toEqual([
+    'jumping in',
+    'hopping of',
+    'ride to the provinces',
+    'never',
+  ]);
+  const thirtyThree = text('comprehensive:VII:33');
+  expect(thirtyThree.text).toContain('health benefits, people engage in walking');
+  expect(thirtyThree.text).toMatch(
+    /which needs \(3\) to be a moderate-intensity \(4\) aerobic activity/,
+  );
+  expect(thirtyThree.text).not.toContain('to be of moderate-intensity');
+  expect(thirtyThree.marks.map((m) => thirtyThree.text.slice(m.start, m.end))).toEqual([
+    'To get',
+    'walking',
+    'needs',
+    'moderate-intensity',
+  ]);
+  expect(text('comprehensive:IV:28').text).toContain('gave instruction');
+  expect(text('comprehensive:IV:28').text).toContain('believed was correct');
+  expect(text('comprehensive:VIII:20').text).toContain('ordinary subject–verb–complement order');
+  expect(text('comprehensive:VIII:30').text).toContain('beginning directly with the gerund');
+  expect(text('comprehensive:VIII:30').text).toContain('no fronted purpose or location phrase');
+  expect(text('comprehensive:VI:12').text).toContain('shared physical behavior');
+  expect(text('comprehensive:VI:39').text).toContain('additional final years themselves');
+  expect(text('comprehensive:VI:39').text).toContain(
+    'whether medical treatments are necessary or harmful',
+  );
+  for (const overlay of overlays.filter((o) => o.sourceKey.startsWith('comprehensive:VI:'))) {
+    const q = QuestionSchema.parse(overlay.proposed);
+    const explanation = q.explanation!.map((b) => (b.kind === 'text' ? b.text : '')).join(' ');
+    expect(explanation).not.toMatch(/outline|outlined/i);
+  }
+});

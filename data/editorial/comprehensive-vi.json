@@ -761,18 +761,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-6"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-6"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence B introduces the background. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. B and C could otherwise exchange introductory functions, so the explicit authored outline is necessary. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence B introduces the background. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -791,7 +795,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=66",
-      "docs/verification/editorial-full-corpus-task1.md#vi-6"
+      "docs/verification/editorial-full-corpus-task1.md#vi-6",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -892,18 +897,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-7"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-7"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence C explains the term's meaning. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. B and C could otherwise exchange introductory functions, so the explicit authored outline is necessary. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence C explains the term's meaning. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -922,7 +931,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=66",
-      "docs/verification/editorial-full-corpus-task1.md#vi-7"
+      "docs/verification/editorial-full-corpus-task1.md#vi-7",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -1023,18 +1033,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-8"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-8"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence E contrasts yoga with a physical-only view. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. B and C could otherwise exchange introductory functions, so the explicit authored outline is necessary. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence E contrasts yoga with a physical-only view. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -1053,7 +1067,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=66",
-      "docs/verification/editorial-full-corpus-task1.md#vi-8"
+      "docs/verification/editorial-full-corpus-task1.md#vi-8",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -1154,18 +1169,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-9"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-9"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence D states the broader potential claimed. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. B and C could otherwise exchange introductory functions, so the explicit authored outline is necessary. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence D states the broader potential claimed. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -1184,7 +1203,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=66",
-      "docs/verification/editorial-full-corpus-task1.md#vi-9"
+      "docs/verification/editorial-full-corpus-task1.md#vi-9",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -1285,18 +1305,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-10"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-10"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence A states the lifestyle result claimed. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. B and C could otherwise exchange introductory functions, so the explicit authored outline is necessary. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence A states the lifestyle result claimed. B supplies the background; C explains the term. E sets up the physical-only misconception, against which D gives the text's broader claimed potential. A's It has brought names the claimed effect on practitioners. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -1315,7 +1339,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=67",
-      "docs/verification/editorial-full-corpus-task1.md#vi-10"
+      "docs/verification/editorial-full-corpus-task1.md#vi-10",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -1470,7 +1495,7 @@
       "prompt": [
         {
           "kind": "text",
-          "text": "In the quoted source sentence set, which sentence describes the two elements? Treat factual and temporal statements as the source author's language, rather than independently verified current information.",
+          "text": "In the quoted source sentence set, which sentence identifies a shared physical behavior of wind and water? Treat factual and temporal statements as the source author's language, rather than independently verified current information.",
           "marks": []
         }
       ],
@@ -1547,18 +1572,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-12"
+            },
+            {
+              "reason": "Independent review round1: Narrowed describes-the-two-elements to their shared physical behavior, distinguishing the survival and effects descriptions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-12"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence C describes the two elements. A introduces wind and water as components of the term. C describes the pair. E's They also refers back to that pair and develops air; D's And water completes that parallel survival discussion. B's combined qualities then summarizes effects of the pair. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "C says that wind and water both flow, move and circulate, identifying their shared physical behavior. E instead discusses survival needs and develops the air example; B discusses climatic and lifestyle effects. A explains the term's two words and D discusses water's survival role. Those other descriptions do not state the pair's shared physical behavior.",
           "marks": []
         }
       ],
@@ -1577,7 +1606,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=67",
-      "docs/verification/editorial-full-corpus-task1.md#vi-12"
+      "docs/verification/editorial-full-corpus-task1.md#vi-12",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -2075,18 +2105,22 @@
             {
               "reason": "Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: Fight are → Fish are.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-16"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-16"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence D defines the activity. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. The setting and techniques are not forced into unique positions by reference alone; the authored outline supplies that progression. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence D defines the activity. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -2105,7 +2139,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=68",
-      "docs/verification/editorial-full-corpus-task1.md#vi-16"
+      "docs/verification/editorial-full-corpus-task1.md#vi-16",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -2210,18 +2245,22 @@
             {
               "reason": "Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: Fight are → Fish are.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-17"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-17"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence B extends it to other aquatic animals. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. The setting and techniques are not forced into unique positions by reference alone; the authored outline supplies that progression. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence B extends it to other aquatic animals. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -2240,7 +2279,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=68",
-      "docs/verification/editorial-full-corpus-task1.md#vi-17"
+      "docs/verification/editorial-full-corpus-task1.md#vi-17",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -2345,18 +2385,22 @@
             {
               "reason": "Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: Fight are → Fish are.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-18"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-18"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence A states the usual wild setting. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. The setting and techniques are not forced into unique positions by reference alone; the authored outline supplies that progression. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence A states the usual wild setting. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -2375,7 +2419,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=68",
-      "docs/verification/editorial-full-corpus-task1.md#vi-18"
+      "docs/verification/editorial-full-corpus-task1.md#vi-18",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -2480,18 +2525,22 @@
             {
               "reason": "Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: Fight are → Fish are.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-19"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-19"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence E lists techniques. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. The setting and techniques are not forced into unique positions by reference alone; the authored outline supplies that progression. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence E lists techniques. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -2510,7 +2559,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=69",
-      "docs/verification/editorial-full-corpus-task1.md#vi-19"
+      "docs/verification/editorial-full-corpus-task1.md#vi-19",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -2615,18 +2665,22 @@
             {
               "reason": "Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: Fight are → Fish are.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-20"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-20"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence C clarifies excluded activities. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. The setting and techniques are not forced into unique positions by reference alone; the authored outline supplies that progression. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence C clarifies excluded activities. D defines fishing and anchors B's It. A gives the wild setting and E lists techniques, while C's The term supplies final scope exclusions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -2645,7 +2699,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=69",
-      "docs/verification/editorial-full-corpus-task1.md#vi-20"
+      "docs/verification/editorial-full-corpus-task1.md#vi-20",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -5067,7 +5122,7 @@
       "prompt": [
         {
           "kind": "text",
-          "text": "In the quoted source sentence set, which sentence adds the economic cost? Treat factual and temporal statements as the source author's language, rather than independently verified current information.",
+          "text": "In the quoted source sentence set, which sentence states the financial burden of the additional final years themselves, without adding a judgment about whether medical treatments are necessary or harmful? Treat factual and temporal statements as the source author's language, rather than independently verified current information.",
           "marks": []
         }
       ],
@@ -5144,18 +5199,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-39"
+            },
+            {
+              "reason": "Independent review round1: Narrowed the cost question to the additional years themselves and excluded the separate necessity/harm critique.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-39"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence C adds the economic cost. B introduces the people. E introduces postponed death for years, anchoring A's This added time. C's These final years and also shift from A's personal costs to economic ones; D repeats economically costly while expanding the source's critique. These are the author's assertions for cohesion analysis, not medical advice. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "C refers back to the additional years with These final years and states their economic cost. D also mentions economic costs, but its subject is medical treatments and it additionally judges them unnecessary or harmful, so it fails the stated scope. A describes personal suffering, B care needs and E postponed death. The question distinguishes the author's financial-burden statement from a separate treatment critique.",
           "marks": []
         }
       ],
@@ -5174,7 +5233,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=73",
-      "docs/verification/editorial-full-corpus-task1.md#vi-39"
+      "docs/verification/editorial-full-corpus-task1.md#vi-39",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -5406,18 +5466,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-41"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-41"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence B introduces cultural history. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. Those latter three could be reordered without breaking syntax; the authored international-to-personal-to-local outline makes the requested order explicit. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence B introduces cultural history. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -5436,7 +5500,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=74",
-      "docs/verification/editorial-full-corpus-task1.md#vi-41"
+      "docs/verification/editorial-full-corpus-task1.md#vi-41",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -5537,18 +5602,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-42"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-42"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence D continues the popularization account. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. Those latter three could be reordered without breaking syntax; the authored international-to-personal-to-local outline makes the requested order explicit. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence D continues the popularization account. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -5567,7 +5636,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=74",
-      "docs/verification/editorial-full-corpus-task1.md#vi-42"
+      "docs/verification/editorial-full-corpus-task1.md#vi-42",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -5668,18 +5738,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-43"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-43"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence E supplies the international estimate. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. Those latter three could be reordered without breaking syntax; the authored international-to-personal-to-local outline makes the requested order explicit. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence E supplies the international estimate. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -5698,7 +5772,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=74",
-      "docs/verification/editorial-full-corpus-task1.md#vi-43"
+      "docs/verification/editorial-full-corpus-task1.md#vi-43",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -5799,18 +5874,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-44"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-44"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence C connects to personal experience. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. Those latter three could be reordered without breaking syntax; the authored international-to-personal-to-local outline makes the requested order explicit. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence C connects to personal experience. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -5829,7 +5908,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=74",
-      "docs/verification/editorial-full-corpus-task1.md#vi-44"
+      "docs/verification/editorial-full-corpus-task1.md#vi-44",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -5930,18 +6010,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-45"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-45"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence A gives a local example. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. Those latter three could be reordered without breaking syntax; the authored international-to-personal-to-local outline makes the requested order explicit. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence A gives a local example. B supplies drugs for D's they and precedes D's later popularization account. E gives an international scale, C narrows to the reader's personal circle, and A narrows to a Philippine example. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -5960,7 +6044,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=74",
-      "docs/verification/editorial-full-corpus-task1.md#vi-45"
+      "docs/verification/editorial-full-corpus-task1.md#vi-45",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -6720,18 +6805,22 @@
             {
               "reason": "Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: are they elements → are the elements.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-51"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-51"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence A defines pollution. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. The list could naturally occur earlier too; its final position depends on the explicitly authored outline, not a unique original sequence. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence A defines pollution. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -6750,7 +6839,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=76",
-      "docs/verification/editorial-full-corpus-task1.md#vi-51"
+      "docs/verification/editorial-full-corpus-task1.md#vi-51",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -6855,18 +6945,22 @@
             {
               "reason": "Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: are they elements → are the elements.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-52"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-52"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence D defines pollutants. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. The list could naturally occur earlier too; its final position depends on the explicitly authored outline, not a unique original sequence. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence D defines pollutants. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -6885,7 +6979,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=76",
-      "docs/verification/editorial-full-corpus-task1.md#vi-52"
+      "docs/verification/editorial-full-corpus-task1.md#vi-52",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -6990,18 +7085,22 @@
             {
               "reason": "Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: are they elements → are the elements.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-53"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-53"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence B describes ecosystem effects. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. The list could naturally occur earlier too; its final position depends on the explicitly authored outline, not a unique original sequence. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence B describes ecosystem effects. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -7020,7 +7119,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=76",
-      "docs/verification/editorial-full-corpus-task1.md#vi-53"
+      "docs/verification/editorial-full-corpus-task1.md#vi-53",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -7125,18 +7225,22 @@
             {
               "reason": "Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: are they elements → are the elements.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-54"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-54"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence E expands the effects narrative. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. The list could naturally occur earlier too; its final position depends on the explicitly authored outline, not a unique original sequence. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence E expands the effects narrative. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -7155,7 +7259,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=76",
-      "docs/verification/editorial-full-corpus-task1.md#vi-54"
+      "docs/verification/editorial-full-corpus-task1.md#vi-54",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -7260,18 +7365,22 @@
             {
               "reason": "Corrected transparent spelling/agreement slips consistently in alternatives and shared stimulus: are they elements → are the elements.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-55"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-55"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence C lists forms. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. The list could naturally occur earlier too; its final position depends on the explicitly authored outline, not a unique original sequence. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence C lists forms. A defines pollution while introducing pollutants, which D then defines. B shifts to effects and E expands the impact narrative. C's It refers back to pollution and lists forms. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -7290,7 +7399,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=76",
-      "docs/verification/editorial-full-corpus-task1.md#vi-55"
+      "docs/verification/editorial-full-corpus-task1.md#vi-55",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -8701,18 +8811,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-66"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-66"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence C identifies the place. C supplies the place for D and B's It. D locates it and B describes features. A and E offer two independent recognitions and could exchange positions; the explicit authored magazine-then-CNNGo outline makes their order unique. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence C identifies the place. C supplies the place for D and B's It. D locates it and B describes features. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -8731,7 +8845,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=79",
-      "docs/verification/editorial-full-corpus-task1.md#vi-66"
+      "docs/verification/editorial-full-corpus-task1.md#vi-66",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -8832,18 +8947,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-67"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-67"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence D gives distances. C supplies the place for D and B's It. D locates it and B describes features. A and E offer two independent recognitions and could exchange positions; the explicit authored magazine-then-CNNGo outline makes their order unique. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence D gives distances. C supplies the place for D and B's It. D locates it and B describes features. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -8862,7 +8981,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=79",
-      "docs/verification/editorial-full-corpus-task1.md#vi-67"
+      "docs/verification/editorial-full-corpus-task1.md#vi-67",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -8963,18 +9083,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-68"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-68"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence B describes features. C supplies the place for D and B's It. D locates it and B describes features. A and E offer two independent recognitions and could exchange positions; the explicit authored magazine-then-CNNGo outline makes their order unique. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence B describes features. C supplies the place for D and B's It. D locates it and B describes features. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -8993,7 +9117,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=79",
-      "docs/verification/editorial-full-corpus-task1.md#vi-68"
+      "docs/verification/editorial-full-corpus-task1.md#vi-68",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -9094,18 +9219,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-69"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-69"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence A gives the magazine recognition. C supplies the place for D and B's It. D locates it and B describes features. A and E offer two independent recognitions and could exchange positions; the explicit authored magazine-then-CNNGo outline makes their order unique. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence A gives the magazine recognition. C supplies the place for D and B's It. D locates it and B describes features. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -9124,7 +9253,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=79",
-      "docs/verification/editorial-full-corpus-task1.md#vi-69"
+      "docs/verification/editorial-full-corpus-task1.md#vi-69",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -9225,18 +9355,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-70"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-70"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence E gives the CNNGo recognition. C supplies the place for D and B's It. D locates it and B describes features. A and E offer two independent recognitions and could exchange positions; the explicit authored magazine-then-CNNGo outline makes their order unique. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence E gives the CNNGo recognition. C supplies the place for D and B's It. D locates it and B describes features. Currently belongs to the undated source viewpoint, not an updated ranking. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -9255,7 +9389,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=79",
-      "docs/verification/editorial-full-corpus-task1.md#vi-70"
+      "docs/verification/editorial-full-corpus-task1.md#vi-70",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -9356,18 +9491,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-71"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-71"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence C introduces the feast. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. The explicit outline fixes chronology-detail stages without independently endorsing the excerpt's historical or festival-date assertions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence C introduces the feast. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -9386,7 +9525,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=79",
-      "docs/verification/editorial-full-corpus-task1.md#vi-71"
+      "docs/verification/editorial-full-corpus-task1.md#vi-71",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -9487,18 +9627,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-72"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-72"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence A supplies the stated dates. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. The explicit outline fixes chronology-detail stages without independently endorsing the excerpt's historical or festival-date assertions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence A supplies the stated dates. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -9517,7 +9661,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=80",
-      "docs/verification/editorial-full-corpus-task1.md#vi-72"
+      "docs/verification/editorial-full-corpus-task1.md#vi-72",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -9618,18 +9763,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-73"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-73"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence D describes observance. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. The explicit outline fixes chronology-detail stages without independently endorsing the excerpt's historical or festival-date assertions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence D describes observance. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -9648,7 +9797,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=80",
-      "docs/verification/editorial-full-corpus-task1.md#vi-73"
+      "docs/verification/editorial-full-corpus-task1.md#vi-73",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -9749,18 +9899,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-74"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-74"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence E gives broad history. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. The explicit outline fixes chronology-detail stages without independently endorsing the excerpt's historical or festival-date assertions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence E gives broad history. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -9779,7 +9933,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=80",
-      "docs/verification/editorial-full-corpus-task1.md#vi-74"
+      "docs/verification/editorial-full-corpus-task1.md#vi-74",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -9880,18 +10035,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-75"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-75"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence B adds a specific historical detail. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. The explicit outline fixes chronology-detail stages without independently endorsing the excerpt's historical or festival-date assertions. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence B adds a specific historical detail. C introduces the feast, anchoring A's It and D's the feast. A supplies dates and D describes observance; E gives broad century history and B narrows it to a statue detail. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -9910,7 +10069,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=80",
-      "docs/verification/editorial-full-corpus-task1.md#vi-75"
+      "docs/verification/editorial-full-corpus-task1.md#vi-75",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -10011,18 +10171,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-76"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-76"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence D introduces the island. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. The authored outline fixes appeal before the inventory rather than claiming the inventory could never appear earlier. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence D introduces the island. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -10041,7 +10205,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=80",
-      "docs/verification/editorial-full-corpus-task1.md#vi-76"
+      "docs/verification/editorial-full-corpus-task1.md#vi-76",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -10142,18 +10307,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-77"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-77"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence E elaborates its appeal. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. The authored outline fixes appeal before the inventory rather than claiming the inventory could never appear earlier. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence E elaborates its appeal. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -10172,7 +10341,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=81",
-      "docs/verification/editorial-full-corpus-task1.md#vi-77"
+      "docs/verification/editorial-full-corpus-task1.md#vi-77",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -10273,18 +10443,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-78"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-78"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence B gives the beach inventory. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. The authored outline fixes appeal before the inventory rather than claiming the inventory could never appear earlier. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence B gives the beach inventory. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -10303,7 +10477,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=81",
-      "docs/verification/editorial-full-corpus-task1.md#vi-78"
+      "docs/verification/editorial-full-corpus-task1.md#vi-78",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -10404,18 +10579,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-79"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-79"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence C selects a particular beach from that set. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. The authored outline fixes appeal before the inventory rather than claiming the inventory could never appear earlier. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence C selects a particular beach from that set. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -10434,7 +10613,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=81",
-      "docs/verification/editorial-full-corpus-task1.md#vi-79"
+      "docs/verification/editorial-full-corpus-task1.md#vi-79",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -10535,18 +10715,22 @@
             {
               "reason": "Converted the underdetermined original sentence-position question into an explicitly authored discourse-function question. A preliminary five-stage-outline proposal was rejected at self-review because it overcued the intended order; no approval or published version ever used it.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-80"
+            },
+            {
+              "reason": "Independent review round1: Removed obsolete outline/stage requirements from the learner explanation; the retained reasoning addresses actual discourse functions and reference relationships. Historical outline rejection remains in original corrections and archived decisions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#vi-80"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Sentence A states the returning-tourist effect. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. The authored outline fixes appeal before the inventory rather than claiming the inventory could never appear earlier. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
+          "text": "Sentence A states the returning-tourist effect. D introduces Boracay, E elaborates its appeal, and B's The island gives the set of beaches that C's The most famous singles out. A uses here and reports the visitors' return as a concluding tourism effect. This revised question identifies that specific discourse function, rather than claiming every original sentence position has a unique grammatical order.",
           "marks": []
         }
       ],
@@ -10565,7 +10749,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/readingComprehension: Identifies explicit discourse functions and reference relationships in the complete preserved source sentence set.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=81",
-      "docs/verification/editorial-full-corpus-task1.md#vi-80"
+      "docs/verification/editorial-full-corpus-task1.md#vi-80",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {

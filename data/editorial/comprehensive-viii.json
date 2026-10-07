@@ -2337,7 +2337,7 @@
       "prompt": [
         {
           "kind": "text",
-          "text": "Choose the sentence beginning with existential There are and using a plural possessive referring to the patrol types in the contrasting clause. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "text": "Choose the sentence beginning with existential There are and using a plural possessive referring to the patrol types in a contrasting clause with ordinary subject–verb–complement order. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
           "marks": []
         }
       ],
@@ -2414,18 +2414,22 @@
             {
               "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-20"
+            },
+            {
+              "reason": "Independent review round1: Added ordinary subject–verb–complement order to the second-clause criterion; B had also satisfied the earlier broader constraint.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-20"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "E uses There are to introduce types and their to refer back to them. A/C confuse locative there with possessive their; B has a different reversed predicate; D's singular its changes the referent to the department, so it fails the specified types-reference.",
+          "text": "E introduces patrol types with There are, then uses their principles of organization as subject, are as verb, and the same as complement. B also has the correct existential opening and plural reference, but inverts the second clause as the same are the principles; it fails the newly explicit ordinary order. A/C misuse their for there, and D uses singular its for the department rather than the plural patrol types.",
           "marks": []
         }
       ]
@@ -2433,7 +2437,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=98",
-      "docs/verification/editorial-full-corpus-task1.md#viii-20"
+      "docs/verification/editorial-full-corpus-task1.md#viii-20",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
@@ -3564,7 +3569,7 @@
       "prompt": [
         {
           "kind": "text",
-          "text": "Choose a correctly spaced sentence with the gerund activity as subject and the at-the-gym phrase inside that activity description. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
+          "text": "Choose a correctly spaced sentence beginning directly with the gerund activity as its subject, with no fronted purpose or location phrase, and placing the at-the-gym phrase inside that subject description. Evaluate sentence structure and preserve the specified meaning; quoted factual assertions are not independently certified by this language exercise.",
           "marks": []
         }
       ],
@@ -3641,18 +3646,22 @@
             {
               "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-30"
+            },
+            {
+              "reason": "Independent review round1: Required the gerund subject at the start without a fronted purpose/location phrase; B had satisfied the previous internal-subject requirement.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-30"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T12:26:14.220Z",
-      "updatedAt": "2026-10-07T12:26:14.220Z",
+      "updatedAt": "2026-10-07T15:46:06.334359Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "A makes Sticking to a regular class at the gym the subject. B fronts purpose, C begins with the predicate and contains thegym, D fronts location and E displaces the location into the predicate. Some alternate orders remain grammatical; the authored structural contract distinguishes A.",
+          "text": "A begins directly with the full gerund subject Sticking to a regular class at the gym. B also has that gerund subject internally, but begins with a fronted purpose phrase, which the revised prompt explicitly excludes. C begins with the predicate and contains thegym; D fronts location; E puts at the gym in the predicate rather than within the subject.",
           "marks": []
         }
       ]
@@ -3660,7 +3669,8 @@
     "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=101",
-      "docs/verification/editorial-full-corpus-task1.md#viii-30"
+      "docs/verification/editorial-full-corpus-task1.md#viii-30",
+      "docs/verification/editorial-full-corpus-task1.md#independent-review-round-1"
     ],
     "status": "needsReview",
     "review": {
