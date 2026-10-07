@@ -450,7 +450,9 @@ alone do not establish decoder advisory remediation. No versions, lockfile or
 native projects were changed in this review wave. Dependency maintenance must
 restore compatibility gates and separately address the recorded advisory.
 
-Host storage had about **1.3 GiB available** before these checks. The owner was
+Host storage had about **1.3 GiB available** before these checks and fell to
+**309 MiB** at the final checkpoint. Further installs/builds are blocked by this
+resource constraint. The owner was
 asked to make roughly 10 GiB available for dependency updates and native rebuilds;
 no files or caches were deleted. Task 9 remains incomplete while required Expo
 compatibility checks fail. No merge, push, deployment or scratch cleanup occurred.
