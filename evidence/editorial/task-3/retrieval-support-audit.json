@@ -1,0 +1,993 @@
+[
+  {
+    "id": "constitution",
+    "url": "https://lawphil.net/consti/cons1987.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:34.778880+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/constitution.txt",
+    "sha256": "7d5817e9065097866eb63b6c5a9e7887b916cd81d998c514bfa16e98485bf035"
+  },
+  {
+    "id": "ra6975",
+    "url": "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:34.751884+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra6975.txt",
+    "sha256": "e10af972048ca0a845d0c86a6ea22a8c0b1102394993008f6fe6daa0368b57a3"
+  },
+  {
+    "id": "ra8551",
+    "url": "https://lawphil.net/statutes/repacts/ra1998/ra_8551_1998.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:34.758405+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra8551.txt",
+    "sha256": "8898eb038f1bd4fb2056f4bf9a506793ad25a8fdfc50f8ea3bcf49037530ae87"
+  },
+  {
+    "id": "ra9708",
+    "url": "https://lawphil.net/statutes/repacts/ra2009/ra_9708_2009.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:34.616376+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra9708.txt",
+    "sha256": "c2808d39ee9c49bc3da50e52242845d69dd446493c305137282199d1c0bbd48f"
+  },
+  {
+    "id": "ra11200",
+    "url": "https://lawphil.net/statutes/repacts/ra2019/ra_11200_2019.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:34.716025+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra11200.txt",
+    "sha256": "988319675fff2ba030b6eb348962ddcf101301b9b3f3be68125427ddc4286de8"
+  },
+  {
+    "id": "ra11549",
+    "url": "https://lawphil.net/statutes/repacts/ra2021/ra_11549_2021.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:34.628666+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/ra11549.txt",
+    "sha256": "4194d81a8ac776f9342fd8b8c02bae4d968abc747734bffd5f27ec43603a6b4d"
+  },
+  {
+    "id": "ra10071",
+    "url": "https://lawphil.net/statutes/repacts/ra2010/ra_10071_2010.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:34.816328+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra10071.txt",
+    "sha256": "d249936adc941e235542a83ac1469738ae25c5f54398e3aced3fec99897f0f38"
+  },
+  {
+    "id": "criminalrules",
+    "url": "https://lawphil.net/courts/rules/rc_110-127_crim.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:34.839883+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/criminalrules.txt",
+    "sha256": "a03d08413bed449ae8b539784cf5f55dc39056cbae690e772838ca2840bddf7c"
+  },
+  {
+    "id": "ra10951",
+    "url": "https://lawphil.net/statutes/repacts/ra2017/ra_10951_2017.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:34.865067+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra10951.txt",
+    "sha256": "6c53b0aff66c9cb157547879cd451d8c0024734593948e600118b1a634ab16f2"
+  },
+  {
+    "id": "ra7438",
+    "url": "https://lawphil.net/statutes/repacts/ra1992/ra_7438_1992.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:34.841269+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra7438.txt",
+    "sha256": "b065778c3ef33defc9a7879f852e3d0ee36cc2158189e7aa18f55bce3bea2a26"
+  },
+  {
+    "id": "ra11648",
+    "url": "https://lawphil.net/statutes/repacts/ra2022/ra_11648_2022.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:34.854851+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/ra11648.txt",
+    "sha256": "f4137d48164cbefebb2c5cdccacd8ab4d3cf064067cb584bc76d7aa23c0a1ce4"
+  },
+  {
+    "id": "rpc",
+    "url": "https://lawphil.net/statutes/acts/act1930/act_3815_1930b.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:34.906202+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/rpc.txt",
+    "sha256": "9aaaa60962777c3b984da82239cd21a852752f2ba8cf200f627c32584b8a7aad"
+  },
+  {
+    "id": "ra9344",
+    "url": "https://lawphil.net/statutes/repacts/ra2006/ra_9344_2006.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:34.942796+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra9344.txt",
+    "sha256": "a8b0760ec3cb746e9c39cd86158337d2769ae9a62fb551911165361769f3ffe9"
+  },
+  {
+    "id": "ra10630",
+    "url": "https://lawphil.net/statutes/repacts/ra2013/ra_10630_2013.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:34.932457+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra10630.txt",
+    "sha256": "b12b6228a400586d91634eb75f3f1afa513740e4b386c12df33f158e9b9f01a9"
+  },
+  {
+    "id": "ra9165",
+    "url": "https://lawphil.net/statutes/repacts/ra2002/ra_9165_2002.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:34.992548+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra9165.txt",
+    "sha256": "10d8844010cb15c333d4a56e09175400cfbd8ef9aaf1fba7126de01f80cc4e7d"
+  },
+  {
+    "id": "ra9346",
+    "url": "https://lawphil.net/statutes/repacts/ra2006/ra_9346_2006.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:34.935182+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/ra9346.txt",
+    "sha256": "aa7063eb952219fac87e5ccf79f4977f13f81456f50cdddeccfb918e1360bd66"
+  },
+  {
+    "id": "ra6735",
+    "url": "https://lawphil.net/statutes/repacts/ra1989/ra_6735_1989.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:34.965476+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra6735.txt",
+    "sha256": "c216646785ee8414a7b06b72815e5f4d9255b507868d5069eff8b6a27c2799b6"
+  },
+  {
+    "id": "pd968",
+    "url": "https://lawphil.net/statutes/presdecs/pd1976/pd_968_1976.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:34.992996+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/pd968.txt",
+    "sha256": "d9142f0d5656333fc13c26e45a0f41f857461a9af1ba2fb6a2f3a607f60fdfd9"
+  },
+  {
+    "id": "ra10707",
+    "url": "https://lawphil.net/statutes/repacts/ra2015/ra_10707_2015.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.033289+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/ra10707.txt",
+    "sha256": "a2f0b48642b7a74cf898ba5410ddba5f0471f672c7a78d278b547f08cf551960"
+  },
+  {
+    "id": "ra10575",
+    "url": "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.049637+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra10575.txt",
+    "sha256": "ce54647e965b10cd677e9ea949e836f2cf14e2f14287406d9c3f8c11a9a16082"
+  },
+  {
+    "id": "ra7160",
+    "url": "https://lawphil.net/statutes/repacts/ra1991/ra_7160_1991.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.183984+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra7160.txt",
+    "sha256": "2ebac99a3ddfee25f91fbb09548f1b1cac2430049315907caac3f44e3bb60707"
+  },
+  {
+    "id": "ra8246",
+    "url": "https://lawphil.net/statutes/repacts/ra1996/ra_8246_1996.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.065159+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra8246.txt",
+    "sha256": "d4c169509a6e88dd7149dc892c6a4867c94cb2fda07a6b319aaf978030d2109c"
+  },
+  {
+    "id": "pd765",
+    "url": "https://lawphil.net/statutes/presdecs/pd1975/pd_765_1975.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.078338+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/pd765.txt",
+    "sha256": "1061140a24c8eb95454d29edd9dddc0660eaee79c6d49e246e79ce61f3940ffc"
+  },
+  {
+    "id": "act175",
+    "url": "https://lawphil.net/statutes/acts/act1901/act_175_1901.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.081992+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/act175.txt",
+    "sha256": "2dc35efd680eded9de5927f154e8b1d6076a7aeedcdc84a0194b91c3b0b01365"
+  },
+  {
+    "id": "ra10963",
+    "url": "https://lawphil.net/statutes/repacts/ra2017/ra_10963_2017.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.274028+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra10963.txt",
+    "sha256": "11833a81fbb9fd1084d734ceba3dc3bd6e9704f62103dceba0f2b2d33baf281c"
+  },
+  {
+    "id": "ra10969",
+    "url": "https://lawphil.net/statutes/repacts/ra2018/ra_10969_2018.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.131037+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra10969.txt",
+    "sha256": "2a15724e990351131e49ae6d5b76e719f3e22a511d2c2fc4e39147d5da9920c5"
+  },
+  {
+    "id": "eo26",
+    "url": "https://lawphil.net/executive/execord/eo2017/eo_26_2017.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.145939+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/eo26.txt",
+    "sha256": "4240d9cd134dd1b0b6c3694183822e173031ccb376519950c7a2dd0d43b37584"
+  },
+  {
+    "id": "eo25",
+    "url": "https://lawphil.net/executive/execord/eo2017/eo_25_2017.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.239258+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/eo25.txt",
+    "sha256": "a2eadcd7f917112cdc17026de964ebde03936f957a87cf7e7761906e82f6ea5d"
+  },
+  {
+    "id": "eo2",
+    "url": "https://lawphil.net/executive/execord/eo2016/eo_2_2016.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.251164+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/eo2.txt",
+    "sha256": "1ed72c2b9b3b99024b0d72c415a911897fbbfd59fa7b9748b6db27177d70d676"
+  },
+  {
+    "id": "proc216",
+    "url": "https://lawphil.net/executive/proc/proc2017/proc_216_2017.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.307552+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/proc216.txt",
+    "sha256": "79f1d1843eb000c54a61c290064489b09e80eb4fb2ced3b234c23443dd1951c5"
+  },
+  {
+    "id": "proc319",
+    "url": "https://lawphil.net/executive/proc/proc2017/proc_319_2017.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.313274+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/proc319.txt",
+    "sha256": "93cd66c2d9bed9f25f41129b0777b3312564508e5500289012bafe684308374f"
+  },
+  {
+    "id": "ra4166",
+    "url": "https://lawphil.net/statutes/repacts/ra1964/ra_4166_1964.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.319915+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra4166.txt",
+    "sha256": "9b9a6f4338f8897d4295727db56d878cdc34b1cd30c44a17f9ed30b057394a51"
+  },
+  {
+    "id": "ra9492",
+    "url": "https://lawphil.net/statutes/repacts/ra2007/ra_9492_2007.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.325859+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra9492.txt",
+    "sha256": "06df9e918843287678999a553c85297c0c2f6c0fe4bed04ed73d6dacec7bbc23"
+  },
+  {
+    "id": "ra9849",
+    "url": "https://lawphil.net/statutes/repacts/ra2009/ra_9849_2009.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.347222+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/ra9849.txt",
+    "sha256": "190c6c0d13e7edffc3bcef83ca43c5dd3fc9c096d246fd4c5a933fe62cad03f8"
+  },
+  {
+    "id": "ra6657",
+    "url": "https://lawphil.net/statutes/repacts/ra1988/ra_6657_1988.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.396076+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra6657.txt",
+    "sha256": "dc898bb133a49b9791ba73da69cd98fbce709737eefe47005398acecb5525a6c"
+  },
+  {
+    "id": "ra8491",
+    "url": "https://lawphil.net/statutes/repacts/ra1998/ra_8491_1998.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.390968+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra8491.txt",
+    "sha256": "cbb4bc4b9804c57f839a8794784794e1c05e89df4c1234e239917ee91e704026"
+  },
+  {
+    "id": "pd1184",
+    "url": "https://lawphil.net/statutes/presdecs/pd1977/pd_1184_1977.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.432987+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/pd1184.txt",
+    "sha256": "fa5b383d1d315a8259dff8459d037d56e2a4bf66cfd69798939e2d84c41531b9"
+  },
+  {
+    "id": "act4103",
+    "url": "https://lawphil.net/statutes/acts/act1933/act_4103_1933.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:27:35.404169+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/act4103.txt",
+    "sha256": "ab5dee56512b1486394b24f5f6e1ae60816d2dd3ee8f00246c32cbe56609d83f"
+  },
+  {
+    "id": "rpcbook2",
+    "url": "https://lawphil.net/statutes/acts/act1930/act_3815_1930.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:28:50.981399+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/rpcbook2.txt",
+    "sha256": "41f9172f05a0e6b69f20f2ffd332029d04eb87eefbf3bf457ffae3b6bd9781ba"
+  },
+  {
+    "id": "lacsonbio",
+    "url": "https://legacy.senate.gov.ph/senators/sen_bio/lacson_bio.asp",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "pnp-history",
+    "url": "https://pro3.pnp.gov.ph/history/",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "pnp-history6",
+    "url": "https://bcpo.pro6.pnp.gov.ph/history/",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "blotter",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/77425",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "used with item-specific provisions in claim-verification.json"
+  },
+  {
+    "id": "mensrea",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/23/68085",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "used with item-specific provisions in claim-verification.json"
+  },
+  {
+    "id": "stared",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/11/63230",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "used with item-specific provisions in claim-verification.json"
+  },
+  {
+    "id": "puv",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/90045",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "discretion",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/14/63403",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "used with item-specific provisions in claim-verification.json"
+  },
+  {
+    "id": "pillars",
+    "url": "https://www.doj.gov.ph/news_article.html?newsid=krH-DIDORFG8mpu73ZL25XWGNd_S8F2cmjC_96OdR44",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "insurance",
+    "url": "https://site.insurance.gov.ph/about/",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "holidays2026",
+    "url": "https://pco.gov.ph/news_releases/pbbm-issues-proclamation-declaring-regular-holidays-special-non-working-days-for-2026/",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:31:12.054896+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/holidays2026.txt",
+    "sha256": "5b21187fce8f5513ac6b3175920f92c7e483be4227fbe56c3d78ef975c5f1ae8"
+  },
+  {
+    "id": "museum",
+    "url": "https://www.nationalmuseum.gov.ph/our-museums/national-museum-of-natural-history/",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:31:12.387663+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/museum.txt",
+    "sha256": "78411622d4e89dd45c4c94f3274b488dc4c00543669bcccbdddd7a9a35ad266d"
+  },
+  {
+    "id": "hawking",
+    "url": "https://www.cai.cam.ac.uk/news/caius-pays-tribute-professor-stephen-hawking-fellow-caius-over-52-years",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:31:14.487769+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/hawking.txt",
+    "sha256": "f3b9619fb232551aefcdc2a8b01efb798987bbc0f4148337eddbebbcea271d58"
+  },
+  {
+    "id": "summit",
+    "url": "https://www.mfa.gov.sg/newsroom/press-statements-transcripts-and-photos/20180610-kim-10-jun-2018/",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:31:12.093498+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/summit.txt",
+    "sha256": "30917ea656f127ce75e2f4d75c4995906cec49834a615694f34c1074e7869fe9"
+  },
+  {
+    "id": "pca",
+    "url": "https://pca-cpa.org/en/cases/7/",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "marcosburial",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/23/63470",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "sereno",
+    "url": "https://lawphil.net/judjuris/juri2018/may2018/gr_237428_2018.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:31:12.145430+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/sereno.txt",
+    "sha256": "9b69da89bc6728bc4b0870c1387d877686def8f888e4cc426dee95ea5843c546"
+  },
+  {
+    "id": "alvarez",
+    "url": "https://www.congress.gov.ph/index.php/media/photojournal/577",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "comelec2016",
+    "url": "https://www.comelec.gov.ph/?r=2016NLE",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:31:12.302856+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/comelec2016.txt",
+    "sha256": "38dd5af67fbb5e7c6680e64f923f9188a1a940a9c9096ac4a9c734bad864222f"
+  },
+  {
+    "id": "comelec2018",
+    "url": "https://www.comelec.gov.ph/?r=VoterRegistration%2FResolutions",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:31:12.315229+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/comelec2018.txt",
+    "sha256": "38dd5af67fbb5e7c6680e64f923f9188a1a940a9c9096ac4a9c734bad864222f"
+  },
+  {
+    "id": "garbage",
+    "url": "https://legacy.senate.gov.ph/press_release/2017/1220_pimentel1.asp",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "eo6",
+    "url": "https://lawphil.net/executive/execord/eo2016/eo_6_2016.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:31:12.322814+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/eo6.txt",
+    "sha256": "c064c54574cf73c6aedeb833dc1a29eac9a53505fbff6d78c4e300443e324b09"
+  },
+  {
+    "id": "eo56",
+    "url": "https://lawphil.net/executive/execord/eo2018/eo_56_2018.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:31:12.333787+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/eo56.txt",
+    "sha256": "394783abba8deb19388c6e4d48ecafba6dd6b7937a46dba49c9d2a180de46ac7"
+  },
+  {
+    "id": "pagasalegend",
+    "url": "https://pagasa.dost.gov.ph/learnings/legend",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:31:12.861828+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/pagasalegend.txt",
+    "sha256": "d133321f526eeeeac1d6f42af30d1fb1f5cb4aabdf39d896928b166a88bdd405"
+  },
+  {
+    "id": "pagasaarticle38",
+    "url": "https://pagasa.dost.gov.ph/article/38",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:31:12.911456+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/pagasaarticle38.txt",
+    "sha256": "865b8ff4e6f98607ea798ebfce65982f53fcea8cb34b1a8edbe16bb3b39c7adc"
+  },
+  {
+    "id": "chedmodule",
+    "url": "https://phlconnect.ched.gov.ph/admin/uploads/5ef059938ba799aaa845e1c2e8a762bd/LEA1N-MODULE.pdf",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "bjmpmanual",
+    "url": "https://barmm.bjmp.gov.ph/wp-content/uploads/2022/04/BJMP_OPERATIONAL_MANUAL_2015.pdf",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "pagasabulletin",
+    "url": "https://pubfiles.pagasa.dost.gov.ph/pagasaweb/files/cad/CLIMATOLOGICAL%20PUBLICATIONS/2023.pdf",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:31:16.637404+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/pagasabulletin.pdf",
+    "sha256": "35a7eae96ebe03a5c7056bdebfb6d93f982151de6da854ff15a29cf94540fa36"
+  },
+  {
+    "id": "lacsonbio",
+    "url": "https://legacy.senate.gov.ph/senators/sen_bio/lacson_bio.asp",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "pnp-history",
+    "url": "https://pro3.pnp.gov.ph/history/",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "pnp-history6",
+    "url": "https://bcpo.pro6.pnp.gov.ph/history/",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "blotter",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/77425",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:32:47.960937+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/blotter.txt",
+    "sha256": "236ce3014c9291256e13e90ccdd93d194654c959ec67a55bafeffc73812ee494"
+  },
+  {
+    "id": "mensrea",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/23/68085",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:32:48.031669+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/mensrea.txt",
+    "sha256": "86c0ba23b462f8ad3250849e4f3e9926bab2ac9a044826344d38d5a177da5531"
+  },
+  {
+    "id": "stared",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/11/63230",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:32:48.296136+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/stared.txt",
+    "sha256": "89056a02cb177e8bf8d8d20d947a4d63cbe05c28f23a7f59d8ae974159643b25"
+  },
+  {
+    "id": "puv",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/90045",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:32:47.967927+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/puv.txt",
+    "sha256": "85d46945f616141eafd3fd1c45e411a86cb31daf9fba413155d3a3d1f68f08b0"
+  },
+  {
+    "id": "discretion",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/14/63403",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:32:48.080187+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/discretion.txt",
+    "sha256": "0cbd34469c26f3ac95a74f8efd0044e4f32e48c397b9071b2f6352306c43ee33"
+  },
+  {
+    "id": "pillars",
+    "url": "https://www.doj.gov.ph/news_article.html?newsid=krH-DIDORFG8mpu73ZL25XWGNd_S8F2cmjC_96OdR44",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "insurance",
+    "url": "https://site.insurance.gov.ph/about/",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:32:49.680343+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/insurance.txt",
+    "sha256": "c7afe9bff4eebd1d29a7d4b2f8872479b49245b44dad03bf2ad20c9487f12df5"
+  },
+  {
+    "id": "pca",
+    "url": "https://pca-cpa.org/en/cases/7/",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "marcosburial",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/23/63470",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:32:48.309943+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/marcosburial.txt",
+    "sha256": "27fbf676f3afec82dadb069b5102a2b012becddbd46df9031ddeaa118c9bdd3b"
+  },
+  {
+    "id": "alvarez",
+    "url": "https://www.congress.gov.ph/index.php/media/photojournal/577",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "garbage",
+    "url": "https://legacy.senate.gov.ph/press_release/2017/1220_pimentel1.asp",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "chedmodule",
+    "url": "https://phlconnect.ched.gov.ph/admin/uploads/5ef059938ba799aaa845e1c2e8a762bd/LEA1N-MODULE.pdf",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "bjmpmanual",
+    "url": "https://barmm.bjmp.gov.ph/wp-content/uploads/2022/04/BJMP_OPERATIONAL_MANUAL_2015.pdf",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "policepowers",
+    "url": "https://lawphil.net/judjuris/juri1987/mar1987/gr_l-74457_1987.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:32:48.317316+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/policepowers.txt",
+    "sha256": "3ceb73d39c8ac0e1c9624b2b80820fb4e1c13fbc428754310e25441aa5ef4404"
+  },
+  {
+    "id": "commutation",
+    "url": "https://lawphil.net/judjuris/juri1997/apr1997/gr_117818_1997.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:32:48.405031+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/commutation.txt",
+    "sha256": "6ee9c087daa03afe644cee9c6cc67f4df9775e30142fd5c9efe2894a63b934eb"
+  },
+  {
+    "id": "crimecontrol",
+    "url": "https://www.ojp.gov/pdffiles1/Digitization/168948NCJRS.pdf",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:32:49.764773+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/crimecontrol.pdf",
+    "sha256": "87a6ec56c292ba7106f4d039aea4404f3697ff6f6a5a0739c0e39ba8cd602d66"
+  },
+  {
+    "id": "pcanniversary",
+    "url": "https://www.pna.gov.ph/articles/1111278",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:37:13.815373+00:00",
+    "claimSupport": "Rejected as claim support: unrelated Facebook fallback payload, no relevant text",
+    "recoveryAuditAt": "2026-10-07T16:53:00.774549+00:00",
+    "retainedPath": "evidence/editorial/task-3/research/pcanniversary.txt",
+    "sha256": "e1d2b5a6d6ff82cfb51fdd4e0c42c3b794ab170f6916c79c4ba6d19f0b37377c"
+  },
+  {
+    "id": "pillarsreport",
+    "url": "https://www.ombudsman.gov.ph/UNDP4/wp-content/uploads/2012/12/MTDP-for-CJS-Final-Report.pdf",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:37:13.675681+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/pillarsreport.pdf",
+    "sha256": "eb7600df19d56e46ff2b1908ca5859ed27a332cc5acc72b19543e68fef4d6dbe"
+  },
+  {
+    "id": "chedmodule",
+    "url": "https://phlconnect.ched.gov.ph/admin/uploads/5ef059938ba799aaa845e1c2e8a762bd/LEA1N-MODULE.pdf",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "headquarters",
+    "url": "https://www.pna.gov.ph/articles/1138025",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:37:14.117841+00:00",
+    "claimSupport": "Rejected as claim support: unrelated Facebook fallback payload, no relevant text",
+    "recoveryAuditAt": "2026-10-07T16:53:00.777014+00:00",
+    "retainedPath": "evidence/editorial/task-3/research/headquarters.txt",
+    "sha256": "0714ab5b5674b0db421d2e5fec1bf1db21a141564ead1d93aaaff1025c53c8d7"
+  },
+  {
+    "id": "boracay",
+    "url": "https://lawphil.net/executive/proc/proc2018/proc_475_2018.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:37:13.396243+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/boracay.txt",
+    "sha256": "8cf267beb323a66d9109a701a962f42f36a0b9f1db0626fc2704e10d7271c746"
+  },
+  {
+    "id": "delarosa",
+    "url": "https://pco.gov.ph/news_releases/president-duterte-reiterates-tough-stance-vs-illegal-drugs-during-pnp-event/",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:37:14.071740+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/delarosa.txt",
+    "sha256": "0398c3edd474feefb712905af5930dd5f14f9a4f0ec4f91fddc96f57c35c8c34"
+  },
+  {
+    "id": "halili",
+    "url": "https://www.pna.gov.ph/articles/1040071",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:37:14.130164+00:00",
+    "claimSupport": "Rejected as claim support: unrelated Facebook fallback payload, no relevant text",
+    "recoveryAuditAt": "2026-10-07T16:53:00.778047+00:00",
+    "retainedPath": "evidence/editorial/task-3/research/halili.txt",
+    "sha256": "f20755bcb922e60e26d3bb517e23911ed86554c3a35450ad43351efaff278c8d"
+  },
+  {
+    "id": "marawi",
+    "url": "https://pco.gov.ph/may-23-2017-press-briefing-by-presidential-spokesperson-ernesto-abella-with-department-of-national-defense-secretary-delfin-lorenzana-and-department-of-foreign-affairs-secretary-alan-peter-cayetano/",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:37:14.390644+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/marawi.txt",
+    "sha256": "1e27e5400b23f05da5153ec81961eaee39286f3d8b5c188bf39d8c2b0418d7c0"
+  },
+  {
+    "id": "fuego",
+    "url": "https://volcano.si.edu/reports_bgvn.cfm?IssueMonth=08&IssueYear=2018",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "diwata",
+    "url": "https://stamina4space.philsa.gov.ph/diwata-1/index.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:37:14.661096+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/diwata.txt",
+    "sha256": "a4efc3c6e47ef336e94d0fc904b70389379520c54545fb48fcba836ba2e2ab92"
+  },
+  {
+    "id": "eclipse",
+    "url": "https://svs.gsfc.nasa.gov/4614",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "diaz",
+    "url": "https://iwf.sport/2019/02/12/get-know-hidilyn-diaz/",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "sotto",
+    "url": "https://issuances-library.senate.gov.ph/legislative-issuance/proposed-senate-resolution-no-739-17th-congress",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "garbage2",
+    "url": "https://pco.gov.ph/may-11-2015-news-releases/",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:37:14.939569+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/garbage2.txt",
+    "sha256": "a46643e0187ff5fd262f8b3cd140e4eb5d6b8e3930bc4194a57d62cec0c19e0f"
+  },
+  {
+    "id": "jackma",
+    "url": "https://www.dlsau.edu.ph/news/downloads/lead-bulletins/LEAD-260-17.pdf",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:37:17.427492+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/jackma.pdf",
+    "sha256": "7c647080923797e2dba582d08853bfd164850fd87ea991f2ff1b2fac718dd7e9"
+  },
+  {
+    "id": "banago",
+    "url": "https://bfp.gov.ph/wp-content/uploads/2018/07/BFP_BAC_IBNo_018_G_s_2018_16July2018.pdf",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "comelecdate",
+    "url": "https://www.comelec.gov.ph/php-tpls-attachments/2018BSKE/PressRelease/04Apr2018pr.pdf",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "comelecdate16",
+    "url": "https://www.comelec.gov.ph/html-tpls/2016NLE/Resolutions/res10094.html?r=2016NLE%2FResolutions",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals"
+  },
+  {
+    "id": "alvarezrecord",
+    "url": "https://docs.congress.hrep.online/legisdocs/congrec/17th/1st/17C1RS-VOL1REC1-20160725.pdf",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:37:15.200394+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/alvarezrecord.pdf",
+    "sha256": "b610e8e23e64fe1c3de54ba1b3aedb5508d051b4f697e37b847f32ad087e9146"
+  },
+  {
+    "id": "pcaaward",
+    "url": "https://docs.pca-cpa.org/2016/07/PH-CN-20160712-Award.pdf",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:37:19.973683+00:00",
+    "claimSupport": "not certified for completed proposals",
+    "retainedPath": "evidence/editorial/task-3/research/pcaaward.pdf",
+    "sha256": "a3893809a047dd7c786e47c164029c4e29bdff7227c61d143f1f9c1f3988d693"
+  },
+  {
+    "id": "pnpanniversary",
+    "url": "https://pro9.pnp.gov.ph/pnp-commemorates-the-123rd-police-service-anniversary-with-president-ferdinand-romualdez-marcos-jr/",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "bjmpmanual2",
+    "url": "https://car.bjmp.gov.ph/wp-content/uploads/2024/11/BJMP-Comprehensive-Operations-Manual-2015-Edition.pdf",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "pnpfg",
+    "url": "https://fg.pnp.gov.ph/wp-content/uploads/2023/11/ITB-124-2023.pdf",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "chedmodule2",
+    "url": "https://phlconnect.ched.gov.ph/admin/uploads/5ef059938ba799aaa845e1c2e8a762bd/LEA1N-MODULE.pdf",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals",
+    "error": "<urlopen error timed out>"
+  },
+  {
+    "id": "campcrame",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/68865",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)>"
+  },
+  {
+    "id": "campcrame",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/68865",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:42:35.240924+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/campcrame.txt",
+    "sha256": "4f959ed6b123860fa4b532aa6e52a444f1ff3498ccef34521670f1f9dcd6b5c9"
+  },
+  {
+    "id": "contraband",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/22/66824",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:42:35.433424+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/contraband.txt",
+    "sha256": "bb7ed874ebaa4f3485b86d2fc61941e8c29888c280221b9bbc6fca0f735f5042"
+  },
+  {
+    "id": "mittimus",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/15/1619",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:42:35.869010+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/mittimus.txt",
+    "sha256": "9a0dacd302b3f78039995c4aad34d572cb6deb8ef0b459a69d8fe16d5ddd0f8e"
+  },
+  {
+    "id": "lacsonpress",
+    "url": "https://legacy.senate.gov.ph/press_release/2018/0629_lacson1.asp",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "pnphistoryhttp",
+    "url": "http://pro3.pnp.gov.ph/history/",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "pnpanniversaryhttp",
+    "url": "http://pro9.pnp.gov.ph/pnp-commemorates-the-123rd-police-service-anniversary-with-president-ferdinand-romualdez-marcos-jr/",
+    "retrievalStatus": "failed",
+    "retrievedAt": null,
+    "claimSupport": "not certified for completed proposals",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "ra10607",
+    "url": "https://lawphil.net/statutes/repacts/ra2013/ra_10607_2013.html",
+    "retrievalStatus": "retrieved",
+    "retrievedAt": "2026-10-07T16:51:21.458422+00:00",
+    "claimSupport": "used with item-specific provisions in claim-verification.json",
+    "retainedPath": "evidence/editorial/task-3/research/ra10607.txt",
+    "sha256": "dc42a5859a2e4f802ba459bf679aa04078653a1a199858cd37134ca251b51e8c"
+  }
+]

@@ -1,0 +1,4054 @@
+[
+  {
+    "sourceKey": "notes:Philippine Constitution:1",
+    "proposed": {
+      "id": "q-000498",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Under the 1987 Constitution, which office holds the executive power of the Philippines?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Prime Minister",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Speaker of the House",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "President",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "1",
+          "pages": {
+            "start": 1,
+            "end": 1
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Presidential",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=1",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 1. Article VII section 1 vests executive power in the President. The authored stem specifies the constitutional allocation rather than an unspecified form of government.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-1"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Article VII section 1 vests executive power in the President. The authored stem specifies the constitutional allocation rather than an unspecified form of government.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 1. Article VII section 1 vests executive power in the President. The authored stem specifies the constitutional allocation rather than an unspecified form of government.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=1",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-1",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 1. Article VII section 1 vests executive power in the President. The authored stem specifies the constitutional allocation rather than an unspecified form of government.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-1",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 1. Article VII section 1 vests executive power in the President. The authored stem specifies the constitutional allocation rather than an unspecified form of government.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-1",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 1. Article VII section 1 vests executive power in the President. The authored stem specifies the constitutional allocation rather than an unspecified form of government.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-1",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Article VII section 1. Article VII section 1 vests executive power in the President. The authored stem specifies the constitutional allocation rather than an unspecified form of government."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:2",
+    "proposed": {
+      "id": "q-000499",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Under the 1987 Constitution, who heads the executive branch?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Chief Justice",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "President",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Senate President",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "2",
+          "pages": {
+            "start": 1,
+            "end": 1
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "President",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=1",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Articles VI, VII section 1 and VIII. Executive power is vested in the President; the Senate and Supreme Court belong to separate branches.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-2"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Executive power is vested in the President; the Senate and Supreme Court belong to separate branches.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Articles VI, VII section 1 and VIII. Executive power is vested in the President; the Senate and Supreme Court belong to separate branches.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=1",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-2",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Articles VI, VII section 1 and VIII. Executive power is vested in the President; the Senate and Supreme Court belong to separate branches.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-2",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Articles VI, VII section 1 and VIII. Executive power is vested in the President; the Senate and Supreme Court belong to separate branches.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-2",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Articles VI, VII section 1 and VIII. Executive power is vested in the President; the Senate and Supreme Court belong to separate branches.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-2",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Articles VI, VII section 1 and VIII. Executive power is vested in the President; the Senate and Supreme Court belong to separate branches."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:3",
+    "proposed": {
+      "id": "q-000500",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "How many Senators comprise the Senate under Article VI section 2 of the 1987 Constitution?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "24",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "12",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "36",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "3",
+          "pages": {
+            "start": 1,
+            "end": 1
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "24",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=1",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 2. Article VI section 2 specifies 24 Senators elected at large. Neither alternative is the constitutional membership.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-3"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Article VI section 2 specifies 24 Senators elected at large. Neither alternative is the constitutional membership.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 2. Article VI section 2 specifies 24 Senators elected at large. Neither alternative is the constitutional membership.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=1",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-3",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 2. Article VI section 2 specifies 24 Senators elected at large. Neither alternative is the constitutional membership.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-3",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 2. Article VI section 2 specifies 24 Senators elected at large. Neither alternative is the constitutional membership.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-3",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 2. Article VI section 2 specifies 24 Senators elected at large. Neither alternative is the constitutional membership.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-3",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Article VI section 2. Article VI section 2 specifies 24 Senators elected at large. Neither alternative is the constitutional membership."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:4",
+    "proposed": {
+      "id": "q-000501",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Under Article IX-C section 1, what is the composition of COMELEC?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "One Chairman and eight Commissioners",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "One Chairman and two Commissioners",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "One Chairman and six Commissioners",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "4",
+          "pages": {
+            "start": 1,
+            "end": 1
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Chairman and 8 commissioners",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=1",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article IX-C section 1; IX-D section 1. The Constitution specifies a Chairman and six Commissioners. Eight in the original answer is incorrect; two Commissioners instead describes the Commission on Audit.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-4"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The Constitution specifies a Chairman and six Commissioners. Eight in the original answer is incorrect; two Commissioners instead describes the Commission on Audit.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article IX-C section 1; IX-D section 1. The Constitution specifies a Chairman and six Commissioners. Eight in the original answer is incorrect; two Commissioners instead describes the Commission on Audit.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=1",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-4",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "source-annotation-review",
+          "message": "Source correction/caution is unverified; original answer retained",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article IX-C section 1; IX-D section 1. The Constitution specifies a Chairman and six Commissioners. Eight in the original answer is incorrect; two Commissioners instead describes the Commission on Audit.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-4",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "source-annotation-review",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article IX-C section 1; IX-D section 1. The Constitution specifies a Chairman and six Commissioners. Eight in the original answer is incorrect; two Commissioners instead describes the Commission on Audit.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-4",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article IX-C section 1; IX-D section 1. The Constitution specifies a Chairman and six Commissioners. Eight in the original answer is incorrect; two Commissioners instead describes the Commission on Audit.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-4",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article IX-C section 1; IX-D section 1. The Constitution specifies a Chairman and six Commissioners. Eight in the original answer is incorrect; two Commissioners instead describes the Commission on Audit.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-4",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Article IX-C section 1; IX-D section 1. The Constitution specifies a Chairman and six Commissioners. Eight in the original answer is incorrect; two Commissioners instead describes the Commission on Audit."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:5",
+    "proposed": {
+      "id": "q-000502",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which set names the three branches whose powers are allocated by Articles VI, VII and VIII of the Constitution?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Executive, judicial and auditing",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Legislative, executive and judicial",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Legislative, executive and electoral",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "5",
+          "pages": {
+            "start": 1,
+            "end": 1
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Legislative, Executive, Judicial",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=1",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Articles VI section 1, VII section 1, VIII section 1. Articles VI, VII and VIII allocate legislative, executive and judicial powers respectively. Electoral and auditing commissions are not substitute branches.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-5"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Articles VI, VII and VIII allocate legislative, executive and judicial powers respectively. Electoral and auditing commissions are not substitute branches.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Articles VI section 1, VII section 1, VIII section 1. Articles VI, VII and VIII allocate legislative, executive and judicial powers respectively. Electoral and auditing commissions are not substitute branches.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=1",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-5",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Articles VI section 1, VII section 1, VIII section 1. Articles VI, VII and VIII allocate legislative, executive and judicial powers respectively. Electoral and auditing commissions are not substitute branches.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-5",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Articles VI section 1, VII section 1, VIII section 1. Articles VI, VII and VIII allocate legislative, executive and judicial powers respectively. Electoral and auditing commissions are not substitute branches.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-5",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Articles VI section 1, VII section 1, VIII section 1. Articles VI, VII and VIII allocate legislative, executive and judicial powers respectively. Electoral and auditing commissions are not substitute branches.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-5",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Articles VI section 1, VII section 1, VIII section 1. Articles VI, VII and VIII allocate legislative, executive and judicial powers respectively. Electoral and auditing commissions are not substitute branches."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:6",
+    "proposed": {
+      "id": "q-000503",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which body has the exclusive constitutional power to initiate impeachment cases?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "House of Representatives",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Senate",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Supreme Court",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "6",
+          "pages": {
+            "start": 1,
+            "end": 1
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "House of Representatives",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=1",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article XI section 3(2),(6). Article XI section 3(2) assigns initiation to the House; section 3(6) assigns trial and decision to the Senate.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-6"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Article XI section 3(2) assigns initiation to the House; section 3(6) assigns trial and decision to the Senate.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article XI section 3(2),(6). Article XI section 3(2) assigns initiation to the House; section 3(6) assigns trial and decision to the Senate.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=1",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-6",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article XI section 3(2),(6). Article XI section 3(2) assigns initiation to the House; section 3(6) assigns trial and decision to the Senate.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-6",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article XI section 3(2),(6). Article XI section 3(2) assigns initiation to the House; section 3(6) assigns trial and decision to the Senate.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-6",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article XI section 3(2),(6). Article XI section 3(2) assigns initiation to the House; section 3(6) assigns trial and decision to the Senate.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-6",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Article XI section 3(2),(6). Article XI section 3(2) assigns initiation to the House; section 3(6) assigns trial and decision to the Senate."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:7",
+    "proposed": {
+      "id": "q-000504",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which inherent State power takes private property for public use subject to just compensation?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Taxation",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Police power",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Eminent domain",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "7",
+          "pages": {
+            "start": 1,
+            "end": 1
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Power of Eminent Domain",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=1",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article III section 9. Eminent domain concerns taking property with compensation, unlike revenue collection through taxation or regulation under police power. Article III section 9 supplies the compensation safeguard.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-7"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Eminent domain concerns taking property with compensation, unlike revenue collection through taxation or regulation under police power. Article III section 9 supplies the compensation safeguard.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article III section 9. Eminent domain concerns taking property with compensation, unlike revenue collection through taxation or regulation under police power. Article III section 9 supplies the compensation safeguard.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=1",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-7",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article III section 9. Eminent domain concerns taking property with compensation, unlike revenue collection through taxation or regulation under police power. Article III section 9 supplies the compensation safeguard.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-7",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article III section 9. Eminent domain concerns taking property with compensation, unlike revenue collection through taxation or regulation under police power. Article III section 9 supplies the compensation safeguard.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-7",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article III section 9. Eminent domain concerns taking property with compensation, unlike revenue collection through taxation or regulation under police power. Article III section 9 supplies the compensation safeguard.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-7",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Article III section 9. Eminent domain concerns taking property with compensation, unlike revenue collection through taxation or regulation under police power. Article III section 9 supplies the compensation safeguard."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:8",
+    "proposed": {
+      "id": "q-000505",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which article of the 1987 Constitution contains the due-process and equal-protection guarantees in its section 1?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Article VII — Executive Department",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Article III — Bill of Rights",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Article VI — Legislative Department",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "8",
+          "pages": {
+            "start": 1,
+            "end": 1
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Bill of Rights",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=1",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article III section 1. The guarantees appear in Article III section 1, not the articles allocating legislative and executive powers.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-8"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The guarantees appear in Article III section 1, not the articles allocating legislative and executive powers.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article III section 1. The guarantees appear in Article III section 1, not the articles allocating legislative and executive powers.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=1",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-8",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article III section 1. The guarantees appear in Article III section 1, not the articles allocating legislative and executive powers.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-8",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article III section 1. The guarantees appear in Article III section 1, not the articles allocating legislative and executive powers.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-8",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article III section 1. The guarantees appear in Article III section 1, not the articles allocating legislative and executive powers.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-8",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Article III section 1. The guarantees appear in Article III section 1, not the articles allocating legislative and executive powers."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:9",
+    "proposed": {
+      "id": "q-000506",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "What is the constitutional term of an elected Philippine President?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Six years",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Three years",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Seven years",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "9",
+          "pages": {
+            "start": 1,
+            "end": 1
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "6 years",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=1",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 4; VI section 7; IX. Article VII section 4 specifies six years; three years is the House term and seven years is the regular constitutional-commission term.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-9"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Article VII section 4 specifies six years; three years is the House term and seven years is the regular constitutional-commission term.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 4; VI section 7; IX. Article VII section 4 specifies six years; three years is the House term and seven years is the regular constitutional-commission term.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=1",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-9",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 4; VI section 7; IX. Article VII section 4 specifies six years; three years is the House term and seven years is the regular constitutional-commission term.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-9",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 4; VI section 7; IX. Article VII section 4 specifies six years; three years is the House term and seven years is the regular constitutional-commission term.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-9",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 4; VI section 7; IX. Article VII section 4 specifies six years; three years is the House term and seven years is the regular constitutional-commission term.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=1",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-9",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Article VII section 4; VI section 7; IX. Article VII section 4 specifies six years; three years is the House term and seven years is the regular constitutional-commission term."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:10",
+    "proposed": {
+      "id": "q-000507",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which opening part of the 1987 Constitution sets out the Filipino people’s ideals and aspirations in establishing government?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Bill of Rights",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Transitory Provisions",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Preamble",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "10",
+          "pages": {
+            "start": 2,
+            "end": 2
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Preamble",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=2",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Preamble; Articles III and XVIII. The Preamble states the people’s ideals and aspirations; the Bill of Rights protects rights, and transitory provisions address constitutional transition.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-10"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The Preamble states the people’s ideals and aspirations; the Bill of Rights protects rights, and transitory provisions address constitutional transition.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Preamble; Articles III and XVIII. The Preamble states the people’s ideals and aspirations; the Bill of Rights protects rights, and transitory provisions address constitutional transition.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=2",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-10",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Preamble; Articles III and XVIII. The Preamble states the people’s ideals and aspirations; the Bill of Rights protects rights, and transitory provisions address constitutional transition.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-10",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Preamble; Articles III and XVIII. The Preamble states the people’s ideals and aspirations; the Bill of Rights protects rights, and transitory provisions address constitutional transition.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-10",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Preamble; Articles III and XVIII. The Preamble states the people’s ideals and aspirations; the Bill of Rights protects rights, and transitory provisions address constitutional transition.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-10",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Preamble; Articles III and XVIII. The Preamble states the people’s ideals and aspirations; the Bill of Rights protects rights, and transitory provisions address constitutional transition."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:11",
+    "proposed": {
+      "id": "q-000508",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Who appoints Supreme Court members and lower-court judges from a Judicial and Bar Council list of at least three nominees per vacancy?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Senate President",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "President",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Chief Justice acting alone",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "11",
+          "pages": {
+            "start": 2,
+            "end": 2
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "President",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=2",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VIII section 9. Article VIII section 9 assigns appointment to the President from the JBC list. Such appointments need no confirmation.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-11"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Article VIII section 9 assigns appointment to the President from the JBC list. Such appointments need no confirmation.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VIII section 9. Article VIII section 9 assigns appointment to the President from the JBC list. Such appointments need no confirmation.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=2",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-11",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VIII section 9. Article VIII section 9 assigns appointment to the President from the JBC list. Such appointments need no confirmation.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-11",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VIII section 9. Article VIII section 9 assigns appointment to the President from the JBC list. Such appointments need no confirmation.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-11",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VIII section 9. Article VIII section 9 assigns appointment to the President from the JBC list. Such appointments need no confirmation.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-11",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Article VIII section 9. Article VIII section 9 assigns appointment to the President from the JBC list. Such appointments need no confirmation."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:12",
+    "proposed": {
+      "id": "q-000509",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which set consists of the independent Constitutional Commissions named in Article IX-A section 1?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Civil Service Commission, COMELEC and Commission on Audit",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Civil Service Commission, COMELEC and Commission on Human Rights",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "COMELEC, Commission on Human Rights and Commission on Audit",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "12",
+          "pages": {
+            "start": 2,
+            "end": 2
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Commission on Civil Rights",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=2",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article IX-A section 1; XIII section 17. Article IX-A names CSC, COMELEC and COA. The Commission on Human Rights is separately created by Article XIII section 17. This positive-list conversion authors alternatives rather than claiming recovery of missing except options.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-12"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Article IX-A names CSC, COMELEC and COA. The Commission on Human Rights is separately created by Article XIII section 17. This positive-list conversion authors alternatives rather than claiming recovery of missing except options.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article IX-A section 1; XIII section 17. Article IX-A names CSC, COMELEC and COA. The Commission on Human Rights is separately created by Article XIII section 17. This positive-list conversion authors alternatives rather than claiming recovery of missing except options.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=2",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-12",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article IX-A section 1; XIII section 17. Article IX-A names CSC, COMELEC and COA. The Commission on Human Rights is separately created by Article XIII section 17. This positive-list conversion authors alternatives rather than claiming recovery of missing except options.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-12",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article IX-A section 1; XIII section 17. Article IX-A names CSC, COMELEC and COA. The Commission on Human Rights is separately created by Article XIII section 17. This positive-list conversion authors alternatives rather than claiming recovery of missing except options.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-12",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article IX-A section 1; XIII section 17. Article IX-A names CSC, COMELEC and COA. The Commission on Human Rights is separately created by Article XIII section 17. This positive-list conversion authors alternatives rather than claiming recovery of missing except options.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-12",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Article IX-A section 1; XIII section 17. Article IX-A names CSC, COMELEC and COA. The Commission on Human Rights is separately created by Article XIII section 17. This positive-list conversion authors alternatives rather than claiming recovery of missing except options."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:13",
+    "proposed": {
+      "id": "q-000510",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Who is the Commander-in-Chief of all the armed forces of the Philippines under the Constitution?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Secretary of National Defense",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Senate President",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "President",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "13",
+          "pages": {
+            "start": 2,
+            "end": 2
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "President",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=2",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 18. Article VII section 18 designates the President; neither secretary nor Senate President substitutes for that constitutional office.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-13"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Article VII section 18 designates the President; neither secretary nor Senate President substitutes for that constitutional office.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 18. Article VII section 18 designates the President; neither secretary nor Senate President substitutes for that constitutional office.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=2",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-13",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 18. Article VII section 18 designates the President; neither secretary nor Senate President substitutes for that constitutional office.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-13",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 18. Article VII section 18 designates the President; neither secretary nor Senate President substitutes for that constitutional office.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-13",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 18. Article VII section 18 designates the President; neither secretary nor Senate President substitutes for that constitutional office.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-13",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Article VII section 18. Article VII section 18 designates the President; neither secretary nor Senate President substitutes for that constitutional office."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:14",
+    "proposed": {
+      "id": "q-000511",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Who constitutionally exercises control over executive departments, bureaus and offices?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Supreme Court",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "President",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Senate",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "14",
+          "pages": {
+            "start": 2,
+            "end": 2
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "President",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=2",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 17. Article VII section 17 assigns executive control to the President. The separate branches do not exercise that general executive control.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-14"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Article VII section 17 assigns executive control to the President. The separate branches do not exercise that general executive control.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 17. Article VII section 17 assigns executive control to the President. The separate branches do not exercise that general executive control.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=2",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-14",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 17. Article VII section 17 assigns executive control to the President. The separate branches do not exercise that general executive control.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-14",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 17. Article VII section 17 assigns executive control to the President. The separate branches do not exercise that general executive control.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-14",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 17. Article VII section 17 assigns executive control to the President. The separate branches do not exercise that general executive control.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-14",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Article VII section 17. Article VII section 17 assigns executive control to the President. The separate branches do not exercise that general executive control."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:15",
+    "proposed": {
+      "id": "q-000512",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which State power raises public revenue through compulsory taxes?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Taxation",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Eminent domain",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Police power",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "15",
+          "pages": {
+            "start": 2,
+            "end": 2
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Power of Taxation",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=2",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 28; III section 9. Taxation raises revenue; eminent domain takes property for public use with compensation, and police power regulates for public welfare. Article VI section 28 governs taxation.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-15"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Taxation raises revenue; eminent domain takes property for public use with compensation, and police power regulates for public welfare. Article VI section 28 governs taxation.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 28; III section 9. Taxation raises revenue; eminent domain takes property for public use with compensation, and police power regulates for public welfare. Article VI section 28 governs taxation.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=2",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-15",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "source-annotation-review",
+          "message": "Source correction/caution is unverified; original answer retained",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 28; III section 9. Taxation raises revenue; eminent domain takes property for public use with compensation, and police power regulates for public welfare. Article VI section 28 governs taxation.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-15",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "source-annotation-review",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 28; III section 9. Taxation raises revenue; eminent domain takes property for public use with compensation, and police power regulates for public welfare. Article VI section 28 governs taxation.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-15",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 28; III section 9. Taxation raises revenue; eminent domain takes property for public use with compensation, and police power regulates for public welfare. Article VI section 28 governs taxation.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-15",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 28; III section 9. Taxation raises revenue; eminent domain takes property for public use with compensation, and police power regulates for public welfare. Article VI section 28 governs taxation.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-15",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Article VI section 28; III section 9. Taxation raises revenue; eminent domain takes property for public use with compensation, and police power regulates for public welfare. Article VI section 28 governs taxation."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:16",
+    "proposed": {
+      "id": "q-000513",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which inherent State power regulates liberty and property to protect public welfare?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Eminent domain",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Taxation",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Police power",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "16",
+          "pages": {
+            "start": 2,
+            "end": 2
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Police Power",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=2",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Supreme Court discussion of inherent powers. Police power is the regulatory power for public welfare, distinct from compensated property-taking and revenue collection.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-16"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Police power is the regulatory power for public welfare, distinct from compensated property-taking and revenue collection.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Supreme Court discussion of inherent powers. Police power is the regulatory power for public welfare, distinct from compensated property-taking and revenue collection.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=2",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-16",
+      "https://lawphil.net/judjuris/juri1987/mar1987/gr_l-74457_1987.html",
+      "evidence/editorial/task-3/research/policepowers.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Supreme Court discussion of inherent powers. Police power is the regulatory power for public welfare, distinct from compensated property-taking and revenue collection.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-16",
+            "https://lawphil.net/judjuris/juri1987/mar1987/gr_l-74457_1987.html",
+            "evidence/editorial/task-3/research/policepowers.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Supreme Court discussion of inherent powers. Police power is the regulatory power for public welfare, distinct from compensated property-taking and revenue collection.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-16",
+            "https://lawphil.net/judjuris/juri1987/mar1987/gr_l-74457_1987.html",
+            "evidence/editorial/task-3/research/policepowers.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Supreme Court discussion of inherent powers. Police power is the regulatory power for public welfare, distinct from compensated property-taking and revenue collection.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-16",
+            "https://lawphil.net/judjuris/juri1987/mar1987/gr_l-74457_1987.html",
+            "evidence/editorial/task-3/research/policepowers.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/judjuris/juri1987/mar1987/gr_l-74457_1987.html",
+        "verifiedAt": "2026-10-07T16:32:48.317316+00:00",
+        "rationale": "Verified Supreme Court discussion of inherent powers. Police power is the regulatory power for public welfare, distinct from compensated property-taking and revenue collection."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:17",
+    "proposed": {
+      "id": "q-000514",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Under RA 6735, what process allows the electorate to approve or reject legislation through an election called for that purpose?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Plebiscite",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Referendum",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Initiative",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "17",
+          "pages": {
+            "start": 2,
+            "end": 2
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Referendum",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=2",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3(a),(c),(e). Section 3(c) defines referendum; initiative proposes measures, while the statute’s plebiscite definition concerns constitutional initiatives.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-17"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Section 3(c) defines referendum; initiative proposes measures, while the statute’s plebiscite definition concerns constitutional initiatives.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3(a),(c),(e). Section 3(c) defines referendum; initiative proposes measures, while the statute’s plebiscite definition concerns constitutional initiatives.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=2",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-17",
+      "https://lawphil.net/statutes/repacts/ra1989/ra_6735_1989.html",
+      "evidence/editorial/task-3/research/ra6735.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3(a),(c),(e). Section 3(c) defines referendum; initiative proposes measures, while the statute’s plebiscite definition concerns constitutional initiatives.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-17",
+            "https://lawphil.net/statutes/repacts/ra1989/ra_6735_1989.html",
+            "evidence/editorial/task-3/research/ra6735.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3(a),(c),(e). Section 3(c) defines referendum; initiative proposes measures, while the statute’s plebiscite definition concerns constitutional initiatives.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-17",
+            "https://lawphil.net/statutes/repacts/ra1989/ra_6735_1989.html",
+            "evidence/editorial/task-3/research/ra6735.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3(a),(c),(e). Section 3(c) defines referendum; initiative proposes measures, while the statute’s plebiscite definition concerns constitutional initiatives.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-17",
+            "https://lawphil.net/statutes/repacts/ra1989/ra_6735_1989.html",
+            "evidence/editorial/task-3/research/ra6735.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/statutes/repacts/ra1989/ra_6735_1989.html",
+        "verifiedAt": "2026-10-07T16:27:34.965476+00:00",
+        "rationale": "Verified Section 3(a),(c),(e). Section 3(c) defines referendum; initiative proposes measures, while the statute’s plebiscite definition concerns constitutional initiatives."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:18",
+    "proposed": {
+      "id": "q-000515",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "What is the constitutional term of Members of the House of Representatives?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Three years",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Six years",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Seven years",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "18",
+          "pages": {
+            "start": 2,
+            "end": 2
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "3 years",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=2",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI sections 4,7; VII section 4. Article VI section 7 specifies three years. Six years applies to Senators and the President, not House members.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-18"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Article VI section 7 specifies three years. Six years applies to Senators and the President, not House members.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI sections 4,7; VII section 4. Article VI section 7 specifies three years. Six years applies to Senators and the President, not House members.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=2",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-18",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI sections 4,7; VII section 4. Article VI section 7 specifies three years. Six years applies to Senators and the President, not House members.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-18",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI sections 4,7; VII section 4. Article VI section 7 specifies three years. Six years applies to Senators and the President, not House members.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-18",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI sections 4,7; VII section 4. Article VI section 7 specifies three years. Six years applies to Senators and the President, not House members.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-18",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Article VI sections 4,7; VII section 4. Article VI section 7 specifies three years. Six years applies to Senators and the President, not House members."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:19",
+    "proposed": {
+      "id": "q-000516",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Under RA 9165 section 5, read with RA 9346, what imprisonment and fine apply to unauthorized sale of dangerous drugs, without asking about controlled precursors?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "12 years and 1 day to 20 years and a fine of ₱12,000 to ₱20,000",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "12 years and 1 day to 20 years and a fine of ₱100,000 to ₱500,000",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Life imprisonment and a fine of ₱500,000 to ₱10,000,000",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "19",
+          "pages": {
+            "start": 2,
+            "end": 3
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Imprisonment ranging from 12 years and 1 day to 20 years and a fine\nranging from 12,000 to 20,000 pesos.",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=2",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 5; RA9346 sections 1–2. RA 9165 section 5 distinguishes dangerous drugs from controlled precursors. RA 9346 prohibits death and substitutes life imprisonment when the special law does not use RPC penalty names. The third alternative concerns controlled precursors; the original obsolete fine is retained only in lineage.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-19"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "RA 9165 section 5 distinguishes dangerous drugs from controlled precursors. RA 9346 prohibits death and substitutes life imprisonment when the special law does not use RPC penalty names. The third alternative concerns controlled precursors; the original obsolete fine is retained only in lineage.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 5; RA9346 sections 1–2. RA 9165 section 5 distinguishes dangerous drugs from controlled precursors. RA 9346 prohibits death and substitutes life imprisonment when the special law does not use RPC penalty names. The third alternative concerns controlled precursors; the original obsolete fine is retained only in lineage.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=2",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-19",
+      "https://lawphil.net/statutes/repacts/ra2002/ra_9165_2002.html",
+      "evidence/editorial/task-3/research/ra9165.txt",
+      "https://lawphil.net/statutes/repacts/ra2006/ra_9346_2006.html"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "source-annotation-review",
+          "message": "Source correction/caution is unverified; original answer retained",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 5; RA9346 sections 1–2. RA 9165 section 5 distinguishes dangerous drugs from controlled precursors. RA 9346 prohibits death and substitutes life imprisonment when the special law does not use RPC penalty names. The third alternative concerns controlled precursors; the original obsolete fine is retained only in lineage.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-19",
+            "https://lawphil.net/statutes/repacts/ra2002/ra_9165_2002.html",
+            "evidence/editorial/task-3/research/ra9165.txt",
+            "https://lawphil.net/statutes/repacts/ra2006/ra_9346_2006.html"
+          ]
+        },
+        {
+          "code": "source-annotation-review",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 5; RA9346 sections 1–2. RA 9165 section 5 distinguishes dangerous drugs from controlled precursors. RA 9346 prohibits death and substitutes life imprisonment when the special law does not use RPC penalty names. The third alternative concerns controlled precursors; the original obsolete fine is retained only in lineage.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-19",
+            "https://lawphil.net/statutes/repacts/ra2002/ra_9165_2002.html",
+            "evidence/editorial/task-3/research/ra9165.txt",
+            "https://lawphil.net/statutes/repacts/ra2006/ra_9346_2006.html"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 5; RA9346 sections 1–2. RA 9165 section 5 distinguishes dangerous drugs from controlled precursors. RA 9346 prohibits death and substitutes life imprisonment when the special law does not use RPC penalty names. The third alternative concerns controlled precursors; the original obsolete fine is retained only in lineage.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-19",
+            "https://lawphil.net/statutes/repacts/ra2002/ra_9165_2002.html",
+            "evidence/editorial/task-3/research/ra9165.txt",
+            "https://lawphil.net/statutes/repacts/ra2006/ra_9346_2006.html"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 5; RA9346 sections 1–2. RA 9165 section 5 distinguishes dangerous drugs from controlled precursors. RA 9346 prohibits death and substitutes life imprisonment when the special law does not use RPC penalty names. The third alternative concerns controlled precursors; the original obsolete fine is retained only in lineage.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=2",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-19",
+            "https://lawphil.net/statutes/repacts/ra2002/ra_9165_2002.html",
+            "evidence/editorial/task-3/research/ra9165.txt",
+            "https://lawphil.net/statutes/repacts/ra2006/ra_9346_2006.html"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/statutes/repacts/ra2002/ra_9165_2002.html",
+        "verifiedAt": "2026-10-07T16:27:34.992548+00:00",
+        "rationale": "Verified Section 5; RA9346 sections 1–2. RA 9165 section 5 distinguishes dangerous drugs from controlled precursors. RA 9346 prohibits death and substitutes life imprisonment when the special law does not use RPC penalty names. The third alternative concerns controlled precursors; the original obsolete fine is retained only in lineage."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:20",
+    "proposed": {
+      "id": "q-000517",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "What basic autonomous social institution must the State protect and strengthen under Article II section 12?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Trade union",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Family",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Political party",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "20",
+          "pages": {
+            "start": 3,
+            "end": 3
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Family",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=3",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article II section 12. Article II section 12 expressly identifies the family; parties and unions have different constitutional contexts.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-20"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Article II section 12 expressly identifies the family; parties and unions have different constitutional contexts.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article II section 12. Article II section 12 expressly identifies the family; parties and unions have different constitutional contexts.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=3",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-20",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article II section 12. Article II section 12 expressly identifies the family; parties and unions have different constitutional contexts.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-20",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article II section 12. Article II section 12 expressly identifies the family; parties and unions have different constitutional contexts.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-20",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article II section 12. Article II section 12 expressly identifies the family; parties and unions have different constitutional contexts.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-20",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Article II section 12. Article II section 12 expressly identifies the family; parties and unions have different constitutional contexts."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:21",
+    "proposed": {
+      "id": "q-000518",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which official exercises constitutional control over the executive departments whose secretaries comprise the Cabinet?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "President",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Senate President",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Chief Justice",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "21",
+          "pages": {
+            "start": 3,
+            "end": 3
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "President",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=3",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 17. Article VII section 17 assigns executive-department control to the President. The authored wording anchors the source’s Cabinet claim in an explicit provision.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-21"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Article VII section 17 assigns executive-department control to the President. The authored wording anchors the source’s Cabinet claim in an explicit provision.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 17. Article VII section 17 assigns executive-department control to the President. The authored wording anchors the source’s Cabinet claim in an explicit provision.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=3",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-21",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 17. Article VII section 17 assigns executive-department control to the President. The authored wording anchors the source’s Cabinet claim in an explicit provision.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-21",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 17. Article VII section 17 assigns executive-department control to the President. The authored wording anchors the source’s Cabinet claim in an explicit provision.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-21",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 17. Article VII section 17 assigns executive-department control to the President. The authored wording anchors the source’s Cabinet claim in an explicit provision.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-21",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Article VII section 17. Article VII section 17 assigns executive-department control to the President. The authored wording anchors the source’s Cabinet claim in an explicit provision."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:22",
+    "proposed": {
+      "id": "q-000519",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which set lists the three inherent powers of the State?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Police power, impeachment and taxation",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Eminent domain, impeachment and taxation",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Police power, eminent domain and taxation",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "22",
+          "pages": {
+            "start": 3,
+            "end": 3
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Power to Impeach",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=3",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Supreme Court discussion of inherent powers; Constitution XI section 3. Supreme Court doctrine identifies police power, eminent domain and taxation. Impeachment is a constitutional accountability mechanism, not one of these inherent powers. Alternatives are authored for a positive-list conversion, not recovered except options.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-22"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Supreme Court doctrine identifies police power, eminent domain and taxation. Impeachment is a constitutional accountability mechanism, not one of these inherent powers. Alternatives are authored for a positive-list conversion, not recovered except options.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Supreme Court discussion of inherent powers; Constitution XI section 3. Supreme Court doctrine identifies police power, eminent domain and taxation. Impeachment is a constitutional accountability mechanism, not one of these inherent powers. Alternatives are authored for a positive-list conversion, not recovered except options.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=3",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-22",
+      "https://lawphil.net/judjuris/juri1987/mar1987/gr_l-74457_1987.html",
+      "evidence/editorial/task-3/research/policepowers.txt",
+      "https://lawphil.net/consti/cons1987.html"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "source-annotation-review",
+          "message": "Source correction/caution is unverified; original answer retained",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Supreme Court discussion of inherent powers; Constitution XI section 3. Supreme Court doctrine identifies police power, eminent domain and taxation. Impeachment is a constitutional accountability mechanism, not one of these inherent powers. Alternatives are authored for a positive-list conversion, not recovered except options.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-22",
+            "https://lawphil.net/judjuris/juri1987/mar1987/gr_l-74457_1987.html",
+            "evidence/editorial/task-3/research/policepowers.txt",
+            "https://lawphil.net/consti/cons1987.html"
+          ]
+        },
+        {
+          "code": "source-annotation-review",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Supreme Court discussion of inherent powers; Constitution XI section 3. Supreme Court doctrine identifies police power, eminent domain and taxation. Impeachment is a constitutional accountability mechanism, not one of these inherent powers. Alternatives are authored for a positive-list conversion, not recovered except options.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-22",
+            "https://lawphil.net/judjuris/juri1987/mar1987/gr_l-74457_1987.html",
+            "evidence/editorial/task-3/research/policepowers.txt",
+            "https://lawphil.net/consti/cons1987.html"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Supreme Court discussion of inherent powers; Constitution XI section 3. Supreme Court doctrine identifies police power, eminent domain and taxation. Impeachment is a constitutional accountability mechanism, not one of these inherent powers. Alternatives are authored for a positive-list conversion, not recovered except options.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-22",
+            "https://lawphil.net/judjuris/juri1987/mar1987/gr_l-74457_1987.html",
+            "evidence/editorial/task-3/research/policepowers.txt",
+            "https://lawphil.net/consti/cons1987.html"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Supreme Court discussion of inherent powers; Constitution XI section 3. Supreme Court doctrine identifies police power, eminent domain and taxation. Impeachment is a constitutional accountability mechanism, not one of these inherent powers. Alternatives are authored for a positive-list conversion, not recovered except options.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-22",
+            "https://lawphil.net/judjuris/juri1987/mar1987/gr_l-74457_1987.html",
+            "evidence/editorial/task-3/research/policepowers.txt",
+            "https://lawphil.net/consti/cons1987.html"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/judjuris/juri1987/mar1987/gr_l-74457_1987.html",
+        "verifiedAt": "2026-10-07T16:32:48.317316+00:00",
+        "rationale": "Verified Supreme Court discussion of inherent powers; Constitution XI section 3. Supreme Court doctrine identifies police power, eminent domain and taxation. Impeachment is a constitutional accountability mechanism, not one of these inherent powers. Alternatives are authored for a positive-list conversion, not recovered except options."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:23",
+    "proposed": {
+      "id": "q-000520",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "In RA 6735 section 3(e), what is the electoral process for approving or rejecting an initiative on the Constitution?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Recall",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Plebiscite",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Referendum on local law",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "23",
+          "pages": {
+            "start": 3,
+            "end": 3
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Plebiscite",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=3",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3(c),(e); Constitution X section 3. Section 3(e) calls this a plebiscite. A referendum on local law concerns local legislation, while recall concerns an elective official, not a constitutional initiative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-23"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Section 3(e) calls this a plebiscite. A referendum on local law concerns local legislation, while recall concerns an elective official, not a constitutional initiative.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3(c),(e); Constitution X section 3. Section 3(e) calls this a plebiscite. A referendum on local law concerns local legislation, while recall concerns an elective official, not a constitutional initiative.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=3",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-23",
+      "https://lawphil.net/statutes/repacts/ra1989/ra_6735_1989.html",
+      "evidence/editorial/task-3/research/ra6735.txt",
+      "https://lawphil.net/consti/cons1987.html"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3(c),(e); Constitution X section 3. Section 3(e) calls this a plebiscite. A referendum on local law concerns local legislation, while recall concerns an elective official, not a constitutional initiative.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-23",
+            "https://lawphil.net/statutes/repacts/ra1989/ra_6735_1989.html",
+            "evidence/editorial/task-3/research/ra6735.txt",
+            "https://lawphil.net/consti/cons1987.html"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3(c),(e); Constitution X section 3. Section 3(e) calls this a plebiscite. A referendum on local law concerns local legislation, while recall concerns an elective official, not a constitutional initiative.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-23",
+            "https://lawphil.net/statutes/repacts/ra1989/ra_6735_1989.html",
+            "evidence/editorial/task-3/research/ra6735.txt",
+            "https://lawphil.net/consti/cons1987.html"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3(c),(e); Constitution X section 3. Section 3(e) calls this a plebiscite. A referendum on local law concerns local legislation, while recall concerns an elective official, not a constitutional initiative.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-23",
+            "https://lawphil.net/statutes/repacts/ra1989/ra_6735_1989.html",
+            "evidence/editorial/task-3/research/ra6735.txt",
+            "https://lawphil.net/consti/cons1987.html"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/statutes/repacts/ra1989/ra_6735_1989.html",
+        "verifiedAt": "2026-10-07T16:27:34.965476+00:00",
+        "rationale": "Verified Section 3(c),(e); Constitution X section 3. Section 3(e) calls this a plebiscite. A referendum on local law concerns local legislation, while recall concerns an elective official, not a constitutional initiative."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:24",
+    "proposed": {
+      "id": "q-000521",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "What vote is constitutionally required for Congress, in joint session but voting separately, to declare the existence of a state of war?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Two-thirds of both Houses",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Simple majority of both Houses",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Three-fourths of both Houses",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "24",
+          "pages": {
+            "start": 3,
+            "end": 3
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Two-thirds",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=3",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 23(1). Article VI section 23(1) specifies two-thirds. Voting separately remains material and is preserved.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-24"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Article VI section 23(1) specifies two-thirds. Voting separately remains material and is preserved.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 23(1). Article VI section 23(1) specifies two-thirds. Voting separately remains material and is preserved.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=3",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-24",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 23(1). Article VI section 23(1) specifies two-thirds. Voting separately remains material and is preserved.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-24",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 23(1). Article VI section 23(1) specifies two-thirds. Voting separately remains material and is preserved.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-24",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 23(1). Article VI section 23(1) specifies two-thirds. Voting separately remains material and is preserved.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-24",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Article VI section 23(1). Article VI section 23(1) specifies two-thirds. Voting separately remains material and is preserved."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:25",
+    "proposed": {
+      "id": "q-000522",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "How many Associate Justices sit with the Chief Justice on the Supreme Court under Article VIII section 4(1)?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Six",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Twenty-four",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Fourteen",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "25",
+          "pages": {
+            "start": 3,
+            "end": 3
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Fourteen Associate Justices",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=3",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VIII section 4(1). The Constitution specifies fourteen Associate Justices plus the Chief Justice; six and twenty-four are unrelated constitutional membership counts.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-25"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The Constitution specifies fourteen Associate Justices plus the Chief Justice; six and twenty-four are unrelated constitutional membership counts.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VIII section 4(1). The Constitution specifies fourteen Associate Justices plus the Chief Justice; six and twenty-four are unrelated constitutional membership counts.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=3",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-25",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VIII section 4(1). The Constitution specifies fourteen Associate Justices plus the Chief Justice; six and twenty-four are unrelated constitutional membership counts.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-25",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VIII section 4(1). The Constitution specifies fourteen Associate Justices plus the Chief Justice; six and twenty-four are unrelated constitutional membership counts.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-25",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VIII section 4(1). The Constitution specifies fourteen Associate Justices plus the Chief Justice; six and twenty-four are unrelated constitutional membership counts.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-25",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Article VIII section 4(1). The Constitution specifies fourteen Associate Justices plus the Chief Justice; six and twenty-four are unrelated constitutional membership counts."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Philippine Constitution:26",
+    "proposed": {
+      "id": "q-000523",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which Article IX commission is the government’s central personnel agency and promotes morale, efficiency, integrity and courtesy in the civil service?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Commission on Audit",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Civil Service Commission",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Commission on Elections",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "26",
+          "pages": {
+            "start": 3,
+            "end": 3
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Civil Service Commission",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=3",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article IX-B section 3; IX-C section 2; IX-D section 2. Article IX-B section 3 assigns this personnel mandate to CSC; COMELEC handles election functions and COA audits public accounts.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-26"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Article IX-B section 3 assigns this personnel mandate to CSC; COMELEC handles election functions and COA audits public accounts.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article IX-B section 3; IX-C section 2; IX-D section 2. Article IX-B section 3 assigns this personnel mandate to CSC; COMELEC handles election functions and COA audits public accounts.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=3",
+      "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-26",
+      "https://lawphil.net/consti/cons1987.html",
+      "evidence/editorial/task-3/research/constitution.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article IX-B section 3; IX-C section 2; IX-D section 2. Article IX-B section 3 assigns this personnel mandate to CSC; COMELEC handles election functions and COA audits public accounts.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-26",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article IX-B section 3; IX-C section 2; IX-D section 2. Article IX-B section 3 assigns this personnel mandate to CSC; COMELEC handles election functions and COA audits public accounts.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-26",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article IX-B section 3; IX-C section 2; IX-D section 2. Article IX-B section 3 assigns this personnel mandate to CSC; COMELEC handles election functions and COA audits public accounts.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=3",
+            "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-26",
+            "https://lawphil.net/consti/cons1987.html",
+            "evidence/editorial/task-3/research/constitution.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/consti/cons1987.html",
+        "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
+        "rationale": "Verified Article IX-B section 3; IX-C section 2; IX-D section 2. Article IX-B section 3 assigns this personnel mandate to CSC; COMELEC handles election functions and COA audits public accounts."
+      }
+    }
+  }
+]

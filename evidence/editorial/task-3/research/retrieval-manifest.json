@@ -1,0 +1,746 @@
+[
+  {
+    "id": "constitution",
+    "url": "https://lawphil.net/consti/cons1987.html",
+    "retrievedAt": "2026-10-07T16:27:34.778880+00:00",
+    "textPath": "evidence/editorial/task-3/research/constitution.txt",
+    "characters": 145972
+  },
+  {
+    "id": "ra6975",
+    "url": "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html",
+    "retrievedAt": "2026-10-07T16:27:34.751884+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra6975.txt",
+    "characters": 83511
+  },
+  {
+    "id": "ra8551",
+    "url": "https://lawphil.net/statutes/repacts/ra1998/ra_8551_1998.html",
+    "retrievedAt": "2026-10-07T16:27:34.758405+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra8551.txt",
+    "characters": 62082
+  },
+  {
+    "id": "ra9708",
+    "url": "https://lawphil.net/statutes/repacts/ra2009/ra_9708_2009.html",
+    "retrievedAt": "2026-10-07T16:27:34.616376+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra9708.txt",
+    "characters": 5801
+  },
+  {
+    "id": "ra11200",
+    "url": "https://lawphil.net/statutes/repacts/ra2019/ra_11200_2019.html",
+    "retrievedAt": "2026-10-07T16:27:34.716025+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra11200.txt",
+    "characters": 2657
+  },
+  {
+    "id": "ra11549",
+    "url": "https://lawphil.net/statutes/repacts/ra2021/ra_11549_2021.html",
+    "retrievedAt": "2026-10-07T16:27:34.628666+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra11549.txt",
+    "characters": 5062
+  },
+  {
+    "id": "ra10071",
+    "url": "https://lawphil.net/statutes/repacts/ra2010/ra_10071_2010.html",
+    "retrievedAt": "2026-10-07T16:27:34.816328+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra10071.txt",
+    "characters": 42590
+  },
+  {
+    "id": "criminalrules",
+    "url": "https://lawphil.net/courts/rules/rc_110-127_crim.html",
+    "retrievedAt": "2026-10-07T16:27:34.839883+00:00",
+    "textPath": "evidence/editorial/task-3/research/criminalrules.txt",
+    "characters": 119937
+  },
+  {
+    "id": "ra10951",
+    "url": "https://lawphil.net/statutes/repacts/ra2017/ra_10951_2017.html",
+    "retrievedAt": "2026-10-07T16:27:34.865067+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra10951.txt",
+    "characters": 85740
+  },
+  {
+    "id": "ra7438",
+    "url": "https://lawphil.net/statutes/repacts/ra1992/ra_7438_1992.html",
+    "retrievedAt": "2026-10-07T16:27:34.841269+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra7438.txt",
+    "characters": 7384
+  },
+  {
+    "id": "ra11648",
+    "url": "https://lawphil.net/statutes/repacts/ra2022/ra_11648_2022.html",
+    "retrievedAt": "2026-10-07T16:27:34.854851+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra11648.txt",
+    "characters": 7958
+  },
+  {
+    "id": "rpc",
+    "url": "https://lawphil.net/statutes/acts/act1930/act_3815_1930b.html",
+    "retrievedAt": "2026-10-07T16:27:34.906202+00:00",
+    "textPath": "evidence/editorial/task-3/research/rpc.txt",
+    "characters": 144706
+  },
+  {
+    "id": "ra9344",
+    "url": "https://lawphil.net/statutes/repacts/ra2006/ra_9344_2006.html",
+    "retrievedAt": "2026-10-07T16:27:34.942796+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra9344.txt",
+    "characters": 64093
+  },
+  {
+    "id": "ra10630",
+    "url": "https://lawphil.net/statutes/repacts/ra2013/ra_10630_2013.html",
+    "retrievedAt": "2026-10-07T16:27:34.932457+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra10630.txt",
+    "characters": 29654
+  },
+  {
+    "id": "ra9165",
+    "url": "https://lawphil.net/statutes/repacts/ra2002/ra_9165_2002.html",
+    "retrievedAt": "2026-10-07T16:27:34.992548+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra9165.txt",
+    "characters": 146901
+  },
+  {
+    "id": "ra9346",
+    "url": "https://lawphil.net/statutes/repacts/ra2006/ra_9346_2006.html",
+    "retrievedAt": "2026-10-07T16:27:34.935182+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra9346.txt",
+    "characters": 2573
+  },
+  {
+    "id": "ra6735",
+    "url": "https://lawphil.net/statutes/repacts/ra1989/ra_6735_1989.html",
+    "retrievedAt": "2026-10-07T16:27:34.965476+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra6735.txt",
+    "characters": 15583
+  },
+  {
+    "id": "pd968",
+    "url": "https://lawphil.net/statutes/presdecs/pd1976/pd_968_1976.html",
+    "retrievedAt": "2026-10-07T16:27:34.992996+00:00",
+    "textPath": "evidence/editorial/task-3/research/pd968.txt",
+    "characters": 20601
+  },
+  {
+    "id": "ra10707",
+    "url": "https://lawphil.net/statutes/repacts/ra2015/ra_10707_2015.html",
+    "retrievedAt": "2026-10-07T16:27:35.033289+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra10707.txt",
+    "characters": 7580
+  },
+  {
+    "id": "ra10575",
+    "url": "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html",
+    "retrievedAt": "2026-10-07T16:27:35.049637+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra10575.txt",
+    "characters": 28958
+  },
+  {
+    "id": "ra7160",
+    "url": "https://lawphil.net/statutes/repacts/ra1991/ra_7160_1991.html",
+    "retrievedAt": "2026-10-07T16:27:35.183984+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra7160.txt",
+    "characters": 607883
+  },
+  {
+    "id": "ra8246",
+    "url": "https://lawphil.net/statutes/repacts/ra1996/ra_8246_1996.html",
+    "retrievedAt": "2026-10-07T16:27:35.065159+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra8246.txt",
+    "characters": 5188
+  },
+  {
+    "id": "pd765",
+    "url": "https://lawphil.net/statutes/presdecs/pd1975/pd_765_1975.html",
+    "retrievedAt": "2026-10-07T16:27:35.078338+00:00",
+    "textPath": "evidence/editorial/task-3/research/pd765.txt",
+    "characters": 11424
+  },
+  {
+    "id": "act175",
+    "url": "https://lawphil.net/statutes/acts/act1901/act_175_1901.html",
+    "retrievedAt": "2026-10-07T16:27:35.081992+00:00",
+    "textPath": "evidence/editorial/task-3/research/act175.txt",
+    "characters": 16844
+  },
+  {
+    "id": "ra10963",
+    "url": "https://lawphil.net/statutes/repacts/ra2017/ra_10963_2017.html",
+    "retrievedAt": "2026-10-07T16:27:35.274028+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra10963.txt",
+    "characters": 163488
+  },
+  {
+    "id": "ra10969",
+    "url": "https://lawphil.net/statutes/repacts/ra2018/ra_10969_2018.html",
+    "retrievedAt": "2026-10-07T16:27:35.131037+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra10969.txt",
+    "characters": 5847
+  },
+  {
+    "id": "eo26",
+    "url": "https://lawphil.net/executive/execord/eo2017/eo_26_2017.html",
+    "retrievedAt": "2026-10-07T16:27:35.145939+00:00",
+    "textPath": "evidence/editorial/task-3/research/eo26.txt",
+    "characters": 18376
+  },
+  {
+    "id": "eo25",
+    "url": "https://lawphil.net/executive/execord/eo2017/eo_25_2017.html",
+    "retrievedAt": "2026-10-07T16:27:35.239258+00:00",
+    "textPath": "evidence/editorial/task-3/research/eo25.txt",
+    "characters": 3519
+  },
+  {
+    "id": "eo2",
+    "url": "https://lawphil.net/executive/execord/eo2016/eo_2_2016.html",
+    "retrievedAt": "2026-10-07T16:27:35.251164+00:00",
+    "textPath": "evidence/editorial/task-3/research/eo2.txt",
+    "characters": 14463
+  },
+  {
+    "id": "proc216",
+    "url": "https://lawphil.net/executive/proc/proc2017/proc_216_2017.html",
+    "retrievedAt": "2026-10-07T16:27:35.307552+00:00",
+    "textPath": "evidence/editorial/task-3/research/proc216.txt",
+    "characters": 3236
+  },
+  {
+    "id": "proc319",
+    "url": "https://lawphil.net/executive/proc/proc2017/proc_319_2017.html",
+    "retrievedAt": "2026-10-07T16:27:35.313274+00:00",
+    "textPath": "evidence/editorial/task-3/research/proc319.txt",
+    "characters": 2941
+  },
+  {
+    "id": "ra4166",
+    "url": "https://lawphil.net/statutes/repacts/ra1964/ra_4166_1964.html",
+    "retrievedAt": "2026-10-07T16:27:35.319915+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra4166.txt",
+    "characters": 1268
+  },
+  {
+    "id": "ra9492",
+    "url": "https://lawphil.net/statutes/repacts/ra2007/ra_9492_2007.html",
+    "retrievedAt": "2026-10-07T16:27:35.325859+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra9492.txt",
+    "characters": 2726
+  },
+  {
+    "id": "ra9849",
+    "url": "https://lawphil.net/statutes/repacts/ra2009/ra_9849_2009.html",
+    "retrievedAt": "2026-10-07T16:27:35.347222+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra9849.txt",
+    "characters": 3359
+  },
+  {
+    "id": "ra6657",
+    "url": "https://lawphil.net/statutes/repacts/ra1988/ra_6657_1988.html",
+    "retrievedAt": "2026-10-07T16:27:35.396076+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra6657.txt",
+    "characters": 79509
+  },
+  {
+    "id": "ra8491",
+    "url": "https://lawphil.net/statutes/repacts/ra1998/ra_8491_1998.html",
+    "retrievedAt": "2026-10-07T16:27:35.390968+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra8491.txt",
+    "characters": 25058
+  },
+  {
+    "id": "pd1184",
+    "url": "https://lawphil.net/statutes/presdecs/pd1977/pd_1184_1977.html",
+    "retrievedAt": "2026-10-07T16:27:35.432987+00:00",
+    "textPath": "evidence/editorial/task-3/research/pd1184.txt",
+    "characters": 38703
+  },
+  {
+    "id": "act4103",
+    "url": "https://lawphil.net/statutes/acts/act1933/act_4103_1933.html",
+    "retrievedAt": "2026-10-07T16:27:35.404169+00:00",
+    "textPath": "evidence/editorial/task-3/research/act4103.txt",
+    "characters": 8482
+  },
+  {
+    "id": "rpcbook2",
+    "url": "https://lawphil.net/statutes/acts/act1930/act_3815_1930.html",
+    "retrievedAt": "2026-10-07T16:28:50.981399+00:00",
+    "textPath": "evidence/editorial/task-3/research/rpcbook2.txt",
+    "characters": 236356
+  },
+  {
+    "id": "lacsonbio",
+    "url": "https://legacy.senate.gov.ph/senators/sen_bio/lacson_bio.asp",
+    "failure": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "pnp-history",
+    "url": "https://pro3.pnp.gov.ph/history/",
+    "failure": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "pnp-history6",
+    "url": "https://bcpo.pro6.pnp.gov.ph/history/",
+    "failure": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "blotter",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/77425",
+    "failure": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)>"
+  },
+  {
+    "id": "mensrea",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/23/68085",
+    "failure": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)>"
+  },
+  {
+    "id": "stared",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/11/63230",
+    "failure": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)>"
+  },
+  {
+    "id": "puv",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/90045",
+    "failure": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)>"
+  },
+  {
+    "id": "discretion",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/14/63403",
+    "failure": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)>"
+  },
+  {
+    "id": "pillars",
+    "url": "https://www.doj.gov.ph/news_article.html?newsid=krH-DIDORFG8mpu73ZL25XWGNd_S8F2cmjC_96OdR44",
+    "failure": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "insurance",
+    "url": "https://site.insurance.gov.ph/about/",
+    "failure": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "holidays2026",
+    "url": "https://pco.gov.ph/news_releases/pbbm-issues-proclamation-declaring-regular-holidays-special-non-working-days-for-2026/",
+    "retrievedAt": "2026-10-07T16:31:12.054896+00:00",
+    "textPath": "evidence/editorial/task-3/research/holidays2026.txt",
+    "characters": 27724
+  },
+  {
+    "id": "museum",
+    "url": "https://www.nationalmuseum.gov.ph/our-museums/national-museum-of-natural-history/",
+    "retrievedAt": "2026-10-07T16:31:12.387663+00:00",
+    "textPath": "evidence/editorial/task-3/research/museum.txt",
+    "characters": 48936
+  },
+  {
+    "id": "hawking",
+    "url": "https://www.cai.cam.ac.uk/news/caius-pays-tribute-professor-stephen-hawking-fellow-caius-over-52-years",
+    "retrievedAt": "2026-10-07T16:31:14.487769+00:00",
+    "textPath": "evidence/editorial/task-3/research/hawking.txt",
+    "characters": 22094
+  },
+  {
+    "id": "summit",
+    "url": "https://www.mfa.gov.sg/newsroom/press-statements-transcripts-and-photos/20180610-kim-10-jun-2018/",
+    "retrievedAt": "2026-10-07T16:31:12.093498+00:00",
+    "textPath": "evidence/editorial/task-3/research/summit.txt",
+    "characters": 283178
+  },
+  {
+    "id": "pca",
+    "url": "https://pca-cpa.org/en/cases/7/",
+    "failure": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "marcosburial",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/23/63470",
+    "failure": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)>"
+  },
+  {
+    "id": "sereno",
+    "url": "https://lawphil.net/judjuris/juri2018/may2018/gr_237428_2018.html",
+    "retrievedAt": "2026-10-07T16:31:12.145430+00:00",
+    "textPath": "evidence/editorial/task-3/research/sereno.txt",
+    "characters": 395821
+  },
+  {
+    "id": "alvarez",
+    "url": "https://www.congress.gov.ph/index.php/media/photojournal/577",
+    "failure": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "comelec2016",
+    "url": "https://www.comelec.gov.ph/?r=2016NLE",
+    "retrievedAt": "2026-10-07T16:31:12.302856+00:00",
+    "textPath": "evidence/editorial/task-3/research/comelec2016.txt",
+    "characters": 6121
+  },
+  {
+    "id": "comelec2018",
+    "url": "https://www.comelec.gov.ph/?r=VoterRegistration%2FResolutions",
+    "retrievedAt": "2026-10-07T16:31:12.315229+00:00",
+    "textPath": "evidence/editorial/task-3/research/comelec2018.txt",
+    "characters": 6121
+  },
+  {
+    "id": "garbage",
+    "url": "https://legacy.senate.gov.ph/press_release/2017/1220_pimentel1.asp",
+    "failure": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "eo6",
+    "url": "https://lawphil.net/executive/execord/eo2016/eo_6_2016.html",
+    "retrievedAt": "2026-10-07T16:31:12.322814+00:00",
+    "textPath": "evidence/editorial/task-3/research/eo6.txt",
+    "characters": 7780
+  },
+  {
+    "id": "eo56",
+    "url": "https://lawphil.net/executive/execord/eo2018/eo_56_2018.html",
+    "retrievedAt": "2026-10-07T16:31:12.333787+00:00",
+    "textPath": "evidence/editorial/task-3/research/eo56.txt",
+    "characters": 12393
+  },
+  {
+    "id": "pagasalegend",
+    "url": "https://pagasa.dost.gov.ph/learnings/legend",
+    "retrievedAt": "2026-10-07T16:31:12.861828+00:00",
+    "textPath": "evidence/editorial/task-3/research/pagasalegend.txt",
+    "characters": 22404
+  },
+  {
+    "id": "pagasaarticle38",
+    "url": "https://pagasa.dost.gov.ph/article/38",
+    "retrievedAt": "2026-10-07T16:31:12.911456+00:00",
+    "textPath": "evidence/editorial/task-3/research/pagasaarticle38.txt",
+    "characters": 18175
+  },
+  {
+    "id": "chedmodule",
+    "url": "https://phlconnect.ched.gov.ph/admin/uploads/5ef059938ba799aaa845e1c2e8a762bd/LEA1N-MODULE.pdf",
+    "failure": "<urlopen error timed out>"
+  },
+  {
+    "id": "bjmpmanual",
+    "url": "https://barmm.bjmp.gov.ph/wp-content/uploads/2022/04/BJMP_OPERATIONAL_MANUAL_2015.pdf",
+    "failure": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "pagasabulletin",
+    "url": "https://pubfiles.pagasa.dost.gov.ph/pagasaweb/files/cad/CLIMATOLOGICAL%20PUBLICATIONS/2023.pdf",
+    "retrievedAt": "2026-10-07T16:31:16.637404+00:00",
+    "pdfPath": "evidence/editorial/task-3/research/pagasabulletin.pdf",
+    "bytes": 18619981
+  },
+  {
+    "id": "lacsonbio",
+    "url": "https://legacy.senate.gov.ph/senators/sen_bio/lacson_bio.asp",
+    "curlFailure": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "id": "pnp-history",
+    "url": "https://pro3.pnp.gov.ph/history/",
+    "curlFailure": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "id": "pnp-history6",
+    "url": "https://bcpo.pro6.pnp.gov.ph/history/",
+    "curlFailure": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "id": "blotter",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/77425",
+    "retrievedAt": "2026-10-07T16:32:47.960937+00:00",
+    "textPath": "evidence/editorial/task-3/research/blotter.txt",
+    "characters": 29882
+  },
+  {
+    "id": "mensrea",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/23/68085",
+    "retrievedAt": "2026-10-07T16:32:48.031669+00:00",
+    "textPath": "evidence/editorial/task-3/research/mensrea.txt",
+    "characters": 205769
+  },
+  {
+    "id": "stared",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/11/63230",
+    "retrievedAt": "2026-10-07T16:32:48.296136+00:00",
+    "textPath": "evidence/editorial/task-3/research/stared.txt",
+    "characters": 336719
+  },
+  {
+    "id": "puv",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/90045",
+    "retrievedAt": "2026-10-07T16:32:47.967927+00:00",
+    "textPath": "evidence/editorial/task-3/research/puv.txt",
+    "characters": 14334
+  },
+  {
+    "id": "discretion",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/14/63403",
+    "retrievedAt": "2026-10-07T16:32:48.080187+00:00",
+    "textPath": "evidence/editorial/task-3/research/discretion.txt",
+    "characters": 145861
+  },
+  {
+    "id": "pillars",
+    "url": "https://www.doj.gov.ph/news_article.html?newsid=krH-DIDORFG8mpu73ZL25XWGNd_S8F2cmjC_96OdR44",
+    "curlFailure": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "id": "insurance",
+    "url": "https://site.insurance.gov.ph/about/",
+    "retrievedAt": "2026-10-07T16:32:49.680343+00:00",
+    "textPath": "evidence/editorial/task-3/research/insurance.txt",
+    "characters": 114074
+  },
+  {
+    "id": "pca",
+    "url": "https://pca-cpa.org/en/cases/7/",
+    "curlFailure": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "id": "marcosburial",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/23/63470",
+    "retrievedAt": "2026-10-07T16:32:48.309943+00:00",
+    "textPath": "evidence/editorial/task-3/research/marcosburial.txt",
+    "characters": 203356
+  },
+  {
+    "id": "alvarez",
+    "url": "https://www.congress.gov.ph/index.php/media/photojournal/577",
+    "curlFailure": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "id": "garbage",
+    "url": "https://legacy.senate.gov.ph/press_release/2017/1220_pimentel1.asp",
+    "curlFailure": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "id": "chedmodule",
+    "url": "https://phlconnect.ched.gov.ph/admin/uploads/5ef059938ba799aaa845e1c2e8a762bd/LEA1N-MODULE.pdf",
+    "curlFailure": "curl: (28) Connection timed out after 20005 milliseconds"
+  },
+  {
+    "id": "bjmpmanual",
+    "url": "https://barmm.bjmp.gov.ph/wp-content/uploads/2022/04/BJMP_OPERATIONAL_MANUAL_2015.pdf",
+    "curlFailure": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "id": "policepowers",
+    "url": "https://lawphil.net/judjuris/juri1987/mar1987/gr_l-74457_1987.html",
+    "retrievedAt": "2026-10-07T16:32:48.317316+00:00",
+    "textPath": "evidence/editorial/task-3/research/policepowers.txt",
+    "characters": 28051
+  },
+  {
+    "id": "commutation",
+    "url": "https://lawphil.net/judjuris/juri1997/apr1997/gr_117818_1997.html",
+    "retrievedAt": "2026-10-07T16:32:48.405031+00:00",
+    "textPath": "evidence/editorial/task-3/research/commutation.txt",
+    "characters": 57809
+  },
+  {
+    "id": "crimecontrol",
+    "url": "https://www.ojp.gov/pdffiles1/Digitization/168948NCJRS.pdf",
+    "retrievedAt": "2026-10-07T16:32:49.764773+00:00",
+    "pdfPath": "evidence/editorial/task-3/research/crimecontrol.pdf",
+    "bytes": 39023222
+  },
+  {
+    "id": "pcanniversary",
+    "url": "https://www.pna.gov.ph/articles/1111278",
+    "retrievedAt": "2026-10-07T16:37:13.815373+00:00",
+    "textPath": "evidence/editorial/task-3/research/pcanniversary.txt",
+    "characters": 477990
+  },
+  {
+    "id": "pillarsreport",
+    "url": "https://www.ombudsman.gov.ph/UNDP4/wp-content/uploads/2012/12/MTDP-for-CJS-Final-Report.pdf",
+    "retrievedAt": "2026-10-07T16:37:13.675681+00:00",
+    "pdfPath": "evidence/editorial/task-3/research/pillarsreport.pdf",
+    "bytes": 1746042
+  },
+  {
+    "id": "chedmodule",
+    "url": "https://phlconnect.ched.gov.ph/admin/uploads/5ef059938ba799aaa845e1c2e8a762bd/LEA1N-MODULE.pdf",
+    "curlFailure": "curl: (28) Connection timed out after 20003 milliseconds"
+  },
+  {
+    "id": "headquarters",
+    "url": "https://www.pna.gov.ph/articles/1138025",
+    "retrievedAt": "2026-10-07T16:37:14.117841+00:00",
+    "textPath": "evidence/editorial/task-3/research/headquarters.txt",
+    "characters": 477992
+  },
+  {
+    "id": "boracay",
+    "url": "https://lawphil.net/executive/proc/proc2018/proc_475_2018.html",
+    "retrievedAt": "2026-10-07T16:37:13.396243+00:00",
+    "textPath": "evidence/editorial/task-3/research/boracay.txt",
+    "characters": 9924
+  },
+  {
+    "id": "delarosa",
+    "url": "https://pco.gov.ph/news_releases/president-duterte-reiterates-tough-stance-vs-illegal-drugs-during-pnp-event/",
+    "retrievedAt": "2026-10-07T16:37:14.071740+00:00",
+    "textPath": "evidence/editorial/task-3/research/delarosa.txt",
+    "characters": 29040
+  },
+  {
+    "id": "halili",
+    "url": "https://www.pna.gov.ph/articles/1040071",
+    "retrievedAt": "2026-10-07T16:37:14.130164+00:00",
+    "textPath": "evidence/editorial/task-3/research/halili.txt",
+    "characters": 477991
+  },
+  {
+    "id": "marawi",
+    "url": "https://pco.gov.ph/may-23-2017-press-briefing-by-presidential-spokesperson-ernesto-abella-with-department-of-national-defense-secretary-delfin-lorenzana-and-department-of-foreign-affairs-secretary-alan-peter-cayetano/",
+    "retrievedAt": "2026-10-07T16:37:14.390644+00:00",
+    "textPath": "evidence/editorial/task-3/research/marawi.txt",
+    "characters": 40499
+  },
+  {
+    "id": "fuego",
+    "url": "https://volcano.si.edu/reports_bgvn.cfm?IssueMonth=08&IssueYear=2018",
+    "curlFailure": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "id": "diwata",
+    "url": "https://stamina4space.philsa.gov.ph/diwata-1/index.html",
+    "retrievedAt": "2026-10-07T16:37:14.661096+00:00",
+    "textPath": "evidence/editorial/task-3/research/diwata.txt",
+    "characters": 21366
+  },
+  {
+    "id": "eclipse",
+    "url": "https://svs.gsfc.nasa.gov/4614",
+    "curlFailure": "curl: (28) Connection timed out after 20002 milliseconds"
+  },
+  {
+    "id": "diaz",
+    "url": "https://iwf.sport/2019/02/12/get-know-hidilyn-diaz/",
+    "curlFailure": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "id": "sotto",
+    "url": "https://issuances-library.senate.gov.ph/legislative-issuance/proposed-senate-resolution-no-739-17th-congress",
+    "curlFailure": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "id": "garbage2",
+    "url": "https://pco.gov.ph/may-11-2015-news-releases/",
+    "retrievedAt": "2026-10-07T16:37:14.939569+00:00",
+    "textPath": "evidence/editorial/task-3/research/garbage2.txt",
+    "characters": 45310
+  },
+  {
+    "id": "jackma",
+    "url": "https://www.dlsau.edu.ph/news/downloads/lead-bulletins/LEAD-260-17.pdf",
+    "retrievedAt": "2026-10-07T16:37:17.427492+00:00",
+    "pdfPath": "evidence/editorial/task-3/research/jackma.pdf",
+    "bytes": 7437584
+  },
+  {
+    "id": "banago",
+    "url": "https://bfp.gov.ph/wp-content/uploads/2018/07/BFP_BAC_IBNo_018_G_s_2018_16July2018.pdf",
+    "curlFailure": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "id": "comelecdate",
+    "url": "https://www.comelec.gov.ph/php-tpls-attachments/2018BSKE/PressRelease/04Apr2018pr.pdf",
+    "curlFailure": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "id": "comelecdate16",
+    "url": "https://www.comelec.gov.ph/html-tpls/2016NLE/Resolutions/res10094.html?r=2016NLE%2FResolutions",
+    "curlFailure": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "id": "alvarezrecord",
+    "url": "https://docs.congress.hrep.online/legisdocs/congrec/17th/1st/17C1RS-VOL1REC1-20160725.pdf",
+    "retrievedAt": "2026-10-07T16:37:15.200394+00:00",
+    "pdfPath": "evidence/editorial/task-3/research/alvarezrecord.pdf",
+    "bytes": 728354
+  },
+  {
+    "id": "pcaaward",
+    "url": "https://docs.pca-cpa.org/2016/07/PH-CN-20160712-Award.pdf",
+    "retrievedAt": "2026-10-07T16:37:19.973683+00:00",
+    "pdfPath": "evidence/editorial/task-3/research/pcaaward.pdf",
+    "bytes": 10264797
+  },
+  {
+    "id": "pnpanniversary",
+    "url": "https://pro9.pnp.gov.ph/pnp-commemorates-the-123rd-police-service-anniversary-with-president-ferdinand-romualdez-marcos-jr/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "bjmpmanual2",
+    "url": "https://car.bjmp.gov.ph/wp-content/uploads/2024/11/BJMP-Comprehensive-Operations-Manual-2015-Edition.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "pnpfg",
+    "url": "https://fg.pnp.gov.ph/wp-content/uploads/2023/11/ITB-124-2023.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "chedmodule2",
+    "url": "https://phlconnect.ched.gov.ph/admin/uploads/5ef059938ba799aaa845e1c2e8a762bd/LEA1N-MODULE.pdf",
+    "error": "<urlopen error timed out>"
+  },
+  {
+    "id": "campcrame",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/68865",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1077)>"
+  },
+  {
+    "id": "campcrame",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/68865",
+    "retrievedAt": "2026-10-07T16:42:35.240924+00:00",
+    "textPath": "evidence/editorial/task-3/research/campcrame.txt",
+    "characters": 40586
+  },
+  {
+    "id": "contraband",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/22/66824",
+    "retrievedAt": "2026-10-07T16:42:35.433424+00:00",
+    "textPath": "evidence/editorial/task-3/research/contraband.txt",
+    "characters": 57589
+  },
+  {
+    "id": "mittimus",
+    "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/15/1619",
+    "retrievedAt": "2026-10-07T16:42:35.869010+00:00",
+    "textPath": "evidence/editorial/task-3/research/mittimus.txt",
+    "characters": 592813
+  },
+  {
+    "id": "lacsonpress",
+    "url": "https://legacy.senate.gov.ph/press_release/2018/0629_lacson1.asp",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "pnphistoryhttp",
+    "url": "http://pro3.pnp.gov.ph/history/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "pnpanniversaryhttp",
+    "url": "http://pro9.pnp.gov.ph/pnp-commemorates-the-123rd-police-service-anniversary-with-president-ferdinand-romualdez-marcos-jr/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "ra10607",
+    "url": "https://lawphil.net/statutes/repacts/ra2013/ra_10607_2013.html",
+    "retrievedAt": "2026-10-07T16:51:21.458422+00:00",
+    "textPath": "evidence/editorial/task-3/research/ra10607.txt",
+    "characters": 375564
+  }
+]

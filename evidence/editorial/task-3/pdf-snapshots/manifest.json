@@ -1,0 +1,50 @@
+{
+  "renderer": "macOS Swift PDFKit thumbnails; source PDFs unmodified",
+  "snapshots": [
+    {
+      "path": "evidence/editorial/task-3/pdf-snapshots/pillarsreport-4.png",
+      "sha256": "9372ff68978adb2850b8018e9fd60e5aad5601eb2bdb98f0b3427ecd8b480b22",
+      "visuallyInspected": true
+    },
+    {
+      "path": "evidence/editorial/task-3/pdf-snapshots/pillarsreport-5.png",
+      "sha256": "39c08619bdb5ffb805f206cca589ecf84653c071b8c4fa89d605cf42a3cc94ea",
+      "visuallyInspected": true
+    },
+    {
+      "path": "evidence/editorial/task-3/pdf-snapshots/crimecontrol-313.png",
+      "sha256": "80837a1178a482131434ada10a36ca0824adfad76ccb55521bb4ec4f5b18409e",
+      "visuallyInspected": false
+    },
+    {
+      "path": "evidence/editorial/task-3/pdf-snapshots/pillarsreport-2.png",
+      "sha256": "8a15ac3a9d59ae0528ba81b6f8db773bcda82dd12ffdb401b3f310d86b366f00",
+      "visuallyInspected": false
+    },
+    {
+      "path": "evidence/editorial/task-3/pdf-snapshots/pillarsreport-3.png",
+      "sha256": "1740f35e9e894cd327168c73ca4ed8aba15b01bfe5999c500649df232f3f6672",
+      "visuallyInspected": false
+    },
+    {
+      "path": "evidence/editorial/task-3/pdf-snapshots/pillarsreport-1.png",
+      "sha256": "abe235667838e46155f184c8b3d16050bd29ad2ba442183132cfada3e06b06c0",
+      "visuallyInspected": false
+    },
+    {
+      "path": "evidence/editorial/task-3/pdf-snapshots/crimecontrol-79.png",
+      "sha256": "2d59d36c4b03926a5d0ee375ce2afc2c83ac07ffb80f09b35982b6372f4080f1",
+      "visuallyInspected": true
+    },
+    {
+      "path": "evidence/editorial/task-3/pdf-snapshots/crimecontrol-383.png",
+      "sha256": "c498a5a6ad33d1080d8397acf9ea71d1cbcc002e6da91543dcd4469a4064a349",
+      "visuallyInspected": false
+    },
+    {
+      "path": "evidence/editorial/task-3/pdf-snapshots/crimecontrol-437.png",
+      "sha256": "51dc9a7df7391ae1b03cb8520ab53f083de5872a366be086fcb228ea4d34a925",
+      "visuallyInspected": false
+    }
+  ]
+}

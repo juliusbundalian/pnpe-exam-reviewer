@@ -1,0 +1,4047 @@
+[
+  {
+    "sourceKey": "notes:Current Events:1",
+    "proposed": {
+      "id": "q-000653",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "It is the country that hosted the Trump-Kim Summit last June 12, 2018.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "1",
+          "pages": {
+            "start": 17,
+            "end": 17
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Singapore",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=17",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: A retained Singapore primary statement supports the 2018 summit, but this is historical diplomatic trivia; no current-event assessment/context has been authored and independently verified.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-1"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A retained Singapore primary statement supports the 2018 summit, but this is historical diplomatic trivia; no current-event assessment/context has been authored and independently verified.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: A retained Singapore primary statement supports the 2018 summit, but this is historical diplomatic trivia; no current-event assessment/context has been authored and independently verified.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=17",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-1"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:1: A retained Singapore primary statement supports the 2018 summit, but this is historical diplomatic trivia; no current-event assessment/context has been authored and independently verified."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:2",
+    "proposed": {
+      "id": "q-000654",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "A rainfall advisory from PAG-ASA which means 7.5mm–30mm of rainfall is\nexpected for the first one hour and has possibility to cause flood. It advises\npeople to be ALERT with the possible flooding.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "2",
+          "pages": {
+            "start": 17,
+            "end": 17
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Orange",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=17",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: Orange threshold in original overlaps yellow and is suspect; retained PAGASA bulletin describes warnings but does not directly prove this numeric range. Need current operational threshold issuance and real time metadata.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-2"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Orange threshold in original overlaps yellow and is suspect; retained PAGASA bulletin describes warnings but does not directly prove this numeric range. Need current operational threshold issuance and real time metadata.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: Orange threshold in original overlaps yellow and is suspect; retained PAGASA bulletin describes warnings but does not directly prove this numeric range. Need current operational threshold issuance and real time metadata.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=17",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-2"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "source-annotation-review",
+          "message": "Source correction/caution is unverified; original answer retained",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:2: Orange threshold in original overlaps yellow and is suspect; retained PAGASA bulletin describes warnings but does not directly prove this numeric range. Need current operational threshold issuance and real time metadata."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:3",
+    "proposed": {
+      "id": "q-000655",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Where was the remains of the late President Ferdinand Marcos buried on\nOctober 18, 2016?",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "3",
+          "pages": {
+            "start": 17,
+            "end": 17
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Libingan ng mga Bayani",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=17",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: Original October 18 burial date is suspect; retained SC decision concerns burial authority rather than independently proving the later burial event. Historical event taxonomy/time context unresolved.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-3"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Original October 18 burial date is suspect; retained SC decision concerns burial authority rather than independently proving the later burial event. Historical event taxonomy/time context unresolved.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: Original October 18 burial date is suspect; retained SC decision concerns burial authority rather than independently proving the later burial event. Historical event taxonomy/time context unresolved.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=17",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-3"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "source-annotation-review",
+          "message": "Source correction/caution is unverified; original answer retained",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:3: Original October 18 burial date is suspect; retained SC decision concerns burial authority rather than independently proving the later burial event. Historical event taxonomy/time context unresolved."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:4",
+    "proposed": {
+      "id": "q-000656",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "On May 18, 2018, this museum was opened to the public for the first time. It is\nhosted inside the building formerly occupied by the Department of Tourism\nwithin Rizal Park near the Agrifina Circle.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "4",
+          "pages": {
+            "start": 17,
+            "end": 17
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "National Museum of Natural History",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=17",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: Museum page is retained but opening-date/first-public-access detail and current-event relevance remain unresolved; historical cultural trivia is not PNP history.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-4"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Museum page is retained but opening-date/first-public-access detail and current-event relevance remain unresolved; historical cultural trivia is not PNP history.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: Museum page is retained but opening-date/first-public-access detail and current-event relevance remain unresolved; historical cultural trivia is not PNP history.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=17",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-4"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:4: Museum page is retained but opening-date/first-public-access detail and current-event relevance remain unresolved; historical cultural trivia is not PNP history."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:5",
+    "proposed": {
+      "id": "q-000657",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "One hundred-three (103) shipping containers from Canada which were falsely\ndeclared as plastic scraps for recycling were sent to the Philippines from June\n2013 to January 2014. What do these containers have?",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "5",
+          "pages": {
+            "start": 17,
+            "end": 17
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Garbage",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=17",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: Container count, dates and contents require direct official shipment record; retrieved PCO lead does not automatically certify every quantity. Historical dispute lacks current context.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-5"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Container count, dates and contents require direct official shipment record; retrieved PCO lead does not automatically certify every quantity. Historical dispute lacks current context.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: Container count, dates and contents require direct official shipment record; retrieved PCO lead does not automatically certify every quantity. Historical dispute lacks current context.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=17",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-5"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:5: Container count, dates and contents require direct official shipment record; retrieved PCO lead does not automatically certify every quantity. Historical dispute lacks current context."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:6",
+    "proposed": {
+      "id": "q-000658",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "He was an English theoretical physicist, cosmologist, and author and was\nfamous for his scientific works about black holes. He died on March 13, at the\nage of 76.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "6",
+          "pages": {
+            "start": 17,
+            "end": 17
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Stephen William Hawking",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=17",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: Cambridge memorial is retained but original death date is suspect; scientific biography is historical trivia outside approved taxonomy.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-6"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Cambridge memorial is retained but original death date is suspect; scientific biography is historical trivia outside approved taxonomy.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: Cambridge memorial is retained but original death date is suspect; scientific biography is historical trivia outside approved taxonomy.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=17",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-6"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:6: Cambridge memorial is retained but original death date is suspect; scientific biography is historical trivia outside approved taxonomy."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:7",
+    "proposed": {
+      "id": "q-000659",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "The current Speaker of the House of the 17th Congress.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "7",
+          "pages": {
+            "start": 17,
+            "end": 17
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Pantaleon Alvarez",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=17",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: Current Speaker of the 17th Congress is obsolete and spans leadership changes; historical Congressional record does not supply a current officeholder or legitimate new time context.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-7"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Current Speaker of the 17th Congress is obsolete and spans leadership changes; historical Congressional record does not supply a current officeholder or legitimate new time context.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: Current Speaker of the 17th Congress is obsolete and spans leadership changes; historical Congressional record does not supply a current officeholder or legitimate new time context.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=17",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-7"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:7: Current Speaker of the 17th Congress is obsolete and spans leadership changes; historical Congressional record does not supply a current officeholder or legitimate new time context."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:8",
+    "proposed": {
+      "id": "q-000660",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "The Barangay and Sangguniang Kabataan elections were held on:",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "8",
+          "pages": {
+            "start": 17,
+            "end": 17
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "May 14, 2018",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=17",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: COMELEC retrieval is a generic resolutions page, not the 2018 election-date issuance; direct dated release retrieval failed. Historical date is not present-event context.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-8"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "COMELEC retrieval is a generic resolutions page, not the 2018 election-date issuance; direct dated release retrieval failed. Historical date is not present-event context.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: COMELEC retrieval is a generic resolutions page, not the 2018 election-date issuance; direct dated release retrieval failed. Historical date is not present-event context.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=17",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-8"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:8: COMELEC retrieval is a generic resolutions page, not the 2018 election-date issuance; direct dated release retrieval failed. Historical date is not present-event context."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:9",
+    "proposed": {
+      "id": "q-000661",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "In Republic v. Sereno (11 May 2018), which proceeding challenged the legality of the respondent’s appointment as Chief Justice?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Quo warranto",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Impeachment trial in the Senate",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Petition for a writ of amparo",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "9",
+          "pages": {
+            "start": 17,
+            "end": 17
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Maria Lourdes Sereno",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=17",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Case identification and introductory statement; correct decision date 11 May 2018. The decision expressly concerns a petition for quo warranto challenging eligibility to hold the office, not a Senate impeachment trial or a protective writ of amparo. The authored conversion assesses the legal proceeding identified by the decision rather than presenting the 2018 removal as a current event.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-9"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The decision expressly concerns a petition for quo warranto challenging eligibility to hold the office, not a Senate impeachment trial or a protective writ of amparo. The authored conversion assesses the legal proceeding identified by the decision rather than presenting the 2018 removal as a current event.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Case identification and introductory statement; correct decision date 11 May 2018. The decision expressly concerns a petition for quo warranto challenging eligibility to hold the office, not a Senate impeachment trial or a protective writ of amparo. The authored conversion assesses the legal proceeding identified by the decision rather than presenting the 2018 removal as a current event.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=17",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-9",
+      "https://lawphil.net/judjuris/juri2018/may2018/gr_237428_2018.html",
+      "evidence/editorial/task-3/research/sereno.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Case identification and introductory statement; correct decision date 11 May 2018. The decision expressly concerns a petition for quo warranto challenging eligibility to hold the office, not a Senate impeachment trial or a protective writ of amparo. The authored conversion assesses the legal proceeding identified by the decision rather than presenting the 2018 removal as a current event.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=17",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-9",
+            "https://lawphil.net/judjuris/juri2018/may2018/gr_237428_2018.html",
+            "evidence/editorial/task-3/research/sereno.txt"
+          ]
+        },
+        {
+          "code": "missing-time-context",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Case identification and introductory statement; correct decision date 11 May 2018. The decision expressly concerns a petition for quo warranto challenging eligibility to hold the office, not a Senate impeachment trial or a protective writ of amparo. The authored conversion assesses the legal proceeding identified by the decision rather than presenting the 2018 removal as a current event.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=17",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-9",
+            "https://lawphil.net/judjuris/juri2018/may2018/gr_237428_2018.html",
+            "evidence/editorial/task-3/research/sereno.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Case identification and introductory statement; correct decision date 11 May 2018. The decision expressly concerns a petition for quo warranto challenging eligibility to hold the office, not a Senate impeachment trial or a protective writ of amparo. The authored conversion assesses the legal proceeding identified by the decision rather than presenting the 2018 removal as a current event.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=17",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-9",
+            "https://lawphil.net/judjuris/juri2018/may2018/gr_237428_2018.html",
+            "evidence/editorial/task-3/research/sereno.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Case identification and introductory statement; correct decision date 11 May 2018. The decision expressly concerns a petition for quo warranto challenging eligibility to hold the office, not a Senate impeachment trial or a protective writ of amparo. The authored conversion assesses the legal proceeding identified by the decision rather than presenting the 2018 removal as a current event.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=17",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-9",
+            "https://lawphil.net/judjuris/juri2018/may2018/gr_237428_2018.html",
+            "evidence/editorial/task-3/research/sereno.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/judjuris/juri2018/may2018/gr_237428_2018.html",
+        "verifiedAt": "2026-10-07T16:52:17.344Z",
+        "rationale": "Verified Case identification and introductory statement; correct decision date 11 May 2018. The decision expressly concerns a petition for quo warranto challenging eligibility to hold the office, not a Senate impeachment trial or a protective writ of amparo. The authored conversion assesses the legal proceeding identified by the decision rather than presenting the 2018 removal as a current event."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:10",
+    "proposed": {
+      "id": "q-000662",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "When was the last Presidential Elections which resulted to the victory of\nPresident Rodrigo Duterte?",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "10",
+          "pages": {
+            "start": 17,
+            "end": 17
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "May 9, 2016",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=17",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: The 2016 election cannot be called the last presidential election in 2026; no verified present-election context supplied.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-10"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The 2016 election cannot be called the last presidential election in 2026; no verified present-election context supplied.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: The 2016 election cannot be called the last presidential election in 2026; no verified present-election context supplied.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=17",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-10"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:10: The 2016 election cannot be called the last presidential election in 2026; no verified present-election context supplied."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:11",
+    "proposed": {
+      "id": "q-000663",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "What title does section 1 of Republic Act 10963 give the TRAIN law?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Tax Reduction for Agriculture and Infrastructure",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Tax Reform for Acceleration and Inclusion",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Tax Reform for Administration and Investment",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "11",
+          "pages": {
+            "start": 17,
+            "end": 17
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Tax Reform for Acceleration and Inclusion",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=17",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1. Section 1 gives the exact statutory title Tax Reform for Acceleration and Inclusion. The other authored expansions use related fiscal terms but are not the law’s title. This conversion tests a statute rather than an undated current-event claim.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-11"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Section 1 gives the exact statutory title Tax Reform for Acceleration and Inclusion. The other authored expansions use related fiscal terms but are not the law’s title. This conversion tests a statute rather than an undated current-event claim.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1. Section 1 gives the exact statutory title Tax Reform for Acceleration and Inclusion. The other authored expansions use related fiscal terms but are not the law’s title. This conversion tests a statute rather than an undated current-event claim.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=17",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-11",
+      "https://lawphil.net/statutes/repacts/ra2017/ra_10963_2017.html",
+      "evidence/editorial/task-3/research/ra10963.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1. Section 1 gives the exact statutory title Tax Reform for Acceleration and Inclusion. The other authored expansions use related fiscal terms but are not the law’s title. This conversion tests a statute rather than an undated current-event claim.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=17",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-11",
+            "https://lawphil.net/statutes/repacts/ra2017/ra_10963_2017.html",
+            "evidence/editorial/task-3/research/ra10963.txt"
+          ]
+        },
+        {
+          "code": "missing-time-context",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1. Section 1 gives the exact statutory title Tax Reform for Acceleration and Inclusion. The other authored expansions use related fiscal terms but are not the law’s title. This conversion tests a statute rather than an undated current-event claim.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=17",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-11",
+            "https://lawphil.net/statutes/repacts/ra2017/ra_10963_2017.html",
+            "evidence/editorial/task-3/research/ra10963.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1. Section 1 gives the exact statutory title Tax Reform for Acceleration and Inclusion. The other authored expansions use related fiscal terms but are not the law’s title. This conversion tests a statute rather than an undated current-event claim.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=17",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-11",
+            "https://lawphil.net/statutes/repacts/ra2017/ra_10963_2017.html",
+            "evidence/editorial/task-3/research/ra10963.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1. Section 1 gives the exact statutory title Tax Reform for Acceleration and Inclusion. The other authored expansions use related fiscal terms but are not the law’s title. This conversion tests a statute rather than an undated current-event claim.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=17",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-11",
+            "https://lawphil.net/statutes/repacts/ra2017/ra_10963_2017.html",
+            "evidence/editorial/task-3/research/ra10963.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/statutes/repacts/ra2017/ra_10963_2017.html",
+        "verifiedAt": "2026-10-07T16:52:17.344Z",
+        "rationale": "Verified Section 1. Section 1 gives the exact statutory title Tax Reform for Acceleration and Inclusion. The other authored expansions use related fiscal terms but are not the law’s title. This conversion tests a statute rather than an undated current-event claim."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:12",
+    "proposed": {
+      "id": "q-000664",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "A rainfall advisory from PAG-ASA which means 7.5mm–15mm of rainfall is\nexpected for the first one hour and has possibility to occur continuously. It\nadvises people to MONITOR.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "12",
+          "pages": {
+            "start": 17,
+            "end": 17
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Yellow",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=17",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: Retained PAGASA material does not directly establish this exact threshold/advisory wording as current operational guidance; requires current issuance and actual time metadata.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-12"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Retained PAGASA material does not directly establish this exact threshold/advisory wording as current operational guidance; requires current issuance and actual time metadata.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: Retained PAGASA material does not directly establish this exact threshold/advisory wording as current operational guidance; requires current issuance and actual time metadata.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=17",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-12"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:12: Retained PAGASA material does not directly establish this exact threshold/advisory wording as current operational guidance; requires current issuance and actual time metadata."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:13",
+    "proposed": {
+      "id": "q-000665",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which Republic Act has the short title “Free Irrigation Service Act”?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "RA 10963",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "RA 8551",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "RA 10969",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "13",
+          "pages": {
+            "start": 17,
+            "end": 18
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Republic Act No. 10969",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=17",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1. RA 10969 section 1 supplies the short title. RA 10963 is TRAIN; RA 8551 concerns PNP reform. The authored statutory-identification question omits broader unverified claims about actual program delivery.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-13"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "RA 10969 section 1 supplies the short title. RA 10963 is TRAIN; RA 8551 concerns PNP reform. The authored statutory-identification question omits broader unverified claims about actual program delivery.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1. RA 10969 section 1 supplies the short title. RA 10963 is TRAIN; RA 8551 concerns PNP reform. The authored statutory-identification question omits broader unverified claims about actual program delivery.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=17",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-13",
+      "https://lawphil.net/statutes/repacts/ra2018/ra_10969_2018.html",
+      "evidence/editorial/task-3/research/ra10969.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1. RA 10969 section 1 supplies the short title. RA 10963 is TRAIN; RA 8551 concerns PNP reform. The authored statutory-identification question omits broader unverified claims about actual program delivery.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=17",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-13",
+            "https://lawphil.net/statutes/repacts/ra2018/ra_10969_2018.html",
+            "evidence/editorial/task-3/research/ra10969.txt"
+          ]
+        },
+        {
+          "code": "missing-time-context",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1. RA 10969 section 1 supplies the short title. RA 10963 is TRAIN; RA 8551 concerns PNP reform. The authored statutory-identification question omits broader unverified claims about actual program delivery.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=17",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-13",
+            "https://lawphil.net/statutes/repacts/ra2018/ra_10969_2018.html",
+            "evidence/editorial/task-3/research/ra10969.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1. RA 10969 section 1 supplies the short title. RA 10963 is TRAIN; RA 8551 concerns PNP reform. The authored statutory-identification question omits broader unverified claims about actual program delivery.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=17",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-13",
+            "https://lawphil.net/statutes/repacts/ra2018/ra_10969_2018.html",
+            "evidence/editorial/task-3/research/ra10969.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1. RA 10969 section 1 supplies the short title. RA 10963 is TRAIN; RA 8551 concerns PNP reform. The authored statutory-identification question omits broader unverified claims about actual program delivery.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=17",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-13",
+            "https://lawphil.net/statutes/repacts/ra2018/ra_10969_2018.html",
+            "evidence/editorial/task-3/research/ra10969.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/statutes/repacts/ra2018/ra_10969_2018.html",
+        "verifiedAt": "2026-10-07T16:52:17.344Z",
+        "rationale": "Verified Section 1. RA 10969 section 1 supplies the short title. RA 10963 is TRAIN; RA 8551 concerns PNP reform. The authored statutory-identification question omits broader unverified claims about actual program delivery."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:14",
+    "proposed": {
+      "id": "q-000666",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Who signed Executive Order 26 of 2017, which establishes smoke-free environments in public and enclosed places?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Ferdinand R. Marcos Jr.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Rodrigo Roa Duterte",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Benigno S. Aquino III",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "14",
+          "pages": {
+            "start": 18,
+            "end": 18
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Rodrigo Duterte",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=18",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Title and signature block, 16 May 2017. EO 26’s signature block names Rodrigo Roa Duterte. Its title concerns smoke-free public and enclosed places; the authored stem avoids describing a blanket ban on all smoking.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-14"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "EO 26’s signature block names Rodrigo Roa Duterte. Its title concerns smoke-free public and enclosed places; the authored stem avoids describing a blanket ban on all smoking.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Title and signature block, 16 May 2017. EO 26’s signature block names Rodrigo Roa Duterte. Its title concerns smoke-free public and enclosed places; the authored stem avoids describing a blanket ban on all smoking.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=18",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-14",
+      "https://lawphil.net/executive/execord/eo2017/eo_26_2017.html",
+      "evidence/editorial/task-3/research/eo26.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Title and signature block, 16 May 2017. EO 26’s signature block names Rodrigo Roa Duterte. Its title concerns smoke-free public and enclosed places; the authored stem avoids describing a blanket ban on all smoking.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-14",
+            "https://lawphil.net/executive/execord/eo2017/eo_26_2017.html",
+            "evidence/editorial/task-3/research/eo26.txt"
+          ]
+        },
+        {
+          "code": "missing-time-context",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Title and signature block, 16 May 2017. EO 26’s signature block names Rodrigo Roa Duterte. Its title concerns smoke-free public and enclosed places; the authored stem avoids describing a blanket ban on all smoking.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-14",
+            "https://lawphil.net/executive/execord/eo2017/eo_26_2017.html",
+            "evidence/editorial/task-3/research/eo26.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Title and signature block, 16 May 2017. EO 26’s signature block names Rodrigo Roa Duterte. Its title concerns smoke-free public and enclosed places; the authored stem avoids describing a blanket ban on all smoking.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-14",
+            "https://lawphil.net/executive/execord/eo2017/eo_26_2017.html",
+            "evidence/editorial/task-3/research/eo26.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Title and signature block, 16 May 2017. EO 26’s signature block names Rodrigo Roa Duterte. Its title concerns smoke-free public and enclosed places; the authored stem avoids describing a blanket ban on all smoking.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-14",
+            "https://lawphil.net/executive/execord/eo2017/eo_26_2017.html",
+            "evidence/editorial/task-3/research/eo26.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/executive/execord/eo2017/eo_26_2017.html",
+        "verifiedAt": "2026-10-07T16:52:17.344Z",
+        "rationale": "Verified Title and signature block, 16 May 2017. EO 26’s signature block names Rodrigo Roa Duterte. Its title concerns smoke-free public and enclosed places; the authored stem avoids describing a blanket ban on all smoking."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:15",
+    "proposed": {
+      "id": "q-000667",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "This program was launched by the DOTr which greatly affected transport\ngroups and resulted in several transport strikes because one of its provisions\nincludes the phasing out of jeepneys.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "15",
+          "pages": {
+            "start": 18,
+            "end": 18
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "PUV Modernization Program",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=18",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: A primary decision contains modernization discussion, but strike causation and current program provisions are not independently verified; no dated current-context conversion.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-15"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A primary decision contains modernization discussion, but strike causation and current program provisions are not independently verified; no dated current-context conversion.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: A primary decision contains modernization discussion, but strike causation and current program provisions are not independently verified; no dated current-context conversion.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=18",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-15"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:15: A primary decision contains modernization discussion, but strike causation and current program provisions are not independently verified; no dated current-context conversion."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:16",
+    "proposed": {
+      "id": "q-000668",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "On what date was Proclamation 216, declaring martial law and suspending the privilege of the writ of habeas corpus in Mindanao, signed?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "May 23, 2016",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "September 21, 2017",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "May 23, 2017",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-3",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "16",
+          "pages": {
+            "start": 18,
+            "end": 18
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "May 23, 2017",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=18",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Execution clause. The proclamation’s execution clause states May 23, 2017. Neither neighboring date is its date. This is a dated legal-instrument question, not an assertion that martial law remains in force.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-16"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The proclamation’s execution clause states May 23, 2017. Neither neighboring date is its date. This is a dated legal-instrument question, not an assertion that martial law remains in force.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Execution clause. The proclamation’s execution clause states May 23, 2017. Neither neighboring date is its date. This is a dated legal-instrument question, not an assertion that martial law remains in force.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=18",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-16",
+      "https://lawphil.net/executive/proc/proc2017/proc_216_2017.html",
+      "evidence/editorial/task-3/research/proc216.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Execution clause. The proclamation’s execution clause states May 23, 2017. Neither neighboring date is its date. This is a dated legal-instrument question, not an assertion that martial law remains in force.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-16",
+            "https://lawphil.net/executive/proc/proc2017/proc_216_2017.html",
+            "evidence/editorial/task-3/research/proc216.txt"
+          ]
+        },
+        {
+          "code": "missing-time-context",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Execution clause. The proclamation’s execution clause states May 23, 2017. Neither neighboring date is its date. This is a dated legal-instrument question, not an assertion that martial law remains in force.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-16",
+            "https://lawphil.net/executive/proc/proc2017/proc_216_2017.html",
+            "evidence/editorial/task-3/research/proc216.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Execution clause. The proclamation’s execution clause states May 23, 2017. Neither neighboring date is its date. This is a dated legal-instrument question, not an assertion that martial law remains in force.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-16",
+            "https://lawphil.net/executive/proc/proc2017/proc_216_2017.html",
+            "evidence/editorial/task-3/research/proc216.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Execution clause. The proclamation’s execution clause states May 23, 2017. Neither neighboring date is its date. This is a dated legal-instrument question, not an assertion that martial law remains in force.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-16",
+            "https://lawphil.net/executive/proc/proc2017/proc_216_2017.html",
+            "evidence/editorial/task-3/research/proc216.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/executive/proc/proc2017/proc_216_2017.html",
+        "verifiedAt": "2026-10-07T16:52:17.344Z",
+        "rationale": "Verified Execution clause. The proclamation’s execution clause states May 23, 2017. Neither neighboring date is its date. This is a dated legal-instrument question, not an assertion that martial law remains in force."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:17",
+    "proposed": {
+      "id": "q-000669",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which telephone number does EO 56 of 2018 institutionalize as the nationwide emergency hotline?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "117",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "911",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "8888",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "17",
+          "pages": {
+            "start": 18,
+            "end": 18
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "8888 and 911",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=18",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1; EO 6 section 1. EO 56 section 1 institutionalizes 911 and replaces Patrol 117. EO 6 instead creates the 8888 Citizens’ Complaint Center. The authored conversion distinguishes emergency response from complaints.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-17"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "EO 56 section 1 institutionalizes 911 and replaces Patrol 117. EO 6 instead creates the 8888 Citizens’ Complaint Center. The authored conversion distinguishes emergency response from complaints.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1; EO 6 section 1. EO 56 section 1 institutionalizes 911 and replaces Patrol 117. EO 6 instead creates the 8888 Citizens’ Complaint Center. The authored conversion distinguishes emergency response from complaints.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=18",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-17",
+      "https://lawphil.net/executive/execord/eo2018/eo_56_2018.html",
+      "evidence/editorial/task-3/research/eo56.txt",
+      "https://lawphil.net/executive/execord/eo2016/eo_6_2016.html"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1; EO 6 section 1. EO 56 section 1 institutionalizes 911 and replaces Patrol 117. EO 6 instead creates the 8888 Citizens’ Complaint Center. The authored conversion distinguishes emergency response from complaints.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-17",
+            "https://lawphil.net/executive/execord/eo2018/eo_56_2018.html",
+            "evidence/editorial/task-3/research/eo56.txt",
+            "https://lawphil.net/executive/execord/eo2016/eo_6_2016.html"
+          ]
+        },
+        {
+          "code": "missing-time-context",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1; EO 6 section 1. EO 56 section 1 institutionalizes 911 and replaces Patrol 117. EO 6 instead creates the 8888 Citizens’ Complaint Center. The authored conversion distinguishes emergency response from complaints.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-17",
+            "https://lawphil.net/executive/execord/eo2018/eo_56_2018.html",
+            "evidence/editorial/task-3/research/eo56.txt",
+            "https://lawphil.net/executive/execord/eo2016/eo_6_2016.html"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1; EO 6 section 1. EO 56 section 1 institutionalizes 911 and replaces Patrol 117. EO 6 instead creates the 8888 Citizens’ Complaint Center. The authored conversion distinguishes emergency response from complaints.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-17",
+            "https://lawphil.net/executive/execord/eo2018/eo_56_2018.html",
+            "evidence/editorial/task-3/research/eo56.txt",
+            "https://lawphil.net/executive/execord/eo2016/eo_6_2016.html"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1; EO 6 section 1. EO 56 section 1 institutionalizes 911 and replaces Patrol 117. EO 6 instead creates the 8888 Citizens’ Complaint Center. The authored conversion distinguishes emergency response from complaints.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-17",
+            "https://lawphil.net/executive/execord/eo2018/eo_56_2018.html",
+            "evidence/editorial/task-3/research/eo56.txt",
+            "https://lawphil.net/executive/execord/eo2016/eo_6_2016.html"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/executive/execord/eo2018/eo_56_2018.html",
+        "verifiedAt": "2026-10-07T16:52:17.344Z",
+        "rationale": "Verified Section 1; EO 6 section 1. EO 56 section 1 institutionalizes 911 and replaces Patrol 117. EO 6 instead creates the 8888 Citizens’ Complaint Center. The authored conversion distinguishes emergency response from complaints."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:18",
+    "proposed": {
+      "id": "q-000670",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "What designation does Proclamation 319 of 2017 give September 21, 2017?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "National Day of Protest",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "National Heroes Day",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Independence Day",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "18",
+          "pages": {
+            "start": 18,
+            "end": 18
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "National Day of Protest",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=18",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Operative declaration. The proclamation declares September 21, 2017 a National Day of Protest. The other named national observances are not this proclamation’s designation.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-18"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The proclamation declares September 21, 2017 a National Day of Protest. The other named national observances are not this proclamation’s designation.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Operative declaration. The proclamation declares September 21, 2017 a National Day of Protest. The other named national observances are not this proclamation’s designation.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=18",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-18",
+      "https://lawphil.net/executive/proc/proc2017/proc_319_2017.html",
+      "evidence/editorial/task-3/research/proc319.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Operative declaration. The proclamation declares September 21, 2017 a National Day of Protest. The other named national observances are not this proclamation’s designation.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-18",
+            "https://lawphil.net/executive/proc/proc2017/proc_319_2017.html",
+            "evidence/editorial/task-3/research/proc319.txt"
+          ]
+        },
+        {
+          "code": "missing-time-context",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Operative declaration. The proclamation declares September 21, 2017 a National Day of Protest. The other named national observances are not this proclamation’s designation.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-18",
+            "https://lawphil.net/executive/proc/proc2017/proc_319_2017.html",
+            "evidence/editorial/task-3/research/proc319.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Operative declaration. The proclamation declares September 21, 2017 a National Day of Protest. The other named national observances are not this proclamation’s designation.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-18",
+            "https://lawphil.net/executive/proc/proc2017/proc_319_2017.html",
+            "evidence/editorial/task-3/research/proc319.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Operative declaration. The proclamation declares September 21, 2017 a National Day of Protest. The other named national observances are not this proclamation’s designation.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-18",
+            "https://lawphil.net/executive/proc/proc2017/proc_319_2017.html",
+            "evidence/editorial/task-3/research/proc319.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/executive/proc/proc2017/proc_319_2017.html",
+        "verifiedAt": "2026-10-07T16:52:17.344Z",
+        "rationale": "Verified Operative declaration. The proclamation declares September 21, 2017 a National Day of Protest. The other named national observances are not this proclamation’s designation."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:19",
+    "proposed": {
+      "id": "q-000671",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "He is the 3rd richest man in China as of January 2018 with an estimated net\nworth of $40.8 billion according to Forbes Magazine. He was bestowed the\ntitle of Doctor of Science in Technopreneurship, honoris causa, by De La Salle\nUniversity on October 25, 2017.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "19",
+          "pages": {
+            "start": 18,
+            "end": 18
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Jack Ma",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=18",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: Wealth rank/net-worth is outlet/date dependent; honorary-degree brochure does not establish Forbes ranking. Old biography cannot be presented as current facts.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-19"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Wealth rank/net-worth is outlet/date dependent; honorary-degree brochure does not establish Forbes ranking. Old biography cannot be presented as current facts.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: Wealth rank/net-worth is outlet/date dependent; honorary-degree brochure does not establish Forbes ranking. Old biography cannot be presented as current facts.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=18",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-19"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:19: Wealth rank/net-worth is outlet/date dependent; honorary-degree brochure does not establish Forbes ranking. Old biography cannot be presented as current facts."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:20",
+    "proposed": {
+      "id": "q-000672",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "He is the current Chief of the Bureau of Fire Protection.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "20",
+          "pages": {
+            "start": 18,
+            "end": 18
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Fire Director Leonard Ramos Bañago",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=18",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: Undated BFP-chief attribution is obsolete; failed 2018 procurement lookup cannot establish a current official or current as-of context.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-20"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Undated BFP-chief attribution is obsolete; failed 2018 procurement lookup cannot establish a current official or current as-of context.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: Undated BFP-chief attribution is obsolete; failed 2018 procurement lookup cannot establish a current official or current as-of context.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=18",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-20"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:20: Undated BFP-chief attribution is obsolete; failed 2018 procurement lookup cannot establish a current official or current as-of context."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:21",
+    "proposed": {
+      "id": "q-000673",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Which island does Proclamation 475 of 2018 place under a state of calamity and temporary closure as a tourist destination?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Boracay Island",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Corregidor Island",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Siargao Island",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-1",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "21",
+          "pages": {
+            "start": 18,
+            "end": 18
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Boracay Island",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=18",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Operative declaration. The operative text identifies Boracay and its affected barangays. The alternatives are different Philippine islands; the question assesses the dated proclamation rather than ongoing tourism access.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-21"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "The operative text identifies Boracay and its affected barangays. The alternatives are different Philippine islands; the question assesses the dated proclamation rather than ongoing tourism access.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Operative declaration. The operative text identifies Boracay and its affected barangays. The alternatives are different Philippine islands; the question assesses the dated proclamation rather than ongoing tourism access.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=18",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-21",
+      "https://lawphil.net/executive/proc/proc2018/proc_475_2018.html",
+      "evidence/editorial/task-3/research/boracay.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Operative declaration. The operative text identifies Boracay and its affected barangays. The alternatives are different Philippine islands; the question assesses the dated proclamation rather than ongoing tourism access.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-21",
+            "https://lawphil.net/executive/proc/proc2018/proc_475_2018.html",
+            "evidence/editorial/task-3/research/boracay.txt"
+          ]
+        },
+        {
+          "code": "missing-time-context",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Operative declaration. The operative text identifies Boracay and its affected barangays. The alternatives are different Philippine islands; the question assesses the dated proclamation rather than ongoing tourism access.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-21",
+            "https://lawphil.net/executive/proc/proc2018/proc_475_2018.html",
+            "evidence/editorial/task-3/research/boracay.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Operative declaration. The operative text identifies Boracay and its affected barangays. The alternatives are different Philippine islands; the question assesses the dated proclamation rather than ongoing tourism access.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-21",
+            "https://lawphil.net/executive/proc/proc2018/proc_475_2018.html",
+            "evidence/editorial/task-3/research/boracay.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Operative declaration. The operative text identifies Boracay and its affected barangays. The alternatives are different Philippine islands; the question assesses the dated proclamation rather than ongoing tourism access.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-21",
+            "https://lawphil.net/executive/proc/proc2018/proc_475_2018.html",
+            "evidence/editorial/task-3/research/boracay.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/executive/proc/proc2018/proc_475_2018.html",
+        "verifiedAt": "2026-10-07T16:52:17.344Z",
+        "rationale": "Verified Operative declaration. The operative text identifies Boracay and its affected barangays. The alternatives are different Philippine islands; the question assesses the dated proclamation rather than ongoing tourism access."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:22",
+    "proposed": {
+      "id": "q-000674",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "He is the former PNP Chief under the Duterte administration. He is now the\nDirector General of the Bureau of Corrections.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "22",
+          "pages": {
+            "start": 18,
+            "end": 18
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Ronald dela Rosa",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=18",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: Undated now-BuCor chief claim is obsolete; retained PCO page needs exact historical appointment verification and an eligible current assessment.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-22"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Undated now-BuCor chief claim is obsolete; retained PCO page needs exact historical appointment verification and an eligible current assessment.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: Undated now-BuCor chief claim is obsolete; retained PCO page needs exact historical appointment verification and an eligible current assessment.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=18",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-22"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:22: Undated now-BuCor chief claim is obsolete; retained PCO page needs exact historical appointment verification and an eligible current assessment."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:23",
+    "proposed": {
+      "id": "q-000675",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Under Executive Order 25 of 2017, what name is given to the underwater feature formerly called Benham Rise?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "West Philippine Sea",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Philippine Rise",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Philippine Trench",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "23",
+          "pages": {
+            "start": 18,
+            "end": 18
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Philippine Rise",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=18",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1. Section 1 renames Benham Rise Philippine Rise. A trench and a sea are different geographic features, not the statutory replacement name.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-23"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Section 1 renames Benham Rise Philippine Rise. A trench and a sea are different geographic features, not the statutory replacement name.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1. Section 1 renames Benham Rise Philippine Rise. A trench and a sea are different geographic features, not the statutory replacement name.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=18",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-23",
+      "https://lawphil.net/executive/execord/eo2017/eo_25_2017.html",
+      "evidence/editorial/task-3/research/eo25.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1. Section 1 renames Benham Rise Philippine Rise. A trench and a sea are different geographic features, not the statutory replacement name.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-23",
+            "https://lawphil.net/executive/execord/eo2017/eo_25_2017.html",
+            "evidence/editorial/task-3/research/eo25.txt"
+          ]
+        },
+        {
+          "code": "missing-time-context",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1. Section 1 renames Benham Rise Philippine Rise. A trench and a sea are different geographic features, not the statutory replacement name.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-23",
+            "https://lawphil.net/executive/execord/eo2017/eo_25_2017.html",
+            "evidence/editorial/task-3/research/eo25.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1. Section 1 renames Benham Rise Philippine Rise. A trench and a sea are different geographic features, not the statutory replacement name.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-23",
+            "https://lawphil.net/executive/execord/eo2017/eo_25_2017.html",
+            "evidence/editorial/task-3/research/eo25.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1. Section 1 renames Benham Rise Philippine Rise. A trench and a sea are different geographic features, not the statutory replacement name.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=18",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-23",
+            "https://lawphil.net/executive/execord/eo2017/eo_25_2017.html",
+            "evidence/editorial/task-3/research/eo25.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/executive/execord/eo2017/eo_25_2017.html",
+        "verifiedAt": "2026-10-07T16:52:17.344Z",
+        "rationale": "Verified Section 1. Section 1 renames Benham Rise Philippine Rise. A trench and a sea are different geographic features, not the statutory replacement name."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:24",
+    "proposed": {
+      "id": "q-000676",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "On January 31, 2018, a ________ coinciding with a super moon and blue\nmoon phenomenon was witnessed by many astronomers and skywatchers\nthroughout the country.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "24",
+          "pages": {
+            "start": 18,
+            "end": 18
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Total Lunar Eclipse",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=18",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: Historical eclipse identification has no supported current-event conversion; direct NASA lookup failed and astronomy taxonomy unsupported.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-24"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Historical eclipse identification has no supported current-event conversion; direct NASA lookup failed and astronomy taxonomy unsupported.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: Historical eclipse identification has no supported current-event conversion; direct NASA lookup failed and astronomy taxonomy unsupported.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=18",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-24"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:24: Historical eclipse identification has no supported current-event conversion; direct NASA lookup failed and astronomy taxonomy unsupported."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:25",
+    "proposed": {
+      "id": "q-000677",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "He was the controversial Tanauan, Batangas mayor who was assassinated by\nan unknown sniper during a flag-raising ceremony.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "25",
+          "pages": {
+            "start": 18,
+            "end": 18
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Mayor Antonio Halili",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=18",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: Retrieved PNA page contains fallback content rather than direct claim support; assassination identity/causation unverified and historical context outside taxonomy.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-25"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Retrieved PNA page contains fallback content rather than direct claim support; assassination identity/causation unverified and historical context outside taxonomy.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: Retrieved PNA page contains fallback content rather than direct claim support; assassination identity/causation unverified and historical context outside taxonomy.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=18",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-25"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:25: Retrieved PNA page contains fallback content rather than direct claim support; assassination identity/causation unverified and historical context outside taxonomy."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:26",
+    "proposed": {
+      "id": "q-000678",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Who is the Filipina weightlifting athlete who won a silver medal in the 2016\nRio Olympics held in Brazil?",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "26",
+          "pages": {
+            "start": 18,
+            "end": 18
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Hidilyn F. Diaz",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=18",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: Historical 2016 sports result is outside approved taxonomy; direct federation page retrieval failed and no current context supplied.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-26"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Historical 2016 sports result is outside approved taxonomy; direct federation page retrieval failed and no current context supplied.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: Historical 2016 sports result is outside approved taxonomy; direct federation page retrieval failed and no current context supplied.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=18",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-26"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:26: Historical 2016 sports result is outside approved taxonomy; direct federation page retrieval failed and no current context supplied."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:27",
+    "proposed": {
+      "id": "q-000679",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "It was an ISIS-affiliated local terrorist group which took over Marawi City.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "27",
+          "pages": {
+            "start": 18,
+            "end": 18
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Maute Group",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=18",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: A retained 2017 briefing is a historical source, not verification of an undated present occupation; actor grouping and time scope need exact supported wording.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-27"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "A retained 2017 briefing is a historical source, not verification of an undated present occupation; actor grouping and time scope need exact supported wording.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: A retained 2017 briefing is a historical source, not verification of an undated present occupation; actor grouping and time scope need exact supported wording.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=18",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-27"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:27: A retained 2017 briefing is a historical source, not verification of an undated present occupation; actor grouping and time scope need exact supported wording."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:28",
+    "proposed": {
+      "id": "q-000680",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "The date when the Philippines won against China on its case on the\nPermanent Court of Arbitration.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "28",
+          "pages": {
+            "start": 19,
+            "end": 19
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "July 12, 2016",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=19",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: Award PDF proves historical adjudication context, but won-against-China is an overbroad characterization; no reviewed legal-scope conversion or current-event assessment.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-28"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Award PDF proves historical adjudication context, but won-against-China is an overbroad characterization; no reviewed legal-scope conversion or current-event assessment.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: Award PDF proves historical adjudication context, but won-against-China is an overbroad characterization; no reviewed legal-scope conversion or current-event assessment.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=19",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-28"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:28: Award PDF proves historical adjudication context, but won-against-China is an overbroad characterization; no reviewed legal-scope conversion or current-event assessment."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:29",
+    "proposed": {
+      "id": "q-000681",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "A rainfall advisory from PAG-ASA which means 30mm and up of rainfall is\nexpected for the first one hour and has possibility to cause severe flood.\nResponse to this warning should be immediate evacuation due to flooding.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "29",
+          "pages": {
+            "start": 19,
+            "end": 19
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Red",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=19",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: Original red threshold and automatic-evacuation direction need exact current PAGASA operational issuance; retained bulletin supports severity but not every numeric/action claim.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-29"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Original red threshold and automatic-evacuation direction need exact current PAGASA operational issuance; retained bulletin supports severity but not every numeric/action claim.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: Original red threshold and automatic-evacuation direction need exact current PAGASA operational issuance; retained bulletin supports severity but not every numeric/action claim.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=19",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-29"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:29: Original red threshold and automatic-evacuation direction need exact current PAGASA operational issuance; retained bulletin supports severity but not every numeric/action claim."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:30",
+    "proposed": {
+      "id": "q-000682",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "The DOJ indicted 11 members of the ________ fraternity over the fatal hazing\nof University of Santo Tomas (UST) law freshman student Horacio \"Atio\"\nCastillo III in September last year.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "30",
+          "pages": {
+            "start": 19,
+            "end": 19
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Aegis Juris",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=19",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: Indictment count, accusation and case status need a dated primary DOJ/court record; September last year lacks a base year and historical current context is unresolved.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-30"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Indictment count, accusation and case status need a dated primary DOJ/court record; September last year lacks a base year and historical current context is unresolved.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: Indictment count, accusation and case status need a dated primary DOJ/court record; September last year lacks a base year and historical current context is unresolved.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=19",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-30"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:30: Indictment count, accusation and case status need a dated primary DOJ/court record; September last year lacks a base year and historical current context is unresolved."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:31",
+    "proposed": {
+      "id": "q-000683",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "Senator Manny Pacquiao founded this semi-professional basketball league on\nAugust 29, 2017. According to Pacquiao, the league is not intended to be a\ncompetitor to the Philippine Basketball Association, the country's top\nprofessional basketball league.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "31",
+          "pages": {
+            "start": 19,
+            "end": 19
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Maharlika Pilipinas Basketball League",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=19",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: League founding and motive are historical sports/business trivia outside approved taxonomy; no retained primary founding record or current context.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-31"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "League founding and motive are historical sports/business trivia outside approved taxonomy; no retained primary founding record or current context.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: League founding and motive are historical sports/business trivia outside approved taxonomy; no retained primary founding record or current context.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=19",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-31"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:31: League founding and motive are historical sports/business trivia outside approved taxonomy; no retained primary founding record or current context."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:32",
+    "proposed": {
+      "id": "q-000684",
+      "version": 1,
+      "categoryId": "generalInformation",
+      "subcategoryId": "constitutionAndLaws",
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "What right is operationalized in executive-branch offices by Executive Order 2 of 2016?",
+          "marks": []
+        }
+      ],
+      "choices": [
+        {
+          "id": "choice-1",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "A right to bypass all government record exceptions",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-2",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "Access to information on matters of public concern",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "id": "choice-3",
+          "blocks": [
+            {
+              "kind": "text",
+              "text": "An unconditional right to all classified documents",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "correctChoiceId": "choice-2",
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "32",
+          "pages": {
+            "start": 19,
+            "end": 19
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Freedom of Information",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=19",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4. EO 2 section 2 addresses information of public concern; sections 3–4 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-32"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "EO 2 section 2 addresses information of public concern; sections 3–4 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4. EO 2 section 2 addresses information of public concern; sections 3–4 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=19",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-32",
+      "https://lawphil.net/executive/execord/eo2016/eo_2_2016.html",
+      "evidence/editorial/task-3/research/eo2.txt"
+    ],
+    "status": "needsReview",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        }
+      ],
+      "resolutions": [
+        {
+          "code": "answer-only",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4. EO 2 section 2 addresses information of public concern; sections 3–4 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=19",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-32",
+            "https://lawphil.net/executive/execord/eo2016/eo_2_2016.html",
+            "evidence/editorial/task-3/research/eo2.txt"
+          ]
+        },
+        {
+          "code": "missing-time-context",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4. EO 2 section 2 addresses information of public concern; sections 3–4 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=19",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-32",
+            "https://lawphil.net/executive/execord/eo2016/eo_2_2016.html",
+            "evidence/editorial/task-3/research/eo2.txt"
+          ]
+        },
+        {
+          "code": "missing-choices",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4. EO 2 section 2 addresses information of public concern; sections 3–4 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=19",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-32",
+            "https://lawphil.net/executive/execord/eo2016/eo_2_2016.html",
+            "evidence/editorial/task-3/research/eo2.txt"
+          ]
+        },
+        {
+          "code": "unresolved-key",
+          "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Sections 2–4. EO 2 section 2 addresses information of public concern; sections 3–4 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims.",
+          "evidence": [
+            "evidence/reference-extraction/notes/document.json#page=19",
+            "docs/verification/editorial-full-corpus-task3.md#current-events-32",
+            "https://lawphil.net/executive/execord/eo2016/eo_2_2016.html",
+            "evidence/editorial/task-3/research/eo2.txt"
+          ]
+        }
+      ],
+      "factualVerification": {
+        "sourceUrl": "https://lawphil.net/executive/execord/eo2016/eo_2_2016.html",
+        "verifiedAt": "2026-10-07T16:52:17.344Z",
+        "rationale": "Verified Sections 2–4. EO 2 section 2 addresses information of public concern; sections 3–4 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims."
+      }
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:33",
+    "proposed": {
+      "id": "q-000685",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "The current Senate President of the 17th Congress.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "33",
+          "pages": {
+            "start": 19,
+            "end": 19
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Vicente Sotto",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=19",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: Undated current Senate President in 17th Congress is obsolete; leadership changed during that Congress and direct Senate context lookup failed.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-33"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Undated current Senate President in 17th Congress is obsolete; leadership changed during that Congress and direct Senate context lookup failed.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: Undated current Senate President in 17th Congress is obsolete; leadership changed during that Congress and direct Senate context lookup failed.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=19",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-33"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:33: Undated current Senate President in 17th Congress is obsolete; leadership changed during that Congress and direct Senate context lookup failed."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:34",
+    "proposed": {
+      "id": "q-000686",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "On June 4, 2018, twenty-five people died after this volcano in Guatemala\nerupted.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "34",
+          "pages": {
+            "start": 19,
+            "end": 19
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Volcán de Fuego",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=19",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: Death toll is time-dependent and original event-date precision is suspect; direct volcano source retrieval failed, and historical disaster trivia lacks current context.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-34"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "Death toll is time-dependent and original event-date precision is suspect; direct volcano source retrieval failed, and historical disaster trivia lacks current context.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: Death toll is time-dependent and original event-date precision is suspect; direct volcano source retrieval failed, and historical disaster trivia lacks current context.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=19",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-34"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:34: Death toll is time-dependent and original event-date precision is suspect; direct volcano source retrieval failed, and historical disaster trivia lacks current context."
+        }
+      ],
+      "resolutions": []
+    }
+  },
+  {
+    "sourceKey": "notes:Current Events:35",
+    "proposed": {
+      "id": "q-000687",
+      "version": 1,
+      "categoryId": null,
+      "subcategoryId": null,
+      "prompt": [
+        {
+          "kind": "text",
+          "text": "It is also known as PHL-Microsat-1, a Philippine microsatellite launched to the\nInternational Space Station (ISS) on March 23, 2016.",
+          "marks": []
+        }
+      ],
+      "choices": [],
+      "correctChoiceId": null,
+      "choiceOrderPolicy": "fixed",
+      "sources": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Current Events",
+          "originalNumber": "35",
+          "pages": {
+            "start": 19,
+            "end": 19
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Diwata-1",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=19",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "No MCQ authored: PhilSA snapshot distinguishes March 23 launch from April 27 ISS release and decommissioning in 2020; the fact is historical science trivia, outside approved taxonomy without a verified current-event angle.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#current-events-35"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "status": "active",
+      "isCurrentEvent": false,
+      "explanation": [
+        {
+          "kind": "text",
+          "text": "PhilSA snapshot distinguishes March 23 launch from April 27 ISS release and decommissioning in 2020; the fact is historical science trivia, outside approved taxonomy without a verified current-event angle.",
+          "marks": []
+        }
+      ]
+    },
+    "rationale": "No MCQ authored: PhilSA snapshot distinguishes March 23 launch from April 27 ISS release and decommissioning in 2020; the fact is historical science trivia, outside approved taxonomy without a verified current-event angle.",
+    "evidence": [
+      "evidence/reference-extraction/notes/document.json#page=19",
+      "docs/verification/editorial-full-corpus-task3.md#current-events-35"
+    ],
+    "status": "draft",
+    "review": {
+      "issues": [
+        {
+          "code": "answer-only",
+          "message": "No supplied distractors; authored conversion requires editorial approval",
+          "blocking": true
+        },
+        {
+          "code": "missing-time-context",
+          "message": "No reviewed as-of date, expiry or verification provenance",
+          "blocking": true
+        },
+        {
+          "code": "missing-choices",
+          "message": "No complete supplied alternatives",
+          "blocking": true
+        },
+        {
+          "code": "unresolved-key",
+          "message": "Source key is missing or cannot uniquely resolve to a supplied choice",
+          "blocking": true
+        },
+        {
+          "code": "editorial-review",
+          "message": "Source assertion is not editorial approval",
+          "blocking": false
+        },
+        {
+          "code": "task3-unresolved",
+          "blocking": true,
+          "message": "notes:Current Events:35: PhilSA snapshot distinguishes March 23 launch from April 27 ISS release and decommissioning in 2020; the fact is historical science trivia, outside approved taxonomy without a verified current-event angle."
+        }
+      ],
+      "resolutions": []
+    }
+  }
+]

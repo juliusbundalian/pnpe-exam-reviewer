@@ -1,0 +1,1322 @@
+{
+  "notes:Philippine Constitution:1": {
+    "stem": "Under the 1987 Constitution, which office holds the executive power of the Philippines?",
+    "choices": [
+      "President",
+      "Prime Minister",
+      "Speaker of the House"
+    ],
+    "explanation": "Article VII section 1 vests executive power in the President. The authored stem specifies the constitutional allocation rather than an unspecified form of government.",
+    "source": "constitution",
+    "provision": "Article VII section 1",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:2": {
+    "stem": "Under the 1987 Constitution, who heads the executive branch?",
+    "choices": [
+      "President",
+      "Senate President",
+      "Chief Justice"
+    ],
+    "explanation": "Executive power is vested in the President; the Senate and Supreme Court belong to separate branches.",
+    "source": "constitution",
+    "provision": "Articles VI, VII section 1 and VIII",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:3": {
+    "stem": "How many Senators comprise the Senate under Article VI section 2 of the 1987 Constitution?",
+    "choices": [
+      "24",
+      "12",
+      "36"
+    ],
+    "explanation": "Article VI section 2 specifies 24 Senators elected at large. Neither alternative is the constitutional membership.",
+    "source": "constitution",
+    "provision": "Article VI section 2",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:4": {
+    "stem": "Under Article IX-C section 1, what is the composition of COMELEC?",
+    "choices": [
+      "One Chairman and six Commissioners",
+      "One Chairman and eight Commissioners",
+      "One Chairman and two Commissioners"
+    ],
+    "explanation": "The Constitution specifies a Chairman and six Commissioners. Eight in the original answer is incorrect; two Commissioners instead describes the Commission on Audit.",
+    "source": "constitution",
+    "provision": "Article IX-C section 1; IX-D section 1",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:5": {
+    "stem": "Which set names the three branches whose powers are allocated by Articles VI, VII and VIII of the Constitution?",
+    "choices": [
+      "Legislative, executive and judicial",
+      "Legislative, executive and electoral",
+      "Executive, judicial and auditing"
+    ],
+    "explanation": "Articles VI, VII and VIII allocate legislative, executive and judicial powers respectively. Electoral and auditing commissions are not substitute branches.",
+    "source": "constitution",
+    "provision": "Articles VI section 1, VII section 1, VIII section 1",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:6": {
+    "stem": "Which body has the exclusive constitutional power to initiate impeachment cases?",
+    "choices": [
+      "House of Representatives",
+      "Senate",
+      "Supreme Court"
+    ],
+    "explanation": "Article XI section 3(2) assigns initiation to the House; section 3(6) assigns trial and decision to the Senate.",
+    "source": "constitution",
+    "provision": "Article XI section 3(2),(6)",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:7": {
+    "stem": "Which inherent State power takes private property for public use subject to just compensation?",
+    "choices": [
+      "Eminent domain",
+      "Taxation",
+      "Police power"
+    ],
+    "explanation": "Eminent domain concerns taking property with compensation, unlike revenue collection through taxation or regulation under police power. Article III section 9 supplies the compensation safeguard.",
+    "source": "constitution",
+    "provision": "Article III section 9",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:8": {
+    "stem": "Which article of the 1987 Constitution contains the due-process and equal-protection guarantees in its section 1?",
+    "choices": [
+      "Article III \u2014 Bill of Rights",
+      "Article VI \u2014 Legislative Department",
+      "Article VII \u2014 Executive Department"
+    ],
+    "explanation": "The guarantees appear in Article III section 1, not the articles allocating legislative and executive powers.",
+    "source": "constitution",
+    "provision": "Article III section 1",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:9": {
+    "stem": "What is the constitutional term of an elected Philippine President?",
+    "choices": [
+      "Six years",
+      "Three years",
+      "Seven years"
+    ],
+    "explanation": "Article VII section 4 specifies six years; three years is the House term and seven years is the regular constitutional-commission term.",
+    "source": "constitution",
+    "provision": "Article VII section 4; VI section 7; IX",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:10": {
+    "stem": "Which opening part of the 1987 Constitution sets out the Filipino people\u2019s ideals and aspirations in establishing government?",
+    "choices": [
+      "Preamble",
+      "Bill of Rights",
+      "Transitory Provisions"
+    ],
+    "explanation": "The Preamble states the people\u2019s ideals and aspirations; the Bill of Rights protects rights, and transitory provisions address constitutional transition.",
+    "source": "constitution",
+    "provision": "Preamble; Articles III and XVIII",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:11": {
+    "stem": "Who appoints Supreme Court members and lower-court judges from a Judicial and Bar Council list of at least three nominees per vacancy?",
+    "choices": [
+      "President",
+      "Chief Justice acting alone",
+      "Senate President"
+    ],
+    "explanation": "Article VIII section 9 assigns appointment to the President from the JBC list. Such appointments need no confirmation.",
+    "source": "constitution",
+    "provision": "Article VIII section 9",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:12": {
+    "stem": "Which set consists of the independent Constitutional Commissions named in Article IX-A section 1?",
+    "choices": [
+      "Civil Service Commission, COMELEC and Commission on Audit",
+      "Civil Service Commission, COMELEC and Commission on Human Rights",
+      "COMELEC, Commission on Human Rights and Commission on Audit"
+    ],
+    "explanation": "Article IX-A names CSC, COMELEC and COA. The Commission on Human Rights is separately created by Article XIII section 17. This positive-list conversion authors alternatives rather than claiming recovery of missing except options.",
+    "source": "constitution",
+    "provision": "Article IX-A section 1; XIII section 17",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:13": {
+    "stem": "Who is the Commander-in-Chief of all the armed forces of the Philippines under the Constitution?",
+    "choices": [
+      "President",
+      "Secretary of National Defense",
+      "Senate President"
+    ],
+    "explanation": "Article VII section 18 designates the President; neither secretary nor Senate President substitutes for that constitutional office.",
+    "source": "constitution",
+    "provision": "Article VII section 18",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:14": {
+    "stem": "Who constitutionally exercises control over executive departments, bureaus and offices?",
+    "choices": [
+      "President",
+      "Senate",
+      "Supreme Court"
+    ],
+    "explanation": "Article VII section 17 assigns executive control to the President. The separate branches do not exercise that general executive control.",
+    "source": "constitution",
+    "provision": "Article VII section 17",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:15": {
+    "stem": "Which State power raises public revenue through compulsory taxes?",
+    "choices": [
+      "Taxation",
+      "Eminent domain",
+      "Police power"
+    ],
+    "explanation": "Taxation raises revenue; eminent domain takes property for public use with compensation, and police power regulates for public welfare. Article VI section 28 governs taxation.",
+    "source": "constitution",
+    "provision": "Article VI section 28; III section 9",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:16": {
+    "stem": "Which inherent State power regulates liberty and property to protect public welfare?",
+    "choices": [
+      "Police power",
+      "Eminent domain",
+      "Taxation"
+    ],
+    "explanation": "Police power is the regulatory power for public welfare, distinct from compensated property-taking and revenue collection.",
+    "source": "policepowers",
+    "provision": "Supreme Court discussion of inherent powers",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:17": {
+    "stem": "Under RA 6735, what process allows the electorate to approve or reject legislation through an election called for that purpose?",
+    "choices": [
+      "Referendum",
+      "Initiative",
+      "Plebiscite"
+    ],
+    "explanation": "Section 3(c) defines referendum; initiative proposes measures, while the statute\u2019s plebiscite definition concerns constitutional initiatives.",
+    "source": "ra6735",
+    "provision": "Section 3(a),(c),(e)",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:18": {
+    "stem": "What is the constitutional term of Members of the House of Representatives?",
+    "choices": [
+      "Three years",
+      "Six years",
+      "Seven years"
+    ],
+    "explanation": "Article VI section 7 specifies three years. Six years applies to Senators and the President, not House members.",
+    "source": "constitution",
+    "provision": "Article VI sections 4,7; VII section 4",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:19": {
+    "stem": "Under RA 9165 section 5, read with RA 9346, what imprisonment and fine apply to unauthorized sale of dangerous drugs, without asking about controlled precursors?",
+    "choices": [
+      "Life imprisonment and a fine of \u20b1500,000 to \u20b110,000,000",
+      "12 years and 1 day to 20 years and a fine of \u20b112,000 to \u20b120,000",
+      "12 years and 1 day to 20 years and a fine of \u20b1100,000 to \u20b1500,000"
+    ],
+    "explanation": "RA 9165 section 5 distinguishes dangerous drugs from controlled precursors. RA 9346 prohibits death and substitutes life imprisonment when the special law does not use RPC penalty names. The third alternative concerns controlled precursors; the original obsolete fine is retained only in lineage.",
+    "source": "ra9165",
+    "provision": "Section 5; RA9346 sections 1\u20132",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:20": {
+    "stem": "What basic autonomous social institution must the State protect and strengthen under Article II section 12?",
+    "choices": [
+      "Family",
+      "Political party",
+      "Trade union"
+    ],
+    "explanation": "Article II section 12 expressly identifies the family; parties and unions have different constitutional contexts.",
+    "source": "constitution",
+    "provision": "Article II section 12",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:21": {
+    "stem": "Which official exercises constitutional control over the executive departments whose secretaries comprise the Cabinet?",
+    "choices": [
+      "President",
+      "Senate President",
+      "Chief Justice"
+    ],
+    "explanation": "Article VII section 17 assigns executive-department control to the President. The authored wording anchors the source\u2019s Cabinet claim in an explicit provision.",
+    "source": "constitution",
+    "provision": "Article VII section 17",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:22": {
+    "stem": "Which set lists the three inherent powers of the State?",
+    "choices": [
+      "Police power, eminent domain and taxation",
+      "Police power, impeachment and taxation",
+      "Eminent domain, impeachment and taxation"
+    ],
+    "explanation": "Supreme Court doctrine identifies police power, eminent domain and taxation. Impeachment is a constitutional accountability mechanism, not one of these inherent powers. Alternatives are authored for a positive-list conversion, not recovered except options.",
+    "source": "policepowers",
+    "provision": "Supreme Court discussion of inherent powers; Constitution XI section 3",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:23": {
+    "stem": "In RA 6735 section 3(e), what is the electoral process for approving or rejecting an initiative on the Constitution?",
+    "choices": [
+      "Plebiscite",
+      "Referendum on local law",
+      "Recall"
+    ],
+    "explanation": "Section 3(e) calls this a plebiscite. A referendum on local law concerns local legislation, while recall concerns an elective official, not a constitutional initiative.",
+    "source": "ra6735",
+    "provision": "Section 3(c),(e); Constitution X section 3",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:24": {
+    "stem": "What vote is constitutionally required for Congress, in joint session but voting separately, to declare the existence of a state of war?",
+    "choices": [
+      "Two-thirds of both Houses",
+      "Simple majority of both Houses",
+      "Three-fourths of both Houses"
+    ],
+    "explanation": "Article VI section 23(1) specifies two-thirds. Voting separately remains material and is preserved.",
+    "source": "constitution",
+    "provision": "Article VI section 23(1)",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:25": {
+    "stem": "How many Associate Justices sit with the Chief Justice on the Supreme Court under Article VIII section 4(1)?",
+    "choices": [
+      "Fourteen",
+      "Six",
+      "Twenty-four"
+    ],
+    "explanation": "The Constitution specifies fourteen Associate Justices plus the Chief Justice; six and twenty-four are unrelated constitutional membership counts.",
+    "source": "constitution",
+    "provision": "Article VIII section 4(1)",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine Constitution:26": {
+    "stem": "Which Article IX commission is the government\u2019s central personnel agency and promotes morale, efficiency, integrity and courtesy in the civil service?",
+    "choices": [
+      "Civil Service Commission",
+      "Commission on Elections",
+      "Commission on Audit"
+    ],
+    "explanation": "Article IX-B section 3 assigns this personnel mandate to CSC; COMELEC handles election functions and COA audits public accounts.",
+    "source": "constitution",
+    "provision": "Article IX-B section 3; IX-C section 2; IX-D section 2",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:PNP Law and History:1": {
+    "stem": "Which pair of adjectives completes the police-force description in RA 6975 section 2?",
+    "choices": [
+      "Highly efficient and competent",
+      "Highly efficient and military",
+      "Local and military"
+    ],
+    "explanation": "Section 2 requires a highly efficient and competent force, national in scope and civilian in character. Military and merely local descriptions contradict the provision.",
+    "source": "ra6975",
+    "provision": "Section 2",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:PNP Law and History:2": {
+    "stem": "Which is the highest PNP rank in the classification established by RA 11200?",
+    "choices": [
+      "Police General",
+      "Police Lieutenant General",
+      "Police Major General"
+    ],
+    "explanation": "RA 11200 lists Police General above Lieutenant General and Major General. The source confuses rank with the officeholder question and uses the former Director General title; this authored stem explicitly asks rank.",
+    "source": "ra11200",
+    "provision": "Section 1",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:PNP Law and History:3": {
+    "stem": "Which three assignments are expressly included in RA 8551 section 19\u2019s Field Training Program?",
+    "choices": [
+      "Patrol, traffic and investigation",
+      "Patrol, traffic and intelligence",
+      "Patrol, intelligence and administration"
+    ],
+    "explanation": "Section 19 names patrol, traffic and investigation. This positive-list conversion preserves the supported field-training concept without claiming recovered except alternatives.",
+    "source": "ra8551",
+    "provision": "Section 19",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:PNP Law and History:6": {
+    "stem": "As originally enacted in 1998, which condition did RA 8551 section 15 impose before waiving initial-appointment age, height, weight and education requirements?",
+    "choices": [
+      "Qualified applicants fall below the minimum annual quota",
+      "An applicant merely requests a waiver",
+      "Every applicant automatically qualifies for every waiver"
+    ],
+    "explanation": "The original section 15 permits waivers only when qualified applicants fall below the minimum annual quota, with additional limits. This asks the original statutory condition, not current blanket waiver availability; RA 9708 and RA 11549 later address education and height.",
+    "source": "ra8551",
+    "provision": "Original section 15; compare RA9708 section1 and RA11549 section2",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:PNP Law and History:7": {
+    "stem": "Under the ordinary new-applicant appointment rule in RA 6975 section 30(j), as amended by RA 9708, what is the upper age limit, excluding authorized waivers?",
+    "choices": [
+      "30 years",
+      "21 years",
+      "35 years"
+    ],
+    "explanation": "RA 9708 section 1 preserves the ordinary 21\u201330 appointment range. Twenty-one is the lower limit; thirty-five appears in the separate waiver provision. Appointment is distinguished from entrance-examination eligibility.",
+    "source": "ra9708",
+    "provision": "Section 1; RA8551 section15",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:PNP Law and History:9": {
+    "stem": "Under the ordinary new-applicant appointment rule in RA 6975 section 30(j), as amended by RA 9708, what is the lower age limit, excluding authorized waivers?",
+    "choices": [
+      "21 years",
+      "20 years",
+      "30 years"
+    ],
+    "explanation": "The ordinary range is 21\u201330. Twenty appears in the original waiver rule, not the ordinary lower limit. The source\u2019s former PO1 wording is updated without equating appointment with examination eligibility.",
+    "source": "ra9708",
+    "provision": "Section 1; RA8551 section15",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:PNP Law and History:11": {
+    "stem": "What waiver order is expressly listed in RA 8551 section 16 as originally enacted?",
+    "choices": [
+      "Age, height, weight, education",
+      "Education, weight, height, age",
+      "Height, age, education, weight"
+    ],
+    "explanation": "The original section 16(b) states age, height, weight, education. The stem identifies the enacted text and does not certify unchanged present-day recruitment implementation.",
+    "source": "ra8551",
+    "provision": "Original section 16(b)",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:PNP Law and History:12": {
+    "stem": "Which police organization was established by RA 6975 section 23, initially drawing personnel from the PC and INP?",
+    "choices": [
+      "Philippine National Police",
+      "Armed Forces of the Philippines",
+      "Bureau of Jail Management and Penology"
+    ],
+    "explanation": "Section 23 establishes the PNP and identifies its initial components. The authored stem removes the unsupported January 1 effective-date assertion; statute approval, legal effectivity and operational launch are distinct.",
+    "source": "ra6975",
+    "provision": "Section 23",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:PNP Law and History:14": {
+    "stem": "What is the statutory short title of RA 8551?",
+    "choices": [
+      "Philippine National Police Reform and Reorganization Act of 1998",
+      "Department of the Interior and Local Government Act of 1990",
+      "Philippine National Police Act of 1901"
+    ],
+    "explanation": "RA 8551 section 1 supplies the full title. The 1990 title belongs to RA 6975; the 1901 alternative does not match the specified Act.",
+    "source": "ra8551",
+    "provision": "Section 1; RA6975 section1",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:PNP Law and History:15": {
+    "stem": "Which official is the ex-officio Chairperson of NAPOLCOM under RA 8551 section 4?",
+    "choices": [
+      "Secretary of the Interior and Local Government",
+      "Chief of the PNP",
+      "Secretary of National Defense"
+    ],
+    "explanation": "The DILG Secretary is the Chairperson; the Chief PNP is an ex-officio member, a separate role.",
+    "source": "ra8551",
+    "provision": "Section 4 amending RA6975 section13",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:PNP Law and History:16": {
+    "stem": "How many regular Commissioners does RA 8551 section 4 provide for NAPOLCOM, apart from its Chairperson and the Chief PNP ex-officio member?",
+    "choices": [
+      "Four",
+      "Five",
+      "Six"
+    ],
+    "explanation": "Four is the regular-commissioner count; six counts the Chairperson and Chief PNP as well. The authored qualifier removes the source\u2019s ambiguous total-membership wording.",
+    "source": "ra8551",
+    "provision": "Section 4 amending RA6975 section13",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:PNP Law and History:17": {
+    "stem": "Which commission exercises administrative control and operational supervision over the PNP under RA 8551 section 5?",
+    "choices": [
+      "National Police Commission",
+      "Civil Service Commission",
+      "Commission on Audit"
+    ],
+    "explanation": "The statute assigns these powers to NAPOLCOM, not CSC or COA.",
+    "source": "ra8551",
+    "provision": "Section 5 amending RA6975 section14",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:PNP Law and History:18": {
+    "stem": "What body was established by Act No. 175 section 1 in 1901?",
+    "choices": [
+      "Insular Constabulary",
+      "Philippine National Police",
+      "Integrated National Police"
+    ],
+    "explanation": "The original enactment says Insular Constabulary. PNP and INP arise under later statutes; the source\u2019s loose Insular Police Force answer is corrected transparently.",
+    "source": "act175",
+    "provision": "Section 1; RA6975 section23; PD765 section1",
+    "tax": "pnpHistory"
+  },
+  "notes:PNP Law and History:20": {
+    "stem": "In PNP Memorandum Circular 2014-009, what record contains the daily register of crime incident reports, arrest summaries and significant reported station events?",
+    "choices": [
+      "Police blotter",
+      "Quality Service Lane",
+      "Incident Record Form"
+    ],
+    "explanation": "The circular defines the police blotter as the daily logbook. The Quality Service Lane is a service desk, and an Incident Record Form records individual incident data.",
+    "source": "blotter",
+    "provision": "Definitions of Terms",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:PNP Law and History:22": {
+    "stem": "Which Act originally reorganized DILG and listed the PNP among its bureaus in section 6?",
+    "choices": [
+      "RA 6975",
+      "RA 8551",
+      "RA 11200"
+    ],
+    "explanation": "RA 6975 section 6 provides organizational placement. RA 8551 reforms and amends the earlier law; RA 11200 changes ranks. The original RA8551 answer is corrected without attributing DILG control powers indiscriminately.",
+    "source": "ra6975",
+    "provision": "Section 6",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:PNP Law and History:23": {
+    "stem": "Which officeholder is NAPOLCOM\u2019s ex-officio member in addition to the DILG Secretary who chairs it, under RA 8551 section 4?",
+    "choices": [
+      "Chief of the PNP",
+      "Secretary of National Defense",
+      "Chief Justice"
+    ],
+    "explanation": "Section 4 names the Chief PNP. The source\u2019s named historical person is converted transparently to the supported statutory office, avoiding an undated personal appointment claim.",
+    "source": "ra8551",
+    "provision": "Section 4",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:PNP Law and History:24": {
+    "stem": "What organization did PD 765 section 1 establish with the Philippine Constabulary as its nucleus?",
+    "choices": [
+      "Integrated National Police",
+      "Philippine National Police",
+      "Bureau of Fire Protection"
+    ],
+    "explanation": "PD765 establishes the Integrated National Police under DND with PC as nucleus. The source\u2019s PC-INP label describes a combined arrangement; the authored question asks the exact statutory organization.",
+    "source": "pd765",
+    "provision": "Section 1",
+    "tax": "pnpHistory"
+  },
+  "notes:PNP Law and History:25": {
+    "stem": "Under RA 10575 section 8, which department exercises administrative supervision over the Bureau of Corrections?",
+    "choices": [
+      "Department of Justice",
+      "Department of the Interior and Local Government",
+      "Department of National Defense"
+    ],
+    "explanation": "Section 8 makes BuCor a DOJ line bureau and constituent unit. This positive affiliation conversion preserves the concept underlying the missing except alternatives.",
+    "source": "ra10575",
+    "provision": "Section 8",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:PNP Law and History:28": {
+    "stem": "As originally enacted, what ordinary compulsory retirement age does RA 6975 section 39 prescribe for PNP uniformed personnel, subject to its stated retention exception?",
+    "choices": [
+      "56 years",
+      "55 years",
+      "60 years"
+    ],
+    "explanation": "Section 39 states 56 and permits a limited one-year retention for specified senior officers. The explanation preserves the exception rather than claiming every officer must leave on that birthday.",
+    "source": "ra6975",
+    "provision": "Section 39",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:PNP Law and History:29": {
+    "stem": "Which commission administers PNP entrance and promotional examinations under RA 8551 section 21?",
+    "choices": [
+      "National Police Commission",
+      "Commission on Audit",
+      "Commission on Elections"
+    ],
+    "explanation": "Section 21 amending RA6975 section32 explicitly assigns these examinations to NAPOLCOM.",
+    "source": "ra8551",
+    "provision": "Section 21",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Criminal Justice System:1": {
+    "stem": "When a law gives a public officer judgment about how or when a duty is performed, rather than prescribing an entirely mechanical act, what kind of authority is involved?",
+    "choices": [
+      "Discretion",
+      "Ministerial duty",
+      "Judicial precedent"
+    ],
+    "explanation": "The Supreme Court distinguishes discretionary duty, permitting judgment as to how or when, from a ministerial duty performed in a prescribed manner without that judgment. Judicial precedent concerns decisions, not this authority.",
+    "source": "discretion",
+    "provision": "SC distinction between discretionary and ministerial duties",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:2": {
+    "stem": "Under RA 10071, which official performs the prosecutorial role formerly associated with the title fiscal?",
+    "choices": [
+      "Public prosecutor",
+      "Police patrol officer",
+      "Jail officer"
+    ],
+    "explanation": "RA10071 places prosecutors in the National Prosecution Service. Police perform law enforcement and jail officers perform custodial functions under RA6975.",
+    "source": "ra10071",
+    "provision": "Sections 2\u20133; RA6975 sections24,61",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:3": {
+    "stem": "A fiscal or public prosecutor belongs primarily to which criminal-justice function?",
+    "choices": [
+      "Prosecution",
+      "Police law enforcement",
+      "Corrections"
+    ],
+    "explanation": "RA10071 assigns preliminary investigation and prosecution of penal-law violations to the NPS. This positive-role conversion replaces an unrecoverable except item.",
+    "source": "ra10071",
+    "provision": "Section 3; RA6975 section24; RA10575 section4",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:4": {
+    "stem": "Which service under the Secretary of Justice is primarily responsible for preliminary investigation and prosecution of penal-law violations under RA 10071?",
+    "choices": [
+      "National Prosecution Service",
+      "Philippine National Police",
+      "Bureau of Corrections"
+    ],
+    "explanation": "RA10071 section3 establishes and assigns these functions to the NPS. PNP law enforcement and BuCor reformation are distinct mandates.",
+    "source": "ra10071",
+    "provision": "Section 3; RA6975 section24; RA10575 section4",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:5": {
+    "stem": "Which criminal-justice function evaluates penal violations and evidence in preliminary investigations under RA 10071?",
+    "choices": [
+      "Prosecution",
+      "Adjudication by courts",
+      "Corrections"
+    ],
+    "explanation": "RA10071 section3 assigns preliminary investigation and prosecution to NPS. It is distinct from judicial adjudication and corrections; the question asks institutional function, not current procedural deadlines.",
+    "source": "ra10071",
+    "provision": "Section 3; Constitution VIII section1; RA10575 section4",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:6": {
+    "stem": "Which branch\u2019s courts settle actual controversies involving legally demandable rights under Article VIII section 1?",
+    "choices": [
+      "Judiciary",
+      "Executive prosecution service",
+      "Legislature"
+    ],
+    "explanation": "Article VIII section1 vests judicial power in the Supreme Court and lower courts. Prosecutors and legislators have separate functions.",
+    "source": "constitution",
+    "provision": "Article VIII section1",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:8": {
+    "stem": "Which system comprises the five pillars of law enforcement, prosecution, courts, corrections and community?",
+    "choices": [
+      "Criminal justice system",
+      "Electoral administration system",
+      "Civil service personnel system"
+    ],
+    "explanation": "The Philippine criminal justice development plan lists law enforcement, prosecution, courts, corrections and community as its five pillars. Electoral and personnel administration are separate constitutional mandates.",
+    "source": "pillarsreport",
+    "provision": "Page 4, five-pillar framework",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:9": {
+    "stem": "Under Article 306 of the Revised Penal Code, what term applies to three or more armed persons forming a band to commit highway robbery or other specified violent purposes?",
+    "choices": [
+      "Brigands",
+      "Arresting officers",
+      "Probationers"
+    ],
+    "explanation": "Article306 defines brigands by the band, arms and purposes, unlike the source\u2019s vague lifestyle description. This asks the statutory definition, not penalty amounts or every highway-robbery offense.",
+    "source": "rpcbook2",
+    "provision": "Article306 definition only",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:10": {
+    "stem": "Under Rule 113 section 1, what is taking a person into custody to answer for an offense called?",
+    "choices": [
+      "Arrest",
+      "Arraignment",
+      "Bail"
+    ],
+    "explanation": "Rule113 section1 defines arrest. Arraignment informs an accused of charges and obtains a plea; bail secures release and appearance.",
+    "source": "criminalrules",
+    "provision": "Rule113 section1; Rule114 section1; Rule116 section1",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:11": {
+    "stem": "Under Article 246, which relationship is expressly covered by parricide when a person kills the victim?",
+    "choices": [
+      "The offender\u2019s daughter, whether legitimate or illegitimate",
+      "An unmarried common-law partner solely because of cohabitation",
+      "An unrelated neighbor solely because of proximity"
+    ],
+    "explanation": "Article246 expressly covers a child and a spouse. Cohabitation alone is not marriage, and an unrelated neighbor is not a listed relative. The authored relationship question removes the missing murder/homicide circumstances from the original scenario.",
+    "source": "rpcbook2",
+    "provision": "Article246; original scenario narrowed to relationship element",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:12": {
+    "stem": "What security furnished for release from custody, conditioned on appearance in court, is defined in Rule 114 section 1?",
+    "choices": [
+      "Bail",
+      "Warrant of arrest",
+      "Complaint"
+    ],
+    "explanation": "Bail secures release subject to appearance. A warrant commands arrest, and a complaint charges an offense.",
+    "source": "criminalrules",
+    "provision": "Rule114 section1; Rules110 and112",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:13": {
+    "stem": "Which PNP function under RA 6975 section 24 includes preventing crime and protecting lives and property?",
+    "choices": [
+      "Law enforcement",
+      "Prosecution",
+      "Corrections"
+    ],
+    "explanation": "RA6975 section24 assigns police enforcement and crime-prevention functions. RA10071 assigns prosecution, and RA10575 assigns corrections/reformation.",
+    "source": "ra6975",
+    "provision": "Section24; RA10071 section3; RA10575 section4",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:14": {
+    "stem": "Under Rule 110 section 5, who directs and controls the prosecution of criminal actions?",
+    "choices": [
+      "Prosecutor",
+      "Jail officer",
+      "Court clerk"
+    ],
+    "explanation": "Rule110 section5 identifies the prosecutor. A jail officer performs custody, and a court clerk has court administrative and specified procedural duties. The stem does not claim prosecutors personally conduct every action without statutory exceptions.",
+    "source": "criminalrules",
+    "provision": "Rule110 section5",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:15": {
+    "stem": "After a valid charge before a competent court, a plea, and an acquittal, conviction or qualifying termination, what protection generally bars a second prosecution for the same offense under Rule 117 section 7?",
+    "choices": [
+      "Double jeopardy",
+      "Presumption of regularity",
+      "Executive clemency"
+    ],
+    "explanation": "Rule117 section7 requires a competent court, valid sufficient charge and a plea before the relevant termination. Mere filing of a charge is insufficient. Its specified exceptions remain applicable.",
+    "source": "criminalrules",
+    "provision": "Rule117 section7",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:16": {
+    "stem": "Which criminal-justice institution adjudicates guilt or innocence after trial?",
+    "choices": [
+      "Courts",
+      "Public prosecutors",
+      "Police investigators"
+    ],
+    "explanation": "ArticleVIII vests judicial power in courts; prosecutors prosecute and police investigate. The court, not a prosecutor\u2019s accusation, decides culpability.",
+    "source": "constitution",
+    "provision": "ArticleVIII section1; RA10071 section3; RA6975 section24",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:17": {
+    "stem": "What court disposition releases a convicted and sentenced defendant subject to court conditions and supervision of a probation officer?",
+    "choices": [
+      "Probation",
+      "Parole",
+      "Bail"
+    ],
+    "explanation": "PD968 section3 defines probation. Parole follows service of the applicable minimum sentence; bail concerns release and appearance while in custody of law. RA10707 changes grant procedures without replacing this definition.",
+    "source": "pd968",
+    "provision": "Section3; RA10707 section1; Act4103 section1; Rule114 section1",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:19": {
+    "stem": "Under Rule 112, which judicial officer evaluates probable cause for a court\u2019s warrant of arrest?",
+    "choices": [
+      "Judge",
+      "Public prosecutor acting as prosecutor",
+      "Jail officer"
+    ],
+    "explanation": "Rule112 section6 assigns judicial warrant evaluation to the judge, distinct from prosecutorial preliminary investigation or jail custody.",
+    "source": "criminalrules",
+    "provision": "Rule112 section6",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:20": {
+    "stem": "What executive clemency measure reduces a convicted person\u2019s penalty rather than acquitting the person?",
+    "choices": [
+      "Commutation",
+      "Arraignment",
+      "Bail"
+    ],
+    "explanation": "ArticleVII section19 includes commutation after final conviction. Supreme Court discussion distinguishes executive commutation as a reduction of punishment, not adjudication of innocence or pretrial release.",
+    "source": "commutation",
+    "provision": "Constitution VII section19; SC commutation discussion",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:21": {
+    "stem": "Under Article 142 as amended by RA 10951 section 9, what penalty is stated for inciting to sedition?",
+    "choices": [
+      "Prisi\u00f3n correccional in its maximum period and a fine not exceeding \u20b1400,000",
+      "Prisi\u00f3n correccional in its maximum period and a fine not exceeding \u20b12,000",
+      "Prisi\u00f3n correccional in its maximum period and a fine not exceeding \u20b140,000"
+    ],
+    "explanation": "RA10951 section9 increases the fine ceiling to \u20b1400,000. The original \u20b12,000 ceiling is obsolete; the authored stem asks the enacted penalty rather than deciding guilt from an allegation.",
+    "source": "ra10951",
+    "provision": "Section9 amending Article142",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:22": {
+    "stem": "Which theory in the NCJRS thesaurus treats repression of criminal conduct as the most important function of the criminal justice process?",
+    "choices": [
+      "Crime control theory",
+      "Crime control model",
+      "Crime control policies"
+    ],
+    "explanation": "The visually inspected NCJRS entry Crime control theory defines repression of criminal conduct as the most important criminal-justice function. On the same page, Crime control model instead describes reliance on police fact-finding, while Crime control policies means overall policies for repressing or controlling crime without that priority formulation. The authored stem asks the precise thesaurus entry and changes the source\u2019s model label to the supported theory term.",
+    "source": "crimecontrol",
+    "provision": "PDF page 79 / printed page 65, entries Crime control theory, model and policies",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:23": {
+    "stem": "What conditional release under the Indeterminate Sentence Law may follow service of the minimum sentence, subject to eligibility and Board action?",
+    "choices": [
+      "Parole",
+      "Probation",
+      "Bail"
+    ],
+    "explanation": "Act4103 permits conditional release on parole after the minimum term, subject to its requirements. Probation is a court disposition and bail secures appearance. This avoids implying release is automatic.",
+    "source": "act4103",
+    "provision": "Sections1,5,6; PD968 section3; Rule114 section1",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:24": {
+    "stem": "Under RA 9344, which term identifies a child alleged, accused or adjudged to have committed an offense under Philippine laws?",
+    "choices": [
+      "Child in conflict with the law",
+      "Child at risk only",
+      "Adult probationer"
+    ],
+    "explanation": "RA9344 section4 defines a child in conflict with the law by alleged, accused or adjudged commission of an offense. The authored conversion uses the statutory terminology instead of suggesting every child is automatically criminally liable.",
+    "source": "ra9344",
+    "provision": "Section4 definitions; sections6 and57; RA10630",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:26": {
+    "stem": "Which clemency power may the President grant with the concurrence of a majority of all Members of Congress under Article VII section 19?",
+    "choices": [
+      "Amnesty",
+      "Pardon after final conviction without that concurrence requirement",
+      "Commutation after final conviction without that concurrence requirement"
+    ],
+    "explanation": "ArticleVII section19 expressly imposes congressional-majority concurrence on amnesty. Pardons and commutations have their distinct final-conviction context and constitutional limits.",
+    "source": "constitution",
+    "provision": "ArticleVII section19",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:27": {
+    "stem": "What barangay mechanism under RA 7160 brings eligible parties together for amicable settlement rather than conducting a criminal trial?",
+    "choices": [
+      "Katarungang Pambarangay through the lupon",
+      "Regional Trial Court",
+      "Court of Appeals"
+    ],
+    "explanation": "RA7160 section408 assigns amicable settlement of qualifying disputes to the lupon with express exceptions, including imprisonment exceeding one year or fines exceeding \u20b15,000. It is not a barangay trial court.",
+    "source": "ra7160",
+    "provision": "Sections399,408",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:28": {
+    "stem": "Which court\u2019s statutory composition under RA 8246 is one Presiding Justice and 68 Associate Justices?",
+    "choices": [
+      "Court of Appeals",
+      "Supreme Court",
+      "Regional Trial Court"
+    ],
+    "explanation": "RA8246 amended BP129 to provide this Court of Appeals composition. The Supreme Court has a Chief Justice and fourteen Associate Justices.",
+    "source": "ra8246",
+    "provision": "Section1; Constitution VIII section4",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:29": {
+    "stem": "Under section 437 of the Insurance Code as amended by RA 10607, which official must see that insurance laws are faithfully executed?",
+    "choices": [
+      "Insurance Commissioner",
+      "NAPOLCOM Chairperson",
+      "Civil Service Commission Chairperson"
+    ],
+    "explanation": "Section 437 expressly assigns execution of insurance laws to the Insurance Commissioner. NAPOLCOM has police functions and CSC civil-service personnel functions; neither holds this Insurance Code duty. This is an authored positive statutory-mandate conversion of the source\u2019s insurance exclusion concept, assigned to constitutionAndLaws rather than criminalJusticeSystem.",
+    "source": "ra10607",
+    "provision": "Section 1, amended Insurance Code section 437; RA8551 section5; Constitution IX-B",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Criminal Justice System:31": {
+    "stem": "What criminal-law term denotes the external or overt acts or omissions included in an offense\u2019s definition?",
+    "choices": [
+      "Actus reus",
+      "Mens rea",
+      "Stare decisis"
+    ],
+    "explanation": "The Supreme Court defines actus reus as the external acts or omissions and mens rea as the accompanying guilty state of mind; stare decisis concerns precedent.",
+    "source": "mensrea",
+    "provision": "SC actus-reus/mens-rea discussion; decision-writing fundamentals",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:32": {
+    "stem": "Under Rule 110 section 3, what is a sworn written charge subscribed by an offended party, peace officer or other authorized enforcing public officer called?",
+    "choices": [
+      "Complaint",
+      "Information",
+      "Warrant of arrest"
+    ],
+    "explanation": "Rule110 section3 defines complaint. Section4 defines information as an accusation subscribed by the prosecutor and filed in court; a warrant is a judicial arrest direction.",
+    "source": "criminalrules",
+    "provision": "Rule110 sections3\u20134",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:33": {
+    "stem": "What court stage under Rule 116 includes reading the charge in a language known to the accused and asking for a plea?",
+    "choices": [
+      "Arraignment",
+      "Police interrogation",
+      "Prosecutorial preliminary investigation"
+    ],
+    "explanation": "Rule116 section1 places arraignment in open court before the judge or clerk. The source\u2019s except stem is converted transparently into a supported positive definition.",
+    "source": "criminalrules",
+    "provision": "Rule116 section1",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:36": {
+    "stem": "Which warrantless-arrest situation in Rule 113 section 5(a) concerns an offense committed, being committed or attempted in the arresting person\u2019s presence?",
+    "choices": [
+      "In flagrante delicto arrest",
+      "Escapee arrest under section5(c)",
+      "Hot-pursuit arrest under section5(b)"
+    ],
+    "explanation": "Paragraph(a) requires an offense in the person\u2019s presence. Paragraph(b) concerns an offense just committed and personal knowledge of probable cause; paragraph(c) concerns escaped prisoners.",
+    "source": "criminalrules",
+    "provision": "Rule113 section5(a)\u2013(c)",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:37": {
+    "stem": "What proceeding formally informs the accused of a filed charge and calls for a guilty or not-guilty plea in open court?",
+    "choices": [
+      "Arraignment",
+      "Arrest",
+      "Grant of bail"
+    ],
+    "explanation": "Rule116 section1 prescribes arraignment. Arrest takes into custody and bail secures release/appearance; neither is the plea proceeding.",
+    "source": "criminalrules",
+    "provision": "Rule116 section1; Rule113 section1; Rule114 section1",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:38": {
+    "stem": "Under Rule 116 section 1(a), who may read the charge in open court at arraignment alongside the judge\u2019s specified role?",
+    "choices": [
+      "Court clerk",
+      "Jail officer",
+      "Police investigator"
+    ],
+    "explanation": "The rule names the judge or clerk. This positive court-role conversion preserves the court-clerk concept without recovering missing except alternatives or making an absolute claim about every clerk\u2019s status.",
+    "source": "criminalrules",
+    "provision": "Rule116 section1(a)",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:40": {
+    "stem": "Under RA 7438 section 2(b), which rights must an arresting, detaining or investigating officer explain in a language known and understood by the person?",
+    "choices": [
+      "Silence and competent, independent counsel",
+      "Silence only, with no counsel assistance",
+      "Counsel only, with no right to silence"
+    ],
+    "explanation": "RA7438 requires both rights and counsel provision when unaffordable. The original imperil-the-arrest exception is removed: Rule113\u2019s arrest-information exceptions do not erase custodial rights. The MCQ describes the statutory rights rather than an unsupported blanket exception to Miranda protections.",
+    "source": "ra7438",
+    "provision": "Section2(b); Constitution III section12; Rule113 sections7\u20138",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:41": {
+    "stem": "Which bureau\u2019s mandate in RA 10575 concerns safekeeping and reformation of national inmates, placing it in the corrections function?",
+    "choices": [
+      "Bureau of Corrections",
+      "National Prosecution Service",
+      "Philippine National Police"
+    ],
+    "explanation": "RA10575 section4 supplies the BuCor mandate. NPS prosecutes and PNP enforces law. This authored positive mandate conversion replaces missing except options.",
+    "source": "ra10575",
+    "provision": "Section4; RA10071 section3; RA6975 section24",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:42": {
+    "stem": "Which doctrine directs courts to stand by settled decisions in materially like cases, subject to reversal or overruling?",
+    "choices": [
+      "Stare decisis",
+      "Actus reus",
+      "Mens rea"
+    ],
+    "explanation": "Supreme Court decision-writing guidance explains stare decisis as standing by decisions and not disturbing settled matters; the alternatives concern physical and mental offense elements.",
+    "source": "stared",
+    "provision": "Fundamentals of Decision Writing for Judges, stare decisis discussion",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:44": {
+    "stem": "What term refers to conduct associated with a child\u2019s age or status, such as curfew violations, that RA 9344 as amended protects from penal punishment when not an adult offense?",
+    "choices": [
+      "Status offenses",
+      "Parricide",
+      "Inciting to sedition"
+    ],
+    "explanation": "RA10630 section11 preserves nonpunishment for conduct not an adult offense and sets protective intervention for local juvenile-status ordinances. The source\u2019s wording implying penal punishment is corrected.",
+    "source": "ra10630",
+    "provision": "Section11 amending RA9344 sections57,57-A",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:45": {
+    "stem": "What term describes the guilty state of mind or criminal intent accompanying an offense\u2019s external acts?",
+    "choices": [
+      "Mens rea",
+      "Actus reus",
+      "Stare decisis"
+    ],
+    "explanation": "The Supreme Court distinguishes mens rea, the guilty state of mind, from actus reus, external acts or omissions. This avoids reducing every offense\u2019s mental element to mere knowledge.",
+    "source": "mensrea",
+    "provision": "SC actus-reus/mens-rea discussion",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:46": {
+    "stem": "Which service primarily performs preliminary investigation and prosecution under RA 10071 rather than corrections and reformation of inmates?",
+    "choices": [
+      "National Prosecution Service",
+      "Bureau of Corrections",
+      "Bureau of Jail Management and Penology"
+    ],
+    "explanation": "NPS has the prosecution mandate in RA10071 section3. BuCor and BJMP perform corrections/custodial functions. Missing except options are replaced transparently by a positive-role question.",
+    "source": "ra10071",
+    "provision": "Section3; RA10575 section4; RA6975 section61",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:47": {
+    "stem": "Which criminal-justice institution renders judgment in criminal cases through judicial power?",
+    "choices": [
+      "Courts",
+      "National Prosecution Service",
+      "Philippine National Police"
+    ],
+    "explanation": "ArticleVIII assigns judicial power to courts, unlike prosecutorial charging and police enforcement functions.",
+    "source": "constitution",
+    "provision": "ArticleVIII section1; RA10071 section3; RA6975 section24",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:48": {
+    "stem": "Which criminal-justice function includes police patrol, crime investigation and arrest under RA 6975 section 24?",
+    "choices": [
+      "Law enforcement",
+      "Corrections",
+      "Judicial adjudication"
+    ],
+    "explanation": "Section24 assigns enforcement, investigation, prevention and arrest powers to PNP; corrections rehabilitates and courts adjudicate.",
+    "source": "ra6975",
+    "provision": "Section24; RA10575 section4; Constitution VIII section1",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:49": {
+    "stem": "Which criminal-justice function includes reformation programs to prepare national inmates for productive reintegration under RA 10575?",
+    "choices": [
+      "Corrections",
+      "Prosecution",
+      "Electoral administration"
+    ],
+    "explanation": "RA10575 sections3\u20134 define reformation and BuCor programs for reintegration; prosecutors and electoral commissions have other mandates.",
+    "source": "ra10575",
+    "provision": "Sections3\u20134; RA10071 section3; Constitution IX-C",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Philippine History:5": {
+    "stem": "Which date does section 1 of Republic Act 4166 designate as Philippine Independence Day?",
+    "choices": [
+      "June 12",
+      "July 4",
+      "November 30"
+    ],
+    "explanation": "RA 4166 changes the statutory Independence Day designation to June 12; July 4 becomes Philippine Republic Day. November 30 is not that designation. Authored statutory question removes the original first-flag-waving claim.",
+    "source": "ra4166",
+    "provision": "Section 1",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine History:19": {
+    "stem": "Under section 37 of RA 8491, whose musical arrangement and composition must be followed when singing or playing the National Anthem?",
+    "choices": [
+      "Julian Felipe",
+      "Jose Palma",
+      "Emilio Jacinto"
+    ],
+    "explanation": "Section 37 expressly names Julian Felipe for the musical arrangement and composition. Jose Palma is associated with anthem lyrics and Emilio Jacinto with Katipunan writings, not the statutory musical attribution.",
+    "source": "ra8491",
+    "provision": "Section 37",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine History:17": {
+    "stem": "In section 1 of RA 9492, Labor Day is listed as the Monday nearest which date?",
+    "choices": [
+      "May 1",
+      "April 9",
+      "December 30"
+    ],
+    "explanation": "RA 9492 lists Araw ng Kagitingan nearest April 9, Labor Day nearest May 1 and Rizal Day nearest December 30. The stem expressly tests the 2007 statutory text; it does not claim that its Monday rule is the current holiday calendar. Authored legal conversion replaces an undated holiday assertion.",
+    "source": "ra9492",
+    "provision": "Section 1, 2007 text",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine History:20": {
+    "stem": "In section 1 of RA 9492, which regular holiday is observed on the Monday nearest April 9?",
+    "choices": [
+      "Araw ng Kagitingan",
+      "Labor Day",
+      "Rizal Day"
+    ],
+    "explanation": "RA 9492 lists Araw ng Kagitingan nearest April 9, Labor Day nearest May 1 and Rizal Day nearest December 30. The stem expressly tests the 2007 statutory text; it does not claim that its Monday rule is the current holiday calendar. Authored legal conversion replaces an undated holiday assertion.",
+    "source": "ra9492",
+    "provision": "Section 1, 2007 text",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine History:21": {
+    "stem": "In section 1 of RA 9492, Rizal Day is listed as the Monday nearest which date?",
+    "choices": [
+      "December 30",
+      "April 9",
+      "May 1"
+    ],
+    "explanation": "RA 9492 lists Araw ng Kagitingan nearest April 9, Labor Day nearest May 1 and Rizal Day nearest December 30. The stem expressly tests the 2007 statutory text; it does not claim that its Monday rule is the current holiday calendar. Authored legal conversion replaces an undated holiday assertion.",
+    "source": "ra9492",
+    "provision": "Section 1, 2007 text",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine History:24": {
+    "stem": "In section 1 of RA 9492, Araw ng Kagitingan is listed as the Monday nearest which date?",
+    "choices": [
+      "April 9",
+      "May 1",
+      "December 30"
+    ],
+    "explanation": "RA 9492 lists Araw ng Kagitingan nearest April 9, Labor Day nearest May 1 and Rizal Day nearest December 30. The stem expressly tests the 2007 statutory text; it does not claim that its Monday rule is the current holiday calendar. Authored legal conversion replaces an undated holiday assertion.",
+    "source": "ra9492",
+    "provision": "Section 1, 2007 text",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine History:26": {
+    "stem": "Which statute bears the short title \u201cComprehensive Agrarian Reform Law of 1988\u201d?",
+    "choices": [
+      "RA 6657",
+      "RA 4166",
+      "RA 8491"
+    ],
+    "explanation": "Section 1 of RA 6657 supplies that short title; RA 4166 concerns Independence Day and RA 8491 the flag and heraldic code. This authored statutory conversion preserves the source\u2019s law reference while omitting the presidential-signature attribution, which is absent from the retained statute text.",
+    "source": "ra6657",
+    "provision": "Section 1",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Philippine History:48": {
+    "stem": "Which language does Article XIV section 6 of the 1987 Constitution name as the national language?",
+    "choices": [
+      "Filipino",
+      "English",
+      "Spanish"
+    ],
+    "explanation": "Article XIV section 6 names Filipino. Section 7 separately addresses official languages and voluntary promotion of Spanish; those roles do not replace the national-language designation.",
+    "source": "constitution",
+    "provision": "Article XIV sections 6\u20137",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Current Events:11": {
+    "stem": "What title does section 1 of Republic Act 10963 give the TRAIN law?",
+    "choices": [
+      "Tax Reform for Acceleration and Inclusion",
+      "Tax Reform for Administration and Investment",
+      "Tax Reduction for Agriculture and Infrastructure"
+    ],
+    "explanation": "Section 1 gives the exact statutory title Tax Reform for Acceleration and Inclusion. The other authored expansions use related fiscal terms but are not the law\u2019s title. This conversion tests a statute rather than an undated current-event claim.",
+    "source": "ra10963",
+    "provision": "Section 1",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Current Events:13": {
+    "stem": "Which Republic Act has the short title \u201cFree Irrigation Service Act\u201d?",
+    "choices": [
+      "RA 10969",
+      "RA 10963",
+      "RA 8551"
+    ],
+    "explanation": "RA 10969 section 1 supplies the short title. RA 10963 is TRAIN; RA 8551 concerns PNP reform. The authored statutory-identification question omits broader unverified claims about actual program delivery.",
+    "source": "ra10969",
+    "provision": "Section 1",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Current Events:14": {
+    "stem": "Who signed Executive Order 26 of 2017, which establishes smoke-free environments in public and enclosed places?",
+    "choices": [
+      "Rodrigo Roa Duterte",
+      "Benigno S. Aquino III",
+      "Ferdinand R. Marcos Jr."
+    ],
+    "explanation": "EO 26\u2019s signature block names Rodrigo Roa Duterte. Its title concerns smoke-free public and enclosed places; the authored stem avoids describing a blanket ban on all smoking.",
+    "source": "eo26",
+    "provision": "Title and signature block, 16 May 2017",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Current Events:16": {
+    "stem": "On what date was Proclamation 216, declaring martial law and suspending the privilege of the writ of habeas corpus in Mindanao, signed?",
+    "choices": [
+      "May 23, 2017",
+      "May 23, 2016",
+      "September 21, 2017"
+    ],
+    "explanation": "The proclamation\u2019s execution clause states May 23, 2017. Neither neighboring date is its date. This is a dated legal-instrument question, not an assertion that martial law remains in force.",
+    "source": "proc216",
+    "provision": "Execution clause",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Current Events:17": {
+    "stem": "Which telephone number does EO 56 of 2018 institutionalize as the nationwide emergency hotline?",
+    "choices": [
+      "911",
+      "8888",
+      "117"
+    ],
+    "explanation": "EO 56 section 1 institutionalizes 911 and replaces Patrol 117. EO 6 instead creates the 8888 Citizens\u2019 Complaint Center. The authored conversion distinguishes emergency response from complaints.",
+    "source": "eo56",
+    "provision": "Section 1; EO 6 section 1",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Current Events:18": {
+    "stem": "What designation does Proclamation 319 of 2017 give September 21, 2017?",
+    "choices": [
+      "National Day of Protest",
+      "National Heroes Day",
+      "Independence Day"
+    ],
+    "explanation": "The proclamation declares September 21, 2017 a National Day of Protest. The other named national observances are not this proclamation\u2019s designation.",
+    "source": "proc319",
+    "provision": "Operative declaration",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Current Events:21": {
+    "stem": "Which island does Proclamation 475 of 2018 place under a state of calamity and temporary closure as a tourist destination?",
+    "choices": [
+      "Boracay Island",
+      "Corregidor Island",
+      "Siargao Island"
+    ],
+    "explanation": "The operative text identifies Boracay and its affected barangays. The alternatives are different Philippine islands; the question assesses the dated proclamation rather than ongoing tourism access.",
+    "source": "boracay",
+    "provision": "Operative declaration",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Current Events:23": {
+    "stem": "Under Executive Order 25 of 2017, what name is given to the underwater feature formerly called Benham Rise?",
+    "choices": [
+      "Philippine Rise",
+      "Philippine Trench",
+      "West Philippine Sea"
+    ],
+    "explanation": "Section 1 renames Benham Rise Philippine Rise. A trench and a sea are different geographic features, not the statutory replacement name.",
+    "source": "eo25",
+    "provision": "Section 1",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Current Events:32": {
+    "stem": "What right is operationalized in executive-branch offices by Executive Order 2 of 2016?",
+    "choices": [
+      "Access to information on matters of public concern",
+      "An unconditional right to all classified documents",
+      "A right to bypass all government record exceptions"
+    ],
+    "explanation": "EO 2 section 2 addresses information of public concern; sections 3\u20134 recognize exceptions and personal-information safeguards. The authored choices distinguish qualified access from the two overbroad claims.",
+    "source": "eo2",
+    "provision": "Sections 2\u20134",
+    "tax": "constitutionAndLaws"
+  },
+  "notes:Criminal Justice System:18": {
+    "stem": "In the Philippine criminal justice development plan, which pillar includes NGOs and civil society organizations?",
+    "choices": [
+      "Community",
+      "Courts",
+      "Prosecution"
+    ],
+    "explanation": "The framework lists NGOs and civil society organizations under Community. Courts adjudicate and prosecution handles criminal prosecution; neither defines the community pillar.",
+    "source": "pillarsreport",
+    "provision": "Pages 4\u20137, framework",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:30": {
+    "stem": "In the Philippine criminal justice development plan, what system covers investigation, custody, prosecution, adjudication and correction of offenders?",
+    "choices": [
+      "Criminal justice system",
+      "Electoral administration system",
+      "Civil service personnel system"
+    ],
+    "explanation": "The plan\u2019s stated vision describes the criminal justice system through investigation, custody, prosecution, punishment and rehabilitation. Election administration and civil-service personnel management do not describe that process.",
+    "source": "pillarsreport",
+    "provision": "Page 4, vision and five-pillar framework",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:PNP Law and History:27": {
+    "stem": "Which camp houses the PNP National Headquarters according to PNPHSS SOP 11191-01?",
+    "choices": [
+      "Camp Crame",
+      "Camp Aguinaldo",
+      "Fort Bonifacio"
+    ],
+    "explanation": "The PNP Headquarters Support Service SOP expressly says Camp Crame houses the National Headquarters. The authored alternatives are other military camps, not the named PNP location.",
+    "source": "campcrame",
+    "provision": "Section III.A, background",
+    "tax": "pnpHistory"
+  },
+  "notes:Criminal Justice System:25": {
+    "stem": "In the Supreme Court\u2019s account of BJMP search rules, what term covers both inherently illegal items and items forbidden by jail rules?",
+    "choices": [
+      "Contraband",
+      "Bail",
+      "Mittimus"
+    ],
+    "explanation": "The decision distinguishes illegal contraband from merely prohibited and nuisance contraband. Bail is security for provisional liberty and mittimus an order carrying a conviction into effect; neither is an article forbidden in jail. Authored definition removes the original blanket cash-and-jewelry list.",
+    "source": "contraband",
+    "provision": "BJMP SOP 2010-05 definition discussion",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Criminal Justice System:43": {
+    "stem": "In the Supreme Court\u2019s Manual for Clerks of Court, what is the order of commitment based on a final judgment of conviction called?",
+    "choices": [
+      "Mittimus",
+      "Search warrant",
+      "Subpoena"
+    ],
+    "explanation": "The manual identifies mittimus as the order of commitment based on final conviction. A search warrant concerns property searches and a subpoena attendance or production. The authored conversion narrows the original general commitment-order answer to this precisely supported form.",
+    "source": "mittimus",
+    "provision": "Mittimus or order of commitment; search warrant; subpoena",
+    "tax": "criminalJusticeSystem"
+  },
+  "notes:Current Events:9": {
+    "stem": "In Republic v. Sereno (11 May 2018), which proceeding challenged the legality of the respondent\u2019s appointment as Chief Justice?",
+    "choices": [
+      "Quo warranto",
+      "Impeachment trial in the Senate",
+      "Petition for a writ of amparo"
+    ],
+    "explanation": "The decision expressly concerns a petition for quo warranto challenging eligibility to hold the office, not a Senate impeachment trial or a protective writ of amparo. The authored conversion assesses the legal proceeding identified by the decision rather than presenting the 2018 removal as a current event.",
+    "source": "sereno",
+    "provision": "Case identification and introductory statement; correct decision date 11 May 2018",
+    "tax": "constitutionAndLaws"
+  }
+}
