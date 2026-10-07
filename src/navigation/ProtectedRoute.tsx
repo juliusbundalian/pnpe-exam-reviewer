@@ -1,7 +1,7 @@
 import { useEffect, useRef, type ReactNode } from 'react';
 import type { ProtectedAction } from '../features/auth/application/intents';
 import { useAppDependencies, useAppNavigation, useAuthentication } from '../bootstrap/AppProviders';
-import { AppText } from '../core/components/AppText';
+import { AuthenticationRecoveryScreen } from './AuthenticationRecoveryScreen';
 import { permitsPersonalContent } from './routePolicy';
 export function ProtectedRoute({
   action,
@@ -21,9 +21,5 @@ export function ProtectedRoute({
     }
     if (permitsPersonalContent(auth)) requested.current = false;
   }, [action, auth.status, coordinator, origin]);
-  return permitsPersonalContent(auth) ? (
-    children
-  ) : (
-    <AppText>Personal features require sign in.</AppText>
-  );
+  return permitsPersonalContent(auth) ? children : <AuthenticationRecoveryScreen />;
 }

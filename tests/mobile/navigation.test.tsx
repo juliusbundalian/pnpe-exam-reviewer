@@ -234,3 +234,68 @@ test('form switches retain the protected intent through password reset', async (
   await h.authenticate('alice');
   expect(await screen.findByText('Mock Exam preflight')).toBeVisible();
 });
+
+test.each(
+  (['resolving', 'recoveryRequired'] as const).flatMap((status) =>
+    ['/profile', '/progress', '/auth/sign-in', '/auth/register', '/auth/forgot-password'].map(
+      (url) => ({ status, url }),
+    ),
+  ),
+)('cold $url allows cancellation during $status without late replay', async ({ status, url }) => {
+  const h = harness({
+    initialAuth: status === 'resolving' ? { status } : { status, previousUid: null },
+  });
+  const result = await h.render(url);
+  fireEvent.press(await screen.findByRole('button', { name: 'Back to public browsing' }));
+  await waitFor(() => expect(result.getPathname()).toBe('/'));
+  expect(h.dependencies.coordinator.getSnapshot()).toMatchObject({
+    pendingIntent: null,
+    origin: null,
+    screen: 'none',
+  });
+  await h.authenticate('late-alice');
+  expect(result.getPathname()).toBe('/');
+  expect(h.events.filter((event) => !event.startsWith('return:'))).toEqual([]);
+  expect(screen.getByRole('button', { name: 'Explore reviewers' })).toBeVisible();
+});
+
+test('unavailable cold Profile offers retry while preserving cancellation', async () => {
+  const h = harness({ initialAuth: { status: 'recoveryRequired', previousUid: null } });
+  const result = await h.render('/profile');
+  const observations = jest.spyOn(h.auth, 'observe');
+  fireEvent.press(await screen.findByRole('button', { name: 'Retry' }));
+  await act(flushTransitions);
+  expect(observations).toHaveBeenCalledTimes(1);
+  fireEvent.press(screen.getByRole('button', { name: 'Back to public browsing' }));
+  await waitFor(() => expect(result.getPathname()).toBe('/'));
+  observations.mockRestore();
+});
+
+test.each(['resolving', 'recoveryRequired'] as const)(
+  'Home exposes pending auth cancellation during %s and ignores late completion',
+  async (status) => {
+    const h = harness({
+      initialAuth: status === 'resolving' ? { status } : { status, previousUid: null },
+    });
+    const result = await h.render('/');
+    fireEvent.press(screen.getAllByRole('button', { name: 'Progress' })[0]!);
+    await act(flushTransitions);
+    expect(h.dependencies.coordinator.getSnapshot().pendingIntent?.action.type).toBe(
+      'openProgress',
+    );
+    expect(screen.getByRole('button', { name: 'Explore reviewers' })).toBeVisible();
+    const cancel = await screen.findByRole('button', { name: 'Cancel request' });
+    expect(screen.getByRole('button', { name: 'Retry authentication' })).toBeEnabled();
+    fireEvent.press(cancel);
+    await act(flushTransitions);
+    expect(h.dependencies.coordinator.getSnapshot()).toMatchObject({
+      pendingIntent: null,
+      origin: null,
+    });
+    expect(screen.queryByRole('button', { name: 'Cancel request' })).toBeNull();
+    await h.authenticate('late-alice');
+    expect(result.getPathname()).toBe('/');
+    expect(h.events.filter((event) => !event.startsWith('return:'))).toEqual([]);
+    expect(screen.getByRole('button', { name: 'Explore reviewers' })).toBeVisible();
+  },
+);

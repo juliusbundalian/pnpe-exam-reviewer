@@ -1,5 +1,7 @@
 import { screen, fireEvent, act, waitFor } from 'expo-router/testing-library';
-import { Linking } from 'react-native';
+import { Linking, ScrollView } from 'react-native';
+import { within } from '@testing-library/react-native';
+import { MenuScreen } from '../../src/features/menu/presentation/MenuScreen';
 import { createAppHarness } from '../fixtures/app-harness';
 import { authUser, deferred, flushTransitions } from '../fixtures/auth-harness';
 import { defaults } from '../../src/core/config/defaults';
@@ -117,4 +119,65 @@ test('auth failure is recovery, never guest or an unsolicited login', async () =
   await act(flushTransitions);
   expect(screen.queryByText('Sign in to continue')).toBeNull();
   expect(h.dependencies.coordinator.getSnapshot().auth.status).toBe('recoveryRequired');
+});
+
+test('guest Menu names Guest User and removes guest identity after sign in', async () => {
+  const h = harness();
+  await h.render('/menu');
+  expect(screen.getByText('Guest User')).toBeVisible();
+  await h.authenticate('alice');
+  expect(screen.queryByText('Guest User')).toBeNull();
+});
+
+test('Home receives authenticated display name and clears it on account change and guest', async () => {
+  const h = harness({
+    initialAuth: {
+      status: 'authenticated',
+      user: { ...authUser('alice'), displayName: 'Alice Native' },
+    },
+  });
+  await h.render('/');
+  expect(screen.getByText('Welcome, Alice Native')).toBeVisible();
+  await h.emit({ status: 'authenticated', user: { ...authUser('bob'), displayName: '  ' } });
+  expect(screen.queryByText('Welcome, Alice Native')).toBeNull();
+  expect(screen.getByText('Your preparation starts here')).toBeVisible();
+  await h.emit({ status: 'guest' });
+  expect(screen.getByText('Your preparation starts here')).toBeVisible();
+});
+
+test('long maintenance notice and Home actions share safe scrolling content', async () => {
+  const message = 'Maintenance update. '.repeat(500);
+  const h = harness({
+    config: {
+      ...defaults,
+      app_info: { ...defaults.app_info, maintenanceMode: true, maintenanceMessage: message },
+    },
+  });
+  await h.render('/');
+  const notice = screen.getByText(message);
+  const scrollParent = (element: typeof notice) => {
+    let parent = element.parent;
+    while (parent && parent.type !== ScrollView) parent = parent.parent;
+    return parent;
+  };
+  expect(notice).toHaveProp('allowFontScaling', true);
+  expect(notice.props.numberOfLines).toBeUndefined();
+  const sharedScroll = scrollParent(notice);
+  expect(sharedScroll).not.toBeNull();
+  expect(scrollParent(screen.getByRole('button', { name: 'Explore reviewers' }))).toBe(
+    sharedScroll,
+  );
+  expect(scrollParent(screen.getByRole('button', { name: 'Start Mock Exam' }))).toBe(sharedScroll);
+  fireEvent.press(screen.getByRole('button', { name: 'Explore reviewers' }));
+  expect(await screen.findByRole('button', { name: 'General Information' })).toBeVisible();
+});
+
+test('authenticated Menu Progress row uses the shared coordinator', async () => {
+  const h = harness({ initialAuth: { status: 'authenticated', user: authUser('alice') } });
+  const result = await h.render('/menu');
+  fireEvent.press(
+    within(screen.UNSAFE_getByType(MenuScreen)).getByRole('button', { name: 'Progress' }),
+  );
+  await waitFor(() => expect(result.getPathname()).toBe('/progress'));
+  expect(h.events).toContain('openProgress');
 });

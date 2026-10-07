@@ -169,7 +169,7 @@ lockfile, dependency paths, and actual router source:
 
 | Package/version | Reachability and disposition |
 | --- | --- |
-| decode-uri-component 0.2.2 | Actual router runtime path: expo-router 57.0.24 → query-string 7.1.3 → decoder; getStateFromPath parses URL queries. Malformed-input CPU DoS remains a release blocker. |
+| decode-uri-component 0.2.2 | Installed/bundled dependency path: expo-router 57.0.24 → query-string 7.1.3 → decoder. Active Expo inbound parsing delegates to URLSearchParams; its queryString.parse block is commented out. The vendored React Navigation parser still calls queryString.parse, and Expo serializers import query-string. Active inbound exploitation has not been demonstrated; dependency remediation and reachability verification remain release gates. |
 | @grpc/grpc-js 1.9.16 | Dev web Firebase plus RNFirebase app's web fallback dependency; mobile uses native bridges, not a gRPC JS server. Do not classify as all-dev merely from declaration; web/server paths need separate remediation. |
 | braces 3.0.3 | Metro/Jest/chokidar tooling transitive path; hostile patterns can exhaust stack. Restrict development inputs; compatible dependency maintenance still outstanding. |
 | node-forge 1.4.0 | Expo CLI/code-signing tooling signature verification, not product analytics; build-tool trust remains relevant. |
@@ -177,6 +177,14 @@ lockfile, dependency paths, and actual router source:
 | basic-ftp 5.3.1 | Firebase tools proxy/get-uri path, developer-only listing-parser DoS. |
 | @opentelemetry/core 1.30.1 | Firebase tools/pubsub, developer-only baggage allocation. |
 | re2 1.24.1 | Developer tooling, native regex crash/memory advisories; no mobile source import. |
+
+Source inspection distinguishes dependency presence from execution: the active
+`expo-router/build/fork/getStateFromPath.js` delegates to `parseQueryParams` in
+`getStateFromPath-forks.js`, which uses the URL's `searchParams`. The vendored
+`build/react-navigation/core/getStateFromPath.js` retains `queryString.parse`;
+`build/fork/getPathFromState.js` and `getPathFromState-forks.js` import query-string.
+These installed paths justify retaining the release gate, but do not establish
+that a malformed inbound link reaches the vulnerable decoder in this app.
 
 The [decoder advisory](https://github.com/advisories/GHSA-vcc3-ghjq-m6fr)
 identifies 0.5.0 as patched. That release is ESM-only; installed query-string uses

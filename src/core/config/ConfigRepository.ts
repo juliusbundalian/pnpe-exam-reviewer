@@ -27,20 +27,22 @@ export class ConfigRepository {
     private readonly storage: KeyValueStore,
   ) {}
   async loadCached(): Promise<void> {
-    for (const key of keys) {
-      try {
-        const raw = await this.storage.get(`remote-config:${key}`);
-        // Envelope overhead is bounded independently, then the parameter is bounded again.
-        if (!raw || !isBoundedPayload(raw, 256 * 1024 + 1024)) continue;
-        const input: unknown = JSON.parse(raw);
-        const cached = envelope.safeParse(input);
-        if (!cached.success) continue;
-        if (!this.refreshedKeys.has(key))
-          this.update(key, parseParameter(key, JSON.stringify(cached.data.value)));
-      } catch {
-        /* Public defaults/last-known-good values survive unavailable storage. */
-      }
-    }
+    await Promise.all(
+      keys.map(async (key) => {
+        try {
+          const raw = await this.storage.get(`remote-config:${key}`);
+          // Envelope overhead is bounded independently, then the parameter is bounded again.
+          if (!raw || !isBoundedPayload(raw, 256 * 1024 + 1024)) return;
+          const input: unknown = JSON.parse(raw);
+          const cached = envelope.safeParse(input);
+          if (!cached.success) return;
+          if (!this.refreshedKeys.has(key))
+            this.update(key, parseParameter(key, JSON.stringify(cached.data.value)));
+        } catch {
+          /* Public defaults/last-known-good values survive unavailable storage. */
+        }
+      }),
+    );
   }
   async refresh(): Promise<void> {
     let parameters: Record<ConfigKey, string>;
@@ -49,24 +51,26 @@ export class ConfigRepository {
     } catch {
       return;
     }
-    for (const key of keys) {
-      let value: ConfigModels[typeof key];
-      try {
-        value = parseParameter(key, parameters[key]);
-      } catch {
-        continue;
-      }
-      this.refreshedKeys.add(key);
-      this.update(key, value);
-      try {
-        await this.storage.set(
-          `remote-config:${key}`,
-          JSON.stringify({ schemaVersion: 1, validatedAt: new Date().toISOString(), value }),
-        );
-      } catch {
-        /* Valid memory updates remain usable when persistence fails. */
-      }
-    }
+    await Promise.all(
+      keys.map(async (key) => {
+        let value: ConfigModels[typeof key];
+        try {
+          value = parseParameter(key, parameters[key]);
+        } catch {
+          return;
+        }
+        this.refreshedKeys.add(key);
+        this.update(key, value);
+        try {
+          await this.storage.set(
+            `remote-config:${key}`,
+            JSON.stringify({ schemaVersion: 1, validatedAt: new Date().toISOString(), value }),
+          );
+        } catch {
+          /* Valid memory updates remain usable when persistence fails. */
+        }
+      }),
+    );
   }
   get<K extends ConfigKey>(key: K): ConfigModels[K] {
     return this.values[key];

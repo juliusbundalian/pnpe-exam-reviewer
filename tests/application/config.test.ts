@@ -333,3 +333,69 @@ test('required scalar fields reject unsupported values while additive fields are
     ),
   ).toThrow(AppError);
 });
+
+test('a pending app-info cache read does not block independent cached data or config', async () => {
+  let release!: (raw: string | null) => void;
+  const blocked = new Promise<string | null>((resolve) => {
+    release = resolve;
+  });
+  const storage = new MemoryKeyValueStore();
+  const cache = (value: unknown) =>
+    JSON.stringify({ schemaVersion: 1, validatedAt: '2026-10-07T00:00:00Z', value });
+  storage.get = (key) =>
+    key === 'remote-config:app_info'
+      ? blocked
+      : Promise.resolve(
+          cache(
+            key === 'remote-config:data'
+              ? {
+                  ...defaults.data,
+                  studyTips: [{ id: 'cached', title: 'Cached tip', body: 'Read.' }],
+                }
+              : { ...defaults.config, reviewer: { shuffleQuestions: false } },
+          ),
+        );
+  const repo = new ConfigRepository(new StubRemoteConfigService(), storage);
+  const loading = repo.loadCached();
+  try {
+    for (let i = 0; i < 10; i++) await Promise.resolve();
+    expect(repo.get('data').studyTips[0]?.title).toBe('Cached tip');
+    expect(repo.get('config').reviewer.shuffleQuestions).toBe(false);
+  } finally {
+    release(null);
+    await loading;
+  }
+});
+
+test('pending app-info persistence cannot delay validated remote memory or other cache writes', async () => {
+  let release!: () => void;
+  const blocked = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+  const storage = new MemoryKeyValueStore();
+  storage.set = async (key, value) => {
+    if (key === 'remote-config:app_info') await blocked;
+    storage.values.set(key, value);
+  };
+  const remote = new StubRemoteConfigService();
+  remote.parameters.data = JSON.stringify({
+    ...defaults.data,
+    studyTips: [{ id: 'remote', title: 'Remote tip', body: 'Read.' }],
+  });
+  remote.parameters.config = JSON.stringify({
+    ...defaults.config,
+    reviewer: { shuffleQuestions: false },
+  });
+  const repo = new ConfigRepository(remote, storage);
+  const refreshing = repo.refresh();
+  try {
+    for (let i = 0; i < 10; i++) await Promise.resolve();
+    expect(repo.get('data').studyTips[0]?.title).toBe('Remote tip');
+    expect(repo.get('config').reviewer.shuffleQuestions).toBe(false);
+    expect(storage.values.has('remote-config:data')).toBe(true);
+    expect(storage.values.has('remote-config:config')).toBe(true);
+  } finally {
+    release();
+    await refreshing;
+  }
+});

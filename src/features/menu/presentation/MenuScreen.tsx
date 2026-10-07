@@ -11,7 +11,14 @@ export function MenuScreen({
   coordinator: AuthenticationCoordinator;
   onOpen(
     destination:
-      'profile' | 'bookmarks' | 'exam-history' | 'appearance' | 'about' | 'privacy' | 'terms',
+      | 'profile'
+      | 'progress'
+      | 'bookmarks'
+      | 'exam-history'
+      | 'appearance'
+      | 'about'
+      | 'privacy'
+      | 'terms',
     target?: View | null,
   ): void;
 }) {
@@ -19,11 +26,13 @@ export function MenuScreen({
   const bookmarks = useRef<View | null>(null);
   const history = useRef<View | null>(null);
   const profile = useRef<View | null>(null);
+  const progress = useRef<View | null>(null);
   return (
     <AppScreen>
       <AppText variant="title">Menu</AppText>
       {auth.status === 'guest' ? (
         <>
+          <AppText>Guest User</AppText>
           <AppButton
             variant="primary"
             label="Sign In"
@@ -43,6 +52,12 @@ export function MenuScreen({
             variant="text"
             label="Profile"
             onPress={() => onOpen('profile', profile.current)}
+          />
+          <AppButton
+            ref={progress}
+            variant="text"
+            label="Progress"
+            onPress={() => onOpen('progress', progress.current)}
           />
           <AppButton
             variant="text"

@@ -76,6 +76,9 @@ export function AppProviders({
   );
   const current = publicOrigin(path);
   if (current) origin.current = current;
+  const pendingAuthentication =
+    state.pendingIntent !== null &&
+    (state.auth.status === 'resolving' || state.auth.status === 'recoveryRequired');
   useEffect(
     () =>
       dependencies.bindNavigation({
@@ -110,11 +113,16 @@ export function AppProviders({
           },
         }}
       >
-        {state.recoveryMessage || registration.status === 'profileRecovery' ? (
+        {state.recoveryMessage ||
+        pendingAuthentication ||
+        registration.status === 'profileRecovery' ? (
           <RecoveryNotices>
-            {state.recoveryMessage ? (
+            {state.recoveryMessage || pendingAuthentication ? (
               <>
-                <AppText accessibilityRole="alert">{state.recoveryMessage}</AppText>
+                <AppText accessibilityRole="alert" accessibilityLiveRegion="polite">
+                  {state.recoveryMessage ??
+                    'Checking authentication. Public browsing remains available.'}
+                </AppText>
                 <AppButton
                   variant="text"
                   label="Retry authentication"
@@ -122,6 +130,15 @@ export function AppProviders({
                     void dependencies.coordinator.retry();
                   }}
                 />
+                {pendingAuthentication ? (
+                  <AppButton
+                    variant="secondary"
+                    label="Cancel request"
+                    onPress={() => {
+                      void dependencies.coordinator.cancel();
+                    }}
+                  />
+                ) : null}
               </>
             ) : null}
             {registration.status === 'profileRecovery' ? (

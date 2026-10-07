@@ -14,6 +14,7 @@ import {
 
 export function HomeScreen({
   displayName,
+  notice,
   onExplore,
   onMockExam,
   onStartMockExam = onMockExam,
@@ -22,7 +23,8 @@ export function HomeScreen({
   onBookmarks,
   model = initialHomePresentationModel,
 }: {
-  displayName?: string;
+  displayName?: string | undefined;
+  notice?: string | null;
   onExplore: () => void;
   onMockExam: () => void;
   onStartMockExam?: (target: View | null) => void;
@@ -38,6 +40,7 @@ export function HomeScreen({
   return (
     <AppScreen>
       <AppText variant="heading">PNPE Exam Reviewer</AppText>
+      {notice ? <AppText accessibilityRole="alert">{notice}</AppText> : null}
       <View style={{ gap: spacing.md, marginTop: spacing.md }}>
         <AppText variant="caption" tone="accent">
           {displayName?.trim() ? `Welcome, ${displayName.trim()}` : 'Your preparation starts here'}

@@ -4,7 +4,7 @@ import { useAppDependencies, useAppNavigation, useAuthentication } from '../boot
 import { SignInScreen } from '../features/auth/presentation/SignInScreen';
 import { RegistrationScreen } from '../features/auth/presentation/RegistrationScreen';
 import { ForgotPasswordScreen } from '../features/auth/presentation/ForgotPasswordScreen';
-import { AppText } from '../core/components/AppText';
+import { AuthenticationRecoveryScreen } from './AuthenticationRecoveryScreen';
 import { originDestination } from './destinations';
 export function AuthRoute({ screen }: { screen: 'signIn' | 'registration' | 'passwordReset' }) {
   const { auth, coordinator, registration } = useAppDependencies();
@@ -36,7 +36,13 @@ export function AuthRoute({ screen }: { screen: 'signIn' | 'registration' | 'pas
     void coordinator.cancel();
   };
   if (state.auth.status !== 'guest')
-    return <AppText>Authentication is being checked. Public browsing remains available.</AppText>;
+    return (
+      <AuthenticationRecoveryScreen
+        onLeave={() => {
+          participatedInFlow.current = true;
+        }}
+      />
+    );
   if (screen === 'registration')
     return (
       <RegistrationScreen
