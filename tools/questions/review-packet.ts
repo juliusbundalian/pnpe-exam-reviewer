@@ -87,9 +87,15 @@ export function buildReviewPacket(
         ? (overlay.proposed as Record<string, unknown>)
         : {};
     const original = originals[index]!.original;
-    const open = [...issues, ...(overlay.review?.issues ?? [])].filter(
-      (issue) => !overlay.review?.resolutions?.some((resolution) => resolution.code === issue.code),
-    );
+    const open = [...issues, ...(overlay.review?.issues ?? [])].filter((issue) => {
+      const reviewed = overlay.review?.issues?.some(
+        (item) => canonicalJson(item) === canonicalJson(issue),
+      );
+      const resolved = overlay.review?.resolutions?.some(
+        (resolution) => resolution.code === issue.code,
+      );
+      return !reviewed || !resolved;
+    });
     return [
       `## ${escape(overlay.sourceKey)}`,
       `Status: ${escape(overlay.status)}`,

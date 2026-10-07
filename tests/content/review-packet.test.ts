@@ -153,6 +153,25 @@ test('rows follow authoritative candidate order regardless of overlay order', ()
   expect(changed.manifest.rows[0]?.reviewDigest).not.toBe(first.manifest.rows[0]?.reviewDigest);
 });
 
+test('authoritative issues remain open until the exact issue is reviewed and resolved', () => {
+  const issue = { code: 'source', blocking: true, message: 'new source problem' };
+  const source = { ...candidate, issues: [issue] };
+  const resolution = { code: issue.code, rationale: 'checked', evidence: ['proof'] };
+  const openSection = (review: EditorialOverlay['review']) => {
+    const packet = buildReviewPacket('fixture', [source], [{ ...overlay, review }]);
+    return packet.markdown.split('Open issues:\n')[1]!.split('\n\nSchema diagnostics:')[0]!;
+  };
+  expect(openSection({ resolutions: [resolution] })).toContain(issue.message);
+  expect(
+    openSection({
+      issues: [{ ...issue, message: 'older source problem' }],
+      resolutions: [resolution],
+    }),
+  ).toContain(issue.message);
+  expect(openSection({ issues: [issue] })).toContain(issue.message);
+  expect(openSection({ issues: [issue], resolutions: [resolution] })).not.toContain(issue.message);
+});
+
 test('invalid drafts remain visible, unsupported blocks blocked, delimiters escaped', () => {
   const draft = build({
     ...overlay,
