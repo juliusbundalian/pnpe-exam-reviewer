@@ -1,1 +1,1772 @@
-[]
+[
+  {
+    "id": "q-000001",
+    "version": 1,
+    "categoryId": "criticalThinking",
+    "subcategoryId": "wordAnalogy",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "PILOT is to AIRPLANE as DRIVER is to ______?",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Road",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Car",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Engine",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Passenger",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-2",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "VERBAL REASONING",
+        "originalNumber": "1",
+        "pages": {
+          "start": 1,
+          "end": 1
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "B. Car",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=1",
+        "links": ["https://supertutor.ph/resources/tools/napolcom-pnpe-readiness-test/"],
+        "imageLocations": [],
+        "corrections": []
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "A pilot operates an airplane, just as a driver operates a car. Road is a route, engine is a component, and passenger is a person transported; none preserves the operator-to-vehicle relation.",
+        "marks": []
+      }
+    ]
+  },
+  {
+    "id": "q-000002",
+    "version": 1,
+    "categoryId": "communicationSkills",
+    "subcategoryId": "vocabulary",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "Choose the word closest in meaning to DILIGENT.",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Lazy",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Hardworking",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Careless",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Slow",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-2",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "VERBAL REASONING",
+        "originalNumber": "2",
+        "pages": {
+          "start": 1,
+          "end": 1
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "B. Hardworking",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=1",
+        "links": ["https://supertutor.ph/resources/tools/napolcom-pnpe-readiness-test/"],
+        "imageLocations": [],
+        "corrections": []
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "Diligent describes careful, persistent effort. Hardworking is the closest alternative. Lazy and careless contradict that effort; slow describes speed rather than dedication.",
+        "marks": []
+      }
+    ]
+  },
+  {
+    "id": "q-000003",
+    "version": 1,
+    "categoryId": "communicationSkills",
+    "subcategoryId": "grammar",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "Which sentence follows subject–verb agreement in formal written English?",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Each of the officers were present.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Each of the officers was present.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Neither of them are here.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "The list of names are posted.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-2",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "VERBAL REASONING",
+        "originalNumber": "3",
+        "pages": {
+          "start": 1,
+          "end": 1
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "B. Each of the officers was present.",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=1",
+        "links": ["https://supertutor.ph/resources/tools/napolcom-pnpe-readiness-test/"],
+        "imageLocations": [],
+        "corrections": [
+          {
+            "reason": "In formal written English, each is singular and takes was. The plural noun officers inside the of-phrase does not control agreement. Neither is also singular in this formal convention, and list takes is. Conversational plural agreement with neither is excluded by the revised stem.",
+            "evidenceLocator": "docs/verification/editorial-content.md#q3"
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "In formal written English, each is singular and takes was. The plural noun officers inside the of-phrase does not control agreement. Neither is also singular in this formal convention, and list takes is. Conversational plural agreement with neither is excluded by the revised stem.",
+        "marks": []
+      }
+    ]
+  },
+  {
+    "id": "q-000004",
+    "version": 1,
+    "categoryId": "communicationSkills",
+    "subcategoryId": "vocabulary",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "Choose the word most OPPOSITE in meaning to ABUNDANT.",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Plentiful",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Scarce",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Large",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Rich",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-2",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "VERBAL REASONING",
+        "originalNumber": "4",
+        "pages": {
+          "start": 1,
+          "end": 2
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "B. Scarce",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=1",
+        "links": ["https://supertutor.ph/resources/tools/napolcom-pnpe-readiness-test/"],
+        "imageLocations": [],
+        "corrections": []
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "Abundant means plentiful; scarce means insufficient or in short supply. Plentiful is a synonym, while large and rich do not express the required opposite.",
+        "marks": []
+      }
+    ]
+  },
+  {
+    "id": "q-000005",
+    "version": 1,
+    "categoryId": "communicationSkills",
+    "subcategoryId": "vocabulary",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "Despite the heavy traffic, the officer stayed calm and self-controlled. He remained ______ and finished his patrol on time.",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Agitated",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Composed",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Confused",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Reckless",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-2",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "VERBAL REASONING",
+        "originalNumber": "5",
+        "pages": {
+          "start": 2,
+          "end": 2
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "B. Composed",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=2",
+        "links": [],
+        "imageLocations": [],
+        "corrections": [
+          {
+            "reason": "Composed means calm and self-controlled. The explicit calmness cue selects it over agitated, confused, and reckless. Completing a patrol on time alone would not establish an emotional state, so the cue was added.",
+            "evidenceLocator": "docs/verification/editorial-content.md#q5"
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "Composed means calm and self-controlled. The explicit calmness cue selects it over agitated, confused, and reckless. Completing a patrol on time alone would not establish an emotional state, so the cue was added.",
+        "marks": []
+      }
+    ]
+  },
+  {
+    "id": "q-000006",
+    "version": 1,
+    "categoryId": "quantitativeReasoning",
+    "subcategoryId": "basicConcepts",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "A station solved 45 out of 60 cases. What percentage was\nsolved?",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "65%",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "70%",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "75%",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "80%",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-3",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "QUANTITATIVE REASONING",
+        "originalNumber": "6",
+        "pages": {
+          "start": 2,
+          "end": 2
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "C. 75%",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=2",
+        "links": [],
+        "imageLocations": [],
+        "corrections": []
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "The solved fraction is 45/60 = 3/4 = 0.75. Multiplying by 100 gives 75%. The other percentages do not equal the stated fraction.",
+        "marks": []
+      }
+    ]
+  },
+  {
+    "id": "q-000007",
+    "version": 1,
+    "categoryId": "quantitativeReasoning",
+    "subcategoryId": "problemSolving",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "A ₱200,000 budget is split among patrol, admin, and training in\nthe ratio 5:3:2. How much goes to training?",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "₱20,000",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "₱40,000",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "₱60,000",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "₱100,000",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-2",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "QUANTITATIVE REASONING",
+        "originalNumber": "7",
+        "pages": {
+          "start": 2,
+          "end": 2
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "B. ₱40,000",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=2",
+        "links": [],
+        "imageLocations": [],
+        "corrections": []
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "The allocation has 5 + 3 + 2 = 10 equal parts. Each part is ₱200,000/10 = ₱20,000; training receives two parts, or ₱40,000. ₱60,000 and ₱100,000 are the admin and patrol shares; ₱20,000 is only one part.",
+        "marks": []
+      }
+    ]
+  },
+  {
+    "id": "q-000008",
+    "version": 1,
+    "categoryId": "criticalThinking",
+    "subcategoryId": "patternAnalysis",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "Each number is twice the preceding number. What number comes next?\n5, 10, 20, 40, ______",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "60",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "70",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "80",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "100",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-3",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "QUANTITATIVE REASONING",
+        "originalNumber": "8",
+        "pages": {
+          "start": 2,
+          "end": 3
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "C. 80",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=2",
+        "links": [],
+        "imageLocations": [],
+        "corrections": [
+          {
+            "reason": "Under the stated constant doubling rule, 5 × 2 = 10, 10 × 2 = 20, and 20 × 2 = 40. The next term is 40 × 2 = 80. The other choices break the stated rule; a finite list alone could admit other invented rules.",
+            "evidenceLocator": "docs/verification/editorial-content.md#q8"
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "Under the stated constant doubling rule, 5 × 2 = 10, 10 × 2 = 20, and 20 × 2 = 40. The next term is 40 × 2 = 80. The other choices break the stated rule; a finite list alone could admit other invented rules.",
+        "marks": []
+      }
+    ]
+  },
+  {
+    "id": "q-000009",
+    "version": 1,
+    "categoryId": "quantitativeReasoning",
+    "subcategoryId": "problemSolving",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "If a team processes 40 reports in 2 hours, how many reports can\nit process in 5 hours at the same rate?",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "80",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "90",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "100",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "120",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-3",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "QUANTITATIVE REASONING",
+        "originalNumber": "9",
+        "pages": {
+          "start": 3,
+          "end": 3
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "C. 100",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=3",
+        "links": [],
+        "imageLocations": [],
+        "corrections": []
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "The constant rate is 40/2 = 20 reports per hour. In 5 hours it yields 20 × 5 = 100 reports. The other totals require different rates.",
+        "marks": []
+      }
+    ]
+  },
+  {
+    "id": "q-000010",
+    "version": 1,
+    "categoryId": "quantitativeReasoning",
+    "subcategoryId": "problemSolving",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "A father is 3 times as old as his son. In 10 years, he will be\ntwice as old. How old is the son now?",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "8",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "10",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "12",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "15",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-2",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "QUANTITATIVE REASONING",
+        "originalNumber": "10",
+        "pages": {
+          "start": 3,
+          "end": 3
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "B. 10 years old",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=3",
+        "links": [],
+        "imageLocations": [],
+        "corrections": []
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "Let the current ages be s and f. Then f = 3s and f + 10 = 2(s + 10). Substitution gives 3s + 10 = 2s + 20, so s = 10. Check: the father is now 30; in ten years their ages are 40 and 20. No other choice satisfies both equations.",
+        "marks": []
+      }
+    ]
+  },
+  {
+    "id": "q-000011",
+    "version": 1,
+    "categoryId": "criticalThinking",
+    "subcategoryId": "deduction",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "All police officers are trained. Rico is a police officer. Which\nstatement must be true?",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Rico is a criminal.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Rico is trained.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "All trained people are officers.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Rico is not trained.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-2",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "LOGICAL REASONING",
+        "originalNumber": "11",
+        "pages": {
+          "start": 3,
+          "end": 4
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "B. Rico is trained.",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=3",
+        "links": [],
+        "imageLocations": [],
+        "corrections": []
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "The premise puts every police officer in the trained group. Since Rico is a police officer, he is trained. Criminal status is unspecified; reversing the implication to all trained people being officers is invalid; not trained contradicts the premises.",
+        "marks": []
+      }
+    ]
+  },
+  {
+    "id": "q-000012",
+    "version": 1,
+    "categoryId": "criticalThinking",
+    "subcategoryId": "patternAnalysis",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "Advance two alphabet positions each time. Complete the series:\nA, C, E, G, ______",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "H",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "I",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "J",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "K",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-2",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "LOGICAL REASONING",
+        "originalNumber": "12",
+        "pages": {
+          "start": 4,
+          "end": 4
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "B. I",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=4",
+        "links": [],
+        "imageLocations": [],
+        "corrections": [
+          {
+            "reason": "The stated rule advances two alphabet positions each time: A(1), C(3), E(5), G(7), I(9). H, J, and K do not continue that rule. Without an explicit rule, arbitrary finite-sequence continuations are possible.",
+            "evidenceLocator": "docs/verification/editorial-content.md#q12"
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "The stated rule advances two alphabet positions each time: A(1), C(3), E(5), G(7), I(9). H, J, and K do not continue that rule. Without an explicit rule, arbitrary finite-sequence continuations are possible.",
+        "marks": []
+      }
+    ]
+  },
+  {
+    "id": "q-000013",
+    "version": 1,
+    "categoryId": "criticalThinking",
+    "subcategoryId": "logicalReasoning",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "Which unit does NOT measure length?",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Kilometer",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Meter",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Kilogram",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Centimeter",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-3",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "LOGICAL REASONING",
+        "originalNumber": "13",
+        "pages": {
+          "start": 4,
+          "end": 4
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "C. Kilogram",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=4",
+        "links": [],
+        "imageLocations": [],
+        "corrections": [
+          {
+            "reason": "Kilometer, meter, and centimeter are units of length. Kilogram is a unit of mass, making it the sole alternative outside the specified length class. This groups by the physical quantity measured, rather than by spelling or prefixes.",
+            "evidenceLocator": "docs/verification/editorial-content.md#q13"
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "Kilometer, meter, and centimeter are units of length. Kilogram is a unit of mass, making it the sole alternative outside the specified length class. This groups by the physical quantity measured, rather than by spelling or prefixes.",
+        "marks": []
+      }
+    ]
+  },
+  {
+    "id": "q-000014",
+    "version": 1,
+    "categoryId": "criticalThinking",
+    "subcategoryId": "deduction",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "If it rains, the patrol is cancelled. The patrol was NOT\ncancelled. Therefore:",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "It rained.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "It did not rain.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "The patrol was delayed.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Nothing can be concluded.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-2",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "LOGICAL REASONING",
+        "originalNumber": "14",
+        "pages": {
+          "start": 4,
+          "end": 4
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "B. It did not rain.",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=4",
+        "links": [],
+        "imageLocations": [],
+        "corrections": []
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "Let R mean rain and C mean cancellation. The premises are R → C and not C. Modus tollens yields not R. Rain would require cancellation, contrary to the premise; delay is not stated, and a definite conclusion follows.",
+        "marks": []
+      }
+    ]
+  },
+  {
+    "id": "q-000015",
+    "version": 1,
+    "categoryId": "criticalThinking",
+    "subcategoryId": "patternAnalysis",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "The differences between consecutive terms increase by one each time. What number comes next?\n2, 3, 5, 8, 12, ______",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "15",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "16",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "17",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "18",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-3",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "LOGICAL REASONING",
+        "originalNumber": "15",
+        "pages": {
+          "start": 4,
+          "end": 5
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "C. 17",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=4",
+        "links": [],
+        "imageLocations": [],
+        "corrections": [
+          {
+            "reason": "The consecutive differences are 1, 2, 3, and 4. With the specified rule that each difference increases by one, the next difference is 5 and the next term is 12 + 5 = 17. The other choices require a different next difference. Arbitrary alternative sequence rules are excluded by the stem.",
+            "evidenceLocator": "docs/verification/editorial-content.md#q15"
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "The consecutive differences are 1, 2, 3, and 4. With the specified rule that each difference increases by one, the next difference is 5 and the next term is 12 + 5 = 17. The other choices require a different next difference. Arbitrary alternative sequence rules are excluded by the stem.",
+        "marks": []
+      }
+    ]
+  },
+  {
+    "id": "q-000016",
+    "version": 1,
+    "categoryId": "criticalThinking",
+    "subcategoryId": "logicalReasoning",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "A patrol car heads north, turns left by 90 degrees, then turns left by 90 degrees again. Which direction is it now heading?",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "North",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "East",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "South",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "West",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-3",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "LOGICAL REASONING",
+        "originalNumber": "16",
+        "pages": {
+          "start": 5,
+          "end": 5
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "C. South",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=5",
+        "links": [],
+        "imageLocations": [],
+        "corrections": [
+          {
+            "reason": "Treating each left turn as a quarter-turn, the headings are north → west → south. Two left turns rotate the heading by 180 degrees; north, east, and west therefore do not fit.",
+            "evidenceLocator": "docs/verification/editorial-content.md#q16"
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "Treating each left turn as a quarter-turn, the headings are north → west → south. Two left turns rotate the heading by 180 degrees; north, east, and west therefore do not fit.",
+        "marks": []
+      }
+    ]
+  },
+  {
+    "id": "q-000017",
+    "version": 1,
+    "categoryId": "generalInformation",
+    "subcategoryId": "criminalJusticeSystem",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "What does \"PNP\" stand for?",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Philippine National Patrol",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Philippine National Police",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Public National Police",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Philippine Police Network",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-2",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "GENERAL INFORMATION",
+        "originalNumber": "17",
+        "pages": {
+          "start": 5,
+          "end": 5
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "B. Philippine National Police",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=5",
+        "links": [],
+        "imageLocations": [],
+        "corrections": []
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "PNP is the abbreviation for Philippine National Police, the police organization established by Republic Act No. 6975. The other expansions do not name that statutory organization.",
+        "marks": []
+      }
+    ]
+  },
+  {
+    "id": "q-000018",
+    "version": 1,
+    "categoryId": "generalInformation",
+    "subcategoryId": "constitutionAndLaws",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "Under Article VI, Section 1 of the 1987 Constitution, which branch of government exercises the legislative power vested in Congress?",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Executive",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Legislative",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Judicial",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Executive and Judicial",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-2",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "GENERAL INFORMATION",
+        "originalNumber": "18",
+        "pages": {
+          "start": 5,
+          "end": 5
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "B. Legislative",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=5",
+        "links": [],
+        "imageLocations": [],
+        "corrections": [
+          {
+            "reason": "Article VI, Section 1 of the 1987 Constitution assigns legislative power to Congress, composed of the Senate and House of Representatives, subject to the reservation for initiative and referendum. This identifies the Legislative branch. The Executive and Judicial branches have different constitutional powers.",
+            "evidenceLocator": "docs/verification/editorial-content.md#q18"
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "Article VI, Section 1 of the 1987 Constitution assigns legislative power to Congress, composed of the Senate and House of Representatives, subject to the reservation for initiative and referendum. This identifies the Legislative branch. The Executive and Judicial branches have different constitutional powers.",
+        "marks": []
+      }
+    ]
+  },
+  {
+    "id": "q-000019",
+    "version": 1,
+    "categoryId": "generalInformation",
+    "subcategoryId": "constitutionAndLaws",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "Under Republic Act No. 6975, the Philippine National Police was established within which reorganized department?",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Department of National Defense (DND)",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Department of the Interior and Local Government (DILG)",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Department of Justice (DOJ)",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Department of Finance (DOF)",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-2",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "GENERAL INFORMATION",
+        "originalNumber": "19",
+        "pages": {
+          "start": 5,
+          "end": 6
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "B. Department of the Interior and Local Government (DILG)",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=5",
+        "links": [],
+        "imageLocations": [],
+        "corrections": [
+          {
+            "reason": "Republic Act No. 6975, Sections 4 and 6, places the PNP within the reorganized Department of the Interior and Local Government. This departmental placement is distinct from NAPOLCOM administrative control and operational supervision under Section 14 as amended by Republic Act No. 8551, Section 5. The Constitution, Article XVI, Section 6, assigns administration and control of the national police force to a national police commission.",
+            "evidenceLocator": "docs/verification/editorial-content.md#q19"
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "Republic Act No. 6975, Sections 4 and 6, places the PNP within the reorganized Department of the Interior and Local Government. This departmental placement is distinct from NAPOLCOM administrative control and operational supervision under Section 14 as amended by Republic Act No. 8551, Section 5. The Constitution, Article XVI, Section 6, assigns administration and control of the national police force to a national police commission.",
+        "marks": []
+      }
+    ]
+  },
+  {
+    "id": "q-000020",
+    "version": 1,
+    "categoryId": "generalInformation",
+    "subcategoryId": "constitutionAndLaws",
+    "prompt": [
+      {
+        "kind": "text",
+        "text": "Under the ordinary statutory appointment qualifications, excluding age waivers, what is the minimum age for a new PNP applicant for the rank of Patrolman/Patrolwoman (formerly PO1)?",
+        "marks": []
+      }
+    ],
+    "choices": [
+      {
+        "id": "choice-1",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "18 years old",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-2",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "20 years old",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-3",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "21 years old",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "id": "choice-4",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "25 years old",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "correctChoiceId": "choice-3",
+    "choiceOrderPolicy": "fixed",
+    "sources": [
+      {
+        "sourceId": "short",
+        "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+        "section": "GENERAL INFORMATION",
+        "originalNumber": "20",
+        "pages": {
+          "start": 6,
+          "end": 6
+        },
+        "originalChoiceLabels": ["A", "B", "C", "D"],
+        "originalAnswer": "C. 21 years old",
+        "evidenceLocator": "evidence/reference-extraction/short/document.json#page=6",
+        "links": [],
+        "imageLocations": [],
+        "corrections": [
+          {
+            "reason": "The ordinary statutory minimum for a new PNP applicant is 21 years, with an ordinary maximum of 30, under Section 30(j) of Republic Act No. 6975 as amended by Republic Acts Nos. 8551 and 9708. This stem excludes age waivers: Republic Act No. 8551, Section 15, allows specified initial-appointment waivers with a lower age boundary of 20. Republic Act No. 11200 uses Patrolman/Patrolwoman in place of the former PO1 terminology. Appointment qualifications are distinct from eligibility to sit a NAPOLCOM entrance examination.",
+            "evidenceLocator": "docs/verification/editorial-content.md#q20"
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-10-07T07:36:04.776Z",
+    "updatedAt": "2026-10-07T07:36:04.776Z",
+    "status": "active",
+    "isCurrentEvent": false,
+    "explanation": [
+      {
+        "kind": "text",
+        "text": "The ordinary statutory minimum for a new PNP applicant is 21 years, with an ordinary maximum of 30, under Section 30(j) of Republic Act No. 6975 as amended by Republic Acts Nos. 8551 and 9708. This stem excludes age waivers: Republic Act No. 8551, Section 15, allows specified initial-appointment waivers with a lower age boundary of 20. Republic Act No. 11200 uses Patrolman/Patrolwoman in place of the former PO1 terminology. Appointment qualifications are distinct from eligibility to sit a NAPOLCOM entrance examination.",
+        "marks": []
+      }
+    ]
+  }
+]

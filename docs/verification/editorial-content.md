@@ -211,3 +211,25 @@ under the controller's ruling so repository lint treats it as research evidence.
 Both paths' content SHA-256 was
 `11f4feabfea8b86f5d0e28cd811378376f8db3b49ae186b22dfca44c27a4b7a9`.
 Replay requires copying it back to a `.cjs` path; no evidence bytes were changed.
+
+
+## Owner approval and exact publication (Task 4)
+
+The owner replied exactly “approved” to the presented short-initial Q1–Q20 packet approval request, approving all twenty exact revisions with no excluded subset. Editorial approval was observed/recorded at `2026-10-07T09:16:03Z`. The owner then replied “Do project owner and continue”, confirming reviewer label `Project owner`, observed/recorded at `2026-10-07T09:26:02Z`. Every stamp uses the original approval observation time and this explicit label.
+
+Immediately before stamping, the preserved manifest/overlays/Markdown were read and the packet was rebuilt from authoritative candidates. The complete manifest, packet digest, Markdown and all twenty current overlay revisions matched. Only overlay status and approval changed; proposed content, taxonomy, explanation, question timestamps, rationale, evidence and review metadata are unchanged. The original reviewed packet remains immutable. Each content/review digest remains bound to its exact revision; acceptance tests reject post-approval changes to either.
+
+The full publication was reconstructed from all current overlays through `combineBySourceKey`, `publicationSet` and `approvedPublication` with the identity registry and authoritative source registry. No approved row was blocked, inactive or expired; all twenty are eligible. `data/questions.json` contains the exact full reconstructed set in its authoritative order. No import or external write was performed.
+
+| Category | Eligible | Default requirement | Shortage |
+| --- | ---: | ---: | ---: |
+| General Information | 4 | 35 | 31 |
+| Communication Skills | 4 | 40 | 36 |
+| Quantitative Reasoning | 4 | 25 | 21 |
+| Critical Thinking | 8 | 50 | 42 |
+
+All 687 occurrences remain accounted for across 178 pages: short 20 approved eligible; comprehensive 477 unavailable; notes 190 unavailable. The 667 unavailable occurrences remain unmapped. Approved blocked/expired counts are zero. All fifteen subcategories: constitutionAndLaws 3, pnpHistory 0, criminalJusticeSystem 1, currentEvents 0, publicServiceConduct 0, vocabulary 3, readingComprehension 0, grammar 1, basicConcepts 1, problemSolving 3, dataInterpretation 0, logicalReasoning 2, patternAnalysis 3, deduction 2, wordAnalogy 1. There are no per-subcategory quotas; the default 150-question exam remains short by 130.
+
+Acceptance RED recorded two expected failures before stamping (needsReview status and absent approval). GREEN: question validation reports 20 eligible; reference tests 9/9; focused publication/import/source-workflow tests 79/79; tools and mobile typecheck pass; whitespace check passes. Public redistribution rights and the decoder advisory remain separate release gates.
+
+These are actual observation/recording times; message timestamp metadata was not exposed. Earlier pre-approval status and coverage sections are preserved as checkpoint history; this publication section records the current approved state.

@@ -92,18 +92,24 @@
       "docs/verification/editorial-content.md#q1",
       "src/features/content/domain/taxonomy.ts"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "bfa23e3902dbac06219a4dcd18db66f8e034e2fdf33005c26580ad9575b17457",
+      "reviewDigest": "8b014355501a149c98b9d349208db024f810bb93c59e8e5c4dcce9d42bc7dabe"
+    },
     "review": {
       "issues": [
         {
           "code": "taxonomy-review",
-          "message": "Section alone does not establish an approved requested subcategory",
-          "blocking": true
+          "blocking": true,
+          "message": "Section alone does not establish an approved requested subcategory"
         },
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": [
@@ -211,18 +217,24 @@
       "docs/verification/editorial-content.md#q2",
       "src/features/content/domain/taxonomy.ts"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "fc99011b4d50fe2fe871772e79ecc6ccb93bdafe8ee33ddff2183c9025b81bb5",
+      "reviewDigest": "46c001bae5bef7e443166b59ed20377ab2a54317d1f74ad1ea32afeba32f62df"
+    },
     "review": {
       "issues": [
         {
           "code": "taxonomy-review",
-          "message": "Section alone does not establish an approved requested subcategory",
-          "blocking": true
+          "blocking": true,
+          "message": "Section alone does not establish an approved requested subcategory"
         },
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": [
@@ -335,18 +347,24 @@
       "docs/verification/editorial-content.md#q3",
       "src/features/content/domain/taxonomy.ts"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "8eca042fe2dafe40bea4f824a5f0f8af6c56c9a51b992d5edee2e69dd95ca6e4",
+      "reviewDigest": "1825464e87a2e4c71cec15834d31fa7a91e6e6562af75715137da017644c7773"
+    },
     "review": {
       "issues": [
         {
           "code": "taxonomy-review",
-          "message": "Section alone does not establish an approved requested subcategory",
-          "blocking": true
+          "blocking": true,
+          "message": "Section alone does not establish an approved requested subcategory"
         },
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": [
@@ -454,18 +472,24 @@
       "docs/verification/editorial-content.md#q4",
       "src/features/content/domain/taxonomy.ts"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "15c4f13f4cce8f0df83f497bf383e0f7759e5b6ff7954bae3da3bbe5babf19af",
+      "reviewDigest": "777fd3cd23f6d6f3fc95a01dc004bb0533cf842001f4d692edfd1576ebee82f3"
+    },
     "review": {
       "issues": [
         {
           "code": "taxonomy-review",
-          "message": "Section alone does not establish an approved requested subcategory",
-          "blocking": true
+          "blocking": true,
+          "message": "Section alone does not establish an approved requested subcategory"
         },
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": [
@@ -578,18 +602,24 @@
       "docs/verification/editorial-content.md#q5",
       "src/features/content/domain/taxonomy.ts"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "f7113bda106a4304779c978b5c98f80206c0bda32f152288de59bf32031b0713",
+      "reviewDigest": "f9433864d459742cc030cc8c914d3bcbee5924017237940a7f6c6a20771858b0"
+    },
     "review": {
       "issues": [
         {
           "code": "taxonomy-review",
-          "message": "Section alone does not establish an approved requested subcategory",
-          "blocking": true
+          "blocking": true,
+          "message": "Section alone does not establish an approved requested subcategory"
         },
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": [
@@ -697,18 +727,24 @@
       "docs/verification/editorial-content.md#q6",
       "src/features/content/domain/taxonomy.ts"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "fc8dbec79cb3b23415e77aed2275f2a1d2ca8d7538bf91cdbf94fa22950f07d5",
+      "reviewDigest": "9929604aec78c649ae82db6ca05bfc6b526489401738016028475e3fb7338f2c"
+    },
     "review": {
       "issues": [
         {
           "code": "taxonomy-review",
-          "message": "Section alone does not establish an approved requested subcategory",
-          "blocking": true
+          "blocking": true,
+          "message": "Section alone does not establish an approved requested subcategory"
         },
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": [
@@ -816,18 +852,24 @@
       "docs/verification/editorial-content.md#q7",
       "src/features/content/domain/taxonomy.ts"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "3e7d5895b915af87c494f9c1e18fb24cb1fe4f60d63f4acd7c503cedb5a33471",
+      "reviewDigest": "19fdb71b59a6592c50d514cc0fd1305153187360a512adfcef891e77ccf2eab6"
+    },
     "review": {
       "issues": [
         {
           "code": "taxonomy-review",
-          "message": "Section alone does not establish an approved requested subcategory",
-          "blocking": true
+          "blocking": true,
+          "message": "Section alone does not establish an approved requested subcategory"
         },
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": [
@@ -940,18 +982,24 @@
       "docs/verification/editorial-content.md#q8",
       "src/features/content/domain/taxonomy.ts"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "991e883573a4b33d524c35c9d3992ae486ca8e76cdaf8af7148ab0c1a471e459",
+      "reviewDigest": "20dcfc81a480b2f2b7bb5bacf9114082d4585a596a3b4d156a0fe2ac93697e9a"
+    },
     "review": {
       "issues": [
         {
           "code": "taxonomy-review",
-          "message": "Section alone does not establish an approved requested subcategory",
-          "blocking": true
+          "blocking": true,
+          "message": "Section alone does not establish an approved requested subcategory"
         },
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": [
@@ -1059,18 +1107,24 @@
       "docs/verification/editorial-content.md#q9",
       "src/features/content/domain/taxonomy.ts"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "20c943d8c78229e934b730f20048f770241ea4be1247487c040010da4c21103a",
+      "reviewDigest": "c83a8338db49a1e1ffc39bcd865f97786d644b599222ffcf7bdc14b9d5792e19"
+    },
     "review": {
       "issues": [
         {
           "code": "taxonomy-review",
-          "message": "Section alone does not establish an approved requested subcategory",
-          "blocking": true
+          "blocking": true,
+          "message": "Section alone does not establish an approved requested subcategory"
         },
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": [
@@ -1178,18 +1232,24 @@
       "docs/verification/editorial-content.md#q10",
       "src/features/content/domain/taxonomy.ts"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "3972ae1556b4b37d88a46808cc37786fc2b41c193f00ef39e2077c4e3123dddf",
+      "reviewDigest": "33b6b40bad4f2f741f94f71e586253332d6b41cfbacae26e9bb135cd8b5a5c64"
+    },
     "review": {
       "issues": [
         {
           "code": "taxonomy-review",
-          "message": "Section alone does not establish an approved requested subcategory",
-          "blocking": true
+          "blocking": true,
+          "message": "Section alone does not establish an approved requested subcategory"
         },
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": [
@@ -1297,13 +1357,19 @@
       "docs/verification/editorial-content.md#q11",
       "src/features/content/domain/taxonomy.ts"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "a95dc4f945fd51ca63bc466e110c41bd6bbbda666163a51dee50ddcba69d27b4",
+      "reviewDigest": "eecf0dad4426d386531d99e55383bc1ca06c4459e6d4cc840e1b35fea8116768"
+    },
     "review": {
       "issues": [
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": []
@@ -1407,13 +1473,19 @@
       "docs/verification/editorial-content.md#q12",
       "src/features/content/domain/taxonomy.ts"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "13401fc49010ea358a783dd9dbf1a28b0ab0404b57830fc24185b4a73ed68b8f",
+      "reviewDigest": "eecf0dad4426d386531d99e55383bc1ca06c4459e6d4cc840e1b35fea8116768"
+    },
     "review": {
       "issues": [
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": []
@@ -1517,13 +1589,19 @@
       "docs/verification/editorial-content.md#q13",
       "src/features/content/domain/taxonomy.ts"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "3d5713a0ba2fccf1bb9c95be16117e9a48e30e4d591daafd67e61f010bad642c",
+      "reviewDigest": "eecf0dad4426d386531d99e55383bc1ca06c4459e6d4cc840e1b35fea8116768"
+    },
     "review": {
       "issues": [
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": []
@@ -1622,13 +1700,19 @@
       "docs/verification/editorial-content.md#q14",
       "src/features/content/domain/taxonomy.ts"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "f0d34ad5757de454999f309561350bb13c22b88fe786689232940216c3fe0fbe",
+      "reviewDigest": "eecf0dad4426d386531d99e55383bc1ca06c4459e6d4cc840e1b35fea8116768"
+    },
     "review": {
       "issues": [
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": []
@@ -1732,13 +1816,19 @@
       "docs/verification/editorial-content.md#q15",
       "src/features/content/domain/taxonomy.ts"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "f056ddaa23861d6f0db853b6724f8b8a7c52836732f8e1c5fbf7584b9abdcf1c",
+      "reviewDigest": "eecf0dad4426d386531d99e55383bc1ca06c4459e6d4cc840e1b35fea8116768"
+    },
     "review": {
       "issues": [
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": []
@@ -1842,13 +1932,19 @@
       "docs/verification/editorial-content.md#q16",
       "src/features/content/domain/taxonomy.ts"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "ef5751a203a852a5df5e2e1cfc3e5547b9ecc49f0c540b05d55a9f06ee742af2",
+      "reviewDigest": "eecf0dad4426d386531d99e55383bc1ca06c4459e6d4cc840e1b35fea8116768"
+    },
     "review": {
       "issues": [
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": []
@@ -1949,18 +2045,29 @@
       "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/21922",
       "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "56cd209c5b07181ccf07866c6236bc5fd74808570e25a7ebbfaf38e8cd7d5f0e",
+      "reviewDigest": "96075e7fcea8f037e7bb76661fd548cd4e09a8168be51e956f538a02706fdd47"
+    },
     "review": {
+      "factualVerification": {
+        "sourceUrl": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/21922",
+        "verifiedAt": "2026-10-07T07:34:25Z",
+        "rationale": "PNP is the abbreviation for Philippine National Police, the police organization established by Republic Act No. 6975. The other expansions do not name that statutory organization."
+      },
       "issues": [
         {
           "code": "taxonomy-review",
-          "message": "Section alone does not establish an approved requested subcategory",
-          "blocking": true
+          "blocking": true,
+          "message": "Section alone does not establish an approved requested subcategory"
         },
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": [
@@ -1974,12 +2081,7 @@
             "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html"
           ]
         }
-      ],
-      "factualVerification": {
-        "sourceUrl": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/21922",
-        "verifiedAt": "2026-10-07T07:34:25Z",
-        "rationale": "PNP is the abbreviation for Philippine National Police, the police organization established by Republic Act No. 6975. The other expansions do not name that statutory organization."
-      }
+      ]
     }
   },
   {
@@ -2082,18 +2184,29 @@
       "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/3/353",
       "https://lawphil.net/consti/cons1987.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "a94d55153a0ee65d626235a22d93eade609660adfe184cf85508a7082ea31e1b",
+      "reviewDigest": "562a30d874df459a06515a7194957c200f32e03c9a8df16a96181bea8de1138f"
+    },
     "review": {
+      "factualVerification": {
+        "sourceUrl": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/3/353",
+        "verifiedAt": "2026-10-07T07:34:25Z",
+        "rationale": "Article VI, Section 1 of the 1987 Constitution assigns legislative power to Congress, composed of the Senate and House of Representatives, subject to the reservation for initiative and referendum. This identifies the Legislative branch. The Executive and Judicial branches have different constitutional powers."
+      },
       "issues": [
         {
           "code": "taxonomy-review",
-          "message": "Section alone does not establish an approved requested subcategory",
-          "blocking": true
+          "blocking": true,
+          "message": "Section alone does not establish an approved requested subcategory"
         },
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": [
@@ -2107,12 +2220,7 @@
             "https://lawphil.net/consti/cons1987.html"
           ]
         }
-      ],
-      "factualVerification": {
-        "sourceUrl": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/3/353",
-        "verifiedAt": "2026-10-07T07:34:25Z",
-        "rationale": "Article VI, Section 1 of the 1987 Constitution assigns legislative power to Congress, composed of the Senate and House of Representatives, subject to the reservation for initiative and referendum. This identifies the Legislative branch. The Executive and Judicial branches have different constitutional powers."
-      }
+      ]
     }
   },
   {
@@ -2217,23 +2325,34 @@
       "https://lawphil.net/statutes/repacts/ra1998/ra_8551_1998.html",
       "https://lawphil.net/consti/cons1987.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "0595e15c9239112d8c7c6e3e7b5fb27bee0026b5e6207d35fbad37c4e435c67c",
+      "reviewDigest": "f2dd055b627f4bece15d0ea306607c1ee257fc4c0442548d5d21b514aad266e4"
+    },
     "review": {
+      "factualVerification": {
+        "sourceUrl": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/21922",
+        "verifiedAt": "2026-10-07T07:34:25Z",
+        "rationale": "Republic Act No. 6975, Sections 4 and 6, places the PNP within the reorganized Department of the Interior and Local Government. This departmental placement is distinct from NAPOLCOM administrative control and operational supervision under Section 14 as amended by Republic Act No. 8551, Section 5. The Constitution, Article XVI, Section 6, assigns administration and control of the national police force to a national police commission."
+      },
       "issues": [
         {
           "code": "audited-source-defect",
-          "message": "PNP terminology/control/appointment claim needs editorial legal verification",
-          "blocking": true
+          "blocking": true,
+          "message": "PNP terminology/control/appointment claim needs editorial legal verification"
         },
         {
           "code": "taxonomy-review",
-          "message": "Section alone does not establish an approved requested subcategory",
-          "blocking": true
+          "blocking": true,
+          "message": "Section alone does not establish an approved requested subcategory"
         },
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": [
@@ -2261,12 +2380,7 @@
             "https://lawphil.net/consti/cons1987.html"
           ]
         }
-      ],
-      "factualVerification": {
-        "sourceUrl": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/21922",
-        "verifiedAt": "2026-10-07T07:34:25Z",
-        "rationale": "Republic Act No. 6975, Sections 4 and 6, places the PNP within the reorganized Department of the Interior and Local Government. This departmental placement is distinct from NAPOLCOM administrative control and operational supervision under Section 14 as amended by Republic Act No. 8551, Section 5. The Constitution, Article XVI, Section 6, assigns administration and control of the national police force to a national police commission."
-      }
+      ]
     }
   },
   {
@@ -2373,23 +2487,34 @@
       "https://mail.napolcom.gov.ph/pid/index.html",
       "https://lawphil.net/statutes/repacts/ra2021/ra_11549_2021.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-07T09:16:03Z",
+      "digest": "d7341f76cab3903f3986f0b6cb7a0d92ceabb3bcb9f83be549c0f2da88f8d710",
+      "reviewDigest": "d53b42a6d7adb56c2a539cc123907c27c9c44589d0b9dcd51e2d6ca4824011d9"
+    },
     "review": {
+      "factualVerification": {
+        "sourceUrl": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/4042",
+        "verifiedAt": "2026-10-07T07:37:26Z",
+        "rationale": "The ordinary statutory minimum for a new PNP applicant is 21 years, with an ordinary maximum of 30, under Section 30(j) of Republic Act No. 6975 as amended by Republic Acts Nos. 8551 and 9708. This stem excludes age waivers: Republic Act No. 8551, Section 15, allows specified initial-appointment waivers with a lower age boundary of 20. Republic Act No. 11200 uses Patrolman/Patrolwoman in place of the former PO1 terminology. Appointment qualifications are distinct from eligibility to sit a NAPOLCOM entrance examination."
+      },
       "issues": [
         {
           "code": "audited-source-defect",
-          "message": "PNP terminology/control/appointment claim needs editorial legal verification",
-          "blocking": true
+          "blocking": true,
+          "message": "PNP terminology/control/appointment claim needs editorial legal verification"
         },
         {
           "code": "taxonomy-review",
-          "message": "Section alone does not establish an approved requested subcategory",
-          "blocking": true
+          "blocking": true,
+          "message": "Section alone does not establish an approved requested subcategory"
         },
         {
           "code": "editorial-review",
-          "message": "Source assertion is not editorial approval",
-          "blocking": false
+          "blocking": false,
+          "message": "Source assertion is not editorial approval"
         }
       ],
       "resolutions": [
@@ -2421,12 +2546,7 @@
             "https://lawphil.net/statutes/repacts/ra2021/ra_11549_2021.html"
           ]
         }
-      ],
-      "factualVerification": {
-        "sourceUrl": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/4042",
-        "verifiedAt": "2026-10-07T07:37:26Z",
-        "rationale": "The ordinary statutory minimum for a new PNP applicant is 21 years, with an ordinary maximum of 30, under Section 30(j) of Republic Act No. 6975 as amended by Republic Acts Nos. 8551 and 9708. This stem excludes age waivers: Republic Act No. 8551, Section 15, allows specified initial-appointment waivers with a lower age boundary of 20. Republic Act No. 11200 uses Patrolman/Patrolwoman in place of the former PO1 terminology. Appointment qualifications are distinct from eligibility to sit a NAPOLCOM entrance examination."
-      }
+      ]
     }
   }
 ]
