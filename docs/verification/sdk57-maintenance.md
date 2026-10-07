@@ -74,3 +74,47 @@ semantics, RNFirebase/native compatibility, and both platform builds. Alternativ
 request an upstream SDK 57 backport. The pre-release next tag and audit suggestion
 are not compatibility approval. Keep the release gate pending that work and
 actual app reachability verification.
+
+## Controller native verification and independent review
+
+The independent task review of bc54521..caaa66a approved specification compliance
+and quality with no findings. The completed whole-foundation review was not repeated.
+
+Updated-tree Auth/Firestore integration passes 63 tests across two suites against
+the actual local demo services. Android configured prebuild, build and install
+exit 0: Gradle 1m16s, 566 tasks (285 executed, 267 cached, 14 up to date). iOS
+configured prebuild/CocoaPods, build and install exit 0 on Xcode 27.0/iOS 18.5
+iPhone 16 Pro: zero errors and three script warnings. Upstream Android Kotlin
+and Gradle deprecation warnings remain in the full build log. Generated native
+projects and owner configuration files remain ignored.
+
+Both updated binaries load their platform-specific Metro environments (Android
+10.0.2.2:8081, iOS 127.0.0.1:8082) and show public Home. Both platforms visibly
+open `pnpe://review/generalInformation?source=patch%20check` as the General
+Information overview. This benign routing smoke check does not establish
+execution of the vulnerable decoder. Android native logs show initialization
+of the named pnpe-emulator app. Generated iOS settings retain static frameworks,
+all five RNFB force-static entries and the disableSPM Podfile transform. No
+native SDK versions or collection settings changed.
+
+The first Android debug startup displayed authentication recovery. Its logs also
+show an invalid persisted demo refresh token after the local Auth service was
+restarted without the previous in-memory accounts. Those observations do not
+prove that the token caused the startup notice. A second controlled cold launch
+against the correct Android Metro environment shows Home without that notice.
+No account/session data was deleted to obtain this result. Native sign-in and
+profile interactions were not repeated in this dependency slice; the earlier
+controlled acceptance remains historical evidence, not a fresh auth claim.
+
+Computer Use returned `Computer Use was not approved to use Device Hub`.
+Consequently no new touch, keyboard, settings or screen-reader acceptance is
+claimed. CLI lifecycle, native screenshots and build logs provide the scoped
+launch/routing evidence above. Evidence is preserved under
+`evidence/mobile-foundation/sdk57-maintenance/`. Both devices and the local
+Auth/Firestore and Metro services remain available; no production writes,
+publication, merge, push or scratch cleanup occurred.
+
+The failing compatibility checks and required updated native builds from the
+handoff are now resolved. The maintenance slice is verified and independently
+reviewed. The decoder/audit release gate remains open; this is not a release-ready
+verdict or a claim that Reviewer, Mock Exam or offline/personal engines exist.

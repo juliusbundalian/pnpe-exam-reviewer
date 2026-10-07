@@ -459,8 +459,14 @@ compatibility checks fail. No merge, push, deployment or scratch cleanup occurre
 
 ## Release gates
 
-Resolve failing Expo compatibility checks, branch integration and
-runtime dependency blockers. TalkBack and VoiceOver verification are deferred from the current scope
+The October 7 [SDK 57 maintenance continuation](sdk57-maintenance.md) restores
+online Expo compatibility and Doctor 21/21, and verifies updated Android/iOS
+prebuilds, builds, installs and public launch/category deep links. The scoped
+dependency review is approved. Earlier chronological compatibility failures
+above are superseded by that evidence. New native auth/touch acceptance was not
+claimed; prior controlled foundation acceptance is preserved.
+
+Resolve branch integration and runtime dependency blockers. TalkBack and VoiceOver verification are deferred from the current scope
 by the user; revisit them when that scope is resumed. Supply real privacy/terms/support content, account deletion and data
 retention processes, legal rights to all redistributed source content, editorial
 approval, and reviewed Firebase rules/environment deployment. Account deletion is
