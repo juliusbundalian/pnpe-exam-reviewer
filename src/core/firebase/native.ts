@@ -56,7 +56,9 @@ async function initialize(environment: FirebaseEnvironment): Promise<NativeServi
           {
             projectId: 'demo-pnpe',
             appId: `1:1234567890:${Platform.OS === 'ios' ? 'ios' : 'android'}:0123456789abcdef`,
-            apiKey: 'demo-pnpe-emulator-only',
+            // Synthetic demo metadata, not a credential: iOS Installations requires
+            // 39 URL-safe characters starting with A even for emulator-only services.
+            apiKey: 'A-demo-pnpe-emulator-only-0000000000000',
             messagingSenderId: '1234567890',
             // RNFirebase requires Database/Storage metadata for native app creation.
             // These services are unused; the URL and bucket identify only the demo project.

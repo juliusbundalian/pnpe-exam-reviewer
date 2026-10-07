@@ -7,6 +7,7 @@ import { noOpAnalytics } from '../../src/core/analytics/AnalyticsService';
 import { NativeAppProviders } from '../../src/bootstrap/AppProviders';
 import { PublicBootstrapProvider } from '../../src/bootstrap/PublicBootstrapProvider';
 import { MemoryKeyValueStore } from '../fixtures/config';
+import { Platform } from 'react-native';
 async function renderPublicHome(storage = new MemoryKeyValueStore()) {
   const result = renderRouter(
     {
@@ -172,52 +173,70 @@ test('emulator services use the isolated SDK app and explicit local ports, never
   });
 });
 
-test('emulator options pass the installed native SDK validation before creating isolated services', async () => {
-  const createNativeApp = jest.fn(async () => {});
-  jest.doMock('@react-native-firebase/app/dist/module/internal/registry/nativeModule', () => ({
-    getAppModule: () => ({ initializeApp: createNativeApp }),
-  }));
-  jest.doMock('@react-native-firebase/app', () => {
-    const registry = jest.requireActual<{
-      initializeApp: typeof import('@react-native-firebase/app').initializeApp;
-    }>('@react-native-firebase/app/dist/module/internal/registry/app');
-    return {
-      initializeApp: registry.initializeApp,
-      getApp: () => {
-        throw new Error('Emulator services must never use the default app');
-      },
-    };
-  });
-  jest.doMock('@react-native-firebase/auth', () => ({
-    getAuth: (app: unknown) => ({ app }),
-    connectAuthEmulator: jest.fn(),
-  }));
-  jest.doMock('@react-native-firebase/firestore', () => ({
-    getFirestore: (app: unknown) => ({ app }),
-    connectFirestoreEmulator: jest.fn(),
-  }));
-  await jest.isolateModulesAsync(async () => {
-    const native = await import('../../src/core/firebase/native');
-    const services = await native.initializeNativeFirebase({
-      mode: 'emulator',
-      projectId: 'demo-pnpe',
-      emulatorHost: '10.0.2.2',
+test.each(['ios', 'android'] as const)(
+  'emulator options pass installed JS validation and %s native metadata contract before creating isolated services',
+  async (platform) => {
+    const os = jest.replaceProperty(Platform, 'OS', platform);
+    const createNativeApp = jest.fn(async (options: { apiKey: string; appId: string }) => {
+      if (platform === 'ios') {
+        // Native pods cannot execute in Jest. Mirror the installed FIRInstallations.m
+        // validateAPIKey contract at the bridge; retain the real RNFirebase JS validator.
+        if (!/^A[A-Za-z0-9_-]{38}$/.test(options.apiKey))
+          throw new Error('I-FIS008000: API key must be 39 URL-safe characters starting with A');
+        // FIRApp.m accepts v1 numeric-project:ios:hex64 IDs without checking the bundle hash.
+        if (!/^1:[0-9]+:ios:[a-fA-F0-9]{1,16}$/.test(options.appId))
+          throw new Error('Invalid iOS v1 app ID metadata');
+      }
     });
-    expect(services).toMatchObject({
-      available: true,
-      auth: { app: { name: 'pnpe-emulator', options: { projectId: 'demo-pnpe' } } },
-      firestore: { app: { name: 'pnpe-emulator', options: { projectId: 'demo-pnpe' } } },
-      remoteConfigMode: 'emulator-defaults-not-live',
+    jest.doMock('@react-native-firebase/app/dist/module/internal/registry/nativeModule', () => ({
+      getAppModule: () => ({ initializeApp: createNativeApp }),
+    }));
+    jest.doMock('@react-native-firebase/app', () => {
+      const registry = jest.requireActual<{
+        initializeApp: typeof import('@react-native-firebase/app').initializeApp;
+      }>('@react-native-firebase/app/dist/module/internal/registry/app');
+      return {
+        initializeApp: registry.initializeApp,
+        getApp: () => {
+          throw new Error('Emulator services must never use the default app');
+        },
+      };
     });
-    expect(createNativeApp).toHaveBeenCalledWith(
-      expect.objectContaining({
-        databaseURL: 'http://10.0.2.2:9000?ns=demo-pnpe',
-        storageBucket: 'demo-pnpe.appspot.com',
-      }),
-      { name: 'pnpe-emulator', automaticDataCollectionEnabled: false },
-    );
-  });
-});
+    jest.doMock('@react-native-firebase/auth', () => ({
+      getAuth: (app: unknown) => ({ app }),
+      connectAuthEmulator: jest.fn(),
+    }));
+    jest.doMock('@react-native-firebase/firestore', () => ({
+      getFirestore: (app: unknown) => ({ app }),
+      connectFirestoreEmulator: jest.fn(),
+    }));
+    try {
+      await jest.isolateModulesAsync(async () => {
+        const native = await import('../../src/core/firebase/native');
+        const services = await native.initializeNativeFirebase({
+          mode: 'emulator',
+          projectId: 'demo-pnpe',
+          emulatorHost: '10.0.2.2',
+        });
+        expect(services).toMatchObject({
+          available: true,
+          auth: { app: { name: 'pnpe-emulator', options: { projectId: 'demo-pnpe' } } },
+          firestore: { app: { name: 'pnpe-emulator', options: { projectId: 'demo-pnpe' } } },
+          remoteConfigMode: 'emulator-defaults-not-live',
+        });
+        expect(createNativeApp).toHaveBeenCalledWith(
+          expect.objectContaining({
+            databaseURL: 'http://10.0.2.2:9000?ns=demo-pnpe',
+            storageBucket: 'demo-pnpe.appspot.com',
+          }),
+          { name: 'pnpe-emulator', automaticDataCollectionEnabled: false },
+        );
+      });
+    } finally {
+      os.restore();
+    }
+  },
+);
 
 test('live Remote Config applies defaults and timeout and returns raw strings for repository validation', async () => {
   const app = { name: '[DEFAULT]', options: { projectId: 'owner-project' } };
