@@ -3,6 +3,8 @@ import type { CatalogEntry, CatalogSnapshot, QuestionRef } from './catalog';
 import type { Question } from './question';
 
 export interface ContentRepository {
+  /** Explicit recovery choice; never contacts the remote or accepts partial catalogs. */
+  cachedCatalog(owner: OwnerContext): Promise<CatalogSnapshot>;
   catalog(owner: OwnerContext): Promise<CatalogSnapshot>;
   question(owner: OwnerContext, entry: CatalogEntry): Promise<Question>;
 }

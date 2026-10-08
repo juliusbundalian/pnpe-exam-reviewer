@@ -151,6 +151,17 @@ export class SqliteContentCache implements ContentCache {
         if (fingerprint !== previous.fingerprint) throw new StudyError('conflict');
         return;
       }
+      if (question.stimulus) {
+        for (const row of await tx.all('SELECT * FROM question_revisions')) {
+          const cached = await this.readQuestion(row);
+          if (
+            cached.stimulus?.id === question.stimulus.id &&
+            cached.stimulus.version === question.stimulus.version &&
+            canonicalJson(cached.stimulus.blocks) !== canonicalJson(question.stimulus.blocks)
+          )
+            throw new StudyError('conflict');
+        }
+      }
       await tx.run(
         'INSERT INTO question_revisions (question_id, version, entry_json, payload_json, fingerprint) VALUES (?, ?, ?, ?, ?)',
         [

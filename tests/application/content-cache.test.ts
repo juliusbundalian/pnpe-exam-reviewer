@@ -128,3 +128,21 @@ test('a republished immutable generation accepts newer head revision and validat
   await cache.saveCatalog({ ...snapshot(), revision: 2, validatedAt: 100 });
   expect(await cache.catalog()).toMatchObject({ revision: 4, validatedAt: 300 });
 });
+test('shared stimulus identity rejects different blocks across question revisions atomically', async () => {
+  await cache.saveQuestion(studyEntry(), studyQuestion());
+  const second = studyQuestion({
+    id: 'second',
+    stimulus: {
+      id: 'fixture-passage',
+      version: 1,
+      blocks: [{ kind: 'text', text: 'Conflicting passage.', marks: [] }],
+    },
+  });
+  await expect(cache.saveQuestion(studyEntry({ id: 'second' }), second)).rejects.toMatchObject({
+    code: 'conflict',
+  });
+  expect(await cache.question({ id: 'second', version: 1 })).toBeNull();
+  expect(await cache.question(studyEntry())).toEqual(studyQuestion());
+  await cache.saveQuestion(studyEntry({ id: 'second' }), studyQuestion({ id: 'second' }));
+  expect(await cache.question({ id: 'second', version: 1 })).not.toBeNull();
+});
