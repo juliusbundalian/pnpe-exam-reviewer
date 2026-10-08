@@ -2,18 +2,18 @@ import { FirebaseImportStore } from '../../tools/questions/firebase-import-store
 import { applyImport, planImport } from '../../tools/questions/import-plan';
 import { testQuestion } from '../fixtures/content/question';
 import type { ImportStore } from '../../tools/questions/import-store';
+import { integrationEnvironment } from '../fixtures/integrationEnvironment';
 
-const host = process.env.FIRESTORE_EMULATOR_HOST;
-if (!host || !/^(127\.0\.0\.1|localhost):\d+$/.test(host))
-  throw new Error('Run test:emulator with localhost Firestore; no silent skip');
+const target = integrationEnvironment(process.env);
+const host = `${target.firestoreHost}:${target.firestorePort}`;
 const store = new FirebaseImportStore({
-  projectId: 'demo-pnpe',
+  projectId: target.projectId,
   mode: 'emulator',
   emulatorHost: host,
 });
 beforeEach(async () => {
   const response = await fetch(
-    `http://${host}/emulator/v1/projects/demo-pnpe/databases/(default)/documents`,
+    `http://${host}/emulator/v1/projects/${target.projectId}/databases/(default)/documents`,
     { method: 'DELETE' },
   );
   if (!response.ok) throw new Error('Emulator reset failed');
@@ -84,7 +84,7 @@ test('immutable shards compare existing metadata without overwriting it', async 
   expect(await store.readShard(manifest.generation, shard.id)).toEqual(entries);
 });
 test('deny-all rules reject unauthenticated client reads and writes', async () => {
-  const url = `http://${host}/v1/projects/demo-pnpe/databases/(default)/documents/questions/client`;
+  const url = `http://${host}/v1/projects/${target.projectId}/databases/(default)/documents/questions/client`;
   expect((await fetch(url)).status).toBe(403);
   expect(
     (
