@@ -7,9 +7,14 @@ engine. All questions remain staged until exact human approvals exist.
 The owner confirmed that delivery covers the full usable reference corpus,
 not just the minimum needed for one Mock Exam. There are 687 extracted source
 occurrences: 20 short MCQs, 477 comprehensive entries and 190 answer-only notes.
-The first 20 are approved and published; all 667 remaining occurrences still
-require editorial disposition. Process every occurrence and publish every sound,
-approved logical question, continuing after the 150-question exam quotas are met.
+All 687 occurrences now have an editorial disposition: 20 approved and published,
+509 proposals awaiting exact owner review, 145 drafts and 13 rejected duplicates.
+The [final review index](verification/editorial-full-corpus/README.md) links the
+immutable section packets and consolidated exact owner manifest. The next action
+is owner review of the 509 enumerated revisions, naming the exact manifest digest
+or an explicit subset and a reviewer label before any approval or publication.
+Publish every sound, approved logical question, continuing after the
+150-question exam quotas are met.
 Retain duplicate lineage and visibly blocked material; do not invent missing
 alternatives or assume occurrences equal unique publishable questions.
 

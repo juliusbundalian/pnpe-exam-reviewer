@@ -2,14 +2,14 @@
 
 All165 authoritative occurrences accounted for. Proposals confer no approval. Source keys, IDs and original evidence are preserved. Mathematical answers were independently derived; ordering criteria are explicitly authored and not claimed as original. Unsupported taxonomy is left null on drafts.
 
-| Section | Status counts |
-| --- | --- |
-| I | {"draft":43,"needsReview":32} |
-| IX | {"needsReview":22} |
-| XI | {"needsReview":15} |
-| XIII | {"needsReview":13,"draft":2} |
-| XIV | {"needsReview":23,"draft":4,"rejected":1} |
-| XV | {"draft":9,"needsReview":1} |
+| Section | Status counts                             |
+| ------- | ----------------------------------------- |
+| I       | {"draft":43,"needsReview":32}             |
+| IX      | {"needsReview":22}                        |
+| XI      | {"needsReview":15}                        |
+| XIII    | {"needsReview":13,"draft":2}              |
+| XIV     | {"needsReview":23,"draft":4,"rejected":1} |
+| XV      | {"draft":9,"needsReview":1}               |
 
 Verification times are actual session read completion timestamps; secondary search leads were not treated as verification. Current I19 expiry is an editorial90day reverification policy. Retained sourcePDF render pages106,109,151 support notation repairs; source pages were never modified.
 
@@ -847,7 +847,7 @@ Proposed answer: choice-5. Taxonomy: criticalThinking / deduction.
 
 ## xiii-15
 
-Status: needsReview. A is the natural implication of a female speaker saying she uses/likes the soap: the product is not exclusive to men. B contradicts that use; C/D/E add claims absent from the commercial. Corrected batch to bath; the commercial is a hypothetical passage. Authored repair: Corrected batch soap to bath soap in the prompt and source-derived alternative.
+Status: needsReview. Option A is the natural implication of a female speaker saying she likes the soap: the product is not exclusive to men. Option B conflicts with that commercial implication; options C, D and E add claims absent from the commercial. Corrected batch to bath; the commercial is a hypothetical passage. Authored repair: Corrected batch soap to bath soap in the prompt and source-derived alternative.
 
 Proposed answer: choice-1. Taxonomy: criticalThinking / deduction.
 
@@ -877,7 +877,7 @@ Proposed answer: choice-4. Taxonomy: criticalThinking / logicalReasoning.
 
 ## xiv-5
 
-Status: needsReview. Compare durations: day1, week7days, month28–31days, year365/366days, century100years. Strict increasing order BECAD is choiceC; source D is incorrect. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.
+Status: needsReview. Compare durations: day: 1 day; week: 7 days; month: 28–31 days; year: 365/366 days; century: 100 years. Strict increasing order BECAD is choice C; source D is incorrect. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.
 
 Proposed answer: choice-3. Taxonomy: criticalThinking / logicalReasoning.
 
@@ -976,7 +976,7 @@ Additional primary reference: https://www.vatican.va/archive/cod-iuris-canonici/
 
 ## xiv-21
 
-Status: needsReview. Hallmark’s named list maps paper1, cotton2, leather3, fruit/flowers4, wood5. Sorting those anniversary numbers gives DABEC (E), uniquely. Source D is incompatible. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.
+Status: needsReview. Hallmark’s named list maps paper: 1; cotton: 2; leather: 3; fruit/flowers: 4; wood: 5. Sorting those anniversary numbers gives DABEC (E), uniquely. Source D is incompatible. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.
 
 Proposed answer: choice-5. Taxonomy: criticalThinking / logicalReasoning.
 
@@ -984,7 +984,7 @@ Primary source: https://ideas.hallmark.com/articles/anniversary-ideas/anniversar
 
 ## xiv-22
 
-Status: needsReview. The independently read Hallmark list maps steel11, silk/linen12, lace13, gold jewelry14, crystal15. Replacing the source’s ivory theme with Hallmark’s gold-jewelry theme, ascending years produce CADBE (D), uniquely. Source C is incorrect under this explicitly named convention. Authored repair: Named the independently verified Hallmark gift convention, replaced outdated ivory with its gold-jewelry14th theme, and corrected C toD by sorting years.
+Status: needsReview. The independently read Hallmark list maps steel: 11; silk/linen: 12; lace: 13; gold jewelry: 14; crystal: 15. Replacing the source’s ivory theme with Hallmark’s gold-jewelry theme, ascending years produce CADBE (D), uniquely. Source C is incorrect under this explicitly named convention. Authored repair: Named the independently verified Hallmark gift convention, replaced outdated ivory with its gold-jewelry14th theme, and corrected C toD by sorting years.
 
 Proposed answer: choice-4. Taxonomy: criticalThinking / logicalReasoning.
 
@@ -992,7 +992,7 @@ Primary source: https://ideas.hallmark.com/articles/anniversary-ideas/anniversar
 
 ## xiv-23
 
-Status: needsReview. For X>0, multiplying 1/4<1/2<3/4<1<5/4 byX preserves strict inequalities. ABCDE alone is ascending. For negativeX order reverses and X0 ties, hence the editorial positive-domain constraint is necessary. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.
+Status: needsReview. For X > 0, multiplying 1/4 < 1/2 < 3/4 < 1 < 5/4 by X preserves strict inequalities. ABCDE alone is ascending. For negative X the order reverses, and X = 0 produces ties, hence the editorial positive-domain constraint is necessary. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.
 
 Proposed answer: choice-1. Taxonomy: criticalThinking / logicalReasoning.
 
@@ -1021,7 +1021,7 @@ Additional primary reference: https://www.vatican.va/archive/cod-iuris-canonici/
 
 ## xiv-27
 
-Status: needsReview. Within one Philippine calendar year the dates are New Year Jan1, Valentine Feb14, Labor DayMay1, AllSaintsNov1, ChristmasDec25; sorting yields CDBEA, only B. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.
+Status: needsReview. Within one Philippine calendar year the dates are New Year: Jan 1; Valentine: Feb 14; Labor Day: May 1; All Saints: Nov 1; Christmas: Dec 25; sorting yields CDBEA, option B only. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.
 
 Proposed answer: choice-2. Taxonomy: criticalThinking / logicalReasoning.
 
@@ -1063,7 +1063,7 @@ Proposed answer: unresolved. Taxonomy: criticalThinking / patternAnalysis.
 
 ## xv-6
 
-Status: needsReview. Reconstructed fractions from the printed literal TeX on page151. For anyX,Y, A3(3+3XY)/9=1+XY; B6(6+6XY)/36=1+XY; C10(10+10XY)/100=1+XY; E8(8+8XY)/64=1+XY. D5(15+5XY)/25=3+XY, differing by2 for allX,Y. D is uniquely not algebraically equivalent. Authored repair: Removed the source’s malformed duplicated inline/TeX strings and reconstructed the displayed fractional expressions as unambiguous text; checked identity symbolically for all variables.
+Status: needsReview. Reconstructed fractions from the printed literal TeX on page 151. For any X and Y, option A: 3(3+3XY)/9 = 1+XY; option B: 6(6+6XY)/36 = 1+XY; option C: 10(10+10XY)/100 = 1+XY; option E: 8(8+8XY)/64 = 1+XY. Option D: 5(15+5XY)/25 = 3+XY, differing by 2 for all X and Y. Option D is uniquely not algebraically equivalent. Authored repair: Removed the source’s malformed duplicated inline/TeX strings and reconstructed the displayed fractional expressions as unambiguous text; checked identity symbolically for all variables.
 
 Proposed answer: choice-4. Taxonomy: criticalThinking / patternAnalysis.
 

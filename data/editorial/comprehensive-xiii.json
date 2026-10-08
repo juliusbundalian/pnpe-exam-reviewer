@@ -1997,18 +1997,18 @@
         }
       ],
       "createdAt": "2026-10-07T16:19:18.273Z",
-      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-08T01:34:49.479Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "A is the natural implication of a female speaker saying she uses/likes the soap: the product is not exclusive to men. B contradicts that use; C/D/E add claims absent from the commercial. Corrected batch to bath; the commercial is a hypothetical passage.",
+          "text": "Option A is the natural implication of a female speaker saying she likes the soap: the product is not exclusive to men. Option B conflicts with that commercial implication; options C, D and E add claims absent from the commercial. Corrected batch to bath; the commercial is a hypothetical passage.",
           "marks": []
         }
       ]
     },
-    "rationale": "A is the natural implication of a female speaker saying she uses/likes the soap: the product is not exclusive to men. B contradicts that use; C/D/E add claims absent from the commercial. Corrected batch to bath; the commercial is a hypothetical passage. Authored repair: Corrected batch soap to bath soap in the prompt and source-derived alternative.",
+    "rationale": "Option A is the natural implication of a female speaker saying she likes the soap: the product is not exclusive to men. Option B conflicts with that commercial implication; options C, D and E add claims absent from the commercial. Corrected batch to bath; the commercial is a hypothetical passage. Authored repair: Corrected batch soap to bath soap in the prompt and source-derived alternative.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=140",
       "docs/verification/editorial-full-corpus-task2.md#xiii-15"

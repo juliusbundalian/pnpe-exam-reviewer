@@ -646,18 +646,18 @@
         }
       ],
       "createdAt": "2026-10-07T16:19:18.273Z",
-      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-08T01:34:49.479Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Reconstructed fractions from the printed literal TeX on page151. For anyX,Y, A3(3+3XY)/9=1+XY; B6(6+6XY)/36=1+XY; C10(10+10XY)/100=1+XY; E8(8+8XY)/64=1+XY. D5(15+5XY)/25=3+XY, differing by2 for allX,Y. D is uniquely not algebraically equivalent.",
+          "text": "Reconstructed fractions from the printed literal TeX on page 151. For any X and Y, option A: 3(3+3XY)/9 = 1+XY; option B: 6(6+6XY)/36 = 1+XY; option C: 10(10+10XY)/100 = 1+XY; option E: 8(8+8XY)/64 = 1+XY. Option D: 5(15+5XY)/25 = 3+XY, differing by 2 for all X and Y. Option D is uniquely not algebraically equivalent.",
           "marks": []
         }
       ]
     },
-    "rationale": "Reconstructed fractions from the printed literal TeX on page151. For anyX,Y, A3(3+3XY)/9=1+XY; B6(6+6XY)/36=1+XY; C10(10+10XY)/100=1+XY; E8(8+8XY)/64=1+XY. D5(15+5XY)/25=3+XY, differing by2 for allX,Y. D is uniquely not algebraically equivalent. Authored repair: Removed the source’s malformed duplicated inline/TeX strings and reconstructed the displayed fractional expressions as unambiguous text; checked identity symbolically for all variables.",
+    "rationale": "Reconstructed fractions from the printed literal TeX on page 151. For any X and Y, option A: 3(3+3XY)/9 = 1+XY; option B: 6(6+6XY)/36 = 1+XY; option C: 10(10+10XY)/100 = 1+XY; option E: 8(8+8XY)/64 = 1+XY. Option D: 5(15+5XY)/25 = 3+XY, differing by 2 for all X and Y. Option D is uniquely not algebraically equivalent. Authored repair: Removed the source’s malformed duplicated inline/TeX strings and reconstructed the displayed fractional expressions as unambiguous text; checked identity symbolically for all variables.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=151",
       "docs/verification/editorial-full-corpus-task2.md#xv-6",
@@ -680,7 +680,7 @@
       "resolutions": [
         {
           "code": "audited-source-defect",
-          "rationale": "Reconstructed fractions from the printed literal TeX on page151. For anyX,Y, A3(3+3XY)/9=1+XY; B6(6+6XY)/36=1+XY; C10(10+10XY)/100=1+XY; E8(8+8XY)/64=1+XY. D5(15+5XY)/25=3+XY, differing by2 for allX,Y. D is uniquely not algebraically equivalent.",
+          "rationale": "Reconstructed fractions from the printed literal TeX on page 151. For any X and Y, option A: 3(3+3XY)/9 = 1+XY; option B: 6(6+6XY)/36 = 1+XY; option C: 10(10+10XY)/100 = 1+XY; option E: 8(8+8XY)/64 = 1+XY. Option D: 5(15+5XY)/25 = 3+XY, differing by 2 for all X and Y. Option D is uniquely not algebraically equivalent.",
           "evidence": [
             "evidence/reference-extraction/comprehensive/document.json#page=151",
             "docs/verification/editorial-full-corpus-task2.md#xv-6",

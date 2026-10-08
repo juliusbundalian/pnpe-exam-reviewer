@@ -3,6 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { QuestionSchema } from '../../src/features/content/domain/question';
 import { canonicalJson } from '../../tools/questions/editorial';
+import { coverageReport } from '../../tools/questions/coverage';
 import { buildReviewPacket } from '../../tools/questions/review-packet';
 import {
   loadCandidates,
@@ -32,6 +33,18 @@ test('full-corpus review manifest reconciles every occurrence and binds exact cu
     const packet = buildReviewPacket(entry.batchId, candidates, batch);
     expect(packet.manifest.packetDigest).toBe(entry.packetDigest);
     expect(packet.manifest.rows).toEqual(entry.rows);
+    // Read the actual linked immutable artifacts: reconstruction alone cannot detect
+    // missing owner evidence or altered snapshots.
+    expect(await read(entry.paths.manifest)).toEqual(packet.manifest);
+    expect(await read(entry.paths.overlays)).toEqual(packet.overlays);
+    expect(await readFile(resolve(root, entry.paths.review), 'utf8')).toBe(packet.markdown);
+    expect(await read(entry.paths.coverage)).toEqual(
+      coverageReport(
+        candidates.filter((candidate) => entry.sourceKeys.includes(candidate.original.sourceKey)),
+        batch,
+        [],
+      ),
+    );
     rows.push(...packet.manifest.rows);
   }
   expect(rows).toHaveLength(667);

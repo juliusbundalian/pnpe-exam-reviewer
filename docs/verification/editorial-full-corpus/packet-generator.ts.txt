@@ -32,15 +32,19 @@ async function main() {
   });
   if(occurrences.length!==687 || by.size!==687)throw Error('Accounting mismatch');
   const census=(ids:string[], field:'sourceId'|'subcategoryId'|'categoryId')=>ids.map(id=>({id,counts:occurrences.filter(o=>o[field]===id).reduce((counts,o)=>{counts[o.status]++;return counts;},{approved:0,needsReview:0,draft:0,rejected:0})}));
+  const priorIndex=JSON.parse(await readFile(join(destination,'review-index.json'),'utf8'));
+  const affected=new Set(['comprehensive-xiii.json','comprehensive-xiv.json','comprehensive-xv.json']);
   const packets=[];const revisions=[];
   for(const name of (await readdir('data/editorial')).filter(n=>n.endsWith('.json')&&n!=='short-initial.json').sort()) {
     const batch=JSON.parse(await readFile(join('data/editorial',name),'utf8'));
-    const batchId='full-corpus-20261008-'+name.replace('.json','')+'-reconciled-v1';
+    const prior=priorIndex.packets.find((p:any)=>p.overlayFile==='data/editorial/'+name);
+    const batchId=affected.has(name)?'full-corpus-20261008-'+name.replace('.json','')+'-final-fix-v1':prior.batchId;
     const packet=buildReviewPacket(batchId,candidates,batch);
-    const dir=await writeReviewPacket(root,packet);const path=dir.slice(root.length+1);
+    if(!affected.has(name)&&packet.manifest.packetDigest!==prior.packetDigest)throw Error('Unexpected unaffected packet change '+name);
+    const dir=affected.has(name)?await writeReviewPacket(root,packet):resolve(root,prior.paths.manifest,'..');const path=dir.slice(root.length+1);
     const keys=batch.map((o:any)=>o.sourceKey); const sectionCandidates=candidates.filter(c=>keys.includes(c.original.sourceKey));
     const coverage=coverageReport(sectionCandidates,batch,[]);
-    await writeFile(join(dir,'coverage.json'),JSON.stringify(coverage,null,2)+'\n',{flag:'wx'});
+    if(affected.has(name))await writeFile(join(dir,'coverage.json'),JSON.stringify(coverage,null,2)+'\n',{flag:'wx'});
     const counts=occurrences.filter(o=>keys.includes(o.sourceKey)).reduce((counts,o)=>{counts[o.status]++;return counts;},{approved:0,needsReview:0,draft:0,rejected:0});
     packets.push({batchId,packetDigest:packet.manifest.packetDigest,overlayFile:'data/editorial/'+name,sourceId:sectionCandidates[0]!.original.sourceId,section:sectionCandidates[0]!.original.section,counts,sourceKeys:keys,rows:packet.manifest.rows,paths:{review:path+'/review.md',manifest:path+'/manifest.json',overlays:path+'/overlays.json',coverage:path+'/coverage.json'}});
     for(const row of packet.manifest.rows){const o=by.get(row.sourceKey)!;if(o.status==='needsReview'){const q=QuestionSchema.parse(o.proposed);revisions.push({...row,id:q.id,version:q.version,batchId,packetDigest:packet.manifest.packetDigest,sourceRefKeys:q.sources.map(s=>`${s.sourceId}:${s.section}:${s.originalNumber}`)});}}

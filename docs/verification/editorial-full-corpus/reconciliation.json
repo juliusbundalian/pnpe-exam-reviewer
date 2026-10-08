@@ -1008,9 +1008,5 @@
       "rationale": "Patterns use distinct terms/rules; shared patternAnalysis taxonomy is not identity."
     }
   ],
-  "deferredMinors": {
-    "ledger": ".superpowers/sdd/2026-10-07-editorial-full-corpus/progress.md",
-    "sourceKeys": ["comprehensive:XV:6", "comprehensive:XIII:15"],
-    "rationale": "Final owner triage: compressed explanation spacing and explanation upgrade from likes to uses remain visible; no unrelated content fix in Task4."
-  }
+  "finalFixReport": ".superpowers/sdd/2026-10-07-editorial-full-corpus/final-fix-report.md"
 }

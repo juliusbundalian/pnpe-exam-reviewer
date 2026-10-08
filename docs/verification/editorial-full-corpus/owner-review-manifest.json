@@ -1,6 +1,6 @@
 {
   "request": "Review these exact unapproved needsReview revisions only. Approval must name this manifestDigest or an explicit subset of its revision rows and a reviewer label; drafts/rejected/initial approved20 are excluded. This request is prepared for controller review, not an approval stamp.",
-  "manifestDigest": "632314ee5ac1e72fd95571b7db45fed38fa59e940b40cd308dcc2f4214e1d0d4",
+  "manifestDigest": "befca02b985a7d07d83dfecd457571308304f07e95b87dd526144f7937b5c7fb",
   "revisions": [
     {
       "sourceKey": "comprehensive:I:2",
@@ -4112,8 +4112,8 @@
       "reviewDigest": "847411fd915765e6ec2a7840c28c5f7e819ddb7df3a10e212a0d3b2a4926b417",
       "id": "q-000445",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiii-reconciled-v1",
-      "packetDigest": "480482038eab0ae7720ac4de9de0de483100e06c373d90219cfdb7514a8c06a0",
+      "batchId": "full-corpus-20261008-comprehensive-xiii-final-fix-v1",
+      "packetDigest": "83862212fd73fb214886357f8a0d0a5eddb86dc5153490d3ca06470c18c1c4e7",
       "sourceRefKeys": ["comprehensive:XIII:1"]
     },
     {
@@ -4123,8 +4123,8 @@
       "reviewDigest": "56eb919bccde9f06b8d52031cbc7e6cfb5828a2cd52b547a4deb8e21f0533cfb",
       "id": "q-000446",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiii-reconciled-v1",
-      "packetDigest": "480482038eab0ae7720ac4de9de0de483100e06c373d90219cfdb7514a8c06a0",
+      "batchId": "full-corpus-20261008-comprehensive-xiii-final-fix-v1",
+      "packetDigest": "83862212fd73fb214886357f8a0d0a5eddb86dc5153490d3ca06470c18c1c4e7",
       "sourceRefKeys": ["comprehensive:XIII:2"]
     },
     {
@@ -4134,8 +4134,8 @@
       "reviewDigest": "38d03390f89021b87e7ea453fa688cc3ea907057d4524c9fe95c58b6db4b5c70",
       "id": "q-000447",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiii-reconciled-v1",
-      "packetDigest": "480482038eab0ae7720ac4de9de0de483100e06c373d90219cfdb7514a8c06a0",
+      "batchId": "full-corpus-20261008-comprehensive-xiii-final-fix-v1",
+      "packetDigest": "83862212fd73fb214886357f8a0d0a5eddb86dc5153490d3ca06470c18c1c4e7",
       "sourceRefKeys": ["comprehensive:XIII:3"]
     },
     {
@@ -4145,8 +4145,8 @@
       "reviewDigest": "e52df24dc320d88183363e5039e4923ebec3e1126c086614cf8ea27fb9374edf",
       "id": "q-000448",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiii-reconciled-v1",
-      "packetDigest": "480482038eab0ae7720ac4de9de0de483100e06c373d90219cfdb7514a8c06a0",
+      "batchId": "full-corpus-20261008-comprehensive-xiii-final-fix-v1",
+      "packetDigest": "83862212fd73fb214886357f8a0d0a5eddb86dc5153490d3ca06470c18c1c4e7",
       "sourceRefKeys": ["comprehensive:XIII:4"]
     },
     {
@@ -4156,8 +4156,8 @@
       "reviewDigest": "6241c29d21286810f1e380ba9256a3c37372588737989a7bd45a0c3d54686b26",
       "id": "q-000449",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiii-reconciled-v1",
-      "packetDigest": "480482038eab0ae7720ac4de9de0de483100e06c373d90219cfdb7514a8c06a0",
+      "batchId": "full-corpus-20261008-comprehensive-xiii-final-fix-v1",
+      "packetDigest": "83862212fd73fb214886357f8a0d0a5eddb86dc5153490d3ca06470c18c1c4e7",
       "sourceRefKeys": ["comprehensive:XIII:5"]
     },
     {
@@ -4167,8 +4167,8 @@
       "reviewDigest": "7b9bbe7f9d34508ff59e4180ff51113eb97ff2f01eabe79e1eeacd4ba59d34f5",
       "id": "q-000450",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiii-reconciled-v1",
-      "packetDigest": "480482038eab0ae7720ac4de9de0de483100e06c373d90219cfdb7514a8c06a0",
+      "batchId": "full-corpus-20261008-comprehensive-xiii-final-fix-v1",
+      "packetDigest": "83862212fd73fb214886357f8a0d0a5eddb86dc5153490d3ca06470c18c1c4e7",
       "sourceRefKeys": ["comprehensive:XIII:6"]
     },
     {
@@ -4178,8 +4178,8 @@
       "reviewDigest": "45afd08c8e4e3eb265e43f3cbd68308f399ae7a37f93f0934d73b09c72640e06",
       "id": "q-000451",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiii-reconciled-v1",
-      "packetDigest": "480482038eab0ae7720ac4de9de0de483100e06c373d90219cfdb7514a8c06a0",
+      "batchId": "full-corpus-20261008-comprehensive-xiii-final-fix-v1",
+      "packetDigest": "83862212fd73fb214886357f8a0d0a5eddb86dc5153490d3ca06470c18c1c4e7",
       "sourceRefKeys": ["comprehensive:XIII:7"]
     },
     {
@@ -4189,8 +4189,8 @@
       "reviewDigest": "e9b022e5cf40e76e21259b3c73a9bd279ed0cc91c238d82e87f939d961b0a496",
       "id": "q-000452",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiii-reconciled-v1",
-      "packetDigest": "480482038eab0ae7720ac4de9de0de483100e06c373d90219cfdb7514a8c06a0",
+      "batchId": "full-corpus-20261008-comprehensive-xiii-final-fix-v1",
+      "packetDigest": "83862212fd73fb214886357f8a0d0a5eddb86dc5153490d3ca06470c18c1c4e7",
       "sourceRefKeys": ["comprehensive:XIII:8"]
     },
     {
@@ -4200,8 +4200,8 @@
       "reviewDigest": "487ea1b071d614fdda0aafb67461c13129fac78df4d490d4ca112314722220e5",
       "id": "q-000453",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiii-reconciled-v1",
-      "packetDigest": "480482038eab0ae7720ac4de9de0de483100e06c373d90219cfdb7514a8c06a0",
+      "batchId": "full-corpus-20261008-comprehensive-xiii-final-fix-v1",
+      "packetDigest": "83862212fd73fb214886357f8a0d0a5eddb86dc5153490d3ca06470c18c1c4e7",
       "sourceRefKeys": ["comprehensive:XIII:9"]
     },
     {
@@ -4211,8 +4211,8 @@
       "reviewDigest": "c1e497817defb3283a0d6ee5201bd7f9d6a4bcacf0561519bee102e4d375cddd",
       "id": "q-000454",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiii-reconciled-v1",
-      "packetDigest": "480482038eab0ae7720ac4de9de0de483100e06c373d90219cfdb7514a8c06a0",
+      "batchId": "full-corpus-20261008-comprehensive-xiii-final-fix-v1",
+      "packetDigest": "83862212fd73fb214886357f8a0d0a5eddb86dc5153490d3ca06470c18c1c4e7",
       "sourceRefKeys": ["comprehensive:XIII:10"]
     },
     {
@@ -4222,8 +4222,8 @@
       "reviewDigest": "f7465e579e22f0931b2f5bc0977547e77dafb1b82b0b3833496adc8c3440911b",
       "id": "q-000456",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiii-reconciled-v1",
-      "packetDigest": "480482038eab0ae7720ac4de9de0de483100e06c373d90219cfdb7514a8c06a0",
+      "batchId": "full-corpus-20261008-comprehensive-xiii-final-fix-v1",
+      "packetDigest": "83862212fd73fb214886357f8a0d0a5eddb86dc5153490d3ca06470c18c1c4e7",
       "sourceRefKeys": ["comprehensive:XIII:12"]
     },
     {
@@ -4233,19 +4233,19 @@
       "reviewDigest": "37670d60a0432438244c302ccce8439e2242331ccc7b1820e90bec350f026e46",
       "id": "q-000457",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiii-reconciled-v1",
-      "packetDigest": "480482038eab0ae7720ac4de9de0de483100e06c373d90219cfdb7514a8c06a0",
+      "batchId": "full-corpus-20261008-comprehensive-xiii-final-fix-v1",
+      "packetDigest": "83862212fd73fb214886357f8a0d0a5eddb86dc5153490d3ca06470c18c1c4e7",
       "sourceRefKeys": ["comprehensive:XIII:13"]
     },
     {
       "sourceKey": "comprehensive:XIII:15",
-      "overlayDigest": "40baef979d2b4563a7aa0cc55c0115eece0d21d55babc12e0e90aafa23b5bbf7",
-      "contentDigest": "09cc003071f9181ab44d86bc344809d1a2caf5cf13c14123239f8ddf2455de78",
+      "overlayDigest": "c08c25039fc8f431d4282e246b94e13a5920c1ae918047d9d850efda53440f3a",
+      "contentDigest": "cf02c3e7ac8164d3db8022d2164c70b91dad61a6b15f002cb364512329844860",
       "reviewDigest": "47ca1799eba05f1ffeee6224edac2c47f5fcdfe775007615116d64e539a7c4a0",
       "id": "q-000459",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiii-reconciled-v1",
-      "packetDigest": "480482038eab0ae7720ac4de9de0de483100e06c373d90219cfdb7514a8c06a0",
+      "batchId": "full-corpus-20261008-comprehensive-xiii-final-fix-v1",
+      "packetDigest": "83862212fd73fb214886357f8a0d0a5eddb86dc5153490d3ca06470c18c1c4e7",
       "sourceRefKeys": ["comprehensive:XIII:15"]
     },
     {
@@ -4255,8 +4255,8 @@
       "reviewDigest": "4a748c327ccbd6f40f661100f45a0fe4dd5fa925bc3e2668ff7ad1c2291d56da",
       "id": "q-000460",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:1"]
     },
     {
@@ -4266,8 +4266,8 @@
       "reviewDigest": "fe5c160366bc119fff2f68168a469a5f9f16d113eda213fd2b4c5dac179184e0",
       "id": "q-000461",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:2"]
     },
     {
@@ -4277,8 +4277,8 @@
       "reviewDigest": "eafa1e7f2b9a437899fc3505cf39cee4efeaa1aa4aff36aab5a6587ffbc7ed81",
       "id": "q-000462",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:3"]
     },
     {
@@ -4288,19 +4288,19 @@
       "reviewDigest": "ac7f7827a19c818677d4b155d2cbe9a7e371ebfb49dc22b41435650260872a77",
       "id": "q-000463",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:4"]
     },
     {
       "sourceKey": "comprehensive:XIV:5",
-      "overlayDigest": "1e0dc3869443d0ab5fc6c093efca0bf50f0781983e33d8d00b16eca010109b39",
-      "contentDigest": "d6c0ba4d76eb8ccd5c5a05bd9004d5c45751c7dc77d7eb8c4daa110212660f9f",
-      "reviewDigest": "05c153739c5d0b911ba8977b5c6bedd74357484a808e4d231323ee67c372f8f8",
+      "overlayDigest": "8f0dcfa058a4544bc8984c5a7bcd3fb55741b97664483d0ea95085878ca22918",
+      "contentDigest": "13a56047841b2809d847227ab5657db4e7a47ca45369522c1fb156be470040cd",
+      "reviewDigest": "d2adc09e1cc8500c19302154cc74011492acc06c43bfe1743998ed2031fc2275",
       "id": "q-000464",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:5"]
     },
     {
@@ -4310,8 +4310,8 @@
       "reviewDigest": "701a711525092d2eaf74d38751b9432e34067fb29eb8fe6b7b7278bff5aeb6f5",
       "id": "q-000466",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:7"]
     },
     {
@@ -4321,8 +4321,8 @@
       "reviewDigest": "ecd1020a4d84f064f64ea9dd2db87947b83b1d2070d48c1871c563b393c3f8d6",
       "id": "q-000467",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:8"]
     },
     {
@@ -4332,8 +4332,8 @@
       "reviewDigest": "35f080e8f858ea7e21203d4e3edc7a0f9a7e759697095be3955deed566e59e5a",
       "id": "q-000468",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:9"]
     },
     {
@@ -4343,8 +4343,8 @@
       "reviewDigest": "ea8ba663804234f45438b596cfed1090be5335daef390cbb6baa70569840873b",
       "id": "q-000469",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:10"]
     },
     {
@@ -4354,8 +4354,8 @@
       "reviewDigest": "25104b89650d4bc7103cae123afcd0a9b2b1db0277668ba572884854352ebd27",
       "id": "q-000470",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:11"]
     },
     {
@@ -4365,8 +4365,8 @@
       "reviewDigest": "2c1bdecbde6ab3ef9eeac6715e2e9d4bc923c07746c2bba6a697d86befdc34f0",
       "id": "q-000471",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:12"]
     },
     {
@@ -4376,8 +4376,8 @@
       "reviewDigest": "54cd4a4b59131506acb46cd863c77ea32e58190ca85934746a8be762d1aaa6d3",
       "id": "q-000472",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:13"]
     },
     {
@@ -4387,8 +4387,8 @@
       "reviewDigest": "38fbc1bc662c4b007ae95d0d5c9e4fd4b837dfc640b9b79f4ae906e8f45e9517",
       "id": "q-000473",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:14"]
     },
     {
@@ -4398,8 +4398,8 @@
       "reviewDigest": "39d12c6d1723cf83fa17b77c4028150b9777556bd38ac62180fd85fb72edd97c",
       "id": "q-000474",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:15"]
     },
     {
@@ -4409,8 +4409,8 @@
       "reviewDigest": "4b4dedd84af50fdee3a10ea4e1f08cda2c0414c06757355c96b78f33cf624b3e",
       "id": "q-000476",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:17"]
     },
     {
@@ -4420,8 +4420,8 @@
       "reviewDigest": "053bd4078c41f3d4281869a23b04935025ae9f0b35fa14ac8810f4c0cb9b252b",
       "id": "q-000478",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:19"]
     },
     {
@@ -4431,41 +4431,41 @@
       "reviewDigest": "7b177c24d892f420410c97d089b24a285da0f110b1c32e4cd48017dcb1856579",
       "id": "q-000479",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:20", "comprehensive:XIV:26"]
     },
     {
       "sourceKey": "comprehensive:XIV:21",
-      "overlayDigest": "1252d72884e17fced3be8c44d4214e1bf47621bab00ebc9b04cee0c3c0c193d4",
-      "contentDigest": "026537fa19174db241ce63d2ae9b8d41b9c29b98f7a58acf21a5a13f73f8ab20",
-      "reviewDigest": "62c22440cd9a7ff5567d483138418b411533b7f9dce34b05dd2b1ae51e62bdcf",
+      "overlayDigest": "84605d1a84ff37550204aa9d36e1f9a08dd816a437466decb7d9ae03557920ab",
+      "contentDigest": "31933df5e9826a1d356bc3d5faa347c6cc01102f979cc03c35d94b821ddf0ae7",
+      "reviewDigest": "235c36b26a09b5a5655ef329b07d2eae75bb9c03ce9d2178fbde2205a4587528",
       "id": "q-000480",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:21"]
     },
     {
       "sourceKey": "comprehensive:XIV:22",
-      "overlayDigest": "827361a39ac08c8fc137090df5ef7358886e69c6614a26a5460a77971138070b",
-      "contentDigest": "835efb90536bf1710336015b3b623cb3a4d901de1fa5acc0d3ca95a3d251f0d3",
-      "reviewDigest": "6756ccebfd4648af5993e958debcb3c8c8a56370cd14c631c4e075944b8e1516",
+      "overlayDigest": "41ade9be35186d22e085fba3ea5ea54a15ad299a14839bc3aeb1c53d3438431c",
+      "contentDigest": "878bb019336dfdfed77bcf96736f2a8545498e18da63f1e0f5e139ba226de05f",
+      "reviewDigest": "0dea830216d186721cf7cd8916be0e7f441345e3353006a4777346b3b33b5322",
       "id": "q-000481",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:22"]
     },
     {
       "sourceKey": "comprehensive:XIV:23",
-      "overlayDigest": "30708e24addb3e28593e0d6adaf71cc0f8406469bcf8a48166f0c4601995e759",
-      "contentDigest": "125b25a6992474a77affdd30516221debd6a644aa2682044f2cad2c7657ad211",
-      "reviewDigest": "65ae5c005c4494e5c1f2679e0cd4bcc788c95e33a72c4dc2922a4768604c23a2",
+      "overlayDigest": "d0f0c6fd67b842dd4b8544e658a3b123082b4f4ff6776b4a478d72436450074b",
+      "contentDigest": "8f2a388ad5906d4cca763ba5ea497fa7ba12c0bcd9f623cdedb196065ac15924",
+      "reviewDigest": "bfa014bdb1e068fe1a86145e08a3f8c5df44dde804b4b665db3e43f28ba8f3dd",
       "id": "q-000482",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:23"]
     },
     {
@@ -4475,19 +4475,19 @@
       "reviewDigest": "c019acac79f50035ae8498233ed3244ff0cd2fd9db74bbe355fbf4ecf7d1613b",
       "id": "q-000484",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:25"]
     },
     {
       "sourceKey": "comprehensive:XIV:27",
-      "overlayDigest": "96e55163ff07b7b7e08df33f24ad8bf25ae2ac034a9ece3e9bc285654b7c241b",
-      "contentDigest": "26fe8f0ef3b8a67f11bad0c2fa1881dd0f1a20cd2a88704040926bae901bfc44",
+      "overlayDigest": "e5f91a063f9ec98db7b178c32f8f213b49ad87e8c979408ca5e487adc83bc70f",
+      "contentDigest": "9140418a41cf5cae41ca91e0c9f5f0b027367d17c9688c507e15dd4333ffc045",
       "reviewDigest": "4428d3f604e398c8afa329cff4004400faa555aab3326a89cda9c38a4645aaf5",
       "id": "q-000486",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:27"]
     },
     {
@@ -4497,19 +4497,19 @@
       "reviewDigest": "356b4365fef7b2b82593f3383c54a36fdc7a7be29d5909029da0b117af7970f0",
       "id": "q-000487",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "sourceRefKeys": ["comprehensive:XIV:28"]
     },
     {
       "sourceKey": "comprehensive:XV:6",
-      "overlayDigest": "9606b5a03e6e4114587ba1becb50fdc949ed4c57ae0b82608f78e968c227a67a",
-      "contentDigest": "a751fc9388ce3808796d981605fa7186462e91e7f4d09d7b5dc4407c1c34a1b4",
-      "reviewDigest": "1c014bb3e9cd7bd02df2aeacba67dfe733513cdaba580ea37d08250782f66974",
+      "overlayDigest": "e0b87e30c14bc8823d5e5bd913924a7f768da172e3fc0195f8eb28973a6d3efe",
+      "contentDigest": "60894548c5bbd9600fbfa981903032e97911290f416b74d0cb31fa4e16dd7146",
+      "reviewDigest": "3f35628c20a06f23ca8dc97b37565523ab8e25bcb1a3da2fa30db7d610e00716",
       "id": "q-000493",
       "version": 1,
-      "batchId": "full-corpus-20261008-comprehensive-xv-reconciled-v1",
-      "packetDigest": "c89b189bfac00c64f1c9aa97522f2911475d883e1ecb48777bde77896094b574",
+      "batchId": "full-corpus-20261008-comprehensive-xv-final-fix-v1",
+      "packetDigest": "4f8591aba7ee2dbb56d7aef8e8ba05770a883ace017b278e7d20b92d1343d237",
       "sourceRefKeys": ["comprehensive:XV:6"]
     },
     {

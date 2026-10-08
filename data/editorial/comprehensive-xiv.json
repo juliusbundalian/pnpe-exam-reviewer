@@ -640,18 +640,18 @@
         }
       ],
       "createdAt": "2026-10-07T16:19:18.273Z",
-      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-08T01:34:49.479Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Compare durations: day1, week7days, month28–31days, year365/366days, century100years. Strict increasing order BECAD is choiceC; source D is incorrect.",
+          "text": "Compare durations: day: 1 day; week: 7 days; month: 28–31 days; year: 365/366 days; century: 100 years. Strict increasing order BECAD is choice C; source D is incorrect.",
           "marks": []
         }
       ]
     },
-    "rationale": "Compare durations: day1, week7days, month28–31days, year365/366days, century100years. Strict increasing order BECAD is choiceC; source D is incorrect. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "rationale": "Compare durations: day: 1 day; week: 7 days; month: 28–31 days; year: 365/366 days; century: 100 years. Strict increasing order BECAD is choice C; source D is incorrect. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=142",
       "docs/verification/editorial-full-corpus-task2.md#xiv-5"
@@ -678,7 +678,7 @@
       "resolutions": [
         {
           "code": "audited-source-defect",
-          "rationale": "Compare durations: day1, week7days, month28–31days, year365/366days, century100years. Strict increasing order BECAD is choiceC; source D is incorrect.",
+          "rationale": "Compare durations: day: 1 day; week: 7 days; month: 28–31 days; year: 365/366 days; century: 100 years. Strict increasing order BECAD is choice C; source D is incorrect.",
           "evidence": [
             "evidence/reference-extraction/comprehensive/document.json#page=142",
             "docs/verification/editorial-full-corpus-task2.md#xiv-5"
@@ -2899,18 +2899,18 @@
         }
       ],
       "createdAt": "2026-10-07T16:19:18.273Z",
-      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-08T01:34:49.479Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Hallmark’s named list maps paper1, cotton2, leather3, fruit/flowers4, wood5. Sorting those anniversary numbers gives DABEC (E), uniquely. Source D is incompatible.",
+          "text": "Hallmark’s named list maps paper: 1; cotton: 2; leather: 3; fruit/flowers: 4; wood: 5. Sorting those anniversary numbers gives DABEC (E), uniquely. Source D is incompatible.",
           "marks": []
         }
       ]
     },
-    "rationale": "Hallmark’s named list maps paper1, cotton2, leather3, fruit/flowers4, wood5. Sorting those anniversary numbers gives DABEC (E), uniquely. Source D is incompatible. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "rationale": "Hallmark’s named list maps paper: 1; cotton: 2; leather: 3; fruit/flowers: 4; wood: 5. Sorting those anniversary numbers gives DABEC (E), uniquely. Source D is incompatible. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=146",
       "docs/verification/editorial-full-corpus-task2.md#xiv-21",
@@ -2938,7 +2938,7 @@
       "resolutions": [
         {
           "code": "audited-source-defect",
-          "rationale": "Hallmark’s named list maps paper1, cotton2, leather3, fruit/flowers4, wood5. Sorting those anniversary numbers gives DABEC (E), uniquely. Source D is incompatible.",
+          "rationale": "Hallmark’s named list maps paper: 1; cotton: 2; leather: 3; fruit/flowers: 4; wood: 5. Sorting those anniversary numbers gives DABEC (E), uniquely. Source D is incompatible.",
           "evidence": [
             "evidence/reference-extraction/comprehensive/document.json#page=146",
             "docs/verification/editorial-full-corpus-task2.md#xiv-21",
@@ -2958,7 +2958,7 @@
       "factualVerification": {
         "sourceUrl": "https://ideas.hallmark.com/articles/anniversary-ideas/anniversary-gifts-by-year/",
         "verifiedAt": "2026-10-07T16:00:32Z",
-        "rationale": "Hallmark’s named list maps paper1, cotton2, leather3, fruit/flowers4, wood5. Sorting those anniversary numbers gives DABEC (E), uniquely. Source D is incompatible."
+        "rationale": "Hallmark’s named list maps paper: 1; cotton: 2; leather: 3; fruit/flowers: 4; wood: 5. Sorting those anniversary numbers gives DABEC (E), uniquely. Source D is incompatible."
       }
     }
   },
@@ -3054,18 +3054,18 @@
         }
       ],
       "createdAt": "2026-10-07T16:19:18.273Z",
-      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-08T01:34:49.479Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "The independently read Hallmark list maps steel11, silk/linen12, lace13, gold jewelry14, crystal15. Replacing the source’s ivory theme with Hallmark’s gold-jewelry theme, ascending years produce CADBE (D), uniquely. Source C is incorrect under this explicitly named convention.",
+          "text": "The independently read Hallmark list maps steel: 11; silk/linen: 12; lace: 13; gold jewelry: 14; crystal: 15. Replacing the source’s ivory theme with Hallmark’s gold-jewelry theme, ascending years produce CADBE (D), uniquely. Source C is incorrect under this explicitly named convention.",
           "marks": []
         }
       ]
     },
-    "rationale": "The independently read Hallmark list maps steel11, silk/linen12, lace13, gold jewelry14, crystal15. Replacing the source’s ivory theme with Hallmark’s gold-jewelry theme, ascending years produce CADBE (D), uniquely. Source C is incorrect under this explicitly named convention. Authored repair: Named the independently verified Hallmark gift convention, replaced outdated ivory with its gold-jewelry14th theme, and corrected C toD by sorting years.",
+    "rationale": "The independently read Hallmark list maps steel: 11; silk/linen: 12; lace: 13; gold jewelry: 14; crystal: 15. Replacing the source’s ivory theme with Hallmark’s gold-jewelry theme, ascending years produce CADBE (D), uniquely. Source C is incorrect under this explicitly named convention. Authored repair: Named the independently verified Hallmark gift convention, replaced outdated ivory with its gold-jewelry14th theme, and corrected C toD by sorting years.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=147",
       "docs/verification/editorial-full-corpus-task2.md#xiv-22",
@@ -3093,7 +3093,7 @@
       "resolutions": [
         {
           "code": "audited-source-defect",
-          "rationale": "The independently read Hallmark list maps steel11, silk/linen12, lace13, gold jewelry14, crystal15. Replacing the source’s ivory theme with Hallmark’s gold-jewelry theme, ascending years produce CADBE (D), uniquely. Source C is incorrect under this explicitly named convention.",
+          "rationale": "The independently read Hallmark list maps steel: 11; silk/linen: 12; lace: 13; gold jewelry: 14; crystal: 15. Replacing the source’s ivory theme with Hallmark’s gold-jewelry theme, ascending years produce CADBE (D), uniquely. Source C is incorrect under this explicitly named convention.",
           "evidence": [
             "evidence/reference-extraction/comprehensive/document.json#page=147",
             "docs/verification/editorial-full-corpus-task2.md#xiv-22",
@@ -3113,7 +3113,7 @@
       "factualVerification": {
         "sourceUrl": "https://ideas.hallmark.com/articles/anniversary-ideas/anniversary-gifts-by-year/",
         "verifiedAt": "2026-10-07T16:00:32Z",
-        "rationale": "The independently read Hallmark list maps steel11, silk/linen12, lace13, gold jewelry14, crystal15. Replacing the source’s ivory theme with Hallmark’s gold-jewelry theme, ascending years produce CADBE (D), uniquely. Source C is incorrect under this explicitly named convention."
+        "rationale": "The independently read Hallmark list maps steel: 11; silk/linen: 12; lace: 13; gold jewelry: 14; crystal: 15. Replacing the source’s ivory theme with Hallmark’s gold-jewelry theme, ascending years produce CADBE (D), uniquely. Source C is incorrect under this explicitly named convention."
       }
     }
   },
@@ -3209,18 +3209,18 @@
         }
       ],
       "createdAt": "2026-10-07T16:19:18.273Z",
-      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-08T01:34:49.479Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "For X>0, multiplying 1/4<1/2<3/4<1<5/4 byX preserves strict inequalities. ABCDE alone is ascending. For negativeX order reverses and X0 ties, hence the editorial positive-domain constraint is necessary.",
+          "text": "For X > 0, multiplying 1/4 < 1/2 < 3/4 < 1 < 5/4 by X preserves strict inequalities. ABCDE alone is ascending. For negative X the order reverses, and X = 0 produces ties, hence the editorial positive-domain constraint is necessary.",
           "marks": []
         }
       ]
     },
-    "rationale": "For X>0, multiplying 1/4<1/2<3/4<1<5/4 byX preserves strict inequalities. ABCDE alone is ascending. For negativeX order reverses and X0 ties, hence the editorial positive-domain constraint is necessary. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "rationale": "For X > 0, multiplying 1/4 < 1/2 < 3/4 < 1 < 5/4 by X preserves strict inequalities. ABCDE alone is ascending. For negative X the order reverses, and X = 0 produces ties, hence the editorial positive-domain constraint is necessary. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=147",
       "docs/verification/editorial-full-corpus-task2.md#xiv-23"
@@ -3247,7 +3247,7 @@
       "resolutions": [
         {
           "code": "audited-source-defect",
-          "rationale": "For X>0, multiplying 1/4<1/2<3/4<1<5/4 byX preserves strict inequalities. ABCDE alone is ascending. For negativeX order reverses and X0 ties, hence the editorial positive-domain constraint is necessary.",
+          "rationale": "For X > 0, multiplying 1/4 < 1/2 < 3/4 < 1 < 5/4 by X preserves strict inequalities. ABCDE alone is ascending. For negative X the order reverses, and X = 0 produces ties, hence the editorial positive-domain constraint is necessary.",
           "evidence": [
             "evidence/reference-extraction/comprehensive/document.json#page=147",
             "docs/verification/editorial-full-corpus-task2.md#xiv-23"
@@ -3793,18 +3793,18 @@
         }
       ],
       "createdAt": "2026-10-07T16:19:18.273Z",
-      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-08T01:34:49.479Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
         {
           "kind": "text",
-          "text": "Within one Philippine calendar year the dates are New Year Jan1, Valentine Feb14, Labor DayMay1, AllSaintsNov1, ChristmasDec25; sorting yields CDBEA, only B.",
+          "text": "Within one Philippine calendar year the dates are New Year: Jan 1; Valentine: Feb 14; Labor Day: May 1; All Saints: Nov 1; Christmas: Dec 25; sorting yields CDBEA, option B only.",
           "marks": []
         }
       ]
     },
-    "rationale": "Within one Philippine calendar year the dates are New Year Jan1, Valentine Feb14, Labor DayMay1, AllSaintsNov1, ChristmasDec25; sorting yields CDBEA, only B. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+    "rationale": "Within one Philippine calendar year the dates are New Year: Jan 1; Valentine: Feb 14; Labor Day: May 1; All Saints: Nov 1; Christmas: Dec 25; sorting yields CDBEA, option B only. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=148",
       "docs/verification/editorial-full-corpus-task2.md#xiv-27"

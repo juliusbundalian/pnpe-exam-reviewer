@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T23:57:15.504Z",
+  "generatedAt": "2026-10-08T01:35:18.141Z",
   "totals": {
     "approved": 20,
     "needsReview": 509,
@@ -3493,8 +3493,8 @@
       }
     },
     {
-      "batchId": "full-corpus-20261008-comprehensive-xiii-reconciled-v1",
-      "packetDigest": "480482038eab0ae7720ac4de9de0de483100e06c373d90219cfdb7514a8c06a0",
+      "batchId": "full-corpus-20261008-comprehensive-xiii-final-fix-v1",
+      "packetDigest": "83862212fd73fb214886357f8a0d0a5eddb86dc5153490d3ca06470c18c1c4e7",
       "overlayFile": "data/editorial/comprehensive-xiii.json",
       "sourceId": "comprehensive",
       "section": "XIII",
@@ -3608,21 +3608,21 @@
         },
         {
           "sourceKey": "comprehensive:XIII:15",
-          "overlayDigest": "40baef979d2b4563a7aa0cc55c0115eece0d21d55babc12e0e90aafa23b5bbf7",
-          "contentDigest": "09cc003071f9181ab44d86bc344809d1a2caf5cf13c14123239f8ddf2455de78",
+          "overlayDigest": "c08c25039fc8f431d4282e246b94e13a5920c1ae918047d9d850efda53440f3a",
+          "contentDigest": "cf02c3e7ac8164d3db8022d2164c70b91dad61a6b15f002cb364512329844860",
           "reviewDigest": "47ca1799eba05f1ffeee6224edac2c47f5fcdfe775007615116d64e539a7c4a0"
         }
       ],
       "paths": {
-        "review": "evidence/editorial/full-corpus-20261008-comprehensive-xiii-reconciled-v1/480482038eab0ae7720ac4de9de0de483100e06c373d90219cfdb7514a8c06a0/review.md",
-        "manifest": "evidence/editorial/full-corpus-20261008-comprehensive-xiii-reconciled-v1/480482038eab0ae7720ac4de9de0de483100e06c373d90219cfdb7514a8c06a0/manifest.json",
-        "overlays": "evidence/editorial/full-corpus-20261008-comprehensive-xiii-reconciled-v1/480482038eab0ae7720ac4de9de0de483100e06c373d90219cfdb7514a8c06a0/overlays.json",
-        "coverage": "evidence/editorial/full-corpus-20261008-comprehensive-xiii-reconciled-v1/480482038eab0ae7720ac4de9de0de483100e06c373d90219cfdb7514a8c06a0/coverage.json"
+        "review": "evidence/editorial/full-corpus-20261008-comprehensive-xiii-final-fix-v1/83862212fd73fb214886357f8a0d0a5eddb86dc5153490d3ca06470c18c1c4e7/review.md",
+        "manifest": "evidence/editorial/full-corpus-20261008-comprehensive-xiii-final-fix-v1/83862212fd73fb214886357f8a0d0a5eddb86dc5153490d3ca06470c18c1c4e7/manifest.json",
+        "overlays": "evidence/editorial/full-corpus-20261008-comprehensive-xiii-final-fix-v1/83862212fd73fb214886357f8a0d0a5eddb86dc5153490d3ca06470c18c1c4e7/overlays.json",
+        "coverage": "evidence/editorial/full-corpus-20261008-comprehensive-xiii-final-fix-v1/83862212fd73fb214886357f8a0d0a5eddb86dc5153490d3ca06470c18c1c4e7/coverage.json"
       }
     },
     {
-      "batchId": "full-corpus-20261008-comprehensive-xiv-reconciled-v1",
-      "packetDigest": "98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692",
+      "batchId": "full-corpus-20261008-comprehensive-xiv-final-fix-v1",
+      "packetDigest": "6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e",
       "overlayFile": "data/editorial/comprehensive-xiv.json",
       "sourceId": "comprehensive",
       "section": "XIV",
@@ -3689,9 +3689,9 @@
         },
         {
           "sourceKey": "comprehensive:XIV:5",
-          "overlayDigest": "1e0dc3869443d0ab5fc6c093efca0bf50f0781983e33d8d00b16eca010109b39",
-          "contentDigest": "d6c0ba4d76eb8ccd5c5a05bd9004d5c45751c7dc77d7eb8c4daa110212660f9f",
-          "reviewDigest": "05c153739c5d0b911ba8977b5c6bedd74357484a808e4d231323ee67c372f8f8"
+          "overlayDigest": "8f0dcfa058a4544bc8984c5a7bcd3fb55741b97664483d0ea95085878ca22918",
+          "contentDigest": "13a56047841b2809d847227ab5657db4e7a47ca45369522c1fb156be470040cd",
+          "reviewDigest": "d2adc09e1cc8500c19302154cc74011492acc06c43bfe1743998ed2031fc2275"
         },
         {
           "sourceKey": "comprehensive:XIV:6",
@@ -3785,21 +3785,21 @@
         },
         {
           "sourceKey": "comprehensive:XIV:21",
-          "overlayDigest": "1252d72884e17fced3be8c44d4214e1bf47621bab00ebc9b04cee0c3c0c193d4",
-          "contentDigest": "026537fa19174db241ce63d2ae9b8d41b9c29b98f7a58acf21a5a13f73f8ab20",
-          "reviewDigest": "62c22440cd9a7ff5567d483138418b411533b7f9dce34b05dd2b1ae51e62bdcf"
+          "overlayDigest": "84605d1a84ff37550204aa9d36e1f9a08dd816a437466decb7d9ae03557920ab",
+          "contentDigest": "31933df5e9826a1d356bc3d5faa347c6cc01102f979cc03c35d94b821ddf0ae7",
+          "reviewDigest": "235c36b26a09b5a5655ef329b07d2eae75bb9c03ce9d2178fbde2205a4587528"
         },
         {
           "sourceKey": "comprehensive:XIV:22",
-          "overlayDigest": "827361a39ac08c8fc137090df5ef7358886e69c6614a26a5460a77971138070b",
-          "contentDigest": "835efb90536bf1710336015b3b623cb3a4d901de1fa5acc0d3ca95a3d251f0d3",
-          "reviewDigest": "6756ccebfd4648af5993e958debcb3c8c8a56370cd14c631c4e075944b8e1516"
+          "overlayDigest": "41ade9be35186d22e085fba3ea5ea54a15ad299a14839bc3aeb1c53d3438431c",
+          "contentDigest": "878bb019336dfdfed77bcf96736f2a8545498e18da63f1e0f5e139ba226de05f",
+          "reviewDigest": "0dea830216d186721cf7cd8916be0e7f441345e3353006a4777346b3b33b5322"
         },
         {
           "sourceKey": "comprehensive:XIV:23",
-          "overlayDigest": "30708e24addb3e28593e0d6adaf71cc0f8406469bcf8a48166f0c4601995e759",
-          "contentDigest": "125b25a6992474a77affdd30516221debd6a644aa2682044f2cad2c7657ad211",
-          "reviewDigest": "65ae5c005c4494e5c1f2679e0cd4bcc788c95e33a72c4dc2922a4768604c23a2"
+          "overlayDigest": "d0f0c6fd67b842dd4b8544e658a3b123082b4f4ff6776b4a478d72436450074b",
+          "contentDigest": "8f2a388ad5906d4cca763ba5ea497fa7ba12c0bcd9f623cdedb196065ac15924",
+          "reviewDigest": "bfa014bdb1e068fe1a86145e08a3f8c5df44dde804b4b665db3e43f28ba8f3dd"
         },
         {
           "sourceKey": "comprehensive:XIV:24",
@@ -3821,8 +3821,8 @@
         },
         {
           "sourceKey": "comprehensive:XIV:27",
-          "overlayDigest": "96e55163ff07b7b7e08df33f24ad8bf25ae2ac034a9ece3e9bc285654b7c241b",
-          "contentDigest": "26fe8f0ef3b8a67f11bad0c2fa1881dd0f1a20cd2a88704040926bae901bfc44",
+          "overlayDigest": "e5f91a063f9ec98db7b178c32f8f213b49ad87e8c979408ca5e487adc83bc70f",
+          "contentDigest": "9140418a41cf5cae41ca91e0c9f5f0b027367d17c9688c507e15dd4333ffc045",
           "reviewDigest": "4428d3f604e398c8afa329cff4004400faa555aab3326a89cda9c38a4645aaf5"
         },
         {
@@ -3833,15 +3833,15 @@
         }
       ],
       "paths": {
-        "review": "evidence/editorial/full-corpus-20261008-comprehensive-xiv-reconciled-v1/98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692/review.md",
-        "manifest": "evidence/editorial/full-corpus-20261008-comprehensive-xiv-reconciled-v1/98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692/manifest.json",
-        "overlays": "evidence/editorial/full-corpus-20261008-comprehensive-xiv-reconciled-v1/98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692/overlays.json",
-        "coverage": "evidence/editorial/full-corpus-20261008-comprehensive-xiv-reconciled-v1/98b93dc83983b113ca5aa7523cfb0b3aa82d611d62bbb302091a45e1b1472692/coverage.json"
+        "review": "evidence/editorial/full-corpus-20261008-comprehensive-xiv-final-fix-v1/6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e/review.md",
+        "manifest": "evidence/editorial/full-corpus-20261008-comprehensive-xiv-final-fix-v1/6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e/manifest.json",
+        "overlays": "evidence/editorial/full-corpus-20261008-comprehensive-xiv-final-fix-v1/6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e/overlays.json",
+        "coverage": "evidence/editorial/full-corpus-20261008-comprehensive-xiv-final-fix-v1/6307fbc1339ece129e5ecef64362d9247b39d988cc605c1a9f4e7fe21cd13f4e/coverage.json"
       }
     },
     {
-      "batchId": "full-corpus-20261008-comprehensive-xv-reconciled-v1",
-      "packetDigest": "c89b189bfac00c64f1c9aa97522f2911475d883e1ecb48777bde77896094b574",
+      "batchId": "full-corpus-20261008-comprehensive-xv-final-fix-v1",
+      "packetDigest": "4f8591aba7ee2dbb56d7aef8e8ba05770a883ace017b278e7d20b92d1343d237",
       "overlayFile": "data/editorial/comprehensive-xv.json",
       "sourceId": "comprehensive",
       "section": "XV",
@@ -3896,9 +3896,9 @@
         },
         {
           "sourceKey": "comprehensive:XV:6",
-          "overlayDigest": "9606b5a03e6e4114587ba1becb50fdc949ed4c57ae0b82608f78e968c227a67a",
-          "contentDigest": "a751fc9388ce3808796d981605fa7186462e91e7f4d09d7b5dc4407c1c34a1b4",
-          "reviewDigest": "1c014bb3e9cd7bd02df2aeacba67dfe733513cdaba580ea37d08250782f66974"
+          "overlayDigest": "e0b87e30c14bc8823d5e5bd913924a7f768da172e3fc0195f8eb28973a6d3efe",
+          "contentDigest": "60894548c5bbd9600fbfa981903032e97911290f416b74d0cb31fa4e16dd7146",
+          "reviewDigest": "3f35628c20a06f23ca8dc97b37565523ab8e25bcb1a3da2fa30db7d610e00716"
         },
         {
           "sourceKey": "comprehensive:XV:7",
@@ -3926,10 +3926,10 @@
         }
       ],
       "paths": {
-        "review": "evidence/editorial/full-corpus-20261008-comprehensive-xv-reconciled-v1/c89b189bfac00c64f1c9aa97522f2911475d883e1ecb48777bde77896094b574/review.md",
-        "manifest": "evidence/editorial/full-corpus-20261008-comprehensive-xv-reconciled-v1/c89b189bfac00c64f1c9aa97522f2911475d883e1ecb48777bde77896094b574/manifest.json",
-        "overlays": "evidence/editorial/full-corpus-20261008-comprehensive-xv-reconciled-v1/c89b189bfac00c64f1c9aa97522f2911475d883e1ecb48777bde77896094b574/overlays.json",
-        "coverage": "evidence/editorial/full-corpus-20261008-comprehensive-xv-reconciled-v1/c89b189bfac00c64f1c9aa97522f2911475d883e1ecb48777bde77896094b574/coverage.json"
+        "review": "evidence/editorial/full-corpus-20261008-comprehensive-xv-final-fix-v1/4f8591aba7ee2dbb56d7aef8e8ba05770a883ace017b278e7d20b92d1343d237/review.md",
+        "manifest": "evidence/editorial/full-corpus-20261008-comprehensive-xv-final-fix-v1/4f8591aba7ee2dbb56d7aef8e8ba05770a883ace017b278e7d20b92d1343d237/manifest.json",
+        "overlays": "evidence/editorial/full-corpus-20261008-comprehensive-xv-final-fix-v1/4f8591aba7ee2dbb56d7aef8e8ba05770a883ace017b278e7d20b92d1343d237/overlays.json",
+        "coverage": "evidence/editorial/full-corpus-20261008-comprehensive-xv-final-fix-v1/4f8591aba7ee2dbb56d7aef8e8ba05770a883ace017b278e7d20b92d1343d237/coverage.json"
       }
     },
     {
@@ -19751,7 +19751,7 @@
         }
       ],
       "openBlockingIssues": [],
-      "dispositionRationale": "A is the natural implication of a female speaker saying she uses/likes the soap: the product is not exclusive to men. B contradicts that use; C/D/E add claims absent from the commercial. Corrected batch to bath; the commercial is a hypothetical passage. Authored repair: Corrected batch soap to bath soap in the prompt and source-derived alternative.",
+      "dispositionRationale": "Option A is the natural implication of a female speaker saying she likes the soap: the product is not exclusive to men. Option B conflicts with that commercial implication; options C, D and E add claims absent from the commercial. Corrected batch to bath; the commercial is a hypothetical passage. Authored repair: Corrected batch soap to bath soap in the prompt and source-derived alternative.",
       "duplicateWinner": null
     },
     {
@@ -19921,7 +19921,7 @@
         }
       ],
       "openBlockingIssues": [],
-      "dispositionRationale": "Compare durations: day1, week7days, month28–31days, year365/366days, century100years. Strict increasing order BECAD is choiceC; source D is incorrect. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+      "dispositionRationale": "Compare durations: day: 1 day; week: 7 days; month: 28–31 days; year: 365/366 days; century: 100 years. Strict increasing order BECAD is choice C; source D is incorrect. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
       "duplicateWinner": null
     },
     {
@@ -20486,7 +20486,7 @@
         }
       ],
       "openBlockingIssues": [],
-      "dispositionRationale": "Hallmark’s named list maps paper1, cotton2, leather3, fruit/flowers4, wood5. Sorting those anniversary numbers gives DABEC (E), uniquely. Source D is incompatible. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+      "dispositionRationale": "Hallmark’s named list maps paper: 1; cotton: 2; leather: 3; fruit/flowers: 4; wood: 5. Sorting those anniversary numbers gives DABEC (E), uniquely. Source D is incompatible. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
       "duplicateWinner": null
     },
     {
@@ -20523,7 +20523,7 @@
         }
       ],
       "openBlockingIssues": [],
-      "dispositionRationale": "The independently read Hallmark list maps steel11, silk/linen12, lace13, gold jewelry14, crystal15. Replacing the source’s ivory theme with Hallmark’s gold-jewelry theme, ascending years produce CADBE (D), uniquely. Source C is incorrect under this explicitly named convention. Authored repair: Named the independently verified Hallmark gift convention, replaced outdated ivory with its gold-jewelry14th theme, and corrected C toD by sorting years.",
+      "dispositionRationale": "The independently read Hallmark list maps steel: 11; silk/linen: 12; lace: 13; gold jewelry: 14; crystal: 15. Replacing the source’s ivory theme with Hallmark’s gold-jewelry theme, ascending years produce CADBE (D), uniquely. Source C is incorrect under this explicitly named convention. Authored repair: Named the independently verified Hallmark gift convention, replaced outdated ivory with its gold-jewelry14th theme, and corrected C toD by sorting years.",
       "duplicateWinner": null
     },
     {
@@ -20560,7 +20560,7 @@
         }
       ],
       "openBlockingIssues": [],
-      "dispositionRationale": "For X>0, multiplying 1/4<1/2<3/4<1<5/4 byX preserves strict inequalities. ABCDE alone is ascending. For negativeX order reverses and X0 ties, hence the editorial positive-domain constraint is necessary. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+      "dispositionRationale": "For X > 0, multiplying 1/4 < 1/2 < 3/4 < 1 < 5/4 by X preserves strict inequalities. ABCDE alone is ascending. For negative X the order reverses, and X = 0 produces ties, hence the editorial positive-domain constraint is necessary. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
       "duplicateWinner": null
     },
     {
@@ -20699,7 +20699,7 @@
         }
       ],
       "openBlockingIssues": [],
-      "dispositionRationale": "Within one Philippine calendar year the dates are New Year Jan1, Valentine Feb14, Labor DayMay1, AllSaintsNov1, ChristmasDec25; sorting yields CDBEA, only B. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+      "dispositionRationale": "Within one Philippine calendar year the dates are New Year: Jan 1; Valentine: Feb 14; Labor Day: May 1; All Saints: Nov 1; Christmas: Dec 25; sorting yields CDBEA, option B only. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
       "duplicateWinner": null
     },
     {
@@ -21198,7 +21198,7 @@
         }
       ],
       "openBlockingIssues": [],
-      "dispositionRationale": "Reconstructed fractions from the printed literal TeX on page151. For anyX,Y, A3(3+3XY)/9=1+XY; B6(6+6XY)/36=1+XY; C10(10+10XY)/100=1+XY; E8(8+8XY)/64=1+XY. D5(15+5XY)/25=3+XY, differing by2 for allX,Y. D is uniquely not algebraically equivalent. Authored repair: Removed the source’s malformed duplicated inline/TeX strings and reconstructed the displayed fractional expressions as unambiguous text; checked identity symbolically for all variables.",
+      "dispositionRationale": "Reconstructed fractions from the printed literal TeX on page 151. For any X and Y, option A: 3(3+3XY)/9 = 1+XY; option B: 6(6+6XY)/36 = 1+XY; option C: 10(10+10XY)/100 = 1+XY; option E: 8(8+8XY)/64 = 1+XY. Option D: 5(15+5XY)/25 = 3+XY, differing by 2 for all X and Y. Option D is uniquely not algebraically equivalent. Authored repair: Removed the source’s malformed duplicated inline/TeX strings and reconstructed the displayed fractional expressions as unambiguous text; checked identity symbolically for all variables.",
       "duplicateWinner": null
     },
     {
@@ -33040,7 +33040,7 @@
   },
   "ownerReviewManifest": {
     "path": "docs/verification/editorial-full-corpus/owner-review-manifest.json",
-    "manifestDigest": "632314ee5ac1e72fd95571b7db45fed38fa59e940b40cd308dcc2f4214e1d0d4",
+    "manifestDigest": "befca02b985a7d07d83dfecd457571308304f07e95b87dd526144f7937b5c7fb",
     "count": 509
   },
   "reconciliationPath": "docs/verification/editorial-full-corpus/reconciliation.json",
