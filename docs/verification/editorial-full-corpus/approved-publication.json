@@ -332,5 +332,26 @@
     "questionCount": 529,
     "shards": 13,
     "applied": false
+  },
+  "applyReceipt": {
+    "observedAt": "2026-10-08T02:10:32Z",
+    "observer": "Controller",
+    "independentReview": "Approved with no findings",
+    "projectId": "demo-pnpe",
+    "endpoint": "127.0.0.1:8080",
+    "applied": 529,
+    "applyManifestPath": "evidence/editorial/full-corpus-approved/import-manifest.json",
+    "applyManifestDigest": "e1fbe85c5dea1ba3504298de0d551d509ccd075d9e8ff6dc3d36b1539ed4a3b9",
+    "applyLogPath": "evidence/editorial/full-corpus-approved/apply.log",
+    "inputDigest": "2aeff30d35bf87bae8ef702156a07d124c3dd30a5d9527a1c9d32ce775b93efb",
+    "generation": "7f8f7ded0edcea40cbba7a5180b9713f6c0edec8f76eac7f60558e8a13a0775b",
+    "headRevision": 2,
+    "readbackMethod": "Guarded apply readback followed by read-only import CLI planning against the live catalog",
+    "postApplyManifestPath": "evidence/editorial/full-corpus-approved/post-apply-manifest.json",
+    "postApplyManifestDigest": "342a947780d7521928611edacb9b6a7bbd0d7b7e7a10204d389917442584cb5d",
+    "postApplyLogPath": "evidence/editorial/full-corpus-approved/post-apply-dryrun.log",
+    "postApplyCreates": 0,
+    "postApplyNoops": 529,
+    "shards": 13
   }
 }

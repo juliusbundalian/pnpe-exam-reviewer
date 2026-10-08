@@ -51,8 +51,16 @@ The existing read-only import CLI was run against explicit `demo-pnpe`, bound to
 FIRESTORE_EMULATOR_HOST=127.0.0.1:8080 npm run import:questions -- --project demo-pnpe --manifest evidence/editorial/full-corpus-approved/import-manifest.json
 ```
 
-The worker performed no apply or import writes. Controller independent review of the concrete manifest and diff precedes the authorized local demo apply. Existing services were not reset or restarted. Production import, public redistribution/asset hosting, unresolved decoder licensing and native/device acceptance remain separate release gates.
+At the preparation checkpoint, the worker performed no apply or import writes. The following receipt records the subsequent controller review and authorized local demo apply. Existing services were not reset or restarted. Production import, public redistribution/asset hosting, unresolved decoder licensing and native/device acceptance remain separate release gates.
 
 ## Verification evidence
 
 The ignored [approval report](../../../.superpowers/sdd/2026-10-07-editorial-full-corpus/approval-report.md) records exact commands and outputs. [Preapproval hashes](../../../evidence/editorial/full-corpus-approved/preapproval-hashes.json), [the archived stamping helper](../../../evidence/editorial/full-corpus-approved/approve.ts.txt), [prior publication bytes](../../../evidence/editorial/full-corpus-approved/prior-publication.json) and command logs are retained alongside the dry run. Reference tests preserve historical packet contracts by removing only the exact authorized approval/status stamp after checking the complete original overlay digest; altered content, review metadata, evidence, rationale or timestamps fail those comparisons.
+
+## Authorized local demo apply and readback
+
+Controller independent review approved the checkpoint with no findings. The controller then applied the exact original dry-run manifest to `demo-pnpe` at `127.0.0.1:8080`, confirming digest `e1fbe85c5dea1ba3504298de0d551d509ccd075d9e8ff6dc3d36b1539ed4a3b9`. The guarded CLI exited successfully with `{"applied":529}`; the controller recorded the observation at `2026-10-08T02:10:32Z`. The [apply log](../../../evidence/editorial/full-corpus-approved/apply.log) preserves the exact command and result.
+
+The guarded apply completed its revision/shard readback before switching the catalog head. A subsequent read-only CLI dry run against the live catalog returned **zero creates and 529 noops**, with all thirteen shard digests unchanged. The [post-apply manifest](../../../evidence/editorial/full-corpus-approved/post-apply-manifest.json), digest `342a947780d7521928611edacb9b6a7bbd0d7b7e7a10204d389917442584cb5d`, and [CLI output](../../../evidence/editorial/full-corpus-approved/post-apply-dryrun.log) record current head revision **2**, generation `7f8f7ded0edcea40cbba7a5180b9713f6c0edec8f76eac7f60558e8a13a0775b`, and full input digest `2aeff30d35bf87bae8ef702156a07d124c3dd30a5d9527a1c9d32ce775b93efb` matching the approved publication.
+
+The local demo catalog now contains all 529 approved questions. The additive `applyReceipt` in the machine record preserves the original approval/coverage observation and dry-run checkpoint. This documentation follow-up read the retained logs/manifests and changed no questions, review metadata, source evidence or runtime state. No additional apply, service reset/restart or production write occurred.

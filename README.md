@@ -8,8 +8,8 @@ plus the exact 509-revision full-corpus manifest. All 529 pass strict publicatio
 validation; 145 drafts and 13 rejected duplicates remain excluded. Category pools
 meet the default 150-question exam quotas. See the
 [approved publication and coverage](docs/verification/editorial-full-corpus/approved-publication.md)
-for exact authorization, counts and the prepared local demo dry run. Source counts
-are not counts of unique or publishable questions.
+for exact authorization, counts and the verified local demo catalog: 529 questions
+at head revision 2. Source counts are not counts of unique or publishable questions.
 
 The mobile foundation adds a public Home, four categories and fifteen
 subcategories, appearance settings, and an authentication shell. Native/device
