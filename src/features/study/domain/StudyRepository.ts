@@ -16,5 +16,7 @@ export interface StudyRepository {
   mergeRemoteBookmark(owner: OwnerContext, bookmark: Bookmark): Promise<void>;
   pending(owner: OwnerContext, now: number): Promise<readonly StudyOperation[]>;
   acknowledge(owner: OwnerContext, operationId: string, remoteRevision?: number): Promise<void>;
+  /** Preserve queued desired state while advancing its compare-and-set base. */
+  rebaseBookmark(owner: OwnerContext, operationId: string, remoteRevision: number): Promise<void>;
   retry(owner: OwnerContext, operationId: string, nextAttemptAt: number): Promise<void>;
 }

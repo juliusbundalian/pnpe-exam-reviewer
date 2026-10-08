@@ -40,6 +40,7 @@ const config: ExpoConfig = {
     'expo-dev-client',
     'expo-splash-screen',
     'expo-status-bar',
+    'expo-sqlite',
     ...(configured
       ? ([
           ['@react-native-firebase/app', { ios: { disableSPM: true } }],

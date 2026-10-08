@@ -63,15 +63,22 @@ test.each([
 
 test('asset references must agree including URI and kinds, independent of metadata ordering', () => {
   const asset = { id: 'fixture-asset', version: 1, uri: 'https://example.com/a' };
+  const second = { id: 'fixture-second-asset', version: 2, uri: 'https://example.com/second' };
   const question = studyQuestion({
-    explanation: [{ kind: 'image', ...asset, width: 100, height: 100, alt: 'Fixture' }],
+    explanation: [
+      { kind: 'image', ...asset, width: 100, height: 100, alt: 'Fixture' },
+      { kind: 'diagram', ...second, width: 100, height: 100, alt: 'Second fixture' },
+    ],
   });
-  const entry = studyEntry({ supportedKinds: ['text', 'image'], assets: [asset] });
+  const entry = studyEntry({
+    supportedKinds: ['image', 'diagram', 'text'],
+    assets: [second, asset],
+  });
   expect(validateRevision(question, entry).id).toBe('fixture-grammar');
   for (const assets of [
     [],
-    [{ ...asset, version: 2 }],
-    [{ ...asset, uri: 'https://example.com/b' }],
+    [second, { ...asset, version: 2 }],
+    [second, { ...asset, uri: 'https://example.com/b' }],
   ]) {
     expect(() => validateRevision(question, { ...entry, assets })).toThrow(StudyError);
   }
