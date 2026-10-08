@@ -11,10 +11,12 @@ All 687 occurrences now have an editorial disposition: 529 approved eligible,
 145 drafts and 13 rejected duplicates. The owner approved the exact 509 new
 revisions in manifest `befca02b985a7d07d83dfecd457571308304f07e95b87dd526144f7937b5c7fb`
 as `Project owner`, observed/recorded at `2026-10-08T01:48:03Z`.
+The owner deferred recovery of all 145 drafts for now. They remain preserved and
+excluded from publication while content loading, Reviewer and Mock Exam work proceeds.
 The initial twenty remain byte-identical. The
 [approved publication and coverage](verification/editorial-full-corpus/approved-publication.md)
-records the complete strict 529-question publication and read-only local demo
-import plan. All four category pools meet their unchanged quotas; Public Service
+records the complete strict 529-question publication and verified local demo
+import receipt. All four category pools meet their unchanged quotas; Public Service
 Conduct and Data Interpretation remain empty. The
 [review index](verification/editorial-full-corpus/README.md) and its linked
 preapproval packets/manifest are immutable historical review evidence; their
