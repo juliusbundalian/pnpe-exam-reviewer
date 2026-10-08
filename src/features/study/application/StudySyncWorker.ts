@@ -108,6 +108,10 @@ export class StudySyncWorker {
       this.emit({ ...this.status, syncing: true, recovery: null });
       try {
         this.check(owner, generation);
+        const queued = await this.repository.pending(owner, Number.MAX_SAFE_INTEGER);
+        this.check(owner, generation);
+        this.emit({ pendingCount: queued.length, syncing: true, recovery: null });
+        this.check(owner, generation);
         try {
           const downloaded = await this.remote.listBookmarks(owner);
           this.check(owner, generation);

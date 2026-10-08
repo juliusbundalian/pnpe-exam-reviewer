@@ -459,3 +459,29 @@ test.each(['network', 'permission-denied'] as const)(
     expect(await study.pending(alice, now)).toEqual([]);
   },
 );
+
+test('pending count comes from durable outbox before a deferred startup download', async () => {
+  await study.setBookmark(alice, studyEntry(), false);
+  let finish!: (value: ReturnType<typeof studyBookmark>[]) => void, entered!: () => void;
+  const ready = new Promise<void>((resolve) => {
+    entered = resolve;
+  });
+  create(
+    remote({
+      listBookmarks: async () => {
+        entered();
+        return new Promise((resolve) => {
+          finish = resolve;
+        });
+      },
+    }),
+  );
+  const statuses: StudySyncStatus[] = [];
+  worker.subscribe((status) => statuses.push(status));
+  const flush = worker.flush();
+  await ready;
+  const status = statuses.at(-1);
+  finish([]);
+  await flush;
+  expect(status).toMatchObject({ pendingCount: 1, syncing: true, recovery: null });
+});
