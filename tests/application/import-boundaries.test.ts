@@ -94,6 +94,11 @@ test.each([
   ['src/features/auth/domain/Example.ts', '../data/FirebaseAuthenticationRepository'],
   ['src/features/auth/application/Example.ts', '../presentation/SignInScreen'],
   ['src/features/auth/presentation/Example.tsx', '../data/FirebaseAuthenticationRepository'],
+  ['src/features/content/domain/Example.ts', '../data/FirebaseContentRemote'],
+  ['src/features/study/domain/Example.ts', '../data/SqliteStudyRepository'],
+  ['src/features/reviewer/application/Example.ts', '../presentation/ReviewerScreen'],
+  ['src/features/bookmarks/application/Example.ts', 'react'],
+  ['src/features/study/domain/Example.ts', '@react-native-firebase/firestore'],
 ])('ESLint rejects layer violations in %s', (filePath, dependency) => {
   const run = spawnSync(
     process.execPath,
@@ -147,6 +152,9 @@ test.each([
   ['src/features/auth/domain/Example.ts', 'react', 'dynamic'],
   ['src/features/auth/domain/Example.ts', 'react-native', 'dynamic'],
   ['src/features/auth/application/Example.ts', 'expo-router', 'dynamic'],
+  ['src/features/content/domain/Example.ts', '../../../../tools/questions/import-store', 'dynamic'],
+  ['src/features/study/domain/Example.ts', '@react-native-firebase/firestore', 'dynamic'],
+  ['src/features/reviewer/application/Example.ts', '../presentation/ReviewerScreen', 'dynamic'],
 ])('ESLint rejects %s importing %s (%s)', (filePath, dependency, kind) => {
   const run = spawnSync(
     process.execPath,
