@@ -54,6 +54,9 @@ export class BookmarkService {
         owner,
         previous?.entry ?? parsed.data,
         previous ? !previous.deleted : false,
+        () => {
+          if (!this.mutationAllowed()) throw new StudyError('permission-denied');
+        },
       );
       this.check(owner);
       return bookmark;

@@ -11,7 +11,13 @@ export interface StudyRepository {
   move(owner: OwnerContext, id: string, ordinal: number): Promise<ReviewerSession>;
   /** Includes tombstones; presentation filters deleted records. */
   listBookmarks(owner: OwnerContext): Promise<readonly Bookmark[]>;
-  setBookmark(owner: OwnerContext, entry: CatalogEntry, deleted: boolean): Promise<Bookmark>;
+  /** Optional synchronous authorization runs at transaction execution and immediately before commit. */
+  setBookmark(
+    owner: OwnerContext,
+    entry: CatalogEntry,
+    deleted: boolean,
+    checkMutation?: () => void,
+  ): Promise<Bookmark>;
   /** Never overwrite a pending local desired state. */
   mergeRemoteBookmark(owner: OwnerContext, bookmark: Bookmark): Promise<void>;
   pending(owner: OwnerContext, now: number): Promise<readonly StudyOperation[]>;

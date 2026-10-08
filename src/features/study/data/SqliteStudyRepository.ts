@@ -73,15 +73,23 @@ export class SqliteStudyRepository implements StudyRepository {
     input(OwnerContextSchema, owner);
     if (!this.guard.isCurrent(owner)) throw new StudyError('auth-required');
   }
-  private async access<T>(owner: OwnerContext, work: (tx: SqlDatabase) => Promise<T>): Promise<T> {
+  private async access<T>(
+    owner: OwnerContext,
+    work: (tx: SqlDatabase) => Promise<T>,
+    checkMutation?: () => void,
+  ): Promise<T> {
     this.check(owner);
     try {
       const result = await this.db.exclusive(
         async (tx) => {
           this.check(owner);
+          checkMutation?.();
           return work(tx);
         },
-        () => this.check(owner),
+        () => {
+          this.check(owner);
+          checkMutation?.();
+        },
       );
       this.check(owner);
       return result;
@@ -254,31 +262,40 @@ export class SqliteStudyRepository implements StudyRepository {
       ).map((row) => bookmarkRow(row).bookmark),
     );
   }
-  setBookmark(owner: OwnerContext, value: CatalogEntry, deleted: boolean): Promise<Bookmark> {
+  setBookmark(
+    owner: OwnerContext,
+    value: CatalogEntry,
+    deleted: boolean,
+    checkMutation?: () => void,
+  ): Promise<Bookmark> {
     const entry = input(CatalogEntrySchema, value);
     if (typeof deleted !== 'boolean') throw new StudyError('invalid-content');
-    return this.access(owner, async (tx) => {
-      const previous = await readBookmark(tx, owner, entry.id);
-      const now = input(SafeIntegerSchema, this.clock.now());
-      const bookmark = stored(BookmarkSchema, {
-        uid: owner.uid,
-        questionId: entry.id,
-        entry,
-        createdAt: previous?.bookmark.createdAt ?? now,
-        updatedAt: Math.max(now, previous?.bookmark.updatedAt ?? 0),
-        deleted,
-        serverRevision: previous?.bookmark.serverRevision ?? 0,
-      });
-      const sequence = (previous?.sequence ?? 0) + 1;
-      await writeBookmark(tx, owner, bookmark, sequence);
-      await insertOperation(tx, {
-        ...this.common(owner, entry.id, sequence),
-        kind: 'bookmarkState',
-        bookmark,
-        baseRevision: bookmark.serverRevision,
-      });
-      return bookmark;
-    });
+    return this.access(
+      owner,
+      async (tx) => {
+        const previous = await readBookmark(tx, owner, entry.id);
+        const now = input(SafeIntegerSchema, this.clock.now());
+        const bookmark = stored(BookmarkSchema, {
+          uid: owner.uid,
+          questionId: entry.id,
+          entry,
+          createdAt: previous?.bookmark.createdAt ?? now,
+          updatedAt: Math.max(now, previous?.bookmark.updatedAt ?? 0),
+          deleted,
+          serverRevision: previous?.bookmark.serverRevision ?? 0,
+        });
+        const sequence = (previous?.sequence ?? 0) + 1;
+        await writeBookmark(tx, owner, bookmark, sequence);
+        await insertOperation(tx, {
+          ...this.common(owner, entry.id, sequence),
+          kind: 'bookmarkState',
+          bookmark,
+          baseRevision: bookmark.serverRevision,
+        });
+        return bookmark;
+      },
+      checkMutation,
+    );
   }
   async mergeRemoteBookmark(owner: OwnerContext, value: Bookmark): Promise<void> {
     const bookmark = input(BookmarkSchema, value);

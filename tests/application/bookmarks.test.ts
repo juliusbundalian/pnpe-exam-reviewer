@@ -173,3 +173,74 @@ test('permission errors opening content remain recovery errors and preserve save
   });
   expect(await bookmarks.list(owner)).toHaveLength(1);
 });
+
+test('gate disabled while the bookmark transaction waits behind SQLite changes no durable state', async () => {
+  await bookmarks.toggle(owner, studyEntry());
+  const before = await h.study.listBookmarks(owner);
+  const beforePending = await h.study.pending(owner, 1000);
+  let enabled = true;
+  bookmarks = new BookmarkService(h.study, h.content, h.guard, () => enabled);
+  const release = deferred<void>();
+  const blockerEntered = deferred<void>();
+  const mutationQueued = deferred<void>();
+  const list = h.study.listBookmarks.bind(h.study);
+  const set = h.study.setBookmark.bind(h.study);
+  let blocker!: Promise<void>;
+  jest.spyOn(h.study, 'listBookmarks').mockImplementationOnce(async (candidate) => {
+    const rows = await list(candidate);
+    // The actual SQL read completes before an unrelated transaction takes the connection.
+    blocker = h.db.exclusive(async () => {
+      blockerEntered.resolve();
+      await release.promise;
+    });
+    return rows;
+  });
+  jest.spyOn(h.study, 'setBookmark').mockImplementation((...args) => {
+    const result = set(...args);
+    mutationQueued.resolve();
+    return result;
+  });
+  const toggle = bookmarks.toggle(owner, studyEntry());
+  await Promise.all([blockerEntered.promise, mutationQueued.promise]);
+  enabled = false;
+  release.resolve();
+  await blocker;
+  await expect(toggle).rejects.toMatchObject({ code: 'permission-denied' });
+  expect(await h.study.listBookmarks(owner)).toEqual(before);
+  expect(await h.study.pending(owner, 1000)).toEqual(beforePending);
+});
+
+test('gate disabled after SQL writes but before commit rolls back bookmark and outbox together', async () => {
+  await bookmarks.toggle(owner, studyEntry());
+  const before = await h.study.listBookmarks(owner);
+  const beforePending = await h.study.pending(owner, 1000);
+  let enabled = true;
+  bookmarks = new BookmarkService(h.study, h.content, h.guard, () => enabled);
+  const release = deferred<void>();
+  const inserted = deferred<void>();
+  const exclusive = h.db.exclusive.bind(h.db);
+  jest.spyOn(h.db, 'exclusive').mockImplementation((work, beforeCommit) =>
+    exclusive(
+      (tx) =>
+        work({
+          ...tx,
+          run: async (sql, params) => {
+            const result = await tx.run(sql, params);
+            if (sql.startsWith('INSERT INTO study_outbox')) {
+              inserted.resolve();
+              await release.promise;
+            }
+            return result;
+          },
+        }),
+      beforeCommit,
+    ),
+  );
+  const toggle = bookmarks.toggle(owner, studyEntry());
+  await inserted.promise;
+  enabled = false;
+  release.resolve();
+  await expect(toggle).rejects.toMatchObject({ code: 'permission-denied' });
+  expect(await h.study.listBookmarks(owner)).toEqual(before);
+  expect(await h.study.pending(owner, 1000)).toEqual(beforePending);
+});
