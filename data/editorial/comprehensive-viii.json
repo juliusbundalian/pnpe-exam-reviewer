@@ -4225,7 +4225,7 @@
         }
       ]
     },
-    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences.",
+    "rationale": "Independent language review. Taxonomy communicationSkills/grammar: Identifies grammatical structure, modifier attachment, parallel forms and specified meaning preservation rather than unsupported stylistic preferences. Existing duplicate disposition: winner comprehensive:VIII:33. Identical deserted-area sentence reconstruction and alternatives; prior disposition retained.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=103",
       "docs/verification/editorial-full-corpus-task1.md#viii-34"

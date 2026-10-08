@@ -1,0 +1,55 @@
+import { createHash } from 'node:crypto';
+import { readFile, writeFile, readdir } from 'node:fs/promises';
+import { resolve, join } from 'node:path';
+import { QuestionSchema } from '../../../src/features/content/domain/question';
+import { taxonomy } from '../../../src/features/content/domain/taxonomy';
+import { canonicalJson } from '../../../tools/questions/editorial';
+import { buildReviewPacket, writeReviewPacket } from '../../../tools/questions/review-packet';
+import { coverageReport } from '../../../tools/questions/coverage';
+import { loadCandidates, loadOverlays, loadApprovedPublication, loadIdentityRegistry } from '../../../tools/questions/source-workflow';
+
+async function main() {
+  const root=resolve('.'); const destination='docs/verification/editorial-full-corpus';
+  const candidates=await loadCandidates(root); const overlays=await loadOverlays(root);
+  const registry=await loadIdentityRegistry(root); const approved=await loadApprovedPublication(root);
+  const baseline=JSON.parse(await readFile('.superpowers/sdd/2026-10-07-editorial-full-corpus/preservation-baseline.json','utf8'));
+  for(const [path,hash] of Object.entries(baseline)) if(createHash('sha256').update(await readFile(path)).digest('hex')!==hash) throw Error('Preservation mismatch '+path);
+  const by=new Map(overlays.map(o=>[o.sourceKey,o]));
+  const groups=JSON.parse(await readFile(join(destination,'reconciliation.json'),'utf8')).groups;
+  const totals={approved:0,needsReview:0,draft:0,rejected:0};
+  const occurrences=candidates.map(c=>{
+    const o=by.get(c.original.sourceKey);if(!o)throw Error('Missing overlay');totals[o.status]++;
+    const q=o.proposed as any;if(q.id!==registry[o.sourceKey])throw Error('Identity mismatch '+o.sourceKey);
+    for(const issue of c.issues) if(!o.review?.issues?.some(i=>canonicalJson(i)===canonicalJson(issue))) throw Error('Lost source issue '+o.sourceKey);
+    for(const s of q.sources){
+      const original=candidates.find(c=>c.original.sourceKey===`${s.sourceId}:${s.section}:${s.originalNumber}`)?.original;
+      if(!original || s.checksum!==original.evidence.checksum || s.originalAnswer!==original.rawAnswer || s.evidenceLocator!==original.evidence.locator || canonicalJson(s.pages)!==canonicalJson({start:original.pageStart,end:original.pageEnd}) || canonicalJson(s.originalChoiceLabels)!==canonicalJson(original.rawChoices?.map(c=>c.label)??[]) || canonicalJson(s.links)!==canonicalJson(original.evidence.links) || canonicalJson(s.imageLocations)!==canonicalJson(original.evidence.imageLocations))throw Error('Lineage mismatch '+o.sourceKey);
+    }
+    const open=o.review?.issues?.filter(i=>i.blocking&&!o.review?.resolutions?.some(r=>r.code===i.code))??[];
+    if(o.status==='needsReview' && (open.length || !QuestionSchema.safeParse(q).success || o.approval))throw Error('Review gate '+o.sourceKey);
+    if(o.status==='draft'&&!open.length)throw Error('Missing draft blocker '+o.sourceKey);
+    return {sourceKey:o.sourceKey,id:q.id,version:q.version,status:o.status,sourceId:c.original.sourceId,section:c.original.section,pages:{start:c.original.pageStart,end:c.original.pageEnd},categoryId:q.categoryId??null,subcategoryId:q.subcategoryId??null,schemaValid:QuestionSchema.safeParse(q).success,originalDigest:createHash('sha256').update(canonicalJson(c)).digest('hex'),sourceRefKeys:q.sources.map((s:any)=>`${s.sourceId}:${s.section}:${s.originalNumber}`),sourceIssues:c.issues,openBlockingIssues:open,dispositionRationale:o.rationale,duplicateWinner:groups.find((g:any)=>g.duplicate===o.sourceKey)?.winner??null};
+  });
+  if(occurrences.length!==687 || by.size!==687)throw Error('Accounting mismatch');
+  const census=(ids:string[], field:'sourceId'|'subcategoryId'|'categoryId')=>ids.map(id=>({id,counts:occurrences.filter(o=>o[field]===id).reduce((counts,o)=>{counts[o.status]++;return counts;},{approved:0,needsReview:0,draft:0,rejected:0})}));
+  const packets=[];const revisions=[];
+  for(const name of (await readdir('data/editorial')).filter(n=>n.endsWith('.json')&&n!=='short-initial.json').sort()) {
+    const batch=JSON.parse(await readFile(join('data/editorial',name),'utf8'));
+    const batchId='full-corpus-20261008-'+name.replace('.json','')+'-reconciled-v1';
+    const packet=buildReviewPacket(batchId,candidates,batch);
+    const dir=await writeReviewPacket(root,packet);const path=dir.slice(root.length+1);
+    const keys=batch.map((o:any)=>o.sourceKey); const sectionCandidates=candidates.filter(c=>keys.includes(c.original.sourceKey));
+    const coverage=coverageReport(sectionCandidates,batch,[]);
+    await writeFile(join(dir,'coverage.json'),JSON.stringify(coverage,null,2)+'\n',{flag:'wx'});
+    const counts=occurrences.filter(o=>keys.includes(o.sourceKey)).reduce((counts,o)=>{counts[o.status]++;return counts;},{approved:0,needsReview:0,draft:0,rejected:0});
+    packets.push({batchId,packetDigest:packet.manifest.packetDigest,overlayFile:'data/editorial/'+name,sourceId:sectionCandidates[0]!.original.sourceId,section:sectionCandidates[0]!.original.section,counts,sourceKeys:keys,rows:packet.manifest.rows,paths:{review:path+'/review.md',manifest:path+'/manifest.json',overlays:path+'/overlays.json',coverage:path+'/coverage.json'}});
+    for(const row of packet.manifest.rows){const o=by.get(row.sourceKey)!;if(o.status==='needsReview'){const q=QuestionSchema.parse(o.proposed);revisions.push({...row,id:q.id,version:q.version,batchId,packetDigest:packet.manifest.packetDigest,sourceRefKeys:q.sources.map(s=>`${s.sourceId}:${s.section}:${s.originalNumber}`)});}}
+  }
+  const coverage=coverageReport(candidates,overlays,approved);
+  const manifest={request:'Review these exact unapproved needsReview revisions only. Approval must name this manifestDigest or an explicit subset of its revision rows and a reviewer label; drafts/rejected/initial approved20 are excluded. This request is prepared for controller review, not an approval stamp.',manifestDigest:createHash('sha256').update(canonicalJson(revisions)).digest('hex'),revisions};
+  const index={generatedAt:new Date().toISOString(),totals,initialApproved:{count:20,overlayFile:'data/editorial/short-initial.json',sourceKeys:occurrences.filter(o=>o.status==='approved').map(o=>o.sourceKey),sha256:baseline['data/editorial/short-initial.json']},preservationHashes:baseline,countSemantics:'Counts are source-occurrence dispositions, not automatic distinct usable bank size. Each needsReview row is one retained stable proposal identity after semantic duplicate reconciliation; no new question is approved or published. Drafts/rejected still count toward all687. Schema-invalid draft taxonomy counts below reflect intended pair only; canonical coverage separately reports unmapped rows.',bySource:census(['short','comprehensive','notes'],'sourceId'),byCategory:census(taxonomy.map(c=>c.id),'categoryId'),bySubcategory:census(taxonomy.flatMap(c=>c.subcategories.map(s=>s.id)),'subcategoryId'),unmappedTaxonomy:occurrences.filter(o=>!o.categoryId||!o.subcategoryId).length,packets,occurrences,coverage,ownerReviewManifest:{path:destination+'/owner-review-manifest.json',manifestDigest:manifest.manifestDigest,count:revisions.length},reconciliationPath:destination+'/reconciliation.json',approvedLineageException:groups.filter((g:any)=>g.winner.startsWith('short:')).map((g:any)=>({winner:g.winner,duplicate:g.duplicate,policy:g.lineagePolicy})),historicalAudits:['docs/verification/editorial-full-corpus-task1.md','docs/verification/editorial-full-corpus-task2.md','docs/verification/editorial-full-corpus-task3.md'],deferredTriageLedger:'.superpowers/sdd/2026-10-07-editorial-full-corpus/progress.md'};
+  await writeFile(join(destination,'review-index.json'),JSON.stringify(index,null,2)+'\n');
+  await writeFile(join(destination,'owner-review-manifest.json'),JSON.stringify(manifest,null,2)+'\n');
+  console.log(JSON.stringify({totals,packets:packets.length,packetRows:packets.reduce((n,p)=>n+p.rows.length,0),revisions:revisions.length,manifestDigest:manifest.manifestDigest,approved:approved.length}));
+}
+main().catch(e=>{console.error(e);process.exitCode=1;});

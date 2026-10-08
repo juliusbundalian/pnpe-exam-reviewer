@@ -376,12 +376,16 @@
             {
               "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3; RA6975 section24; RA10575 section4. RA10071 assigns preliminary investigation and prosecution of penal-law violations to the NPS. This positive-role conversion replaces an unrecoverable except item.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-3"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Criminal Justice System:5. Both distinguish the prosecution function from police/corrections through the public prosecutor/NPS mandate. Keep the explicit preliminary-investigation objective in row5.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-7"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -392,16 +396,17 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3; RA6975 section24; RA10575 section4. RA10071 assigns preliminary investigation and prosecution of penal-law violations to the NPS. This positive-role conversion replaces an unrecoverable except item.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3; RA6975 section24; RA10575 section4. RA10071 assigns preliminary investigation and prosecution of penal-law violations to the NPS. This positive-role conversion replaces an unrecoverable except item. Reconciliation disposition: duplicate of notes:Criminal Justice System:5. Both distinguish the prosecution function from police/corrections through the public prosecutor/NPS mandate. Keep the explicit preliminary-investigation objective in row5.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=12",
       "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-3",
       "https://lawphil.net/statutes/repacts/ra2010/ra_10071_2010.html",
       "evidence/editorial/task-3/research/ra10071.txt",
       "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html",
-      "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html"
+      "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-7"
     ],
-    "status": "needsReview",
+    "status": "rejected",
     "review": {
       "issues": [
         {
@@ -423,6 +428,11 @@
           "code": "editorial-review",
           "message": "Source assertion is not editorial approval",
           "blocking": false
+        },
+        {
+          "code": "task4-duplicate",
+          "blocking": false,
+          "message": "Duplicate disposition; retained winner notes:Criminal Justice System:5. Both distinguish the prosecution function from police/corrections through the public prosecutor/NPS mandate. Keep the explicit preliminary-investigation objective in row5."
         }
       ],
       "resolutions": [
@@ -539,10 +549,35 @@
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-4"
             }
           ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Criminal Justice System",
+          "originalNumber": "46",
+          "pages": {
+            "start": 16,
+            "end": 16
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "National Prosecution Service",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=16",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section3; RA10575 section4; RA6975 section61. NPS has the prosecution mandate in RA10071 section3. BuCor and BJMP perform corrections/custodial functions. Missing except options are replaced transparently by a positive-role question.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-46"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Criminal Justice System:4. Both identify NPS from preliminary-investigation/prosecution duties under RA10071 section3; except-to-positive conversion produced the duplicate.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-8"
+            }
+          ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -553,14 +588,15 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3; RA6975 section24; RA10575 section4. RA10071 section3 establishes and assigns these functions to the NPS. PNP law enforcement and BuCor reformation are distinct mandates.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3; RA6975 section24; RA10575 section4. RA10071 section3 establishes and assigns these functions to the NPS. PNP law enforcement and BuCor reformation are distinct mandates. Reconciliation: retain notes:Criminal Justice System:46 source lineage for this logical question. Both identify NPS from preliminary-investigation/prosecution duties under RA10071 section3; except-to-positive conversion produced the duplicate.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=12",
       "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-4",
       "https://lawphil.net/statutes/repacts/ra2010/ra_10071_2010.html",
       "evidence/editorial/task-3/research/ra10071.txt",
       "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html",
-      "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html"
+      "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-8"
     ],
     "status": "needsReview",
     "review": {
@@ -700,10 +736,35 @@
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-5"
             }
           ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Criminal Justice System",
+          "originalNumber": "3",
+          "pages": {
+            "start": 12,
+            "end": 12
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Fiscal",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=12",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3; RA6975 section24; RA10575 section4. RA10071 assigns preliminary investigation and prosecution of penal-law violations to the NPS. This positive-role conversion replaces an unrecoverable except item.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-3"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Criminal Justice System:5. Both distinguish the prosecution function from police/corrections through the public prosecutor/NPS mandate. Keep the explicit preliminary-investigation objective in row5.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-7"
+            }
+          ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -714,14 +775,15 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3; Constitution VIII section1; RA10575 section4. RA10071 section3 assigns preliminary investigation and prosecution to NPS. It is distinct from judicial adjudication and corrections; the question asks institutional function, not current procedural deadlines.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3; Constitution VIII section1; RA10575 section4. RA10071 section3 assigns preliminary investigation and prosecution to NPS. It is distinct from judicial adjudication and corrections; the question asks institutional function, not current procedural deadlines. Reconciliation: retain notes:Criminal Justice System:3 source lineage for this logical question. Both distinguish the prosecution function from police/corrections through the public prosecutor/NPS mandate. Keep the explicit preliminary-investigation objective in row5.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=12",
       "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-5",
       "https://lawphil.net/statutes/repacts/ra2010/ra_10071_2010.html",
       "evidence/editorial/task-3/research/ra10071.txt",
       "https://lawphil.net/consti/cons1987.html",
-      "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html"
+      "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-7"
     ],
     "status": "needsReview",
     "review": {
@@ -1108,10 +1170,35 @@
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-8"
             }
           ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Criminal Justice System",
+          "originalNumber": "30",
+          "pages": {
+            "start": 15,
+            "end": 15
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Philippine Criminal Justice System",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=15",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Page 4, vision and five-pillar framework. The plan’s stated vision describes the criminal justice system through investigation, custody, prosecution, punishment and rehabilitation. Election administration and civil-service personnel management do not describe that process.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-30"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Criminal Justice System:8. Both identify the criminal justice system from its integrated enforcement-to-corrections description; same system-level recognition and same competing-system distractors. Pillar/process paraphrase adds no separately tested skill.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-9"
+            }
+          ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -1122,14 +1209,15 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Page 4, five-pillar framework. The Philippine criminal justice development plan lists law enforcement, prosecution, courts, corrections and community as its five pillars. Electoral and personnel administration are separate constitutional mandates.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Page 4, five-pillar framework. The Philippine criminal justice development plan lists law enforcement, prosecution, courts, corrections and community as its five pillars. Electoral and personnel administration are separate constitutional mandates. Reconciliation: retain notes:Criminal Justice System:30 source lineage for this logical question. Both identify the criminal justice system from its integrated enforcement-to-corrections description; same system-level recognition and same competing-system distractors. Pillar/process paraphrase adds no separately tested skill.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=12",
       "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-8",
       "https://www.ombudsman.gov.ph/UNDP4/wp-content/uploads/2012/12/MTDP-for-CJS-Final-Report.pdf",
       "evidence/editorial/task-3/research/pillarsreport.pdf.txt",
       "evidence/editorial/task-3/pdf-snapshots/pillarsreport-4.png",
-      "evidence/editorial/task-3/pdf-snapshots/pillarsreport-5.png"
+      "evidence/editorial/task-3/pdf-snapshots/pillarsreport-5.png",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-9"
     ],
     "status": "needsReview",
     "review": {
@@ -1896,10 +1984,35 @@
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-13"
             }
           ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Criminal Justice System",
+          "originalNumber": "48",
+          "pages": {
+            "start": 16,
+            "end": 16
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Law Enforcement",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=16",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section24; RA10575 section4; Constitution VIII section1. Section24 assigns enforcement, investigation, prevention and arrest powers to PNP; corrections rehabilitates and courts adjudicate.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-48"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Criminal Justice System:13. Both identify the law-enforcement pillar from police duties under RA6975 section24; prevention versus patrol/investigation examples test the same pillar classification.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-11"
+            }
+          ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -1910,14 +2023,15 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section24; RA10071 section3; RA10575 section4. RA6975 section24 assigns police enforcement and crime-prevention functions. RA10071 assigns prosecution, and RA10575 assigns corrections/reformation.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section24; RA10071 section3; RA10575 section4. RA6975 section24 assigns police enforcement and crime-prevention functions. RA10071 assigns prosecution, and RA10575 assigns corrections/reformation. Reconciliation: retain notes:Criminal Justice System:48 source lineage for this logical question. Both identify the law-enforcement pillar from police duties under RA6975 section24; prevention versus patrol/investigation examples test the same pillar classification.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=13",
       "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-13",
       "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html",
       "evidence/editorial/task-3/research/ra6975.txt",
       "https://lawphil.net/statutes/repacts/ra2010/ra_10071_2010.html",
-      "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html"
+      "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-11"
     ],
     "status": "needsReview",
     "review": {
@@ -2363,10 +2477,35 @@
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-16"
             }
           ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Criminal Justice System",
+          "originalNumber": "47",
+          "pages": {
+            "start": 16,
+            "end": 16
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Courts",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=16",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against ArticleVIII section1; RA10071 section3; RA6975 section24. ArticleVIII assigns judicial power to courts, unlike prosecutorial charging and police enforcement functions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-47"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Criminal Justice System:16. Both identify courts as the institution adjudicating criminal guilt/rendering criminal judgment, contrasted with police/prosecutors.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-10"
+            }
+          ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -2377,14 +2516,15 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against ArticleVIII section1; RA10071 section3; RA6975 section24. ArticleVIII vests judicial power in courts; prosecutors prosecute and police investigate. The court, not a prosecutor’s accusation, decides culpability.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against ArticleVIII section1; RA10071 section3; RA6975 section24. ArticleVIII vests judicial power in courts; prosecutors prosecute and police investigate. The court, not a prosecutor’s accusation, decides culpability. Reconciliation: retain notes:Criminal Justice System:47 source lineage for this logical question. Both identify courts as the institution adjudicating criminal guilt/rendering criminal judgment, contrasted with police/prosecutors.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=13",
       "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-16",
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt",
       "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html",
-      "https://lawphil.net/statutes/repacts/ra2010/ra_10071_2010.html"
+      "https://lawphil.net/statutes/repacts/ra2010/ra_10071_2010.html",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-10"
     ],
     "status": "needsReview",
     "review": {
@@ -4574,12 +4714,16 @@
             {
               "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Page 4, vision and five-pillar framework. The plan’s stated vision describes the criminal justice system through investigation, custody, prosecution, punishment and rehabilitation. Election administration and civil-service personnel management do not describe that process.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-30"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Criminal Justice System:8. Both identify the criminal justice system from its integrated enforcement-to-corrections description; same system-level recognition and same competing-system distractors. Pillar/process paraphrase adds no separately tested skill.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-9"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -4590,16 +4734,17 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Page 4, vision and five-pillar framework. The plan’s stated vision describes the criminal justice system through investigation, custody, prosecution, punishment and rehabilitation. Election administration and civil-service personnel management do not describe that process.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Page 4, vision and five-pillar framework. The plan’s stated vision describes the criminal justice system through investigation, custody, prosecution, punishment and rehabilitation. Election administration and civil-service personnel management do not describe that process. Reconciliation disposition: duplicate of notes:Criminal Justice System:8. Both identify the criminal justice system from its integrated enforcement-to-corrections description; same system-level recognition and same competing-system distractors. Pillar/process paraphrase adds no separately tested skill.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=15",
       "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-30",
       "https://www.ombudsman.gov.ph/UNDP4/wp-content/uploads/2012/12/MTDP-for-CJS-Final-Report.pdf",
       "evidence/editorial/task-3/research/pillarsreport.pdf.txt",
       "evidence/editorial/task-3/pdf-snapshots/pillarsreport-4.png",
-      "evidence/editorial/task-3/pdf-snapshots/pillarsreport-5.png"
+      "evidence/editorial/task-3/pdf-snapshots/pillarsreport-5.png",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-9"
     ],
-    "status": "needsReview",
+    "status": "rejected",
     "review": {
       "issues": [
         {
@@ -4621,6 +4766,11 @@
           "code": "editorial-review",
           "message": "Source assertion is not editorial approval",
           "blocking": false
+        },
+        {
+          "code": "task4-duplicate",
+          "blocking": false,
+          "message": "Duplicate disposition; retained winner notes:Criminal Justice System:8. Both identify the criminal justice system from its integrated enforcement-to-corrections description; same system-level recognition and same competing-system distractors. Pillar/process paraphrase adds no separately tested skill."
         }
       ],
       "resolutions": [
@@ -5043,10 +5193,35 @@
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-33"
             }
           ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Criminal Justice System",
+          "originalNumber": "37",
+          "pages": {
+            "start": 16,
+            "end": 16
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Arraignment",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=16",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Rule116 section1; Rule113 section1; Rule114 section1. Rule116 section1 prescribes arraignment. Arrest takes into custody and bail secures release/appearance; neither is the plea proceeding.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-37"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Criminal Justice System:33. Both identify arraignment from reading the charge and asking the accused to plead under Rule116 section1; original except-to-positive conversion created overlap.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-12"
+            }
+          ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -5057,12 +5232,13 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Rule116 section1. Rule116 section1 places arraignment in open court before the judge or clerk. The source’s except stem is converted transparently into a supported positive definition.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Rule116 section1. Rule116 section1 places arraignment in open court before the judge or clerk. The source’s except stem is converted transparently into a supported positive definition. Reconciliation: retain notes:Criminal Justice System:37 source lineage for this logical question. Both identify arraignment from reading the charge and asking the accused to plead under Rule116 section1; original except-to-positive conversion created overlap.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=15",
       "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-33",
       "https://lawphil.net/courts/rules/rc_110-127_crim.html",
-      "evidence/editorial/task-3/research/criminalrules.txt"
+      "evidence/editorial/task-3/research/criminalrules.txt",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-12"
     ],
     "status": "needsReview",
     "review": {
@@ -5530,12 +5706,16 @@
             {
               "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Rule116 section1; Rule113 section1; Rule114 section1. Rule116 section1 prescribes arraignment. Arrest takes into custody and bail secures release/appearance; neither is the plea proceeding.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-37"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Criminal Justice System:33. Both identify arraignment from reading the charge and asking the accused to plead under Rule116 section1; original except-to-positive conversion created overlap.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-12"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -5546,14 +5726,15 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Rule116 section1; Rule113 section1; Rule114 section1. Rule116 section1 prescribes arraignment. Arrest takes into custody and bail secures release/appearance; neither is the plea proceeding.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Rule116 section1; Rule113 section1; Rule114 section1. Rule116 section1 prescribes arraignment. Arrest takes into custody and bail secures release/appearance; neither is the plea proceeding. Reconciliation disposition: duplicate of notes:Criminal Justice System:33. Both identify arraignment from reading the charge and asking the accused to plead under Rule116 section1; original except-to-positive conversion created overlap.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=16",
       "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-37",
       "https://lawphil.net/courts/rules/rc_110-127_crim.html",
-      "evidence/editorial/task-3/research/criminalrules.txt"
+      "evidence/editorial/task-3/research/criminalrules.txt",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-12"
     ],
-    "status": "needsReview",
+    "status": "rejected",
     "review": {
       "issues": [
         {
@@ -5575,6 +5756,11 @@
           "code": "editorial-review",
           "message": "Source assertion is not editorial approval",
           "blocking": false
+        },
+        {
+          "code": "task4-duplicate",
+          "blocking": false,
+          "message": "Duplicate disposition; retained winner notes:Criminal Justice System:33. Both identify arraignment from reading the charge and asking the accused to plead under Rule116 section1; original except-to-positive conversion created overlap."
         }
       ],
       "resolutions": [
@@ -6859,12 +7045,16 @@
             {
               "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section3; RA10575 section4; RA6975 section61. NPS has the prosecution mandate in RA10071 section3. BuCor and BJMP perform corrections/custodial functions. Missing except options are replaced transparently by a positive-role question.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-46"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Criminal Justice System:4. Both identify NPS from preliminary-investigation/prosecution duties under RA10071 section3; except-to-positive conversion produced the duplicate.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-8"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -6875,16 +7065,17 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section3; RA10575 section4; RA6975 section61. NPS has the prosecution mandate in RA10071 section3. BuCor and BJMP perform corrections/custodial functions. Missing except options are replaced transparently by a positive-role question.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section3; RA10575 section4; RA6975 section61. NPS has the prosecution mandate in RA10071 section3. BuCor and BJMP perform corrections/custodial functions. Missing except options are replaced transparently by a positive-role question. Reconciliation disposition: duplicate of notes:Criminal Justice System:4. Both identify NPS from preliminary-investigation/prosecution duties under RA10071 section3; except-to-positive conversion produced the duplicate.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=16",
       "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-46",
       "https://lawphil.net/statutes/repacts/ra2010/ra_10071_2010.html",
       "evidence/editorial/task-3/research/ra10071.txt",
       "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html",
-      "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html"
+      "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-8"
     ],
-    "status": "needsReview",
+    "status": "rejected",
     "review": {
       "issues": [
         {
@@ -6906,6 +7097,11 @@
           "code": "editorial-review",
           "message": "Source assertion is not editorial approval",
           "blocking": false
+        },
+        {
+          "code": "task4-duplicate",
+          "blocking": false,
+          "message": "Duplicate disposition; retained winner notes:Criminal Justice System:4. Both identify NPS from preliminary-investigation/prosecution duties under RA10071 section3; except-to-positive conversion produced the duplicate."
         }
       ],
       "resolutions": [
@@ -7020,12 +7216,16 @@
             {
               "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against ArticleVIII section1; RA10071 section3; RA6975 section24. ArticleVIII assigns judicial power to courts, unlike prosecutorial charging and police enforcement functions.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-47"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Criminal Justice System:16. Both identify courts as the institution adjudicating criminal guilt/rendering criminal judgment, contrasted with police/prosecutors.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-10"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -7036,16 +7236,17 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against ArticleVIII section1; RA10071 section3; RA6975 section24. ArticleVIII assigns judicial power to courts, unlike prosecutorial charging and police enforcement functions.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against ArticleVIII section1; RA10071 section3; RA6975 section24. ArticleVIII assigns judicial power to courts, unlike prosecutorial charging and police enforcement functions. Reconciliation disposition: duplicate of notes:Criminal Justice System:16. Both identify courts as the institution adjudicating criminal guilt/rendering criminal judgment, contrasted with police/prosecutors.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=16",
       "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-47",
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt",
       "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html",
-      "https://lawphil.net/statutes/repacts/ra2010/ra_10071_2010.html"
+      "https://lawphil.net/statutes/repacts/ra2010/ra_10071_2010.html",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-10"
     ],
-    "status": "needsReview",
+    "status": "rejected",
     "review": {
       "issues": [
         {
@@ -7067,6 +7268,11 @@
           "code": "editorial-review",
           "message": "Source assertion is not editorial approval",
           "blocking": false
+        },
+        {
+          "code": "task4-duplicate",
+          "blocking": false,
+          "message": "Duplicate disposition; retained winner notes:Criminal Justice System:16. Both identify courts as the institution adjudicating criminal guilt/rendering criminal judgment, contrasted with police/prosecutors."
         }
       ],
       "resolutions": [
@@ -7181,12 +7387,16 @@
             {
               "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section24; RA10575 section4; Constitution VIII section1. Section24 assigns enforcement, investigation, prevention and arrest powers to PNP; corrections rehabilitates and courts adjudicate.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-48"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Criminal Justice System:13. Both identify the law-enforcement pillar from police duties under RA6975 section24; prevention versus patrol/investigation examples test the same pillar classification.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-11"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -7197,16 +7407,17 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section24; RA10575 section4; Constitution VIII section1. Section24 assigns enforcement, investigation, prevention and arrest powers to PNP; corrections rehabilitates and courts adjudicate.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section24; RA10575 section4; Constitution VIII section1. Section24 assigns enforcement, investigation, prevention and arrest powers to PNP; corrections rehabilitates and courts adjudicate. Reconciliation disposition: duplicate of notes:Criminal Justice System:13. Both identify the law-enforcement pillar from police duties under RA6975 section24; prevention versus patrol/investigation examples test the same pillar classification.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=16",
       "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-48",
       "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html",
       "evidence/editorial/task-3/research/ra6975.txt",
       "https://lawphil.net/consti/cons1987.html",
-      "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html"
+      "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-11"
     ],
-    "status": "needsReview",
+    "status": "rejected",
     "review": {
       "issues": [
         {
@@ -7228,6 +7439,11 @@
           "code": "editorial-review",
           "message": "Source assertion is not editorial approval",
           "blocking": false
+        },
+        {
+          "code": "task4-duplicate",
+          "blocking": false,
+          "message": "Duplicate disposition; retained winner notes:Criminal Justice System:13. Both identify the law-enforcement pillar from police duties under RA6975 section24; prevention versus patrol/investigation examples test the same pillar classification."
         }
       ],
       "resolutions": [

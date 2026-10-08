@@ -1218,12 +1218,16 @@
             {
               "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1; RA8551 section15. The ordinary range is 21–30. Twenty appears in the original waiver rule, not the ordinary lower limit. The source’s former PO1 wording is updated without equating appointment with examination eligibility.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#pnp-law-and-history-9"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner short:GENERAL INFORMATION:20. Both test the ordinary minimum appointment age of21, excluding waivers and examination eligibility. Former PO1 versus Patrolman/Patrolwoman wording does not create a distinct objective.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-13"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -1234,15 +1238,16 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1; RA8551 section15. The ordinary range is 21–30. Twenty appears in the original waiver rule, not the ordinary lower limit. The source’s former PO1 wording is updated without equating appointment with examination eligibility.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1; RA8551 section15. The ordinary range is 21–30. Twenty appears in the original waiver rule, not the ordinary lower limit. The source’s former PO1 wording is updated without equating appointment with examination eligibility. Reconciliation disposition: duplicate of short:GENERAL INFORMATION:20. Both test the ordinary minimum appointment age of21, excluding waivers and examination eligibility. Former PO1 versus Patrolman/Patrolwoman wording does not create a distinct objective.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=9",
       "docs/verification/editorial-full-corpus-task3.md#pnp-law-and-history-9",
       "https://lawphil.net/statutes/repacts/ra2009/ra_9708_2009.html",
       "evidence/editorial/task-3/research/ra9708.txt",
-      "https://lawphil.net/statutes/repacts/ra1998/ra_8551_1998.html"
+      "https://lawphil.net/statutes/repacts/ra1998/ra_8551_1998.html",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-13"
     ],
-    "status": "needsReview",
+    "status": "rejected",
     "review": {
       "issues": [
         {
@@ -1269,6 +1274,11 @@
           "code": "editorial-review",
           "message": "Source assertion is not editorial approval",
           "blocking": false
+        },
+        {
+          "code": "task4-duplicate",
+          "blocking": false,
+          "message": "Duplicate disposition; retained winner short:GENERAL INFORMATION:20. Both test the ordinary minimum appointment age of21, excluding waivers and examination eligibility. Former PO1 versus Patrolman/Patrolwoman wording does not create a distinct objective."
         }
       ],
       "resolutions": [

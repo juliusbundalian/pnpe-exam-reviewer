@@ -68,10 +68,35 @@
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-1"
             }
           ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "2",
+          "pages": {
+            "start": 1,
+            "end": 1
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "President",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=1",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Articles VI, VII section 1 and VIII. Executive power is vested in the President; the Senate and Supreme Court belong to separate branches.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-2"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Philippine Constitution:1. Both authored conversions identify the President as holder/head of executive power under Article VII section 1; different distractors do not add a learning objective.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-3"
+            }
+          ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -82,12 +107,13 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 1. Article VII section 1 vests executive power in the President. The authored stem specifies the constitutional allocation rather than an unspecified form of government.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 1. Article VII section 1 vests executive power in the President. The authored stem specifies the constitutional allocation rather than an unspecified form of government. Reconciliation: retain notes:Philippine Constitution:2 source lineage for this logical question. Both authored conversions identify the President as holder/head of executive power under Article VII section 1; different distractors do not add a learning objective.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=1",
       "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-1",
       "https://lawphil.net/consti/cons1987.html",
-      "evidence/editorial/task-3/research/constitution.txt"
+      "evidence/editorial/task-3/research/constitution.txt",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-3"
     ],
     "status": "needsReview",
     "review": {
@@ -219,12 +245,16 @@
             {
               "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Articles VI, VII section 1 and VIII. Executive power is vested in the President; the Senate and Supreme Court belong to separate branches.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-2"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Philippine Constitution:1. Both authored conversions identify the President as holder/head of executive power under Article VII section 1; different distractors do not add a learning objective.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-3"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -235,14 +265,15 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Articles VI, VII section 1 and VIII. Executive power is vested in the President; the Senate and Supreme Court belong to separate branches.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Articles VI, VII section 1 and VIII. Executive power is vested in the President; the Senate and Supreme Court belong to separate branches. Reconciliation disposition: duplicate of notes:Philippine Constitution:1. Both authored conversions identify the President as holder/head of executive power under Article VII section 1; different distractors do not add a learning objective.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=1",
       "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-2",
       "https://lawphil.net/consti/cons1987.html",
-      "evidence/editorial/task-3/research/constitution.txt"
+      "evidence/editorial/task-3/research/constitution.txt",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-3"
     ],
-    "status": "needsReview",
+    "status": "rejected",
     "review": {
       "issues": [
         {
@@ -264,6 +295,11 @@
           "code": "editorial-review",
           "message": "Source assertion is not editorial approval",
           "blocking": false
+        },
+        {
+          "code": "task4-duplicate",
+          "blocking": false,
+          "message": "Duplicate disposition; retained winner notes:Philippine Constitution:1. Both authored conversions identify the President as holder/head of executive power under Article VII section 1; different distractors do not add a learning objective."
         }
       ],
       "resolutions": [
@@ -372,12 +408,16 @@
             {
               "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 2. Article VI section 2 specifies 24 Senators elected at large. Neither alternative is the constitutional membership.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-3"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner comprehensive:I:6. Both ask the Senate membership count of 24 under Article VI section 2; the notes adds the citation but tests the identical fact.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-4"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -388,14 +428,15 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 2. Article VI section 2 specifies 24 Senators elected at large. Neither alternative is the constitutional membership.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 2. Article VI section 2 specifies 24 Senators elected at large. Neither alternative is the constitutional membership. Reconciliation disposition: duplicate of comprehensive:I:6. Both ask the Senate membership count of 24 under Article VI section 2; the notes adds the citation but tests the identical fact.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=1",
       "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-3",
       "https://lawphil.net/consti/cons1987.html",
-      "evidence/editorial/task-3/research/constitution.txt"
+      "evidence/editorial/task-3/research/constitution.txt",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-4"
     ],
-    "status": "needsReview",
+    "status": "rejected",
     "review": {
       "issues": [
         {
@@ -417,6 +458,11 @@
           "code": "editorial-review",
           "message": "Source assertion is not editorial approval",
           "blocking": false
+        },
+        {
+          "code": "task4-duplicate",
+          "blocking": false,
+          "message": "Duplicate disposition; retained winner comprehensive:I:6. Both ask the Senate membership count of 24 under Article VI section 2; the notes adds the citation but tests the identical fact."
         }
       ],
       "resolutions": [
@@ -2072,10 +2118,35 @@
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-14"
             }
           ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "21",
+          "pages": {
+            "start": 3,
+            "end": 3
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "President",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=3",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 17. Article VII section 17 assigns executive-department control to the President. The authored wording anchors the source’s Cabinet claim in an explicit provision.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-21"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Philippine Constitution:14. Both authored questions identify presidential control of executive departments under Article VII section 17. Cabinet wording supplies no independent test.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-5"
+            }
+          ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -2086,12 +2157,13 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 17. Article VII section 17 assigns executive control to the President. The separate branches do not exercise that general executive control.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 17. Article VII section 17 assigns executive control to the President. The separate branches do not exercise that general executive control. Reconciliation: retain notes:Philippine Constitution:21 source lineage for this logical question. Both authored questions identify presidential control of executive departments under Article VII section 17. Cabinet wording supplies no independent test.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=2",
       "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-14",
       "https://lawphil.net/consti/cons1987.html",
-      "evidence/editorial/task-3/research/constitution.txt"
+      "evidence/editorial/task-3/research/constitution.txt",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-5"
     ],
     "status": "needsReview",
     "review": {
@@ -3176,12 +3248,16 @@
             {
               "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 17. Article VII section 17 assigns executive-department control to the President. The authored wording anchors the source’s Cabinet claim in an explicit provision.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-21"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Philippine Constitution:14. Both authored questions identify presidential control of executive departments under Article VII section 17. Cabinet wording supplies no independent test.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-5"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -3192,14 +3268,15 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 17. Article VII section 17 assigns executive-department control to the President. The authored wording anchors the source’s Cabinet claim in an explicit provision.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 17. Article VII section 17 assigns executive-department control to the President. The authored wording anchors the source’s Cabinet claim in an explicit provision. Reconciliation disposition: duplicate of notes:Philippine Constitution:14. Both authored questions identify presidential control of executive departments under Article VII section 17. Cabinet wording supplies no independent test.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=3",
       "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-21",
       "https://lawphil.net/consti/cons1987.html",
-      "evidence/editorial/task-3/research/constitution.txt"
+      "evidence/editorial/task-3/research/constitution.txt",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-5"
     ],
-    "status": "needsReview",
+    "status": "rejected",
     "review": {
       "issues": [
         {
@@ -3221,6 +3298,11 @@
           "code": "editorial-review",
           "message": "Source assertion is not editorial approval",
           "blocking": false
+        },
+        {
+          "code": "task4-duplicate",
+          "blocking": false,
+          "message": "Duplicate disposition; retained winner notes:Philippine Constitution:14. Both authored questions identify presidential control of executive departments under Article VII section 17. Cabinet wording supplies no independent test."
         }
       ],
       "resolutions": [

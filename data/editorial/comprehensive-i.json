@@ -770,10 +770,35 @@
               "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#i-6"
             }
           ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "3",
+          "pages": {
+            "start": 1,
+            "end": 1
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "24",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=1",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 2. Article VI section 2 specifies 24 Senators elected at large. Neither alternative is the constitutional membership.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-3"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner comprehensive:I:6. Both ask the Senate membership count of 24 under Article VI section 2; the notes adds the citation but tests the identical fact.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-4"
+            }
+          ]
         }
       ],
       "createdAt": "2026-10-07T16:19:18.273Z",
-      "updatedAt": "2026-10-07T16:19:18.273Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -784,11 +809,12 @@
         }
       ]
     },
-    "rationale": "ArticleVI2 specifies twenty-four senators.",
+    "rationale": "ArticleVI2 specifies twenty-four senators. Reconciliation: retain notes:Philippine Constitution:3 source lineage for this logical question. Both ask the Senate membership count of 24 under Article VI section 2; the notes adds the citation but tests the identical fact.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=3",
       "docs/verification/editorial-full-corpus-task2.md#i-6",
-      "https://lawphil.net/consti/cons1987.html"
+      "https://lawphil.net/consti/cons1987.html",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-4"
     ],
     "status": "needsReview",
     "review": {

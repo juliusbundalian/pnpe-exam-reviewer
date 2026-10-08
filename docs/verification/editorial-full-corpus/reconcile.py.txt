@@ -1,0 +1,65 @@
+import json,glob,datetime,copy
+base='docs/verification/editorial-full-corpus/'
+files={};by={}
+for f in sorted(glob.glob('data/editorial/*.json')):
+ files[f]=json.load(open(f))
+ for o in files[f]:by[o['sourceKey']]=o
+N=lambda sec,n:f'notes:{sec}:{n}'
+C=lambda sec,n:f'comprehensive:{sec}:{n}'
+groups=[
+(C('VIII',33),C('VIII',34),'Identical deserted-area sentence reconstruction and alternatives; prior disposition retained.'),
+(C('XIV',20),C('XIV',26),'The same seminarian-to-pope office milestones, with relabeled alternatives; prior disposition retained.'),
+(N('Philippine Constitution',1),N('Philippine Constitution',2),'Both authored conversions identify the President as holder/head of executive power under Article VII section 1; different distractors do not add a learning objective.'),
+(C('I',6),N('Philippine Constitution',3),'Both ask the Senate membership count of 24 under Article VI section 2; the notes adds the citation but tests the identical fact.'),
+(N('Philippine Constitution',14),N('Philippine Constitution',21),'Both authored questions identify presidential control of executive departments under Article VII section 17. Cabinet wording supplies no independent test.'),
+(N('Philippine History',20),N('Philippine History',24),'Reverses the same RA9492 section1 statutory Araw ng Kagitingan/April9 association; the 2007-text qualifier is identical.'),
+(N('Criminal Justice System',5),N('Criminal Justice System',3),'Both distinguish the prosecution function from police/corrections through the public prosecutor/NPS mandate. Keep the explicit preliminary-investigation objective in row5.'),
+(N('Criminal Justice System',4),N('Criminal Justice System',46),'Both identify NPS from preliminary-investigation/prosecution duties under RA10071 section3; except-to-positive conversion produced the duplicate.'),
+(N('Criminal Justice System',8),N('Criminal Justice System',30),'Both identify the criminal justice system from its integrated enforcement-to-corrections description; same system-level recognition and same competing-system distractors. Pillar/process paraphrase adds no separately tested skill.'),
+(N('Criminal Justice System',16),N('Criminal Justice System',47),'Both identify courts as the institution adjudicating criminal guilt/rendering criminal judgment, contrasted with police/prosecutors.'),
+(N('Criminal Justice System',13),N('Criminal Justice System',48),'Both identify the law-enforcement pillar from police duties under RA6975 section24; prevention versus patrol/investigation examples test the same pillar classification.'),
+(N('Criminal Justice System',33),N('Criminal Justice System',37),'Both identify arraignment from reading the charge and asking the accused to plead under Rule116 section1; original except-to-positive conversion created overlap.'),
+('short:GENERAL INFORMATION:20',N('PNP Law and History',9),'Both test the ordinary minimum appointment age of21, excluding waivers and examination eligibility. Former PO1 versus Patrolman/Patrolwoman wording does not create a distinct objective.'),
+]
+records=[];now=datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='milliseconds').replace('+00:00','Z')
+for idx,(win,dup,reason) in enumerate(groups,1):
+ w,d=by[win],by[dup];immutable=w['status']=='approved';prior=d['status']=='rejected'
+ loc=base+'reconciliation.json#group-'+str(idx)
+ source=next(s for s in d['proposed']['sources'] if f"{s['sourceId']}:{s['section']}:{s['originalNumber']}"==dup)
+ if not prior:
+  d['status']='rejected';d['rationale']+=' Reconciliation disposition: duplicate of '+win+'. '+reason
+  d['evidence'].append(loc)
+  d['review'].setdefault('issues',[]).append({'code':'task4-duplicate','blocking':False,'message':'Duplicate disposition; retained winner '+win+'. '+reason})
+  source.setdefault('corrections',[]).append({'reason':'Duplicate occurrence retained under original stable identity; publication winner '+win+'. '+reason,'evidenceLocator':loc})
+  d['proposed']['updatedAt']=now
+  if not immutable:
+   w['proposed']['sources'].append(copy.deepcopy(source));w['proposed']['updatedAt']=now
+   w['rationale']+=' Reconciliation: retain '+dup+' source lineage for this logical question. '+reason
+   w['evidence'].append(loc)
+ records.append({'id':'group-'+str(idx),'winner':win,'duplicate':dup,'winnerId':w['proposed']['id'],'duplicateId':d['proposed']['id'],'rationale':reason,'priorDisposition':prior,'lineagePolicy':'Immutable approved winner: both exact sources remain collectively retained in their own overlays and this group; transfer requires a new exact review/approval.' if immutable else 'Winner retains duplicate exact source reference; rejected occurrence retains its original stable identity and own exact source reference.','sourceRefs':[next(s for s in by[k]['proposed']['sources'] if f"{s['sourceId']}:{s['section']}:{s['originalNumber']}"==k) for k in [win,dup]],'evidence':list(dict.fromkeys(w['evidence']+d['evidence']))})
+for f,rows in files.items():
+ if f.endswith('short-initial.json'):continue
+ old=json.load(open(f))
+ if old!=rows:open(f,'w').write(json.dumps(rows,indent=2,ensure_ascii=False)+'\n')
+separate=[
+(['comprehensive:I:33','notes:Criminal Justice System:6','notes:Criminal Justice System:16'],'I33 tests constitutional allocation to Supreme Court/lower courts; CJS6 tests the actual-controversy/legally-demandable-rights duty; CJS16 tests criminal trial adjudication rather than prosecutorial accusation. Allocation, constitutional duty and criminal adjudication are related but distinct assessed objectives.'),
+(['notes:Criminal Justice System:2','notes:Criminal Justice System:5','notes:Criminal Justice System:14'],'CJS2 modernizes fiscal terminology to the official public prosecutor; CJS5 classifies preliminary investigation as prosecution; CJS14 identifies direction/control of criminal actions under Rule110. Terminology, pillar and procedural responsibility are different questions.'),
+(['notes:Criminal Justice System:41','notes:Criminal Justice System:49','notes:PNP Law and History:25'],'CJS41 identifies BuCor institution from national-inmate mandate; CJS49 identifies the corrections pillar, not the bureau; PNP25 tests administrative supervision by DOJ. Bureau, function and supervising department are distinct objectives.'),
+(['short:GENERAL INFORMATION:17','short:GENERAL INFORMATION:19','notes:PNP Law and History:12','notes:PNP Law and History:22'],'Acronym expansion, department placement, creation/initial components and statutory instrument identity are separate recalled facts; shared PNP/RA6975 wording alone is not duplication.'),
+(['comprehensive:I:43','notes:Philippine Constitution:14'],'Local-government general supervision under ArticleX differs from executive-department control under ArticleVII.'),
+(['notes:Philippine Constitution:6','comprehensive:I:7'],'Initiation authority differs from impeachment/conviction removal process.'),
+(['notes:Philippine Constitution:7','notes:Philippine Constitution:15','notes:Philippine Constitution:16','notes:Philippine Constitution:22'],'Each inherent-power definition is distinct from recalling the three-power set.'),
+(['notes:Philippine History:15','notes:Current Events:10'],'Source-only identical2016 election lead. Both remain draft with obsolete last-election premise; no supported eligible revision exists to merge.'),
+(['notes:Philippine History:38','notes:Current Events:28','comprehensive:I:49'],'Arbitration date versus overbroad dispute-identification lead. Draft original claims remain independently retained with their scope/taxonomy blockers.'),
+(['notes:PNP Law and History:5','notes:PNP Law and History:23'],'Originals share Lacson name, but PNP5 remains unsupported tenure draft while PNP23 transparently assesses statutory ex-officio office, not Lacson biography.'),
+(['notes:PNP Law and History:18','notes:PNP Law and History:30'],'Act175 statutory creation is supported in18. Row30 asks August8 inauguration/gendarmerie identity and remains an unsupported historical-date draft; do not erase the missing-date claim by merging.'),
+(['comprehensive:I:20','notes:Current Events:5'],'Shared Canadian-shipment dispute is a draft lead; identify dispute versus shipment contents/count/date differ and remain unsupported.'),
+(['comprehensive:I:25','notes:Current Events:19'],'Shared JackMa answer is not a certified duplicate: different dated/undated wealth and biography premises; both blocked.'),
+(['comprehensive:I:38','notes:Current Events:26'],'Same2016 Olympic achievement source lead, with athlete versus event retrieval and unsupported historical sports taxonomy; both drafts retained.'),
+(['comprehensive:V:1','comprehensive:V:2','comprehensive:V:3','comprehensive:V:4'],'Shared tree-planting passage supports different root/soil/depth inferences; common stimulus is retained, not counted as duplicated question.'),
+(['comprehensive:VI:1','comprehensive:VI:51','comprehensive:VI:56','comprehensive:VI:61'],'Generic sentence-role prompt resemblance is not duplication across different sentence-set stimuli. Every VI row has its own selected source sentence and discourse role.'),
+(['comprehensive:II:23','comprehensive:VII:4'],'Same dispelling-related vocabulary theme, but contextual synonym versus numbered grammatical-error task are distinct.'),
+(['short:VERBAL REASONING:3','comprehensive:VII:23','comprehensive:VII:28'],'Shared agreement rule does not make distinct contextual grammar tasks duplicates.'),
+(['short:QUANTITATIVE REASONING:8','short:LOGICAL REASONING:15','comprehensive:X:1','comprehensive:X:7'],'Patterns use distinct terms/rules; shared patternAnalysis taxonomy is not identity.'),
+]
+json.dump({'reviewedAt':now,'authoritativeOccurrenceCount':687,'policy':'Manual semantic pass across all original/proposed occurrence sections, choices, shared-stimulus/target contracts and all145 draft rationales; automated string/registry leads are not exhaustive decisions. Historical task audits remain authoring evidence; this reconciliation supersedes their provisional distinct counts.','groups':records,'retainedRelatedGroups':[{'sourceKeys':ks,'rationale':r} for ks,r in separate],'deferredMinors':{'ledger':'.superpowers/sdd/2026-10-07-editorial-full-corpus/progress.md','sourceKeys':['comprehensive:XV:6','comprehensive:XIII:15'],'rationale':'Final owner triage: compressed explanation spacing and explanation upgrade from likes to uses remain visible; no unrelated content fix in Task4.'}},open(base+'reconciliation.json','w'),indent=2,ensure_ascii=False)

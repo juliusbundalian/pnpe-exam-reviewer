@@ -3661,7 +3661,7 @@
         }
       ]
     },
-    "rationale": "Same explicitly stated vocation-path reasoning as XIV20 with relabeled nouns: seminarian B, deacon C, priest D, bishop A, pope E. BCDAE alone respects that path; Pope is an office, not a distinct sacramental order. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative. Duplicate disposition: rejected occurrence; retained both source references in comprehensive:XIV:20; stable registry unchanged.",
+    "rationale": "Same explicitly stated vocation-path reasoning as XIV20 with relabeled nouns: seminarian B, deacon C, priest D, bishop A, pope E. BCDAE alone respects that path; Pope is an office, not a distinct sacramental order. Authored repair: Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative. Duplicate disposition: rejected occurrence; retained both source references in comprehensive:XIV:20; stable registry unchanged. Existing duplicate disposition: winner comprehensive:XIV:20. The same seminarian-to-pope office milestones, with relabeled alternatives; prior disposition retained.",
     "evidence": [
       "evidence/reference-extraction/comprehensive/document.json#page=148",
       "docs/verification/editorial-full-corpus-task2.md#xiv-26",

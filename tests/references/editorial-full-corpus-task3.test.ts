@@ -61,6 +61,10 @@ test('all 190 notes retain source lineage, stable identity, source issues and ho
       expect(new Set(texts).size).toBe(texts.length);
       expect(ref.corrections.some((x) => x.reason.includes('Authored MCQ conversion'))).toBe(true);
       expect(o.review?.factualVerification?.sourceUrl).toMatch(/^https:\/\//);
+    } else if (o.status === 'rejected') {
+      expect(o.rationale).toMatch(/duplicate of /);
+      expect(o.review?.issues?.some((i) => i.code === 'task4-duplicate')).toBe(true);
+      QuestionSchema.parse(q);
     } else {
       expect(o.status).toBe('draft');
       expect(unresolved?.length).toBeGreaterThan(0);

@@ -2221,10 +2221,35 @@
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-history-20"
             }
           ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine History",
+          "originalNumber": "24",
+          "pages": {
+            "start": 6,
+            "end": 6
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "April 9",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=6",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1, 2007 text. RA 9492 lists Araw ng Kagitingan nearest April 9, Labor Day nearest May 1 and Rizal Day nearest December 30. The stem expressly tests the 2007 statutory text; it does not claim that its Monday rule is the current holiday calendar. Authored legal conversion replaces an undated holiday assertion.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-history-24"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Philippine History:20. Reverses the same RA9492 section1 statutory Araw ng Kagitingan/April9 association; the 2007-text qualifier is identical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-6"
+            }
+          ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -2235,12 +2260,13 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1, 2007 text. RA 9492 lists Araw ng Kagitingan nearest April 9, Labor Day nearest May 1 and Rizal Day nearest December 30. The stem expressly tests the 2007 statutory text; it does not claim that its Monday rule is the current holiday calendar. Authored legal conversion replaces an undated holiday assertion.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1, 2007 text. RA 9492 lists Araw ng Kagitingan nearest April 9, Labor Day nearest May 1 and Rizal Day nearest December 30. The stem expressly tests the 2007 statutory text; it does not claim that its Monday rule is the current holiday calendar. Authored legal conversion replaces an undated holiday assertion. Reconciliation: retain notes:Philippine History:24 source lineage for this logical question. Reverses the same RA9492 section1 statutory Araw ng Kagitingan/April9 association; the 2007-text qualifier is identical.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=6",
       "docs/verification/editorial-full-corpus-task3.md#philippine-history-20",
       "https://lawphil.net/statutes/repacts/ra2007/ra_9492_2007.html",
-      "evidence/editorial/task-3/research/ra9492.txt"
+      "evidence/editorial/task-3/research/ra9492.txt",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-6"
     ],
     "status": "needsReview",
     "review": {
@@ -2783,12 +2809,16 @@
             {
               "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1, 2007 text. RA 9492 lists Araw ng Kagitingan nearest April 9, Labor Day nearest May 1 and Rizal Day nearest December 30. The stem expressly tests the 2007 statutory text; it does not claim that its Monday rule is the current holiday calendar. Authored legal conversion replaces an undated holiday assertion.",
               "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-history-24"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Philippine History:20. Reverses the same RA9492 section1 statutory Araw ng Kagitingan/April9 association; the 2007-text qualifier is identical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-6"
             }
           ]
         }
       ],
       "createdAt": "2026-10-07T16:52:17.344Z",
-      "updatedAt": "2026-10-07T16:52:17.344Z",
+      "updatedAt": "2026-10-07T23:55:47.075Z",
       "status": "active",
       "isCurrentEvent": false,
       "explanation": [
@@ -2799,14 +2829,15 @@
         }
       ]
     },
-    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1, 2007 text. RA 9492 lists Araw ng Kagitingan nearest April 9, Labor Day nearest May 1 and Rizal Day nearest December 30. The stem expressly tests the 2007 statutory text; it does not claim that its Monday rule is the current holiday calendar. Authored legal conversion replaces an undated holiday assertion.",
+    "rationale": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1, 2007 text. RA 9492 lists Araw ng Kagitingan nearest April 9, Labor Day nearest May 1 and Rizal Day nearest December 30. The stem expressly tests the 2007 statutory text; it does not claim that its Monday rule is the current holiday calendar. Authored legal conversion replaces an undated holiday assertion. Reconciliation disposition: duplicate of notes:Philippine History:20. Reverses the same RA9492 section1 statutory Araw ng Kagitingan/April9 association; the 2007-text qualifier is identical.",
     "evidence": [
       "evidence/reference-extraction/notes/document.json#page=6",
       "docs/verification/editorial-full-corpus-task3.md#philippine-history-24",
       "https://lawphil.net/statutes/repacts/ra2007/ra_9492_2007.html",
-      "evidence/editorial/task-3/research/ra9492.txt"
+      "evidence/editorial/task-3/research/ra9492.txt",
+      "docs/verification/editorial-full-corpus/reconciliation.json#group-6"
     ],
-    "status": "needsReview",
+    "status": "rejected",
     "review": {
       "issues": [
         {
@@ -2838,6 +2869,11 @@
           "code": "editorial-review",
           "message": "Source assertion is not editorial approval",
           "blocking": false
+        },
+        {
+          "code": "task4-duplicate",
+          "blocking": false,
+          "message": "Duplicate disposition; retained winner notes:Philippine History:20. Reverses the same RA9492 section1 statutory Araw ng Kagitingan/April9 association; the 2007-text qualifier is identical."
         }
       ],
       "resolutions": [

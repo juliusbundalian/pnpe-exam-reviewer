@@ -1,0 +1,1016 @@
+{
+  "reviewedAt": "2026-10-07T23:55:47.075Z",
+  "authoritativeOccurrenceCount": 687,
+  "policy": "Manual semantic pass across all original/proposed occurrence sections, choices, shared-stimulus/target contracts and all145 draft rationales; automated string/registry leads are not exhaustive decisions. Historical task audits remain authoring evidence; this reconciliation supersedes their provisional distinct counts.",
+  "groups": [
+    {
+      "id": "group-1",
+      "winner": "comprehensive:VIII:33",
+      "duplicate": "comprehensive:VIII:34",
+      "winnerId": "q-000370",
+      "duplicateId": "q-000371",
+      "rationale": "Identical deserted-area sentence reconstruction and alternatives; prior disposition retained.",
+      "priorDisposition": true,
+      "lineagePolicy": "Winner retains duplicate exact source reference; rejected occurrence retains its original stable identity and own exact source reference.",
+      "sourceRefs": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "33",
+          "pages": {
+            "start": 103,
+            "end": 103
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "E. Appeared deserted because of the recent bombing in Davao City,\nit is very depressing to see the downtown area which is normally bustling on\nSundays.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=103",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-33"
+            },
+            {
+              "reason": "Authored a grammatical replacement for malformed E, preserving all original alternatives in authoritative evidence and source key in lineage.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-33"
+            }
+          ]
+        },
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "VIII",
+          "originalNumber": "34",
+          "pages": {
+            "start": 103,
+            "end": 104
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "E. Appeared deserted because of the recent bombing in Davao City,\nit is very depressing to see the downtown area which is normally bustling on\nSundays.",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=103",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Replaced vague most-grammatically-correct instruction with an explicitly authored syntax/meaning condition, because multiple original orders may be grammatical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-34"
+            },
+            {
+              "reason": "Authored a grammatical replacement for malformed E, preserving all original alternatives in authoritative evidence and source key in lineage.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-34"
+            },
+            {
+              "reason": "Explicit duplicate disposition: publishable winner is comprehensive:VIII:33; stable registry IDs remain untouched and no approval is stamped.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task1.md#viii-34"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        "evidence/reference-extraction/comprehensive/document.json#page=103",
+        "docs/verification/editorial-full-corpus-task1.md#viii-33",
+        "docs/verification/editorial-full-corpus-task1.md#viii-34"
+      ]
+    },
+    {
+      "id": "group-2",
+      "winner": "comprehensive:XIV:20",
+      "duplicate": "comprehensive:XIV:26",
+      "winnerId": "q-000479",
+      "duplicateId": "q-000485",
+      "rationale": "The same seminarian-to-pope office milestones, with relabeled alternatives; prior disposition retained.",
+      "priorDisposition": true,
+      "lineagePolicy": "Winner retains duplicate exact source reference; rejected occurrence retains its original stable identity and own exact source reference.",
+      "sourceRefs": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "20",
+          "pages": {
+            "start": 146,
+            "end": 146
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "b.) BCAED",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=146",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-20"
+            }
+          ]
+        },
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "XIV",
+          "originalNumber": "26",
+          "pages": {
+            "start": 148,
+            "end": 148
+          },
+          "originalChoiceLabels": ["a", "b", "c", "d", "e"],
+          "originalAnswer": "a.) BCDAE",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=148",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored an explicit, meaningful ordering criterion or process context absent from the generic section instruction; independently derived the sequence and checked every supplied alternative.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#xiv-26"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        "evidence/reference-extraction/comprehensive/document.json#page=146",
+        "docs/verification/editorial-full-corpus-task2.md#xiv-20",
+        "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann998-1165_en.html",
+        "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib2-cann330-367_en.html",
+        "evidence/reference-extraction/comprehensive/document.json#page=148",
+        "docs/verification/editorial-full-corpus-task2.md#xiv-26"
+      ]
+    },
+    {
+      "id": "group-3",
+      "winner": "notes:Philippine Constitution:1",
+      "duplicate": "notes:Philippine Constitution:2",
+      "winnerId": "q-000498",
+      "duplicateId": "q-000499",
+      "rationale": "Both authored conversions identify the President as holder/head of executive power under Article VII section 1; different distractors do not add a learning objective.",
+      "priorDisposition": false,
+      "lineagePolicy": "Winner retains duplicate exact source reference; rejected occurrence retains its original stable identity and own exact source reference.",
+      "sourceRefs": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "1",
+          "pages": {
+            "start": 1,
+            "end": 1
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Presidential",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=1",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 1. Article VII section 1 vests executive power in the President. The authored stem specifies the constitutional allocation rather than an unspecified form of government.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-1"
+            }
+          ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "2",
+          "pages": {
+            "start": 1,
+            "end": 1
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "President",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=1",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Articles VI, VII section 1 and VIII. Executive power is vested in the President; the Senate and Supreme Court belong to separate branches.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-2"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Philippine Constitution:1. Both authored conversions identify the President as holder/head of executive power under Article VII section 1; different distractors do not add a learning objective.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-3"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        "evidence/reference-extraction/notes/document.json#page=1",
+        "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-1",
+        "https://lawphil.net/consti/cons1987.html",
+        "evidence/editorial/task-3/research/constitution.txt",
+        "docs/verification/editorial-full-corpus/reconciliation.json#group-3",
+        "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-2"
+      ]
+    },
+    {
+      "id": "group-4",
+      "winner": "comprehensive:I:6",
+      "duplicate": "notes:Philippine Constitution:3",
+      "winnerId": "q-000026",
+      "duplicateId": "q-000500",
+      "rationale": "Both ask the Senate membership count of 24 under Article VI section 2; the notes adds the citation but tests the identical fact.",
+      "priorDisposition": false,
+      "lineagePolicy": "Winner retains duplicate exact source reference; rejected occurrence retains its original stable identity and own exact source reference.",
+      "sourceRefs": [
+        {
+          "sourceId": "comprehensive",
+          "checksum": "cbd490cc60e4700912c1fc4e634a1e92f4231e1aa85687434837f7eb591ab169",
+          "section": "I",
+          "originalNumber": "6",
+          "pages": {
+            "start": 3,
+            "end": 4
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D", "E"],
+          "originalAnswer": "C. 24",
+          "evidenceLocator": "evidence/reference-extraction/comprehensive/document.json#page=3",
+          "links": ["https://www.philatlas.com/regions.html"],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "ArticleVI2 specifies twenty-four senators.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task2.md#i-6"
+            }
+          ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "3",
+          "pages": {
+            "start": 1,
+            "end": 1
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "24",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=1",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VI section 2. Article VI section 2 specifies 24 Senators elected at large. Neither alternative is the constitutional membership.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-3"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner comprehensive:I:6. Both ask the Senate membership count of 24 under Article VI section 2; the notes adds the citation but tests the identical fact.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-4"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        "evidence/reference-extraction/comprehensive/document.json#page=3",
+        "docs/verification/editorial-full-corpus-task2.md#i-6",
+        "https://lawphil.net/consti/cons1987.html",
+        "docs/verification/editorial-full-corpus/reconciliation.json#group-4",
+        "evidence/reference-extraction/notes/document.json#page=1",
+        "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-3",
+        "evidence/editorial/task-3/research/constitution.txt"
+      ]
+    },
+    {
+      "id": "group-5",
+      "winner": "notes:Philippine Constitution:14",
+      "duplicate": "notes:Philippine Constitution:21",
+      "winnerId": "q-000511",
+      "duplicateId": "q-000518",
+      "rationale": "Both authored questions identify presidential control of executive departments under Article VII section 17. Cabinet wording supplies no independent test.",
+      "priorDisposition": false,
+      "lineagePolicy": "Winner retains duplicate exact source reference; rejected occurrence retains its original stable identity and own exact source reference.",
+      "sourceRefs": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "14",
+          "pages": {
+            "start": 2,
+            "end": 2
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "President",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=2",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 17. Article VII section 17 assigns executive control to the President. The separate branches do not exercise that general executive control.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-14"
+            }
+          ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine Constitution",
+          "originalNumber": "21",
+          "pages": {
+            "start": 3,
+            "end": 3
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "President",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=3",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Article VII section 17. Article VII section 17 assigns executive-department control to the President. The authored wording anchors the source’s Cabinet claim in an explicit provision.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-21"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Philippine Constitution:14. Both authored questions identify presidential control of executive departments under Article VII section 17. Cabinet wording supplies no independent test.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-5"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        "evidence/reference-extraction/notes/document.json#page=2",
+        "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-14",
+        "https://lawphil.net/consti/cons1987.html",
+        "evidence/editorial/task-3/research/constitution.txt",
+        "docs/verification/editorial-full-corpus/reconciliation.json#group-5",
+        "evidence/reference-extraction/notes/document.json#page=3",
+        "docs/verification/editorial-full-corpus-task3.md#philippine-constitution-21"
+      ]
+    },
+    {
+      "id": "group-6",
+      "winner": "notes:Philippine History:20",
+      "duplicate": "notes:Philippine History:24",
+      "winnerId": "q-000543",
+      "duplicateId": "q-000547",
+      "rationale": "Reverses the same RA9492 section1 statutory Araw ng Kagitingan/April9 association; the 2007-text qualifier is identical.",
+      "priorDisposition": false,
+      "lineagePolicy": "Winner retains duplicate exact source reference; rejected occurrence retains its original stable identity and own exact source reference.",
+      "sourceRefs": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine History",
+          "originalNumber": "20",
+          "pages": {
+            "start": 6,
+            "end": 6
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Araw ng Kagitingan",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=6",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1, 2007 text. RA 9492 lists Araw ng Kagitingan nearest April 9, Labor Day nearest May 1 and Rizal Day nearest December 30. The stem expressly tests the 2007 statutory text; it does not claim that its Monday rule is the current holiday calendar. Authored legal conversion replaces an undated holiday assertion.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-history-20"
+            }
+          ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Philippine History",
+          "originalNumber": "24",
+          "pages": {
+            "start": 6,
+            "end": 6
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "April 9",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=6",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1, 2007 text. RA 9492 lists Araw ng Kagitingan nearest April 9, Labor Day nearest May 1 and Rizal Day nearest December 30. The stem expressly tests the 2007 statutory text; it does not claim that its Monday rule is the current holiday calendar. Authored legal conversion replaces an undated holiday assertion.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#philippine-history-24"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Philippine History:20. Reverses the same RA9492 section1 statutory Araw ng Kagitingan/April9 association; the 2007-text qualifier is identical.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-6"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        "evidence/reference-extraction/notes/document.json#page=6",
+        "docs/verification/editorial-full-corpus-task3.md#philippine-history-20",
+        "https://lawphil.net/statutes/repacts/ra2007/ra_9492_2007.html",
+        "evidence/editorial/task-3/research/ra9492.txt",
+        "docs/verification/editorial-full-corpus/reconciliation.json#group-6",
+        "docs/verification/editorial-full-corpus-task3.md#philippine-history-24"
+      ]
+    },
+    {
+      "id": "group-7",
+      "winner": "notes:Criminal Justice System:5",
+      "duplicate": "notes:Criminal Justice System:3",
+      "winnerId": "q-000608",
+      "duplicateId": "q-000606",
+      "rationale": "Both distinguish the prosecution function from police/corrections through the public prosecutor/NPS mandate. Keep the explicit preliminary-investigation objective in row5.",
+      "priorDisposition": false,
+      "lineagePolicy": "Winner retains duplicate exact source reference; rejected occurrence retains its original stable identity and own exact source reference.",
+      "sourceRefs": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Criminal Justice System",
+          "originalNumber": "5",
+          "pages": {
+            "start": 12,
+            "end": 12
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Prosecution",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=12",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3; Constitution VIII section1; RA10575 section4. RA10071 section3 assigns preliminary investigation and prosecution to NPS. It is distinct from judicial adjudication and corrections; the question asks institutional function, not current procedural deadlines.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-5"
+            }
+          ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Criminal Justice System",
+          "originalNumber": "3",
+          "pages": {
+            "start": 12,
+            "end": 12
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Fiscal",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=12",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3; RA6975 section24; RA10575 section4. RA10071 assigns preliminary investigation and prosecution of penal-law violations to the NPS. This positive-role conversion replaces an unrecoverable except item.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-3"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Criminal Justice System:5. Both distinguish the prosecution function from police/corrections through the public prosecutor/NPS mandate. Keep the explicit preliminary-investigation objective in row5.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-7"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        "evidence/reference-extraction/notes/document.json#page=12",
+        "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-5",
+        "https://lawphil.net/statutes/repacts/ra2010/ra_10071_2010.html",
+        "evidence/editorial/task-3/research/ra10071.txt",
+        "https://lawphil.net/consti/cons1987.html",
+        "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html",
+        "docs/verification/editorial-full-corpus/reconciliation.json#group-7",
+        "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-3",
+        "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html"
+      ]
+    },
+    {
+      "id": "group-8",
+      "winner": "notes:Criminal Justice System:4",
+      "duplicate": "notes:Criminal Justice System:46",
+      "winnerId": "q-000607",
+      "duplicateId": "q-000649",
+      "rationale": "Both identify NPS from preliminary-investigation/prosecution duties under RA10071 section3; except-to-positive conversion produced the duplicate.",
+      "priorDisposition": false,
+      "lineagePolicy": "Winner retains duplicate exact source reference; rejected occurrence retains its original stable identity and own exact source reference.",
+      "sourceRefs": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Criminal Justice System",
+          "originalNumber": "4",
+          "pages": {
+            "start": 12,
+            "end": 12
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "National Prosecution Service",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=12",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 3; RA6975 section24; RA10575 section4. RA10071 section3 establishes and assigns these functions to the NPS. PNP law enforcement and BuCor reformation are distinct mandates.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-4"
+            }
+          ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Criminal Justice System",
+          "originalNumber": "46",
+          "pages": {
+            "start": 16,
+            "end": 16
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "National Prosecution Service",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=16",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section3; RA10575 section4; RA6975 section61. NPS has the prosecution mandate in RA10071 section3. BuCor and BJMP perform corrections/custodial functions. Missing except options are replaced transparently by a positive-role question.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-46"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Criminal Justice System:4. Both identify NPS from preliminary-investigation/prosecution duties under RA10071 section3; except-to-positive conversion produced the duplicate.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-8"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        "evidence/reference-extraction/notes/document.json#page=12",
+        "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-4",
+        "https://lawphil.net/statutes/repacts/ra2010/ra_10071_2010.html",
+        "evidence/editorial/task-3/research/ra10071.txt",
+        "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html",
+        "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html",
+        "docs/verification/editorial-full-corpus/reconciliation.json#group-8",
+        "evidence/reference-extraction/notes/document.json#page=16",
+        "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-46"
+      ]
+    },
+    {
+      "id": "group-9",
+      "winner": "notes:Criminal Justice System:8",
+      "duplicate": "notes:Criminal Justice System:30",
+      "winnerId": "q-000611",
+      "duplicateId": "q-000633",
+      "rationale": "Both identify the criminal justice system from its integrated enforcement-to-corrections description; same system-level recognition and same competing-system distractors. Pillar/process paraphrase adds no separately tested skill.",
+      "priorDisposition": false,
+      "lineagePolicy": "Winner retains duplicate exact source reference; rejected occurrence retains its original stable identity and own exact source reference.",
+      "sourceRefs": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Criminal Justice System",
+          "originalNumber": "8",
+          "pages": {
+            "start": 12,
+            "end": 12
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Criminal Justice System",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=12",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Page 4, five-pillar framework. The Philippine criminal justice development plan lists law enforcement, prosecution, courts, corrections and community as its five pillars. Electoral and personnel administration are separate constitutional mandates.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-8"
+            }
+          ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Criminal Justice System",
+          "originalNumber": "30",
+          "pages": {
+            "start": 15,
+            "end": 15
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Philippine Criminal Justice System",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=15",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Page 4, vision and five-pillar framework. The plan’s stated vision describes the criminal justice system through investigation, custody, prosecution, punishment and rehabilitation. Election administration and civil-service personnel management do not describe that process.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-30"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Criminal Justice System:8. Both identify the criminal justice system from its integrated enforcement-to-corrections description; same system-level recognition and same competing-system distractors. Pillar/process paraphrase adds no separately tested skill.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-9"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        "evidence/reference-extraction/notes/document.json#page=12",
+        "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-8",
+        "https://www.ombudsman.gov.ph/UNDP4/wp-content/uploads/2012/12/MTDP-for-CJS-Final-Report.pdf",
+        "evidence/editorial/task-3/research/pillarsreport.pdf.txt",
+        "evidence/editorial/task-3/pdf-snapshots/pillarsreport-4.png",
+        "evidence/editorial/task-3/pdf-snapshots/pillarsreport-5.png",
+        "docs/verification/editorial-full-corpus/reconciliation.json#group-9",
+        "evidence/reference-extraction/notes/document.json#page=15",
+        "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-30"
+      ]
+    },
+    {
+      "id": "group-10",
+      "winner": "notes:Criminal Justice System:16",
+      "duplicate": "notes:Criminal Justice System:47",
+      "winnerId": "q-000619",
+      "duplicateId": "q-000650",
+      "rationale": "Both identify courts as the institution adjudicating criminal guilt/rendering criminal judgment, contrasted with police/prosecutors.",
+      "priorDisposition": false,
+      "lineagePolicy": "Winner retains duplicate exact source reference; rejected occurrence retains its original stable identity and own exact source reference.",
+      "sourceRefs": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Criminal Justice System",
+          "originalNumber": "16",
+          "pages": {
+            "start": 13,
+            "end": 13
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Courts",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=13",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against ArticleVIII section1; RA10071 section3; RA6975 section24. ArticleVIII vests judicial power in courts; prosecutors prosecute and police investigate. The court, not a prosecutor’s accusation, decides culpability.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-16"
+            }
+          ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Criminal Justice System",
+          "originalNumber": "47",
+          "pages": {
+            "start": 16,
+            "end": 16
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Courts",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=16",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against ArticleVIII section1; RA10071 section3; RA6975 section24. ArticleVIII assigns judicial power to courts, unlike prosecutorial charging and police enforcement functions.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-47"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Criminal Justice System:16. Both identify courts as the institution adjudicating criminal guilt/rendering criminal judgment, contrasted with police/prosecutors.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-10"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        "evidence/reference-extraction/notes/document.json#page=13",
+        "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-16",
+        "https://lawphil.net/consti/cons1987.html",
+        "evidence/editorial/task-3/research/constitution.txt",
+        "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html",
+        "https://lawphil.net/statutes/repacts/ra2010/ra_10071_2010.html",
+        "docs/verification/editorial-full-corpus/reconciliation.json#group-10",
+        "evidence/reference-extraction/notes/document.json#page=16",
+        "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-47"
+      ]
+    },
+    {
+      "id": "group-11",
+      "winner": "notes:Criminal Justice System:13",
+      "duplicate": "notes:Criminal Justice System:48",
+      "winnerId": "q-000616",
+      "duplicateId": "q-000651",
+      "rationale": "Both identify the law-enforcement pillar from police duties under RA6975 section24; prevention versus patrol/investigation examples test the same pillar classification.",
+      "priorDisposition": false,
+      "lineagePolicy": "Winner retains duplicate exact source reference; rejected occurrence retains its original stable identity and own exact source reference.",
+      "sourceRefs": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Criminal Justice System",
+          "originalNumber": "13",
+          "pages": {
+            "start": 13,
+            "end": 13
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Law Enforcement",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=13",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section24; RA10071 section3; RA10575 section4. RA6975 section24 assigns police enforcement and crime-prevention functions. RA10071 assigns prosecution, and RA10575 assigns corrections/reformation.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-13"
+            }
+          ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Criminal Justice System",
+          "originalNumber": "48",
+          "pages": {
+            "start": 16,
+            "end": 16
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Law Enforcement",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=16",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section24; RA10575 section4; Constitution VIII section1. Section24 assigns enforcement, investigation, prevention and arrest powers to PNP; corrections rehabilitates and courts adjudicate.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-48"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Criminal Justice System:13. Both identify the law-enforcement pillar from police duties under RA6975 section24; prevention versus patrol/investigation examples test the same pillar classification.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-11"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        "evidence/reference-extraction/notes/document.json#page=13",
+        "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-13",
+        "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html",
+        "evidence/editorial/task-3/research/ra6975.txt",
+        "https://lawphil.net/statutes/repacts/ra2010/ra_10071_2010.html",
+        "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html",
+        "docs/verification/editorial-full-corpus/reconciliation.json#group-11",
+        "evidence/reference-extraction/notes/document.json#page=16",
+        "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-48",
+        "https://lawphil.net/consti/cons1987.html"
+      ]
+    },
+    {
+      "id": "group-12",
+      "winner": "notes:Criminal Justice System:33",
+      "duplicate": "notes:Criminal Justice System:37",
+      "winnerId": "q-000636",
+      "duplicateId": "q-000640",
+      "rationale": "Both identify arraignment from reading the charge and asking the accused to plead under Rule116 section1; original except-to-positive conversion created overlap.",
+      "priorDisposition": false,
+      "lineagePolicy": "Winner retains duplicate exact source reference; rejected occurrence retains its original stable identity and own exact source reference.",
+      "sourceRefs": [
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Criminal Justice System",
+          "originalNumber": "33",
+          "pages": {
+            "start": 15,
+            "end": 15
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Arraignment of the accused",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=15",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Rule116 section1. Rule116 section1 places arraignment in open court before the judge or clerk. The source’s except stem is converted transparently into a supported positive definition.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-33"
+            }
+          ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "Criminal Justice System",
+          "originalNumber": "37",
+          "pages": {
+            "start": 16,
+            "end": 16
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "Arraignment",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=16",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Rule116 section1; Rule113 section1; Rule114 section1. Rule116 section1 prescribes arraignment. Arrest takes into custody and bail secures release/appearance; neither is the plea proceeding.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-37"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner notes:Criminal Justice System:33. Both identify arraignment from reading the charge and asking the accused to plead under Rule116 section1; original except-to-positive conversion created overlap.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-12"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        "evidence/reference-extraction/notes/document.json#page=15",
+        "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-33",
+        "https://lawphil.net/courts/rules/rc_110-127_crim.html",
+        "evidence/editorial/task-3/research/criminalrules.txt",
+        "docs/verification/editorial-full-corpus/reconciliation.json#group-12",
+        "evidence/reference-extraction/notes/document.json#page=16",
+        "docs/verification/editorial-full-corpus-task3.md#criminal-justice-system-37"
+      ]
+    },
+    {
+      "id": "group-13",
+      "winner": "short:GENERAL INFORMATION:20",
+      "duplicate": "notes:PNP Law and History:9",
+      "winnerId": "q-000020",
+      "duplicateId": "q-000582",
+      "rationale": "Both test the ordinary minimum appointment age of21, excluding waivers and examination eligibility. Former PO1 versus Patrolman/Patrolwoman wording does not create a distinct objective.",
+      "priorDisposition": false,
+      "lineagePolicy": "Immutable approved winner: both exact sources remain collectively retained in their own overlays and this group; transfer requires a new exact review/approval.",
+      "sourceRefs": [
+        {
+          "sourceId": "short",
+          "checksum": "ca25ecda36ab8db4036f6fb9a051d97a207178399fc850f1abe50a378bd4263d",
+          "section": "GENERAL INFORMATION",
+          "originalNumber": "20",
+          "pages": {
+            "start": 6,
+            "end": 6
+          },
+          "originalChoiceLabels": ["A", "B", "C", "D"],
+          "originalAnswer": "C. 21 years old",
+          "evidenceLocator": "evidence/reference-extraction/short/document.json#page=6",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "The ordinary statutory minimum for a new PNP applicant is 21 years, with an ordinary maximum of 30, under Section 30(j) of Republic Act No. 6975 as amended by Republic Acts Nos. 8551 and 9708. This stem excludes age waivers: Republic Act No. 8551, Section 15, allows specified initial-appointment waivers with a lower age boundary of 20. Republic Act No. 11200 uses Patrolman/Patrolwoman in place of the former PO1 terminology. Appointment qualifications are distinct from eligibility to sit a NAPOLCOM entrance examination.",
+              "evidenceLocator": "docs/verification/editorial-content.md#q20"
+            }
+          ]
+        },
+        {
+          "sourceId": "notes",
+          "checksum": "bd6e9a06be5bc48922fe784580d0bdd987a207881e3c317896488e995a04a70b",
+          "section": "PNP Law and History",
+          "originalNumber": "9",
+          "pages": {
+            "start": 9,
+            "end": 9
+          },
+          "originalChoiceLabels": [],
+          "originalAnswer": "21",
+          "evidenceLocator": "evidence/reference-extraction/notes/document.json#page=9",
+          "links": [],
+          "imageLocations": [],
+          "corrections": [
+            {
+              "reason": "Authored MCQ conversion: the stem and all 3 alternatives are editorial proposals, not choices recovered from the notes. Correct concept and distinct alternatives were checked against Section 1; RA8551 section15. The ordinary range is 21–30. Twenty appears in the original waiver rule, not the ordinary lower limit. The source’s former PO1 wording is updated without equating appointment with examination eligibility.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus-task3.md#pnp-law-and-history-9"
+            },
+            {
+              "reason": "Duplicate occurrence retained under original stable identity; publication winner short:GENERAL INFORMATION:20. Both test the ordinary minimum appointment age of21, excluding waivers and examination eligibility. Former PO1 versus Patrolman/Patrolwoman wording does not create a distinct objective.",
+              "evidenceLocator": "docs/verification/editorial-full-corpus/reconciliation.json#group-13"
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        "docs/verification/editorial-content.md#q20",
+        "src/features/content/domain/taxonomy.ts",
+        "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/4042",
+        "https://lawphil.net/statutes/repacts/ra2009/ra_9708_2009.html",
+        "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/86469",
+        "https://www.napolcom.gov.ph/",
+        "https://mail.napolcom.gov.ph/pid/index.html",
+        "https://lawphil.net/statutes/repacts/ra2021/ra_11549_2021.html",
+        "evidence/reference-extraction/notes/document.json#page=9",
+        "docs/verification/editorial-full-corpus-task3.md#pnp-law-and-history-9",
+        "evidence/editorial/task-3/research/ra9708.txt",
+        "https://lawphil.net/statutes/repacts/ra1998/ra_8551_1998.html",
+        "docs/verification/editorial-full-corpus/reconciliation.json#group-13"
+      ]
+    }
+  ],
+  "retainedRelatedGroups": [
+    {
+      "sourceKeys": [
+        "comprehensive:I:33",
+        "notes:Criminal Justice System:6",
+        "notes:Criminal Justice System:16"
+      ],
+      "rationale": "I33 tests constitutional allocation to Supreme Court/lower courts; CJS6 tests the actual-controversy/legally-demandable-rights duty; CJS16 tests criminal trial adjudication rather than prosecutorial accusation. Allocation, constitutional duty and criminal adjudication are related but distinct assessed objectives."
+    },
+    {
+      "sourceKeys": [
+        "notes:Criminal Justice System:2",
+        "notes:Criminal Justice System:5",
+        "notes:Criminal Justice System:14"
+      ],
+      "rationale": "CJS2 modernizes fiscal terminology to the official public prosecutor; CJS5 classifies preliminary investigation as prosecution; CJS14 identifies direction/control of criminal actions under Rule110. Terminology, pillar and procedural responsibility are different questions."
+    },
+    {
+      "sourceKeys": [
+        "notes:Criminal Justice System:41",
+        "notes:Criminal Justice System:49",
+        "notes:PNP Law and History:25"
+      ],
+      "rationale": "CJS41 identifies BuCor institution from national-inmate mandate; CJS49 identifies the corrections pillar, not the bureau; PNP25 tests administrative supervision by DOJ. Bureau, function and supervising department are distinct objectives."
+    },
+    {
+      "sourceKeys": [
+        "short:GENERAL INFORMATION:17",
+        "short:GENERAL INFORMATION:19",
+        "notes:PNP Law and History:12",
+        "notes:PNP Law and History:22"
+      ],
+      "rationale": "Acronym expansion, department placement, creation/initial components and statutory instrument identity are separate recalled facts; shared PNP/RA6975 wording alone is not duplication."
+    },
+    {
+      "sourceKeys": ["comprehensive:I:43", "notes:Philippine Constitution:14"],
+      "rationale": "Local-government general supervision under ArticleX differs from executive-department control under ArticleVII."
+    },
+    {
+      "sourceKeys": ["notes:Philippine Constitution:6", "comprehensive:I:7"],
+      "rationale": "Initiation authority differs from impeachment/conviction removal process."
+    },
+    {
+      "sourceKeys": [
+        "notes:Philippine Constitution:7",
+        "notes:Philippine Constitution:15",
+        "notes:Philippine Constitution:16",
+        "notes:Philippine Constitution:22"
+      ],
+      "rationale": "Each inherent-power definition is distinct from recalling the three-power set."
+    },
+    {
+      "sourceKeys": ["notes:Philippine History:15", "notes:Current Events:10"],
+      "rationale": "Source-only identical2016 election lead. Both remain draft with obsolete last-election premise; no supported eligible revision exists to merge."
+    },
+    {
+      "sourceKeys": [
+        "notes:Philippine History:38",
+        "notes:Current Events:28",
+        "comprehensive:I:49"
+      ],
+      "rationale": "Arbitration date versus overbroad dispute-identification lead. Draft original claims remain independently retained with their scope/taxonomy blockers."
+    },
+    {
+      "sourceKeys": ["notes:PNP Law and History:5", "notes:PNP Law and History:23"],
+      "rationale": "Originals share Lacson name, but PNP5 remains unsupported tenure draft while PNP23 transparently assesses statutory ex-officio office, not Lacson biography."
+    },
+    {
+      "sourceKeys": ["notes:PNP Law and History:18", "notes:PNP Law and History:30"],
+      "rationale": "Act175 statutory creation is supported in18. Row30 asks August8 inauguration/gendarmerie identity and remains an unsupported historical-date draft; do not erase the missing-date claim by merging."
+    },
+    {
+      "sourceKeys": ["comprehensive:I:20", "notes:Current Events:5"],
+      "rationale": "Shared Canadian-shipment dispute is a draft lead; identify dispute versus shipment contents/count/date differ and remain unsupported."
+    },
+    {
+      "sourceKeys": ["comprehensive:I:25", "notes:Current Events:19"],
+      "rationale": "Shared JackMa answer is not a certified duplicate: different dated/undated wealth and biography premises; both blocked."
+    },
+    {
+      "sourceKeys": ["comprehensive:I:38", "notes:Current Events:26"],
+      "rationale": "Same2016 Olympic achievement source lead, with athlete versus event retrieval and unsupported historical sports taxonomy; both drafts retained."
+    },
+    {
+      "sourceKeys": [
+        "comprehensive:V:1",
+        "comprehensive:V:2",
+        "comprehensive:V:3",
+        "comprehensive:V:4"
+      ],
+      "rationale": "Shared tree-planting passage supports different root/soil/depth inferences; common stimulus is retained, not counted as duplicated question."
+    },
+    {
+      "sourceKeys": [
+        "comprehensive:VI:1",
+        "comprehensive:VI:51",
+        "comprehensive:VI:56",
+        "comprehensive:VI:61"
+      ],
+      "rationale": "Generic sentence-role prompt resemblance is not duplication across different sentence-set stimuli. Every VI row has its own selected source sentence and discourse role."
+    },
+    {
+      "sourceKeys": ["comprehensive:II:23", "comprehensive:VII:4"],
+      "rationale": "Same dispelling-related vocabulary theme, but contextual synonym versus numbered grammatical-error task are distinct."
+    },
+    {
+      "sourceKeys": ["short:VERBAL REASONING:3", "comprehensive:VII:23", "comprehensive:VII:28"],
+      "rationale": "Shared agreement rule does not make distinct contextual grammar tasks duplicates."
+    },
+    {
+      "sourceKeys": [
+        "short:QUANTITATIVE REASONING:8",
+        "short:LOGICAL REASONING:15",
+        "comprehensive:X:1",
+        "comprehensive:X:7"
+      ],
+      "rationale": "Patterns use distinct terms/rules; shared patternAnalysis taxonomy is not identity."
+    }
+  ],
+  "deferredMinors": {
+    "ledger": ".superpowers/sdd/2026-10-07-editorial-full-corpus/progress.md",
+    "sourceKeys": ["comprehensive:XV:6", "comprehensive:XIII:15"],
+    "rationale": "Final owner triage: compressed explanation spacing and explanation upgrade from likes to uses remain visible; no unrelated content fix in Task4."
+  }
+}
