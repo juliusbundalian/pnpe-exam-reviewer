@@ -302,3 +302,94 @@ test('outside writes cannot join and be lost with a failing transaction', async 
   await outside;
   expect(await db.all('SELECT value FROM transaction_probe')).toEqual([{ value: 'retained' }]);
 });
+
+test('version-one legacy session migration retains manifest position views and publication outbox', async () => {
+  await repository.replaceActive(alice, studySession());
+  await repository.move(alice, studySession().id, 1);
+  await repository.recordView(alice, studySession().id, 0);
+  // Simulate a real version-one file and its original publication DTO.
+  const row = (
+    await db.all('SELECT operation_id, operation_json FROM study_outbox WHERE local_sequence = 0')
+  )[0]!;
+  const raw = JSON.parse(String(row.operation_json));
+  delete raw.session.catalogValidatedAt;
+  await db.run('UPDATE study_outbox SET operation_json = ? WHERE operation_id = ?', [
+    JSON.stringify(raw),
+    String(row.operation_id),
+  ]);
+  await db.run('ALTER TABLE reviewer_sessions DROP COLUMN catalog_validated_at');
+  await db.run('PRAGMA user_version = 1');
+  await db.close();
+  db = nodeSqlDatabase(join(dir, 'study.db'));
+  repository = repo(db);
+  await migrateStudyDatabase(db);
+  expect(await repository.active(alice)).toMatchObject({
+    catalogValidatedAt: null,
+    position: 1,
+    viewedOrdinals: [0],
+  });
+  expect((await repository.active(alice))?.items.map((item) => item.entry.id)).toEqual([
+    'fixture-grammar',
+    'fixture-second',
+  ]);
+  expect(await repository.pending(alice, 200)).toHaveLength(3);
+  expect((await repository.pending(alice, 200))[0]).toMatchObject({
+    kind: 'publishSession',
+    session: { catalogValidatedAt: null },
+  });
+});
+
+test('version-two migration failure after adding a column rolls back without clearing legacy records', async () => {
+  await repository.replaceActive(alice, studySession());
+  await db.run('ALTER TABLE reviewer_sessions DROP COLUMN catalog_validated_at');
+  await db.run('PRAGMA user_version = 1');
+  const failing: SqlDatabase = {
+    ...db,
+    exclusive: (work, guard) =>
+      db.exclusive(
+        (tx) =>
+          work({
+            ...tx,
+            run: async (sql, params) => {
+              if (sql === 'PRAGMA user_version = 2')
+                throw new Error('forced migration failure after ALTER');
+              return tx.run(sql, params);
+            },
+          }),
+        guard,
+      ),
+  };
+  await expect(migrateStudyDatabase(failing)).rejects.toMatchObject({
+    code: 'storage-unavailable',
+  });
+  expect(await db.all('PRAGMA user_version')).toEqual([{ user_version: 1 }]);
+  expect(
+    (await db.all('PRAGMA table_info(reviewer_sessions)')).some(
+      (row) => row.name === 'catalog_validated_at',
+    ),
+  ).toBe(false);
+  expect(await db.all('SELECT position, status FROM reviewer_sessions')).toEqual([
+    { position: 0, status: 'active' },
+  ]);
+  expect(await db.all('SELECT COUNT(*) AS count FROM reviewer_items')).toEqual([{ count: 2 }]);
+  expect(await db.all('SELECT COUNT(*) AS count FROM study_outbox')).toEqual([{ count: 1 }]);
+  await migrateStudyDatabase(db);
+  expect((await repository.active(alice))?.catalogValidatedAt).toBeNull();
+});
+
+test('known catalog validation time survives reopen and cannot change under the same session identity', async () => {
+  await repository.replaceActive(alice, studySession({ catalogValidatedAt: 75 }));
+  await db.close();
+  db = nodeSqlDatabase(join(dir, 'study.db'));
+  repository = repo(db);
+  await migrateStudyDatabase(db);
+  expect((await repository.active(alice))?.catalogValidatedAt).toBe(75);
+  await expect(
+    repository.replaceActive(alice, studySession({ catalogValidatedAt: 90 })),
+  ).rejects.toMatchObject({ code: 'conflict' });
+  expect((await repository.active(alice))?.catalogValidatedAt).toBe(75);
+  expect((await repository.pending(alice, 200))[0]).toMatchObject({
+    kind: 'publishSession',
+    session: { catalogValidatedAt: 75 },
+  });
+});

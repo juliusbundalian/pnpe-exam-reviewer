@@ -54,6 +54,7 @@ export async function readSession(
     deviceId: row.device_id,
     scope,
     generation: row.generation,
+    catalogValidatedAt: row.catalog_validated_at,
     createdAt: row.created_at,
     shuffleQuestions: row.shuffle_questions === 1,
     position: row.position,

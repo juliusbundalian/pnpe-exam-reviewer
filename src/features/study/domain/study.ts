@@ -59,6 +59,7 @@ export const ReviewerSessionSchema = z
     deviceId: GeneratedIdSchema,
     scope: StudyScopeSchema,
     generation: GenerationSchema,
+    catalogValidatedAt: SafeIntegerSchema.nullable().default(null),
     createdAt: SafeIntegerSchema,
     shuffleQuestions: z.boolean(),
     items: z.array(ManifestItemSchema).min(1).readonly(),

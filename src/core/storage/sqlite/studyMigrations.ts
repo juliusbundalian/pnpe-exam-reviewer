@@ -1,7 +1,7 @@
 import { StudyError } from '../../../features/study/domain/study';
 import type { SqlDatabase } from './SqlDatabase';
 
-export const STUDY_SCHEMA_VERSION = 1;
+export const STUDY_SCHEMA_VERSION = 2;
 const statements = [
   `CREATE TABLE catalogs (generation TEXT PRIMARY KEY NOT NULL, revision INTEGER NOT NULL, validated_at INTEGER NOT NULL, item_count INTEGER NOT NULL, fingerprint TEXT NOT NULL)`,
   `CREATE TABLE catalog_items (generation TEXT NOT NULL REFERENCES catalogs(generation) ON DELETE CASCADE, ordinal INTEGER NOT NULL, entry_json TEXT NOT NULL, PRIMARY KEY (generation, ordinal))`,
@@ -31,6 +31,10 @@ export async function migrateStudyDatabase(db: SqlDatabase): Promise<void> {
       if (version === 0) {
         for (const sql of statements) await tx.run(sql);
         await tx.run('PRAGMA user_version = 1');
+      }
+      if (version < 2) {
+        await tx.run('ALTER TABLE reviewer_sessions ADD COLUMN catalog_validated_at INTEGER');
+        await tx.run('PRAGMA user_version = 2');
       }
       const integrity = await tx.all('PRAGMA quick_check');
       if (

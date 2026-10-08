@@ -55,6 +55,7 @@ function immutable(session: ReviewerSession) {
     deviceId: session.deviceId,
     scope: session.scope,
     generation: session.generation,
+    catalogValidatedAt: session.catalogValidatedAt,
     createdAt: session.createdAt,
     shuffleQuestions: session.shuffleQuestions,
     items: session.items,
@@ -166,12 +167,13 @@ export class SqliteStudyRepository implements StudyRepository {
         });
       }
       await tx.run(
-        'INSERT INTO reviewer_sessions (uid, device_id, session_id, scope_json, generation, created_at, shuffle_questions, position, sequence, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+        'INSERT INTO reviewer_sessions (uid, device_id, session_id, scope_json, generation, catalog_validated_at, created_at, shuffle_questions, position, sequence, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
         [
           ...ownerKeys(owner),
           session.id,
           canonicalJson(session.scope),
           session.generation,
+          session.catalogValidatedAt,
           session.createdAt,
           Number(session.shuffleQuestions),
           session.position,

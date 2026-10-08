@@ -55,6 +55,7 @@ export function studySession(overrides: Partial<ReviewerSession> = {}): Reviewer
     deviceId: owner.deviceId,
     scope: { categoryId: 'communicationSkills' },
     generation,
+    catalogValidatedAt: null,
     createdAt: 100,
     shuffleQuestions: true,
     items: [
