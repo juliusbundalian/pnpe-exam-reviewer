@@ -97,7 +97,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=104",
       "docs/verification/editorial-full-corpus-task2.md#ix-1"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -121,6 +121,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "b30e99ce9043675d99a71b1f8294cde1cd22b0e79a502056b8003d1ae203bce7",
+      "reviewDigest": "318a39b951a2076da61659ddda2e708a07cdde2bcf1fc1850541e60d53a534e6"
     }
   },
   {
@@ -221,7 +227,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=105",
       "docs/verification/editorial-full-corpus-task2.md#ix-2"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -245,6 +251,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "0a133c3e78e7e36121f692d9a5ab805799bdafddc4bf13c1fa45c6851acbdcf8",
+      "reviewDigest": "417e66ef5bdb2717b0b60bf53edae2c13d5b2fc14a140cda8e3b653eed8325bc"
     }
   },
   {
@@ -345,7 +357,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=105",
       "docs/verification/editorial-full-corpus-task2.md#ix-3"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -369,6 +381,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "e9e77644db000961354c9164cba48c11eaebe16d237b83ab9af779e91219e8a5",
+      "reviewDigest": "99f60ecbddb722f627dae8331cccae5a95a9eedcaee5cae5733222c1b14d6472"
     }
   },
   {
@@ -469,7 +487,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=105",
       "docs/verification/editorial-full-corpus-task2.md#ix-4"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -493,6 +511,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "db455515c1fd689b77befdac8112340587cba2eb6a5e68f816e6b5041c9c5726",
+      "reviewDigest": "9c1ddd5385196b96206712e429c8b7392c9a6ec48d47b89a35498c468eb0310e"
     }
   },
   {
@@ -593,7 +617,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=106",
       "docs/verification/editorial-full-corpus-task2.md#ix-5"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -617,6 +641,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "9db7ef3553cd398e2af7e2e01b91afaf7e74daddee218b3ace664f233c21c88f",
+      "reviewDigest": "d973413ff69e9526adb595f9200f5eef4bae5024172f66d8f084ccda39bf3cc5"
     }
   },
   {
@@ -718,7 +748,7 @@
       "docs/verification/editorial-full-corpus-task2.md#ix-6",
       "evidence/editorial/task-2/pdf-snapshots/page-106.png"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -757,6 +787,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "99710234719a84c6c93c06b2ec24e67fa41d191a1f81b2109cde19dca0da6530",
+      "reviewDigest": "1d53d71888bce661a7497dfd719b3a9dd4f08a10772a9866fb19b32ad27d108d"
     }
   },
   {
@@ -857,7 +893,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=107",
       "docs/verification/editorial-full-corpus-task2.md#ix-7"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -881,6 +917,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "5434cf7dffa0fb1dbce3ceb30e971a9ca4b1b1d1d3e43caf66927f653bfef6d3",
+      "reviewDigest": "baa8b01089775622e5da45156f47c178139610d72bb76b9cf48e49541117a2a5"
     }
   },
   {
@@ -981,7 +1023,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=107",
       "docs/verification/editorial-full-corpus-task2.md#ix-8"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1005,6 +1047,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "80268ac1c67ef6a79630a3da8724f4621db54bf7db8b671c5d7cb86ffcdc3cc3",
+      "reviewDigest": "a8554ab2d550b7d8fa5984cefd46a297989ecbceebb981194cac363e8aa7c01e"
     }
   },
   {
@@ -1105,7 +1153,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=107",
       "docs/verification/editorial-full-corpus-task2.md#ix-9"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1129,6 +1177,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "fdf21fc9304cc366f00b128b69b42576b7794f67330d50460417a58b32b838b7",
+      "reviewDigest": "450ced2138a845397780c10638d2806b1ca67c53c7ad0941d729c501d282c256"
     }
   },
   {
@@ -1229,7 +1283,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=108",
       "docs/verification/editorial-full-corpus-task2.md#ix-10"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1253,6 +1307,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "b02412295d77dc9bbf60ec67ae200aa835b379e939179304823530f303a0e5bd",
+      "reviewDigest": "50524743c4e2529d843d4d4f8abbcaae05e2c9e777a6791e0c26a2ee85631e33"
     }
   },
   {
@@ -1353,7 +1413,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=108",
       "docs/verification/editorial-full-corpus-task2.md#ix-11"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1377,6 +1437,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "1bde9ca1ae8376a4fb6ada17ca029782f291076f7b9a611db39eacca51900f9b",
+      "reviewDigest": "f1f5ae12a67191ba4ee77c8b9056a8b9d040af21e2e858aa2204f09d1c31617e"
     }
   },
   {
@@ -1478,7 +1544,7 @@
       "docs/verification/editorial-full-corpus-task2.md#ix-12",
       "evidence/editorial/task-2/pdf-snapshots/page-109.png"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1517,6 +1583,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "1058a007cb0c84615adc0eb3e13bcd72c635b02d55ce7639419fd3a91da3d0ac",
+      "reviewDigest": "e16fd27a0745f8bcc0ac4a626cfcb578b16f11ae6831f97741bbcc3f18fcace0"
     }
   },
   {
@@ -1627,7 +1699,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=109",
       "docs/verification/editorial-full-corpus-task2.md#ix-13"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1651,6 +1723,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "bc57a708f0d78b5e850847043cbb1c14c4165ef840cd236dc68f49aeac6d9592",
+      "reviewDigest": "fd5d035d4d589d9541670bcb6947c5b7abcf13df30da8118ca7dea1ea63501ee"
     }
   },
   {
@@ -1751,7 +1829,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=110",
       "docs/verification/editorial-full-corpus-task2.md#ix-14"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1775,6 +1853,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "e08c7e4b85ae2de57b09b8b1b1862fbe52b9359831987c280ef10e61db740fb7",
+      "reviewDigest": "1fd27a3d45a8d102500a436828335d12725a1fee2b68362f502a4504dd16a54d"
     }
   },
   {
@@ -1885,7 +1969,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=110",
       "docs/verification/editorial-full-corpus-task2.md#ix-15"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1909,6 +1993,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "671c9ec96d45d4eff23474e29bbed01cb983487f97bed57055964932af33a121",
+      "reviewDigest": "f324c35ad58c82871fa0b34fbb42fdd6f3a861ec104a6bf007acc7c4c31f592d"
     }
   },
   {
@@ -2019,7 +2109,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=111",
       "docs/verification/editorial-full-corpus-task2.md#ix-16"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2043,6 +2133,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "cb34be138396e7de13458414d35a68a0c6f3f7a3569eef1d23f44a02e3ffc77c",
+      "reviewDigest": "3c2a9605cda6755a85a797e43dba83ebe0853c3dfc5af77cead18f5f3f14d70d"
     }
   },
   {
@@ -2153,7 +2249,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=111",
       "docs/verification/editorial-full-corpus-task2.md#ix-17"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2177,6 +2273,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "f95b36a99f2c0665996d466317955315b760eb587d8ec6ee11962b608ea0cafe",
+      "reviewDigest": "e2f8bf1568cd78da55fde39fccbc43a5aa7f22cb3777b61b3dbb1e0afac9b1e3"
     }
   },
   {
@@ -2287,7 +2389,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=112",
       "docs/verification/editorial-full-corpus-task2.md#ix-18"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2324,6 +2426,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "e3e7f200380a60cbc81b25a297cfa38ebb488f9cdb8061e83c5b12eb1c3e1017",
+      "reviewDigest": "4906ace66802768540321f29df64832d3ab88d929253065c533e41a77b23dde7"
     }
   },
   {
@@ -2434,7 +2542,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=113",
       "docs/verification/editorial-full-corpus-task2.md#ix-19"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2458,6 +2566,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "813c3804e50ab27f895abfd14a0b68640ce16ee914ab67b2fca7114d0c51bfe6",
+      "reviewDigest": "8af1036c1cb5907d3e7d6b584a0633238e45eccbfc5d516f8b42cb66478e14a2"
     }
   },
   {
@@ -2568,7 +2682,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=113",
       "docs/verification/editorial-full-corpus-task2.md#ix-20"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2592,6 +2706,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "ceec36a33c31ab6e1e5e1bbc7b8608c47cc1b171a239598c95bb1054f0d7a045",
+      "reviewDigest": "c4c22af46e87d83f59f616e2bc7d21a818ac1fdd7708b7d843f8d5ee76212edf"
     }
   },
   {
@@ -2702,7 +2822,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=114",
       "docs/verification/editorial-full-corpus-task2.md#ix-21"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2726,6 +2846,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "37a5ce48d2d00b493292e75c91a49315333f60a023bdf4875e8a37cbd5103902",
+      "reviewDigest": "e4f7a8e88318711904fbd4e65425ca9e19fab34f09d30508e726925aa3c46752"
     }
   },
   {
@@ -2836,7 +2962,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=114",
       "docs/verification/editorial-full-corpus-task2.md#ix-22"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2860,6 +2986,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "d9362dd1f037dd1466e2c52f08338672eeb2c945bac138ad49f05e172c1bfdda",
+      "reviewDigest": "594060ea34f7160a0b39d4f43ecbf3a7a82827903da4181fc6a4cd955f2c10e9"
     }
   }
 ]

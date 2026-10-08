@@ -1,3 +1,4 @@
+import { historicalOverlays } from './historical-overlays';
 import { resolve } from 'node:path';
 import { QuestionSchema } from '../../src/features/content/domain/question';
 import {
@@ -11,7 +12,9 @@ const root = resolve(__dirname, '../..');
 
 test('all 190 notes retain source lineage, stable identity, source issues and honest authored/draft gates', async () => {
   const candidates = (await loadCandidates(root)).filter((c) => c.original.sourceId === 'notes');
-  const overlays = (await loadOverlays(root)).filter((o) => o.sourceKey.startsWith('notes:'));
+  const overlays = historicalOverlays(await loadOverlays(root)).filter((o) =>
+    o.sourceKey.startsWith('notes:'),
+  );
   const registry = await loadIdentityRegistry(root);
   expect(candidates).toHaveLength(190);
   expect(overlays).toHaveLength(190);
@@ -73,14 +76,16 @@ test('all 190 notes retain source lineage, stable identity, source issues and ho
       );
     }
   }
-  expect(await loadApprovedPublication(root)).toHaveLength(20);
+  expect(await loadApprovedPublication(root)).toHaveLength(529);
 });
 
 test('PNP30 reviews the preserved 1901 inauguration claim without certifying an unsupported date', async () => {
   const c = (await loadCandidates(root)).find(
     (c) => c.original.sourceKey === 'notes:PNP Law and History:30',
   )!;
-  const o = (await loadOverlays(root)).find((o) => o.sourceKey === c.original.sourceKey)!;
+  const o = historicalOverlays(await loadOverlays(root)).find(
+    (o) => o.sourceKey === c.original.sourceKey,
+  )!;
   const q = o.proposed as { prompt: { text: string }[] };
   expect(c.original.rawPrompt).toMatch(/inaugurated.*August 8, 1901/);
   expect(q.prompt[0]!.text).toBe(c.original.rawPrompt);

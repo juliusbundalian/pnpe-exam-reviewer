@@ -115,7 +115,7 @@
       "evidence/editorial/task-3/research/constitution.txt",
       "docs/verification/editorial-full-corpus/reconciliation.json#group-3"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -176,6 +176,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified Article VII section 1. Article VII section 1 vests executive power in the President. The authored stem specifies the constitutional allocation rather than an unspecified form of government."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "6dc76e4f2c5c465fccac904562d4ebbdfd52a44768811ba6e8390d50e4d6bde7",
+      "reviewDigest": "9add3e1323eabf14d751cb55d14942606ffbee76f9738ebda7f24aad301984ea"
     }
   },
   {
@@ -594,7 +600,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -670,6 +676,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified Article IX-C section 1; IX-D section 1. The Constitution specifies a Chairman and six Commissioners. Eight in the original answer is incorrect; two Commissioners instead describes the Commission on Audit."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "78a442bbc3f80eb48c233dbc4e1da869f4b52ab86b24cad666f412bf2b85ecde",
+      "reviewDigest": "c6b164c2c7901da9d88608700d3188fc8534271fc458f2aacee23b143c4fc33f"
     }
   },
   {
@@ -762,7 +774,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -823,6 +835,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified Articles VI section 1, VII section 1, VIII section 1. Articles VI, VII and VIII allocate legislative, executive and judicial powers respectively. Electoral and auditing commissions are not substitute branches."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "298223734e00f10e19fa3b2d9b5cc25a0d924f44c48719de5b170898cd70dd88",
+      "reviewDigest": "58099e6365aad0d9cb56ef3038463afd4cad69169be7bb0ffb91046d8d32b194"
     }
   },
   {
@@ -915,7 +933,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -976,6 +994,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified Article XI section 3(2),(6). Article XI section 3(2) assigns initiation to the House; section 3(6) assigns trial and decision to the Senate."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "15a6424213a94a76c8bc46a5c02d140218ae6f7189775594a0d8880702942629",
+      "reviewDigest": "adcb4fd149b26f01a8518bc8aa9d075f48fc34ee9621e12e879d84dffc9620a5"
     }
   },
   {
@@ -1068,7 +1092,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1129,6 +1153,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified Article III section 9. Eminent domain concerns taking property with compensation, unlike revenue collection through taxation or regulation under police power. Article III section 9 supplies the compensation safeguard."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "2210690d2dadf645d24ce604e65ff274995ed9f3d5f801a51b99fe26118823a4",
+      "reviewDigest": "f15bfafdbbc2ab2a7216544107e048ac95cbed0e84e01467823294eb7da9a6e5"
     }
   },
   {
@@ -1221,7 +1251,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1282,6 +1312,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified Article III section 1. The guarantees appear in Article III section 1, not the articles allocating legislative and executive powers."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "2b631fd3f5553c91427cb9a3c0dd45b8e4b32877de3cb74ea1c077dc6d531bd2",
+      "reviewDigest": "db81c4a0f33b92d9c481e3cd3931c83c99ef265c095dd4e2b8475393bc9ffd14"
     }
   },
   {
@@ -1374,7 +1410,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1435,6 +1471,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified Article VII section 4; VI section 7; IX. Article VII section 4 specifies six years; three years is the House term and seven years is the regular constitutional-commission term."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "690c0bb24c162a10ad4ec7c5763e5aa981d30493f156ca14cf8ade71334bc087",
+      "reviewDigest": "50babe0e3530718c7d39f1b26cf010787a8bf764d6f28d2f0818f1b123ae8d3e"
     }
   },
   {
@@ -1527,7 +1569,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1588,6 +1630,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified Preamble; Articles III and XVIII. The Preamble states the people’s ideals and aspirations; the Bill of Rights protects rights, and transitory provisions address constitutional transition."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "da3f8e609bfa4b9adfc31f05fc3e3bab741478ac7d0fdb97772b4bae117160c7",
+      "reviewDigest": "5c0c991c691a83c585cdf48f66b4e6a08c70ab5c2943f1a0a8eb7e374968adc4"
     }
   },
   {
@@ -1680,7 +1728,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1741,6 +1789,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified Article VIII section 9. Article VIII section 9 assigns appointment to the President from the JBC list. Such appointments need no confirmation."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "43bdab4a45f7ec8c5597f31dfb2db5dadc7b31fcc2fc87c1cfb052defa854c0d",
+      "reviewDigest": "544e68ced96e51018257a175f372a839450312c476d85936441d97d96a9cacee"
     }
   },
   {
@@ -1833,7 +1887,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1894,6 +1948,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified Article IX-A section 1; XIII section 17. Article IX-A names CSC, COMELEC and COA. The Commission on Human Rights is separately created by Article XIII section 17. This positive-list conversion authors alternatives rather than claiming recovery of missing except options."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "54202ba8606df9e5253e989a18a0e8de62bde2eaf9e449322ad4de8ef9e659ad",
+      "reviewDigest": "7b984dd31e507ff23efc17ce7dfbb49c94413627de280ade752001ebdb0f1bed"
     }
   },
   {
@@ -1986,7 +2046,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2047,6 +2107,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified Article VII section 18. Article VII section 18 designates the President; neither secretary nor Senate President substitutes for that constitutional office."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "f800cee554e47883deffc15bcfaafa89eb04fe881a2df684c0c1ccaa48d53c5c",
+      "reviewDigest": "bb1d57f0d78394b93231e96a22ad53820a8b642467455d1929c57b5a47fc2664"
     }
   },
   {
@@ -2165,7 +2231,7 @@
       "evidence/editorial/task-3/research/constitution.txt",
       "docs/verification/editorial-full-corpus/reconciliation.json#group-5"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2226,6 +2292,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified Article VII section 17. Article VII section 17 assigns executive control to the President. The separate branches do not exercise that general executive control."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "b3fbc8d3f75ab05c976ffa3ca0eb22179d48ff5c0b08ddae39e865eb8a21dc68",
+      "reviewDigest": "b5980fab6a0d71ec9046ffa1e740599355c5500713daca4ee44cf2b296a926d3"
     }
   },
   {
@@ -2318,7 +2390,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2394,6 +2466,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified Article VI section 28; III section 9. Taxation raises revenue; eminent domain takes property for public use with compensation, and police power regulates for public welfare. Article VI section 28 governs taxation."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "1510bb4b9a33aab87b094e220c81f7e21658cdeca37e19767af5aef809b0ef5c",
+      "reviewDigest": "a8ad2c3c0b4b8c7c13fe3b0551e7d426d25f9e33eb3006610aa7e21a2d315aea"
     }
   },
   {
@@ -2486,7 +2564,7 @@
       "https://lawphil.net/judjuris/juri1987/mar1987/gr_l-74457_1987.html",
       "evidence/editorial/task-3/research/policepowers.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2547,6 +2625,12 @@
         "verifiedAt": "2026-10-07T16:32:48.317316+00:00",
         "rationale": "Verified Supreme Court discussion of inherent powers. Police power is the regulatory power for public welfare, distinct from compensated property-taking and revenue collection."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "19474ec0497700553eb3da2215db69b424ee55ad5976048bce4732dd43daca52",
+      "reviewDigest": "525ec8150518377c279782b8fd76ef8481f0aee49b50c58ac64c9527d51602a4"
     }
   },
   {
@@ -2639,7 +2723,7 @@
       "https://lawphil.net/statutes/repacts/ra1989/ra_6735_1989.html",
       "evidence/editorial/task-3/research/ra6735.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2700,6 +2784,12 @@
         "verifiedAt": "2026-10-07T16:27:34.965476+00:00",
         "rationale": "Verified Section 3(a),(c),(e). Section 3(c) defines referendum; initiative proposes measures, while the statute’s plebiscite definition concerns constitutional initiatives."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "382dec17ad83e9ab1766be4c54b9577200716ce70258e49f410e7289fbabe318",
+      "reviewDigest": "0c7b86d7848218584aaa97178f34040b79ced8abfa37bd81c774a7ec89dcd9a5"
     }
   },
   {
@@ -2792,7 +2882,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2853,6 +2943,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified Article VI sections 4,7; VII section 4. Article VI section 7 specifies three years. Six years applies to Senators and the President, not House members."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "ff61e492d3909bb51c008aadb8417bd7e9ccab6df71878404cd9a22e6d2b5ae1",
+      "reviewDigest": "4c48d8bd313065be44a46eca26d880cd3890b094ca6c4bfd53c43b4319da0324"
     }
   },
   {
@@ -2946,7 +3042,7 @@
       "evidence/editorial/task-3/research/ra9165.txt",
       "https://lawphil.net/statutes/repacts/ra2006/ra_9346_2006.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3026,6 +3122,12 @@
         "verifiedAt": "2026-10-07T16:27:34.992548+00:00",
         "rationale": "Verified Section 5; RA9346 sections 1–2. RA 9165 section 5 distinguishes dangerous drugs from controlled precursors. RA 9346 prohibits death and substitutes life imprisonment when the special law does not use RPC penalty names. The third alternative concerns controlled precursors; the original obsolete fine is retained only in lineage."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "3086aac0ffd405514a75f2b8359b73c5ecc356ab4624bc379a5d4e24ce308fe9",
+      "reviewDigest": "9a05e70c124b4247d1d43422562e11b83ea82a53ff09daec5eed6600c6ae1f3f"
     }
   },
   {
@@ -3118,7 +3220,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3179,6 +3281,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified Article II section 12. Article II section 12 expressly identifies the family; parties and unions have different constitutional contexts."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "0ba85c2696414d6188126409d452127c46a6771c726a8e73d59a7117e5a5241c",
+      "reviewDigest": "60664030b968c018414c1babe93016807c593d0cc6b6367a6c3c5bf45b91b01a"
     }
   },
   {
@@ -3435,7 +3543,7 @@
       "evidence/editorial/task-3/research/policepowers.txt",
       "https://lawphil.net/consti/cons1987.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3515,6 +3623,12 @@
         "verifiedAt": "2026-10-07T16:32:48.317316+00:00",
         "rationale": "Verified Supreme Court discussion of inherent powers; Constitution XI section 3. Supreme Court doctrine identifies police power, eminent domain and taxation. Impeachment is a constitutional accountability mechanism, not one of these inherent powers. Alternatives are authored for a positive-list conversion, not recovered except options."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "def7c4734a743a5c2c63a9ae5746b46e558124e9a9009afa0b559d0fb5ea882f",
+      "reviewDigest": "c5c596ea3bccf07366a1f9cb419d035cf149b39ef8b2173a71487b2b8fa3cdd0"
     }
   },
   {
@@ -3608,7 +3722,7 @@
       "evidence/editorial/task-3/research/ra6735.txt",
       "https://lawphil.net/consti/cons1987.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3672,6 +3786,12 @@
         "verifiedAt": "2026-10-07T16:27:34.965476+00:00",
         "rationale": "Verified Section 3(c),(e); Constitution X section 3. Section 3(e) calls this a plebiscite. A referendum on local law concerns local legislation, while recall concerns an elective official, not a constitutional initiative."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "b5a32ec77054d08d8a1d4940999fcf138e92e556a4be24228f2114c9fdf779f5",
+      "reviewDigest": "7851950e93c7e4842bd6b2128b88a9a78e7efdd435ff383d6c6e31c8e75a97d1"
     }
   },
   {
@@ -3764,7 +3884,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3825,6 +3945,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified Article VI section 23(1). Article VI section 23(1) specifies two-thirds. Voting separately remains material and is preserved."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "2f970a2870091fee7124652dca4da3051a2aea406bd296cec3af042e9a810599",
+      "reviewDigest": "19e3777c88689a2a096881e63a90dbdf600e10565a16dbf46aa33d601af7a9d7"
     }
   },
   {
@@ -3917,7 +4043,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3978,6 +4104,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified Article VIII section 4(1). The Constitution specifies fourteen Associate Justices plus the Chief Justice; six and twenty-four are unrelated constitutional membership counts."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "3f733e908934bbe02271d808a669234edeadd86629da15a966cd3595ef760d04",
+      "reviewDigest": "1f9ee5fc6ae582a3888c7a7f96e8acb1d027dff5b9aad43fc40f5332cda6e8f4"
     }
   },
   {
@@ -4070,7 +4202,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -4131,6 +4263,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified Article IX-B section 3; IX-C section 2; IX-D section 2. Article IX-B section 3 assigns this personnel mandate to CSC; COMELEC handles election functions and COA audits public accounts."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "37cd950d32400f89b7b984540bef4392adc06f35b7662f2683cf1434e83f08c9",
+      "reviewDigest": "ace7f166e05ed2df6d7cf3b5e8b8ed4a465b7dd24c362d0d88f340ec9092a2e7"
     }
   }
 ]

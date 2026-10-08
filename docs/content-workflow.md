@@ -7,12 +7,18 @@ engine. All questions remain staged until exact human approvals exist.
 The owner confirmed that delivery covers the full usable reference corpus,
 not just the minimum needed for one Mock Exam. There are 687 extracted source
 occurrences: 20 short MCQs, 477 comprehensive entries and 190 answer-only notes.
-All 687 occurrences now have an editorial disposition: 20 approved and published,
-509 proposals awaiting exact owner review, 145 drafts and 13 rejected duplicates.
-The [final review index](verification/editorial-full-corpus/README.md) links the
-immutable section packets and consolidated exact owner manifest. The next action
-is owner review of the 509 enumerated revisions, naming the exact manifest digest
-or an explicit subset and a reviewer label before any approval or publication.
+All 687 occurrences now have an editorial disposition: 529 approved eligible,
+145 drafts and 13 rejected duplicates. The owner approved the exact 509 new
+revisions in manifest `befca02b985a7d07d83dfecd457571308304f07e95b87dd526144f7937b5c7fb`
+as `Project owner`, observed/recorded at `2026-10-08T01:48:03Z`.
+The initial twenty remain byte-identical. The
+[approved publication and coverage](verification/editorial-full-corpus/approved-publication.md)
+records the complete strict 529-question publication and read-only local demo
+import plan. All four category pools meet their unchanged quotas; Public Service
+Conduct and Data Interpretation remain empty. The
+[review index](verification/editorial-full-corpus/README.md) and its linked
+preapproval packets/manifest are immutable historical review evidence; their
+20-approved/509-needsReview counts describe the checkpoint before this approval.
 Publish every sound, approved logical question, continuing after the
 150-question exam quotas are met.
 Retain duplicate lineage and visibly blocked material; do not invent missing

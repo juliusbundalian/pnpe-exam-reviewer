@@ -1,3 +1,4 @@
+import { historicalOverlays } from './historical-overlays';
 import { resolve } from 'node:path';
 import { QuestionSchema } from '../../src/features/content/domain/question';
 import { readFile } from 'node:fs/promises';
@@ -24,7 +25,11 @@ it('accounts for all approved short occurrences without inventing lineage', asyn
   expect(new Set(overlays.map((o) => o.sourceKey)).size).toBe(20);
   for (const overlay of overlays) {
     expect(overlay.status).toBe('approved');
-    expect(publishable(overlay, { issues: candidates.find((c) => c.original.sourceKey === overlay.sourceKey)!.issues }).ok).toBe(true);
+    expect(
+      publishable(overlay, {
+        issues: candidates.find((c) => c.original.sourceKey === overlay.sourceKey)!.issues,
+      }).ok,
+    ).toBe(true);
     expect(overlay.approval?.digest).toBe(contentDigest(QuestionSchema.parse(overlay.proposed)));
     expect(overlay.approval?.reviewDigest).toBe(reviewDigest(overlay.review!));
     const question = QuestionSchema.parse(overlay.proposed);
@@ -55,11 +60,10 @@ it('accounts for all approved short occurrences without inventing lineage', asyn
   }
 });
 
-
 it('publishes the exact owner-reviewed revisions through whole-corpus reconstruction', async () => {
   const root = resolve(__dirname, '../..');
   const candidates = await loadCandidates(root);
-  const overlays = await loadOverlays(root);
+  const overlays = historicalOverlays(await loadOverlays(root));
   const digest = '547ce4e6164e2ad39a978beb6c112600d629f61d311fe8df62048bb4bf4198d8';
   const evidence = resolve(root, 'evidence/editorial/short-initial', digest);
   const snapshot = JSON.parse(await readFile(resolve(evidence, 'overlays.json'), 'utf8'));
@@ -68,7 +72,9 @@ it('publishes the exact owner-reviewed revisions through whole-corpus reconstruc
   expect(packet.manifest).toEqual(manifest);
   expect(packet.manifest.packetDigest).toBe(digest);
   expect(packet.markdown).toBe(await readFile(resolve(evidence, 'review.md'), 'utf8'));
-  const selected = new Set<string>(manifest.rows.map((row: { sourceKey: string }) => row.sourceKey));
+  const selected = new Set<string>(
+    manifest.rows.map((row: { sourceKey: string }) => row.sourceKey),
+  );
   expect(selected.size).toBe(20);
   for (const overlay of overlays) {
     if (!selected.has(overlay.sourceKey)) {
@@ -77,11 +83,17 @@ it('publishes the exact owner-reviewed revisions through whole-corpus reconstruc
       continue;
     }
     const { approval, ...revision } = overlay;
-    expect({ ...revision, status: 'needsReview' }).toEqual(snapshot.find((row: { sourceKey: string }) => row.sourceKey === overlay.sourceKey));
+    expect({ ...revision, status: 'needsReview' }).toEqual(
+      snapshot.find((row: { sourceKey: string }) => row.sourceKey === overlay.sourceKey),
+    );
     expect(approval?.at).toBe('2026-10-07T09:16:03Z');
     expect(approval?.reviewer).toBe('Project owner');
     const changedReview = JSON.parse(JSON.stringify(overlay));
-    changedReview.review.issues.push({ code: 'POST_APPROVAL_CHANGE', blocking: false, message: 'Changed after approval' });
+    changedReview.review.issues.push({
+      code: 'POST_APPROVAL_CHANGE',
+      blocking: false,
+      message: 'Changed after approval',
+    });
     expect(publishable(changedReview).ok).toBe(false);
     const changedContent = JSON.parse(JSON.stringify(overlay));
     changedContent.proposed.prompt[0].text += ' changed after approval';
@@ -89,7 +101,17 @@ it('publishes the exact owner-reviewed revisions through whole-corpus reconstruc
   }
   const reconstructed = publicationSet(combineBySourceKey(candidates, overlays));
   expect(reconstructed.errors).toEqual([]);
-  const questions = approvedPublication(candidates, overlays, await loadIdentityRegistry(root), sourceRegistry, reconstructed.questions);
+  const questions = approvedPublication(
+    candidates,
+    overlays,
+    await loadIdentityRegistry(root),
+    sourceRegistry,
+    reconstructed.questions,
+  );
   expect(questions).toHaveLength(20);
-  expect(JSON.parse(await readFile(resolve(root, 'data/questions.json'), 'utf8'))).toEqual(questions);
+  expect(
+    JSON.parse(await readFile(resolve(root, 'data/questions.json'), 'utf8')).filter(
+      (q: { sources: { sourceId: string }[] }) => q.sources[0]?.sourceId === 'short',
+    ),
+  ).toEqual(questions);
 });

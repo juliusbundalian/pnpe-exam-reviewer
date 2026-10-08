@@ -1,4 +1,12 @@
-# Full-corpus editorial review index
+# Historical full-corpus review checkpoint
+
+The owner subsequently approved the exact 509-revision manifest below. Current
+state and the separate strict 529-question publication are recorded in
+[approved publication and coverage](approved-publication.md). The machine index,
+owner manifest, reconciliation and linked packets remain unchanged preapproval
+history. All counts and statements below describe that historical checkpoint.
+
+# Preapproval review index
 
 All 687 source occurrences are accounted for: **20 initially approved, 509 new needsReview, 145 draft and 13 rejected duplicates**. The initial twenty remain byte-identical and are the entire current eligible publication. Twenty new immutable section packets cover all 667 remaining occurrences. Historical Task1–3 audits retain their original authoring counts; this reconciliation supersedes their provisional distinct counts.
 

@@ -1,0 +1,336 @@
+{
+  "observedAt": "2026-10-08T01:50:44.600Z",
+  "approvalObservedAt": "2026-10-08T01:48:03Z",
+  "reviewer": "Project owner",
+  "manifestDigest": "befca02b985a7d07d83dfecd457571308304f07e95b87dd526144f7937b5c7fb",
+  "authorized": 509,
+  "priorApproved": 20,
+  "distinctEligible": 529,
+  "publicationDigest": "2aeff30d35bf87bae8ef702156a07d124c3dd30a5d9527a1c9d32ce775b93efb",
+  "coverage": {
+    "occurrences": 687,
+    "bySource": [
+      {
+        "id": "short",
+        "counts": {
+          "unavailable": 0,
+          "draft": 0,
+          "needsReview": 0,
+          "rejected": 0,
+          "approvedEligible": 20,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      },
+      {
+        "id": "comprehensive",
+        "counts": {
+          "unavailable": 0,
+          "draft": 65,
+          "needsReview": 0,
+          "rejected": 2,
+          "approvedEligible": 410,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      },
+      {
+        "id": "notes",
+        "counts": {
+          "unavailable": 0,
+          "draft": 80,
+          "needsReview": 0,
+          "rejected": 11,
+          "approvedEligible": 99,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      }
+    ],
+    "byCategory": [
+      {
+        "id": "generalInformation",
+        "counts": {
+          "unavailable": 0,
+          "draft": 0,
+          "needsReview": 0,
+          "rejected": 11,
+          "approvedEligible": 134,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      },
+      {
+        "id": "communicationSkills",
+        "counts": {
+          "unavailable": 0,
+          "draft": 5,
+          "needsReview": 0,
+          "rejected": 1,
+          "approvedEligible": 276,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      },
+      {
+        "id": "quantitativeReasoning",
+        "counts": {
+          "unavailable": 0,
+          "draft": 0,
+          "needsReview": 0,
+          "rejected": 0,
+          "approvedEligible": 41,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      },
+      {
+        "id": "criticalThinking",
+        "counts": {
+          "unavailable": 0,
+          "draft": 8,
+          "needsReview": 0,
+          "rejected": 1,
+          "approvedEligible": 78,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      }
+    ],
+    "bySubcategory": [
+      {
+        "id": "constitutionAndLaws",
+        "counts": {
+          "unavailable": 0,
+          "draft": 0,
+          "needsReview": 0,
+          "rejected": 5,
+          "approvedEligible": 90,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      },
+      {
+        "id": "pnpHistory",
+        "counts": {
+          "unavailable": 0,
+          "draft": 0,
+          "needsReview": 0,
+          "rejected": 0,
+          "approvedEligible": 3,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      },
+      {
+        "id": "criminalJusticeSystem",
+        "counts": {
+          "unavailable": 0,
+          "draft": 0,
+          "needsReview": 0,
+          "rejected": 6,
+          "approvedEligible": 40,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      },
+      {
+        "id": "currentEvents",
+        "counts": {
+          "unavailable": 0,
+          "draft": 0,
+          "needsReview": 0,
+          "rejected": 0,
+          "approvedEligible": 1,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      },
+      {
+        "id": "publicServiceConduct",
+        "counts": {
+          "unavailable": 0,
+          "draft": 0,
+          "needsReview": 0,
+          "rejected": 0,
+          "approvedEligible": 0,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      },
+      {
+        "id": "vocabulary",
+        "counts": {
+          "unavailable": 0,
+          "draft": 1,
+          "needsReview": 0,
+          "rejected": 0,
+          "approvedEligible": 46,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      },
+      {
+        "id": "readingComprehension",
+        "counts": {
+          "unavailable": 0,
+          "draft": 2,
+          "needsReview": 0,
+          "rejected": 0,
+          "approvedEligible": 90,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      },
+      {
+        "id": "grammar",
+        "counts": {
+          "unavailable": 0,
+          "draft": 2,
+          "needsReview": 0,
+          "rejected": 1,
+          "approvedEligible": 140,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      },
+      {
+        "id": "basicConcepts",
+        "counts": {
+          "unavailable": 0,
+          "draft": 0,
+          "needsReview": 0,
+          "rejected": 0,
+          "approvedEligible": 14,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      },
+      {
+        "id": "problemSolving",
+        "counts": {
+          "unavailable": 0,
+          "draft": 0,
+          "needsReview": 0,
+          "rejected": 0,
+          "approvedEligible": 27,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      },
+      {
+        "id": "dataInterpretation",
+        "counts": {
+          "unavailable": 0,
+          "draft": 0,
+          "needsReview": 0,
+          "rejected": 0,
+          "approvedEligible": 0,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      },
+      {
+        "id": "logicalReasoning",
+        "counts": {
+          "unavailable": 0,
+          "draft": 4,
+          "needsReview": 0,
+          "rejected": 1,
+          "approvedEligible": 26,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      },
+      {
+        "id": "patternAnalysis",
+        "counts": {
+          "unavailable": 0,
+          "draft": 1,
+          "needsReview": 0,
+          "rejected": 0,
+          "approvedEligible": 18,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      },
+      {
+        "id": "deduction",
+        "counts": {
+          "unavailable": 0,
+          "draft": 2,
+          "needsReview": 0,
+          "rejected": 0,
+          "approvedEligible": 14,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      },
+      {
+        "id": "wordAnalogy",
+        "counts": {
+          "unavailable": 0,
+          "draft": 1,
+          "needsReview": 0,
+          "rejected": 0,
+          "approvedEligible": 20,
+          "approvedBlocked": 0,
+          "approvedExpired": 0
+        }
+      }
+    ],
+    "unmapped": {
+      "unavailable": 0,
+      "draft": 132,
+      "needsReview": 0,
+      "rejected": 0,
+      "approvedEligible": 0,
+      "approvedBlocked": 0,
+      "approvedExpired": 0
+    },
+    "quotas": [
+      {
+        "categoryId": "generalInformation",
+        "required": 35,
+        "eligible": 134,
+        "shortage": 0
+      },
+      {
+        "categoryId": "communicationSkills",
+        "required": 40,
+        "eligible": 276,
+        "shortage": 0
+      },
+      {
+        "categoryId": "quantitativeReasoning",
+        "required": 25,
+        "eligible": 41,
+        "shortage": 0
+      },
+      {
+        "categoryId": "criticalThinking",
+        "required": 50,
+        "eligible": 78,
+        "shortage": 0
+      }
+    ],
+    "defaultExamReady": true
+  },
+  "dryRun": {
+    "observedAt": "2026-10-08T01:53:40.180889Z",
+    "path": "evidence/editorial/full-corpus-approved/import-manifest.json",
+    "projectId": "demo-pnpe",
+    "endpoint": "127.0.0.1:8080",
+    "manifestDigest": "e1fbe85c5dea1ba3504298de0d551d509ccd075d9e8ff6dc3d36b1539ed4a3b9",
+    "expectedHead": {
+      "generation": "3fb47bd7ebc36303bdb30ac3e58e1ed47de2ca65a455e50466039e1d363a0a3f",
+      "revision": 1
+    },
+    "generation": "7f8f7ded0edcea40cbba7a5180b9713f6c0edec8f76eac7f60558e8a13a0775b",
+    "creates": 509,
+    "noops": 20,
+    "questionCount": 529,
+    "shards": 13,
+    "applied": false
+  }
+}

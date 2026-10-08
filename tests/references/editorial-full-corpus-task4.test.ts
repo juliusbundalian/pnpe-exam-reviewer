@@ -1,3 +1,4 @@
+import { historicalOverlays } from './historical-overlays';
 import { createHash } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
@@ -14,11 +15,11 @@ import {
 const root = resolve(__dirname, '../..');
 const read = async (path: string) => JSON.parse(await readFile(resolve(root, path), 'utf8'));
 
-test('full-corpus review manifest reconciles every occurrence and binds exact current packets without granting approval', async () => {
+test('full-corpus review manifest reconciles every occurrence and binds exact current packets at its historical preapproval checkpoint', async () => {
   const index = await read('docs/verification/editorial-full-corpus/review-index.json');
   const manifest = await read('docs/verification/editorial-full-corpus/owner-review-manifest.json');
   const candidates = await loadCandidates(root);
-  const overlays = await loadOverlays(root);
+  const overlays = historicalOverlays(await loadOverlays(root));
   expect(candidates).toHaveLength(687);
   expect(index.occurrences).toHaveLength(687);
   expect(new Set(index.occurrences.map((row: { sourceKey: string }) => row.sourceKey))).toEqual(
@@ -70,18 +71,31 @@ test('full-corpus review manifest reconciles every occurrence and binds exact cu
     createHash('sha256').update(canonicalJson(manifest.revisions)).digest('hex'),
   );
   for (const [path, expected] of Object.entries(index.preservationHashes)) {
+    if (path === 'data/questions.json') {
+      const prior = (await loadApprovedPublication(root)).filter(
+        (q) => q.sources[0]?.sourceId === 'short',
+      );
+      const preserved = await readFile(
+        resolve(root, 'evidence/editorial/full-corpus-approved/prior-publication.json'),
+      );
+      expect(createHash('sha256').update(preserved).digest('hex')).toBe(expected);
+      expect(JSON.parse(canonicalJson(prior))).toEqual(
+        JSON.parse(canonicalJson(JSON.parse(preserved.toString()))),
+      );
+      continue;
+    }
     expect(
       createHash('sha256')
         .update(await readFile(resolve(root, path)))
         .digest('hex'),
     ).toBe(expected);
   }
-  expect(await loadApprovedPublication(root)).toHaveLength(20);
+  expect(await loadApprovedPublication(root)).toHaveLength(529);
 });
 
 test('every rejected duplicate keeps stable identity and exact source lineage, with approved winner exception explicit', async () => {
   const reconciliation = await read('docs/verification/editorial-full-corpus/reconciliation.json');
-  const overlays = await loadOverlays(root);
+  const overlays = historicalOverlays(await loadOverlays(root));
   const groups = reconciliation.groups;
   expect(groups).toHaveLength(13);
   expect(new Set(groups.map((g: { duplicate: string }) => g.duplicate))).toEqual(

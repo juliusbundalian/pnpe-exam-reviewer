@@ -3,8 +3,13 @@
 This checkpoint provides a developer content toolchain: source evidence,
 conservative candidates, stable identities, editorial approval validation, and
 guarded Firestore import. It accounts for 687 source occurrences across three
-references; no reference question has human approval, so the published bank is
-empty. Source counts are not counts of unique or publishable questions.
+references. The owner has approved 529 distinct questions: the initial twenty
+plus the exact 509-revision full-corpus manifest. All 529 pass strict publication
+validation; 145 drafts and 13 rejected duplicates remain excluded. Category pools
+meet the default 150-question exam quotas. See the
+[approved publication and coverage](docs/verification/editorial-full-corpus/approved-publication.md)
+for exact authorization, counts and the prepared local demo dry run. Source counts
+are not counts of unique or publishable questions.
 
 The mobile foundation adds a public Home, four categories and fifteen
 subcategories, appearance settings, and an authentication shell. Native/device

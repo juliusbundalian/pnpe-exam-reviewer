@@ -851,7 +851,7 @@
       "https://lawphil.net/judjuris/juri2018/may2018/gr_237428_2018.html",
       "evidence/editorial/task-3/research/sereno.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -927,6 +927,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Case identification and introductory statement; correct decision date 11 May 2018. The decision expressly concerns a petition for quo warranto challenging eligibility to hold the office, not a Senate impeachment trial or a protective writ of amparo. The authored conversion assesses the legal proceeding identified by the decision rather than presenting the 2018 removal as a current event."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "96890805ba2f07e4bc12d93a2f3a0bb420f3bdbd4c8071ccbaaafa2812326163",
+      "reviewDigest": "32e9196f1e3d383efad549a0e11ea93707c36bef31a69ea59c0d81619a28cdf0"
     }
   },
   {
@@ -1113,7 +1119,7 @@
       "https://lawphil.net/statutes/repacts/ra2017/ra_10963_2017.html",
       "evidence/editorial/task-3/research/ra10963.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1189,6 +1195,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Section 1. Section 1 gives the exact statutory title Tax Reform for Acceleration and Inclusion. The other authored expansions use related fiscal terms but are not the law’s title. This conversion tests a statute rather than an undated current-event claim."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "5c9a5d76525052ace4b5e4adf1aa66e42b9249302ae669765ebffac0bc5c643e",
+      "reviewDigest": "a4c561284804ccc8392514df6be3f548a8a97c9ccb0a2b57ed4afbf7314eaba9"
     }
   },
   {
@@ -1375,7 +1387,7 @@
       "https://lawphil.net/statutes/repacts/ra2018/ra_10969_2018.html",
       "evidence/editorial/task-3/research/ra10969.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1451,6 +1463,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Section 1. RA 10969 section 1 supplies the short title. RA 10963 is TRAIN; RA 8551 concerns PNP reform. The authored statutory-identification question omits broader unverified claims about actual program delivery."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "c01c0a714aafea9ca0bd95f92090a2c34bf3b9d68c37837f089abf0069317468",
+      "reviewDigest": "77812d4b6ff86246a614524f39da613ce4241f3a53999882d9c1d291b88f8d45"
     }
   },
   {
@@ -1543,7 +1561,7 @@
       "https://lawphil.net/executive/execord/eo2017/eo_26_2017.html",
       "evidence/editorial/task-3/research/eo26.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1619,6 +1637,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Title and signature block, 16 May 2017. EO 26’s signature block names Rodrigo Roa Duterte. Its title concerns smoke-free public and enclosed places; the authored stem avoids describing a blanket ban on all smoking."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "f5155f94b35732819f02b3df5806b49be6395a46b113df4c81686dffa87777ff",
+      "reviewDigest": "f5dad19764cd91d1855c7404e1fa8fce448231c8a0bbc6d109c51a98aef41650"
     }
   },
   {
@@ -1805,7 +1829,7 @@
       "https://lawphil.net/executive/proc/proc2017/proc_216_2017.html",
       "evidence/editorial/task-3/research/proc216.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1881,6 +1905,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Execution clause. The proclamation’s execution clause states May 23, 2017. Neither neighboring date is its date. This is a dated legal-instrument question, not an assertion that martial law remains in force."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "f25730e82a017f4c64bc3bbb2bedf20fcfcbb4571b155c2d41f3cdc8cbb224bc",
+      "reviewDigest": "2e016b796c3f33524cf8db18778f38ba16041dba3ca3aeab9ed2d718ea181bf8"
     }
   },
   {
@@ -1974,7 +2004,7 @@
       "evidence/editorial/task-3/research/eo56.txt",
       "https://lawphil.net/executive/execord/eo2016/eo_6_2016.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2054,6 +2084,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Section 1; EO 6 section 1. EO 56 section 1 institutionalizes 911 and replaces Patrol 117. EO 6 instead creates the 8888 Citizens’ Complaint Center. The authored conversion distinguishes emergency response from complaints."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "e68f3445f8a6e0992e4f1487d198fe317b45104bbc828360809cd606f79fc941",
+      "reviewDigest": "64c17a815f1daaf839399157cfe183f127ce7225ef4aad34c2c1d19d3014568a"
     }
   },
   {
@@ -2146,7 +2182,7 @@
       "https://lawphil.net/executive/proc/proc2017/proc_319_2017.html",
       "evidence/editorial/task-3/research/proc319.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2222,6 +2258,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Operative declaration. The proclamation declares September 21, 2017 a National Day of Protest. The other named national observances are not this proclamation’s designation."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "9a379560d0ce63b0b45d4bdd7d223f2714b95ab5cfdffd9f7288c88c837b13c6",
+      "reviewDigest": "37e0aab21e458a03296710fec7facb77ff53d1b730a80c0cf1c15b3242a1b681"
     }
   },
   {
@@ -2502,7 +2544,7 @@
       "https://lawphil.net/executive/proc/proc2018/proc_475_2018.html",
       "evidence/editorial/task-3/research/boracay.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2578,6 +2620,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Operative declaration. The operative text identifies Boracay and its affected barangays. The alternatives are different Philippine islands; the question assesses the dated proclamation rather than ongoing tourism access."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "86c97c1d351318546be397edb94594b1dc793541de787bdac54436b6dfa7cf07",
+      "reviewDigest": "e09c7c13dc0cb9a61c480888bd93682e2a0a8baa7d4915e31d30b56b3b9be356"
     }
   },
   {
@@ -2764,7 +2812,7 @@
       "https://lawphil.net/executive/execord/eo2017/eo_25_2017.html",
       "evidence/editorial/task-3/research/eo25.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2840,6 +2888,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Section 1. Section 1 renames Benham Rise Philippine Rise. A trench and a sea are different geographic features, not the statutory replacement name."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "fdcecac2b02d3fcc55bcb02f0b0684867e474337c7f18dada8dee2c4ba92473d",
+      "reviewDigest": "5fd62498d06002db81473ff5debcdce2559d76d7923c7736895310f33b1f294e"
     }
   },
   {
@@ -3684,7 +3738,7 @@
       "https://lawphil.net/executive/execord/eo2016/eo_2_2016.html",
       "evidence/editorial/task-3/research/eo2.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3760,6 +3814,12 @@
         "verifiedAt": "2026-10-07T17:03:57.644Z",
         "rationale": "Verified Sections 2–4 and 7. EO 2 section 2 covers executive-branch government offices, including government-owned or controlled corporations; section 3 provides access to information and official records. Section 4 preserves legal exceptions and section 7 safeguards personal information, so classified documents are not unconditionally accessible. The separate scope distractor wrongly extends this government-record request mechanism directly to privately owned companies. The qualified access concept remains the sole supported right."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "a1bce55afe12718150b7a5c6f238ddbd238dd5a0b07f7766d461ddc4ad2ad914",
+      "reviewDigest": "ab98b2b1f20caed64f0f4f8dfda0e0c906b15ecaf8d0511eb164b68e7cb62c28"
     }
   },
   {

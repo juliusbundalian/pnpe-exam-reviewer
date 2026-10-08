@@ -107,7 +107,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=133",
       "docs/verification/editorial-full-corpus-task2.md#xiii-1"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -131,6 +131,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "63b4fb5607840ca9c0b0f1e38c43a3e4de368436e99f5a2e35102da5bdbeb710",
+      "reviewDigest": "847411fd915765e6ec2a7840c28c5f7e819ddb7df3a10e212a0d3b2a4926b417"
     }
   },
   {
@@ -242,7 +248,7 @@
       "docs/verification/editorial-full-corpus-task2.md#xiii-2",
       "https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/diabetic-retinopathy"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -286,6 +292,12 @@
         "verifiedAt": "2026-10-07T16:00:32Z",
         "rationale": "Diabetes increases risk but neither diagnosis nor itchy eyes establishes retinopathy. The supplied facts leave it possible, not certain and not ruled out. D is revised to “Cannot be determined from the information given,” uniquely rejecting all definitive alternatives. NEI states early retinopathy can be asymptomatic and diagnosis needs an eye exam; the source’s definitive “no” is not valid."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "59587c945c0ab72710651052e6c289e0e296baf47d03e5b9fa955f1d2ecae456",
+      "reviewDigest": "56eb919bccde9f06b8d52031cbc7e6cfb5828a2cd52b547a4deb8e21f0533cfb"
     }
   },
   {
@@ -398,7 +410,7 @@
       "https://jska.jp/history",
       "https://www.jka.or.jp/en/about-jka/history/"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -429,6 +441,12 @@
         "verifiedAt": "2026-10-07T16:01:36Z",
         "rationale": "The revised passage states the change of meaning only. It does not say Chinese people are good at karate, that the art became popular, that kara alone was the original name, or that empty-hand was used in1722. Thus E, none of A–D, is uniquely supported. JKA says exact emergence is uncertain; JSKA supports the change in meaning. The unsupported1722 claim is removed."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "626bdae0d1f1becab5af6fa13db652110393152137a074f2addf0bc10a331da0",
+      "reviewDigest": "38d03390f89021b87e7ea453fa688cc3ea907057d4524c9fe95c58b6db4b5c70"
     }
   },
   {
@@ -540,7 +558,7 @@
       "docs/verification/editorial-full-corpus-task2.md#xiii-4",
       "https://philhistoricsites.nhcp.gov.ph/registry_database/emilio-aguinaldo-y-famy-1869-1964/"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -570,6 +588,12 @@
         "verifiedAt": "2026-10-07T16:01:36Z",
         "rationale": "The first sentence expressly supplies Aguinaldo’s motive for joining; C restates it. A adds execution and motive; B adds competition; D reverses who joined; E includes those unsupported alternatives. NHCP verifies1895 membership and March22,1897 presidency; the source’s second sentence implying total leadership only after Bonifacio’s execution is replaced by that dated fact."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "925dfc9834163966aaa3b8d535a427e011460c456b5486661151d582218dddf7",
+      "reviewDigest": "e52df24dc320d88183363e5039e4923ebec3e1126c086614cf8ea27fb9374edf"
     }
   },
   {
@@ -681,7 +705,7 @@
       "docs/verification/editorial-full-corpus-task2.md#xiii-5",
       "https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -711,6 +735,12 @@
         "verifiedAt": "2026-10-07T16:00:32Z",
         "rationale": "The passage’s second sentence expressly supports C: improper acupuncture can have serious side effects. A/D ignore sterile needles; B ignores experience; E asserts categorical unsafety, stronger than possible adverse effects. NCCIH supports the safety caveats."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "bd699d3da70e887d54672e1fbbe6d1a955e600b270bbf3d44f4665c604e4a7e8",
+      "reviewDigest": "6241c29d21286810f1e380ba9256a3c37372588737989a7bd45a0c3d54686b26"
     }
   },
   {
@@ -812,7 +842,7 @@
       "docs/verification/editorial-full-corpus-task2.md#xiii-6",
       "https://www.nps.gov/articles/hikingetiquette.htm"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -842,6 +872,12 @@
         "verifiedAt": "2026-10-07T16:01:36Z",
         "rationale": "Right-of-way requires downhill hikers to yield until uphill hikers pass, D. Danger, tiredness and universal readiness are not stated. NPS independently supports the stated hiking convention and notes signage can vary."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "ece3b8fc84da635a0018d5e63bc9ee4b979b7ceeac3e6e02befa4a23634b8b04",
+      "reviewDigest": "7b9bbe7f9d34508ff59e4180ff51113eb97ff2f01eabe79e1eeacd4ba59d34f5"
     }
   },
   {
@@ -954,7 +990,7 @@
       "https://science.nasa.gov/earth/earth-observatory/out-of-the-crevasse-field/",
       "https://home.nps.gov/articles/backpackingak.htm"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -985,6 +1021,12 @@
         "verifiedAt": "2026-10-07T16:01:36Z",
         "rationale": "The passage says hidden crevasses create danger, A. B says nobody without rope, stronger than usually required; C adds a leader; D reverses how snow bridges form; E falsely makes one tool sufficient for safety. NASA confirms snow can conceal cracks; NPS supports equipment and cautions."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "0b11165b584d8cea46879a0b3dff6228cd581505f2273e53cf1cee6f24de510d",
+      "reviewDigest": "45afd08c8e4e3eb265e43f3cbd68308f399ae7a37f93f0934d73b09c72640e06"
     }
   },
   {
@@ -1095,7 +1137,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=137",
       "docs/verification/editorial-full-corpus-task2.md#xiii-8"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1119,6 +1161,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "1a7216de657e2364c1701782b4857c318afbb118c9da517198f54bd8c43f11e6",
+      "reviewDigest": "e9b022e5cf40e76e21259b3c73a9bd279ed0cc91c238d82e87f939d961b0a496"
     }
   },
   {
@@ -1219,7 +1267,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=137",
       "docs/verification/editorial-full-corpus-task2.md#xiii-9"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1243,6 +1291,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "e288d46a273f3aa535a9ee6ebabfd7649ac118435ed58f5b3210465d1409938d",
+      "reviewDigest": "487ea1b071d614fdda0aafb67461c13129fac78df4d490d4ca112314722220e5"
     }
   },
   {
@@ -1343,7 +1397,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=138",
       "docs/verification/editorial-full-corpus-task2.md#xiii-10"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1367,6 +1421,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "591863f3da714e385a518412cf5754c7ef9aa929b24c2198f80e0f278fdf5fba",
+      "reviewDigest": "c1e497817defb3283a0d6ee5201bd7f9d6a4bcacf0561519bee102e4d375cddd"
     }
   },
   {
@@ -1606,7 +1666,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=139",
       "docs/verification/editorial-full-corpus-task2.md#xiii-12"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1630,6 +1690,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "12885a4a0f97cd848bf6713d17dec53ab40b99155a12afbf590537caf17762c2",
+      "reviewDigest": "f7465e579e22f0931b2f5bc0977547e77dafb1b82b0b3833496adc8c3440911b"
     }
   },
   {
@@ -1740,7 +1806,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=139",
       "docs/verification/editorial-full-corpus-task2.md#xiii-13"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1764,6 +1830,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "f7af784c90f5f40b797aecccaa88bbbd5bec6a141dbe1f9a4286dcce68d8e4ce",
+      "reviewDigest": "37670d60a0432438244c302ccce8439e2242331ccc7b1820e90bec350f026e46"
     }
   },
   {
@@ -2013,7 +2085,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=140",
       "docs/verification/editorial-full-corpus-task2.md#xiii-15"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2037,6 +2109,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "cf02c3e7ac8164d3db8022d2164c70b91dad61a6b15f002cb364512329844860",
+      "reviewDigest": "47ca1799eba05f1ffeee6224edac2c47f5fcdfe775007615116d64e539a7c4a0"
     }
   }
 ]

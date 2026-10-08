@@ -89,7 +89,7 @@
       "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/14/63403",
       "evidence/editorial/task-3/research/discretion.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -150,6 +150,12 @@
         "verifiedAt": "2026-10-07T16:32:48.080187+00:00",
         "rationale": "Verified SC distinction between discretionary and ministerial duties. The Supreme Court distinguishes discretionary duty, permitting judgment as to how or when, from a ministerial duty performed in a prescribed manner without that judgment. Judicial precedent concerns decisions, not this authority."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "48901e2fc80ec01ae3fee4b106e1849f40f12b39c1d65b3f617755d55f845fa1",
+      "reviewDigest": "58dbaaac654a35333942e04a4da5900d27f66e82c6f041cbf3d84b83673a71e1"
     }
   },
   {
@@ -243,7 +249,7 @@
       "evidence/editorial/task-3/research/ra10071.txt",
       "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -307,6 +313,12 @@
         "verifiedAt": "2026-10-07T16:27:34.816328+00:00",
         "rationale": "Verified Sections 2–3; RA6975 sections24,61. RA10071 places prosecutors in the National Prosecution Service. Police perform law enforcement and jail officers perform custodial functions under RA6975."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "411d8854b4b01071912e0ef6058a39caacd79cdde9dde4893fc15307a16be709",
+      "reviewDigest": "218a4673326a6a57064df7d2530ab217853d685834487c2e5df54518147902e9"
     }
   },
   {
@@ -598,7 +610,7 @@
       "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html",
       "docs/verification/editorial-full-corpus/reconciliation.json#group-8"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -665,6 +677,12 @@
         "verifiedAt": "2026-10-07T16:27:34.816328+00:00",
         "rationale": "Verified Section 3; RA6975 section24; RA10575 section4. RA10071 section3 establishes and assigns these functions to the NPS. PNP law enforcement and BuCor reformation are distinct mandates."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "165f913b1e2f29bbdf59c4f416372351d341ae369cd2c37dbe9277332eea86a0",
+      "reviewDigest": "b5670bebc0fc3983e48ee6331ceac3419885d85222341a9bd08f293258248e58"
     }
   },
   {
@@ -785,7 +803,7 @@
       "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html",
       "docs/verification/editorial-full-corpus/reconciliation.json#group-7"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -852,6 +870,12 @@
         "verifiedAt": "2026-10-07T16:27:34.816328+00:00",
         "rationale": "Verified Section 3; Constitution VIII section1; RA10575 section4. RA10071 section3 assigns preliminary investigation and prosecution to NPS. It is distinct from judicial adjudication and corrections; the question asks institutional function, not current procedural deadlines."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "8b3272d79b23571ceeea94a33997a97d74c9929422be179201ab8a78cc8fdded",
+      "reviewDigest": "303912bc52024239c391fc27de18cc27d1a963693a9c2ed255887d38cd50e7b3"
     }
   },
   {
@@ -944,7 +968,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1005,6 +1029,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified Article VIII section1. Article VIII section1 vests judicial power in the Supreme Court and lower courts. Prosecutors and legislators have separate functions."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "0311f859c6c9718c88d4420a8acc4fbe786dcbbf4fc71336d2712aa018b8bad0",
+      "reviewDigest": "8e42e9ccc9bdc8ed01e29878b01b0a0b8ef90a0f90084e194b9663054580fa5b"
     }
   },
   {
@@ -1219,7 +1249,7 @@
       "evidence/editorial/task-3/pdf-snapshots/pillarsreport-5.png",
       "docs/verification/editorial-full-corpus/reconciliation.json#group-9"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1286,6 +1316,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Page 4, five-pillar framework. The Philippine criminal justice development plan lists law enforcement, prosecution, courts, corrections and community as its five pillars. Electoral and personnel administration are separate constitutional mandates."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "409706db5f9bdee36e6db29cd34824109c254de6399e5ce8aaaef13b26983dfe",
+      "reviewDigest": "ca630689ef6270e62fbb967b71f8cd3cc70974452e38805739d98dce44181cce"
     }
   },
   {
@@ -1378,7 +1414,7 @@
       "https://lawphil.net/statutes/acts/act1930/act_3815_1930.html",
       "evidence/editorial/task-3/research/rpcbook2.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1439,6 +1475,12 @@
         "verifiedAt": "2026-10-07T16:28:50.981399+00:00",
         "rationale": "Verified Article306 definition only. Article306 defines brigands by the band, arms and purposes, unlike the source’s vague lifestyle description. This asks the statutory definition, not penalty amounts or every highway-robbery offense."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "9c9bb5b91331046a46ec8037c653052f41d2900e636c034eebed43392497f0e5",
+      "reviewDigest": "f2852d66eec85dfd42e16176fe3a2b65948043be4cf4589b75046bd4341ca29a"
     }
   },
   {
@@ -1531,7 +1573,7 @@
       "https://lawphil.net/courts/rules/rc_110-127_crim.html",
       "evidence/editorial/task-3/research/criminalrules.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1592,6 +1634,12 @@
         "verifiedAt": "2026-10-07T16:27:34.839883+00:00",
         "rationale": "Verified Rule113 section1; Rule114 section1; Rule116 section1. Rule113 section1 defines arrest. Arraignment informs an accused of charges and obtains a plea; bail secures release and appearance."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "ac807fdc995f4c6fca296d8ed45a92790dd85c58d15b07d346eda536b1258962",
+      "reviewDigest": "5c0083ce3cd8a657f2d4bc176438d6dd6105a18d409b5a1cf9904cea1cec1ae3"
     }
   },
   {
@@ -1684,7 +1732,7 @@
       "https://lawphil.net/statutes/acts/act1930/act_3815_1930.html",
       "evidence/editorial/task-3/research/rpcbook2.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1760,6 +1808,12 @@
         "verifiedAt": "2026-10-07T16:28:50.981399+00:00",
         "rationale": "Verified Article246; original scenario narrowed to relationship element. Article246 expressly covers a child and a spouse. Cohabitation alone is not marriage, and an unrelated neighbor is not a listed relative. The authored relationship question removes the missing murder/homicide circumstances from the original scenario."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "e51d40870fc5ff703a54b210ac07f250b738fafefb4cc4013f587156c4b25066",
+      "reviewDigest": "4c8f05bc2bd3111658900b9e403256be24c768c686a21c035504d7263a62f5c5"
     }
   },
   {
@@ -1852,7 +1906,7 @@
       "https://lawphil.net/courts/rules/rc_110-127_crim.html",
       "evidence/editorial/task-3/research/criminalrules.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1913,6 +1967,12 @@
         "verifiedAt": "2026-10-07T16:27:34.839883+00:00",
         "rationale": "Verified Rule114 section1; Rules110 and112. Bail secures release subject to appearance. A warrant commands arrest, and a complaint charges an offense."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "090cf6956bcc39e3ccaf700f4b0d367d7647a18f9a154f6e9e28ca84a99075f4",
+      "reviewDigest": "6558e6a49c63b28ef8b72dfcbcfa123f730f8a8ddd2b5bed342f7c05a2423ea7"
     }
   },
   {
@@ -2033,7 +2093,7 @@
       "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html",
       "docs/verification/editorial-full-corpus/reconciliation.json#group-11"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2100,6 +2160,12 @@
         "verifiedAt": "2026-10-07T16:27:34.751884+00:00",
         "rationale": "Verified Section24; RA10071 section3; RA10575 section4. RA6975 section24 assigns police enforcement and crime-prevention functions. RA10071 assigns prosecution, and RA10575 assigns corrections/reformation."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "757408c29febf2aface2bb814691cbc4598507939d47e9c0950e9e73b817f437",
+      "reviewDigest": "e5031829a568ae8da6ab154ada336923ab61375a26b386d813db33be8d21cfd0"
     }
   },
   {
@@ -2192,7 +2258,7 @@
       "https://lawphil.net/courts/rules/rc_110-127_crim.html",
       "evidence/editorial/task-3/research/criminalrules.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2253,6 +2319,12 @@
         "verifiedAt": "2026-10-07T16:27:34.839883+00:00",
         "rationale": "Verified Rule110 section5. Rule110 section5 identifies the prosecutor. A jail officer performs custody, and a court clerk has court administrative and specified procedural duties. The stem does not claim prosecutors personally conduct every action without statutory exceptions."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "f86878e619759ad0cae9289d6f0c8940ff2b66c70db9ab159981e878e93dcd60",
+      "reviewDigest": "10dd8e2ed6505bdf258daa0f772e540b3891ba694b43fe97f36a5d1cbc2e0a04"
     }
   },
   {
@@ -2345,7 +2417,7 @@
       "https://lawphil.net/courts/rules/rc_110-127_crim.html",
       "evidence/editorial/task-3/research/criminalrules.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2406,6 +2478,12 @@
         "verifiedAt": "2026-10-07T16:27:34.839883+00:00",
         "rationale": "Verified Rule117 section7. Rule117 section7 requires a competent court, valid sufficient charge and a plea before the relevant termination. Mere filing of a charge is insufficient. Its specified exceptions remain applicable."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "00d5d760ea3f1d7b950dc7a332bc4528ea0695db0a6f8ddf9715d7cd437c480d",
+      "reviewDigest": "c59109268ea132144fb7b3c7efbc12acc0ec49a5f8bcdd2887a979e1b71d36c1"
     }
   },
   {
@@ -2526,7 +2604,7 @@
       "https://lawphil.net/statutes/repacts/ra2010/ra_10071_2010.html",
       "docs/verification/editorial-full-corpus/reconciliation.json#group-10"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2593,6 +2671,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified ArticleVIII section1; RA10071 section3; RA6975 section24. ArticleVIII vests judicial power in courts; prosecutors prosecute and police investigate. The court, not a prosecutor’s accusation, decides culpability."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "a6a292c2b26733bcafddc17a98b0be39123cd89224df9cd41fb4dd2abbff0333",
+      "reviewDigest": "0149a3693fab107d12a7f09102ce64c06d59833b031fef11e9dbaa2a83d8e639"
     }
   },
   {
@@ -2687,7 +2771,7 @@
       "https://lawphil.net/statutes/repacts/ra2015/ra_10707_2015.html",
       "https://lawphil.net/statutes/acts/act1933/act_4103_1933.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2754,6 +2838,12 @@
         "verifiedAt": "2026-10-07T16:27:34.992996+00:00",
         "rationale": "Verified Section3; RA10707 section1; Act4103 section1; Rule114 section1. PD968 section3 defines probation. Parole follows service of the applicable minimum sentence; bail concerns release and appearance while in custody of law. RA10707 changes grant procedures without replacing this definition."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "19de18d9bb4a02b542c50eda8ad44198da48b353330cebac7e183fd4d8918f91",
+      "reviewDigest": "d1c61d4d55ffc7470a6ea16dab8b7f07b2ee9c28c273597f46a7a246d6c8c2d0"
     }
   },
   {
@@ -2848,7 +2938,7 @@
       "evidence/editorial/task-3/pdf-snapshots/pillarsreport-4.png",
       "evidence/editorial/task-3/pdf-snapshots/pillarsreport-5.png"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2915,6 +3005,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Pages 4–7, framework. The framework lists NGOs and civil society organizations under Community. Courts adjudicate and prosecution handles criminal prosecution; neither defines the community pillar."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "e13750e3572b605de3d68f416d09761a4e2ac42513ed6a5e9657ba13b43e2caf",
+      "reviewDigest": "7bc60b70540ddd6371b7855c27d26a51d53455a7643e9f6b5f592954067b25aa"
     }
   },
   {
@@ -3007,7 +3103,7 @@
       "https://lawphil.net/courts/rules/rc_110-127_crim.html",
       "evidence/editorial/task-3/research/criminalrules.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3068,6 +3164,12 @@
         "verifiedAt": "2026-10-07T16:27:34.839883+00:00",
         "rationale": "Verified Rule112 section6. Rule112 section6 assigns judicial warrant evaluation to the judge, distinct from prosecutorial preliminary investigation or jail custody."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "bc64a7601915a5c568e532454215d1ccc707f1b90422b48295ed10c506709e28",
+      "reviewDigest": "c7046e7f4df8e166929eeb2adf09e2525058f8035781cb66d8eeff16db0c4699"
     }
   },
   {
@@ -3161,7 +3263,7 @@
       "evidence/editorial/task-3/research/commutation.txt",
       "https://lawphil.net/consti/cons1987.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3225,6 +3327,12 @@
         "verifiedAt": "2026-10-07T16:32:48.405031+00:00",
         "rationale": "Verified Constitution VII section19; SC commutation discussion. ArticleVII section19 includes commutation after final conviction. Supreme Court discussion distinguishes executive commutation as a reduction of punishment, not adjudication of innocence or pretrial release."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "29e360d026cbc5d687ebd369245af685416e38fab15a548fb70eadd993b6433a",
+      "reviewDigest": "2cc923f1afb17255d86455968dbd4755349425d442d9ed9d9ab7fe2fa60bab4d"
     }
   },
   {
@@ -3317,7 +3425,7 @@
       "https://lawphil.net/statutes/repacts/ra2017/ra_10951_2017.html",
       "evidence/editorial/task-3/research/ra10951.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3393,6 +3501,12 @@
         "verifiedAt": "2026-10-07T16:27:34.865067+00:00",
         "rationale": "Verified Section9 amending Article142. RA10951 section9 increases the fine ceiling to ₱400,000. The original ₱2,000 ceiling is obsolete; the authored stem asks the enacted penalty rather than deciding guilt from an allegation."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "3e31b069654666cf109821d01c87eab3a50c21ba96e939e003da22ba86803059",
+      "reviewDigest": "7bb14fb2ebb4b49cf26356f7d311b2e0771b6bc01b940e35f808ef4ccd0c06a0"
     }
   },
   {
@@ -3486,7 +3600,7 @@
       "evidence/editorial/task-3/research/crimecontrol.pdf.txt",
       "evidence/editorial/task-3/pdf-snapshots/crimecontrol-79.png"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3550,6 +3664,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified PDF page 79 / printed page 65, entries Crime control theory, model and policies. The visually inspected NCJRS entry Crime control theory defines repression of criminal conduct as the most important criminal-justice function. On the same page, Crime control model instead describes reliance on police fact-finding, while Crime control policies means overall policies for repressing or controlling crime without that priority formulation. The authored stem asks the precise thesaurus entry and changes the source’s model label to the supported theory term."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "296a0d7d59328208a7bf3b69fe6be0cbf9157bfe2c9549185f8031b9b7d5be27",
+      "reviewDigest": "18c3140dff6f3be08252322d3c5cef23c9ca16619c5025a54725af22bf762e00"
     }
   },
   {
@@ -3643,7 +3763,7 @@
       "evidence/editorial/task-3/research/act4103.txt",
       "https://lawphil.net/statutes/presdecs/pd1976/pd_968_1976.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3707,6 +3827,12 @@
         "verifiedAt": "2026-10-07T16:27:35.404169+00:00",
         "rationale": "Verified Sections1,5,6; PD968 section3; Rule114 section1. Act4103 permits conditional release on parole after the minimum term, subject to its requirements. Probation is a court disposition and bail secures appearance. This avoids implying release is automatic."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "09aa1ff5956f07020d987ca1c05479a74d9d9e13c7d0cf96c6cefcd13118836b",
+      "reviewDigest": "b66b5c3329fa37ec86b277e16cb13e447b74758aba745f36e75e0bc19ac1cbce"
     }
   },
   {
@@ -3800,7 +3926,7 @@
       "evidence/editorial/task-3/research/ra9344.txt",
       "https://lawphil.net/statutes/repacts/ra2013/ra_10630_2013.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3864,6 +3990,12 @@
         "verifiedAt": "2026-10-07T16:27:34.942796+00:00",
         "rationale": "Verified Section4 definitions; sections6 and57; RA10630. RA9344 section4 defines a child in conflict with the law by alleged, accused or adjudged commission of an offense. The authored conversion uses the statutory terminology instead of suggesting every child is automatically criminally liable."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "8bc1e9d4c4b9231fb0289eec2679b1fe8c66a5b2a3e90a85cd77ff2faaf0908b",
+      "reviewDigest": "668dcdcde27eebd466363270e7cc60710e349f9e24557950e04c1e3634f5c919"
     }
   },
   {
@@ -3956,7 +4088,7 @@
       "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/22/66824",
       "evidence/editorial/task-3/research/contraband.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -4017,6 +4149,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified BJMP SOP 2010-05 definition discussion. The decision distinguishes illegal contraband from merely prohibited and nuisance contraband. Bail is security for provisional liberty and mittimus an order carrying a conviction into effect; neither is an article forbidden in jail. Authored definition removes the original blanket cash-and-jewelry list."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "cbb807d5c4bb31ee2030fec08a524d9190889515b94b691ba4440b3d290f028d",
+      "reviewDigest": "4dc20b888926262a7ce83f03cafa76644dbc16b97b3a3a2bd08ac96562c86b71"
     }
   },
   {
@@ -4109,7 +4247,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -4170,6 +4308,12 @@
         "verifiedAt": "2026-10-07T16:27:34.778880+00:00",
         "rationale": "Verified ArticleVII section19. ArticleVII section19 expressly imposes congressional-majority concurrence on amnesty. Pardons and commutations have their distinct final-conviction context and constitutional limits."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "9a6caf565a6ebf31bd9bff0ab86ad4b1d1d8539bb8414bf558b59a8b75775c2b",
+      "reviewDigest": "21bfa68ac7424e0c759a269e61248fe126d55222dbaf5129d68be8058d94d18a"
     }
   },
   {
@@ -4262,7 +4406,7 @@
       "https://lawphil.net/statutes/repacts/ra1991/ra_7160_1991.html",
       "evidence/editorial/task-3/research/ra7160.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -4323,6 +4467,12 @@
         "verifiedAt": "2026-10-07T16:27:35.183984+00:00",
         "rationale": "Verified Sections399,408. RA7160 section408 assigns amicable settlement of qualifying disputes to the lupon with express exceptions, including imprisonment exceeding one year or fines exceeding ₱5,000. It is not a barangay trial court."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "9c14d8ccca9dbeead31b7040fff9d96a0c904975b0cdfa96eeb45b48c91c9da7",
+      "reviewDigest": "73f609bbedee50f0ee7342a47d8d6ce702d5048fd2966a1e60bc4c558ddd149a"
     }
   },
   {
@@ -4416,7 +4566,7 @@
       "evidence/editorial/task-3/research/ra8246.txt",
       "https://lawphil.net/consti/cons1987.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -4480,6 +4630,12 @@
         "verifiedAt": "2026-10-07T16:27:35.065159+00:00",
         "rationale": "Verified Section1; Constitution VIII section4. RA8246 amended BP129 to provide this Court of Appeals composition. The Supreme Court has a Chief Justice and fourteen Associate Justices."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "6125df6913e3947e9afc8037a27cfb23f151f9307add446ba2728fd87267f1d2",
+      "reviewDigest": "543a5574ba3653f04b85b4729230476abc614bbf4602f78e260ecdbce9f2f18d"
     }
   },
   {
@@ -4575,7 +4731,7 @@
       "https://lawphil.net/statutes/repacts/ra1998/ra_8551_1998.html",
       "https://site.insurance.gov.ph/about/"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -4645,6 +4801,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Section 1, amended Insurance Code section 437; RA8551 section5; Constitution IX-B. Section 437 expressly assigns execution of insurance laws to the Insurance Commissioner. NAPOLCOM has police functions and CSC civil-service personnel functions; neither holds this Insurance Code duty. This is an authored positive statutory-mandate conversion of the source’s insurance exclusion concept, assigned to constitutionAndLaws rather than criminalJusticeSystem."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "6be204643819834af6c053b3e70d0e4d926f2b8a365e6392688b3b51c68d4aad",
+      "reviewDigest": "12e8e85a30252c90bb7847c6863148caf7d3762abb4add49bb8e454121f8a3f4"
     }
   },
   {
@@ -4908,7 +5070,7 @@
       "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/23/68085",
       "evidence/editorial/task-3/research/mensrea.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -4969,6 +5131,12 @@
         "verifiedAt": "2026-10-07T16:32:48.031669+00:00",
         "rationale": "Verified SC actus-reus/mens-rea discussion; decision-writing fundamentals. The Supreme Court defines actus reus as the external acts or omissions and mens rea as the accompanying guilty state of mind; stare decisis concerns precedent."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "174d77a1a4cb27e6eed44834352c0fe73233efbec45b2c31210e2ca990dc5cf7",
+      "reviewDigest": "982adb6c9e67d700469fd0c461f8123044892c553f1c69e6cc33ba0a1952b895"
     }
   },
   {
@@ -5061,7 +5229,7 @@
       "https://lawphil.net/courts/rules/rc_110-127_crim.html",
       "evidence/editorial/task-3/research/criminalrules.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -5122,6 +5290,12 @@
         "verifiedAt": "2026-10-07T16:27:34.839883+00:00",
         "rationale": "Verified Rule110 sections3–4. Rule110 section3 defines complaint. Section4 defines information as an accusation subscribed by the prosecutor and filed in court; a warrant is a judicial arrest direction."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "17c863283011d87a324f9d85a1d1008b7ad4e997714a96f98406c6b22b7775b5",
+      "reviewDigest": "6303521f0684b3e9e3710689dc9cc8a19aa7ffd2886e50476ee38fab117f9aac"
     }
   },
   {
@@ -5240,7 +5414,7 @@
       "evidence/editorial/task-3/research/criminalrules.txt",
       "docs/verification/editorial-full-corpus/reconciliation.json#group-12"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -5301,6 +5475,12 @@
         "verifiedAt": "2026-10-07T16:27:34.839883+00:00",
         "rationale": "Verified Rule116 section1. Rule116 section1 places arraignment in open court before the judge or clerk. The source’s except stem is converted transparently into a supported positive definition."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "4a804c9c084019034db3186c539ee06350b51afd004d9d88d00b68d2f409c4bc",
+      "reviewDigest": "b6d1492368e026b1a6de3b14256dec04c5cd7d6a7ad2cce532aa87f9a4f4098e"
     }
   },
   {
@@ -5576,7 +5756,7 @@
       "https://lawphil.net/courts/rules/rc_110-127_crim.html",
       "evidence/editorial/task-3/research/criminalrules.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -5637,6 +5817,12 @@
         "verifiedAt": "2026-10-07T16:27:34.839883+00:00",
         "rationale": "Verified Rule113 section5(a)–(c). Paragraph(a) requires an offense in the person’s presence. Paragraph(b) concerns an offense just committed and personal knowledge of probable cause; paragraph(c) concerns escaped prisoners."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "471d35b1c23ac34264340ebc4f18185da7e3067206552c9f7b444e1f19b6c02d",
+      "reviewDigest": "eb8e76085b39824b565137cbe0d3d06b5006aa8a6d9934a17efadaf6a1236518"
     }
   },
   {
@@ -5892,7 +6078,7 @@
       "https://lawphil.net/courts/rules/rc_110-127_crim.html",
       "evidence/editorial/task-3/research/criminalrules.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -5953,6 +6139,12 @@
         "verifiedAt": "2026-10-07T16:27:34.839883+00:00",
         "rationale": "Verified Rule116 section1(a). The rule names the judge or clerk. This positive court-role conversion preserves the court-clerk concept without recovering missing except alternatives or making an absolute claim about every clerk’s status."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "4d07c9725f47d93a482d644bc15016d75564a632e7c133cb4f81b1a0adfdcd14",
+      "reviewDigest": "54f1156dcb6084d75493b655e2d75b0045893184f4143c3d40e6d3381a158983"
     }
   },
   {
@@ -6135,7 +6327,7 @@
       "evidence/editorial/task-3/research/ra7438.txt",
       "https://lawphil.net/consti/cons1987.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -6199,6 +6391,12 @@
         "verifiedAt": "2026-10-07T16:27:34.841269+00:00",
         "rationale": "Verified Section2(b); Constitution III section12; Rule113 sections7–8. RA7438 requires both rights and counsel provision when unaffordable. The original imperil-the-arrest exception is removed: Rule113’s arrest-information exceptions do not erase custodial rights. The MCQ describes the statutory rights rather than an unsupported blanket exception to Miranda protections."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "ebbb97e73127621f2abf435c77e5d24c70a349cb4f94a24d42e53d1f55111f2c",
+      "reviewDigest": "7b39361493577eb97973af58f8a6a7113b4125e5350e92a4066f4b2a6c0f9e6e"
     }
   },
   {
@@ -6293,7 +6491,7 @@
       "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html",
       "https://lawphil.net/statutes/repacts/ra2010/ra_10071_2010.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -6360,6 +6558,12 @@
         "verifiedAt": "2026-10-07T16:27:35.049637+00:00",
         "rationale": "Verified Section4; RA10071 section3; RA6975 section24. RA10575 section4 supplies the BuCor mandate. NPS prosecutes and PNP enforces law. This authored positive mandate conversion replaces missing except options."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "58b7b7a918d81384ad6e3e4748d1e6081727fad4f8ef49a0dabdba138e07e614",
+      "reviewDigest": "4c31c57f2a0f17262ceed3d2e10dd8150279aaa429947607dbdfa48cde36d4fd"
     }
   },
   {
@@ -6452,7 +6656,7 @@
       "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/11/63230",
       "evidence/editorial/task-3/research/stared.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -6513,6 +6717,12 @@
         "verifiedAt": "2026-10-07T16:32:48.296136+00:00",
         "rationale": "Verified Fundamentals of Decision Writing for Judges, stare decisis discussion. Supreme Court decision-writing guidance explains stare decisis as standing by decisions and not disturbing settled matters; the alternatives concern physical and mental offense elements."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "2171ac987ce8000e71727ba6f097ffb5c4095c4966855a7bfeeade0186176768",
+      "reviewDigest": "da67022487887e8bc650a0917c3cd1d8418d455dfbd02abf4171ad5ef8206abc"
     }
   },
   {
@@ -6605,7 +6815,7 @@
       "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/15/1619",
       "evidence/editorial/task-3/research/mittimus.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -6666,6 +6876,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Mittimus or order of commitment; search warrant; subpoena. The manual identifies mittimus as the order of commitment based on final conviction. A search warrant concerns property searches and a subpoena attendance or production. The authored conversion narrows the original general commitment-order answer to this precisely supported form."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "02354ff97910cc1f898eb82bcd1263a0046b7a9785e8355fd7aa7a1c7ca4601f",
+      "reviewDigest": "142aecb2384322f1d6cc212d648193ca0e99e5fe53f85a636d545da1fae33785"
     }
   },
   {
@@ -6759,7 +6975,7 @@
       "evidence/editorial/task-3/research/ra10630.txt",
       "https://lawphil.net/statutes/repacts/ra2006/ra_9344_2006.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -6823,6 +7039,12 @@
         "verifiedAt": "2026-10-07T16:27:34.932457+00:00",
         "rationale": "Verified Section11 amending RA9344 sections57,57-A. RA10630 section11 preserves nonpunishment for conduct not an adult offense and sets protective intervention for local juvenile-status ordinances. The source’s wording implying penal punishment is corrected."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "3f09544a953e7130aa2f3e5b7762c44de6e22821382c2eca45fb8dfa8a4875c4",
+      "reviewDigest": "06c42c5e336f09f4ff38f682778d2f398994566e1357afaaf16a76eb328aba63"
     }
   },
   {
@@ -6915,7 +7137,7 @@
       "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/23/68085",
       "evidence/editorial/task-3/research/mensrea.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -6976,6 +7198,12 @@
         "verifiedAt": "2026-10-07T16:32:48.031669+00:00",
         "rationale": "Verified SC actus-reus/mens-rea discussion. The Supreme Court distinguishes mens rea, the guilty state of mind, from actus reus, external acts or omissions. This avoids reducing every offense’s mental element to mere knowledge."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "7554bbb3b27c3374d09e65b98fff1ad021a894603885813a2b6df71512383654",
+      "reviewDigest": "a631ed2f623689c0b2ff883d6a510a1e99c758cb761da292681aaf44b194b342"
     }
   },
   {
@@ -7583,7 +7811,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "https://lawphil.net/statutes/repacts/ra2010/ra_10071_2010.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -7650,6 +7878,12 @@
         "verifiedAt": "2026-10-07T16:27:35.049637+00:00",
         "rationale": "Verified Sections3–4; RA10071 section3; Constitution IX-C. RA10575 sections3–4 define reformation and BuCor programs for reintegration; prosecutors and electoral commissions have other mandates."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "e709da5d641fbe3b111abe2524a04c370d99f527d245b9cf1aa20a2c6365e0b2",
+      "reviewDigest": "a1dd5280154991033c1183844f216828cc475b6c4ad7888c7e03887ada33eb98"
     }
   }
 ]

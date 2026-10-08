@@ -485,7 +485,7 @@
       "https://lawphil.net/statutes/repacts/ra1964/ra_4166_1964.html",
       "evidence/editorial/task-3/research/ra4166.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -576,6 +576,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Section 1. RA 4166 changes the statutory Independence Day designation to June 12; July 4 becomes Philippine Republic Day. November 30 is not that designation. Authored statutory question removes the original first-flag-waving claim."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "f2e425ac799e793821d76b3278fee892d57f6b1081e2a85fe9b3c65823934f67",
+      "reviewDigest": "f130fcccda52854b5be2d606559dbe2ed96bc8b09ca66187f25169219a0311fe"
     }
   },
   {
@@ -1777,7 +1783,7 @@
       "https://lawphil.net/statutes/repacts/ra2007/ra_9492_2007.html",
       "evidence/editorial/task-3/research/ra9492.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1868,6 +1874,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Section 1, 2007 text. RA 9492 lists Araw ng Kagitingan nearest April 9, Labor Day nearest May 1 and Rizal Day nearest December 30. The stem expressly tests the 2007 statutory text; it does not claim that its Monday rule is the current holiday calendar. Authored legal conversion replaces an undated holiday assertion."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "39fd31f668624c36ff15c54c4eb9cdf2dc12b4fcaef4f8454571718f117adf84",
+      "reviewDigest": "fc2811ce4a636cb13691f861585ca9b6ff2d38c0df720d9679f885e46439fd70"
     }
   },
   {
@@ -2059,7 +2071,7 @@
       "https://lawphil.net/statutes/repacts/ra1998/ra_8491_1998.html",
       "evidence/editorial/task-3/research/ra8491.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2150,6 +2162,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Section 37. Section 37 expressly names Julian Felipe for the musical arrangement and composition. Jose Palma is associated with anthem lyrics and Emilio Jacinto with Katipunan writings, not the statutory musical attribution."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "d3bcb7a1c07e52123b765a8f641b297f892794e769a00e844b44c7430081f85c",
+      "reviewDigest": "8c486a8a707b425e8982f7263989f547032a5172449cd03200141e77f94759cc"
     }
   },
   {
@@ -2268,7 +2286,7 @@
       "evidence/editorial/task-3/research/ra9492.txt",
       "docs/verification/editorial-full-corpus/reconciliation.json#group-6"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2359,6 +2377,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Section 1, 2007 text. RA 9492 lists Araw ng Kagitingan nearest April 9, Labor Day nearest May 1 and Rizal Day nearest December 30. The stem expressly tests the 2007 statutory text; it does not claim that its Monday rule is the current holiday calendar. Authored legal conversion replaces an undated holiday assertion."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "765bd99b4b8d446f64afe0d3b691f1c74af8dfd0a6bf97168f72c4b8b0a87c7c",
+      "reviewDigest": "d345c909975a438340f93941ea9193e63258cd0c22f4bfc34700444f6c8101b8"
     }
   },
   {
@@ -2451,7 +2475,7 @@
       "https://lawphil.net/statutes/repacts/ra2007/ra_9492_2007.html",
       "evidence/editorial/task-3/research/ra9492.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2542,6 +2566,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Section 1, 2007 text. RA 9492 lists Araw ng Kagitingan nearest April 9, Labor Day nearest May 1 and Rizal Day nearest December 30. The stem expressly tests the 2007 statutory text; it does not claim that its Monday rule is the current holiday calendar. Authored legal conversion replaces an undated holiday assertion."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "ad531c65cf5a776d3ac3ed33e25ed23a827f86ece92ffaaf99a8ce38f0cae4fb",
+      "reviewDigest": "e92b5158b6b3fd5b0c365934813fa7983301bcec927a969dca96d3e0b947464e"
     }
   },
   {
@@ -3124,7 +3154,7 @@
       "https://lawphil.net/statutes/repacts/ra1988/ra_6657_1988.html",
       "evidence/editorial/task-3/research/ra6657.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3215,6 +3245,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Section 1. Section 1 of RA 6657 supplies that short title; RA 4166 concerns Independence Day and RA 8491 the flag and heraldic code. This authored statutory conversion preserves the source’s law reference while omitting the presidential-signature attribution, which is absent from the retained statute text."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "24929ada5f8742608e6b93b71427fa7fd84b4f7be8d10699581374f374664a11",
+      "reviewDigest": "c75ca219a388067d9400aa28c91d231fa2fd58691eef392d5f56e13bb30c3f20"
     }
   },
   {
@@ -5391,7 +5427,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "evidence/editorial/task-3/research/constitution.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -5482,6 +5518,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Article XIV sections 6–7. Article XIV section 6 names Filipino. Section 7 separately addresses official languages and voluntary promotion of Spanish; those roles do not replace the national-language designation."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "7a89cabf7d4bc5b0d6de5d970263946dff92dc1f55de5fd6b191e82d5ca15fec",
+      "reviewDigest": "a7de06eceab10e65ef0dd9e85a558999293ec2936d889feb5b858d2de107581b"
     }
   },
   {

@@ -107,7 +107,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=141",
       "docs/verification/editorial-full-corpus-task2.md#xiv-1"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -131,6 +131,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "2de073ab6137b30c2b2f58417486d93700cd1a42c61cd1d892be65bb6019ec90",
+      "reviewDigest": "4a748c327ccbd6f40f661100f45a0fe4dd5fa925bc3e2668ff7ad1c2291d56da"
     }
   },
   {
@@ -241,7 +247,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=141",
       "docs/verification/editorial-full-corpus-task2.md#xiv-2"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -265,6 +271,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "f543965a222f24ee2bca9fc57e316cf859e612e9eb655f7273d5c817624725ce",
+      "reviewDigest": "fe5c160366bc119fff2f68168a469a5f9f16d113eda213fd2b4c5dac179184e0"
     }
   },
   {
@@ -375,7 +387,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=141",
       "docs/verification/editorial-full-corpus-task2.md#xiv-3"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -412,6 +424,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "0171b3cc10cb3184f5af6417a15654cea16237dfe3e6ddb8b4a3732520e1f9c7",
+      "reviewDigest": "eafa1e7f2b9a437899fc3505cf39cee4efeaa1aa4aff36aab5a6587ffbc7ed81"
     }
   },
   {
@@ -522,7 +540,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=141",
       "docs/verification/editorial-full-corpus-task2.md#xiv-4"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -546,6 +564,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "69095789aaa8e91d6e83f1b2b44a41ac448416be1f05f7edb35c5cf11428d512",
+      "reviewDigest": "ac7f7827a19c818677d4b155d2cbe9a7e371ebfb49dc22b41435650260872a77"
     }
   },
   {
@@ -656,7 +680,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=142",
       "docs/verification/editorial-full-corpus-task2.md#xiv-5"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -693,6 +717,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "13a56047841b2809d847227ab5657db4e7a47ca45369522c1fb156be470040cd",
+      "reviewDigest": "d2adc09e1cc8500c19302154cc74011492acc06c43bfe1743998ed2031fc2275"
     }
   },
   {
@@ -942,7 +972,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=142",
       "docs/verification/editorial-full-corpus-task2.md#xiv-7"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -966,6 +996,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "11cb0270b8dbcac9905e901b22cfaaf0005e7d19a9e142d1a60497080af6ae6f",
+      "reviewDigest": "701a711525092d2eaf74d38751b9432e34067fb29eb8fe6b7b7278bff5aeb6f5"
     }
   },
   {
@@ -1076,7 +1112,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=143",
       "docs/verification/editorial-full-corpus-task2.md#xiv-8"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1100,6 +1136,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "747cc924231e95d64107eb1b58aa98c1a81c6142ccf51ac95593b6a474e5db04",
+      "reviewDigest": "ecd1020a4d84f064f64ea9dd2db87947b83b1d2070d48c1871c563b393c3f8d6"
     }
   },
   {
@@ -1210,7 +1252,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=143",
       "docs/verification/editorial-full-corpus-task2.md#xiv-9"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1234,6 +1276,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "7131959312fb0e280bbf908a1c6e782d743404654876fc80c25675660a25e03b",
+      "reviewDigest": "35f080e8f858ea7e21203d4e3edc7a0f9a7e759697095be3955deed566e59e5a"
     }
   },
   {
@@ -1344,7 +1392,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=143",
       "docs/verification/editorial-full-corpus-task2.md#xiv-10"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1394,6 +1442,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "8eb57c6aacf9f38032f94d6646939c32163dca7f200518a67454fdbb612cace7",
+      "reviewDigest": "ea8ba663804234f45438b596cfed1090be5335daef390cbb6baa70569840873b"
     }
   },
   {
@@ -1504,7 +1558,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=144",
       "docs/verification/editorial-full-corpus-task2.md#xiv-11"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1528,6 +1582,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "67a31a8f8704a0bca0e4f51a1983378e741b728df537245a0b2fdc7f54ad41e5",
+      "reviewDigest": "25104b89650d4bc7103cae123afcd0a9b2b1db0277668ba572884854352ebd27"
     }
   },
   {
@@ -1638,7 +1698,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=144",
       "docs/verification/editorial-full-corpus-task2.md#xiv-12"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1675,6 +1735,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "b0a7d54efcc6e0fba6dcade402a101aee2f0d21ba8aa55ab0274a15a087ce1b8",
+      "reviewDigest": "2c1bdecbde6ab3ef9eeac6715e2e9d4bc923c07746c2bba6a697d86befdc34f0"
     }
   },
   {
@@ -1785,7 +1851,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=144",
       "docs/verification/editorial-full-corpus-task2.md#xiv-13"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1809,6 +1875,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "d17066644f714c9d9cf362731364565aca00f04e4c325026e6952d7a6b8c3f92",
+      "reviewDigest": "54cd4a4b59131506acb46cd863c77ea32e58190ca85934746a8be762d1aaa6d3"
     }
   },
   {
@@ -1919,7 +1991,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=144",
       "docs/verification/editorial-full-corpus-task2.md#xiv-14"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1943,6 +2015,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "e8e0f955df250d64b07f8b56accc80f3737c13e4f7a22f6abef1ad605882406c",
+      "reviewDigest": "38fbc1bc662c4b007ae95d0d5c9e4fd4b837dfc640b9b79f4ae906e8f45e9517"
     }
   },
   {
@@ -2053,7 +2131,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=145",
       "docs/verification/editorial-full-corpus-task2.md#xiv-15"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2077,6 +2155,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "2f1ed226f4d7ed6227124eb95379a2184b481fe7ac8dd6f66a432d4aa81ab36d",
+      "reviewDigest": "39d12c6d1723cf83fa17b77c4028150b9777556bd38ac62180fd85fb72edd97c"
     }
   },
   {
@@ -2326,7 +2410,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=145",
       "docs/verification/editorial-full-corpus-task2.md#xiv-17"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2363,6 +2447,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "8378927514ea235f716cfe22609e7c0b905cc06d2878b511ffe3a3432d86ccc0",
+      "reviewDigest": "4b4dedd84af50fdee3a10ea4e1f08cda2c0414c06757355c96b78f33cf624b3e"
     }
   },
   {
@@ -2617,7 +2707,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=146",
       "docs/verification/editorial-full-corpus-task2.md#xiv-19"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2641,6 +2731,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "26284bc542a9ff71ebcd10aa992dbe1f6e8ef28da95edfa840157eb7d1d521e5",
+      "reviewDigest": "053bd4078c41f3d4281869a23b04935025ae9f0b35fa14ac8810f4c0cb9b252b"
     }
   },
   {
@@ -2774,7 +2870,7 @@
       "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib4-cann998-1165_en.html",
       "https://www.vatican.va/archive/cod-iuris-canonici/eng/documents/cic_lib2-cann330-367_en.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2805,6 +2901,12 @@
         "verifiedAt": "2026-10-07T16:00:32Z",
         "rationale": "For this stated vocation path seminarian training precedes diaconal ordination, priesthood, episcopal consecration and later election as pope. BCAED alone follows it. Pope is an office held by a bishop, not a fourth sacramental order."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "19edf67fbbf81596b13dba826c427e651fd9add37514c963ff2f2b5c0681c3e6",
+      "reviewDigest": "7b177c24d892f420410c97d089b24a285da0f110b1c32e4cd48017dcb1856579"
     }
   },
   {
@@ -2916,7 +3018,7 @@
       "docs/verification/editorial-full-corpus-task2.md#xiv-21",
       "https://ideas.hallmark.com/articles/anniversary-ideas/anniversary-gifts-by-year/"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2960,6 +3062,12 @@
         "verifiedAt": "2026-10-07T16:00:32Z",
         "rationale": "Hallmark’s named list maps paper: 1; cotton: 2; leather: 3; fruit/flowers: 4; wood: 5. Sorting those anniversary numbers gives DABEC (E), uniquely. Source D is incompatible."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "31933df5e9826a1d356bc3d5faa347c6cc01102f979cc03c35d94b821ddf0ae7",
+      "reviewDigest": "235c36b26a09b5a5655ef329b07d2eae75bb9c03ce9d2178fbde2205a4587528"
     }
   },
   {
@@ -3071,7 +3179,7 @@
       "docs/verification/editorial-full-corpus-task2.md#xiv-22",
       "https://ideas.hallmark.com/articles/anniversary-ideas/anniversary-gifts-by-year/"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3115,6 +3223,12 @@
         "verifiedAt": "2026-10-07T16:00:32Z",
         "rationale": "The independently read Hallmark list maps steel: 11; silk/linen: 12; lace: 13; gold jewelry: 14; crystal: 15. Replacing the source’s ivory theme with Hallmark’s gold-jewelry theme, ascending years produce CADBE (D), uniquely. Source C is incorrect under this explicitly named convention."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "878bb019336dfdfed77bcf96736f2a8545498e18da63f1e0f5e139ba226de05f",
+      "reviewDigest": "0dea830216d186721cf7cd8916be0e7f441345e3353006a4777346b3b33b5322"
     }
   },
   {
@@ -3225,7 +3339,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=147",
       "docs/verification/editorial-full-corpus-task2.md#xiv-23"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3262,6 +3376,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "8f2a388ad5906d4cca763ba5ea497fa7ba12c0bcd9f623cdedb196065ac15924",
+      "reviewDigest": "bfa014bdb1e068fe1a86145e08a3f8c5df44dde804b4b665db3e43f28ba8f3dd"
     }
   },
   {
@@ -3512,7 +3632,7 @@
       "docs/verification/editorial-full-corpus-task2.md#xiv-25",
       "https://science.nasa.gov/solar-system/planets/"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3556,6 +3676,12 @@
         "verifiedAt": "2026-10-07T15:58:09Z",
         "rationale": "NASA lists the first five planets from the Sun as Mercury, Venus, Earth, Mars, Jupiter. Mapping labels gives CBDEA; all other options violate that distance order."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "db4209fb195ea0ec29a532b737b48bb68f028d29b333fff13ab15ae1254723da",
+      "reviewDigest": "c019acac79f50035ae8498233ed3244ff0cd2fd9db74bbe355fbf4ecf7d1613b"
     }
   },
   {
@@ -3809,7 +3935,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=148",
       "docs/verification/editorial-full-corpus-task2.md#xiv-27"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3833,6 +3959,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "9140418a41cf5cae41ca91e0c9f5f0b027367d17c9688c507e15dd4333ffc045",
+      "reviewDigest": "4428d3f604e398c8afa329cff4004400faa555aab3326a89cda9c38a4645aaf5"
     }
   },
   {
@@ -3943,7 +4075,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=149",
       "docs/verification/editorial-full-corpus-task2.md#xiv-28"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3993,6 +4125,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "e41caf9ad8f51cbd711f13263c2c19aa02fae775e3f0f8513fffab73cbbe9124",
+      "reviewDigest": "356b4365fef7b2b82593f3383c54a36fdc7a7be29d5909029da0b117af7970f0"
     }
   }
 ]

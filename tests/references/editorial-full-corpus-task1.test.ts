@@ -1,3 +1,4 @@
+import { historicalOverlays } from './historical-overlays';
 import { resolve } from 'node:path';
 import { QuestionSchema } from '../../src/features/content/domain/question';
 import {
@@ -14,7 +15,7 @@ test('task 1 accounts for every reviewed source and preserves canonical lineage 
   const candidates = (await loadCandidates(root)).filter(
     (c) => c.original.sourceId === 'comprehensive' && reviewedSections.has(c.original.section),
   );
-  const overlays = (await loadOverlays(root)).filter((o) =>
+  const overlays = historicalOverlays(await loadOverlays(root)).filter((o) =>
     candidates.some((c) => c.original.sourceKey === o.sourceKey),
   );
   const registry = await loadIdentityRegistry(root);
@@ -50,11 +51,11 @@ test('task 1 accounts for every reviewed source and preserves canonical lineage 
     expect(q.choices.every((choice) => /^choice-\d+$/.test(choice.id))).toBe(true);
     expect(q.explanation?.length).toBeGreaterThan(0);
   }
-  expect(await loadApprovedPublication(root)).toHaveLength(20);
+  expect(await loadApprovedPublication(root)).toHaveLength(529);
 });
 
 test('visually conflicting vocabulary target stays blocked and removed alternatives keep their stable IDs', async () => {
-  const overlays = await loadOverlays(root);
+  const overlays = historicalOverlays(await loadOverlays(root));
   const mismatch = overlays.find((o) => o.sourceKey === 'comprehensive:II:33')!;
   const q = QuestionSchema.parse(mismatch.proposed);
   expect(mismatch.status).toBe('draft');
@@ -76,7 +77,7 @@ test('visually conflicting vocabulary target stays blocked and removed alternati
 
 test('shared context and duplicate disposition preserve every original source occurrence', async () => {
   const candidates = await loadCandidates(root);
-  const overlays = await loadOverlays(root);
+  const overlays = historicalOverlays(await loadOverlays(root));
   for (const section of ['V', 'VI']) {
     const scoped = overlays.filter((o) => o.sourceKey.startsWith(`comprehensive:${section}:`));
     const groups = new Map<string, string>();
@@ -112,7 +113,7 @@ test('shared context and duplicate disposition preserve every original source oc
 });
 
 test('review repairs exist in learner content with recomputed source-target spans', async () => {
-  const overlays = await loadOverlays(root);
+  const overlays = historicalOverlays(await loadOverlays(root));
   const question = (key: string) =>
     QuestionSchema.parse(overlays.find((o) => o.sourceKey === key)!.proposed);
   const text = (key: string) => {

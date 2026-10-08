@@ -663,7 +663,7 @@
       "docs/verification/editorial-full-corpus-task2.md#xv-6",
       "evidence/editorial/task-2/pdf-snapshots/page-151.png"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -688,6 +688,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "60894548c5bbd9600fbfa981903032e97911290f416b74d0cb31fa4e16dd7146",
+      "reviewDigest": "3f35628c20a06f23ca8dc97b37565523ab8e25bcb1a3da2fa30db7d610e00716"
     }
   },
   {

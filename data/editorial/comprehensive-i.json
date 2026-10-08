@@ -240,7 +240,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-2",
       "https://lawphil.net/consti/cons1987.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -270,6 +270,12 @@
         "verifiedAt": "2026-10-07T16:15:32Z",
         "rationale": "Plurality means the highest vote total without requiring more than half. ArticleVII4 elects the presidential candidate with the highest number of votes."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "fb5def4ad77c9a57003f6bab5449422c1e90ed58ef3fa4a2f8c7e323803c41c7",
+      "reviewDigest": "3ad6dc2118131fda71bb1903fcfcf169ca155cb0bb864e54c6a2b26dff7c4f82"
     }
   },
   {
@@ -510,7 +516,7 @@
       "evidence/reference-extraction/comprehensive/document.json#page=3",
       "docs/verification/editorial-full-corpus-task2.md#i-4"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -534,6 +540,12 @@
           ]
         }
       ]
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "313c172fe24bceb18bd411622cd4998f5b98c384b8cd3f00148d7b96fe7521bf",
+      "reviewDigest": "1e0ed863185f59d05e9525605e4f753f190de4e63b47818c94213580b70244e4"
     }
   },
   {
@@ -816,7 +828,7 @@
       "https://lawphil.net/consti/cons1987.html",
       "docs/verification/editorial-full-corpus/reconciliation.json#group-4"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -846,6 +858,12 @@
         "verifiedAt": "2026-10-07T16:15:32Z",
         "rationale": "ArticleVI2 specifies twenty-four senators."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "18482d4dac2ba7c073308fc5cf8fa24459a2b4a4e00c2b0ca98aff570e1314b5",
+      "reviewDigest": "9ec6180934c3faf9417e4975437c619ef78e6c6512d005360416dc847ddbc8fb"
     }
   },
   {
@@ -957,7 +975,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-7",
       "https://lawphil.net/consti/cons1987.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -987,6 +1005,12 @@
         "verifiedAt": "2026-10-07T16:15:32Z",
         "rationale": "ArticleXI2 provides removal by impeachment and conviction; impeachment alone is not conviction."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "bb6c47da7a9c27e1881d605e5ddd3eecfe7a18b854d985e4d498ee4169c3a644",
+      "reviewDigest": "0406ec54330846dde87a8950b8f56942159946e4b2c04b0da26813fcc3c7b0cc"
     }
   },
   {
@@ -1098,7 +1122,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-8",
       "https://lawphil.net/executive/execord/eo2002/eo_103_2002.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1128,6 +1152,12 @@
         "verifiedAt": "2026-10-07T16:02:10Z",
         "rationale": "ExecutiveOrder103of2002 designates CALABARZON as RegionIV-A; SouthernTagalogMainland is not the designation in that order."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "1e9d1b53de18fde990ce4ca8c6a04197dee44fe3933d781893e09613c941587c",
+      "reviewDigest": "8eb00b75fb556f3123afca1575642d737b9ad3e0c1e348d2f4283ea7a2779f6f"
     }
   },
   {
@@ -1629,7 +1659,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-12",
       "https://lawphil.net/statutes/repacts/ra1959/ra_2140_1959.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1673,6 +1703,12 @@
         "verifiedAt": "2026-10-07T16:15:32Z",
         "rationale": "RepublicAct2140Section1 renamed Highway54 Epifanio de los Santos Avenue in1959."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "194a86744663f11aab93052b22e106aaaf2bdfb973933049c3ee8938321a69c1",
+      "reviewDigest": "b666c1ac600b5d1b1203dcff7ec4490f63cd557c386803c14db60371883971a7"
     }
   },
   {
@@ -1914,7 +1950,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-14",
       "https://lawphil.net/executive/execord/eo2002/eo_103_2002.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1944,6 +1980,12 @@
         "verifiedAt": "2026-10-07T16:02:10Z",
         "rationale": "ExecutiveOrder103of2002 designated MIMAROPA RegionIV-B. This question explicitly concerns that dated legal designation, not its present name; RA10879createdtheMIMAROPARegionin2016."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "07ce34e55f875b6c118a64c2361f50566781042cfa3cf63998b96771d97aaf71",
+      "reviewDigest": "205a663d0efb7f7d265a38408e717cbfb0a3459e2aab16ffb12609af011889ea"
     }
   },
   {
@@ -2219,7 +2261,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-16",
       "https://lawphil.net/judjuris/juri2014/feb2014/gr_185145_2014.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2249,6 +2291,12 @@
         "verifiedAt": "2026-10-07T15:58:26Z",
         "rationale": "Rule21Section1 distinguishes a subpoena requiring testimony from a subpoena duces tecum requiring documents."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "6ffd52fd5de34a88e10c2bbd6dbc8fa3beef68efd898923fea4e774813eec9d4",
+      "reviewDigest": "85d2de9cc9ff3256e02e53f085a99eea2dc7a7729c0e3aaa43d67e5365b7a4b7"
     }
   },
   {
@@ -2629,7 +2677,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-19",
       "https://pia.gov.ph/press-release/dot-charts-a-new-course-for-philippine-tourism-growth/"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2659,6 +2707,12 @@
         "verifiedAt": "2026-10-07T15:58:26Z",
         "rationale": "The DOT-authored PIA press release published September28,2026 expressly identifies Love the Philippines as the national tourism brand. This is verified current context, replacing the outdated source slogan."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "d85e9b4e0944dd87c79679d8e50a1117effdc197e78af488a16ed5f686e61aed",
+      "reviewDigest": "5d9517a1dd23dadec682c00b1209aa81bf4af6cb70a9be3b452f7add613cc8a5"
     }
   },
   {
@@ -3037,7 +3091,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-22",
       "https://lawphil.net/consti/cons1987.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3067,6 +3121,12 @@
         "verifiedAt": "2026-10-07T16:15:32Z",
         "rationale": "ArticleVII8 makes the Speaker next acting President if both presidency and vice-presidency are vacant and the SenatePresident is unable to act."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "3598b3bd90017393a00e184e1ae544e48dcc40c02e38fb90c1b44a8cf32dbbac",
+      "reviewDigest": "8aa7c5c43b555f76f03d845d815c5725e9b944824ca188004a428407812ca2e9"
     }
   },
   {
@@ -3181,7 +3241,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-23",
       "https://lawphil.net/statutes/repacts/ra2019/ra_11199_2019.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3211,6 +3271,12 @@
         "verifiedAt": "2026-10-07T16:15:32Z",
         "rationale": "RA11199Sections3,9and9-A establish SSS and coverage of private employees and qualifying self-employed workers."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "d80c5509d97c560db5d6183e4e1343a1f419f7f818eab0a0809a77e7d1809668",
+      "reviewDigest": "99b35b277d51ccc8154360ff089744e714c8b8e730dce99ad4ce6474fd8fe98f"
     }
   },
   {
@@ -4500,7 +4566,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-33",
       "https://lawphil.net/consti/cons1987.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -4530,6 +4596,12 @@
         "verifiedAt": "2026-10-07T16:15:32Z",
         "rationale": "ArticleVIII1 vests judicial power in one SupremeCourt and lowercourts establishedbylaw."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "01f2f570280c98e8524dd84d4585e9a856b07ceec1e22a6c3d3e70ff6c57e26b",
+      "reviewDigest": "c00ba25d5f49023a625791737719030a8bb777682f828422fbf32e2ad0cea950"
     }
   },
   {
@@ -4775,7 +4847,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-35",
       "https://lawphil.net/consti/cons1987.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -4805,6 +4877,12 @@
         "verifiedAt": "2026-10-07T16:15:32Z",
         "rationale": "ArticleVI7 limits House members to three consecutive terms."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "041b30373e839c44185e3fc3f5a9e8d8d1308d4262dc5da44e7af57a02f522e3",
+      "reviewDigest": "d79507708690f4c082847be8559d58d63d3436f9934fa23eed8169be51e8fb79"
     }
   },
   {
@@ -5308,7 +5386,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-39",
       "https://lawphil.net/consti/cons1987.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -5338,6 +5416,12 @@
         "verifiedAt": "2026-10-07T16:15:32Z",
         "rationale": "ArticleVI27 permits presidential veto; Congress may override it. A President does not override a bill."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "9018233fa8c90d623bd202eb8ee111bdd4020f4eae15157d16f0deccd202de9e",
+      "reviewDigest": "1975d760032c9b924e9d019350feb35912d7f5f23c1ea969bdbc9b44ab160043"
     }
   },
   {
@@ -5579,7 +5663,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-41",
       "https://lawphil.net/consti/cons1987.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -5609,6 +5693,12 @@
         "verifiedAt": "2026-10-07T16:15:32Z",
         "rationale": "ArticleIV1 lists citizen categories; those whose citizenship has been lost in accordancewithlaw are not one of its listed categories. A Filipino father ORmother is sufficient underSection1(2)."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "4d26577b093418faafaa6e6c0b22e316519cf060cdc8243141ad9b6ccd4872ab",
+      "reviewDigest": "43fd844715c119feeea6b0973ba81df818eab63053140381935b12205b214160"
     }
   },
   {
@@ -5860,7 +5950,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-43",
       "https://lawphil.net/consti/cons1987.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -5918,6 +6008,12 @@
         "verifiedAt": "2026-10-07T16:15:32Z",
         "rationale": "ArticleX4 assigns general supervision over localgovernments to the President. Duplicate President alternatives are repaired."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "3167665b898dae0db3487af0168ba3a40631a30c1d11e3dd4428359ffb4ae167",
+      "reviewDigest": "d7f3de96ab8d1c2a2717c5db3893791af6f16abcef300f7b824ec53539af1521"
     }
   },
   {
@@ -6029,7 +6125,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-44",
       "https://lawphil.net/consti/cons1987.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -6059,6 +6155,12 @@
         "verifiedAt": "2026-10-07T16:15:32Z",
         "rationale": "ArticleII13 recognizes the youth’s vital role in nationbuilding."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "ee02dd8b329370b27ee9ee706e4be1010ba8979e68b576af174a72a581eb5697",
+      "reviewDigest": "c902c2d91dfa7b206bcabd7b137c4cd17a48d42153f27b5b9c4e66c845c36d9f"
     }
   },
   {
@@ -6565,7 +6667,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-48",
       "https://lawphil.net/executive/proc/proc1994/proc_470_1994.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -6595,6 +6697,12 @@
         "verifiedAt": "2026-10-07T15:55:54Z",
         "rationale": "Proclamation470of1994 issuedbyPresidentFidelV.Ramos declared the specified national holidays."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "db29d244e624d2cccebbd9673f3f9fec98a5eb40b2914a2f772244933b89d756",
+      "reviewDigest": "6af803cadae851f4204410ba176e99061e5512f4c4ecfdef194a5a14c097a10e"
     }
   },
   {
@@ -6836,7 +6944,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-50",
       "https://lawphil.net/consti/cons1987.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -6866,6 +6974,12 @@
         "verifiedAt": "2026-10-07T16:15:32Z",
         "rationale": "ArticleIV is the citizenship article."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "ba040188990e8334c58c0dd208555a97c008d1d0385db9b8e992e85353a1601f",
+      "reviewDigest": "ba5458abe1fa4bd64bf64dcb438826d6d00c70443d792695f167ff6a7749279d"
     }
   },
   {
@@ -6977,7 +7091,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-51",
       "https://lawphil.net/executive/proc/proc1988/proc_211_1988.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -7007,6 +7121,12 @@
         "verifiedAt": "2026-10-07T15:55:54Z",
         "rationale": "Proclamation211of1988 declares February2ofeachyear ConstitutionDay."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "c483843b5053670b0dd98f80c47db01745f908e14cd239b9e16e6f1ace751d94",
+      "reviewDigest": "c8e12df4ac5826ca849502107d74dab1cebe7a679932433b73786db63f8eb322"
     }
   },
   {
@@ -7238,7 +7358,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-53",
       "https://lawphil.net/consti/consmalo.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -7268,6 +7388,12 @@
         "verifiedAt": "2026-10-07T16:15:32Z",
         "rationale": "The MalolosConstitution governed the FirstPhilippineRepublic inauguratedin1899; restricting the scope avoids a vague first-in-country claim."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "9898de14d5d09da9d574803128c3db2b02c5c31871544c1fea3bd2d0439dc4af",
+      "reviewDigest": "46c74065ba4c0469cf8a8cd67427b00313180c49b2d5d4ae2102510ddefdc79b"
     }
   },
   {
@@ -7379,7 +7505,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-54",
       "https://lawphil.net/judjuris/juri1973/mar1973/gr_36142_1973.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -7423,6 +7549,12 @@
         "verifiedAt": "2026-10-07T15:58:09Z",
         "rationale": "Javellana v ExecutiveSecretary decidedMarch31,1973 addressed the challenged ratification of the1973Constitution. The decision does not support the source claim that it was neverratified."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "52666cae3424f56c730ef7cbe2815bc8e7ea969910f9736cf232bf97af42aa98",
+      "reviewDigest": "48a947bb8e501a2be0949a9c3efb2757dad9861b5fac4c48660ee277e2c782b9"
     }
   },
   {
@@ -7534,7 +7666,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-55",
       "https://lawphil.net/executive/proc/proc1986/proc_9_1986.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -7564,6 +7696,12 @@
         "verifiedAt": "2026-10-07T15:55:54Z",
         "rationale": "PresidentCorazonAquino issued Proclamation9ofApril23,1986 organizing the ConstitutionalCommission; distinguish organizingfromtheearliercreation."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "ab95cc8bddb6679b1c055f1273d3b4520010498bedb11b3665496a911c9bae39",
+      "reviewDigest": "661de7236ea0ec65c414a07567165121b2ddb63b9e4401ca7132c6c31bb083a3"
     }
   },
   {
@@ -7935,7 +8073,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-58",
       "https://lawphil.net/statutes/repacts/ra1992/ra_7277_1992.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -7965,6 +8103,12 @@
         "verifiedAt": "2026-10-07T15:55:54Z",
         "rationale": "Section1 of the original1992RA7277 gives the shorttitle MagnaCarta forDisabledPersons. The explicitly dated as-enacted title avoids treating it as the present amended title."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "82fd35fce0837db352aa88b248cbdf12285a94085236b32bcb25e6116dd91d1d",
+      "reviewDigest": "e6e5385a143f18c3710ea02872bd33cab4c27b749b078ab7909c43312ce179c0"
     }
   },
   {
@@ -8076,7 +8220,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-59",
       "https://lawphil.net/statutes/repacts/ra2013/ra_10524_2013.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -8106,6 +8250,12 @@
         "verifiedAt": "2026-10-07T16:02:10Z",
         "rationale": "RA10524amendingRA7277Section5 reserves at least1percent of governmentagency,officeorcorporation positions for personswithdisability. Applicants must qualify; it is not automaticappointment."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "35b7ca2aaad02767a3f68674270b0fc68db714ab69447245e310fec7154eaec9",
+      "reviewDigest": "e00ed5d93b912216b06f834f4f968072bf905391fd81521ac682079cb4678450"
     }
   },
   {
@@ -8347,7 +8497,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-61",
       "https://lawphil.net/statutes/repacts/ra1992/ra_7610_1992.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -8377,6 +8527,12 @@
         "verifiedAt": "2026-10-07T15:55:54Z",
         "rationale": "RA7610Section1 supplies this shorttitle."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "6107a05f2a98d9b528735d973ca449313e1c7ef48dabd2379d1092a881460eb4",
+      "reviewDigest": "8369aaa2a1364ba20d62e77dbeb2589925474ab346e8a51200d298805aae10de"
     }
   },
   {
@@ -8488,7 +8644,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-62",
       "https://lawphil.net/statutes/repacts/ra2004/ra_9262_2004.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -8518,6 +8674,12 @@
         "verifiedAt": "2026-10-07T15:55:54Z",
         "rationale": "RA9262Section1 is the AntiViolenceAgainstWomenandTheirChildrenActof2004."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "0dced4d59583b8968f6b2d23689d9c2eae9c09e2231219f3c15b9e36f36fcf20",
+      "reviewDigest": "cc9db48bb7369637803e664714099e9f37416fae5cb1481ce3b414d238cec7c4"
     }
   },
   {
@@ -8629,7 +8791,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-63",
       "https://lawphil.net/statutes/repacts/ra1956/ra_1425_1956.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -8659,6 +8821,12 @@
         "verifiedAt": "2026-10-07T15:55:54Z",
         "rationale": "RA1425prescribes courses on Rizal’s life,worksandwritings,including his novels."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "13176871021239e6e23f0ca130477603e9ee5c946a254ee8915dfa3b2c650d1d",
+      "reviewDigest": "eac29a596f7ce514a88cd2b7bdbca2ef4fb3134abfff66a5646bbd4c87545bd3"
     }
   },
   {
@@ -9030,7 +9198,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-66",
       "https://lawphil.net/executive/proc/proc1967/proc_208_1967.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -9060,6 +9228,12 @@
         "verifiedAt": "2026-10-07T15:58:26Z",
         "rationale": "Proclamation208of1967 declared the Libingan ng mga Bayani grounds a nationalshrine. It does not require every president or hero to be buriedthere."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "093ca9ba90ce81cc68be3da761232f1e85aea854b20816e73868fd2354d00d57",
+      "reviewDigest": "508e7658728f83936db21b0994aee37c069d22a88d7c0ad0945f9a6c470f2cf7"
     }
   },
   {
@@ -9431,7 +9605,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-69",
       "https://lawphil.net/consti/cons1987.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -9475,6 +9649,12 @@
         "verifiedAt": "2026-10-07T16:15:32Z",
         "rationale": "ArticleVII18 permits martiallaw in invasionorrebellionwhenpublicsafetyrequires, without supplanting civilcourts or legislativeassemblies or suspendingtheConstitution."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "c268ba9c1e81cf487c344e79f652944a8a032a44bbf01c3696aaafd9be6798d9",
+      "reviewDigest": "8224c13c45a19aa83051d8d9d3f467527f323a086887c8f46a292c6cf1a321c5"
     }
   },
   {
@@ -9716,7 +9896,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-71",
       "https://lawphil.net/judjuris/juri2007/sep2007/am_07-9-12-sc_2007.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -9746,6 +9926,12 @@
         "verifiedAt": "2026-10-07T15:55:54Z",
         "rationale": "Rule1 of the AmparoRule covers extralegal killings andenforceddisappearancesorthreats thereof violating life,libertyorsecurity; it is not a universal remedyforeveryright."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "fb7e7bccd54d2d61e5b3345dec61f816000d42d5b05cef7e2821f908aced0b70",
+      "reviewDigest": "d2a004e9850422952eed815f0d5e270d73dd660b108f836f0dfa10a14def083e"
     }
   },
   {
@@ -10247,7 +10433,7 @@
       "docs/verification/editorial-full-corpus-task2.md#i-75",
       "https://lawphil.net/judjuris/juri2013/nov2013/gr_208566_2013.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -10277,6 +10463,12 @@
         "verifiedAt": "2026-10-07T15:55:54Z",
         "rationale": "Belgica v ExecutiveSecretaryofNovember19,2013 concerns the MalampayaFund and invalidates openended spendingauthority beyond the energyresource purpose. This is a dated legal ruling, not a claimabout presentfundadministration."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "da022e2fe1cf45a0056c98307ca5a3441b63c51743b87fc03c29a8072c32e2e5",
+      "reviewDigest": "344d3db6c302c52219b45f6441dae843f056639f4d245907ae39d393601d2ab3"
     }
   }
 ]

@@ -89,7 +89,7 @@
       "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html",
       "evidence/editorial/task-3/research/ra6975.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -165,6 +165,12 @@
         "verifiedAt": "2026-10-07T16:27:34.751884+00:00",
         "rationale": "Verified Section 2. Section 2 requires a highly efficient and competent force, national in scope and civilian in character. Military and merely local descriptions contradict the provision."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "9196320e578560871746771f71174ed269b6e6936cccb4671f97c5940611ff41",
+      "reviewDigest": "98aa793b05c09f1b93e369da4a3da596a132df5457b003865e317f8e79059e60"
     }
   },
   {
@@ -257,7 +263,7 @@
       "https://lawphil.net/statutes/repacts/ra2019/ra_11200_2019.html",
       "evidence/editorial/task-3/research/ra11200.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -348,6 +354,12 @@
         "verifiedAt": "2026-10-07T16:27:34.716025+00:00",
         "rationale": "Verified Section 1. RA 11200 lists Police General above Lieutenant General and Major General. The source confuses rank with the officeholder question and uses the former Director General title; this authored stem explicitly asks rank."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "0926609f661a68f55dac45e7ab15bb7c7ad0bb298e56afb49a3484d347d3da94",
+      "reviewDigest": "4f8817c4cefb56c1a2744d8502bf5866810562a29c0918dd6ff14e73cf59a017"
     }
   },
   {
@@ -440,7 +452,7 @@
       "https://lawphil.net/statutes/repacts/ra1998/ra_8551_1998.html",
       "evidence/editorial/task-3/research/ra8551.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -516,6 +528,12 @@
         "verifiedAt": "2026-10-07T16:27:34.758405+00:00",
         "rationale": "Verified Section 19. Section 19 names patrol, traffic and investigation. This positive-list conversion preserves the supported field-training concept without claiming recovered except alternatives."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "d83a69f83f8baa3b1bfe2692029c352e226df2a9bfe75d420b67cbe2f87455cf",
+      "reviewDigest": "ec564224124f31a7023139906fdbe25115eab69793b3bbecabb558eb6f426dec"
     }
   },
   {
@@ -798,7 +816,7 @@
       "https://lawphil.net/statutes/repacts/ra2009/ra_9708_2009.html",
       "https://lawphil.net/statutes/repacts/ra2021/ra_11549_2021.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -882,6 +900,12 @@
         "verifiedAt": "2026-10-07T16:27:34.758405+00:00",
         "rationale": "Verified Original section 15; compare RA9708 section1 and RA11549 section2. The original section 15 permits waivers only when qualified applicants fall below the minimum annual quota, with additional limits. This asks the original statutory condition, not current blanket waiver availability; RA 9708 and RA 11549 later address education and height."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "566d6f8323c998942ff6959630ba7d895ef3d9b1822afc9d7aea0bf9262d69a0",
+      "reviewDigest": "472b97139b9c1bef66511e47de99d0badc7afeff09d77ea30d781fdbaefa1ab8"
     }
   },
   {
@@ -975,7 +999,7 @@
       "evidence/editorial/task-3/research/ra9708.txt",
       "https://lawphil.net/statutes/repacts/ra1998/ra_8551_1998.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1055,6 +1079,12 @@
         "verifiedAt": "2026-10-07T16:27:34.616376+00:00",
         "rationale": "Verified Section 1; RA8551 section15. RA 9708 section 1 preserves the ordinary 21–30 appointment range. Twenty-one is the lower limit; thirty-five appears in the separate waiver provision. Appointment is distinguished from entrance-examination eligibility."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "7b639ea95c65560a7316ef30a33cea274a6f9f4d7df9530c71adbcc2d45c340b",
+      "reviewDigest": "3fca0c57d5c86adcff5c4bad0f9221eff7ecececdd8adc2965c463de8dbe9338"
     }
   },
   {
@@ -1518,7 +1548,7 @@
       "https://lawphil.net/statutes/repacts/ra1998/ra_8551_1998.html",
       "evidence/editorial/task-3/research/ra8551.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1594,6 +1624,12 @@
         "verifiedAt": "2026-10-07T16:27:34.758405+00:00",
         "rationale": "Verified Original section 16(b). The original section 16(b) states age, height, weight, education. The stem identifies the enacted text and does not certify unchanged present-day recruitment implementation."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "66b5f82972dcbaef328ab7ac2c126a590fea6ac811b8052c48d9fee4a908b54c",
+      "reviewDigest": "42e00a15f283e2769a31afc710157dd41ff6a31d4e809380ef9b76ccb997c54a"
     }
   },
   {
@@ -1686,7 +1722,7 @@
       "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html",
       "evidence/editorial/task-3/research/ra6975.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -1762,6 +1798,12 @@
         "verifiedAt": "2026-10-07T16:27:34.751884+00:00",
         "rationale": "Verified Section 23. Section 23 establishes the PNP and identifies its initial components. The authored stem removes the unsupported January 1 effective-date assertion; statute approval, legal effectivity and operational launch are distinct."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "fed691f8af55b2f2cae7b02fe2a8448a6b0191ce387a09679941987c0f7e799d",
+      "reviewDigest": "6335bacac634ff3c3356db9e9704e3c64868fb4ac69f8f5fc0968de6639d6a41"
     }
   },
   {
@@ -1949,7 +1991,7 @@
       "evidence/editorial/task-3/research/ra8551.txt",
       "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2029,6 +2071,12 @@
         "verifiedAt": "2026-10-07T16:27:34.758405+00:00",
         "rationale": "Verified Section 1; RA6975 section1. RA 8551 section 1 supplies the full title. The 1990 title belongs to RA 6975; the 1901 alternative does not match the specified Act."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "5f60d094a434c11ff4bc03a218d05739e5016da84edf0de634ede6a4a8afa10f",
+      "reviewDigest": "476f80ffadc937461d72e8041f76536c40a95d6e15270a88de00d1b9e7b5626a"
     }
   },
   {
@@ -2122,7 +2170,7 @@
       "evidence/editorial/task-3/research/ra8551.txt",
       "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2202,6 +2250,12 @@
         "verifiedAt": "2026-10-07T16:27:34.758405+00:00",
         "rationale": "Verified Section 4 amending RA6975 section13. The DILG Secretary is the Chairperson; the Chief PNP is an ex-officio member, a separate role."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "e2942af9aee155fbc3ad06fbd522c4c301d49f8f087d391d86ca16951f669195",
+      "reviewDigest": "33e348f8fcd16d3bd2877563801e8519df6ad85538ddb9f16073c8d3fa404b0d"
     }
   },
   {
@@ -2295,7 +2349,7 @@
       "evidence/editorial/task-3/research/ra8551.txt",
       "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2375,6 +2429,12 @@
         "verifiedAt": "2026-10-07T16:27:34.758405+00:00",
         "rationale": "Verified Section 4 amending RA6975 section13. Four is the regular-commissioner count; six counts the Chairperson and Chief PNP as well. The authored qualifier removes the source’s ambiguous total-membership wording."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "317e90aa0cfee398f96e4d4e583851635fa590c036eddf738380f8eebf8860ab",
+      "reviewDigest": "649cf6d7e334d5e702d4ef7690fd7ebf16c1e28bae1cb5c15730346ebb26bdb3"
     }
   },
   {
@@ -2468,7 +2528,7 @@
       "evidence/editorial/task-3/research/ra8551.txt",
       "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2548,6 +2608,12 @@
         "verifiedAt": "2026-10-07T16:27:34.758405+00:00",
         "rationale": "Verified Section 5 amending RA6975 section14. The statute assigns these powers to NAPOLCOM, not CSC or COA."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "9b676cff23815c7ca8d5a595a1340811beb3e346c0f644a37a5332250bb400b7",
+      "reviewDigest": "4564c4e8fe6e59d48bed2f021ea74884b608ec2cc6e2459ce0e26993b7864b18"
     }
   },
   {
@@ -2642,7 +2708,7 @@
       "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html",
       "https://lawphil.net/statutes/presdecs/pd1975/pd_765_1975.html"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2726,6 +2792,12 @@
         "verifiedAt": "2026-10-07T16:27:35.081992+00:00",
         "rationale": "Verified Section 1; RA6975 section23; PD765 section1. The original enactment says Insular Constabulary. PNP and INP arise under later statutes; the source’s loose Insular Police Force answer is corrected transparently."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "0b9c55d6d103cf55c70434ce9fe43db29060d30fe697a2dbd1a195614b308193",
+      "reviewDigest": "52fee32980d3102a3a9ef8fedc74d17955f1ab42becfbe6a1054b99adc285a2e"
     }
   },
   {
@@ -2912,7 +2984,7 @@
       "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/77425",
       "evidence/editorial/task-3/research/blotter.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -2988,6 +3060,12 @@
         "verifiedAt": "2026-10-07T16:32:47.960937+00:00",
         "rationale": "Verified Definitions of Terms. The circular defines the police blotter as the daily logbook. The Quality Service Lane is a service desk, and an Incident Record Form records individual incident data."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "49a9d291a3451e79b6ddde1c33ecda904eea400b635850ca875c4b3193a5bbb1",
+      "reviewDigest": "32fad1e67bc288e1005a702dfbf6ce153ac2d186f330f1e79091683c2ed7f399"
     }
   },
   {
@@ -3174,7 +3252,7 @@
       "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html",
       "evidence/editorial/task-3/research/ra6975.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3265,6 +3343,12 @@
         "verifiedAt": "2026-10-07T16:27:34.751884+00:00",
         "rationale": "Verified Section 6. RA 6975 section 6 provides organizational placement. RA 8551 reforms and amends the earlier law; RA 11200 changes ranks. The original RA8551 answer is corrected without attributing DILG control powers indiscriminately."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "f1181d0a1993b2d4419bc834f1a3182875bb84860d4356683de8c70ee8f721c5",
+      "reviewDigest": "14d3203ceb35de99d531377a2bf36a0bb3252619bf6cb9a4a4d4029d44eade1d"
     }
   },
   {
@@ -3357,7 +3441,7 @@
       "https://lawphil.net/statutes/repacts/ra1998/ra_8551_1998.html",
       "evidence/editorial/task-3/research/ra8551.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3433,6 +3517,12 @@
         "verifiedAt": "2026-10-07T16:27:34.758405+00:00",
         "rationale": "Verified Section 4. Section 4 names the Chief PNP. The source’s named historical person is converted transparently to the supported statutory office, avoiding an undated personal appointment claim."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "14b75593aa68ecdc4d50f2e0cbf4b47b6c8195f61c6f59dd7425bd8eb424c140",
+      "reviewDigest": "0315eace61188b48b8e7c33d02cbd7272d7e74ca5c0718ab0384138eb94ead08"
     }
   },
   {
@@ -3525,7 +3615,7 @@
       "https://lawphil.net/statutes/presdecs/pd1975/pd_765_1975.html",
       "evidence/editorial/task-3/research/pd765.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3601,6 +3691,12 @@
         "verifiedAt": "2026-10-07T16:27:35.078338+00:00",
         "rationale": "Verified Section 1. PD765 establishes the Integrated National Police under DND with PC as nucleus. The source’s PC-INP label describes a combined arrangement; the authored question asks the exact statutory organization."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "bffeafe1938ef9bf2fe176bb29ed4077945da178c95b1ce28a45a8cb3909904b",
+      "reviewDigest": "1783f904754b59edcfcd87e9eda335e45b492dcfb3351f26072a291631a6488a"
     }
   },
   {
@@ -3693,7 +3789,7 @@
       "https://lawphil.net/statutes/repacts/ra2013/ra_10575_2013.html",
       "evidence/editorial/task-3/research/ra10575.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -3769,6 +3865,12 @@
         "verifiedAt": "2026-10-07T16:27:35.049637+00:00",
         "rationale": "Verified Section 8. Section 8 makes BuCor a DOJ line bureau and constituent unit. This positive affiliation conversion preserves the concept underlying the missing except alternatives."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "65d2a0fad3bcf87371d5edc2849b3ed5ba0635bf7a93c72c88c2c1211d0f9539",
+      "reviewDigest": "8e6f146ec5a49268b95ea0fd32ed65ac7df9c9a2628c7134af7b6466378037f0"
     }
   },
   {
@@ -3955,7 +4057,7 @@
       "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/68865",
       "evidence/editorial/task-3/research/campcrame.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -4031,6 +4133,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Section III.A, background. The PNP Headquarters Support Service SOP expressly says Camp Crame houses the National Headquarters. The authored alternatives are other military camps, not the named PNP location."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "2cb45a734b5d4c406ef65bd6c20fd70b47969ee90eb094f13663ea7f7e86fae8",
+      "reviewDigest": "e8dc9f42de474e20add002d44b3e2ddc7b3cba54ab4298e5bf616430c048ea31"
     }
   },
   {
@@ -4123,7 +4231,7 @@
       "https://lawphil.net/statutes/repacts/ra1990/ra_6975_1990.html",
       "evidence/editorial/task-3/research/ra6975.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -4199,6 +4307,12 @@
         "verifiedAt": "2026-10-07T16:52:17.344Z",
         "rationale": "Verified Section 39. Section 39 states 56 and permits a limited one-year retention for specified senior officers. The explanation preserves the exception rather than claiming every officer must leave on that birthday."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "a53d0874982a0a1916068dcabcb002c724154a414f5a176faae4126d649bc76d",
+      "reviewDigest": "499dfc7159e739ef7e467e39834bf5d1e16ac3c127db11c129b1d70a432a5ce4"
     }
   },
   {
@@ -4291,7 +4405,7 @@
       "https://lawphil.net/statutes/repacts/ra1998/ra_8551_1998.html",
       "evidence/editorial/task-3/research/ra8551.txt"
     ],
-    "status": "needsReview",
+    "status": "approved",
     "review": {
       "issues": [
         {
@@ -4367,6 +4481,12 @@
         "verifiedAt": "2026-10-07T16:27:34.758405+00:00",
         "rationale": "Verified Section 21. Section 21 amending RA6975 section32 explicitly assigns these examinations to NAPOLCOM."
       }
+    },
+    "approval": {
+      "reviewer": "Project owner",
+      "at": "2026-10-08T01:48:03Z",
+      "digest": "0dc0686016cbb9ac2e3a57f6e71c204036605efad7788214845ef00073f74d60",
+      "reviewDigest": "da69c4e344224d711628d2bb5a5644dfcc97c9c899e70be2b7e020b095dacc3c"
     }
   },
   {
