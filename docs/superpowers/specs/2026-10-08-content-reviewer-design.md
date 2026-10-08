@@ -2,9 +2,10 @@
 
 Date: 2026-10-08
 
-Status: proposed for owner review. This document does not record approval of this
-slice or authorize production writes. The approved foundation decisions remain
-binding. Implementation planning follows written-spec approval.
+Status: written specification approved by the owner through “continue” on
+2026-10-08 after the specification review request. This authorizes implementation
+planning; the written plan still requires review before execution. Production
+writes remain outside scope. The approved foundation decisions remain binding.
 
 ## 1. Intent and scope
 
