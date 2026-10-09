@@ -10,6 +10,8 @@ export interface StudySyncRemote {
     owner: OwnerContext,
     session: ReviewerSession,
     operationId: string,
+    /** Explicit delta from durable acknowledgements; omitted means a full safe replay. */
+    pendingViewedOrdinals?: readonly number[],
   ): Promise<void>;
   /** Throws BookmarkConflictError with validated remote state for compare-and-set conflicts. */
   writeBookmark(

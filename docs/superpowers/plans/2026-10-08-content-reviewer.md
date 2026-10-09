@@ -10,7 +10,7 @@
 
 **Spec:** [Approved content/Reviewer design](../specs/2026-10-08-content-reviewer-design.md), all sections, preserving the [foundation design](../specs/2026-10-04-foundation-and-content-design.md).
 
-**Status:** Prepared for owner review; execution method remains the established subagent implementation and independent review workflow. No product implementation or dependency installation has started.
+**Status:** Owner approved this plan on 2026-10-08. Tasks 1–9 are implemented and independently reviewed, including their scoped fixes. Task 10 automated/documentation work is recorded below; native acceptance, final scoped rereview and finishing remain open. Current evidence is in [the verification record](../../verification/content-reviewer.md).
 
 ## Global Constraints
 
@@ -85,11 +85,11 @@ expect(() =>
 ).toThrow();
 ```
 
-- [ ] Write `rejects_live_and_missing_endpoints` and `accepts_only_explicit_isolated_endpoints`: assert undefined endpoint, 8080, 9099, remote host and missing acknowledgement throw; exact test endpoints succeed.
-- [ ] Run `npm run test:unit -- --runTestsByPath tests/application/integration-environment.test.ts`; expect failure before helper exists.
-- [ ] Implement helper and runner. Dedicated config copies current rules/index paths and uses 8180/9199, disabled UI, separate hub/logging ports. Runner checks ports are free, invokes local firebase executable with `--config firebase.study-tests.json --project demo-pnpe`, and sets explicit env for Jest. Change `test:emulator` to the guarded runner and add `test:study-emulator` as its alias. Route every existing suite's initialization/clear URL through the helper; no fallback to default ports.
-- [ ] Run helper tests, then guarded `npm run test:emulator` with process-local Java 21. Assert existing rules/import integration tests pass; inspect live revision-2 head read-only before/after, without resetting services. Store command outputs under ignored `evidence/content-reviewer/task1/`.
-- [ ] Commit explicit runner/config/test changes as `test: isolate destructive Firebase integration suites`.
+- [x] Write `rejects_live_and_missing_endpoints` and `accepts_only_explicit_isolated_endpoints`: assert undefined endpoint, 8080, 9099, remote host and missing acknowledgement throw; exact test endpoints succeed.
+- [x] Run `npm run test:unit -- --runTestsByPath tests/application/integration-environment.test.ts`; expect failure before helper exists.
+- [x] Implement helper and runner. Dedicated config copies current rules/index paths and uses 8180/9199, disabled UI, separate hub/logging ports. Runner checks ports are free, invokes local firebase executable with `--config firebase.study-tests.json --project demo-pnpe`, and sets explicit env for Jest. Change `test:emulator` to the guarded runner and add `test:study-emulator` as its alias. Route every existing suite's initialization/clear URL through the helper; no fallback to default ports.
+- [x] Run helper tests, then guarded `npm run test:emulator` with process-local Java 21. Assert existing rules/import integration tests pass; inspect live revision-2 head read-only before/after, without resetting services. Store command outputs under ignored `evidence/content-reviewer/task1/`.
+- [x] Commit explicit runner/config/test changes as `test: isolate destructive Firebase integration suites`.
 
 ## Task 2: Content and personal domain contracts
 
@@ -97,12 +97,12 @@ expect(() =>
 
 **Interfaces:** `eligibleEntries(entries: readonly CatalogEntry[], scope: StudyScope, now: number): readonly CatalogEntry[]`; `validateRevision(raw: unknown, entry: CatalogEntry): Question`; `RandomSource.next(): number` in [0,1); `IdentitySource.nextId(): string`; `Fingerprint.digest(value: unknown): Promise<string>` over deterministic canonical JSON.
 
-- [ ] Write contract tests asserting mobile/tool catalog parity, invalid IDs/taxonomy/current-event metadata rejection, duplicate IDs, incompatible kinds and expiry-at-now exclusion. Use synthetic validated question/entry fixtures with a shared passage, marked grammar and math; retain exact UTF-16 mark offsets for Unicode.
-- [ ] Write revision tests asserting ID/version/stimulus/assets/kinds/validity mismatch rejection, and strict personal-schema tests for unknown fields, invalid positions/sequences and duplicate ordinals.
-- [ ] Run `npm run test:unit -- --runTestsByPath tests/content/mobile-catalog.test.ts tests/content/revision-validation.test.ts tests/application/study-contracts.test.ts`; expect absent-module failures.
-- [ ] Implement mobile-safe schemas, entry comparison and capability eligibility. Define `ContentRepository.catalog(owner): Promise<CatalogSnapshot>` and `question(owner, entry): Promise<Question>`; `ContentCache` reads/writes complete catalog snapshots and immutable revisions. Define `StudyRepository.active(owner)`, `session(owner,id)`, `replaceActive(owner,session)`, `recordView(owner,id,ordinal)`, `move(owner,id,ordinal)`, `listBookmarks(owner)`, `setBookmark(owner,entry,deleted)`, `pending(owner,now)`, `acknowledge(owner,operationId,remoteRevision?)`, `retry(owner,operationId,nextAttemptAt)`, each returning a Promise of its named record(s) or void. No UI/native imports.
-- [ ] Define `StudySyncRemote.publishSession(owner,session,operationId)`, `writeSessionState(owner,session,operationId)`, `writeBookmark(owner,bookmark,operationId,baseRevision)` returning `{ revision: number; appliedOperationId: string }`, and `listBookmarks(owner)`; conflicts return a typed error carrying validated remote bookmark state. Pass owner explicitly everywhere.
-- [ ] Run all new suites and both typechecks, including mobile/tool import-boundary tests; commit as `feat: define validated content and study contracts`.
+- [x] Write contract tests asserting mobile/tool catalog parity, invalid IDs/taxonomy/current-event metadata rejection, duplicate IDs, incompatible kinds and expiry-at-now exclusion. Use synthetic validated question/entry fixtures with a shared passage, marked grammar and math; retain exact UTF-16 mark offsets for Unicode.
+- [x] Write revision tests asserting ID/version/stimulus/assets/kinds/validity mismatch rejection, and strict personal-schema tests for unknown fields, invalid positions/sequences and duplicate ordinals.
+- [x] Run `npm run test:unit -- --runTestsByPath tests/content/mobile-catalog.test.ts tests/content/revision-validation.test.ts tests/application/study-contracts.test.ts`; expect absent-module failures.
+- [x] Implement mobile-safe schemas, entry comparison and capability eligibility. Define `ContentRepository.catalog(owner): Promise<CatalogSnapshot>` and `question(owner, entry): Promise<Question>`; `ContentCache` reads/writes complete catalog snapshots and immutable revisions. Define `StudyRepository.active(owner)`, `session(owner,id)`, `replaceActive(owner,session)`, `recordView(owner,id,ordinal)`, `move(owner,id,ordinal)`, `listBookmarks(owner)`, `setBookmark(owner,entry,deleted)`, `pending(owner,now)`, `acknowledge(owner,operationId,remoteRevision?)`, `retry(owner,operationId,nextAttemptAt)`, each returning a Promise of its named record(s) or void. No UI/native imports.
+- [x] Define `StudySyncRemote.publishSession(owner,session,operationId)`, `writeSessionState(owner,session,operationId)`, `writeBookmark(owner,bookmark,operationId,baseRevision)` returning `{ revision: number; appliedOperationId: string }`, and `listBookmarks(owner)`; conflicts return a typed error carrying validated remote bookmark state. Pass owner explicitly everywhere.
+- [x] Run all new suites and both typechecks, including mobile/tool import-boundary tests; commit as `feat: define validated content and study contracts`.
 
 Port signatures fixed for repository implementers:
 
@@ -151,12 +151,12 @@ publishing a session and recording its first view without acknowledgements.
 `failed_outbox_insert_rolls_back_view` asserts unchanged view membership and
 operation count after an injected SQL error.
 
-- [ ] Write real SQL tests using Node 24 `node:sqlite` behind a test-only facade: close/reopen retains session/order/viewed/bookmark/outbox; forced statement failure rolls back both mutation and outbox; repeated viewed ordinal increments once; replacement archives prior session atomically; Alice/Bob rows stay isolated. Migration failure/future schema version preserves the file and reports storage recovery.
-- [ ] Write immutable cache tests for incomplete catalog rejection, payload/fingerprint corruption, conflicting existing revisions and cache eviction preserving active/bookmarked references and all pending operations.
-- [ ] Run those suites; expect missing implementations.
-- [ ] Install compatible packages in the isolated worktree with its own dependency directory, replacing the borrowed `node_modules` symlink first so the main checkout is not changed. The inspected Expo bundle recommends `expo-sqlite ~57.0.4` and `expo-crypto ~57.0.3`; resolve exact patch versions through Expo install and lock them, without peer bypasses. Validate with `npx expo install --check`. SDK references: [SQLite](https://docs.expo.dev/versions/v57.0.0/sdk/sqlite/) and [Crypto](https://docs.expo.dev/versions/v57.0.0/sdk/crypto/).
-- [ ] Implement serialized native exclusive transactions, foreign keys and migration version checks. Tables: `catalogs`, `catalog_items`, `question_revisions`, `device_identity`, `reviewer_sessions`, `reviewer_items`, `reviewer_views`, `bookmarks`, `study_outbox`; UID/device participate in personal keys. Keep question payloads separate. Record desired state + operation in the same transaction, monotonically sequence mutations, retain tombstones. Parse every stored JSON/row before use. Fingerprint via native SHA-256; test fixture uses Node crypto only.
-- [ ] Run new SQL/cache suites, unit tests, typechecks and dependency validation. Native SQLite behavior is additionally checked in Task 10; Node SQL tests alone do not prove native acceptance. Commit as `feat: persist study state and content in SQLite`.
+- [x] Write real SQL tests using Node 24 `node:sqlite` behind a test-only facade: close/reopen retains session/order/viewed/bookmark/outbox; forced statement failure rolls back both mutation and outbox; repeated viewed ordinal increments once; replacement archives prior session atomically; Alice/Bob rows stay isolated. Migration failure/future schema version preserves the file and reports storage recovery.
+- [x] Write immutable cache tests for incomplete catalog rejection, payload/fingerprint corruption, conflicting existing revisions and cache eviction preserving active/bookmarked references and all pending operations.
+- [x] Run those suites; expect missing implementations.
+- [x] Install compatible packages in the isolated worktree with its own dependency directory, replacing the borrowed `node_modules` symlink first so the main checkout is not changed. The inspected Expo bundle recommends `expo-sqlite ~57.0.4` and `expo-crypto ~57.0.3`; resolve exact patch versions through Expo install and lock them, without peer bypasses. Validate with `npx expo install --check`. SDK references: [SQLite](https://docs.expo.dev/versions/v57.0.0/sdk/sqlite/) and [Crypto](https://docs.expo.dev/versions/v57.0.0/sdk/crypto/).
+- [x] Implement serialized native exclusive transactions, foreign keys and migration version checks. Tables: `catalogs`, `catalog_items`, `question_revisions`, `device_identity`, `reviewer_sessions`, `reviewer_items`, `reviewer_views`, `bookmarks`, `study_outbox`; UID/device participate in personal keys. Keep question payloads separate. Record desired state + operation in the same transaction, monotonically sequence mutations, retain tombstones. Parse every stored JSON/row before use. Fingerprint via native SHA-256; test fixture uses Node crypto only.
+- [x] Run new SQL/cache suites, unit tests, typechecks and dependency validation. Native SQLite behavior is additionally checked in Task 10; Node SQL tests alone do not prove native acceptance. Commit as `feat: persist study state and content in SQLite`.
 
 ## Task 4: Native catalog discovery and cached retrieval
 
@@ -170,11 +170,11 @@ a remote permission error and
 `partial_catalog_is_never_saved` asserts `expect(cache.saveCatalog).not.toHaveBeenCalled()`
 when the final page fails.
 
-- [ ] Write tests for multi-page discovery, exact-page-size terminal pagination, duplicate IDs, nonascending cursor, malformed shard, interrupted last page, 700-KiB payload bound, changed head and server permission denial. Assert no cache publish on partial failure, no mixed generations, and at most three discovery attempts on head churn.
-- [ ] Write tests proving complete offline catalog fallback with its validation time, no permission fallback, fetched revision/entry agreement, fingerprint validation and stale owner result rejection.
-- [ ] Run focused suites; expect failure before adapters exist.
-- [ ] Implement server-source native reads with document-ID ordering, page size 50 and validated generation/shard paths. Read head before/after full pagination; save only a complete snapshot. Separate known network errors from permission/auth/content errors. Fetch and validate individual revisions; do not query whole question collections or import tooling.
-- [ ] Run focused tests, typechecks and import boundaries; commit as `feat: load validated catalogs and revisions progressively`.
+- [x] Write tests for multi-page discovery, exact-page-size terminal pagination, duplicate IDs, nonascending cursor, malformed shard, interrupted last page, 700-KiB payload bound, changed head and server permission denial. Assert no cache publish on partial failure, no mixed generations, and at most three discovery attempts on head churn.
+- [x] Write tests proving complete offline catalog fallback with its validation time, no permission fallback, fetched revision/entry agreement, fingerprint validation and stale owner result rejection.
+- [x] Run focused suites; expect failure before adapters exist.
+- [x] Implement server-source native reads with document-ID ordering, page size 50 and validated generation/shard paths. Read head before/after full pagination; save only a complete snapshot. Separate known network errors from permission/auth/content errors. Fetch and validate individual revisions; do not query whole question collections or import tooling.
+- [x] Run focused tests, typechecks and import boundaries; commit as `feat: load validated catalogs and revisions progressively`.
 
 ## Task 5: Reviewer session lifecycle and controller
 
@@ -201,12 +201,12 @@ specified below, always including session identity/current ordinal when loaded.
 `prepare` returning `existing` never replaces state; replacement always enters
 through the explicitly confirmed `replace` action.
 
-- [ ] Write tests asserting all 276 synthetic eligible category entries survive without a cap, subcategory filtering, stable original choice order, one-time Fisher-Yates shuffle, empty-scope error and idempotent repeated start. Use deterministic clock/random/ID ports.
-- [ ] Write lifecycle tests proving same/different scope returns existing session, cancellation does not archive, failed first-page/replacement commit preserves old session, resume freezes old revisions after catalog/expiry changes, completion occurs only after all viewed ordinals.
-- [ ] Write controller tests for rapid next/previous with out-of-order fetch completion, delayed receipt for the previous page, background/prefetch receipt exclusion, failed durable move and account-epoch change during mutation. Assert missing offline page preserves position and manifest count.
-- [ ] Run focused suites; expect missing-service/controller failures.
-- [ ] Implement owner-bound serialized lifecycle mutations and stale-result guards; first validated question + full manifest must be durably ready before activation/replacement. Prefetch at most two subsequent pages, without recording views. Expose loading/reading/missing/error/completed state with retry and storage failure messages; keep lifecycle state in the repository.
-- [ ] Run focused tests and typechecks; commit as `feat: implement durable read-through reviewer sessions`.
+- [x] Write tests asserting all 276 synthetic eligible category entries survive without a cap, subcategory filtering, stable original choice order, one-time Fisher-Yates shuffle, empty-scope error and idempotent repeated start. Use deterministic clock/random/ID ports.
+- [x] Write lifecycle tests proving same/different scope returns existing session, cancellation does not archive, failed first-page/replacement commit preserves old session, resume freezes old revisions after catalog/expiry changes, completion occurs only after all viewed ordinals.
+- [x] Write controller tests for rapid next/previous with out-of-order fetch completion, delayed receipt for the previous page, background/prefetch receipt exclusion, failed durable move and account-epoch change during mutation. Assert missing offline page preserves position and manifest count.
+- [x] Run focused suites; expect missing-service/controller failures.
+- [x] Implement owner-bound serialized lifecycle mutations and stale-result guards; first validated question + full manifest must be durably ready before activation/replacement. Prefetch at most two subsequent pages, without recording views. Expose loading/reading/missing/error/completed state with retry and storage failure messages; keep lifecycle state in the repository.
+- [x] Run focused tests and typechecks; commit as `feat: implement durable read-through reviewer sessions`.
 
 ## Task 6: Complete question rendering and Reviewer UI
 
@@ -221,11 +221,11 @@ the fixture. `unsupported_stimulus_never_reports_ready` asserts
 `expect(onReady).not.toHaveBeenCalled()` after layout. Accessibility tests assert
 the grammar target and math `accessibleText` are present in accessible labels.
 
-- [ ] Write rendering tests with shared passage before prompt, all choices in original order, immediately labeled correct answer, optional explanation, overlapping grammar marks, surrogate-pair offsets, multiline math and accessible text. Unsupported required block must produce a visible error with no ready callback. Correctness color always has text/semantic labels.
-- [ ] Write UI tests for Previous/Next bounds, item/viewed counts, no selectable answer or submission/score controls, offline missing page, durable-save failure, completion and cached-content refresh date. Large-font long passages must retain scrollable controls; test both semantic themes and focus/background changes.
-- [ ] Run `npm run test:mobile -- --runTestsByPath tests/mobile/content-rendering.test.tsx tests/mobile/reviewer.test.tsx`; expect failure before components exist.
-- [ ] Implement safe segmented text rendering using the union of mark boundaries (never duplicate overlapping text); render exact math expressions with supplied accessible descriptions, no HTML/WebView execution. Capture successful complete layout and current page token; no view event from hidden/prefetched renders. Show time context for saved historical current-event revisions.
-- [ ] Run mobile suites/typecheck/lint; commit as `feat: render accessible reviewer questions and reading navigation`.
+- [x] Write rendering tests with shared passage before prompt, all choices in original order, immediately labeled correct answer, optional explanation, overlapping grammar marks, surrogate-pair offsets, multiline math and accessible text. Unsupported required block must produce a visible error with no ready callback. Correctness color always has text/semantic labels.
+- [x] Write UI tests for Previous/Next bounds, item/viewed counts, no selectable answer or submission/score controls, offline missing page, durable-save failure, completion and cached-content refresh date. Large-font long passages must retain scrollable controls; test both semantic themes and focus/background changes.
+- [x] Run `npm run test:mobile -- --runTestsByPath tests/mobile/content-rendering.test.tsx tests/mobile/reviewer.test.tsx`; expect failure before components exist.
+- [x] Implement safe segmented text rendering using the union of mark boundaries (never duplicate overlapping text); render exact math expressions with supplied accessible descriptions, no HTML/WebView execution. Capture successful complete layout and current page token; no view event from hidden/prefetched renders. Show time context for saved historical current-event revisions.
+- [x] Run mobile suites/typecheck/lint; commit as `feat: render accessible reviewer questions and reading navigation`.
 
 ## Task 7: Bookmarks and viewed-progress screens
 
@@ -239,11 +239,11 @@ question and asserts `expect(await study.active(alice)).toEqual(before)` and
 `await bookmarks.open(alice, entry.id)`. `list` filters tombstones; `toggle`
 consults the unfiltered repository rows to support restoration after removal.
 
-- [ ] Write tests for persisted pin, tombstone removal, rapid toggle ordering, failed transaction rollback, newer catalog not replacing pin, missing uncached page preserving bookmark and cross-owner access rejection.
-- [ ] Write mobile tests for list/open/remove/retry, historical time context, missing explanation, empty bookmarks, viewed-only progress and Resume. Assert opening a bookmark never creates a session or records views; feature-disabled records remain accessible while new mutations are disabled.
-- [ ] Run focused unit/mobile suites; expect absent-service/screens failures.
-- [ ] Implement local-first service and screens; show pending state only from durable outbox, preserve bookmarks during missing content and expose actionable storage/network errors. Progress uses actual session state and never fabricates statistics.
-- [ ] Run focused suites/typechecks; commit as `feat: add pinned bookmarks and viewed progress`.
+- [x] Write tests for persisted pin, tombstone removal, rapid toggle ordering, failed transaction rollback, newer catalog not replacing pin, missing uncached page preserving bookmark and cross-owner access rejection.
+- [x] Write mobile tests for list/open/remove/retry, historical time context, missing explanation, empty bookmarks, viewed-only progress and Resume. Assert opening a bookmark never creates a session or records views; feature-disabled records remain accessible while new mutations are disabled.
+- [x] Run focused unit/mobile suites; expect absent-service/screens failures.
+- [x] Implement local-first service and screens; show pending state only from durable outbox, preserve bookmarks during missing content and expose actionable storage/network errors. Progress uses actual session state and never fabricates statistics.
+- [x] Run focused suites/typechecks; commit as `feat: add pinned bookmarks and viewed progress`.
 
 ## Task 8: Owner-bound synchronization and cloud DTOs
 
@@ -261,12 +261,12 @@ asserts equal first/second remote revisions. `start`, `wake`, `stop` return void
 recovery state; expose `flush(): Promise<void>` for deterministic tests and manual
 retry, without allowing concurrent flushes.
 
-- [ ] Write tests for restart after successful upload/before local ack, retry duplicate operation, out-of-order sequence, partial manifest, tombstone re-download, simultaneous bookmark CAS conflicts and rebase. Assert conflict retries bounded at three per wake, then remain pending.
-- [ ] Write auth-race tests for switching account during remote transaction/acknowledgement and late listener callbacks. Assert stale owner cannot upload using new credentials or acknowledge another owner's operation; permission failures pause with recovery, network retries preserve local actions.
-- [ ] Run focused suites; expect missing-worker/remote failures.
-- [ ] Implement root preparing -> bounded immutable chunk uploads -> ready publication. Session state transactions compare sequence and ignore stale duplicates; viewed item membership uses stable ordinal documents. Bookmark transactions compare server revision/operation ID; conflicts validate/rebase desired state without dropping newer local operations. Poll/download cloud bookmarks on authenticated startup and successful wake, merge only into rows without newer pending local mutations. Persist retry counts and use exponential 1-second to 60-second backoff; wake on foreground/manual retry. No wall-clock conflict ordering.
-- [ ] Implement worker serialization by record, owner rechecks before every call and acknowledgement, and pending/error status subscription. Detach timers/listeners on stop; repository acknowledgement verifies operation identity and current desired-state sequence.
-- [ ] Run focused suites/typechecks; commit as `feat: synchronize durable study operations safely`.
+- [x] Write tests for restart after successful upload/before local ack, retry duplicate operation, out-of-order sequence, partial manifest, tombstone re-download, simultaneous bookmark CAS conflicts and rebase. Assert conflict retries bounded at three per wake, then remain pending.
+- [x] Write auth-race tests for switching account during remote transaction/acknowledgement and late listener callbacks. Assert stale owner cannot upload using new credentials or acknowledge another owner's operation; permission failures pause with recovery, network retries preserve local actions.
+- [x] Run focused suites; expect missing-worker/remote failures.
+- [x] Implement root preparing -> bounded immutable chunk uploads -> ready publication. Session state transactions compare sequence and ignore stale duplicates; viewed item membership uses stable ordinal documents. Bookmark transactions compare server revision/operation ID; conflicts validate/rebase desired state without dropping newer local operations. Poll/download cloud bookmarks on authenticated startup and successful wake, merge only into rows without newer pending local mutations. Persist retry counts and use exponential 1-second to 60-second backoff; wake on foreground/manual retry. No wall-clock conflict ordering.
+- [x] Implement worker serialization by record, owner rechecks before every call and acknowledgement, and pending/error status subscription. Detach timers/listeners on stop; repository acknowledgement verifies operation identity and current desired-state sequence.
+- [x] Run focused suites/typechecks; commit as `feat: synchronize durable study operations safely`.
 
 ## Task 9: Rules and protected application integration
 
@@ -274,11 +274,11 @@ retry, without allowing concurrent flushes.
 
 **Interfaces:** `composeStudyDependencies(nativeServices, authOwnerSource): Promise<{ content; reviewer; bookmarks; sync; dispose }>` is lazy/recovery-aware. Auth source provides observed UID/epoch, not router params. Preserve existing `startReviewer` intent and compatibility for `stage=availability`, routing it to real study start after gates. Session/open-bookmark params must be validated against owner repository records.
 
-- [ ] Write rules tests for owner create/read/update/query, cross-owner/guest denial, unknown fields, malformed chunk size/ordinal, changed immutable identity/config, ready marker with invalid root fields, sequence regressions, bookmark revision/tombstone transitions and official-content write denial. Rules cannot attest native device identity or full catalog completeness; prove enforceable bounded DTO/transition constraints and leave application validation explicit. Task 8 separately proves that the uploader never publishes ready before all chunks succeed.
-- [ ] Write mobile tests for public Home with never-resolving storage/native services; guest overview/auth prompt/intended return; same-scope resume and replace confirmation; deep-link ownership; maintenance/minimum-version gates versus saved-work access; account switch during loading; feature flag toggles preserving work.
-- [ ] Run mobile tests (red), then rules suites only through Task 1 guarded runner (red for new allowed paths).
-- [ ] Implement exact personal-path rules without recursive wildcard, bounded fields and server timestamps. Ready publication requires each declared bounded chunk to have been uploaded by application protocol; do not claim rules can iterate arbitrary chunk counts. Deny updates to immutable chunks; restrict session-root immutable fields and monotonic sequence. Expose authenticated study dependencies lazily, cancel/dispose on auth loss, and replace only Reviewer/bookmarks/progress placeholders. Preserve Mock Exam/history availability routes.
-- [ ] Run guarded rules/import suites, mobile tests, typechecks and lint; read live catalog head again. Commit as `feat: connect protected reviewer flows and owner-only study rules`.
+- [x] Write rules tests for owner create/read/update/query, cross-owner/guest denial, unknown fields, malformed chunk size/ordinal, changed immutable identity/config, ready marker with invalid root fields, sequence regressions, bookmark revision/tombstone transitions and official-content write denial. Rules cannot attest native device identity or full catalog completeness; prove enforceable bounded DTO/transition constraints and leave application validation explicit. Task 8 separately proves that the uploader never publishes ready before all chunks succeed.
+- [x] Write mobile tests for public Home with never-resolving storage/native services; guest overview/auth prompt/intended return; same-scope resume and replace confirmation; deep-link ownership; maintenance/minimum-version gates versus saved-work access; account switch during loading; feature flag toggles preserving work.
+- [x] Run mobile tests (red), then rules suites only through Task 1 guarded runner (red for new allowed paths).
+- [x] Implement exact personal-path rules without recursive wildcard, bounded fields and server timestamps. Ready publication requires each declared bounded chunk to have been uploaded by application protocol; do not claim rules can iterate arbitrary chunk counts. Deny updates to immutable chunks; restrict session-root immutable fields and monotonic sequence. Expose authenticated study dependencies lazily, cancel/dispose on auth loss, and replace only Reviewer/bookmarks/progress placeholders. Preserve Mock Exam/history availability routes.
+- [x] Run guarded rules/import suites, mobile tests, typechecks and lint; read live catalog head again. Commit as `feat: connect protected reviewer flows and owner-only study rules`.
 
 ## Task 10: Full verification and native acceptance
 
@@ -299,8 +299,11 @@ original PDF hashes are preserved; live catalog head matches the Task 1 snapshot
 Native builds/acceptance remain blocked by repeated approximately 1.0 GiB free
 disk inventory and controller resource ruling. No feature binary, device
 observations, corpus insertion timings or cap-2 upload latency were produced.
-Documentation is committed separately; finishing/integration and whole-branch
-independent review remain open. See
+Documentation was committed at `f75c0e0`; the subsequent whole-branch review
+requires the final fixes and their scoped rereview. Finishing/integration and
+native acceptance remain open. Disk availability improved to about 5.9 GiB on
+2026-10-10; build feasibility will be reassessed after the fixed code is committed
+and reviewed, without deleting owner caches. See
 [the verification record](../../verification/content-reviewer.md) and ignored
 `evidence/content-reviewer/task10/` for evidence and outstanding checks.
 
@@ -314,5 +317,8 @@ Current remote schema lacks approval digests, native device identity is not a
 server trust primitive, and arbitrary complete manifests cannot be proven by
 rules alone: the plan retains these limits without claiming stronger guarantees.
 
-The plan is ready for owner review. Implementation starts after that review,
-using the previously requested subagent and independent-review method.
+Tasks 1–9 completed the approved implementation and independent-review method.
+Whole-branch review at `f75c0e0` found I1/I2 and M1/M2/M3; the single final fix
+wave addresses these with focused regression evidence. Its scoped rereview,
+native acceptance and finishing remain open; automated results do not close
+the native gates.

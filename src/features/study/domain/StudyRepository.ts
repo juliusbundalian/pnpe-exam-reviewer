@@ -26,6 +26,8 @@ export interface StudyRepository {
   /** Never overwrite a pending local desired state. */
   mergeRemoteBookmark(owner: OwnerContext, bookmark: Bookmark): Promise<void>;
   pending(owner: OwnerContext, now: number): Promise<readonly StudyOperation[]>;
+  /** Membership from successfully acknowledged state snapshots only. */
+  acknowledgedViews(owner: OwnerContext, sessionId: string): Promise<readonly number[]>;
   acknowledge(owner: OwnerContext, operationId: string, remoteRevision?: number): Promise<void>;
   /** Preserve queued desired state while advancing its compare-and-set base. */
   rebaseBookmark(owner: OwnerContext, operationId: string, remoteRevision: number): Promise<void>;

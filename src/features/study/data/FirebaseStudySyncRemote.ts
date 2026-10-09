@@ -220,6 +220,7 @@ export class FirebaseStudySyncRemote implements StudySyncRemote {
     owner: OwnerContext,
     value: ReviewerSession,
     operationId: string,
+    pendingViewedOrdinals?: readonly number[],
   ): Promise<void> {
     return this.access(owner, async () => {
       const session = this.session(owner, value);
@@ -243,8 +244,47 @@ export class FirebaseStudySyncRemote implements StudySyncRemote {
         if (!root.ready || canonicalJson(immutableRoot(root)) !== canonicalJson(frozen))
           throw new StudyError('invalid-content');
       };
-      // Stable membership documents keep large sessions out of a single state payload.
-      for (const ordinal of session.viewedOrdinals)
+      const pending = pendingViewedOrdinals ?? session.viewedOrdinals;
+      if (
+        !Array.isArray(pending) ||
+        new Set(pending).size !== pending.length ||
+        pending.some(
+          (ordinal) => !Number.isSafeInteger(ordinal) || !session.viewedOrdinals.includes(ordinal),
+        )
+      )
+        throw new StudyError('invalid-content');
+      const updateRoot = (tx: StudyCloudTransaction, existing: CloudSessionRoot) => {
+        if (session.viewedOrdinals.length < existing.viewedCount)
+          throw new StudyError('invalid-content');
+        tx.set(
+          path,
+          parse(CloudSessionRootSchema, {
+            ...existing,
+            sequence: session.sequence,
+            position: session.position,
+            status: session.status,
+            viewedCount: session.viewedOrdinals.length,
+            lastOperationId: operationId,
+            writtenAt: 0,
+          }),
+        );
+      };
+      // Reject stale/equal replays before visiting membership. Position-only work
+      // finishes here; new membership must commit before advancing the root.
+      const finished = await this.transaction(owner, async (tx) => {
+        const root = parse(CloudSessionRootSchema, await tx.get(path));
+        checkRoot(root);
+        if (session.sequence <= root.sequence) return true;
+        if (!pending.length) {
+          updateRoot(tx, root);
+          return true;
+        }
+        return false;
+      });
+      if (finished) return;
+      // Deltas come only from durable completed-operation acknowledgements.
+      // A partial failure leaves them unacknowledged and safe to replay.
+      for (const ordinal of pending)
         await this.transaction(owner, async (tx) => {
           const raw = await tx.get(path);
           const root = parse(CloudSessionRootSchema, raw);
@@ -278,20 +318,7 @@ export class FirebaseStudySyncRemote implements StudySyncRemote {
         const existing = parse(CloudSessionRootSchema, await tx.get(path));
         checkRoot(existing);
         if (session.sequence <= existing.sequence) return;
-        if (session.viewedOrdinals.length < existing.viewedCount)
-          throw new StudyError('invalid-content');
-        tx.set(
-          path,
-          parse(CloudSessionRootSchema, {
-            ...existing,
-            sequence: session.sequence,
-            position: session.position,
-            status: session.status,
-            viewedCount: session.viewedOrdinals.length,
-            lastOperationId: operationId,
-            writtenAt: 0,
-          }),
-        );
+        updateRoot(tx, existing);
       });
     });
   }

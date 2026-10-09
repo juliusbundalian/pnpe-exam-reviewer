@@ -10,6 +10,7 @@ export function useReviewerBookmark(study: StudyDependencies) {
     key: '',
     request: 0,
     status: 'loading' as ReviewerBookmarkState,
+    saved: false,
   });
   const [state, setState] = useState({
     key: '',
@@ -45,6 +46,7 @@ export function useReviewerBookmark(study: StudyDependencies) {
     error: StudyError | null = null,
   ) => {
     current.current.status = status;
+    current.current.saved = saved;
     setState({ key, status, saved, error });
   };
   const lookup = useCallback(
@@ -98,8 +100,9 @@ export function useReviewerBookmark(study: StudyDependencies) {
     )
       return;
     const request = ++current.current.request;
+    const desiredSaved = !current.current.saved;
     publish(target.key, 'saving');
-    void study.bookmarks.toggle(study.owner, target.entry).then(
+    void study.bookmarks.setSaved(study.owner, target.entry, desiredSaved).then(
       (bookmark) => {
         if (applies(target.key, request)) publish(target.key, 'ready', !bookmark.deleted);
       },

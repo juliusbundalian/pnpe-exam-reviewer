@@ -1,12 +1,13 @@
 # Content Reviewer verification
 
-Recorded 2026-10-09 on `feat/content-reviewer`, implementation checkpoint
-`a4632300f5ea88770046db9a2c919ac760e11ced`, approved branch base
+Updated 2026-10-10 on `feat/content-reviewer`, final fix wave based on
+`f75c0e065a2c71f4d1a0f3a0dd5b1d8e9fff003e`, approved branch base
 `6309fa82734a4752ee53eb59ff385d478e23a707`.
 
-Status: **partially verified; native acceptance blocked**. Tasks 1–9 received
-independent scoped review. Fresh automated checks below pass; they do not prove
-Android/iOS behavior. Task 10 and whole-branch independent review remain open.
+Status: **partially verified; native acceptance outstanding**. Tasks 1–9 received
+independent scoped review. Whole-branch review at `f75c0e0` required I1/I2 and
+M1/M2/M3; their final fix checkpoint is below, with scoped rereview pending.
+Automated checks do not prove Android/iOS behavior. Task 10 remains open.
 No release, merge, push, deployment or store upload was performed.
 
 ## Implemented behavior
@@ -27,7 +28,7 @@ Saved work remains readable under start/feature gates. Mock Exam, results and
 history are the next separately approved slice; their defaults remain 150
 questions, 180 minutes and category quotas 35/40/25/50.
 
-## Fresh automated evidence
+## Earlier automated checkpoint (2026-10-09)
 
 Commands ran in the feature worktree with Node 24.3.0. Raw logs remain ignored
 under `evidence/content-reviewer/task10/`; they are local review artifacts, not
@@ -149,15 +150,80 @@ manifest therefore needs 138 immutable chunk documents plus root publication
 and later state/view documents. This increases upload operations without
 limiting questions; measured native latency remains a gate.
 
-Task 5's deferred prefetch scheduling edge remains for whole-branch review:
-after an account/epoch change with both old requests outstanding, completion of
-those requests may leave the new speculative window idle until another
-successful foreground page load. Visible retrieval, durable state and the
-two-request bound have scoped review/test coverage; no unsolicited runtime fix
-was made in this documentation task. The earlier migration rollback concern was
-resolved with an actual successful DDL mutation followed by rollback coverage.
+Whole-branch review is controller-owned. The final fixes below require scoped
+rereview; native acceptance and performance measurements remain open before
+finishing/integration. The worktree, SDD ledger and ignored evidence are preserved
+for continuation.
 
-Whole-branch independent review is controller-owned and remains outstanding.
-Native acceptance, performance measurements and any resulting focused fixes
-must be reviewed before finishing/integration. The worktree, SDD ledger and
-ignored evidence are preserved for continuation.
+## Final fix checkpoint (2026-10-10)
+
+This is the continuation of one fix wave after a server restart, based on the
+whole-branch review at `f75c0e0`. Earlier logs remain intact. Local evidence is
+under `evidence/content-reviewer/final-fix/`.
+
+- I1: SQLite v3 stores acknowledged viewed membership. The worker subtracts only
+  durable successful-operation acknowledgements from each validated snapshot.
+  Acknowledgement unions that exact operation's viewed set and deletes its outbox
+  row in one guarded transaction. Inserts cover only new membership. Version-two
+  records upgrade without clearing sessions/outbox; their empty acknowledgement
+  set permits one safe catchup. The remote rejects stale/equal sequences before
+  membership reads, checks owner/root/manifest for each new member, and advances
+  the root only after all membership commits. Remote DTOs and rules are unchanged.
+- I2: Bookmarks and Reviewer use explicit displayed Add/Remove intent. A background
+  tombstone or addition cannot invert that action. Pinned revision, live gate and
+  atomic outbox behavior are retained and covered by real SQLite/worker/remote
+  and route regressions.
+- M1: manual Bookmarks Refresh wakes and awaits the captured owner's sync worker,
+  then reloads local rows. Offline refresh keeps local access usable; permission
+  errors show safe retry, and stale-owner completion cannot merge personal data.
+- M2: plan Tasks 1–9 now reflect their completed ledger state; native acceptance,
+  final rereview and finishing remain open.
+- M3: released old-owner prefetch slots resume the current valid window. The
+  two-outstanding-request bound and rejection of old results remain covered.
+
+The deterministic 276-item online read-through runs the actual worker, real Node
+SQLite repository and actual remote adapter against an in-memory SDK boundary.
+State traffic falls from **76,727 transactions / 229,079 document gets** in the
+saved failing regression to **1,103 transactions / 1,655 document gets**, with
+827 writes unchanged. First publication remains 140 transactions/gets/writes
+(138 chunks plus preparing/ready root writes). SQLite acknowledgement inserts
+are exactly 276. Position-only updates use one root transaction; stale/equal
+replay uses one root read. These are protocol call counts, not measured native
+latency, billed Firestore reads or whole-app traffic; bookmark polling is outside
+these session-state counters. Full snapshot storage and local acknowledgement
+scans still require native measurement.
+
+Recovery coverage includes partial membership commit before root advancement,
+lost local acknowledgement, durable restart, exact-operation union, transaction
+rollback, owner change after upload and immediately before SQL commit, legacy v2
+catchup, publication/state ordering and stale replay. The corrected M1 RED uses
+the composition owner UID; the earlier RED used an incorrect fixture UID and is
+retained as a test setup failure. An additional initial recovery test run lacked
+a StudyError import; the corrected covering run passes. Neither setup failure is
+claimed as evidence of the product bug.
+
+Fresh full unit/mobile and static results are recorded below. Unchanged cloud
+rules, dependency versions and emulator infrastructure did not warrant repeating
+the earlier 72-test guarded emulator run or online Expo check. No emulator, live
+backend, native build, device, credential or user cache operation was performed
+in this fix wave. All 33 tracked preservation paths were rehashed and match the
+prior baseline (`preservation.json`). Original-PDF/live-head checks above remain
+historical evidence and were not rerun.
+
+| Command                                                     | Observed result                        | Final-fix log               |
+| ----------------------------------------------------------- | -------------------------------------- | --------------------------- |
+| `npm run test:unit`                                         | Exit 0; 35 suites, 567 tests; 58.499 s | `test-unit.log`             |
+| `npm run test:mobile`                                       | Exit 0; 20 suites, 229 tests; 16.835 s | `test-mobile.log`           |
+| `npm run typecheck`                                         | Exit 0; tools/mobile, no diagnostics   | `typecheck.log`             |
+| `npm run lint`                                              | Exit 0; no diagnostics                 | `lint.log`                  |
+| `npm run format:check`                                      | Exit 0; all matched files formatted    | `format-check.log`          |
+| Explicit Prettier check of the plan and verification record | Exit 0                                 | `document-format-check.log` |
+| `git diff --check`                                          | Exit 0                                 | `diff-check.log`            |
+
+Node SQLite's ExperimentalWarning remains disclosed in unit/mobile output.
+
+The earlier approximately 1 GiB resource boundary is historical. Recovery
+inventory reported about 5.9 GiB free on 2026-10-10; build feasibility must be
+reassessed after the fixed code is committed and reviewed. No feature binary or
+native/performance pass is claimed. All native rows above remain outstanding,
+and the owner's TalkBack/VoiceOver deferral remains in effect.

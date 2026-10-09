@@ -337,3 +337,35 @@ test('bookmark lookup rejection keeps question readable and retries uncertain st
   expect(await screen.findByRole('button', { name: 'Bookmark' })).toBeEnabled();
   expect(screen.queryByRole('button', { name: 'Retry bookmark' })).toBeNull();
 });
+
+test.each([false, true])(
+  'displayed Reviewer bookmark intent survives background merge (initial saved %s)',
+  async (initiallySaved) => {
+    const { h, factory } = prepared();
+    const study = await seed(h, factory);
+    await study.repository.mergeRemoteBookmark(
+      study.owner,
+      studyBookmark({ uid: study.owner.uid, deleted: !initiallySaved, serverRevision: 1 }),
+    );
+    await h.render('/review?stage=session&sessionId=device_saved');
+    await screen.findByText('Correct answer');
+    const action = await screen.findByRole('button', {
+      name: initiallySaved ? 'Remove bookmark' : 'Bookmark',
+    });
+    await study.repository.mergeRemoteBookmark(
+      study.owner,
+      studyBookmark({ uid: study.owner.uid, deleted: initiallySaved, serverRevision: 2 }),
+    );
+    fireEvent.press(action);
+    await waitFor(async () =>
+      expect(
+        (await study.repository.pending(study.owner, Number.MAX_SAFE_INTEGER)).filter(
+          (op) => op.kind === 'bookmarkState',
+        ),
+      ).toHaveLength(1),
+    );
+    expect(await study.repository.listBookmarks(study.owner)).toEqual([
+      expect.objectContaining({ deleted: initiallySaved }),
+    ]);
+  },
+);

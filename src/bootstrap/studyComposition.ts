@@ -3,7 +3,12 @@ import type { NativeServices } from '../core/firebase/native';
 import { systemClock } from '../core/clock/Clock';
 import type { ContentRepository } from '../features/content/domain/ContentRepository';
 import type { StudyRepository } from '../features/study/domain/StudyRepository';
-import { StudyError, type OwnerContext, type OwnerGuard } from '../features/study/domain/study';
+import {
+  StudyError,
+  type OwnerContext,
+  type OwnerGuard,
+  type StudyErrorCode,
+} from '../features/study/domain/study';
 import type { ReviewerService } from '../features/reviewer/application/ReviewerService';
 import type { ReviewerController } from '../features/reviewer/application/ReviewerController';
 import type { BookmarkService } from '../features/bookmarks/application/BookmarkService';
@@ -117,6 +122,7 @@ export async function composeStudyDependencies(
         flushAfter(durable.setBookmark(o, entry, deleted, check)),
       mergeRemoteBookmark: (o, bookmark) => durable.mergeRemoteBookmark(o, bookmark),
       pending: (o, now) => durable.pending(o, now),
+      acknowledgedViews: (o, id) => durable.acknowledgedViews(o, id),
       acknowledge: (o, id, revision) => durable.acknowledge(o, id, revision),
       rebaseBookmark: (o, id, revision) => durable.rebaseBookmark(o, id, revision),
       retry: (o, id, deadline) => durable.retry(o, id, deadline),
@@ -130,8 +136,23 @@ export async function composeStudyDependencies(
       guard,
     );
     const controller = new ReviewerController(reviewer, content, repository, guard);
-    const bookmarks = new BookmarkService(repository, content, guard, () =>
-      authOwnerSource.bookmarksEnabled(),
+    const bookmarks = new BookmarkService(
+      repository,
+      content,
+      guard,
+      () => authOwnerSource.bookmarksEnabled(),
+      async () => {
+        if (!guard.isCurrent(owner)) throw new StudyError('auth-required');
+        sync.wake();
+        await sync.flush();
+        if (!guard.isCurrent(owner)) throw new StudyError('auth-required');
+        let recovery: StudyErrorCode | null = null;
+        sync.subscribe((status) => {
+          recovery = status.recovery;
+        })();
+        // Offline refresh still exposes durable local records; other failures need recovery.
+        if (recovery && recovery !== 'network') throw new StudyError(recovery);
+      },
     );
     if (!guard.isCurrent(owner)) throw new StudyError('auth-required');
     sync.start(owner);

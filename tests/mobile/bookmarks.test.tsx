@@ -58,6 +58,7 @@ function harness({ empty = false, historical = false, explanation = true } = {})
       return bookmark;
     },
     pending: async () => operations,
+    acknowledgedViews: unused,
     acknowledge: unused,
     retry: unused,
     mergeRemoteBookmark: unused,
@@ -116,6 +117,9 @@ function harness({ empty = false, historical = false, explanation = true } = {})
   return {
     service,
     saved: () => saved,
+    mergeTombstone: () => {
+      saved = saved.map((row) => ({ ...row, deleted: true, serverRevision: 2 }));
+    },
     operations: () => operations,
     delay: (promise: Promise<void>) => {
       delayed = promise;
@@ -323,4 +327,16 @@ test('late bookmark content cannot reappear after owner change', async () => {
   await act(async () => release());
   expect(screen.queryByText('Correct answer')).toBeNull();
   expect(screen.queryByRole('button', { name: 'Open fixture-grammar' })).toBeNull();
+});
+
+test('displayed Remove retains its desired state after background tombstone merge', async () => {
+  const h = harness();
+  show(h);
+  await screen.findByRole('button', { name: 'Remove fixture-grammar' });
+  h.mergeTombstone();
+  fireEvent.press(screen.getByRole('button', { name: 'Remove fixture-grammar' }));
+  await waitFor(() => expect(h.operations()).toHaveLength(1));
+  expect(h.saved()[0]?.deleted).toBe(true);
+  expect(h.operations()[0]).toMatchObject({ bookmark: { deleted: true } });
+  await screen.findByText('No bookmarks yet.');
 });

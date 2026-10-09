@@ -346,3 +346,40 @@ test('epoch change immediately before SQL move commit rolls back position and ou
   expect((await h.study.active(alice))?.position).toBe(0);
   expect(await h.study.pending(alice, 1000)).toHaveLength(1);
 });
+
+test('two old-owner prefetch releases resume current window without exceeding two requests', async () => {
+  const old = [deferred<Question>(), deferred<Question>()];
+  const fresh = [deferred<Question>(), deferred<Question>()];
+  const current = { ...alice, epoch: 2 };
+  let outstanding = 0,
+    maximum = 0;
+  const requests: string[] = [];
+  jest.mocked(h.content.question).mockImplementation(async (candidate, entry) => {
+    if (entry.id === 'question-0') return studyQuestion({ id: entry.id });
+    const index = Number(entry.id.slice(-1)) - 1;
+    requests.push(`${candidate.epoch}:${entry.id}`);
+    maximum = Math.max(maximum, ++outstanding);
+    try {
+      return await (candidate.epoch === alice.epoch ? old : fresh)[index]!.promise;
+    } finally {
+      outstanding--;
+    }
+  });
+  await controller.open(alice, id);
+  h.switchOwner(current);
+  await controller.open(current, id);
+  const visible = controller.snapshot();
+  expect(requests).toEqual(['1:question-1', '1:question-2']);
+  old[0]!.resolve(studyQuestion({ id: 'question-1' }));
+  await flush();
+  expect(requests).toEqual(['1:question-1', '1:question-2', '2:question-1']);
+  old[1]!.resolve(studyQuestion({ id: 'question-2' }));
+  await flush();
+  expect(requests).toEqual(['1:question-1', '1:question-2', '2:question-1', '2:question-2']);
+  fresh[0]!.resolve(studyQuestion({ id: 'question-1' }));
+  fresh[1]!.resolve(studyQuestion({ id: 'question-2' }));
+  await flush();
+  expect(maximum).toBe(2);
+  expect(controller.snapshot()).toEqual(visible);
+  expect((await h.study.active(current))?.viewedOrdinals).toEqual([]);
+});

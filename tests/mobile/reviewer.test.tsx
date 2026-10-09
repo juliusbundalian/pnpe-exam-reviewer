@@ -86,6 +86,7 @@ async function harness({
     setBookmark: unused,
     mergeRemoteBookmark: unused,
     pending: unused,
+    acknowledgedViews: unused,
     acknowledge: unused,
     rebaseBookmark: unused,
     retry: unused,

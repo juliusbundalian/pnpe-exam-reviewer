@@ -279,3 +279,47 @@ test('personal cloud metadata validates supported baseline then rejects unsuppor
   ])
     expect(CloudBookmarkSchema.safeParse({ ...valid, entry }).success).toBe(false);
 });
+
+test('explicit deltas reject foreign ordinals and stale full replay exits after one root read', async () => {
+  const cloud = backend();
+  let transactions = 0,
+    reads = 0;
+  const remote = new FirebaseStudySyncRemote(
+    {
+      ...cloud.sdk,
+      transaction: (check, action) => {
+        transactions++;
+        return cloud.sdk.transaction(check, (tx) =>
+          action({
+            ...tx,
+            get: (path) => {
+              reads++;
+              return tx.get(path);
+            },
+          }),
+        );
+      },
+    },
+    { isCurrent: () => true },
+  );
+  await remote.publishSession(owner, studySession(), 'publish');
+  const viewed = studySession({ sequence: 1, viewedOrdinals: [1] });
+  await expect(remote.writeSessionState(owner, viewed, 'invalid', [0])).rejects.toMatchObject({
+    code: 'invalid-content',
+  });
+  await expect(remote.writeSessionState(owner, viewed, 'duplicate', [1, 1])).rejects.toMatchObject({
+    code: 'invalid-content',
+  });
+  await remote.writeSessionState(owner, viewed, 'valid', [1]);
+  const writes = cloud.writes.length;
+  transactions = 0;
+  reads = 0;
+  await remote.writeSessionState(
+    owner,
+    studySession({ sequence: 1, viewedOrdinals: [0] }),
+    'stale',
+  );
+  expect({ transactions, reads }).toEqual({ transactions: 1, reads: 1 });
+  expect(cloud.writes).toHaveLength(writes);
+  expect(cloud.documents.has(`${root}/items/0`)).toBe(false);
+});

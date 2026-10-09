@@ -350,6 +350,17 @@ export class SqliteStudyRepository implements StudyRepository {
         });
     }
   }
+  acknowledgedViews(owner: OwnerContext, sessionId: string): Promise<readonly number[]> {
+    input(GeneratedIdSchema, sessionId);
+    return this.access(owner, async (tx) =>
+      (
+        await tx.all(
+          'SELECT ordinal FROM reviewer_view_acknowledgements WHERE uid = ? AND device_id = ? AND session_id = ? ORDER BY ordinal',
+          [...ownerKeys(owner), sessionId],
+        )
+      ).map((row) => integer(row.ordinal)),
+    );
+  }
   async acknowledge(
     owner: OwnerContext,
     operationId: string,
@@ -360,6 +371,23 @@ export class SqliteStudyRepository implements StudyRepository {
     await this.access(owner, async (tx) => {
       const operation = (await readOperations(tx, owner)).find((op) => op.id === operationId);
       if (!operation) return;
+      if (operation.kind === 'sessionState') {
+        const acknowledged = new Set(
+          (
+            await tx.all(
+              'SELECT ordinal FROM reviewer_view_acknowledgements WHERE uid = ? AND device_id = ? AND session_id = ?',
+              [...ownerKeys(owner), operation.recordId],
+            )
+          ).map((row) => integer(row.ordinal)),
+        );
+        for (const ordinal of operation.state.viewedOrdinals.filter(
+          (value) => !acknowledged.has(value),
+        ))
+          await tx.run(
+            'INSERT OR IGNORE INTO reviewer_view_acknowledgements (uid, device_id, session_id, ordinal) VALUES (?, ?, ?, ?)',
+            [...ownerKeys(owner), operation.recordId, ordinal],
+          );
+      }
       if (operation.kind === 'bookmarkState') {
         if (remoteRevision === undefined) throw new StudyError('invalid-content');
         await this.advanceBookmark(tx, owner, operation, remoteRevision);

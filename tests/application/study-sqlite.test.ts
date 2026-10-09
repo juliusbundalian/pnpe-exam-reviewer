@@ -317,6 +317,7 @@ test('version-one legacy session migration retains manifest position views and p
     JSON.stringify(raw),
     String(row.operation_id),
   ]);
+  await db.run('DROP TABLE reviewer_view_acknowledgements');
   await db.run('ALTER TABLE reviewer_sessions DROP COLUMN catalog_validated_at');
   await db.run('PRAGMA user_version = 1');
   await db.close();
@@ -341,6 +342,7 @@ test('version-one legacy session migration retains manifest position views and p
 
 test('version-two migration failure after adding a column rolls back without clearing legacy records', async () => {
   await repository.replaceActive(alice, studySession());
+  await db.run('DROP TABLE reviewer_view_acknowledgements');
   await db.run('ALTER TABLE reviewer_sessions DROP COLUMN catalog_validated_at');
   await db.run('PRAGMA user_version = 1');
   const failing: SqlDatabase = {
@@ -392,4 +394,88 @@ test('known catalog validation time survives reopen and cannot change under the 
     kind: 'publishSession',
     session: { catalogValidatedAt: 75 },
   });
+});
+
+test('v2 upgrade preserves sessions, views and pending operations with safe empty acknowledgements', async () => {
+  await repository.replaceActive(alice, studySession());
+  await repository.recordView(alice, studySession().id, 1);
+  const before = await repository.active(alice);
+  const pending = await repository.pending(alice, 200);
+  await db.run('DROP TABLE reviewer_view_acknowledgements');
+  await db.run('PRAGMA user_version = 2');
+  const failing: SqlDatabase = {
+    ...db,
+    exclusive: (work, guard) =>
+      db.exclusive(
+        (tx) =>
+          work({
+            ...tx,
+            run: async (sql, params) => {
+              if (sql === 'PRAGMA user_version = 3') throw new Error('after successful CREATE');
+              return tx.run(sql, params);
+            },
+          }),
+        guard,
+      ),
+  };
+  await expect(migrateStudyDatabase(failing)).rejects.toMatchObject({
+    code: 'storage-unavailable',
+  });
+  expect(await db.all('PRAGMA user_version')).toEqual([{ user_version: 2 }]);
+  expect(
+    await db.all("SELECT name FROM sqlite_master WHERE name = 'reviewer_view_acknowledgements'"),
+  ).toEqual([]);
+  await migrateStudyDatabase(db);
+  expect(await repository.active(alice)).toEqual(before);
+  expect(await repository.pending(alice, 200)).toEqual(pending);
+  expect(await repository.acknowledgedViews(alice, studySession().id)).toEqual([]);
+});
+
+test('state acknowledgement is exact, atomic, durable and owner guarded', async () => {
+  await repository.replaceActive(alice, studySession());
+  await repository.recordView(alice, studySession().id, 1);
+  const first = (await repository.pending(alice, 200))[1]!;
+  await repository.recordView(alice, studySession().id, 0);
+  await db.run(
+    "CREATE TRIGGER fail_ack BEFORE DELETE ON study_outbox BEGIN SELECT RAISE(ABORT, 'forced'); END",
+  );
+  await expect(repository.acknowledge(alice, first.id)).rejects.toMatchObject({
+    code: 'storage-unavailable',
+  });
+  expect(await repository.acknowledgedViews(alice, studySession().id)).toEqual([]);
+  expect(await repository.pending(alice, 200)).toHaveLength(3);
+  await db.run('DROP TRIGGER fail_ack');
+  await repository.acknowledge(alice, first.id);
+  await db.close();
+  db = nodeSqlDatabase(join(dir, 'study.db'));
+  repository = repo(db);
+  expect(await repository.acknowledgedViews(alice, studySession().id)).toEqual([1]);
+  current = { ...alice, uid: 'bob', epoch: 2 };
+  expect(await repository.acknowledgedViews(current, studySession().id)).toEqual([]);
+  await expect(repository.acknowledgedViews(alice, studySession().id)).rejects.toMatchObject({
+    code: 'auth-required',
+  });
+  current = alice;
+  await db.run('DELETE FROM reviewer_sessions WHERE uid = ?', [alice.uid]);
+  expect(await repository.acknowledgedViews(alice, studySession().id)).toEqual([]);
+});
+
+test('owner switch at state acknowledgement commit rolls back membership and operation together', async () => {
+  await repository.replaceActive(alice, studySession());
+  await repository.recordView(alice, studySession().id, 1);
+  const before = await repository.pending(alice, 200);
+  const wrapped: SqlDatabase = {
+    ...db,
+    exclusive: (work, beforeCommit) =>
+      db.exclusive(work, () => {
+        current = bob;
+        beforeCommit?.();
+      }),
+  };
+  await expect(repo(wrapped).acknowledge(alice, before[1]!.id)).rejects.toMatchObject({
+    code: 'auth-required',
+  });
+  current = alice;
+  expect(await repository.acknowledgedViews(alice, studySession().id)).toEqual([]);
+  expect(await repository.pending(alice, 200)).toEqual(before);
 });

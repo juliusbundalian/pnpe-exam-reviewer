@@ -19,10 +19,16 @@ export class BookmarkService {
     private readonly content: ContentRepository,
     private readonly guard: OwnerGuard,
     private readonly mutationAllowed: () => boolean = () => true,
+    private readonly refreshRemote: () => Promise<void> = async () => {},
   ) {}
   private check(owner: OwnerContext) {
     if (!OwnerContextSchema.safeParse(owner).success || !this.guard.isCurrent(owner))
       throw new StudyError('auth-required');
+  }
+  async refresh(owner: OwnerContext): Promise<void> {
+    this.check(owner);
+    await this.refreshRemote();
+    this.check(owner);
   }
   async list(owner: OwnerContext): Promise<readonly Bookmark[]> {
     this.check(owner);
@@ -40,6 +46,13 @@ export class BookmarkService {
     ];
   }
   toggle(owner: OwnerContext, entry: CatalogEntry): Promise<Bookmark> {
+    return this.change(owner, entry);
+  }
+  /** Persist the displayed intent even if background sync changed the row. */
+  setSaved(owner: OwnerContext, entry: CatalogEntry, saved: boolean): Promise<Bookmark> {
+    return this.change(owner, entry, !saved);
+  }
+  private change(owner: OwnerContext, entry: CatalogEntry, deleted?: boolean): Promise<Bookmark> {
     const next = this.queue.then(async () => {
       this.check(owner);
       if (!this.mutationAllowed()) throw new StudyError('permission-denied');
@@ -53,7 +66,7 @@ export class BookmarkService {
       const bookmark = await this.study.setBookmark(
         owner,
         previous?.entry ?? parsed.data,
-        previous ? !previous.deleted : false,
+        deleted ?? (previous ? !previous.deleted : false),
         () => {
           if (!this.mutationAllowed()) throw new StudyError('permission-denied');
         },

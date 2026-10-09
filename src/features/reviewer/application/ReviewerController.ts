@@ -215,7 +215,7 @@ export class ReviewerController {
         })
         .finally(() => {
           this.prefetching--;
-          this.prefetch(owner);
+          if (this.owner) this.prefetch(this.owner);
         });
     }
   }

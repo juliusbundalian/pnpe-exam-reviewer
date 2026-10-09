@@ -104,7 +104,10 @@ export function BookmarksScreen({
     return { rows, pending };
   };
   const refresh = () => {
-    void run(records, refresh);
+    void run(async () => {
+      await service.refresh(owner);
+      return records();
+    }, refresh);
   };
   const open = (id: string) => {
     void run(
@@ -118,7 +121,7 @@ export function BookmarksScreen({
     let committed = false;
     void run(
       async () => {
-        await service.toggle(owner, bookmark.entry);
+        await service.setSaved(owner, bookmark.entry, false);
         committed = true;
         return { ...(await records()), question: null };
       },
@@ -139,7 +142,7 @@ export function BookmarksScreen({
         () => open(initialQuestionId),
         true,
       );
-    } else refresh();
+    } else void run(records, refresh);
     return () => {
       current.current.mounted = false;
       ++current.current.generation;

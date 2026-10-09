@@ -16,6 +16,10 @@ import {
 import type { StudySyncRemote } from '../../src/features/study/domain/StudySyncRemote';
 import type { SqlDatabase } from '../../src/core/storage/sqlite/SqlDatabase';
 import { owner as alice, studyEntry, studyBookmark, studySession } from '../fixtures/study';
+import {
+  FirebaseStudySyncRemote,
+  type StudySyncSdk,
+} from '../../src/features/study/data/FirebaseStudySyncRemote';
 import { studyCloudBackend } from '../fixtures/studyCloudSdk';
 
 let dir: string,
@@ -528,4 +532,169 @@ test('ordinary flush during final pending await drains new due work and preserve
   expect(uploaded).toEqual(['fixture-grammar']);
   expect(await study.pending(alice, now)).toEqual([]);
   expect(await study.pending(alice, Number.MAX_SAFE_INTEGER)).toEqual(delayedPending);
+});
+
+test('276 online views and moves use bounded incremental session transactions', async () => {
+  const cloud = studyCloudBackend(guard);
+  let transactions = 0,
+    reads = 0,
+    acknowledgedInserts = 0;
+  const exclusive = db.exclusive.bind(db);
+  jest.spyOn(db, 'exclusive').mockImplementation((work, check) =>
+    exclusive(
+      (tx) =>
+        work({
+          ...tx,
+          run: (sql, params) => {
+            if (sql.startsWith('INSERT OR IGNORE INTO reviewer_view_acknowledgements'))
+              acknowledgedInserts++;
+            return tx.run(sql, params);
+          },
+        }),
+      check,
+    ),
+  );
+  const sdk: StudySyncSdk = {
+    ...cloud.sdk,
+    transaction: (check, action) => {
+      transactions++;
+      return cloud.sdk.transaction(check, (tx) =>
+        action({
+          ...tx,
+          get: (path) => {
+            reads++;
+            return tx.get(path);
+          },
+        }),
+      );
+    },
+  };
+  const session = studySession({
+    items: Array.from({ length: 276 }, (_, ordinal) => ({
+      ordinal,
+      entry: studyEntry({ id: `q-${ordinal}` }),
+    })),
+  });
+  await study.replaceActive(alice, session);
+  create(new FirebaseStudySyncRemote(sdk, guard));
+  await worker.flush();
+  expect({ transactions, reads, writes: cloud.writes.length }).toEqual({
+    transactions: 140,
+    reads: 140,
+    writes: 140,
+  });
+  transactions = 0;
+  reads = 0;
+  for (let ordinal = 0; ordinal < 276; ordinal++) {
+    if (ordinal) {
+      await study.move(alice, session.id, ordinal);
+      await worker.flush();
+    }
+    await study.recordView(alice, session.id, ordinal);
+    await worker.flush();
+  }
+  expect({ transactions, reads, writes: cloud.writes.length - 140 }).toEqual({
+    transactions: 1103,
+    reads: 1655,
+    writes: 827,
+  });
+  expect(acknowledgedInserts).toBe(276);
+  expect(cloud.documents.get(`users/${alice.uid}/reviewerSessions/${session.id}`)).toMatchObject({
+    sequence: 551,
+    viewedCount: 276,
+    status: 'completed',
+  });
+  expect(await study.pending(alice, now)).toEqual([]);
+}, 60000);
+
+test.each(['partial-membership', 'lost-local-ack'] as const)(
+  'session %s restart safely replays before later state',
+  async (failure) => {
+    const cloud = studyCloudBackend(guard);
+    const path = `users/${alice.uid}/reviewerSessions/${studySession().id}`;
+    await study.replaceActive(alice, studySession());
+    create(cloud.remote);
+    await worker.flush();
+    worker.stop();
+    await study.recordView(alice, studySession().id, 1);
+    await study.recordView(alice, studySession().id, 0);
+    if (failure === 'partial-membership') {
+      cloud.setBeforeCommit(() => {
+        if (cloud.documents.has(`${path}/items/1`)) throw new StudyError('network');
+      });
+    } else {
+      study.acknowledge = async () => {
+        throw new StudyError('storage-unavailable');
+      };
+    }
+    create(cloud.remote);
+    await worker.flush();
+    expect(cloud.documents.has(`${path}/items/1`)).toBe(true);
+    expect(cloud.documents.get(path)).toMatchObject({
+      sequence: failure === 'partial-membership' ? 0 : 1,
+    });
+    expect(await study.acknowledgedViews(alice, studySession().id)).toEqual([]);
+    expect(await study.pending(alice, Number.MAX_SAFE_INTEGER)).toHaveLength(2);
+    worker.stop();
+    await db.close();
+    db = nodeSqlDatabase(join(dir, 'study.db'));
+    study = new SqliteStudyRepository(db, clock, { nextId: () => `op-${++id}` }, guard);
+    cloud.setBeforeCommit(() => {});
+    create(cloud.remote);
+    worker.wake();
+    await worker.flush();
+    expect(await study.pending(alice, Number.MAX_SAFE_INTEGER)).toEqual([]);
+    expect(await study.acknowledgedViews(alice, studySession().id)).toEqual([0, 1]);
+    expect(cloud.documents.get(path)).toMatchObject({
+      sequence: 2,
+      viewedCount: 2,
+      status: 'completed',
+    });
+    expect(cloud.writes.filter((value) => value === `${path}/items/1`)).toHaveLength(1);
+  },
+);
+
+test('legacy v2 empty acknowledgement catches up once and later position sends no viewed delta', async () => {
+  const cloud = studyCloudBackend(guard);
+  await study.replaceActive(alice, studySession());
+  await study.recordView(alice, studySession().id, 0);
+  create(cloud.remote);
+  await worker.flush();
+  worker.stop();
+  await db.run('DROP TABLE reviewer_view_acknowledgements');
+  await db.run('PRAGMA user_version = 2');
+  await migrateStudyDatabase(db);
+  await study.move(alice, studySession().id, 1);
+  const deltas: (readonly number[] | undefined)[] = [];
+  const upload = cloud.remote.writeSessionState.bind(cloud.remote);
+  cloud.remote.writeSessionState = async (...args) => {
+    deltas.push(args[3]);
+    return upload(...args);
+  };
+  create(cloud.remote);
+  await worker.flush();
+  await study.move(alice, studySession().id, 0);
+  await worker.flush();
+  expect(deltas).toEqual([[0], []]);
+  expect(cloud.writes.filter((path) => path.endsWith('/items/0'))).toHaveLength(1);
+  expect(await study.acknowledgedViews(alice, studySession().id)).toEqual([0]);
+});
+
+test('owner switch after session upload cannot acknowledge its viewed delta', async () => {
+  await study.replaceActive(alice, studySession());
+  await study.recordView(alice, studySession().id, 0);
+  const cloud = studyCloudBackend(guard);
+  const upload = cloud.remote.writeSessionState.bind(cloud.remote);
+  cloud.remote.writeSessionState = async (...args) => {
+    await upload(...args);
+    current = bob;
+  };
+  create(cloud.remote);
+  await worker.flush();
+  current = alice;
+  expect(await study.acknowledgedViews(alice, studySession().id)).toEqual([]);
+  expect(await study.pending(alice, Number.MAX_SAFE_INTEGER)).toHaveLength(1);
+  expect(
+    cloud.documents.get(`users/${alice.uid}/reviewerSessions/${studySession().id}`),
+  ).toMatchObject({ sequence: 1, viewedCount: 1 });
 });

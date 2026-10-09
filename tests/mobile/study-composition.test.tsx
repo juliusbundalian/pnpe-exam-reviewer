@@ -1,3 +1,8 @@
+import { fireEvent, render, screen, waitFor } from '@testing-library/react-native';
+import { ThemeProvider } from '../../src/core/theme/ThemeProvider';
+import { BookmarksScreen } from '../../src/features/bookmarks/presentation/BookmarksScreen';
+import { studyBookmark } from '../fixtures/study';
+import { StudyError, type Bookmark } from '../../src/features/study/domain/study';
 import { AppState, type AppStateStatus } from 'react-native';
 import {
   composeStudyDependencies,
@@ -19,6 +24,10 @@ let mockDb: SqlDatabase;
 let mockOpen: Promise<SqlDatabase>;
 let mockIds = 0;
 let mockWrites: string[] = [];
+let mockBookmarks: Bookmark[] = [];
+let mockDownloads = 0;
+let mockDownloadFailure: StudyError | null = null;
+let mockDownloadWait: Promise<void> | null = null;
 const mockWakeListeners = new Set<(state: AppStateStatus) => void>();
 jest.mock('../../src/core/storage/sqlite/nativeSqlDatabase', () => ({
   openNativeStudyDatabase: () => mockOpen,
@@ -48,7 +57,12 @@ jest.mock('../../src/features/study/data/nativeStudySyncFacade', () => ({
       mockWrites.push('bookmark');
       return { revision: base + 1, appliedOperationId: id };
     },
-    listBookmarks: async () => [],
+    listBookmarks: async () => {
+      mockDownloads++;
+      await mockDownloadWait;
+      if (mockDownloadFailure) throw mockDownloadFailure;
+      return mockBookmarks;
+    },
   }),
 }));
 beforeEach(async () => {
@@ -57,6 +71,10 @@ beforeEach(async () => {
   mockOpen = Promise.resolve(mockDb);
   mockIds = 0;
   mockWrites = [];
+  mockBookmarks = [];
+  mockDownloads = 0;
+  mockDownloadFailure = null;
+  mockDownloadWait = null;
   jest.spyOn(AppState, 'addEventListener').mockImplementation((event, listener) => {
     if (event === 'change') mockWakeListeners.add(listener);
     return {
@@ -205,3 +223,69 @@ test.each(['queued', 'precommit'] as const)(
     study.dispose();
   },
 );
+
+test('user Refresh awaits a new owner-bound cloud download then reloads local bookmarks', async () => {
+  mockBookmarks = [studyBookmark({ uid: 'alice', serverRevision: 1 })];
+  const auth = source();
+  const study = await composeStudyDependencies(native, auth.owner);
+  await study.sync.flush();
+  render(
+    <ThemeProvider>
+      <BookmarksScreen service={study.bookmarks} owner={study.owner} onBack={() => {}} />
+    </ThemeProvider>,
+  );
+  await screen.findByRole('button', { name: 'Remove fixture-grammar' });
+  const before = mockDownloads;
+  mockBookmarks = [studyBookmark({ uid: 'alice', serverRevision: 2, deleted: true })];
+  fireEvent.press(screen.getByRole('button', { name: 'Refresh' }));
+  await screen.findByText('No bookmarks yet.');
+  expect(mockDownloads).toBeGreaterThan(before);
+  expect(await study.repository.listBookmarks(study.owner)).toEqual(mockBookmarks);
+  study.dispose();
+});
+
+test('offline Refresh leaves local bookmarks usable and permission recovery is retryable', async () => {
+  mockBookmarks = [studyBookmark({ uid: 'alice', serverRevision: 1 })];
+  const auth = source();
+  const study = await composeStudyDependencies(native, auth.owner);
+  await study.sync.flush();
+  render(
+    <ThemeProvider>
+      <BookmarksScreen service={study.bookmarks} owner={study.owner} onBack={() => {}} />
+    </ThemeProvider>,
+  );
+  await screen.findByRole('button', { name: 'Remove fixture-grammar' });
+  mockDownloadFailure = new StudyError('network');
+  fireEvent.press(screen.getByRole('button', { name: 'Refresh' }));
+  await waitFor(() =>
+    expect(screen.getByRole('button', { name: 'Open fixture-grammar' })).toBeEnabled(),
+  );
+  mockDownloadFailure = new StudyError('permission-denied');
+  fireEvent.press(screen.getByRole('button', { name: 'Refresh' }));
+  await screen.findByText(mockDownloadFailure.message);
+  expect(screen.getByRole('button', { name: 'Open fixture-grammar' })).toBeDisabled();
+  mockDownloadFailure = null;
+  fireEvent.press(screen.getByRole('button', { name: 'Retry' }));
+  await waitFor(() =>
+    expect(screen.getByRole('button', { name: 'Open fixture-grammar' })).toBeEnabled(),
+  );
+  study.dispose();
+});
+
+test('owner change during Refresh discards downloaded personal state', async () => {
+  const auth = source();
+  const study = await composeStudyDependencies(native, auth.owner);
+  await study.sync.flush();
+  const release = deferred<void>();
+  mockDownloadWait = release.promise;
+  mockBookmarks = [studyBookmark({ uid: 'alice', serverRevision: 1 })];
+  const before = mockDownloads;
+  const refresh = study.bookmarks.refresh(study.owner);
+  const rejected = expect(refresh).rejects.toMatchObject({ code: 'auth-required' });
+  await waitFor(() => expect(mockDownloads).toBeGreaterThan(before));
+  auth.switch();
+  release.resolve();
+  await rejected;
+  expect(await mockDb.all('SELECT * FROM bookmarks')).toEqual([]);
+  study.dispose();
+});

@@ -1,5 +1,7 @@
+import { studyCloudBackend } from '../fixtures/studyCloudSdk';
+import { StudySyncWorker } from '../../src/features/study/application/StudySyncWorker';
 import { BookmarkService } from '../../src/features/bookmarks/application/BookmarkService';
-import { owner, studyEntry, studySession } from '../fixtures/study';
+import { owner, studyEntry, studySession, studyBookmark } from '../fixtures/study';
 import { deferred, reviewerHarness } from '../fixtures/reviewer';
 import { StudyError } from '../../src/features/study/domain/study';
 
@@ -244,3 +246,52 @@ test('gate disabled after SQL writes but before commit rolls back bookmark and o
   expect(await h.study.listBookmarks(owner)).toEqual(before);
   expect(await h.study.pending(owner, 1000)).toEqual(beforePending);
 });
+
+test('explicit saved intent preserves the original pin across background merges', async () => {
+  await h.study.mergeRemoteBookmark(owner, studyBookmark({ serverRevision: 1 }));
+  await bookmarks.setSaved(owner, studyEntry({ version: 2 }), true);
+  expect(await bookmarks.list(owner)).toEqual([
+    expect.objectContaining({ entry: studyEntry(), deleted: false }),
+  ]);
+  expect((await h.study.pending(owner, 1000))[0]).toMatchObject({
+    bookmark: { entry: studyEntry(), deleted: false },
+  });
+});
+
+test.each([false, true])(
+  'explicit intent survives cross-device sync merge (initial saved %s)',
+  async (initiallySaved) => {
+    const cloud = studyCloudBackend(h.guard);
+    const original = studyBookmark({ deleted: !initiallySaved });
+    await cloud.remote.writeBookmark(owner, original, 'device-one', 0);
+    const worker = new StudySyncWorker(h.study, cloud.remote, h.clock, h.guard);
+    try {
+      worker.start(owner);
+      await worker.flush();
+      const displayedSaved = (await bookmarks.list(owner)).length > 0;
+      expect(displayedSaved).toBe(initiallySaved);
+      await cloud.remote.writeBookmark(
+        owner,
+        { ...original, deleted: initiallySaved, serverRevision: 1 },
+        'device-two',
+        1,
+      );
+      worker.wake();
+      await worker.flush();
+      await bookmarks.setSaved(owner, studyEntry({ version: 2 }), !displayedSaved);
+      expect((await h.study.pending(owner, 1000))[0]).toMatchObject({
+        bookmark: { deleted: initiallySaved, entry: studyEntry() },
+      });
+      await worker.flush();
+      expect(await cloud.remote.listBookmarks(owner)).toEqual([
+        expect.objectContaining({
+          deleted: initiallySaved,
+          entry: studyEntry(),
+          serverRevision: 3,
+        }),
+      ]);
+    } finally {
+      worker.stop();
+    }
+  },
+);

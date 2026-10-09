@@ -253,7 +253,14 @@ export class StudySyncWorker {
         if (!saved) throw new StudyError('storage-corrupt');
         const session = ReviewerSessionSchema.parse({ ...saved, ...operation.state });
         this.check(owner, generation);
-        await this.remote.writeSessionState(owner, session, operation.id);
+        const acknowledged = new Set(await this.repository.acknowledgedViews(owner, session.id));
+        this.check(owner, generation);
+        await this.remote.writeSessionState(
+          owner,
+          session,
+          operation.id,
+          session.viewedOrdinals.filter((ordinal) => !acknowledged.has(ordinal)),
+        );
         return undefined;
       }
       case 'bookmarkState': {
