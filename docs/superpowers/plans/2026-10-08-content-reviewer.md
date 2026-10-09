@@ -286,11 +286,23 @@ retry, without allowing concurrent flushes.
 
 **Interfaces:** No new runtime interfaces. Whole-branch independent reviewer reads approved spec, plan, code and evidence; unresolved findings return to their owning implementer before completion.
 
-- [ ] Run `npm run test:unit`, `npm run test:mobile`, `npm run typecheck`, `npm run lint`, `npm run format:check`, new document explicit Prettier checks, `npx expo install --check`, and guarded `npm run test:emulator`. No editorial extraction/regeneration is needed. Hash tracked content bank/editorial files against branch base to prove unchanged.
+- [x] Run `npm run test:unit`, `npm run test:mobile`, `npm run typecheck`, `npm run lint`, `npm run format:check`, new document explicit Prettier checks, `npx expo install --check`, and guarded `npm run test:emulator`. No editorial extraction/regeneration is needed. Hash tracked content bank/editorial files against branch base to prove unchanged.
 - [ ] Rebuild development binaries with the new native dependencies in the feature worktree. Use a separate Metro port from live 8081/8082; preserve credentials/native config outside tracked files. Run on Android and iOS: actual authenticated catalog reading, marked passage/math rendering, SQLite persistence after force-close, full category inclusion, missing offline page with stable position, bookmark retry/sync and account switching. Record exact platforms/build IDs and observations; unavailable checks remain explicitly outstanding.
 - [ ] Verify root cache/startup recovery, long text at enlarged font scale, dark/light/system appearance, accessible focus and disabled feature/maintenance recovery. No whole-bank load on public launch; measure catalog versus progressively loaded question requests.
 - [ ] Obtain whole-branch independent review; fix findings with focused red/green checks and review again where changed. Document remaining material limitations and native acceptance evidence rather than claiming inferred passes.
 - [ ] Commit docs/evidence references as `docs: record content reviewer verification`. Follow finishing workflow only after required acceptance is met; preserve worktree/evidence and do not push/deploy. Mock Exam is the next separately designed slice.
+
+Task 10 checkpoint (2026-10-09): fresh unit 554, mobile 223 and isolated emulator
+72 tests pass; static, online Expo dependency and explicit document-format checks
+pass. All 33 tracked content/editorial/publication-evidence files and three
+original PDF hashes are preserved; live catalog head matches the Task 1 snapshot.
+Native builds/acceptance remain blocked by repeated approximately 1.0 GiB free
+disk inventory and controller resource ruling. No feature binary, device
+observations, corpus insertion timings or cap-2 upload latency were produced.
+Documentation is committed separately; finishing/integration and whole-branch
+independent review remain open. See
+[the verification record](../../verification/content-reviewer.md) and ignored
+`evidence/content-reviewer/task10/` for evidence and outstanding checks.
 
 ## Plan self-review
 

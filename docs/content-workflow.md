@@ -1,8 +1,10 @@
 # Content workflow
 
 This workflow validates content and stages immutable Firestore snapshots. It
-does not create a Firebase project, deploy rules, or implement the mobile/session
-engine. All questions remain staged until exact human approvals exist.
+does not create a Firebase project or deploy rules. Publication requires exact
+human approval. The implemented mobile Reviewer consumes the approved catalog;
+its automated and outstanding native acceptance are recorded separately in the
+[Reviewer verification record](verification/content-reviewer.md).
 
 The owner confirmed that delivery covers the full usable reference corpus,
 not just the minimum needed for one Mock Exam. There are 687 extracted source
@@ -26,8 +28,18 @@ Publish every sound, approved logical question, continuing after the
 Retain duplicate lineage and visibly blocked material; do not invent missing
 alternatives or assume occurrences equal unique publishable questions.
 
-Reviewer consumes all eligible questions in the selected category/subcategory.
-A Mock Exam selects 150 from the larger bank under its category quotas.
+Reviewer consumes all eligible questions in the selected category/subcategory,
+without an exam-sized cap. It shows the supplied correct answer and explanation
+immediately, preserves choice order, and freezes any question shuffle for the
+session. SQLite stores session position, viewed membership, pinned bookmarks and
+pending owner-bound operations. Public Home does not initialize study storage or
+retrieve the question bank; protected study entry lazily loads catalog metadata
+and question revisions as needed. Text, marked spans and math are supported;
+required image, diagram and table blocks remain excluded.
+
+A future Mock Exam selects 150 from the larger bank under its unchanged 35/40/25/50
+category quotas and 180-minute default. Mock Exam, results and history need their
+next separately approved implementation slice.
 
 ## Local prerequisites
 
@@ -163,9 +175,14 @@ using the [primary storage-size formula](https://firebase.google.com/docs/firest
 many small marked spans cannot evade the limit merely by fitting JSON. All snapshot preflight checks run
 before any write. These conservative limits leave room under Firestore's 1 MiB
 document and 6 KiB document-name limits; see [primary quotas](https://firebase.google.com/docs/firestore/quotas).
-Index exemptions prevent indexing full version/shard payloads. Rules deny all
-client reads/writes at this toolchain-only checkpoint; Admin bypasses rules and
-uses independent command gates. Future application rules need their own tests.
+Index exemptions prevent indexing full version/shard payloads. Client rules permit
+authenticated official catalog/revision reads and narrowly
+validated owner-only personal study metadata. Official content writes remain
+client-denied. Admin bypasses rules and uses independent command gates. Personal
+cloud manifests use at most two metadata entries per chunk to remain within the
+measured rules expression budget: 276 questions require 138 chunk documents,
+plus publication/state operations. This imposes no question-count cap and uploads
+no question prompt, answer or explanation payload.
 
 ## Verification
 
@@ -185,3 +202,19 @@ digests, stable IDs, and exact overlay bytes before/after two processing runs.
 Before public release, resolve editorial shortages and publication rights,
 implement asset/transport capability gates and mobile rendering, verify actual
 authentication/rules, and perform device/development-build acceptance.
+
+## Reviewer acceptance isolation
+
+Reviewer verification requires no editorial extraction, regeneration or live
+reimport. Preserve all 529 approved questions, 145 deferred drafts, duplicate
+lineage, reference originals and historical evidence. Use the dedicated guarded
+8180/9199 test runner; it fails closed rather than targeting live 8080/9099.
+Finish that destructive runner before seeding a separate isolated native
+acceptance lifetime. Seed only an authorized copy of the already approved bank,
+using the existing importer manifest/digest safeguards or an explicitly isolated
+acceptance fixture. Never reset or rewrite the live demo for device testing.
+
+Native Reviewer acceptance remains outstanding at the current resource limit.
+The [verification record](verification/content-reviewer.md) distinguishes passing
+automated checks from actual device observations and records the required
+force-close, offline, account, appearance and performance scenarios.

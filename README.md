@@ -15,9 +15,14 @@ The mobile foundation adds a public Home, four categories and fifteen
 subcategories, appearance settings, and an authentication shell. Native/device
 acceptance and release blockers are tracked in the
 [mobile verification record](docs/verification/mobile-foundation.md); the foundation
-must not be called complete while mandatory checks remain blocked. Reviewer,
-mock-exam, progress, bookmarks, and history engines are not implemented, and no
-service has been deployed.
+must not be called complete while mandatory checks remain blocked. The content
+Reviewer, viewed progress, bookmarks, SQLite persistence and owner-only sync are
+implemented on the feature branch. Fresh automated checks pass, but this slice
+remains partially verified: development builds with the new native dependencies
+and Android/iOS acceptance are blocked by local disk capacity. See the
+[content Reviewer verification record](docs/verification/content-reviewer.md)
+for evidence and outstanding checks. Mock Exam, results and history are the next
+separately approved slice. No service has been deployed.
 
 Use Node 24 and `npm ci`. Unit tests require Python 3; extraction requires
 the pinned Python environment described in [the content workflow](docs/content-workflow.md).
@@ -68,13 +73,23 @@ npx expo run:ios
 npx expo run:android
 ```
 
-For isolated device auth/profile testing set mode to `emulator`, project to
-`demo-pnpe`, and emulator host to `127.0.0.1` (iOS simulator) or `10.0.2.2`
-(Android emulator). This creates a named Firebase app; Remote Config uses explicit
-bundled defaults in this mode. Start local emulators with
-`npx firebase emulators:start --only auth,firestore --project demo-pnpe`.
-Use only emulator accounts for writes. A live Remote Config fetch is a separate
-read-only acceptance check. Rebuild/restart Metro with the same environment.
+For isolated Reviewer acceptance set mode to `emulator`, project to `demo-pnpe`,
+and emulator host to `127.0.0.1` (iOS simulator) or `10.0.2.2` (Android emulator).
+Explicitly set `EXPO_PUBLIC_FIREBASE_AUTH_PORT=9199` and
+`EXPO_PUBLIC_FIREBASE_FIRESTORE_PORT=8180`; omitted overrides retain the original
+live demo defaults and are unsuitable for isolated acceptance. This creates a
+named Firebase app; Remote Config uses bundled defaults in this mode.
+
+Run the guarded `npm run test:emulator` to completion before starting a separate
+acceptance lifetime with
+`npx firebase emulators:start --only auth,firestore --config firebase.study-tests.json --project demo-pnpe`.
+The test runner resets isolated data, so never run it during device scenarios.
+Preserve existing services on Firestore 8080, Auth 9099 and Metro 8081/8082.
+Use a separately checked free Metro port and rebuild/restart Metro with the same
+explicit environment. Only isolated emulator accounts and an authorized copy of
+the approved bank may be written for acceptance. The
+[verification record](docs/verification/content-reviewer.md) lists the remaining
+native checks. A live Remote Config fetch remains a separate read-only check.
 
 `eas.json` contains profiles only. No remote builds, store registration, uploads,
 production writes, or deployment are authorized by these setup commands.
