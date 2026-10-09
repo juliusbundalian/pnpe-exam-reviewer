@@ -11,6 +11,7 @@ import { StudyError, type ReviewerSession, type StudyScope } from '../features/s
 import { ReviewerScreen } from '../features/reviewer/presentation/ReviewerScreen';
 import type { CatalogSource } from '../features/reviewer/application/ReviewerService';
 import { startBlock } from './startAvailability';
+import { useReviewerBookmark } from './useReviewerBookmark';
 
 function safeError(error: unknown) {
   return error instanceof StudyError ? error : new StudyError('storage-unavailable');
@@ -117,7 +118,7 @@ export function StudyReviewer({
   const [busy, setBusy] = useState(true);
   const [error, setError] = useState<StudyError | null>(null);
   const [confirm, setConfirm] = useState(false);
-  const [bookmarked, setBookmarked] = useState(false);
+  const bookmark = useReviewerBookmark(study);
   const lifetime = useRef(0);
   const pending = useRef(false);
   const source = useRef<CatalogSource>('server');
@@ -198,53 +199,18 @@ export function StudyReviewer({
       study.controller.setVisibility(false, false);
     };
   }, [study, sessionId, scopeKey]);
-  useEffect(() => {
-    let active = true;
-    const update = () => {
-      const state = study.controller.snapshot();
-      if (state.kind === 'idle' || !state.session || state.ordinal === null) return;
-      const questionId = state.session.items[state.ordinal]?.entry.id;
-      void study.bookmarks.list(study.owner).then(
-        (rows) => {
-          if (active) setBookmarked(rows.some((row) => row.questionId === questionId));
-        },
-        () => {},
-      );
-    };
-    update();
-    const unsubscribe = study.controller.subscribe(update);
-    return () => {
-      active = false;
-      unsubscribe();
-    };
-  }, [study]);
   if (opened)
     return (
-      <>
-        <ReviewerScreen
-          controller={study.controller}
-          onBack={onBack}
-          bookmarked={bookmarked}
-          bookmarkMutationsEnabled={config.features.bookmarks}
-          onBookmark={() => {
-            const state = study.controller.snapshot();
-            if (state.kind === 'idle' || !state.session || state.ordinal === null) return;
-            const entry = state.session.items[state.ordinal]!.entry;
-            void study.bookmarks.toggle(study.owner, entry).then(
-              (bookmark) => {
-                if (study.guard.isCurrent(study.owner)) {
-                  setBookmarked(!bookmark.deleted);
-                  setError(null);
-                }
-              },
-              (failure) => {
-                if (study.guard.isCurrent(study.owner)) setError(safeError(failure));
-              },
-            );
-          }}
-        />
-        {error ? <AppText accessibilityRole="alert">{error.message}</AppText> : null}
-      </>
+      <ReviewerScreen
+        controller={study.controller}
+        onBack={onBack}
+        bookmarked={bookmark.saved}
+        bookmarkMutationsEnabled={config.features.bookmarks}
+        bookmarkState={bookmark.status}
+        bookmarkError={bookmark.error?.message ?? null}
+        onRetryBookmark={bookmark.retry}
+        onBookmark={bookmark.toggle}
+      />
     );
   const same = existing && JSON.stringify(existing.scope) === scopeKey;
   return (
@@ -265,6 +231,14 @@ export function StudyReviewer({
             />
           ) : null}
         </>
+      ) : null}
+      {!busy && !existing && !error && scope && !sessionId ? (
+        <AppButton
+          label="Start Reviewer"
+          variant="primary"
+          disabled={!!blocked}
+          onPress={() => start(false)}
+        />
       ) : null}
       {existing ? (
         <>

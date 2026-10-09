@@ -51,7 +51,7 @@ test('owner observation invalidates pending lazy dependency construction before 
 
 import { studyNavigationFactory } from '../fixtures/study-navigation';
 import { studyBookmark, studySession } from '../fixtures/study';
-import { Text } from 'react-native';
+import { AppState, Text } from 'react-native';
 function prepared(options: { config?: typeof defaults; guest?: boolean } = {}) {
   const factory = studyNavigationFactory();
   const h = harness({
@@ -201,4 +201,139 @@ test('disabled bookmarks deep link still opens only the owner saved pin', async 
   await screen.findByText('Correct answer');
   expect(screen.getByRole('button', { name: 'Remove fixture-grammar' })).toBeDisabled();
   expect((await study.repository.active(study.owner))?.viewedOrdinals).toEqual([]);
+});
+
+async function completeVisibleLayout() {
+  await act(async () => {
+    screen.UNSAFE_getAllByType(Text).forEach((node) => {
+      if (node.props.onLayout)
+        fireEvent(node, 'layout', {
+          nativeEvent: { layout: { x: 0, y: 0, width: 100, height: 20 } },
+        });
+    });
+    await flushTransitions();
+  });
+}
+test('retained Progress reloads durable views and position when Reviewer returns', async () => {
+  const { h, factory } = prepared();
+  await seed(h, factory);
+  const appState = Object.getOwnPropertyDescriptor(AppState, 'currentState')!;
+  Object.defineProperty(AppState, 'currentState', { configurable: true, value: 'active' });
+  try {
+    const routes = await h.render('/progress');
+    expect(await screen.findByText('Viewed 0 of 2')).toBeVisible();
+    fireEvent.press(screen.getByRole('button', { name: 'Resume' }));
+    await screen.findByText('Correct answer');
+    await completeVisibleLayout();
+    await screen.findByText('Viewed 1 of 2');
+    fireEvent.press(screen.getByRole('button', { name: 'Next' }));
+    await screen.findByText('Item 2 of 2');
+    fireEvent.press(screen.getByRole('button', { name: 'Back' }));
+    await waitFor(() => expect(routes.getPathname()).toBe('/progress'));
+    expect(await screen.findByText('Resume at item 2 of 2')).toBeVisible();
+    expect(screen.getByText('Viewed 1 of 2')).toBeVisible();
+  } finally {
+    Object.defineProperty(AppState, 'currentState', appState);
+  }
+});
+test.each(['maintenance', 'minimumVersion'] as const)(
+  'initial %s gate clearing offers Start on the same mounted route',
+  async (gate) => {
+    const config = structuredClone(defaults);
+    if (gate === 'maintenance') config.app_info.maintenanceMode = true;
+    else config.app_info.minimumSupportedVersion = '99.0.0';
+    const { h } = prepared({ config });
+    const routes = await h.render('/review/communicationSkills?stage=availability');
+    await waitFor(() => expect(screen.queryByText('Preparing Reviewer')).toBeNull());
+    expect(screen.queryByText('Correct answer')).toBeNull();
+    config.app_info.maintenanceMode = false;
+    config.app_info.minimumSupportedVersion = '0.1.0';
+    await act(async () => {
+      await h.dependencies.config.refresh();
+    });
+    fireEvent.press(await screen.findByRole('button', { name: 'Start Reviewer' }));
+    expect(await screen.findByText('Correct answer')).toBeVisible();
+    expect(routes.getPathname()).toBe('/review/communicationSkills');
+  },
+);
+
+test('late bookmark lookup for question A cannot change question B saved label', async () => {
+  const { h, factory } = prepared();
+  const study = await seed(h, factory);
+  await study.repository.setBookmark(study.owner, studyBookmark().entry, false);
+  const list = study.repository.listBookmarks.bind(study.repository);
+  const entered = deferred<void>(),
+    release = deferred<void>();
+  let held = false;
+  study.repository.listBookmarks = async (owner) => {
+    const page = study.controller.snapshot();
+    const delay =
+      !held && (page.kind === 'reading' || page.kind === 'completed') && page.ordinal === 0;
+    const rows = await list(owner);
+    if (delay) {
+      held = true;
+      entered.resolve();
+      await release.promise;
+    }
+    return rows;
+  };
+  await h.render('/review?stage=session&sessionId=device_saved');
+  await screen.findByText('Correct answer');
+  await entered.promise;
+  fireEvent.press(screen.getByRole('button', { name: 'Next' }));
+  await screen.findByText('Item 2 of 2');
+  expect(await screen.findByRole('button', { name: 'Bookmark' })).toBeEnabled();
+  await act(async () => {
+    release.resolve();
+    await flushTransitions();
+  });
+  expect(screen.getByRole('button', { name: 'Bookmark' })).toBeEnabled();
+  expect(screen.queryByRole('button', { name: 'Remove bookmark' })).toBeNull();
+});
+test('late bookmark action for question A cannot change question B saved label', async () => {
+  const { h, factory } = prepared();
+  const study = await seed(h, factory);
+  const save = study.repository.setBookmark.bind(study.repository);
+  const entered = deferred<void>(),
+    release = deferred<void>();
+  study.repository.setBookmark = async (...args) => {
+    const saved = await save(...args);
+    entered.resolve();
+    await release.promise;
+    return saved;
+  };
+  await h.render('/review?stage=session&sessionId=device_saved');
+  await screen.findByText('Correct answer');
+  fireEvent.press(await screen.findByRole('button', { name: 'Bookmark' }));
+  await entered.promise;
+  fireEvent.press(screen.getByRole('button', { name: 'Next' }));
+  await screen.findByText('Item 2 of 2');
+  expect(await screen.findByRole('button', { name: 'Bookmark' })).toBeEnabled();
+  await act(async () => {
+    release.resolve();
+    await flushTransitions();
+  });
+  expect(screen.getByRole('button', { name: 'Bookmark' })).toBeEnabled();
+  expect(screen.queryByRole('button', { name: 'Remove bookmark' })).toBeNull();
+  expect(
+    (await study.repository.listBookmarks(study.owner)).map((bookmark) => bookmark.questionId),
+  ).toEqual(['fixture-grammar']);
+});
+test('bookmark lookup rejection keeps question readable and retries uncertain status before enabling changes', async () => {
+  const { h, factory } = prepared();
+  const study = await seed(h, factory);
+  const list = study.repository.listBookmarks.bind(study.repository);
+  let failed = true;
+  study.repository.listBookmarks = async (owner) => {
+    if (failed) throw new Error('private storage details');
+    return list(owner);
+  };
+  await h.render('/review?stage=session&sessionId=device_saved');
+  expect(await screen.findByText('Correct answer')).toBeVisible();
+  expect(await screen.findByRole('button', { name: 'Bookmark status unavailable' })).toBeDisabled();
+  expect(screen.queryByText('private storage details')).toBeNull();
+  failed = false;
+  fireEvent.press(screen.getByRole('button', { name: 'Retry bookmark' }));
+  expect(await screen.findByRole('button', { name: 'Bookmark' })).toBeEnabled();
+  expect(screen.queryByRole('button', { name: 'Retry bookmark' })).toBeNull();
 });

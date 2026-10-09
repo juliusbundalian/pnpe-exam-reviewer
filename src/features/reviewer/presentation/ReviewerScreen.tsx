@@ -10,12 +10,16 @@ import { taxonomy } from '../../content/domain/taxonomy';
 import { QuestionReadingView } from '../../content/presentation/QuestionReadingView';
 import type { ReviewerController } from '../application/ReviewerController';
 
+export type ReviewerBookmarkState = 'loading' | 'ready' | 'saving' | 'error';
 export type ReviewerScreenProps = {
   controller: ReviewerController;
   onBack(): void;
   onBookmark(): void;
   bookmarked: boolean;
   bookmarkMutationsEnabled?: boolean;
+  bookmarkState?: ReviewerBookmarkState;
+  bookmarkError?: string | null;
+  onRetryBookmark?(): void;
 };
 const contentError = () => {
   /* The renderer shows a safe error and never sends a receipt. */
@@ -27,6 +31,9 @@ export function ReviewerScreen({
   onBookmark,
   bookmarked,
   bookmarkMutationsEnabled = true,
+  bookmarkState = 'ready',
+  bookmarkError = null,
+  onRetryBookmark,
 }: ReviewerScreenProps) {
   const state = useSyncExternalStore(
     useCallback((listener) => controller.subscribe(listener), [controller]),
@@ -136,11 +143,25 @@ export function ReviewerScreen({
           />
           <AppButton
             variant="secondary"
-            label={bookmarked ? 'Remove bookmark' : 'Bookmark'}
-            disabled={!bookmarkMutationsEnabled}
-            accessibilityState={{ selected: bookmarked }}
+            label={
+              bookmarkState === 'loading'
+                ? 'Checking bookmark'
+                : bookmarkState === 'saving'
+                  ? 'Saving bookmark'
+                  : bookmarkState === 'error'
+                    ? 'Bookmark status unavailable'
+                    : bookmarked
+                      ? 'Remove bookmark'
+                      : 'Bookmark'
+            }
+            disabled={!bookmarkMutationsEnabled || bookmarkState !== 'ready'}
+            accessibilityState={bookmarkState === 'ready' ? { selected: bookmarked } : {}}
             onPress={onBookmark}
           />
+          {bookmarkError ? <AppText accessibilityRole="alert">{bookmarkError}</AppText> : null}
+          {bookmarkError && onRetryBookmark ? (
+            <AppButton label="Retry bookmark" variant="secondary" onPress={onRetryBookmark} />
+          ) : null}
         </>
       ) : null}
       {session && ordinal !== null ? (

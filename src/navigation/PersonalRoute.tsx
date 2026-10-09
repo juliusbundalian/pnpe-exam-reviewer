@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { useLocalSearchParams, useRouter } from 'expo-router';
+import { useCallback, useState } from 'react';
+import { useFocusEffect, useLocalSearchParams, useRouter } from 'expo-router';
 import { useAppDependencies, useAuthentication, useConfig } from '../bootstrap/AppProviders';
 import type { StudyDependencies } from '../bootstrap/studyComposition';
 import { ProtectedRoute } from './ProtectedRoute';
@@ -14,7 +14,6 @@ import { BookmarksScreen } from '../features/bookmarks/presentation/BookmarksScr
 import { SafeIdSchema } from '../features/content/domain/catalog';
 import { StudyError, type ReviewerSession } from '../features/study/domain/study';
 import { useSafeBack } from './useSafeBack';
-import { actionDestination } from './destinations';
 export function PersonalRoute({
   destination,
 }: {
@@ -63,9 +62,12 @@ export function PersonalRoute({
             <SavedProgress
               study={study}
               onBack={onBack}
-              onResume={(session) =>
-                router.push(actionDestination({ type: 'resumeReviewer', sessionId: session.id }))
-              }
+              onResume={(session) => {
+                const path = session.scope.subcategoryId
+                  ? `/review/${session.scope.categoryId}/${session.scope.subcategoryId}`
+                  : `/review/${session.scope.categoryId}`;
+                router.push(`${path}?stage=session&sessionId=${session.id}`);
+              }}
             />
           )}
         </StudyRoute>
@@ -93,22 +95,24 @@ function SavedProgress({
 }) {
   const [state, setState] = useState<{ session: ReviewerSession | null } | StudyError | null>(null);
   const [attempt, retry] = useState(0);
-  useEffect(() => {
-    let active = true;
-    setState(null);
-    void study.repository.active(study.owner).then(
-      (session) => {
-        if (active && study.guard.isCurrent(study.owner)) setState({ session });
-      },
-      (error) => {
-        if (active)
-          setState(error instanceof StudyError ? error : new StudyError('storage-unavailable'));
-      },
-    );
-    return () => {
-      active = false;
-    };
-  }, [study, attempt]);
+  useFocusEffect(
+    useCallback(() => {
+      let active = true;
+      setState(null);
+      void study.repository.active(study.owner).then(
+        (session) => {
+          if (active && study.guard.isCurrent(study.owner)) setState({ session });
+        },
+        (error) => {
+          if (active && study.guard.isCurrent(study.owner))
+            setState(error instanceof StudyError ? error : new StudyError('storage-unavailable'));
+        },
+      );
+      return () => {
+        active = false;
+      };
+    }, [study, attempt]),
+  );
   if (!state || state instanceof StudyError)
     return (
       <AppScreen>
