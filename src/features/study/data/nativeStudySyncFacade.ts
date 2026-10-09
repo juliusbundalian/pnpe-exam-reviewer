@@ -21,7 +21,10 @@ export async function createNativeStudySyncRemote(
       if (field in dto) {
         const value = (dto as Record<string, unknown>)[field];
         if (!(value instanceof sdk.Timestamp)) throw new StudyError('invalid-content');
-        (dto as Record<string, unknown>)[field] = value.toMillis();
+        // Server timestamps can carry nanoseconds; only transport time loses
+        // sub-millisecond precision. Local creation/update times stay strict.
+        (dto as Record<string, unknown>)[field] =
+          field === 'writtenAt' ? Math.floor(value.toMillis()) : value.toMillis();
       }
     }
     return dto;

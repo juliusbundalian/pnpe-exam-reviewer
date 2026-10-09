@@ -485,3 +485,47 @@ test('pending count comes from durable outbox before a deferred startup download
   await flush;
   expect(status).toMatchObject({ pendingCount: 1, syncing: true, recovery: null });
 });
+
+test('ordinary flush during final pending await drains new due work and preserves delayed retries', async () => {
+  await study.setBookmark(alice, studyEntry({ id: 'delayed' }), false);
+  const delayedOperation = (await study.pending(alice, now))[0]!;
+  await study.retry(alice, delayedOperation.id, 1200);
+  const delayedPending = await study.pending(alice, Number.MAX_SAFE_INTEGER);
+  const pending = study.pending.bind(study);
+  let release!: () => void,
+    entered!: () => void,
+    allReads = 0;
+  const gate = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+  const ready = new Promise<void>((resolve) => {
+    entered = resolve;
+  });
+  study.pending = async (owner, time) => {
+    // Preflight is the first all-pending read. The second follows an empty
+    // due query and is the end-of-drain status query from the review probe.
+    if (time === Number.MAX_SAFE_INTEGER && ++allReads === 2) {
+      entered();
+      await gate;
+    }
+    return pending(owner, time);
+  };
+  const uploaded: string[] = [];
+  create(
+    remote({
+      writeBookmark: async (_owner, bookmark, operationId, base) => {
+        uploaded.push(bookmark.questionId);
+        return { revision: base + 1, appliedOperationId: operationId };
+      },
+    }),
+  );
+  const first = worker.flush();
+  await ready;
+  await study.setBookmark(alice, studyEntry(), false);
+  const second = worker.flush();
+  release();
+  await Promise.all([first, second]);
+  expect(uploaded).toEqual(['fixture-grammar']);
+  expect(await study.pending(alice, now)).toEqual([]);
+  expect(await study.pending(alice, Number.MAX_SAFE_INTEGER)).toEqual(delayedPending);
+});

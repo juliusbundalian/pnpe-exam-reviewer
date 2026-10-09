@@ -78,7 +78,9 @@ export class StudySyncWorker {
     this.timer = null;
   }
   private scheduleFlush() {
-    void Promise.resolve().then(() => this.flush());
+    // start/wake/timer already recorded their request. Scheduling must not
+    // manufacture an extra pass when a caller has started the drain first.
+    void Promise.resolve().then(() => this.running ?? this.flush());
   }
   private check(owner: OwnerContext, generation: number) {
     if (this.generation !== generation || !this.owner || !this.guard.isCurrent(owner))
@@ -86,7 +88,10 @@ export class StudySyncWorker {
   }
   /** Due-only drain. Call wake first for an immediate foreground/manual attempt. */
   flush(): Promise<void> {
-    if (this.running) return this.running;
+    if (this.running) {
+      if (this.owner && !this.paused) this.requested = true;
+      return this.running;
+    }
     if (!this.owner || this.paused) return Promise.resolve();
     this.requested = true;
     this.running = this.drain().finally(() => {

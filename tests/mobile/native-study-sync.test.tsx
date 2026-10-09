@@ -1,7 +1,7 @@
 import type { Auth } from '@react-native-firebase/auth';
 import type { Firestore } from '@react-native-firebase/firestore';
 import { createNativeStudySyncRemote } from '../../src/features/study/data/nativeStudySyncFacade';
-import { owner, studyBookmark } from '../fixtures/study';
+import { owner, studyBookmark, studySession } from '../fixtures/study';
 
 class MockTimestamp {
   constructor(private readonly millis: number) {}
@@ -10,6 +10,9 @@ class MockTimestamp {
   }
   static fromMillis(millis: number) {
     return new MockTimestamp(millis);
+  }
+  static fromSecondsNanoseconds(seconds: number, nanoseconds: number) {
+    return new MockTimestamp(seconds * 1000 + nanoseconds / 1e6);
   }
 }
 const mockFirestore = { marker: 'existing-firestore' };
@@ -124,3 +127,103 @@ test('owner change during native get prevents every transaction write', async ()
   });
   expect(writes).toBe(0);
 });
+
+test('nonaligned server nanoseconds decode for bookmark polling and immutable receipt replay', async () => {
+  const writtenAt = MockTimestamp.fromSecondsNanoseconds(1, 1000);
+  const stored = {
+    ...studyBookmark({ serverRevision: 1 }),
+    createdAt: MockTimestamp.fromMillis(100),
+    updatedAt: MockTimestamp.fromMillis(100),
+    lastOperationId: 'op',
+    writtenAt,
+  };
+  mockGetDocsFromServer.mockResolvedValue({
+    docs: [{ id: 'fixture-grammar', data: () => stored }],
+  });
+  let writes = 0;
+  mockRunTransaction.mockImplementation(async (_instance, action) =>
+    action({
+      get: async () => ({
+        data: () => ({
+          uid: owner.uid,
+          questionId: 'fixture-grammar',
+          operationId: 'op',
+          revision: 1,
+          writtenAt,
+        }),
+      }),
+      set: () => {
+        writes++;
+      },
+    }),
+  );
+  const remote = await createNativeStudySyncRemote(
+    mockFirestore as unknown as Firestore,
+    mockAuth as unknown as Auth,
+    { isCurrent: () => true },
+  );
+  expect(await remote.listBookmarks(owner)).toEqual([studyBookmark({ serverRevision: 1 })]);
+  expect(await remote.writeBookmark(owner, studyBookmark(), 'op', 0)).toEqual({
+    revision: 1,
+    appliedOperationId: 'op',
+  });
+  expect(writes).toBe(0);
+});
+
+test('nonaligned server nanoseconds decode during preparing chunk and ready transactions', async () => {
+  const records = new Map<string, Record<string, unknown>>();
+  mockRunTransaction.mockImplementation(async (_instance, action) =>
+    action({
+      get: async (reference: { path: string }) => ({ data: () => records.get(reference.path) }),
+      set: (reference: { path: string }, fields: Record<string, unknown>) => {
+        records.set(reference.path, {
+          ...fields,
+          writtenAt: MockTimestamp.fromSecondsNanoseconds(2, 1234567),
+        });
+      },
+    }),
+  );
+  const remote = await createNativeStudySyncRemote(
+    mockFirestore as unknown as Firestore,
+    mockAuth as unknown as Auth,
+    { isCurrent: () => true },
+  );
+  await remote.publishSession(owner, studySession(), 'publish');
+  await remote.writeSessionState(
+    owner,
+    studySession({ sequence: 1, viewedOrdinals: [0] }),
+    'state',
+  );
+  expect(records.get(`users/${owner.uid}/reviewerSessions/${studySession().id}`)).toMatchObject({
+    ready: true,
+    sequence: 1,
+    viewedCount: 1,
+  });
+});
+
+test.each(['createdAt', 'updatedAt'] as const)(
+  'fractional local %s remains invalid instead of being rounded',
+  async (field) => {
+    mockGetDocsFromServer.mockResolvedValue({
+      docs: [
+        {
+          id: 'fixture-grammar',
+          data: () => ({
+            ...studyBookmark({ serverRevision: 1 }),
+            createdAt: MockTimestamp.fromMillis(100),
+            updatedAt: MockTimestamp.fromMillis(1000),
+            lastOperationId: 'op',
+            writtenAt: MockTimestamp.fromSecondsNanoseconds(1, 1000),
+            [field]: MockTimestamp.fromSecondsNanoseconds(0, 100001000),
+          }),
+        },
+      ],
+    });
+    const remote = await createNativeStudySyncRemote(
+      mockFirestore as unknown as Firestore,
+      mockAuth as unknown as Auth,
+      { isCurrent: () => true },
+    );
+    await expect(remote.listBookmarks(owner)).rejects.toMatchObject({ code: 'invalid-content' });
+  },
+);

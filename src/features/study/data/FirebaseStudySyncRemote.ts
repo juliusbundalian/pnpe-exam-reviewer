@@ -249,6 +249,7 @@ export class FirebaseStudySyncRemote implements StudySyncRemote {
           const raw = await tx.get(path);
           const root = parse(CloudSessionRootSchema, raw);
           checkRoot(root);
+          if (session.sequence <= root.sequence) return;
           const chunk = chunks.find((candidate) =>
             candidate.items.some((item) => item.ordinal === ordinal),
           );

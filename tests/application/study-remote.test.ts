@@ -225,3 +225,33 @@ test('preparing roots reject progressed state', async () => {
       .success,
   ).toBe(false);
 });
+
+test.each([1, 2])(
+  'sequence %i cannot add differing viewed membership after sequence two',
+  async (sequence) => {
+    const { remote, documents, writes } = backend();
+    await remote.publishSession(owner, studySession(), 'publish');
+    await remote.writeSessionState(
+      owner,
+      studySession({ sequence: 2, position: 1, viewedOrdinals: [0] }),
+      'state-two',
+    );
+    const before = [...documents];
+    const count = writes.length;
+    await remote.writeSessionState(
+      owner,
+      studySession({ sequence, position: 0, viewedOrdinals: [1] }),
+      `late-state-${sequence}`,
+    );
+    expect(documents.has(`${root}/items/1`)).toBe(false);
+    expect([...documents]).toEqual(before);
+    expect(writes.length).toBe(count);
+    expect(documents.get(root)).toMatchObject({
+      sequence: 2,
+      position: 1,
+      viewedCount: 1,
+      status: 'active',
+      lastOperationId: 'state-two',
+    });
+  },
+);
