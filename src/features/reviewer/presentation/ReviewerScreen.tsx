@@ -15,6 +15,7 @@ export type ReviewerScreenProps = {
   onBack(): void;
   onBookmark(): void;
   bookmarked: boolean;
+  bookmarkMutationsEnabled?: boolean;
 };
 const contentError = () => {
   /* The renderer shows a safe error and never sends a receipt. */
@@ -25,6 +26,7 @@ export function ReviewerScreen({
   onBack,
   onBookmark,
   bookmarked,
+  bookmarkMutationsEnabled = true,
 }: ReviewerScreenProps) {
   const state = useSyncExternalStore(
     useCallback((listener) => controller.subscribe(listener), [controller]),
@@ -135,6 +137,7 @@ export function ReviewerScreen({
           <AppButton
             variant="secondary"
             label={bookmarked ? 'Remove bookmark' : 'Bookmark'}
+            disabled={!bookmarkMutationsEnabled}
             accessibilityState={{ selected: bookmarked }}
             onPress={onBookmark}
           />

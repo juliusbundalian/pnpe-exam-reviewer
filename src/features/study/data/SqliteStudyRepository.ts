@@ -140,7 +140,11 @@ export class SqliteStudyRepository implements StudyRepository {
     input(GeneratedIdSchema, id);
     return this.access(owner, (tx) => readSession(tx, owner, id));
   }
-  async replaceActive(owner: OwnerContext, value: ReviewerSession): Promise<void> {
+  async replaceActive(
+    owner: OwnerContext,
+    value: ReviewerSession,
+    checkMutation?: () => void,
+  ): Promise<void> {
     const session = input(ReviewerSessionSchema, value);
     if (
       session.uid !== owner.uid ||
@@ -151,55 +155,59 @@ export class SqliteStudyRepository implements StudyRepository {
       session.status !== 'active'
     )
       throw new StudyError('invalid-content');
-    await this.access(owner, async (tx) => {
-      const existing = await readSession(tx, owner, session.id);
-      if (existing) {
-        if (immutable(existing) !== immutable(session)) throw new StudyError('conflict');
-        return;
-      }
-      const previous = (
-        await tx.all(
-          "SELECT session_id FROM reviewer_sessions WHERE uid = ? AND device_id = ? AND status != 'archived'",
-          ownerKeys(owner),
-        )
-      )[0];
-      if (previous) {
-        const prior = await readSession(tx, owner, textValue(previous.session_id));
-        if (!prior) throw new StudyError('storage-corrupt');
-        const archived = { ...prior, sequence: prior.sequence + 1, status: 'archived' as const };
-        await this.saveState(tx, owner, archived);
-        await insertOperation(tx, {
-          ...this.common(owner, prior.id, archived.sequence),
-          kind: 'sessionState',
-          state: state(archived),
-        });
-      }
-      await tx.run(
-        'INSERT INTO reviewer_sessions (uid, device_id, session_id, scope_json, generation, catalog_validated_at, created_at, shuffle_questions, position, sequence, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
-        [
-          ...ownerKeys(owner),
-          session.id,
-          canonicalJson(session.scope),
-          session.generation,
-          session.catalogValidatedAt,
-          session.createdAt,
-          Number(session.shuffleQuestions),
-          session.position,
-          session.sequence,
-          session.status,
-        ],
-      );
-      for (const item of session.items)
+    await this.access(
+      owner,
+      async (tx) => {
+        const existing = await readSession(tx, owner, session.id);
+        if (existing) {
+          if (immutable(existing) !== immutable(session)) throw new StudyError('conflict');
+          return;
+        }
+        const previous = (
+          await tx.all(
+            "SELECT session_id FROM reviewer_sessions WHERE uid = ? AND device_id = ? AND status != 'archived'",
+            ownerKeys(owner),
+          )
+        )[0];
+        if (previous) {
+          const prior = await readSession(tx, owner, textValue(previous.session_id));
+          if (!prior) throw new StudyError('storage-corrupt');
+          const archived = { ...prior, sequence: prior.sequence + 1, status: 'archived' as const };
+          await this.saveState(tx, owner, archived);
+          await insertOperation(tx, {
+            ...this.common(owner, prior.id, archived.sequence),
+            kind: 'sessionState',
+            state: state(archived),
+          });
+        }
         await tx.run(
-          'INSERT INTO reviewer_items (uid, device_id, session_id, ordinal, entry_json) VALUES (?, ?, ?, ?, ?)',
-          [...ownerKeys(owner), session.id, item.ordinal, canonicalJson(item.entry)],
+          'INSERT INTO reviewer_sessions (uid, device_id, session_id, scope_json, generation, catalog_validated_at, created_at, shuffle_questions, position, sequence, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+          [
+            ...ownerKeys(owner),
+            session.id,
+            canonicalJson(session.scope),
+            session.generation,
+            session.catalogValidatedAt,
+            session.createdAt,
+            Number(session.shuffleQuestions),
+            session.position,
+            session.sequence,
+            session.status,
+          ],
         );
-      await insertOperation(tx, {
-        ...this.common(owner, session.id, session.sequence),
-        kind: 'publishSession',
-        session,
-      });
-    });
+        for (const item of session.items)
+          await tx.run(
+            'INSERT INTO reviewer_items (uid, device_id, session_id, ordinal, entry_json) VALUES (?, ?, ?, ?, ?)',
+            [...ownerKeys(owner), session.id, item.ordinal, canonicalJson(item.entry)],
+          );
+        await insertOperation(tx, {
+          ...this.common(owner, session.id, session.sequence),
+          kind: 'publishSession',
+          session,
+        });
+      },
+      checkMutation,
+    );
   }
   private async saveState(tx: SqlDatabase, owner: OwnerContext, session: ReviewerSession) {
     stored(ReviewerSessionSchema, session);

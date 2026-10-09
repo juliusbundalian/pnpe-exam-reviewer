@@ -1,3 +1,6 @@
+import { startBlock } from '../navigation/startAvailability';
+import type { AuthOwnerSource, StudyDependencies } from './studyComposition';
+import { StudyError } from '../features/study/domain/study';
 import type { ConfigRepository } from '../core/config/ConfigRepository';
 import { noOpAnalytics, type AnalyticsService } from '../core/analytics/AnalyticsService';
 import type { KeyValueStore } from '../core/storage/KeyValueStore';
@@ -28,8 +31,10 @@ export interface AppPorts {
   categories: CategoryRepository;
   storage: KeyValueStore;
   analytics?: AnalyticsService;
+  study?: (source: AuthOwnerSource) => Promise<StudyDependencies>;
 }
-export interface AppDependencies extends AppPorts {
+export interface AppDependencies extends Omit<AppPorts, 'study'> {
+  study(): Promise<StudyDependencies>;
   analytics: AnalyticsService;
   coordinator: AuthenticationCoordinator;
   registration: RegistrationController;
@@ -37,6 +42,22 @@ export interface AppDependencies extends AppPorts {
   dispose(): void;
 }
 export function createAppDependencies(ports: AppPorts): AppDependencies {
+  let epoch = 0;
+  let observedUid: string | null = null;
+  let disposed = false;
+  let study: StudyDependencies | null = null;
+  let loading: Promise<StudyDependencies> | null = null;
+  const source: AuthOwnerSource = {
+    current: () => (disposed || observedUid === null ? null : { uid: observedUid, epoch }),
+    bookmarksEnabled: () => ports.config.get('config').features.bookmarks,
+    startAllowed: () => startBlock(ports.config.get('app_info')) === null,
+  };
+  const invalidate = () => {
+    epoch++;
+    study?.dispose();
+    study = null;
+    loading = null;
+  };
   const registration = new RegistrationController(ports.auth, ports.profiles);
   let handlers: AuthenticationHandlers | null = null;
   const pending: (() => void)[] = [];
@@ -50,6 +71,11 @@ export function createAppDependencies(ports: AppPorts): AppDependencies {
     signOut: () => ports.auth.signOut(),
     observe: (listener) =>
       ports.auth.observe((state) => {
+        const uid = state.status === 'authenticated' ? state.user.uid : null;
+        if (uid !== observedUid || state.status !== 'authenticated') {
+          observedUid = uid;
+          invalidate();
+        }
         registration.synchronizeAuth(state);
         listener(state);
       }),
@@ -72,6 +98,27 @@ export function createAppDependencies(ports: AppPorts): AppDependencies {
     analytics: ports.analytics ?? noOpAnalytics,
     coordinator,
     registration,
+    study() {
+      const captured = source.current();
+      if (!captured) return Promise.reject(new StudyError('auth-required'));
+      if (study) return Promise.resolve(study);
+      if (loading) return loading;
+      const request = Promise.resolve().then(async () => {
+        if (!ports.study) throw new StudyError('storage-unavailable');
+        const result = await ports.study(source);
+        if (disposed || observedUid !== captured.uid || epoch !== captured.epoch) {
+          result.dispose();
+          throw new StudyError('auth-required');
+        }
+        study = result;
+        return result;
+      });
+      loading = request;
+      void request.catch(() => {
+        if (loading === request) loading = null;
+      });
+      return request;
+    },
     bindNavigation(next) {
       handlers = next;
       for (const navigation of pending.splice(0)) navigation();
@@ -80,6 +127,8 @@ export function createAppDependencies(ports: AppPorts): AppDependencies {
       };
     },
     dispose() {
+      disposed = true;
+      invalidate();
       coordinator.dispose();
       registration.dispose();
       pending.length = 0;
@@ -137,6 +186,10 @@ export function composeNativeApp(publicDependencies: PublicDependencies): AppDep
   return createAppDependencies({
     config: publicDependencies.config,
     storage: publicDependencies.safeStorage,
+    study: async (source) => {
+      const { composeStudyDependencies } = await import('./studyComposition');
+      return composeStudyDependencies(await publicDependencies.nativeServices(), source);
+    },
     auth,
     profiles: {
       get: async (uid) => (await repositories).profiles.get(uid),

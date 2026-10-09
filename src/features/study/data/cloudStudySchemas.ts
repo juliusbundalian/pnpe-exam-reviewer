@@ -1,6 +1,11 @@
 import { z } from 'zod';
 import { jsonBytes } from '../../../core/content/Fingerprint';
-import { SafeIntegerSchema, SafeIdSchema, GenerationSchema } from '../../content/domain/catalog';
+import {
+  SafeIntegerSchema,
+  SafeIdSchema,
+  GenerationSchema,
+  CatalogEntrySchema,
+} from '../../content/domain/catalog';
 import {
   BookmarkSchema,
   GeneratedIdSchema,
@@ -10,9 +15,17 @@ import {
 } from '../domain/study';
 
 export const MAX_STUDY_DOCUMENT_BYTES = 64 * 1024;
-export const MAX_MANIFEST_CHUNK_ITEMS = 100;
+export const MAX_MANIFEST_CHUNK_ITEMS = 2;
 // DTO times are milliseconds. Native transport maps local times to Timestamp,
 // and replaces writtenAt with serverTimestamp on every newly written document.
+// Personal cloud supports the text/math reading slice. Other retained pins stay local.
+const personalEntry = CatalogEntrySchema.refine(
+  (entry) =>
+    entry.assets.length === 0 &&
+    entry.supportedKinds.every((kind) => kind === 'text' || kind === 'math') &&
+    [entry.publishedAt, entry.expiresAt].every((date) => date === undefined || date.length <= 40),
+);
+const personalItem = z.strictObject({ ordinal: SafeIntegerSchema, entry: personalEntry });
 const identity = {
   uid: GeneratedIdSchema,
   deviceId: GeneratedIdSchema,
@@ -78,7 +91,7 @@ export const CloudManifestChunkSchema = bounded(
     .strictObject({
       ...identity,
       index: SafeIntegerSchema,
-      items: z.array(ManifestItemSchema).min(1).max(MAX_MANIFEST_CHUNK_ITEMS).readonly(),
+      items: z.array(personalItem).min(1).max(MAX_MANIFEST_CHUNK_ITEMS).readonly(),
       writtenAt: SafeIntegerSchema,
     })
     .refine(
@@ -94,6 +107,7 @@ export const CloudViewedItemSchema = bounded(
   z.strictObject({
     ...identity,
     ...ManifestItemSchema.unwrap().shape,
+    entry: personalEntry,
     viewed: z.literal(true),
     writtenAt: SafeIntegerSchema,
   }),
@@ -102,6 +116,8 @@ export const CloudBookmarkSchema = bounded(
   z
     .strictObject({
       ...BookmarkSchema.unwrap().shape,
+      entry: personalEntry,
+      serverRevision: SafeIntegerSchema.min(1),
       lastOperationId: GeneratedIdSchema,
       writtenAt: SafeIntegerSchema,
     })

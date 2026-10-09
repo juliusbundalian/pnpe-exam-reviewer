@@ -26,6 +26,10 @@ export function actionDestination(action: ProtectedAction): Href {
   switch (action.type) {
     case 'startMockExam':
       return '/mock-exam?stage=preflight';
+    case 'resumeReviewer':
+      return `/review?stage=session&sessionId=${action.sessionId}`;
+    case 'openBookmark':
+      return `/bookmarks?questionId=${action.questionId}`;
     case 'startReviewer':
       return `${originDestination({ type: 'reviewerOverview', categoryId: action.categoryId, ...(action.subcategoryId ? { subcategoryId: action.subcategoryId } : {}) })}?stage=availability` as Href;
     case 'openProgress':

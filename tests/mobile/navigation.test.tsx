@@ -1,4 +1,5 @@
 import { screen, fireEvent, waitFor, act } from 'expo-router/testing-library';
+import { studyNavigationFactory } from '../fixtures/study-navigation';
 import { createAppHarness } from '../fixtures/app-harness';
 import { authUser, flushTransitions } from '../fixtures/auth-harness';
 const harnesses: ReturnType<typeof createAppHarness>[] = [];
@@ -137,13 +138,14 @@ test('guest browses actual category and subcategory routes without authenticatio
   expect(await screen.findByRole('button', { name: 'Start Reviewer' })).toBeVisible();
   expect(screen.queryByText('Sign in to continue')).toBeNull();
 });
-test('guest Start Reviewer prompts before reaching a development boundary', async () => {
-  const h = harness();
-  await h.render('/review/generalInformation');
+test('guest Start Reviewer prompts before reaching real study content', async () => {
+  const study = studyNavigationFactory();
+  const h = harness({ study: study.factory });
+  await h.render('/review/communicationSkills');
   fireEvent.press(screen.getByRole('button', { name: 'Start Reviewer' }));
   expect(await screen.findByText('Sign in to continue')).toBeVisible();
   await h.authenticate('alice');
-  expect(await screen.findByText('Reviewer — development availability')).toBeVisible();
+  expect(await screen.findByText('Correct answer')).toBeVisible();
 });
 test('guest Start Mock Exam opens shared authentication prompt', async () => {
   const h = harness();

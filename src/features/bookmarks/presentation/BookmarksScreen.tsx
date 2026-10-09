@@ -16,6 +16,7 @@ export type BookmarksScreenProps = {
   owner: OwnerContext;
   onBack(): void;
   mutationsEnabled?: boolean;
+  initialQuestionId?: string;
 };
 type SavedState = {
   key: string;
@@ -33,6 +34,7 @@ export function BookmarksScreen({
   owner,
   onBack,
   mutationsEnabled = true,
+  initialQuestionId,
 }: BookmarksScreenProps) {
   const key = JSON.stringify([owner.uid, owner.deviceId, owner.epoch]);
   const current = useRef({ key, service, mutationsEnabled, generation: 0, mounted: true });
@@ -128,13 +130,22 @@ export function BookmarksScreen({
   };
   useEffect(() => {
     current.current.mounted = true;
-    refresh();
+    if (initialQuestionId) {
+      void run(
+        async () => ({
+          ...(await records()),
+          question: await service.open(owner, initialQuestionId),
+        }),
+        () => open(initialQuestionId),
+        true,
+      );
+    } else refresh();
     return () => {
       current.current.mounted = false;
       ++current.current.generation;
     };
     // Reload only for a new owner epoch or service, not each local state update.
-  }, [key, service]);
+  }, [key, service, initialQuestionId]);
   return (
     <AppScreen>
       <AppButton variant="text" label="Back" onPress={onBack} />

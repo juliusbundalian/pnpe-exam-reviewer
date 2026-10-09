@@ -77,10 +77,18 @@ async function initialize(environment: FirebaseEnvironment): Promise<NativeServi
   const auth = authSdk.getAuth(app);
   const firestore = firestoreSdk.getFirestore(app);
   if (environment.mode === 'emulator') {
-    authSdk.connectAuthEmulator(auth, `http://${environment.emulatorHost}:9099`, {
-      disableWarnings: true,
-    });
-    firestoreSdk.connectFirestoreEmulator(firestore, environment.emulatorHost, 8080);
+    authSdk.connectAuthEmulator(
+      auth,
+      `http://${environment.emulatorHost}:${environment.authPort ?? 9099}`,
+      {
+        disableWarnings: true,
+      },
+    );
+    firestoreSdk.connectFirestoreEmulator(
+      firestore,
+      environment.emulatorHost,
+      environment.firestorePort ?? 8080,
+    );
     return {
       available: true,
       auth,

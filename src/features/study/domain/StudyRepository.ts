@@ -6,7 +6,12 @@ export interface StudyRepository {
   /** Current non-archived session, including completed work that remains resumable. */
   active(owner: OwnerContext): Promise<ReviewerSession | null>;
   session(owner: OwnerContext, id: string): Promise<ReviewerSession | null>;
-  replaceActive(owner: OwnerContext, session: ReviewerSession): Promise<void>;
+  /** Optional synchronous activation gate runs inside the transaction and before commit. */
+  replaceActive(
+    owner: OwnerContext,
+    session: ReviewerSession,
+    checkMutation?: () => void,
+  ): Promise<void>;
   recordView(owner: OwnerContext, id: string, ordinal: number): Promise<ReviewerSession>;
   move(owner: OwnerContext, id: string, ordinal: number): Promise<ReviewerSession>;
   /** Includes tombstones; presentation filters deleted records. */

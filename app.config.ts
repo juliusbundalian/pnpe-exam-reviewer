@@ -32,6 +32,12 @@ const config: ExpoConfig = {
           mode: process.env.EXPO_PUBLIC_FIREBASE_MODE ?? 'configured',
           projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID,
           emulatorHost: process.env.EXPO_PUBLIC_FIREBASE_EMULATOR_HOST,
+          ...(process.env.EXPO_PUBLIC_FIREBASE_AUTH_PORT === undefined
+            ? {}
+            : { authPort: Number(process.env.EXPO_PUBLIC_FIREBASE_AUTH_PORT) }),
+          ...(process.env.EXPO_PUBLIC_FIREBASE_FIRESTORE_PORT === undefined
+            ? {}
+            : { firestorePort: Number(process.env.EXPO_PUBLIC_FIREBASE_FIRESTORE_PORT) }),
         }
       : { mode: 'unconfigured' },
   },

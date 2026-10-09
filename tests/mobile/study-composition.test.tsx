@@ -1,0 +1,207 @@
+import { AppState, type AppStateStatus } from 'react-native';
+import {
+  composeStudyDependencies,
+  type AuthOwnerSource,
+} from '../../src/bootstrap/studyComposition';
+import type { NativeServices } from '../../src/core/firebase/native';
+import { nodeSqlDatabase } from '../fixtures/nodeSqlDatabase';
+import { migrateStudyDatabase } from '../../src/core/storage/sqlite/studyMigrations';
+import {
+  studyEntry,
+  studyQuestion as mockQuestion,
+  generation as mockGeneration,
+} from '../fixtures/study';
+import type { SqlDatabase } from '../../src/core/storage/sqlite/SqlDatabase';
+import { deferred } from '../fixtures/auth-harness';
+
+const mockEntry = studyEntry;
+let mockDb: SqlDatabase;
+let mockOpen: Promise<SqlDatabase>;
+let mockIds = 0;
+let mockWrites: string[] = [];
+const mockWakeListeners = new Set<(state: AppStateStatus) => void>();
+jest.mock('../../src/core/storage/sqlite/nativeSqlDatabase', () => ({
+  openNativeStudyDatabase: () => mockOpen,
+}));
+jest.mock('expo-crypto', () => ({
+  randomUUID: () => `id-${++mockIds}`,
+  getRandomValues: (value: Uint32Array) => value,
+  digestStringAsync: async (_algorithm: unknown, value: string) => value,
+  CryptoDigestAlgorithm: { SHA256: 'sha256' },
+}));
+jest.mock('../../src/features/content/data/nativeContentFacade', () => ({
+  createNativeContentRemote: async () => ({
+    readHead: async () => ({ generation: mockGeneration, revision: 1 }),
+    listShards: async () => [{ id: 'shard', entries: [mockEntry()] }],
+    revision: async () => mockQuestion(),
+  }),
+}));
+jest.mock('../../src/features/study/data/nativeStudySyncFacade', () => ({
+  createNativeStudySyncRemote: async () => ({
+    publishSession: async () => {
+      mockWrites.push('session');
+    },
+    writeSessionState: async () => {
+      mockWrites.push('state');
+    },
+    writeBookmark: async (_owner: unknown, _bookmark: unknown, id: string, base: number) => {
+      mockWrites.push('bookmark');
+      return { revision: base + 1, appliedOperationId: id };
+    },
+    listBookmarks: async () => [],
+  }),
+}));
+beforeEach(async () => {
+  mockDb = nodeSqlDatabase(':memory:');
+  await migrateStudyDatabase(mockDb);
+  mockOpen = Promise.resolve(mockDb);
+  mockIds = 0;
+  mockWrites = [];
+  jest.spyOn(AppState, 'addEventListener').mockImplementation((event, listener) => {
+    if (event === 'change') mockWakeListeners.add(listener);
+    return {
+      remove: () => {
+        mockWakeListeners.delete(listener);
+      },
+    };
+  });
+});
+afterEach(() => {
+  jest.restoreAllMocks();
+  mockWakeListeners.clear();
+});
+const native = {
+  available: true,
+  auth: {},
+  firestore: {},
+  remoteConfigMode: 'emulator-defaults-not-live',
+  remoteConfig: { fetch: async () => ({}) },
+} as NativeServices;
+function source() {
+  let current: { uid: string; epoch: number } | null = { uid: 'alice', epoch: 1 };
+  let bookmarks = true,
+    starts = true;
+  const owner: AuthOwnerSource = {
+    current: () => current,
+    bookmarksEnabled: () => bookmarks,
+    startAllowed: () => starts,
+  };
+  return {
+    owner,
+    switch() {
+      current = { uid: 'bob', epoch: 2 };
+    },
+    disable() {
+      bookmarks = false;
+      starts = false;
+    },
+  };
+}
+test('native lazy graph reuses durable installation identity, flushes local mutations and owns foreground disposal', async () => {
+  await mockDb.run('INSERT INTO device_identity (singleton, device_id) VALUES (1, ?)', [
+    'persisted-device',
+  ]);
+  const auth = source();
+  const study = await composeStudyDependencies(native, auth.owner);
+  const wake = jest.spyOn(study.sync, 'wake');
+  const flush = jest.spyOn(study.sync, 'flush');
+  expect(study.owner).toEqual({ uid: 'alice', epoch: 1, deviceId: 'persisted-device' });
+  const created = await study.reviewer.prepare(
+    study.owner,
+    { categoryId: 'communicationSkills' },
+    false,
+  );
+  expect(created.kind).toBe('ready');
+  await study.sync.flush();
+  expect(mockWrites).toContain('session');
+  expect(flush).toHaveBeenCalled();
+  expect(wake).not.toHaveBeenCalled();
+  await study.bookmarks.toggle(study.owner, studyEntry());
+  await study.sync.flush();
+  expect(mockWrites).toContain('bookmark');
+  mockWakeListeners.forEach((listener) => listener('active'));
+  expect(wake).toHaveBeenCalledTimes(1);
+  auth.disable();
+  await expect(study.bookmarks.toggle(study.owner, studyEntry())).rejects.toMatchObject({
+    code: 'permission-denied',
+  });
+  await expect(
+    study.reviewer.replace(study.owner, { categoryId: 'communicationSkills' }, false),
+  ).rejects.toMatchObject({ code: 'permission-denied' });
+  study.dispose();
+  expect(mockWakeListeners.size).toBe(0);
+  expect(study.guard.isCurrent(study.owner)).toBe(false);
+});
+test('auth change while native storage opens rejects the old composition and closes its connection', async () => {
+  const gate = deferred<SqlDatabase>();
+  mockOpen = gate.promise;
+  const auth = source();
+  const promise = composeStudyDependencies(native, auth.owner);
+  const rejected = expect(promise).rejects.toMatchObject({ code: 'auth-required' });
+  auth.switch();
+  gate.resolve(mockDb);
+  await rejected;
+  await expect(mockDb.all('SELECT 1')).rejects.toBeDefined();
+});
+
+test.each(['queued', 'precommit'] as const)(
+  'maintenance changed at %s prevents activation and retains prior session plus outbox',
+  async (boundary) => {
+    const auth = source();
+    const study = await composeStudyDependencies(native, auth.owner);
+    const prepared = await study.reviewer.prepare(
+      study.owner,
+      { categoryId: 'communicationSkills' },
+      false,
+    );
+    await study.sync.flush();
+    study.sync.stop();
+    const previous = await study.repository.active(study.owner);
+    const before = await study.repository.pending(study.owner, Number.MAX_SAFE_INTEGER);
+    const entered = deferred<void>(),
+      release = deferred<void>();
+    let held = Promise.resolve();
+    const exclusive = mockDb.exclusive.bind(mockDb);
+    if (boundary === 'queued') {
+      held = mockDb.exclusive(async () => {
+        entered.resolve();
+        await release.promise;
+      });
+      await entered.promise;
+    } else {
+      let inserts = 0;
+      mockDb.exclusive = (work, check) =>
+        exclusive(
+          (tx) =>
+            work({
+              ...tx,
+              run: async (sql, params) => {
+                const result = await tx.run(sql, params);
+                if (sql.startsWith('INSERT INTO study_outbox') && ++inserts === 2) {
+                  entered.resolve();
+                  await release.promise;
+                }
+                return result;
+              },
+            }),
+          check,
+        );
+    }
+    const replacement = study.repository.replaceActive(study.owner, {
+      ...prepared.session,
+      id: 'replacement',
+    });
+    const rejected = expect(replacement).rejects.toMatchObject({ code: 'permission-denied' });
+    if (boundary === 'precommit') await entered.promise;
+    auth.disable();
+    release.resolve();
+    await held;
+    await rejected;
+    mockDb.exclusive = exclusive;
+    expect(await study.repository.active(study.owner)).toEqual(previous);
+    expect(await study.repository.session(study.owner, 'replacement')).toBeNull();
+    expect(await study.repository.pending(study.owner, Number.MAX_SAFE_INTEGER)).toEqual(before);
+    expect(await study.reviewer.resume(study.owner, prepared.session.id)).toEqual(previous);
+    study.dispose();
+  },
+);

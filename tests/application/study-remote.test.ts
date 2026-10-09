@@ -44,7 +44,7 @@ test('publication prepares then uploads bounded immutable chunks and only then p
     ready: true,
     phase: 'ready',
     itemCount: 205,
-    manifestChunkCount: 3,
+    manifestChunkCount: 103,
     catalogValidatedAt: 75,
     createdAt: 100,
   });
@@ -53,7 +53,7 @@ test('publication prepares then uploads bounded immutable chunks and only then p
   const chunks = [...documents]
     .filter(([path]) => path.includes('/manifest/'))
     .map(([, data]) => CloudManifestChunkSchema.parse(data));
-  expect(chunks.map((chunk) => chunk.items.length)).toEqual([100, 100, 5]);
+  expect(chunks.map((chunk) => chunk.items.length)).toEqual([...Array(102).fill(2), 1]);
   expect(chunks.every((chunk) => jsonBytes(chunk) <= 64 * 1024)).toBe(true);
   const count = writes.length;
   await remote.publishSession(owner, session, 'publish');
@@ -62,7 +62,7 @@ test('publication prepares then uploads bounded immutable chunks and only then p
     remote.publishSession(owner, { ...session, catalogValidatedAt: 99 }, 'publish'),
   ).rejects.toMatchObject({ code: 'invalid-content' });
 });
-test('UTF8 byte bound flushes chunks before count limit and accepts established long question IDs', async () => {
+test('bounded supported metadata accepts established long question IDs', async () => {
   const { remote, documents } = backend();
   const session = studySession({
     items: Array.from({ length: 90 }, (_, ordinal) => ({
@@ -75,9 +75,7 @@ test('UTF8 byte bound flushes chunks before count limit and accepts established 
     .filter(([path]) => path.includes('/manifest/'))
     .map(([, data]) => CloudManifestChunkSchema.parse(data));
   expect(chunks.length).toBeGreaterThan(2);
-  expect(chunks.every((chunk) => jsonBytes(chunk) <= 65536 && chunk.items.length <= 100)).toBe(
-    true,
-  );
+  expect(chunks.every((chunk) => jsonBytes(chunk) <= 65536 && chunk.items.length <= 2)).toBe(true);
 });
 test('owner switch after preparing leaves incomplete manifest unready', async () => {
   const { remote, documents, setBeforeCommit, switchOwner } = backend();
@@ -118,20 +116,32 @@ test('out of order state never regresses sequence and viewed ordinal membership 
   );
   expect(writes.length).toBe(count);
 });
-test('strict cloud documents reject content payloads oversized documents and unsafe generated IDs', () => {
+test('strict cloud documents reject payload fields, unsafe generated IDs and overfull chunks from valid baselines', () => {
+  const bookmark = { ...studyBookmark(), serverRevision: 1, lastOperationId: 'op', writtenAt: 0 };
+  expect(CloudBookmarkSchema.safeParse(bookmark).success).toBe(true);
   expect(
-    CloudBookmarkSchema.safeParse({ ...studyBookmark(), lastOperationId: 'x'.repeat(129) }).success,
+    CloudBookmarkSchema.safeParse({ ...bookmark, lastOperationId: 'x'.repeat(129) }).success,
   ).toBe(false);
-  expect(
-    CloudBookmarkSchema.safeParse({ ...studyBookmark(), lastOperationId: 'op', answer: 'A' })
-      .success,
-  ).toBe(false);
-  expect(CloudSessionRootSchema.safeParse({ prompt: 'secret' }).success).toBe(false);
+  expect(CloudBookmarkSchema.safeParse({ ...bookmark, answer: 'A' }).success).toBe(false);
+  const chunk = {
+    uid: owner.uid,
+    deviceId: owner.deviceId,
+    sessionId: studySession().id,
+    index: 0,
+    items: [
+      { ordinal: 0, entry: studyEntry() },
+      { ordinal: 1, entry: studyEntry() },
+    ],
+    writtenAt: 0,
+  };
+  expect(CloudManifestChunkSchema.safeParse(chunk).success).toBe(true);
   expect(
     CloudManifestChunkSchema.safeParse({
-      items: Array.from({ length: 101 }, (_, ordinal) => ({ ordinal, entry: studyEntry() })),
+      ...chunk,
+      items: [...chunk.items, { ordinal: 2, entry: studyEntry() }],
     }).success,
   ).toBe(false);
+  expect(CloudManifestChunkSchema.safeParse({ ...chunk, prompt: 'secret' }).success).toBe(false);
 });
 
 test('state cannot change frozen metadata or write mismatched pinned items', async () => {
@@ -169,7 +179,7 @@ test('partial upload resumes safely and publishes ready only after every chunk',
   await expect(remote.publishSession(owner, session, 'publish')).rejects.toMatchObject({
     code: 'network',
   });
-  expect(documents.get(root)).toMatchObject({ ready: false, manifestChunkCount: 2 });
+  expect(documents.get(root)).toMatchObject({ ready: false, manifestChunkCount: 51 });
   expect(documents.has(`${root}/manifest/0`)).toBe(true);
   expect(documents.has(`${root}/manifest/1`)).toBe(false);
   setBeforeCommit(() => {});
@@ -178,7 +188,7 @@ test('partial upload resumes safely and publishes ready only after every chunk',
   expect(documents.get(root)).toMatchObject({ ready: true });
   expect(documents.has(`${root}/manifest/1`)).toBe(true);
 });
-test('oversized single-entry manifest fails before preparing and generated operation IDs stay bounded', async () => {
+test('unsupported asset manifest fails before preparing and generated operation IDs stay bounded', async () => {
   const { remote, documents } = backend();
   const entry = studyEntry({
     supportedKinds: ['image'],
@@ -255,3 +265,17 @@ test.each([1, 2])(
     });
   },
 );
+
+test('personal cloud metadata validates supported baseline then rejects unsupported kinds and assets', () => {
+  const valid = { ...studyBookmark(), serverRevision: 1, lastOperationId: 'op', writtenAt: 0 };
+  expect(CloudBookmarkSchema.safeParse(valid).success).toBe(true);
+  expect(CloudBookmarkSchema.safeParse({ ...valid, serverRevision: 0 }).success).toBe(false);
+  for (const entry of [
+    studyEntry({ supportedKinds: ['table'] }),
+    studyEntry({
+      supportedKinds: ['image'],
+      assets: [{ id: 'asset', version: 1, uri: 'https://example.test/asset' }],
+    }),
+  ])
+    expect(CloudBookmarkSchema.safeParse({ ...valid, entry }).success).toBe(false);
+});

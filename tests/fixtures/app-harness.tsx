@@ -19,11 +19,13 @@ export function createAppHarness({
   config = defaults,
   profileFailure = false,
   nativeServices,
+  study,
 }: {
   initialAuth?: AuthState;
   config?: ConfigModels;
   profileFailure?: boolean;
   nativeServices?: () => Promise<NativeServices>;
+  study?: import('../../src/bootstrap/composition').AppPorts['study'];
 } = {}) {
   const storage = new MemoryIntentStore();
   const auth = new FakeAuthenticationRepository(initialAuth);
@@ -60,6 +62,7 @@ export function createAppHarness({
     ? composeNativeApp({ config: repository, safeStorage: storage, nativeServices })
     : createAppDependencies({
         auth,
+        ...(study ? { study } : {}),
         storage,
         profiles,
         config: repository,
