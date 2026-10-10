@@ -3,7 +3,8 @@
 This workflow validates content and stages immutable Firestore snapshots. It
 does not create a Firebase project or deploy rules. Publication requires exact
 human approval. The implemented mobile Reviewer consumes the approved catalog;
-its automated and outstanding native acceptance are recorded separately in the
+its automated checks, partial Android acceptance and outstanding native gates
+are recorded separately in the
 [Reviewer verification record](verification/content-reviewer.md).
 
 The owner confirmed that delivery covers the full usable reference corpus,
@@ -214,7 +215,9 @@ acceptance lifetime. Seed only an authorized copy of the already approved bank,
 using the existing importer manifest/digest safeguards or an explicitly isolated
 acceptance fixture. Never reset or rewrite the live demo for device testing.
 
-Native Reviewer acceptance remains outstanding at the current resource limit.
+Android Reviewer acceptance has partial device evidence; remaining Android
+checks and iOS acceptance are still outstanding. Do not run the destructive
+runner or reseed while the persistent acceptance Firestore lifetime is active.
 The [verification record](verification/content-reviewer.md) distinguishes passing
 automated checks from actual device observations and records the required
 force-close, offline, account, appearance and performance scenarios.

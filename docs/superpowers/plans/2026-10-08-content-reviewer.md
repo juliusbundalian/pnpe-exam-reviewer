@@ -10,7 +10,7 @@
 
 **Spec:** [Approved content/Reviewer design](../specs/2026-10-08-content-reviewer-design.md), all sections, preserving the [foundation design](../specs/2026-10-04-foundation-and-content-design.md).
 
-**Status:** Owner approved this plan on 2026-10-08. Tasks 1–9 are implemented and independently reviewed, including their scoped fixes. Task 10 automated/documentation work is recorded below; native acceptance, final scoped rereview and finishing remain open. Current evidence is in [the verification record](../../verification/content-reviewer.md).
+**Status:** Owner approved this plan on 2026-10-08. Tasks 1–9 are implemented and independently reviewed, including their scoped fixes. Task 10 automated/documentation work is recorded below; native acceptance and finishing remain open; scoped rereviews are approved. Current evidence is in [the verification record](../../verification/content-reviewer.md).
 
 ## Global Constraints
 
@@ -282,30 +282,50 @@ retry, without allowing concurrent flushes.
 
 ## Task 10: Full verification and native acceptance
 
-**Files:** Update `README.md`, `docs/content-workflow.md`; create `docs/verification/content-reviewer.md` and ignored `evidence/content-reviewer/`; update task execution ledger and this plan's checkboxes.
+**Files:** Update `README.md`, `docs/content-workflow.md`; create
+`docs/verification/content-reviewer.md` and ignored
+`evidence/content-reviewer/`; update task execution ledger and this plan's
+checkboxes.
 
-**Interfaces:** No new runtime interfaces. Whole-branch independent reviewer reads approved spec, plan, code and evidence; unresolved findings return to their owning implementer before completion.
+**Interfaces:** No new runtime interfaces. Whole-branch independent reviewer
+reads approved spec, plan, code and evidence; unresolved findings return to
+their owning implementer before completion.
 
 - [x] Run `npm run test:unit`, `npm run test:mobile`, `npm run typecheck`, `npm run lint`, `npm run format:check`, new document explicit Prettier checks, `npx expo install --check`, and guarded `npm run test:emulator`. No editorial extraction/regeneration is needed. Hash tracked content bank/editorial files against branch base to prove unchanged.
 - [ ] Rebuild development binaries with the new native dependencies in the feature worktree. Use a separate Metro port from live 8081/8082; preserve credentials/native config outside tracked files. Run on Android and iOS: actual authenticated catalog reading, marked passage/math rendering, SQLite persistence after force-close, full category inclusion, missing offline page with stable position, bookmark retry/sync and account switching. Record exact platforms/build IDs and observations; unavailable checks remain explicitly outstanding.
 - [ ] Verify root cache/startup recovery, long text at enlarged font scale, dark/light/system appearance, accessible focus and disabled feature/maintenance recovery. No whole-bank load on public launch; measure catalog versus progressively loaded question requests.
-- [ ] Obtain whole-branch independent review; fix findings with focused red/green checks and review again where changed. Document remaining material limitations and native acceptance evidence rather than claiming inferred passes.
-- [ ] Commit docs/evidence references as `docs: record content reviewer verification`. Follow finishing workflow only after required acceptance is met; preserve worktree/evidence and do not push/deploy. Mock Exam is the next separately designed slice.
+- [x] Obtain whole-branch independent review; fix findings with focused red/green checks and review again where changed. Document remaining material limitations and native acceptance evidence rather than claiming inferred passes.
+- [x] Commit the partial Android documentation/evidence checkpoint separately; Task 10 stays open. Follow finishing workflow only after required acceptance is met; preserve worktree/evidence and do not push/deploy. Mock Exam is the next separately designed slice.
 
-Task 10 checkpoint (2026-10-09): fresh unit 554, mobile 223 and isolated emulator
-72 tests pass; static, online Expo dependency and explicit document-format checks
-pass. All 33 tracked content/editorial/publication-evidence files and three
-original PDF hashes are preserved; live catalog head matches the Task 1 snapshot.
-Native builds/acceptance remain blocked by repeated approximately 1.0 GiB free
-disk inventory and controller resource ruling. No feature binary, device
-observations, corpus insertion timings or cap-2 upload latency were produced.
-Documentation was committed at `f75c0e0`; the subsequent whole-branch review
-requires the final fixes and their scoped rereview. Finishing/integration and
-native acceptance remain open. Disk availability improved to about 5.9 GiB on
-2026-10-10; build feasibility will be reassessed after the fixed code is committed
-and reviewed, without deleting owner caches. See
-[the verification record](../../verification/content-reviewer.md) and ignored
-`evidence/content-reviewer/task10/` for evidence and outstanding checks.
+Task 10 checkpoints: `f75c0e0` recorded the initial automated checks and resource
+boundary. The single final fix `f4a5dac` addressed I1/I2 and M1/M2/M3; scoped
+rereview approved all five. The native-discovered opaque stimulus fix `7e66178`
+received scoped approval after 595 unit/229 mobile/six nonreset real-SDK rules
+checks and static checks. Completed reviews are not pending repeat work.
+
+Android was built/installed from `f4a5dac`; the JS-only stimulus fix is
+`7e66178` and reviewed sync fix is `94df1f5`. Feature Metro 8083 was restarted
+with transform-cache clear after stale lazy facade source was established.
+Actual authenticated full-276 reading, progressive retrieval, force-close
+durability, offline page/queue recovery, foreground receipts, appearance and
+cap-two publication have device evidence. Part 4 recovered only missing
+Auth/AVD/Metro while retaining Firestore and native data; host no-space/swapping
+temporarily interrupted further work. Enlarged-font passage traversal,
+Quantitative text computation, bookmark tombstone/CAS/rebase, authenticated
+cross-client Refresh and actual B account isolation now have device evidence.
+The separate 529-row native cache benchmark completed with strict validation and
+original-database preservation; its artificial Admin fixture acquisition does
+not establish ordinary SDK ingestion or release latency. Dedicated math-block
+rendering and native gate checks stay open. iOS is owner-deferred for now;
+screen-reader acceptance is separately deferred. No
+merge/push/deployment/cleanup occurred. See [the verification
+record](../../verification/content-reviewer.md) and preserved ignored
+`evidence/content-reviewer/native/` artifacts. Task 10 is incomplete. The narrow
+native offline fix `94df1f5` has fresh 595 unit/241 mobile and static-check
+evidence; independent scoped review approved with zero findings. The post-clear
+ordinary native offline check shows network recovery copy without
+invalid-content copy; final restoration and remaining native acceptance are
+recorded in the verification record.
 
 ## Plan self-review
 
@@ -319,6 +339,7 @@ rules alone: the plan retains these limits without claiming stronger guarantees.
 
 Tasks 1–9 completed the approved implementation and independent-review method.
 Whole-branch review at `f75c0e0` found I1/I2 and M1/M2/M3; the single final fix
-wave addresses these with focused regression evidence. Its scoped rereview,
-native acceptance and finishing remain open; automated results do not close
-the native gates.
+wave addressed these with focused regression evidence and an approved scoped
+rereview. The native stimulus fix also received scoped approval. Remaining
+Android and iOS acceptance and finishing stay open; automated results do not
+close native gates.

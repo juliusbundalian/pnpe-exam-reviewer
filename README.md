@@ -17,9 +17,10 @@ acceptance and release blockers are tracked in the
 [mobile verification record](docs/verification/mobile-foundation.md); the foundation
 must not be called complete while mandatory checks remain blocked. The content
 Reviewer, viewed progress, bookmarks, SQLite persistence and owner-only sync are
-implemented on the feature branch. Fresh automated checks pass, but this slice
-remains partially verified: development builds with the new native dependencies
-and Android/iOS acceptance are blocked by local disk capacity. See the
+implemented on the feature branch. Recorded automated checks pass, and the
+Android development build has partial device acceptance. Remaining Android
+checks, iOS acceptance and native gate/performance observations keep this slice
+partially verified. See the
 [content Reviewer verification record](docs/verification/content-reviewer.md)
 for evidence and outstanding checks. Mock Exam, results and history are the next
 separately approved slice. No service has been deployed.
