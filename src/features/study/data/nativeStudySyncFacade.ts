@@ -50,7 +50,24 @@ export async function createNativeStudySyncRemote(
           const result = await action({
             get: async (path) => {
               check();
-              const snapshot = await transaction.get(sdk.doc(firestore, path));
+              const snapshot = await transaction
+                .get(sdk.doc(firestore, path))
+                .catch((error: unknown) => {
+                  check();
+                  // The Android transaction-get bridge erases UNAVAILABLE to unknown.
+                  // Only its native metadata token establishes this retryable case.
+                  if (
+                    typeof error === 'object' &&
+                    error !== null &&
+                    'code' in error &&
+                    error.code === 'firestore/unknown' &&
+                    'nativeErrorMessage' in error &&
+                    typeof error.nativeErrorMessage === 'string' &&
+                    /(?:^|\s)UNAVAILABLE(?::|\s|$)/.test(error.nativeErrorMessage)
+                  )
+                    throw new StudyError('network');
+                  throw error;
+                });
               check();
               return decode(snapshot.data());
             },

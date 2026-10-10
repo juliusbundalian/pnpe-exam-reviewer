@@ -227,3 +227,116 @@ test.each(['createdAt', 'updatedAt'] as const)(
     await expect(remote.listBookmarks(owner)).rejects.toMatchObject({ code: 'invalid-content' });
   },
 );
+
+test.each(['UNAVAILABLE: network unavailable', 'native transport UNAVAILABLE offline'])(
+  'native transaction read with erased code and native token %s is retryable',
+  async (nativeErrorMessage) => {
+    const error = Object.assign(new Error('native read failed'), {
+      code: 'firestore/unknown',
+      nativeErrorMessage,
+    });
+    mockRunTransaction.mockImplementation(async (_instance, action) =>
+      action({
+        get: async () => {
+          throw error;
+        },
+        set: () => {
+          throw new Error('A failed read must not write');
+        },
+      }),
+    );
+    const remote = await createNativeStudySyncRemote(
+      mockFirestore as unknown as Firestore,
+      mockAuth as unknown as Auth,
+      { isCurrent: () => true },
+    );
+    await expect(remote.writeBookmark(owner, studyBookmark(), 'op', 0)).rejects.toMatchObject({
+      code: 'network',
+    });
+  },
+);
+
+test.each([
+  ['generic unknown', { code: 'firestore/unknown' }, 'invalid-content'],
+  [
+    'message-only token',
+    { code: 'firestore/unknown', message: 'UNAVAILABLE: offline' },
+    'invalid-content',
+  ],
+  [
+    'nonstring native message',
+    { code: 'firestore/unknown', nativeErrorMessage: 123 },
+    'invalid-content',
+  ],
+  [
+    'embedded token',
+    { code: 'firestore/unknown', nativeErrorMessage: 'NOT_UNAVAILABLE: offline' },
+    'invalid-content',
+  ],
+  [
+    'token prefix',
+    { code: 'firestore/unknown', nativeErrorMessage: 'UNAVAILABLE_EXTRA' },
+    'invalid-content',
+  ],
+  [
+    'wrong erased code',
+    { code: 'unknown', nativeErrorMessage: 'UNAVAILABLE: offline' },
+    'invalid-content',
+  ],
+  [
+    'permission code',
+    { code: 'firestore/permission-denied', nativeErrorMessage: 'UNAVAILABLE: offline' },
+    'permission-denied',
+  ],
+  [
+    'authentication code',
+    { code: 'firestore/unauthenticated', nativeErrorMessage: 'UNAVAILABLE: offline' },
+    'auth-required',
+  ],
+  [
+    'invalid content',
+    { code: 'invalid-content', nativeErrorMessage: 'UNAVAILABLE: offline' },
+    'invalid-content',
+  ],
+])('native transaction read preserves %s classification', async (_label, error, code) => {
+  mockRunTransaction.mockImplementation(async (_instance, action) =>
+    action({
+      get: async () => {
+        throw error;
+      },
+      set: () => {
+        throw new Error('A failed read must not write');
+      },
+    }),
+  );
+  const remote = await createNativeStudySyncRemote(
+    mockFirestore as unknown as Firestore,
+    mockAuth as unknown as Auth,
+    { isCurrent: () => true },
+  );
+  await expect(remote.writeBookmark(owner, studyBookmark(), 'op', 0)).rejects.toMatchObject({
+    code,
+  });
+});
+
+test('owner change during rejected native read outranks network recovery', async () => {
+  mockRunTransaction.mockImplementation(async (_instance, action) =>
+    action({
+      get: async () => {
+        mockAuth.currentUser = { uid: 'bob' };
+        throw { code: 'firestore/unknown', nativeErrorMessage: 'UNAVAILABLE: offline' };
+      },
+      set: () => {
+        throw new Error('A stale owner must not write');
+      },
+    }),
+  );
+  const remote = await createNativeStudySyncRemote(
+    mockFirestore as unknown as Firestore,
+    mockAuth as unknown as Auth,
+    { isCurrent: () => true },
+  );
+  await expect(remote.writeBookmark(owner, studyBookmark(), 'op', 0)).rejects.toMatchObject({
+    code: 'auth-required',
+  });
+});
