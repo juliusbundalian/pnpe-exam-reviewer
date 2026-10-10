@@ -3,6 +3,7 @@ import { jsonBytes, MAX_CONTENT_BYTES } from '../../../core/content/Fingerprint'
 import { ContentBlockSchema } from './content';
 import { QuestionSchema } from './question';
 import { isTaxonomyPair } from './taxonomy';
+import { StimulusRefSchema } from './stimulus';
 
 /** Published question IDs retain their existing ASCII/1500-byte contract. */
 export const SafeIdSchema = z
@@ -41,7 +42,7 @@ export const CatalogEntrySchema = z
       .max(5)
       .refine((kinds) => new Set(kinds).size === kinds.length, 'Duplicate content kind')
       .readonly(),
-    stimulus: QuestionRefSchema.optional(),
+    stimulus: StimulusRefSchema.optional(),
     assets: z.array(AssetRefSchema).readonly(),
   })
   .superRefine((entry, ctx) => {

@@ -2,6 +2,7 @@ import { canonicalJson, jsonBytes, MAX_CONTENT_BYTES } from '../../../core/conte
 import { StudyError } from '../../study/domain/study';
 import { CatalogEntrySchema, QuestionRefSchema, type CatalogEntry } from './catalog';
 import { QuestionSchema, type Question } from './question';
+import { StimulusRefSchema } from './stimulus';
 
 /** Projection of every required block, including explanation and shared stimulus. */
 export function catalogEntryForQuestion(question: Question): CatalogEntry {
@@ -57,7 +58,7 @@ export function validateRevision(raw: unknown, entry: CatalogEntry): Question {
     };
     QuestionRefSchema.parse({ id: dto.id, version: dto.version });
     if (dto.stimulus)
-      QuestionRefSchema.parse({ id: dto.stimulus.id, version: dto.stimulus.version });
+      StimulusRefSchema.parse({ id: dto.stimulus.id, version: dto.stimulus.version });
     const expected = CatalogEntrySchema.parse(entry);
     if (
       canonicalJson(normalized(catalogEntryForQuestion(question))) !==
