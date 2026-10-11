@@ -6,6 +6,8 @@ import { ReviewerService } from '../../src/features/reviewer/application/Reviewe
 import { ReviewerController } from '../../src/features/reviewer/application/ReviewerController';
 import { BookmarkService } from '../../src/features/bookmarks/application/BookmarkService';
 import { StudySyncWorker } from '../../src/features/study/application/StudySyncWorker';
+import { SqliteExamRepository } from '../../src/features/exam/data/SqliteExamRepository';
+import { ExamService } from '../../src/features/exam/application/ExamService';
 import { generation, studyEntry, studyQuestion } from './study';
 import { StudyError, type OwnerContext } from '../../src/features/study/domain/study';
 export function studyNavigationFactory() {
@@ -73,6 +75,17 @@ export function studyNavigationFactory() {
       clock,
       guard,
     );
+    const examRepository = new SqliteExamRepository(db, guard);
+    const exam = new ExamService(
+      examRepository,
+      content,
+      clock,
+      { next: () => 0.5 },
+      identity,
+      guard,
+      () => source.startAllowed(),
+      { now: () => 0 },
+    );
     current = {
       owner,
       guard,
@@ -82,6 +95,8 @@ export function studyNavigationFactory() {
       controller,
       bookmarks,
       sync,
+      exam,
+      examRepository,
       dispose() {
         disposed = true;
         sync.stop();

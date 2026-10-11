@@ -13,6 +13,8 @@ import type { ReviewerService } from '../features/reviewer/application/ReviewerS
 import type { ReviewerController } from '../features/reviewer/application/ReviewerController';
 import type { BookmarkService } from '../features/bookmarks/application/BookmarkService';
 import type { StudySyncWorker } from '../features/study/application/StudySyncWorker';
+import type { ExamRepository } from '../features/exam/domain/ExamRepository';
+import type { ExamService } from '../features/exam/application/ExamService';
 
 export interface AuthOwnerSource {
   current(): { uid: string; epoch: number } | null;
@@ -28,6 +30,8 @@ export interface StudyDependencies {
   controller: ReviewerController;
   bookmarks: BookmarkService;
   sync: StudySyncWorker;
+  exam: ExamService;
+  examRepository: ExamRepository;
   dispose(): void;
 }
 /** Called only after a protected study entry. Native storage failures stay retryable. */
@@ -50,6 +54,8 @@ export async function composeStudyDependencies(
     { BookmarkService },
     { StudySyncWorker },
     { createNativeStudySyncRemote },
+    { SqliteExamRepository },
+    { ExamService },
   ] = await Promise.all([
     import('../core/storage/sqlite/nativeSqlDatabase'),
     import('expo-crypto'),
@@ -63,6 +69,8 @@ export async function composeStudyDependencies(
     import('../features/bookmarks/application/BookmarkService'),
     import('../features/study/application/StudySyncWorker'),
     import('../features/study/data/nativeStudySyncFacade'),
+    import('../features/exam/data/SqliteExamRepository'),
+    import('../features/exam/application/ExamService'),
   ]);
   const db = await openNativeStudyDatabase();
   let disposed = false;
@@ -127,15 +135,27 @@ export async function composeStudyDependencies(
       rebaseBookmark: (o, id, revision) => durable.rebaseBookmark(o, id, revision),
       retry: (o, id, deadline) => durable.retry(o, id, deadline),
     };
+    const random = { next: () => crypto.getRandomValues(new Uint32Array(1))[0]! / 4294967296 };
     const reviewer = new ReviewerService(
       repository,
       content,
       systemClock,
-      { next: () => crypto.getRandomValues(new Uint32Array(1))[0]! / 4294967296 },
+      random,
       { nextId: () => `${deviceId}_${crypto.randomUUID()}` },
       guard,
     );
     const controller = new ReviewerController(reviewer, content, repository, guard);
+    const examRepository: ExamRepository = new SqliteExamRepository(db, guard);
+    const exam = new ExamService(
+      examRepository,
+      content,
+      systemClock,
+      random,
+      { nextId: () => `${deviceId}_${crypto.randomUUID()}` },
+      guard,
+      () => authOwnerSource.startAllowed(),
+      { now: () => Math.max(0, Math.floor(performance.now())) },
+    );
     const bookmarks = new BookmarkService(
       repository,
       content,
@@ -168,6 +188,8 @@ export async function composeStudyDependencies(
       controller,
       bookmarks,
       sync,
+      exam,
+      examRepository,
       dispose() {
         if (disposed) return;
         disposed = true;

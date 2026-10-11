@@ -18,6 +18,7 @@ import {
 } from '../fixtures/study';
 import type { SqlDatabase } from '../../src/core/storage/sqlite/SqlDatabase';
 import { deferred } from '../fixtures/auth-harness';
+import { defaults } from '../../src/core/config/defaults';
 
 const mockEntry = studyEntry;
 let mockDb: SqlDatabase;
@@ -149,6 +150,18 @@ test('native lazy graph reuses durable installation identity, flushes local muta
   study.dispose();
   expect(mockWakeListeners.size).toBe(0);
   expect(study.guard.isCurrent(study.owner)).toBe(false);
+});
+
+test('protected composition wires exam storage and checks the live new-start gate', async () => {
+  const auth = source();
+  const study = await composeStudyDependencies(native, auth.owner);
+  expect(await study.examRepository.active(study.owner)).toBeNull();
+  auth.disable();
+  await expect(study.exam.start(study.owner, defaults.config.mockExam)).rejects.toMatchObject({
+    code: 'permission-denied',
+  });
+  expect(await study.examRepository.active(study.owner)).toBeNull();
+  study.dispose();
 });
 test('auth change while native storage opens rejects the old composition and closes its connection', async () => {
   const gate = deferred<SqlDatabase>();
