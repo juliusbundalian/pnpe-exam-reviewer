@@ -315,10 +315,13 @@ Quantitative text computation, bookmark tombstone/CAS/rebase, authenticated
 cross-client Refresh and actual B account isolation now have device evidence.
 The separate 529-row native cache benchmark completed with strict validation and
 original-database preservation; its artificial Admin fixture acquisition does
-not establish ordinary SDK ingestion or release latency. Dedicated math-block
-rendering and native gate checks stay open. iOS is owner-deferred for now;
-screen-reader acceptance is separately deferred. No
-merge/push/deployment/cleanup occurred. See [the verification
+not establish ordinary SDK ingestion or release latency. An isolated Android
+fixture exercised structured math blocks in the prompt, choices and
+explanation at font scales 1.0 and 1.5; the approved bank has no math blocks,
+so ordinary reviewer-session rendering of one remains untested. Native gate
+checks stay open. iOS is owner-deferred for now;
+screen-reader acceptance is separately deferred. No merge, push or deployment
+occurred. See [the verification
 record](../../verification/content-reviewer.md) and preserved ignored
 `evidence/content-reviewer/native/` artifacts. Task 10 is incomplete. The narrow
 native offline fix `94df1f5` has fresh 595 unit/241 mobile and static-check

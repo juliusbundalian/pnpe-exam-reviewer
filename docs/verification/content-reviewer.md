@@ -142,8 +142,9 @@ Evidence is retained under `evidence/content-reviewer/native/`:
 `part4-resume2-cacheclear-final*` (settled UI, SQL/remote, owner, globals and
 preservation/settings). Initial/loading/setup captures are not acceptance
 passes. No new runtime mapping, rebuild or repeated broader suite was needed.
-Task 10 remains open for iOS, dedicated math-block rendering, native gate
-transitions and startup/performance limits; screen readers remain deferred.
+Task 10 remains open for iOS, native gate transitions and startup/performance
+limits; screen readers remain deferred. The dedicated math-block renderer has
+an isolated Android native pass at font scales 1.0 and 1.5, described below.
 
 ## Preservation and isolation
 
@@ -197,7 +198,7 @@ failures. Build/platform metadata and logs remain in ignored
 | Appearance and enlarged text         | Explicit Light/Dark observed. Settled System selection responded to OS night yes/no. Part 4 font 1.5 shared-passage Item 6 was traversed through wrapped prompt/choices/explanation to enabled Bookmark/Previous/Next; enlarged Item 1 showed disabled Previous. Font 1.0 restored.                                                                                                                                                          |
 | Guest startup and recovery           | Public Home rendered with no SQLite database before protected entry. Cold launches repeatedly showed authentication-unavailable and recovered through actual Retry. Initial cause remains unproven.                                                                                                                                                                                                                                          |
 | Bookmark/account matrix              | Actual offline Remove queued base revision 1. Authenticated same-account client tombstone advanced remote to 2; native reconnect captured conflict, rebase and acknowledgement, draining outbox at revision 3. Client add advanced to 4; actual Refresh restored the original revision-1 pin. Actual B sign-in, native UID check and settled empty Progress/bookmarks establish isolation; A SQLite retains three sessions and one bookmark. |
-| Math, gates and corpus cache scan    | Actual Quantitative replacement created all 41 items and rendered text computations/choices/immediate answer/explanation. Dedicated math-block rendering and maintenance/feature transitions remain outstanding; the separate 529-row native cache benchmark completed with the limitations below. Natural emulator Remote Config uses fixed defaults; no gate injection occurred.                                                           |
+| Math, gates and corpus cache scan    | Actual Quantitative replacement created all 41 items and rendered text computations/choices/immediate answer/explanation. An isolated local Android fixture rendered structured math blocks in the prompt, choices and explanation at font scales 1.0 and 1.5. Maintenance/feature transitions remain outstanding; the separate 529-row native cache benchmark completed with the limitations below. Natural emulator Remote Config uses fixed defaults; no gate injection occurred. |
 
 Part 4 actual Quantitative Start Reviewer → Replace → Confirm replacement
 created a 41-item session, retaining both earlier 276-item Communication
@@ -206,9 +207,21 @@ sessions as archived. `part4-quantitative-confirmed-sql-summary.json` records
 prompt, choices, correct answer and supplied division explanation. A read-only
 walk (`python3 evidence/content-reviewer/native/part4-count-approved-blocks.py`)
 of `data/questions.json` counted 3,431 blocks, all `kind: text`, and no math
-blocks in any of the 529 questions. Thus quantitative text rendering is observed;
-the dedicated math-block renderer has automated coverage but no native pass.
-No synthetic public content or gate injection was introduced to fill this gap.
+blocks in any of the 529 questions. Thus quantitative text rendering is observed
+in a real reviewer session. To exercise the dedicated renderer, a temporary
+local About route displayed a synthetic structured-math question without
+catalog or study-storage calls. On Android API 36, its prompt, both choices,
+correct answer and explanation rendered at system font scales 1.0 and 1.5;
+settled UI XML contained all expected labels and the ready marker, with no
+render error. Screenshots showed the content without visible clipping. The
+fixture source, result summary, UI captures and restored-state proof are in
+`evidence/content-reviewer/native/math-probe-route.tsx.txt`,
+`math-probe-result.json`, `math-probe-font1-top.png`,
+`math-probe-font15-top.png` and `math-probe-final-state.json`. The temporary
+route was removed, original About restored and font scale reset to 1.0. This
+is an isolated native renderer pass, not an approved-bank math question,
+ordinary reviewer-session flow or screen-reader acceptance. No synthetic
+public content or gate injection was introduced.
 
 Part 4 bookmark evidence correlates actual UI, durable outbox and remote state:
 `part4-offline-remove-outbox.json` records base revision 1 before reconnect;
