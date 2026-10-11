@@ -20,6 +20,13 @@ export function nodeSqlDatabase(filename: string): SqlDatabase {
     },
   });
 }
+
+/** A test built from the latest schema must remove later tables before impersonating a legacy file. */
+export async function dropExamTablesForLegacyFixture(db: SqlDatabase): Promise<void> {
+  for (const table of ['exam_outbox', 'exam_results', 'exam_questions', 'exam_attempts']) {
+    await db.run(`DROP TABLE IF EXISTS ${table}`);
+  }
+}
 export const nodeFingerprint: Fingerprint = {
   async digest(value) {
     return createHash('sha256').update(canonicalJson(value)).digest('hex');

@@ -1,7 +1,7 @@
 import { mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { nodeSqlDatabase } from '../fixtures/nodeSqlDatabase';
+import { dropExamTablesForLegacyFixture, nodeSqlDatabase } from '../fixtures/nodeSqlDatabase';
 import { migrateStudyDatabase } from '../../src/core/storage/sqlite/studyMigrations';
 import { SqliteStudyRepository } from '../../src/features/study/data/SqliteStudyRepository';
 import {
@@ -662,6 +662,7 @@ test('legacy v2 empty acknowledgement catches up once and later position sends n
   await worker.flush();
   worker.stop();
   await db.run('DROP TABLE reviewer_view_acknowledgements');
+  await dropExamTablesForLegacyFixture(db);
   await db.run('PRAGMA user_version = 2');
   await migrateStudyDatabase(db);
   await study.move(alice, studySession().id, 1);

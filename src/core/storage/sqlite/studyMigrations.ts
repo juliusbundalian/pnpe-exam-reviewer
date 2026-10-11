@@ -1,7 +1,7 @@
 import { StudyError } from '../../../features/study/domain/study';
 import type { SqlDatabase } from './SqlDatabase';
 
-export const STUDY_SCHEMA_VERSION = 3;
+export const STUDY_SCHEMA_VERSION = 4;
 const statements = [
   `CREATE TABLE catalogs (generation TEXT PRIMARY KEY NOT NULL, revision INTEGER NOT NULL, validated_at INTEGER NOT NULL, item_count INTEGER NOT NULL, fingerprint TEXT NOT NULL)`,
   `CREATE TABLE catalog_items (generation TEXT NOT NULL REFERENCES catalogs(generation) ON DELETE CASCADE, ordinal INTEGER NOT NULL, entry_json TEXT NOT NULL, PRIMARY KEY (generation, ordinal))`,
@@ -41,6 +41,27 @@ export async function migrateStudyDatabase(db: SqlDatabase): Promise<void> {
           `CREATE TABLE reviewer_view_acknowledgements (uid TEXT NOT NULL, device_id TEXT NOT NULL, session_id TEXT NOT NULL, ordinal INTEGER NOT NULL, PRIMARY KEY (uid, device_id, session_id, ordinal), FOREIGN KEY (uid, device_id, session_id, ordinal) REFERENCES reviewer_items(uid, device_id, session_id, ordinal) ON DELETE CASCADE)`,
         );
         await tx.run('PRAGMA user_version = 3');
+      }
+      if (version < 4) {
+        await tx.run(
+          `CREATE TABLE exam_attempts (uid TEXT NOT NULL, device_id TEXT NOT NULL, attempt_id TEXT NOT NULL, generation TEXT NOT NULL, config_json TEXT NOT NULL, started_at INTEGER NOT NULL, deadline_at INTEGER NOT NULL, last_effective_at INTEGER NOT NULL, position INTEGER NOT NULL, status TEXT NOT NULL CHECK (status IN ('active','completed')), PRIMARY KEY (uid, device_id, attempt_id))`,
+        );
+        await tx.run(
+          `CREATE UNIQUE INDEX exam_one_active ON exam_attempts(uid, device_id) WHERE status = 'active'`,
+        );
+        await tx.run(
+          `CREATE TABLE exam_questions (uid TEXT NOT NULL, device_id TEXT NOT NULL, attempt_id TEXT NOT NULL, ordinal INTEGER NOT NULL, entry_json TEXT NOT NULL, question_json TEXT NOT NULL, choice_order_json TEXT NOT NULL, selected_choice_id TEXT, flagged INTEGER NOT NULL CHECK (flagged IN (0,1)), PRIMARY KEY (uid, device_id, attempt_id, ordinal), FOREIGN KEY (uid, device_id, attempt_id) REFERENCES exam_attempts(uid, device_id, attempt_id) ON DELETE CASCADE)`,
+        );
+        await tx.run(
+          `CREATE TABLE exam_results (uid TEXT NOT NULL, device_id TEXT NOT NULL, attempt_id TEXT NOT NULL, reason TEXT NOT NULL CHECK (reason IN ('manual','timeExpired')), ended_at INTEGER NOT NULL, result_json TEXT NOT NULL, PRIMARY KEY (uid, device_id, attempt_id), FOREIGN KEY (uid, device_id, attempt_id) REFERENCES exam_attempts(uid, device_id, attempt_id) ON DELETE CASCADE)`,
+        );
+        await tx.run(
+          `CREATE TABLE exam_outbox (uid TEXT NOT NULL, device_id TEXT NOT NULL, attempt_id TEXT NOT NULL, operation_id TEXT NOT NULL, created_at INTEGER NOT NULL, PRIMARY KEY (uid, device_id, operation_id), FOREIGN KEY (uid, device_id, attempt_id) REFERENCES exam_results(uid, device_id, attempt_id) ON DELETE CASCADE)`,
+        );
+        await tx.run(
+          `CREATE UNIQUE INDEX exam_one_terminal_outbox ON exam_outbox(uid, device_id, attempt_id)`,
+        );
+        await tx.run('PRAGMA user_version = 4');
       }
       const integrity = await tx.all('PRAGMA quick_check');
       if (

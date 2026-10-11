@@ -1,7 +1,7 @@
 import { mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { nodeSqlDatabase } from '../fixtures/nodeSqlDatabase';
+import { dropExamTablesForLegacyFixture, nodeSqlDatabase } from '../fixtures/nodeSqlDatabase';
 import { SqliteStudyRepository } from '../../src/features/study/data/SqliteStudyRepository';
 import { migrateStudyDatabase } from '../../src/core/storage/sqlite/studyMigrations';
 import type { SqlDatabase } from '../../src/core/storage/sqlite/SqlDatabase';
@@ -319,6 +319,7 @@ test('version-one legacy session migration retains manifest position views and p
   ]);
   await db.run('DROP TABLE reviewer_view_acknowledgements');
   await db.run('ALTER TABLE reviewer_sessions DROP COLUMN catalog_validated_at');
+  await dropExamTablesForLegacyFixture(db);
   await db.run('PRAGMA user_version = 1');
   await db.close();
   db = nodeSqlDatabase(join(dir, 'study.db'));
@@ -344,6 +345,7 @@ test('version-two migration failure after adding a column rolls back without cle
   await repository.replaceActive(alice, studySession());
   await db.run('DROP TABLE reviewer_view_acknowledgements');
   await db.run('ALTER TABLE reviewer_sessions DROP COLUMN catalog_validated_at');
+  await dropExamTablesForLegacyFixture(db);
   await db.run('PRAGMA user_version = 1');
   const failing: SqlDatabase = {
     ...db,
@@ -402,6 +404,7 @@ test('v2 upgrade preserves sessions, views and pending operations with safe empt
   const before = await repository.active(alice);
   const pending = await repository.pending(alice, 200);
   await db.run('DROP TABLE reviewer_view_acknowledgements');
+  await dropExamTablesForLegacyFixture(db);
   await db.run('PRAGMA user_version = 2');
   const failing: SqlDatabase = {
     ...db,
