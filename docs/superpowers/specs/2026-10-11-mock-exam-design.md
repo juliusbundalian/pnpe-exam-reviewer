@@ -2,8 +2,8 @@
 
 Date: 2026-10-11
 
-Status: draft for owner review. This specification does not authorize production
-writes, deployment or release. It carries forward the approved
+Status: approved by the owner in this session for implementation planning. This
+specification does not authorize production writes, deployment or release. It carries forward the approved
 [foundation design](2026-10-04-foundation-and-content-design.md) and the session
 decisions in the [discovery record](../../discovery/2026-10-03-repository-and-questionnaire-audit.md).
 
@@ -76,7 +76,9 @@ durably saved before the UI claims it is saved; failures show Retry without
 pretending the mutation succeeded. The navigator offers Compact grid and
 Expanded list with one-line truncated previews. Current, answered, unanswered
 and flagged states have text/symbol labels as well as color. Flagging never
-changes an answer.
+changes an answer. A bookmark control saves the question reference through the
+existing owner-scoped bookmark service without exposing the correct answer or
+explanation; its mutation respects the current bookmark feature flag.
 
 The timer derives remaining time from the persisted deadline and an injected
 clock; a UI interval only refreshes the display. Backgrounding, logout,
