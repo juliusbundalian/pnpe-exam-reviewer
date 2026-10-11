@@ -318,8 +318,13 @@ original-database preservation; its artificial Admin fixture acquisition does
 not establish ordinary SDK ingestion or release latency. An isolated Android
 fixture exercised structured math blocks in the prompt, choices and
 explanation at font scales 1.0 and 1.5; the approved bank has no math blocks,
-so ordinary reviewer-session rendering of one remains untested. Native gate
-checks stay open. iOS is owner-deferred for now;
+so ordinary reviewer-session rendering of one remains untested. A subsequent
+isolated native configuration fixture passed maintenance, minimum-version and
+bookmark-disabled/recovered UI branches without a remote write; natural Remote
+Config transitions remain untested. A separate normal native SDK probe measured
+the 529-entry catalog and five representative question reads, and two debug
+force-close launches bounded Home detection near 10 seconds. Release-device and
+full-corpus ordinary ingestion limits remain open. iOS is owner-deferred for now;
 screen-reader acceptance is separately deferred. No merge, push or deployment
 occurred. See [the verification
 record](../../verification/content-reviewer.md) and preserved ignored

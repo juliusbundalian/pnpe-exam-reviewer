@@ -142,9 +142,9 @@ Evidence is retained under `evidence/content-reviewer/native/`:
 `part4-resume2-cacheclear-final*` (settled UI, SQL/remote, owner, globals and
 preservation/settings). Initial/loading/setup captures are not acceptance
 passes. No new runtime mapping, rebuild or repeated broader suite was needed.
-Task 10 remains open for iOS, native gate transitions and startup/performance
-limits; screen readers remain deferred. The dedicated math-block renderer has
-an isolated Android native pass at font scales 1.0 and 1.5, described below.
+Task 10 remains open for iOS, natural Remote Config transitions and
+release-representative performance limits; screen readers remain deferred.
+Isolated Android native gate and math-block passes are described below.
 
 ## Preservation and isolation
 
@@ -198,7 +198,7 @@ failures. Build/platform metadata and logs remain in ignored
 | Appearance and enlarged text         | Explicit Light/Dark observed. Settled System selection responded to OS night yes/no. Part 4 font 1.5 shared-passage Item 6 was traversed through wrapped prompt/choices/explanation to enabled Bookmark/Previous/Next; enlarged Item 1 showed disabled Previous. Font 1.0 restored.                                                                                                                                                          |
 | Guest startup and recovery           | Public Home rendered with no SQLite database before protected entry. Cold launches repeatedly showed authentication-unavailable and recovered through actual Retry. Initial cause remains unproven.                                                                                                                                                                                                                                          |
 | Bookmark/account matrix              | Actual offline Remove queued base revision 1. Authenticated same-account client tombstone advanced remote to 2; native reconnect captured conflict, rebase and acknowledgement, draining outbox at revision 3. Client add advanced to 4; actual Refresh restored the original revision-1 pin. Actual B sign-in, native UID check and settled empty Progress/bookmarks establish isolation; A SQLite retains three sessions and one bookmark. |
-| Math, gates and corpus cache scan    | Actual Quantitative replacement created all 41 items and rendered text computations/choices/immediate answer/explanation. An isolated local Android fixture rendered structured math blocks in the prompt, choices and explanation at font scales 1.0 and 1.5. Maintenance/feature transitions remain outstanding; the separate 529-row native cache benchmark completed with the limitations below. Natural emulator Remote Config uses fixed defaults; no gate injection occurred. |
+| Math, gates and corpus cache scan    | Actual Quantitative replacement created all 41 items and rendered text computations/choices/immediate answer/explanation. Isolated local Android fixtures rendered structured math blocks and exercised maintenance, minimum-version and bookmark gates with recovery. The 529-row native cache benchmark and normal SDK five-question probe completed with the limitations below. Natural Remote Config transitions remain outstanding. |
 
 Part 4 actual Quantitative Start Reviewer → Replace → Confirm replacement
 created a 41-item session, retaining both earlier 276-item Communication
@@ -221,7 +221,21 @@ fixture source, result summary, UI captures and restored-state proof are in
 route was removed, original About restored and font scale reset to 1.0. This
 is an isolated native renderer pass, not an approved-bank math question,
 ordinary reviewer-session flow or screen-reader acceptance. No synthetic
-public content or gate injection was introduced.
+public content was introduced; the math fixture did not inject gates.
+
+An isolated Android API 36 gate fixture then applied valid-shaped values
+directly to the in-memory configuration repository, without writing Remote
+Config, the catalog or study storage. Maintenance and minimum-version messages
+appeared on a mounted General Information overview and disabled Start Reviewer;
+after each 60-second reset, the message disappeared and Start Reviewer enabled
+on the same screen. Disabling the bookmark feature left the saved 41-item
+Quantitative Reviewer and its correct answer readable while its Bookmark button
+was disabled; the button enabled after reset. `gate-probe-result.json` records
+XML assertions, `gate-probe-route.tsx.txt` the fixture source, and
+`gate-maintenance-*`, `gate-minimum-*` and `gate-bookmarks-*` preserve settled
+UI/XML captures. This passes the native presentation/recovery branch under
+injected configuration. The emulator uses fixed Remote Config defaults, so
+actual remote fetch/activation transitions remain untested.
 
 Part 4 bookmark evidence correlates actual UI, durable outbox and remote state:
 `part4-offline-remove-outbox.json` records base revision 1 before reconnect;
@@ -255,6 +269,24 @@ Initial movement samples measured 2383/5529/3917ms; later warmed traces measured
 establish intended-corpus scan performance. Read-only diagnosis identified
 repeated manifest validation as a candidate cost, without proving attribution
 or authorizing optimization. No performance fix or schema weakening was made.
+
+A separate Android API 36 debug-AVD probe used the authenticated native
+Firestore SDK's server-only head/shard/revision reads and the unchanged native
+SQLite content adapter with a separate diagnostic database. Discovery,
+validation and save of the 529-entry catalog took 1,406 ms. Five representative
+uncached questions across the four categories, including one shared-stimulus
+item, each took 27–55 ms end-to-end; rereading all five from cache took 25 ms.
+The diagnostic database held five question revisions and passed SQLite
+`quick_check`. `sdk-perf-probe-route.tsx.txt`, `sdk-perf-result.json` and
+`sdk-perf-progress.xml` preserve the code, timing and settled UI evidence.
+Two force-close launches of the installed debug app reported Android Activity
+`TotalTime` of 1,813/1,768 ms; Home was detected by UI polling no later than
+10,000/9,606 ms from launch. The polling bound includes automation latency.
+`startup-normal-sdk-samples.json` and `startup-*-home.xml` preserve those
+observations. These are debug-emulator samples, not repeated release-device
+latency, full 529-body ordinary SDK ingestion, or an attribution of startup
+time. No performance fix was made. Both temporary routes were removed, original
+About restored, and `gate-perf-final-state.json` records cleanup.
 
 The first loop-generated diagnostics delegated to the wrong captured method.
 Their induced invalid-content failures and timings are invalid acceptance
