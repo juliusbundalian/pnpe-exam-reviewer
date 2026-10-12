@@ -59,6 +59,23 @@ test('Home invitation renders injected exam configuration', () => {
   expect(screen.getByText('100 questions · 120 minutes · All four areas')).toBeVisible();
 });
 
+test('disabled progress hides only its Home entry point', () => {
+  const action = jest.fn();
+  render(
+    <ThemeProvider>
+      <HomeScreen
+        onExplore={action}
+        onMockExam={action}
+        onProgress={action}
+        onBookmarks={action}
+        progressEnabled={false}
+      />
+    </ThemeProvider>,
+  );
+  expect(screen.queryByRole('button', { name: 'Progress' })).toBeNull();
+  expect(screen.getByRole('button', { name: 'Start Mock Exam' })).toBeVisible();
+});
+
 test('Home dispatches independent actions and keeps a long name and coverage reachable', () => {
   const onExplore = jest.fn();
   const onMockExam = jest.fn();

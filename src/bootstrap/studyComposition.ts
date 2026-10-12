@@ -16,6 +16,7 @@ import type { StudySyncWorker } from '../features/study/application/StudySyncWor
 import type { ExamRepository } from '../features/exam/domain/ExamRepository';
 import type { ExamService } from '../features/exam/application/ExamService';
 import type { ExamSyncWorker } from '../features/exam/application/ExamSyncWorker';
+import type { ExamRemote } from '../features/exam/domain/ExamRemote';
 
 export interface AuthOwnerSource {
   current(): { uid: string; epoch: number } | null;
@@ -34,6 +35,7 @@ export interface StudyDependencies {
   exam: ExamService;
   examRepository: ExamRepository;
   examSync: ExamSyncWorker;
+  examRemote: ExamRemote;
   dispose(): void;
 }
 /** Called only after a protected study entry. Native storage failures stay retryable. */
@@ -152,11 +154,12 @@ export async function composeStudyDependencies(
     );
     const controller = new ReviewerController(reviewer, content, repository, guard);
     const examRepository: ExamRepository = new SqliteExamRepository(db, guard);
-    const examSync = new ExamSyncWorker(
-      examRepository,
-      await createNativeExamRemote(nativeServices.firestore, nativeServices.auth, guard),
+    const examRemote = await createNativeExamRemote(
+      nativeServices.firestore,
+      nativeServices.auth,
       guard,
     );
+    const examSync = new ExamSyncWorker(examRepository, examRemote, guard);
     const examStorage: ExamRepository = {
       active: (o) => examRepository.active(o),
       create: (o, attempt, check) => examRepository.create(o, attempt, check),
@@ -222,6 +225,7 @@ export async function composeStudyDependencies(
       exam,
       examRepository,
       examSync,
+      examRemote,
       dispose() {
         if (disposed) return;
         disposed = true;

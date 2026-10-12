@@ -23,6 +23,7 @@ export default function HomeRoute() {
       }
       notice={notice}
       model={{ mockExam: model.mockExam }}
+      progressEnabled={model.features.progress}
       onExplore={() => router.push('/review')}
       onMockExam={() => router.push('/mock-exam')}
       onStartMockExam={(target) => navigation.require({ type: 'startMockExam' }, target)}

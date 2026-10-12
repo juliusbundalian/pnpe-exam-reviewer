@@ -14,7 +14,8 @@ test('progress reports actual viewed membership and resumes the saved session', 
   expect(screen.getByText('Viewed 1 of 2')).toBeTruthy();
   expect(screen.getByText(/reading activity/)).toBeTruthy();
   expect(screen.getByText('Resume at item 2 of 2')).toBeTruthy();
-  expect(screen.queryByText(/score|accuracy|mastery/i)).toBeNull();
+  expect(screen.getByText('Completed mock exams: 0')).toBeVisible();
+  expect(screen.getByText('Average exam score: Unavailable')).toBeVisible();
   fireEvent.press(screen.getByRole('button', { name: 'Resume' }));
   expect(resume).toHaveBeenCalledWith(session);
 });

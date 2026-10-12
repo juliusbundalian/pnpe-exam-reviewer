@@ -11,6 +11,8 @@ import type { ExamAttempt, ExamChange, ExamResult } from '../features/exam/domai
 import type { ExamConfig } from '../features/exam/domain/selection';
 import { ExamPreflightScreen } from '../features/exam/presentation/ExamPreflightScreen';
 import { ExamRunnerScreen } from '../features/exam/presentation/ExamRunnerScreen';
+import { ExamResultScreen } from '../features/exam/presentation/ExamResultScreen';
+import { ExamSubmittedReviewScreen } from '../features/exam/presentation/ExamSubmittedReviewScreen';
 
 function errorMessage(error: unknown) {
   return error instanceof StudyError
@@ -43,6 +45,7 @@ export function ExamFlow({
   const [error, setError] = useState<string | null>(null);
   const [remaining, setRemaining] = useState(0);
   const [bookmarked, setBookmarked] = useState(false);
+  const [reviewing, setReviewing] = useState(false);
   const pending = useRef(false);
   const failedChange = useRef<ExamChange | null>(null);
   const generation = useRef(0);
@@ -60,7 +63,9 @@ export function ExamFlow({
           if (generation.current === token) setActive(resumed);
         }
         if (stage === 'result' && attemptId) {
-          const result = await study.examRepository.result(study.owner, attemptId);
+          const local = await study.examRepository.result(study.owner, attemptId);
+          const result = local ?? (await study.examRemote.result(study.owner, attemptId));
+          if (result.uid !== study.owner.uid) throw new StudyError('auth-required');
           if (generation.current === token) setTerminal(result);
         }
       } catch (failure) {
@@ -172,6 +177,28 @@ export function ExamFlow({
       <AppScreen>
         <AppText>Opening saved exam</AppText>
       </AppScreen>
+    );
+  if (stage === 'result' && terminal)
+    return reviewing ? (
+      <ExamSubmittedReviewScreen result={terminal} onBack={() => setReviewing(false)} />
+    ) : (
+      <ExamResultScreen
+        result={terminal}
+        onReview={() => setReviewing(true)}
+        onHistory={() => router.push('/exam-history')}
+        onBack={onBack}
+        onRetrySync={() => {
+          void study.examSync
+            .flush(study.owner)
+            .then(async () => {
+              const refreshed = await study.examRepository.result(study.owner, terminal.attemptId);
+              if (refreshed && study.guard.isCurrent(study.owner)) setTerminal(refreshed);
+            })
+            .catch((failure) => {
+              if (study.guard.isCurrent(study.owner)) setError(errorMessage(failure));
+            });
+        }}
+      />
     );
   if (terminal)
     return (

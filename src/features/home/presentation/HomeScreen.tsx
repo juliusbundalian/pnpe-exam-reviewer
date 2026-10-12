@@ -18,6 +18,7 @@ export function HomeScreen({
   onExplore,
   onMockExam,
   onStartMockExam = onMockExam,
+  progressEnabled = true,
   onProgress,
   onBookmarks,
   model = initialHomePresentationModel,
@@ -27,6 +28,7 @@ export function HomeScreen({
   onExplore: () => void;
   onMockExam: () => void;
   onStartMockExam?: (target: View | null) => void;
+  progressEnabled?: boolean;
   onProgress: (target: View | null) => void;
   onBookmarks: (target: View | null) => void;
   model?: HomePresentationModel;
@@ -53,12 +55,14 @@ export function HomeScreen({
       </View>
       <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm }}>
         <AppButton variant="text" label="Mock Exam" onPress={onMockExam} />
-        <AppButton
-          ref={progressTarget}
-          variant="text"
-          label="Progress"
-          onPress={() => onProgress(progressTarget.current)}
-        />
+        {progressEnabled ? (
+          <AppButton
+            ref={progressTarget}
+            variant="text"
+            label="Progress"
+            onPress={() => onProgress(progressTarget.current)}
+          />
+        ) : null}
         <AppButton
           ref={bookmarksTarget}
           variant="text"

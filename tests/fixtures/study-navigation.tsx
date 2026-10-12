@@ -77,17 +77,14 @@ export function studyNavigationFactory() {
       guard,
     );
     const examRepository = new SqliteExamRepository(db, guard);
-    const examSync = new ExamSyncWorker(
-      examRepository,
-      {
-        publish: async () => {},
-        history: async () => [],
-        result: async () => {
-          throw new StudyError('invalid-content');
-        },
+    const examRemote = {
+      publish: async () => {},
+      history: async () => [],
+      result: async () => {
+        throw new StudyError('invalid-content');
       },
-      guard,
-    );
+    };
+    const examSync = new ExamSyncWorker(examRepository, examRemote, guard);
     const exam = new ExamService(
       examRepository,
       content,
@@ -110,6 +107,7 @@ export function studyNavigationFactory() {
       exam,
       examRepository,
       examSync,
+      examRemote,
       dispose() {
         disposed = true;
         sync.stop();

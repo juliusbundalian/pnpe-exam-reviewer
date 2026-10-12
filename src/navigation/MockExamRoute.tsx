@@ -24,6 +24,7 @@ export default function MockExamRoute() {
         <StudyRoute onBack={() => router.replace('/mock-exam')}>
           {(study) => (
             <ExamFlow
+              key={`${stage}:${attemptId ?? ''}`}
               study={study}
               stage={stage}
               {...(attemptId ? { attemptId } : {})}

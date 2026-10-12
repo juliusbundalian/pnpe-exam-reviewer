@@ -7,8 +7,12 @@ import { AppButton } from '../../../core/components/AppButton';
 export function MenuScreen({
   coordinator,
   onOpen,
+  historyEnabled = true,
+  progressEnabled = true,
 }: {
   coordinator: AuthenticationCoordinator;
+  historyEnabled?: boolean;
+  progressEnabled?: boolean;
   onOpen(
     destination:
       | 'profile'
@@ -53,12 +57,14 @@ export function MenuScreen({
             label="Profile"
             onPress={() => onOpen('profile', profile.current)}
           />
-          <AppButton
-            ref={progress}
-            variant="text"
-            label="Progress"
-            onPress={() => onOpen('progress', progress.current)}
-          />
+          {progressEnabled ? (
+            <AppButton
+              ref={progress}
+              variant="text"
+              label="Progress"
+              onPress={() => onOpen('progress', progress.current)}
+            />
+          ) : null}
           <AppButton
             variant="text"
             label="Sign Out"
@@ -78,12 +84,14 @@ export function MenuScreen({
         label="Saved Questions"
         onPress={() => onOpen('bookmarks', bookmarks.current)}
       />
-      <AppButton
-        ref={history}
-        variant="text"
-        label="Exam History"
-        onPress={() => onOpen('exam-history', history.current)}
-      />
+      {historyEnabled ? (
+        <AppButton
+          ref={history}
+          variant="text"
+          label="Exam History"
+          onPress={() => onOpen('exam-history', history.current)}
+        />
+      ) : null}
       <AppButton variant="text" label="Appearance" onPress={() => onOpen('appearance')} />
       <AppButton variant="text" label="About" onPress={() => onOpen('about')} />
       <AppButton variant="text" label="Privacy Policy" onPress={() => onOpen('privacy')} />
