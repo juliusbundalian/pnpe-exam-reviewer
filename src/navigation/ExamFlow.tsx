@@ -46,6 +46,7 @@ export function ExamFlow({
   const [remaining, setRemaining] = useState(0);
   const [bookmarked, setBookmarked] = useState(false);
   const [reviewing, setReviewing] = useState(false);
+  const [terminalReason, setTerminalReason] = useState<'manual' | 'timeExpired' | null>(null);
   const pending = useRef(false);
   const failedChange = useRef<ExamChange | null>(null);
   const generation = useRef(0);
@@ -96,24 +97,29 @@ export function ExamFlow({
   }, [study, questionId]);
 
   const tick = useCallback(async () => {
-    if (!active || pending.current || terminal) return;
+    if (!active || pending.current || terminal || terminalReason) return;
+    let ownsPending = false;
     try {
       const ms = await study.exam.remaining(study.owner, active.id);
       if (!study.guard.isCurrent(study.owner)) return;
       setRemaining(ms);
       if (ms === 0) {
+        if (pending.current) return;
         pending.current = true;
+        ownsPending = true;
+        setTerminalReason('timeExpired');
         const result = await study.exam.submit(study.owner, active.id, 'timeExpired');
         if (study.guard.isCurrent(study.owner)) setTerminal(result);
-        pending.current = false;
       }
     } catch (failure) {
       if (study.guard.isCurrent(study.owner)) setError(errorMessage(failure));
+    } finally {
+      if (ownsPending) pending.current = false;
     }
-  }, [active, study, terminal]);
+  }, [active, study, terminal, terminalReason]);
 
   useEffect(() => {
-    if (!active || terminal || stage === 'result') return;
+    if (!active || terminal || terminalReason || stage === 'result') return;
     void tick();
     const interval = setInterval(() => void tick(), 1_000);
     const foreground = AppState.addEventListener('change', (state) => {
@@ -123,7 +129,7 @@ export function ExamFlow({
       clearInterval(interval);
       foreground.remove();
     };
-  }, [active, terminal, stage, tick]);
+  }, [active, terminal, terminalReason, stage, tick]);
 
   const run = async (work: () => Promise<void>) => {
     if (pending.current) return;
@@ -168,6 +174,7 @@ export function ExamFlow({
   const submit = (reason: 'manual' | 'timeExpired') =>
     void run(async () => {
       if (!active) throw new StudyError('invalid-content');
+      setTerminalReason(reason);
       const result = await study.exam.submit(study.owner, active.id, reason);
       if (study.guard.isCurrent(study.owner)) setTerminal(result);
     });
@@ -217,6 +224,19 @@ export function ExamFlow({
         <ErrorView
           message={error ?? 'Result is unavailable.'}
           onRetry={() => router.replace('/exam-history')}
+        />
+      </AppScreen>
+    );
+  if (terminalReason && active)
+    return (
+      <AppScreen>
+        <AppText variant="title">Finishing Mock Exam</AppText>
+        {error ? <AppText accessibilityRole="alert">{error}</AppText> : null}
+        <AppButton
+          variant="primary"
+          label="Retry finalization"
+          disabled={busy || pending.current}
+          onPress={() => submit(terminalReason)}
         />
       </AppScreen>
     );

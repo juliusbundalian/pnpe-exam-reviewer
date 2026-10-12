@@ -33,6 +33,7 @@ function prepared(
   let active = options.existing ?? false;
   let remaining = result.deadlineAt - result.startedAt;
   let failChange = false;
+  let failSubmit = false;
   const wait = deferred<void>();
   let delayStart = false;
   const config = structuredClone(defaults);
@@ -73,6 +74,10 @@ function prepared(
           return saved;
         }),
         submit: jest.fn(async () => {
+          if (failSubmit) {
+            failSubmit = false;
+            throw new Error('disk failed');
+          }
           active = false;
           return result;
         }),
@@ -100,6 +105,9 @@ function prepared(
     },
     failNextChange() {
       failChange = true;
+    },
+    failNextSubmit() {
+      failSubmit = true;
     },
   };
 }
@@ -210,4 +218,35 @@ test('failed answer never claims Saved and Retry commits the same choice', async
   fireEvent.press(screen.getByRole('button', { name: 'Retry save' }));
   await waitFor(() => expect(fixture.saved.questions[0]?.selectedChoiceId).toBe('c1'));
   expect(screen.getByText('Saved')).toBeVisible();
+});
+
+test('failed expiry finalization locks edits and retries the terminal result', async () => {
+  const fixture = prepared({ existing: true });
+  await fixture.h.render('/mock-exam?stage=preflight');
+  fireEvent.press(await screen.findByRole('button', { name: 'Resume Exam' }));
+  await screen.findByText('Question 1 of 150');
+  fixture.failNextSubmit();
+  fixture.expire();
+  await act(async () => {
+    jest.advanceTimersByTime(1_000);
+    await flushTransitions();
+  });
+  expect(await screen.findByRole('button', { name: 'Retry finalization' })).toBeVisible();
+  expect(screen.queryByRole('button', { name: 'Choice 1' })).toBeNull();
+  fireEvent.press(screen.getByRole('button', { name: 'Retry finalization' }));
+  expect(await screen.findByRole('button', { name: 'View Results' })).toBeVisible();
+});
+
+test('failed manual finalization locks edits until retry succeeds', async () => {
+  const fixture = prepared({ existing: true });
+  await fixture.h.render('/mock-exam?stage=preflight');
+  fireEvent.press(await screen.findByRole('button', { name: 'Resume Exam' }));
+  await screen.findByText('Question 1 of 150');
+  fixture.failNextSubmit();
+  fireEvent.press(screen.getByRole('button', { name: 'Submit Exam' }));
+  fireEvent.press(screen.getByRole('button', { name: 'Submit Anyway' }));
+  expect(await screen.findByRole('button', { name: 'Retry finalization' })).toBeVisible();
+  expect(screen.queryByRole('button', { name: 'Choice 1' })).toBeNull();
+  fireEvent.press(screen.getByRole('button', { name: 'Retry finalization' }));
+  expect(await screen.findByRole('button', { name: 'View Results' })).toBeVisible();
 });

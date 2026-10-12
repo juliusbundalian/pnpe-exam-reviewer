@@ -9,7 +9,13 @@ export interface ExamRepository {
     beforeCommit?: () => void,
   ): Promise<ExamAttempt>;
   attempt(owner: OwnerContext, id: string): Promise<ExamAttempt | null>;
-  change(owner: OwnerContext, id: string, change: ExamChange, now: number): Promise<ExamAttempt>;
+  change(
+    owner: OwnerContext,
+    id: string,
+    change: ExamChange,
+    now: number,
+    effectiveNowAtCommit: () => number,
+  ): Promise<ExamAttempt>;
   observeTime(owner: OwnerContext, id: string, now: number): Promise<ExamAttempt>;
   finalize(
     owner: OwnerContext,

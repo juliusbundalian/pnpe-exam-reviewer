@@ -97,14 +97,36 @@ test('activation_rolls_back_on_last_question_failure', async () => {
 test('late_answer_rejected_inside_transaction', async () => {
   await repo.create(alice, candidate());
   await expect(
-    repo.change(alice, 'exam-one', { type: 'answer', ordinal: 0, choiceId: 'c2' }, deadline),
+    repo.change(
+      alice,
+      'exam-one',
+      { type: 'answer', ordinal: 0, choiceId: 'c2' },
+      deadline,
+      () => deadline,
+    ),
+  ).rejects.toMatchObject({ code: 'conflict' });
+  expect((await repo.active(alice))?.questions[0]?.selectedChoiceId).toBeNull();
+  await expect(
+    repo.change(
+      alice,
+      'exam-one',
+      { type: 'answer', ordinal: 0, choiceId: 'c2' },
+      start + 1,
+      () => deadline,
+    ),
   ).rejects.toMatchObject({ code: 'conflict' });
   expect((await repo.active(alice))?.questions[0]?.selectedChoiceId).toBeNull();
 });
 
 test('terminal_retry_is_idempotent', async () => {
   await repo.create(alice, candidate());
-  await repo.change(alice, 'exam-one', { type: 'answer', ordinal: 0, choiceId: 'c2' }, start + 1);
+  await repo.change(
+    alice,
+    'exam-one',
+    { type: 'answer', ordinal: 0, choiceId: 'c2' },
+    start + 1,
+    () => start + 1,
+  );
   const result = await repo.finalize(alice, 'exam-one', deadline, 'timeExpired');
   expect(await repo.finalize(alice, 'exam-one', deadline + 1, 'manual')).toEqual(result);
   expect(result.overall).toMatchObject({ correct: 1, unanswered: 149 });
@@ -112,7 +134,13 @@ test('terminal_retry_is_idempotent', async () => {
   expect(await repo.history(alice)).toHaveLength(1);
   expect(await db.all('SELECT COUNT(*) AS count FROM exam_outbox')).toEqual([{ count: 1 }]);
   await expect(
-    repo.change(alice, 'exam-one', { type: 'answer', ordinal: 1, choiceId: 'c2' }, deadline + 1),
+    repo.change(
+      alice,
+      'exam-one',
+      { type: 'answer', ordinal: 1, choiceId: 'c2' },
+      deadline + 1,
+      () => deadline + 1,
+    ),
   ).rejects.toMatchObject({ code: 'conflict' });
 });
 
@@ -129,10 +157,28 @@ test('exam_owner_device_isolation', async () => {
 
 test('answer clearing, flagging and cursor survive a database reopen', async () => {
   await repo.create(alice, candidate());
-  await repo.change(alice, 'exam-one', { type: 'answer', ordinal: 0, choiceId: 'c2' }, start + 1);
-  await repo.change(alice, 'exam-one', { type: 'flag', ordinal: 0, flagged: true }, start + 2);
-  await repo.change(alice, 'exam-one', { type: 'answer', ordinal: 0, choiceId: null }, start + 3);
-  await repo.change(alice, 'exam-one', { type: 'move', ordinal: 1 }, start + 4);
+  await repo.change(
+    alice,
+    'exam-one',
+    { type: 'answer', ordinal: 0, choiceId: 'c2' },
+    start + 1,
+    () => start + 1,
+  );
+  await repo.change(
+    alice,
+    'exam-one',
+    { type: 'flag', ordinal: 0, flagged: true },
+    start + 2,
+    () => start + 2,
+  );
+  await repo.change(
+    alice,
+    'exam-one',
+    { type: 'answer', ordinal: 0, choiceId: null },
+    start + 3,
+    () => start + 3,
+  );
+  await repo.change(alice, 'exam-one', { type: 'move', ordinal: 1 }, start + 4, () => start + 4);
   await db.close();
   db = nodeSqlDatabase(join(dir, 'exam.db'));
   repo = repository(db);

@@ -150,45 +150,60 @@ export class SqliteExamRepository implements ExamRepository {
     );
   }
 
-  change(owner: OwnerContext, id: string, change: ExamChange, now: number): Promise<ExamAttempt> {
+  change(
+    owner: OwnerContext,
+    id: string,
+    change: ExamChange,
+    now: number,
+    effectiveNowAtCommit: () => number,
+  ): Promise<ExamAttempt> {
     input(GeneratedIdSchema, id);
     const mutation = input(ExamChangeSchema, change);
     const at = input(SafeIntegerSchema, now);
-    return this.access(owner, async (tx) => {
-      const saved = await readExamAttempt(tx, owner, id);
-      if (!saved) throw new StudyError('invalid-content');
-      if (saved.status !== 'active' || Math.max(at, saved.lastEffectiveAt) >= saved.deadlineAt)
-        throw new StudyError('conflict');
-      if (mutation.ordinal >= saved.questions.length) throw new StudyError('invalid-content');
-      if (mutation.type === 'answer') {
-        if (
-          mutation.choiceId !== null &&
-          !saved.questions[mutation.ordinal]!.choiceOrder.includes(mutation.choiceId)
-        )
-          throw new StudyError('invalid-content');
+    let deadlineAt: number | null = null;
+    return this.access(
+      owner,
+      async (tx) => {
+        const saved = await readExamAttempt(tx, owner, id);
+        if (!saved) throw new StudyError('invalid-content');
+        deadlineAt = saved.deadlineAt;
+        if (saved.status !== 'active' || Math.max(at, saved.lastEffectiveAt) >= saved.deadlineAt)
+          throw new StudyError('conflict');
+        if (mutation.ordinal >= saved.questions.length) throw new StudyError('invalid-content');
+        if (mutation.type === 'answer') {
+          if (
+            mutation.choiceId !== null &&
+            !saved.questions[mutation.ordinal]!.choiceOrder.includes(mutation.choiceId)
+          )
+            throw new StudyError('invalid-content');
+          await tx.run(
+            'UPDATE exam_questions SET selected_choice_id = ? WHERE uid = ? AND device_id = ? AND attempt_id = ? AND ordinal = ?',
+            [mutation.choiceId, ...examOwnerKeys(owner), id, mutation.ordinal],
+          );
+        } else if (mutation.type === 'flag') {
+          await tx.run(
+            'UPDATE exam_questions SET flagged = ? WHERE uid = ? AND device_id = ? AND attempt_id = ? AND ordinal = ?',
+            [Number(mutation.flagged), ...examOwnerKeys(owner), id, mutation.ordinal],
+          );
+        }
         await tx.run(
-          'UPDATE exam_questions SET selected_choice_id = ? WHERE uid = ? AND device_id = ? AND attempt_id = ? AND ordinal = ?',
-          [mutation.choiceId, ...examOwnerKeys(owner), id, mutation.ordinal],
+          'UPDATE exam_attempts SET position = ?, last_effective_at = ? WHERE uid = ? AND device_id = ? AND attempt_id = ?',
+          [
+            mutation.type === 'move' ? mutation.ordinal : saved.position,
+            Math.max(at, saved.lastEffectiveAt),
+            ...examOwnerKeys(owner),
+            id,
+          ],
         );
-      } else if (mutation.type === 'flag') {
-        await tx.run(
-          'UPDATE exam_questions SET flagged = ? WHERE uid = ? AND device_id = ? AND attempt_id = ? AND ordinal = ?',
-          [Number(mutation.flagged), ...examOwnerKeys(owner), id, mutation.ordinal],
-        );
-      }
-      await tx.run(
-        'UPDATE exam_attempts SET position = ?, last_effective_at = ? WHERE uid = ? AND device_id = ? AND attempt_id = ?',
-        [
-          mutation.type === 'move' ? mutation.ordinal : saved.position,
-          Math.max(at, saved.lastEffectiveAt),
-          ...examOwnerKeys(owner),
-          id,
-        ],
-      );
-      const updated = await readExamAttempt(tx, owner, id);
-      if (!updated) throw new StudyError('storage-corrupt');
-      return updated;
-    });
+        const updated = await readExamAttempt(tx, owner, id);
+        if (!updated) throw new StudyError('storage-corrupt');
+        return updated;
+      },
+      () => {
+        const fresh = input(SafeIntegerSchema, effectiveNowAtCommit());
+        if (deadlineAt !== null && fresh >= deadlineAt) throw new StudyError('conflict');
+      },
+    );
   }
 
   observeTime(owner: OwnerContext, id: string, now: number): Promise<ExamAttempt> {

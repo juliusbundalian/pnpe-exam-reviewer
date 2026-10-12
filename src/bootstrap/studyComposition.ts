@@ -164,7 +164,8 @@ export async function composeStudyDependencies(
       active: (o) => examRepository.active(o),
       create: (o, attempt, check) => examRepository.create(o, attempt, check),
       attempt: (o, id) => examRepository.attempt(o, id),
-      change: (o, id, mutation, now) => examRepository.change(o, id, mutation, now),
+      change: (o, id, mutation, now, effectiveNowAtCommit) =>
+        examRepository.change(o, id, mutation, now, effectiveNowAtCommit),
       observeTime: (o, id, now) => examRepository.observeTime(o, id, now),
       finalize: async (o, id, now, reason) => {
         const result = await examRepository.finalize(o, id, now, reason);

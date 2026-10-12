@@ -180,7 +180,10 @@ export class ExamService {
       await this.repository.finalize(owner, id, now, 'timeExpired');
       return 0;
     }
-    return attempt.deadlineAt - now;
+    const observed = await this.repository.observeTime(owner, id, now);
+    this.check(owner);
+    this.remember(observed);
+    return observed.deadlineAt - Math.max(now, observed.lastEffectiveAt);
   }
 
   async change(owner: OwnerContext, id: string, change: ExamChange): Promise<ExamAttempt> {
@@ -193,7 +196,9 @@ export class ExamService {
       await this.repository.finalize(owner, id, now, 'timeExpired');
       throw new StudyError('conflict');
     }
-    const saved = await this.repository.change(owner, id, change, now);
+    const saved = await this.repository.change(owner, id, change, now, () =>
+      this.observedNow(attempt),
+    );
     this.check(owner);
     this.remember(saved);
     return saved;
@@ -209,7 +214,12 @@ export class ExamService {
     this.check(owner);
     if (!attempt) throw new StudyError('invalid-content');
     const now = this.observedNow(attempt);
-    const result = await this.repository.finalize(owner, id, now, reason);
+    const result = await this.repository.finalize(
+      owner,
+      id,
+      now,
+      now >= attempt.deadlineAt ? 'timeExpired' : reason,
+    );
     this.check(owner);
     return result;
   }

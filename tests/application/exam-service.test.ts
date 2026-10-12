@@ -175,3 +175,47 @@ test('a monotonic observation prevents wall rollback and expiry finalizes before
   ).rejects.toMatchObject({ code: 'conflict' });
   expect((await repository.result(owner, attempt.id))?.reason).toBe('timeExpired');
 });
+
+test('idle countdown observation survives service restart and wall-clock rollback', async () => {
+  const attempt = await service.start(owner, config);
+  monotonic += 60_000;
+  expect(await service.remaining(owner, attempt.id)).toBe(179 * 60_000);
+  expect((await repository.attempt(owner, attempt.id))?.lastEffectiveAt).toBe(61_000);
+  wall = 1_000;
+  monotonic = 0;
+  service = makeService();
+  expect(await service.remaining(owner, attempt.id)).toBe(179 * 60_000);
+});
+
+test('queued pre-deadline answer is rejected when transaction commits after expiry', async () => {
+  const attempt = await service.start(owner, config);
+  let release!: () => void;
+  let entered!: () => void;
+  const held = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+  const started = new Promise<void>((resolve) => {
+    entered = resolve;
+  });
+  const originalChange = repository.change.bind(repository);
+  repository.change = ((...args: Parameters<typeof repository.change>) => {
+    entered();
+    return held.then(() => originalChange(...args));
+  }) as typeof repository.change;
+  const answer = service.change(owner, attempt.id, { type: 'answer', ordinal: 0, choiceId: 'c2' });
+  await started;
+  wall = attempt.deadlineAt;
+  monotonic = attempt.deadlineAt - attempt.startedAt;
+  release();
+  await expect(answer).rejects.toMatchObject({ code: 'conflict' });
+  expect((await repository.attempt(owner, attempt.id))?.questions[0]?.selectedChoiceId).toBeNull();
+});
+
+test('deadline overrides manual submission reason', async () => {
+  const attempt = await service.start(owner, config);
+  wall = attempt.deadlineAt;
+  monotonic = attempt.deadlineAt - attempt.startedAt;
+  const result = await service.submit(owner, attempt.id, 'manual');
+  expect(result.reason).toBe('timeExpired');
+  expect(result.endedAt).toBe(attempt.deadlineAt);
+});

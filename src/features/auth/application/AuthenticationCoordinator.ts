@@ -139,6 +139,9 @@ export class AuthenticationCoordinator {
         this.knownUid = auth.previousUid;
       this.update({
         auth,
+        ...(previous.status === 'recoveryRequired' && auth.status !== 'recoveryRequired'
+          ? { recoveryMessage: null }
+          : {}),
         ...(auth.status === 'resolving' ? { promptOpen: false, screen: 'none' as const } : {}),
         ...(auth.status === 'recoveryRequired'
           ? {
