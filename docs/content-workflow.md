@@ -38,9 +38,13 @@ retrieve the question bank; protected study entry lazily loads catalog metadata
 and question revisions as needed. Text, marked spans and math are supported;
 required image, diagram and table blocks remain excluded.
 
-A future Mock Exam selects 150 from the larger bank under its unchanged 35/40/25/50
-category quotas and 180-minute default. Mock Exam, results and history need their
-next separately approved implementation slice.
+Mock Exam now selects 150 distinct approved questions from the larger bank under
+the unchanged 35/40/25/50 category quotas and 180-minute default. It freezes
+complete content in local SQLite before starting its clock, keeps terminal
+results locally, and synchronizes owner-only completed records in bounded cloud
+documents. This is an application practice exam, not a verified official exam
+standard. See [Mock Exam verification](verification/mock-exam.md) for Android
+evidence and remaining acceptance work.
 
 ## Local prerequisites
 
@@ -218,6 +222,19 @@ acceptance fixture. Never reset or rewrite the live demo for device testing.
 Android Reviewer acceptance has partial device evidence; remaining Android
 checks and iOS acceptance are still outstanding. Do not run the destructive
 runner or reseed while the persistent acceptance Firestore lifetime is active.
+
+## Mock Exam acceptance isolation
+
+Use `npm run test:exam-emulator` with Java 21 for the separately guarded
+Firestore 8280/Auth 9299 profile. It rejects the Reviewer test flag and live
+endpoints. Complete the resetting test run before starting a persistent native
+acceptance emulator. Set Android `EXPO_PUBLIC_FIREBASE_EMULATOR_HOST=10.0.2.2`,
+`EXPO_PUBLIC_FIREBASE_AUTH_PORT=9299`, and
+`EXPO_PUBLIC_FIREBASE_FIRESTORE_PORT=8280`; use only the approved 529-question
+snapshot and synthetic emulator accounts. The Reviewer 8180/9199 data and the
+original 8080/9099 demo remain separate. See the
+[acceptance record](verification/mock-exam.md) for the observed generation,
+binary, tests, and pending scenarios.
 The [verification record](verification/content-reviewer.md) distinguishes passing
 automated checks from actual device observations and records the required
 force-close, offline, account, appearance and performance scenarios.

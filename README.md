@@ -22,8 +22,11 @@ Android development build has partial device acceptance. Remaining Android
 checks, iOS acceptance and native gate/performance observations keep this slice
 partially verified. See the
 [content Reviewer verification record](docs/verification/content-reviewer.md)
-for evidence and outstanding checks. Mock Exam, results and history are the next
-separately approved slice. No service has been deployed.
+for evidence and outstanding checks. Mock Exam, results and history are
+implemented on the isolated `feat/mock-exam` branch. Automated checks pass and
+Android has partial native acceptance; see the
+[Mock Exam verification record](docs/verification/mock-exam.md) for the exact
+evidence and remaining device checks. No service has been deployed.
 
 Use Node 24 and `npm ci`. Unit tests require Python 3; extraction requires
 the pinned Python environment described in [the content workflow](docs/content-workflow.md).
@@ -37,6 +40,7 @@ npm run typecheck
 npm run lint
 npm run format:check
 npm run test:emulator # Java 21 required
+npm run test:exam-emulator # isolated Mock Exam profile, Java 21 required
 npx expo install --check
 npx expo-doctor
 ```
@@ -94,3 +98,10 @@ native checks. A live Remote Config fetch remains a separate read-only check.
 
 `eas.json` contains profiles only. No remote builds, store registration, uploads,
 production writes, or deployment are authorized by these setup commands.
+
+Mock Exam uses its own guarded emulator profile on Firestore 8280 and Auth 9299;
+`npm run test:exam-emulator` resets that profile, so finish it before a separate
+native acceptance lifetime. Android emulator clients use host `10.0.2.2` and
+explicit `EXPO_PUBLIC_FIREBASE_AUTH_PORT=9299` and
+`EXPO_PUBLIC_FIREBASE_FIRESTORE_PORT=8280`. The Reviewer 8180/9199 lifetime must
+remain untouched. See the [Mock Exam record](docs/verification/mock-exam.md).
