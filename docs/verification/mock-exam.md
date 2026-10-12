@@ -69,8 +69,6 @@ remains ignored local evidence and is not committed.
 History and Result were also opened in the light appearance setting and at
 Android `font_scale=1.5`; the longer result remained scrollable and both
 **Review submitted answers** and **Exam History** controls were reachable.
-The emulator font scale was restored to 1.0 afterward. This checks those
-completed screens, not the active runner at enlarged text.
 
 For background expiry, synthetic account B started a separate isolated
 150-question attempt with a temporary **one-minute** validated duration
@@ -81,6 +79,19 @@ time limit**, 1 minute used, and cloud sync `synced`. The fixture changed only
 the bundled duration, retained the approved bank and quotas, and was restored
 to the 180-minute default immediately after this observation; a cold relaunch
 displayed 180 minutes again. It was not a second live 180-minute attempt.
+
+Additional isolated five-minute/150-question attempts under account B checked
+the active runner at `font_scale=1.5`: question text, choices, countdown, save,
+flag, navigator, leave and submit controls remained reachable by scrolling.
+Changing Android font scale restarted the activity; protected preflight then
+offered **Resume Exam** with the countdown reduced from the original deadline.
+An Android UI accessibility-tree dump exposed semantic navigator labels such
+as `Question 1, current, unanswered` and `Question 2, unanswered`. This checks
+labels in the accessibility tree, not spoken TalkBack behavior. The runner was
+also observed in system dark mode at 1.5× text. Switching the system back to
+light mode and font scale 1.0 restarted the activity; the same attempt resumed
+with the countdown reduced from 4:59 to 4:07. The five-minute fixture was
+restored to the 180-minute bundled default after these checks.
 
 Screenshots and isolated logs are retained locally under ignored
 `evidence/mock-exam/`; they contain practice content and emulator identity and
@@ -96,9 +107,8 @@ measurements.
   notice still overlaps the status bar on History and needs a separate layout
   check. It does not block local exam records.
 - **Android scenarios still unverified natively:** live configuration gate
-  recovery, active-runner enlarged font and theme transitions, and
-  accessibility navigator announcements. Deterministic tests cover gates but
-  do not close these device checks.
+  recovery and spoken accessibility navigator announcements. Deterministic
+  tests cover gates, and UI-tree labels do not replace a TalkBack pass.
 - **Other platforms and services:** iOS and screen-reader acceptance, live
   Remote Config transition, release-build performance and production/release
   behavior remain pending. The original Reviewer and foundation acceptance
