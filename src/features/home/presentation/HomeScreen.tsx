@@ -18,7 +18,6 @@ export function HomeScreen({
   onExplore,
   onMockExam,
   onStartMockExam = onMockExam,
-  startsBlocked = false,
   onProgress,
   onBookmarks,
   model = initialHomePresentationModel,
@@ -28,7 +27,6 @@ export function HomeScreen({
   onExplore: () => void;
   onMockExam: () => void;
   onStartMockExam?: (target: View | null) => void;
-  startsBlocked?: boolean;
   onProgress: (target: View | null) => void;
   onBookmarks: (target: View | null) => void;
   model?: HomePresentationModel;
@@ -123,7 +121,6 @@ export function HomeScreen({
           ref={mockTarget}
           variant="text"
           label="Start Mock Exam"
-          disabled={startsBlocked}
           onPress={() => onStartMockExam(mockTarget.current)}
         />
       </View>
