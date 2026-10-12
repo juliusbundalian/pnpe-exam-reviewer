@@ -97,7 +97,9 @@ test('allocates across uneven subcategories and keeps stable order when shuffle 
         : {
             ...entry,
             subcategoryId:
-              Number(entry.id.split('-')[1]) % 2 === 0 ? 'pnpHistory' : 'criminalJusticeSystem',
+              Number(entry.id.split('-')[1]) % 2 === 0
+                ? ('pnpHistory' as const)
+                : ('criminalJusticeSystem' as const),
           },
     ),
   };

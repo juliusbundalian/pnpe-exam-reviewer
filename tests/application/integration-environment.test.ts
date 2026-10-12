@@ -38,3 +38,21 @@ test('accepts_only_explicit_isolated_endpoints', () => {
     authPort: 9199,
   });
 });
+
+test('exam profile accepts only its separate 8280/9299 ports and explicit flag', () => {
+  const exam = {
+    FIRESTORE_EMULATOR_HOST: '127.0.0.1:8280',
+    FIREBASE_AUTH_EMULATOR_HOST: '127.0.0.1:9299',
+    PNPE_EXAM_TESTS: '1',
+  };
+  expect(integrationEnvironment(exam, 'exam')).toMatchObject({
+    firestorePort: 8280,
+    authPort: 9299,
+  });
+  expect(integrationEnvironment(exam)).toMatchObject({ firestorePort: 8280, authPort: 9299 });
+  expect(() => integrationEnvironment(isolated, 'exam')).toThrow();
+  expect(() => integrationEnvironment({ ...exam, PNPE_EXAM_TESTS: '0' }, 'exam')).toThrow();
+  expect(() =>
+    integrationEnvironment({ ...exam, FIRESTORE_EMULATOR_HOST: '127.0.0.1:8180' }, 'exam'),
+  ).toThrow();
+});

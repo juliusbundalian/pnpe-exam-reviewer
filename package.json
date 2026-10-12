@@ -16,6 +16,7 @@
     "import:questions": "tsx tools/questions/cli.ts import",
     "test:emulator": "tsx tools/tests/run-study-emulators.ts",
     "test:study-emulator": "npm run test:emulator",
+    "test:exam-emulator": "tsx tools/tests/run-exam-emulators.ts",
     "test:references": "jest --runInBand --config jest.references.config.cjs",
     "test:unit": "jest --runInBand",
     "typecheck": "npm run typecheck:tools && npm run typecheck:mobile",

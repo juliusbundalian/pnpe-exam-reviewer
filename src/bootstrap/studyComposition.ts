@@ -15,6 +15,7 @@ import type { BookmarkService } from '../features/bookmarks/application/Bookmark
 import type { StudySyncWorker } from '../features/study/application/StudySyncWorker';
 import type { ExamRepository } from '../features/exam/domain/ExamRepository';
 import type { ExamService } from '../features/exam/application/ExamService';
+import type { ExamSyncWorker } from '../features/exam/application/ExamSyncWorker';
 
 export interface AuthOwnerSource {
   current(): { uid: string; epoch: number } | null;
@@ -32,6 +33,7 @@ export interface StudyDependencies {
   sync: StudySyncWorker;
   exam: ExamService;
   examRepository: ExamRepository;
+  examSync: ExamSyncWorker;
   dispose(): void;
 }
 /** Called only after a protected study entry. Native storage failures stay retryable. */
@@ -56,6 +58,8 @@ export async function composeStudyDependencies(
     { createNativeStudySyncRemote },
     { SqliteExamRepository },
     { ExamService },
+    { ExamSyncWorker },
+    { createNativeExamRemote },
   ] = await Promise.all([
     import('../core/storage/sqlite/nativeSqlDatabase'),
     import('expo-crypto'),
@@ -71,6 +75,8 @@ export async function composeStudyDependencies(
     import('../features/study/data/nativeStudySyncFacade'),
     import('../features/exam/data/SqliteExamRepository'),
     import('../features/exam/application/ExamService'),
+    import('../features/exam/application/ExamSyncWorker'),
+    import('../features/exam/data/nativeExamFacade'),
   ]);
   const db = await openNativeStudyDatabase();
   let disposed = false;
@@ -146,8 +152,29 @@ export async function composeStudyDependencies(
     );
     const controller = new ReviewerController(reviewer, content, repository, guard);
     const examRepository: ExamRepository = new SqliteExamRepository(db, guard);
-    const exam = new ExamService(
+    const examSync = new ExamSyncWorker(
       examRepository,
+      await createNativeExamRemote(nativeServices.firestore, nativeServices.auth, guard),
+      guard,
+    );
+    const examStorage: ExamRepository = {
+      active: (o) => examRepository.active(o),
+      create: (o, attempt, check) => examRepository.create(o, attempt, check),
+      attempt: (o, id) => examRepository.attempt(o, id),
+      change: (o, id, mutation, now) => examRepository.change(o, id, mutation, now),
+      observeTime: (o, id, now) => examRepository.observeTime(o, id, now),
+      finalize: async (o, id, now, reason) => {
+        const result = await examRepository.finalize(o, id, now, reason);
+        if (guard.isCurrent(o)) void examSync.flush(o).catch(() => undefined);
+        return result;
+      },
+      result: (o, id) => examRepository.result(o, id),
+      history: (o) => examRepository.history(o),
+      pending: (o) => examRepository.pending(o),
+      acknowledge: (o, id) => examRepository.acknowledge(o, id),
+    };
+    const exam = new ExamService(
+      examStorage,
       content,
       systemClock,
       random,
@@ -176,8 +203,12 @@ export async function composeStudyDependencies(
     );
     if (!guard.isCurrent(owner)) throw new StudyError('auth-required');
     sync.start(owner);
+    void examSync.flush(owner).catch(() => undefined);
     const foreground = AppState.addEventListener('change', (state) => {
-      if (state === 'active' && guard.isCurrent(owner)) sync.wake();
+      if (state === 'active' && guard.isCurrent(owner)) {
+        sync.wake();
+        void examSync.flush(owner).catch(() => undefined);
+      }
     });
     return {
       owner,
@@ -190,11 +221,13 @@ export async function composeStudyDependencies(
       sync,
       exam,
       examRepository,
+      examSync,
       dispose() {
         if (disposed) return;
         disposed = true;
         foreground.remove();
         sync.stop();
+        examSync.stop();
         controller.dispose();
         void db.close().catch(() => undefined);
       },

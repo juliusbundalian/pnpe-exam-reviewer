@@ -8,6 +8,7 @@ import { BookmarkService } from '../../src/features/bookmarks/application/Bookma
 import { StudySyncWorker } from '../../src/features/study/application/StudySyncWorker';
 import { SqliteExamRepository } from '../../src/features/exam/data/SqliteExamRepository';
 import { ExamService } from '../../src/features/exam/application/ExamService';
+import { ExamSyncWorker } from '../../src/features/exam/application/ExamSyncWorker';
 import { generation, studyEntry, studyQuestion } from './study';
 import { StudyError, type OwnerContext } from '../../src/features/study/domain/study';
 export function studyNavigationFactory() {
@@ -76,6 +77,17 @@ export function studyNavigationFactory() {
       guard,
     );
     const examRepository = new SqliteExamRepository(db, guard);
+    const examSync = new ExamSyncWorker(
+      examRepository,
+      {
+        publish: async () => {},
+        history: async () => [],
+        result: async () => {
+          throw new StudyError('invalid-content');
+        },
+      },
+      guard,
+    );
     const exam = new ExamService(
       examRepository,
       content,
@@ -97,9 +109,11 @@ export function studyNavigationFactory() {
       sync,
       exam,
       examRepository,
+      examSync,
       dispose() {
         disposed = true;
         sync.stop();
+        examSync.stop();
         controller.dispose();
         void db.close();
       },

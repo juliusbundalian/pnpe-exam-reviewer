@@ -66,6 +66,15 @@ jest.mock('../../src/features/study/data/nativeStudySyncFacade', () => ({
     },
   }),
 }));
+jest.mock('../../src/features/exam/data/nativeExamFacade', () => ({
+  createNativeExamRemote: async () => ({
+    publish: async () => {},
+    history: async () => [],
+    result: async () => {
+      throw new Error('No remote exam');
+    },
+  }),
+}));
 beforeEach(async () => {
   mockDb = nodeSqlDatabase(':memory:');
   await migrateStudyDatabase(mockDb);
@@ -156,6 +165,7 @@ test('protected composition wires exam storage and checks the live new-start gat
   const auth = source();
   const study = await composeStudyDependencies(native, auth.owner);
   expect(await study.examRepository.active(study.owner)).toBeNull();
+  expect(study.examSync.status().pendingCount).toBe(0);
   auth.disable();
   await expect(study.exam.start(study.owner, defaults.config.mockExam)).rejects.toMatchObject({
     code: 'permission-denied',

@@ -154,6 +154,106 @@ service cloud.firestore {
       allow read: if isOwner(uid);
       allow create: if isOwner(uid) && receipt(request.resource.data,uid,qid,oid);
     }
+    function examConfig(c, count) {
+      return c is map && c.keys().hasOnly(['durationMinutes','questionCount','passingPercentage','shuffleQuestions','shuffleAnswers','distribution'])
+        && c.keys().hasAll(['durationMinutes','questionCount','passingPercentage','shuffleQuestions','shuffleAnswers','distribution'])
+        && natural(c.durationMinutes) && c.durationMinutes > 0 && c.durationMinutes <= 1440
+        && natural(c.questionCount) && c.questionCount == count
+        && c.passingPercentage is number && c.passingPercentage >= 0 && c.passingPercentage <= 100
+        && c.shuffleQuestions is bool && c.shuffleAnswers is bool
+        && c.distribution is map
+        && c.distribution.keys().hasOnly(['generalInformation','communicationSkills','quantitativeReasoning','criticalThinking'])
+        && c.distribution.keys().hasAll(['generalInformation','communicationSkills','quantitativeReasoning','criticalThinking'])
+        && natural(c.distribution.generalInformation) && c.distribution.generalInformation > 0
+        && natural(c.distribution.communicationSkills) && c.distribution.communicationSkills > 0
+        && natural(c.distribution.quantitativeReasoning) && c.distribution.quantitativeReasoning > 0
+        && natural(c.distribution.criticalThinking) && c.distribution.criticalThinking > 0
+        && c.distribution.generalInformation + c.distribution.communicationSkills
+          + c.distribution.quantitativeReasoning + c.distribution.criticalThinking == count;
+    }
+    function examScore(s, count) {
+      return s is map && s.keys().hasOnly(['total','correct','incorrect','unanswered','percentage','passed'])
+        && s.keys().hasAll(['total','correct','incorrect','unanswered','percentage','passed'])
+        && s.total == count && natural(s.correct) && natural(s.incorrect) && natural(s.unanswered)
+        && s.correct + s.incorrect + s.unanswered == count
+        && s.percentage is number && s.percentage >= 0 && s.percentage <= 100 && s.passed is bool;
+    }
+    function examSummary(s, uid, aid, device, count) {
+      return s is map && s.keys().hasOnly(['attemptId','uid','deviceId','generation','config','startedAt','deadlineAt','endedAt','durationUsedMs','reason','overall','categories','subcategories'])
+        && s.keys().hasAll(['attemptId','uid','deviceId','generation','config','startedAt','deadlineAt','endedAt','durationUsedMs','reason','overall','categories','subcategories'])
+        && s.attemptId == aid && s.uid == uid && s.deviceId == device
+        && s.generation is string && s.generation.matches('[a-f0-9]{64}')
+        && examConfig(s.config, count)
+        && natural(s.startedAt) && natural(s.deadlineAt) && natural(s.endedAt)
+        && s.startedAt <= s.endedAt && s.endedAt <= s.deadlineAt
+        && s.deadlineAt == s.startedAt + s.config.durationMinutes * 60000
+        && natural(s.durationUsedMs) && s.durationUsedMs == s.endedAt - s.startedAt
+        && s.reason in ['manual','timeExpired']
+        && (s.reason != 'timeExpired' || s.endedAt == s.deadlineAt)
+        && examScore(s.overall, count)
+        && s.categories is list && s.categories.size() == 4
+        && s.subcategories is list && s.subcategories.size() <= 15;
+    }
+    function examRoot(d, uid, aid) {
+      return d.keys().hasOnly(['uid','deviceId','attemptId','itemCount','phase','summary','writtenAt'])
+        && d.keys().hasAll(['uid','deviceId','attemptId','itemCount','phase','summary','writtenAt'])
+        && d.uid == uid && safeId(uid,128) && d.attemptId == aid && safeId(aid,128)
+        && safeId(d.deviceId,128) && natural(d.itemCount) && d.itemCount > 0 && d.itemCount <= 1000
+        && d.phase in ['preparing','ready'] && examSummary(d.summary, uid, aid, d.deviceId, d.itemCount)
+        && d.writtenAt == request.time;
+    }
+    match /users/{uid}/examAttempts/{aid} {
+      allow read: if isOwner(uid);
+      allow create: if isOwner(uid) && examRoot(request.resource.data, uid, aid)
+        && request.resource.data.phase == 'preparing';
+      allow update: if isOwner(uid) && examRoot(request.resource.data, uid, aid)
+        && resource.data.phase == 'preparing' && request.resource.data.phase == 'ready'
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['phase','writtenAt']);
+    }
+    function examQuestion(q) {
+      return q is map
+        && q.keys().hasOnly(['id','version','categoryId','subcategoryId','prompt','choices','correctChoiceId','choiceOrderPolicy','sources','createdAt','updatedAt','status','isCurrentEvent','explanation','difficulty','stimulus','reviewedTimeContext','publishedAt','asOfDate','expiresAt','verification'])
+        && q.keys().hasAll(['id','version','categoryId','subcategoryId','prompt','choices','correctChoiceId','choiceOrderPolicy','sources','createdAt','updatedAt','status','isCurrentEvent'])
+        && safeId(q.id,1500) && natural(q.version) && q.version > 0
+        && taxonomyPair(q.categoryId,q.subcategoryId) && q.status == 'active'
+        && q.prompt is list && q.prompt.size() > 0 && q.prompt.size() <= 100
+        && q.choices is list && q.choices.size() >= 2 && q.choices.size() <= 20
+        && q.correctChoiceId is string && q.correctChoiceId.size() > 0
+        && q.choiceOrderPolicy in ['fixed','shuffle']
+        && q.sources is list && q.sources.size() > 0 && q.sources.size() <= 30
+        && q.createdAt is string && q.updatedAt is string && q.isCurrentEvent is bool
+        && (!('stimulus' in q) || (q.stimulus is map
+          && q.stimulus.keys().hasOnly(['id','version','blocks'])
+          && q.stimulus.keys().hasAll(['id','version','blocks'])
+          && q.stimulus.id is string && q.stimulus.id.toUtf8().size() <= 1500
+          && natural(q.stimulus.version) && q.stimulus.version > 0
+          && q.stimulus.blocks is list && q.stimulus.blocks.size() > 0));
+    }
+    function examItem(d, uid, aid, ordinal) {
+      let root = get(/databases/$(database)/documents/users/$(uid)/examAttempts/$(aid)).data;
+      let item = d.item;
+      return d.keys().hasOnly(['uid','deviceId','attemptId','ordinal','item','writtenAt'])
+        && d.keys().hasAll(['uid','deviceId','attemptId','ordinal','item','writtenAt'])
+        && d.uid == uid && d.attemptId == aid && d.deviceId == root.deviceId
+        && root.phase == 'preparing' && natural(d.ordinal) && ordinal == string(d.ordinal)
+        && d.ordinal < root.itemCount && d.writtenAt == request.time
+        && item is map && item.keys().hasOnly(['entry','question','choiceOrder','selectedChoiceId','flagged'])
+        && item.keys().hasAll(['entry','question','choiceOrder','selectedChoiceId','flagged'])
+        && entry(item.entry) && item.entry.status == 'active'
+        && examQuestion(item.question)
+        && item.question.id == item.entry.id && item.question.version == item.entry.version
+        && item.question.categoryId == item.entry.categoryId
+        && item.question.subcategoryId == item.entry.subcategoryId
+        && ('stimulus' in item.entry) == ('stimulus' in item.question)
+        && (!('stimulus' in item.entry) || (item.question.stimulus.id == item.entry.stimulus.id && item.question.stimulus.version == item.entry.stimulus.version))
+        && item.choiceOrder is list && item.choiceOrder.size() == item.question.choices.size()
+        && (item.selectedChoiceId == null || item.selectedChoiceId is string)
+        && item.flagged is bool;
+    }
+    match /users/{uid}/examAttempts/{aid}/items/{ordinal} {
+      allow read: if isOwner(uid);
+      allow create: if isOwner(uid) && examItem(request.resource.data, uid, aid, ordinal);
+    }
     match /{document=**} { allow read, write: if false; }
   }
 }
