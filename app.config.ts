@@ -15,6 +15,7 @@ const config: ExpoConfig = {
   name: 'PNPE Exam Reviewer',
   slug: 'pnpe-exam-reviewer',
   version,
+  icon: './assets/icon.png',
   scheme: 'pnpe',
   userInterfaceStyle: 'automatic',
   ios: {
@@ -24,6 +25,7 @@ const config: ExpoConfig = {
   },
   android: {
     package: 'com.pnpe.exam.reviewer',
+    versionCode: 2,
     ...(configured ? { googleServicesFile: androidFile } : {}),
   },
   extra: {
