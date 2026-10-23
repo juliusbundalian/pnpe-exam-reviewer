@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-17T06:31:31.929130+00:00",
+  "title": "Design System: PNPE Exam Reviewer",
+  "extensions": {
+    "breakpoints": [
+      {
+        "name": "expanded-effective-width",
+        "value": "760 logical units"
+      },
+      {
+        "name": "summary-stack-effective-width",
+        "value": "340 logical units"
+      }
+    ],
+    "previewScope": "Illustrative HTML/CSS translations of the native Mock Exam surface, Light mode only. Browser focus outlines are preview affordances, not verified native states. No device screenshots or native visual verification available.",
+    "sourceFiles": [
+      "src/core/theme/tokens.ts",
+      "src/features/mock-exam/presentation/MockExamScreen.tsx"
+    ],
+    "responsiveMeasure": "window width / font scale",
+    "shadows": [],
+    "motion": []
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Light-mode illustration of the native Mock Exam action; pressed opacity mirrors AppButton.",
+      "html": "<button class=\"ds-button-primary\">Start Mock Exam</button>",
+      "css": ".ds-button-primary { background: #245cbd; color: #ffffff; border: 0; border-radius: 12px; padding: 12px 16px; min-height: 52px; font: 600 16px/24px system-ui; cursor: pointer; } .ds-button-primary:hover { cursor: pointer; } .ds-button-primary:focus-visible { outline: 2px solid #245cbd; outline-offset: 3px; } .ds-button-primary:active { opacity: .75; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Light-mode illustration of the native Mock Exam action; pressed opacity mirrors AppButton.",
+      "html": "<button class=\"ds-button-secondary\">Back</button>",
+      "css": ".ds-button-secondary { background: #e9f0ff; color: #245cbd; border: 0; border-radius: 12px; padding: 12px 16px; min-height: 52px; font: 600 16px/24px system-ui; cursor: pointer; } .ds-button-secondary:hover { cursor: pointer; } .ds-button-secondary:focus-visible { outline: 2px solid #245cbd; outline-offset: 3px; } .ds-button-secondary:active { opacity: .75; }"
+    },
+    {
+      "name": "Summary Statistics",
+      "kind": "custom",
+      "description": "Source-derived Light-mode illustration; numeric values are sample configuration, not fixed product values.",
+      "html": "<div class=\"ds-stats\"><div><strong>120</strong><span>questions</span></div><div><strong>180</strong><span>minutes</span></div></div>",
+      "css": ".ds-stats { display:flex; border-block:1px solid #dce3ed; padding:24px 0; color:#17283f; font-family:system-ui; } .ds-stats>div { flex:1; display:flex; flex-direction:column; gap:4px; } .ds-stats>div+div { border-left:1px solid #dce3ed; padding-left:24px; } .ds-stats strong { font-size:36px; line-height:44px; font-weight:600; font-variant-numeric:tabular-nums; } .ds-stats span { font-size:14px; line-height:22px; color:#55647a; }"
+    },
+    {
+      "name": "Subject Row",
+      "kind": "custom",
+      "description": "Source-derived Light-mode illustration; numeric values are sample configuration, not fixed product values.",
+      "html": "<div class=\"ds-subject\"><div><strong>Communication Skills</strong><p>Vocabulary, grammar &amp; comprehension</p></div><b>30</b></div>",
+      "css": ".ds-subject { display:flex; align-items:center; gap:16px; padding:16px 0; border-bottom:1px solid #dce3ed; color:#17283f; font:16px/24px system-ui; } .ds-subject>div { flex:1; } .ds-subject strong { font-weight:600; } .ds-subject p { margin:4px 0 0; font-size:14px; line-height:22px; color:#55647a; } .ds-subject b { font-size:22px; line-height:30px; font-weight:600; font-variant-numeric:tabular-nums; }"
+    },
+    {
+      "name": "Practice Threshold",
+      "kind": "custom",
+      "description": "Source-derived Light-mode illustration; numeric values are sample configuration, not fixed product values.",
+      "html": "<div class=\"ds-threshold\"><strong>70% practice threshold</strong><p>An application practice target, not a verified official examination requirement.</p></div>",
+      "css": ".ds-threshold { background:#e9f0ff; border-radius:12px; padding:16px; font:16px/24px system-ui; } .ds-threshold strong { color:#245cbd; font-weight:600; } .ds-threshold p { margin:8px 0 0; color:#55647a; font-size:14px; line-height:22px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Focused preparation",
+    "overview": "The incumbent React Native system uses blue accents, restrained surfaces, and native scalable text for professional, distraction-free exam preparation. Light and Dark themes remain authoritative in `src/core/theme/tokens.ts`; this document records existing tokens rather than introducing a global redesign.\n\nThe completed Mock Exam composition is the documented surface. Its continuous briefing and action hierarchy are described in `.impeccable/surfaces/mock-exam.md`; they are not requirements for unrelated screens. Documentation is source-derived; native visual verification was unavailable.",
+    "keyCharacteristics": [
+      "Blue accents in both themes.",
+      "Native scalable typography and accessible controls.",
+      "Minimal visual clutter."
+    ],
+    "rules": [],
+    "dos": [
+      "Do preserve theme roles, native font scaling, safe areas, and accessible control labels.",
+      "Do keep Mock Exam composition rules scoped to its surface brief."
+    ],
+    "donts": [
+      "Don't infer verified native rendering from source-derived documentation or HTML previews.",
+      "Don't imply that preflight starts an exam session or timer."
+    ]
+  }
+}

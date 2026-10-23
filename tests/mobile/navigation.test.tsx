@@ -158,7 +158,7 @@ test('Mock Exam login returns to preflight without starting a timer', async () =
   await screen.findByText('Sign in to continue');
   await h.authenticate('alice');
   expect(await screen.findByText('Mock Exam preflight')).toBeVisible();
-  expect(screen.getByText('150 questions')).toBeVisible();
+  expect(screen.getByLabelText('150 questions')).toBeVisible();
   expect(screen.getByText(/No timer or session has started/)).toBeVisible();
   expect(h.events).toEqual(['startMockExam']);
 });
