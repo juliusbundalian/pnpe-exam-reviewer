@@ -107,8 +107,8 @@ test('local history appears while a cloud request remains pending', async () => 
 test('progress counts completed exams separately from Reviewer views', async () => {
   const fixture = prepared();
   await fixture.h.render('/progress');
-  expect(await screen.findByText('Completed mock exams: 1')).toBeVisible();
-  expect(screen.getByText('Average exam score: 74.67%')).toBeVisible();
+  expect(await screen.findByLabelText('Completed mock exams: 1')).toBeVisible();
+  expect(screen.getByLabelText('Average exam score: 74.67%')).toBeVisible();
   expect(screen.getByText('No saved Reviewer session.')).toBeVisible();
 });
 
@@ -122,9 +122,9 @@ test('active attempt is a Resume entry and empty exam statistics are unavailable
 test('no completed exams shows unavailable averages instead of zero', async () => {
   const fixture = prepared({ completed: false, active: true });
   await fixture.h.render('/progress');
-  expect(await screen.findByText('Completed mock exams: 0')).toBeVisible();
-  expect(screen.getByText('Average exam score: Unavailable')).toBeVisible();
-  expect(screen.getByText('Highest exam score: Unavailable')).toBeVisible();
+  expect(await screen.findByLabelText('Completed mock exams: 0')).toBeVisible();
+  expect(screen.getByLabelText('Average exam score: Unavailable')).toBeVisible();
+  expect(screen.getByLabelText('Highest exam score: Unavailable')).toBeVisible();
 });
 
 test('disabled history hides its menu entry', async () => {

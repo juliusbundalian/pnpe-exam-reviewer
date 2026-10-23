@@ -42,7 +42,7 @@ test('passage precedes prompt and choices preserve original order with a textual
     readable.findIndex((label) => label.includes('😀 Café is open.')),
   );
   expect(readable.indexOf('20')).toBeLessThan(readable.indexOf('30'));
-  expect(screen.getByText('Choice 2 — Correct answer')).toBeVisible();
+  expect(screen.getByTestId('choice-card-2')).toHaveTextContent(/Choice 2.*Correct/);
 });
 
 test.each([
@@ -65,7 +65,9 @@ test.each([
     const nodes = screen.UNSAFE_getAllByType(Text).filter((node) => node.props.onLayout);
     const target =
       withheld === 'Correct answer' || withheld === 'Choice 2'
-        ? screen.getByText(withheld)
+        ? withheld === 'Choice 2'
+          ? screen.getAllByText(withheld).at(-1)!
+          : screen.getByText(withheld)
         : screen.getByLabelText(withheld);
     const matching = (node: (typeof nodes)[number]) =>
       withheld === 'Correct answer' || withheld === 'Choice 2'

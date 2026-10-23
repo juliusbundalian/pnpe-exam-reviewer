@@ -25,7 +25,7 @@ const config: ExpoConfig = {
   },
   android: {
     package: 'com.pnpe.exam.reviewer',
-    versionCode: 2,
+    versionCode: 3,
     ...(configured ? { googleServicesFile: androidFile } : {}),
   },
   extra: {

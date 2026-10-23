@@ -291,7 +291,7 @@ test.each(['light', 'dark'] as const)(
     expect(passage.props.numberOfLines).toBeUndefined();
     expect(passage.props.maxFontSizeMultiplier).toBeUndefined();
     expect(passage).toHaveStyle({ color: palettes[appearance].textPrimary });
-    expect(screen.getByText('Choice 2 — Correct answer')).toHaveStyle({
+    expect(screen.getAllByText('Choice 2')[0]).toHaveStyle({
       color: palettes[appearance].success,
     });
     const scroll = screen.UNSAFE_getByType(ScrollView);

@@ -176,7 +176,7 @@ test('lists and opens the pinned answer without creating Reviewer work or record
   show(h);
   fireEvent.press(await screen.findByRole('button', { name: 'Open fixture-grammar' }));
   await screen.findByText('Correct answer');
-  expect(screen.getByText('Choice 2 — Correct answer')).toBeTruthy();
+  expect(screen.getByTestId('choice-card-2')).toHaveTextContent(/Choice 2.*Correct/);
   expect(screen.getByText('Explanation')).toBeTruthy();
   act(() => {
     screen.UNSAFE_getAllByType(Text).forEach((node) => {

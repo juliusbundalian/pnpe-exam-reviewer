@@ -199,6 +199,9 @@ test('leaving warns that time continues and manual submit confirms unanswered co
   fireEvent.press(screen.getByRole('button', { name: 'Leave exam' }));
   expect(screen.getByText('The clock continues while you are away.')).toBeVisible();
   fireEvent.press(screen.getByRole('button', { name: 'Stay' }));
+  fireEvent.press(screen.getByRole('button', { name: 'Navigator' }));
+  fireEvent.press(screen.getByLabelText('Question 150, unanswered'));
+  await screen.findByText('Question 150 of 150');
   fireEvent.press(screen.getByRole('button', { name: 'Submit Exam' }));
   expect(screen.getByText('150 unanswered questions. Submitting ends this attempt.')).toBeVisible();
   fireEvent.press(screen.getByRole('button', { name: 'Submit Anyway' }));
@@ -243,6 +246,9 @@ test('failed manual finalization locks edits until retry succeeds', async () => 
   fireEvent.press(await screen.findByRole('button', { name: 'Resume Exam' }));
   await screen.findByText('Question 1 of 150');
   fixture.failNextSubmit();
+  fireEvent.press(screen.getByRole('button', { name: 'Navigator' }));
+  fireEvent.press(screen.getByLabelText('Question 150, unanswered'));
+  await screen.findByText('Question 150 of 150');
   fireEvent.press(screen.getByRole('button', { name: 'Submit Exam' }));
   fireEvent.press(screen.getByRole('button', { name: 'Submit Anyway' }));
   expect(await screen.findByRole('button', { name: 'Retry finalization' })).toBeVisible();

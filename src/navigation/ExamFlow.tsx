@@ -1,3 +1,5 @@
+import { useAppDependencies } from '../bootstrap/AppProviders';
+import { useExamVisits } from '../features/exam/presentation/useExamVisits';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { AppState } from 'react-native';
 import { useRouter } from 'expo-router';
@@ -50,6 +52,19 @@ export function ExamFlow({
   const pending = useRef(false);
   const failedChange = useRef<ExamChange | null>(null);
   const generation = useRef(0);
+  const { storage } = useAppDependencies();
+  const visitedQuestions = useExamVisits(
+    storage,
+    active
+      ? {
+          uid: active.uid,
+          deviceId: active.deviceId,
+          attemptId: active.id,
+          position: active.position,
+          questionCount: active.questions.length,
+        }
+      : null,
+  );
   const questionId = active?.questions[active.position]?.entry.id;
 
   useEffect(() => {
@@ -243,6 +258,7 @@ export function ExamFlow({
   if (stage === 'run' && active)
     return (
       <ExamRunnerScreen
+        visitedQuestions={visitedQuestions}
         attempt={active}
         remainingMs={remaining}
         busy={busy}

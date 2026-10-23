@@ -5,6 +5,7 @@ import { AppScreen } from '../../../core/components/AppScreen';
 import { AppText } from '../../../core/components/AppText';
 import { spacing } from '../../../core/theme/tokens';
 import { ContentBlocks } from '../../content/presentation/ContentBlocks';
+import { ChoiceCard, QuestionCard } from '../../content/presentation/QuestionCards';
 import type { ExamResult } from '../domain/exam';
 
 export function ExamSubmittedReviewScreen({
@@ -33,18 +34,24 @@ export function ExamSubmittedReviewScreen({
           />
         </View>
       ) : null}
-      <ContentBlocks blocks={item.question.prompt} onReady={() => {}} onError={() => {}} />
+      <QuestionCard
+        categoryId={item.question.categoryId}
+        blocks={item.question.prompt}
+        onReady={() => {}}
+        onError={() => {}}
+      />
       {item.choiceOrder.map((id, index) => {
         const choice = item.question.choices.find((candidate) => candidate.id === id)!;
         return (
-          <View key={id} style={{ gap: spacing.xs }}>
-            <AppText variant="heading">
-              Choice {index + 1}
-              {id === correct ? ' — Correct answer' : ''}
-              {id === item.selectedChoiceId ? ' — Your answer' : ''}
-            </AppText>
-            <ContentBlocks blocks={choice.blocks} onReady={() => {}} onError={() => {}} />
-          </View>
+          <ChoiceCard
+            key={id}
+            number={index + 1}
+            blocks={choice.blocks}
+            correct={id === correct}
+            showSelection={id === item.selectedChoiceId}
+            onReady={() => {}}
+            onError={() => {}}
+          />
         );
       })}
       <AppText variant="heading">Correct answer</AppText>

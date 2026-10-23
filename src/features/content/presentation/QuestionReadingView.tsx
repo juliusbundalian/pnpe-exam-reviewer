@@ -4,6 +4,7 @@ import { AppText } from '../../../core/components/AppText';
 import { useTheme } from '../../../core/theme/ThemeProvider';
 import { spacing } from '../../../core/theme/tokens';
 import type { Question } from '../domain/question';
+import { ChoiceCard, QuestionCard } from './QuestionCards';
 import {
   ContentBlocks,
   ContentRenderError,
@@ -62,30 +63,21 @@ export function QuestionReadingView({ question, onReady, onError }: QuestionRead
           />
         </View>
       ) : null}
-      <ContentBlocks blocks={question.prompt} onReady={() => laidOut('prompt')} onError={onError} />
+      <QuestionCard
+        categoryId={question.categoryId}
+        blocks={question.prompt}
+        onReady={() => laidOut('prompt')}
+        onError={onError}
+      />
       {question.choices.map((choice, index) => (
-        <View
+        <ChoiceCard
           key={choice.id}
-          style={{
-            gap: spacing.sm,
-            borderLeftWidth: index === correctIndex ? 3 : 0,
-            borderColor: colors.success,
-            paddingLeft: spacing.md,
-          }}
-        >
-          <AppText
-            variant="heading"
-            style={index === correctIndex ? { color: colors.success } : undefined}
-          >
-            Choice {index + 1}
-            {index === correctIndex ? ' — Correct answer' : ''}
-          </AppText>
-          <ContentBlocks
-            blocks={choice.blocks}
-            onReady={() => laidOut(`choice:${index}`)}
-            onError={onError}
-          />
-        </View>
+          number={index + 1}
+          blocks={choice.blocks}
+          correct={index === correctIndex}
+          onReady={() => laidOut(`choice:${index}`)}
+          onError={onError}
+        />
       ))}
       <View style={{ gap: spacing.sm }}>
         <AppText

@@ -90,7 +90,7 @@ export function ReviewerScreen({
       </AppText>
       {session ? (
         <View style={{ gap: spacing.sm }}>
-          <AppText variant="heading">{scope}</AppText>
+          {session.scope.subcategoryId ? <AppText variant="heading">{scope}</AppText> : null}
           <AppText>
             Item {(ordinal ?? session.position) + 1} of {session.items.length}
           </AppText>

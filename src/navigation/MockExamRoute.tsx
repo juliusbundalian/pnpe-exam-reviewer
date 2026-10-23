@@ -2,10 +2,7 @@ import { useRef } from 'react';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import type { View } from 'react-native';
 import { useAppNavigation, useConfig } from '../bootstrap/AppProviders';
-import { AppScreen } from '../core/components/AppScreen';
-import { AppText } from '../core/components/AppText';
-import { AppButton } from '../core/components/AppButton';
-import { taxonomy } from '../features/content/domain/taxonomy';
+import { MockExamScreen } from '../features/mock-exam/presentation/MockExamScreen';
 import { ProtectedRoute } from './ProtectedRoute';
 import { StudyRoute } from './StudyRoute';
 import { startBlock } from './startAvailability';
@@ -38,31 +35,13 @@ export default function MockExamRoute() {
       </ProtectedRoute>
     );
   return (
-    <AppScreen>
-      <AppText variant="title">Mock Exam</AppText>
-      <AppText>{mockExam.questionCount} questions</AppText>
-      <AppText>{mockExam.durationMinutes} minutes</AppText>
-      {taxonomy.map((category) => (
-        <AppText key={category.id}>
-          {category.id === 'communicationSkills'
-            ? 'Verbal Reasoning'
-            : category.id === 'criticalThinking'
-              ? 'Logical Reasoning'
-              : category.label}
-          : {mockExam.distribution[category.id]}
-        </AppText>
-      ))}
-      <AppText>
-        {mockExam.passingPercentage}% application practice threshold. These practice settings are
-        not a verified official examination claim.
-      </AppText>
-      {blocked ? <AppText accessibilityRole="alert">{blocked}</AppText> : null}
-      <AppButton
-        ref={target}
-        variant="primary"
-        label="Start Mock Exam"
-        onPress={() => navigation.require({ type: 'startMockExam' }, target.current)}
-      />
-    </AppScreen>
+    <MockExamScreen
+      exam={mockExam}
+      preflight={false}
+      blocked={blocked}
+      startTarget={target}
+      onStart={() => navigation.require({ type: 'startMockExam' }, target.current)}
+      onBack={() => router.replace('/mock-exam')}
+    />
   );
 }
