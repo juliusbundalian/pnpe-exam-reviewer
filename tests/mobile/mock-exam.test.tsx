@@ -44,19 +44,19 @@ test.each([false, true])(
     expect(screen.getByLabelText('90 minutes')).toBeVisible();
     expect(screen.getByText('80% practice threshold')).toBeVisible();
     expect(screen.getByLabelText(/General Information: 20 questions/)).toBeVisible();
-    expect(screen.getByLabelText(/Critical Thinking: 40 questions/)).toBeVisible();
+    expect(screen.getByLabelText(/Logical Reasoning: 40 questions/)).toBeVisible();
     fireEvent.press(screen.getByRole('button', { name: 'Start Mock Exam' }));
     expect(onStart).toHaveBeenCalledTimes(1);
   },
 );
 
-test('availability block explains why starting is disabled', () => {
+test('availability notice keeps preflight accessible for resuming saved exams', () => {
   const { onStart } = renderExam({ blocked: 'Maintenance in progress. Please try again later.' });
   expect(screen.getByRole('alert')).toHaveTextContent(/Maintenance in progress/);
   const start = screen.getByRole('button', { name: 'Start Mock Exam' });
-  expect(start).toBeDisabled();
+  expect(start).toBeEnabled();
   fireEvent.press(start);
-  expect(onStart).not.toHaveBeenCalled();
+  expect(onStart).toHaveBeenCalledTimes(1);
 });
 
 test('preflight states the development boundary and returns without starting', () => {

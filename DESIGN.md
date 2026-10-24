@@ -2,66 +2,66 @@
 name: PNPE Exam Reviewer
 description: Incumbent native blue themes; Mock Exam composition documented from source.
 colors:
-  light-primary: "#245cbd"
-  light-on-primary: "#ffffff"
-  light-primary-container: "#e9f0ff"
-  light-background: "#f6f8fc"
-  light-surface: "#ffffff"
-  light-border: "#dce3ed"
-  light-text-primary: "#17283f"
-  light-text-secondary: "#55647a"
-  light-error: "#ad2525"
-  dark-primary: "#a7c5ff"
-  dark-on-primary: "#10294d"
-  dark-primary-container: "#243c60"
-  dark-background: "#101925"
-  dark-surface: "#182535"
-  dark-border: "#354356"
-  dark-text-primary: "#eef3fc"
-  dark-text-secondary: "#b2bed0"
-  dark-error: "#ffaaaa"
+  light-primary: '#245cbd'
+  light-on-primary: '#ffffff'
+  light-primary-container: '#e9f0ff'
+  light-background: '#f6f8fc'
+  light-surface: '#ffffff'
+  light-border: '#dce3ed'
+  light-text-primary: '#17283f'
+  light-text-secondary: '#55647a'
+  light-error: '#ad2525'
+  dark-primary: '#a7c5ff'
+  dark-on-primary: '#10294d'
+  dark-primary-container: '#243c60'
+  dark-background: '#101925'
+  dark-surface: '#182535'
+  dark-border: '#354356'
+  dark-text-primary: '#eef3fc'
+  dark-text-secondary: '#b2bed0'
+  dark-error: '#ffaaaa'
 typography:
   title:
-    fontSize: "30px"
+    fontSize: '30px'
     lineHeight: 38
     fontWeight: 700
   heading:
-    fontSize: "18px"
+    fontSize: '18px'
     lineHeight: 26
     fontWeight: 700
   body:
-    fontSize: "16px"
+    fontSize: '16px'
     lineHeight: 24
     fontWeight: 400
   caption:
-    fontSize: "14px"
+    fontSize: '14px'
     lineHeight: 22
     fontWeight: 400
   button:
-    fontSize: "16px"
+    fontSize: '16px'
     lineHeight: 24
     fontWeight: 600
 rounded:
-  sm: "8px"
-  md: "12px"
+  sm: '8px'
+  md: '12px'
 spacing:
-  xs: "4px"
-  sm: "8px"
-  md: "12px"
-  lg: "16px"
-  xl: "24px"
-  xxl: "32px"
+  xs: '4px'
+  sm: '8px'
+  md: '12px'
+  lg: '16px'
+  xl: '24px'
+  xxl: '32px'
 components:
   button-primary:
-    backgroundColor: "{colors.light-primary}"
-    textColor: "{colors.light-on-primary}"
-    rounded: "{rounded.md}"
-    padding: "12px 16px"
+    backgroundColor: '{colors.light-primary}'
+    textColor: '{colors.light-on-primary}'
+    rounded: '{rounded.md}'
+    padding: '12px 16px'
   button-secondary:
-    backgroundColor: "{colors.light-primary-container}"
-    textColor: "{colors.light-primary}"
-    rounded: "{rounded.md}"
-    padding: "12px 16px"
+    backgroundColor: '{colors.light-primary-container}'
+    textColor: '{colors.light-primary}'
+    rounded: '{rounded.md}'
+    padding: '12px 16px'
 ---
 
 # Design System: PNPE Exam Reviewer
@@ -75,6 +75,7 @@ The incumbent React Native system uses blue accents, restrained surfaces, and na
 The completed Mock Exam composition is the documented surface. Its continuous briefing and action hierarchy are described in `.impeccable/surfaces/mock-exam.md`; they are not requirements for unrelated screens. Documentation is source-derived; native visual verification was unavailable.
 
 **Key Characteristics:**
+
 - Blue accents in both themes.
 - Native scalable typography and accessible controls.
 - Minimal visual clutter.

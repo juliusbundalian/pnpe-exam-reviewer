@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { ContentBlockSchema } from './content';
+import { StimulusRefSchema } from './stimulus';
 import { isTaxonomyPair, taxonomy } from './taxonomy';
 
 const nonempty = z.string().trim().min(1);
@@ -63,7 +64,10 @@ export const QuestionSchema = z
     isCurrentEvent: z.boolean(),
     explanation: blocks.optional(),
     difficulty: z.enum(['easy', 'medium', 'hard']).optional(),
-    stimulus: z.strictObject({ id: nonempty, version, blocks }).readonly().optional(),
+    stimulus: z
+      .strictObject({ ...StimulusRefSchema.unwrap().shape, blocks })
+      .readonly()
+      .optional(),
     reviewedTimeContext: nonempty.optional(),
     publishedAt: timestamp.optional(),
     asOfDate: z.iso.date().optional(),

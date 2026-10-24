@@ -382,6 +382,17 @@ test('failed sign out exposes recovery instead of reporting guest', async () => 
   });
 });
 
+test('a valid auth observation clears a transient recovery notice', async () => {
+  const h = createAuthHarness({ state: { status: 'recoveryRequired', previousUid: 'user-a' } });
+  await flushTransitions();
+  expect(h.coordinator.getSnapshot().recoveryMessage).toEqual(expect.any(String));
+  await h.emitAuthenticated('user-a');
+  expect(h.coordinator.getSnapshot()).toMatchObject({
+    auth: { status: 'authenticated', user: authUser('user-a') },
+    recoveryMessage: null,
+  });
+});
+
 test('a detached auth observer cannot resume after logout', async () => {
   const h = createAuthHarness();
   const oldObserver = [...h.repository.listeners][0];

@@ -1,7 +1,7 @@
 import { execFileSync } from 'node:child_process';
 import { resolve } from 'node:path';
 
-function selectConfig(files: boolean) {
+function selectConfig(files: boolean, ports: Record<string, string> = {}) {
   const result = execFileSync(
     process.execPath,
     [
@@ -20,6 +20,7 @@ function selectConfig(files: boolean) {
         EXPO_PUBLIC_FIREBASE_MODE: 'emulator',
         EXPO_PUBLIC_FIREBASE_PROJECT_ID: 'demo-pnpe',
         EXPO_PUBLIC_FIREBASE_EMULATOR_HOST: '127.0.0.1',
+        ...ports,
       },
     },
   );
@@ -69,4 +70,16 @@ test('lint permits central bootstrap imports and rejects raw SDK static and dyna
     { encoding: 'utf8' },
   );
   expect(JSON.parse(result)).toEqual([0, 1, 1, 1]);
+});
+
+test('native app config carries explicit isolated emulator ports for runtime validation', () => {
+  expect(
+    selectConfig(true, {
+      EXPO_PUBLIC_FIREBASE_AUTH_PORT: '9199',
+      EXPO_PUBLIC_FIREBASE_FIRESTORE_PORT: '8180',
+    }).firebase,
+  ).toMatchObject({ authPort: 9199, firestorePort: 8180 });
+  expect(selectConfig(true, { EXPO_PUBLIC_FIREBASE_AUTH_PORT: 'bad' }).firebase).toMatchObject({
+    authPort: null,
+  });
 });

@@ -314,3 +314,47 @@ test.each([true, false])(
     });
   },
 );
+
+test.each([0, -1, 65536, 8180.5, '8180', null])(
+  'emulator rejects invalid port override %p',
+  (port) => {
+    expect(
+      parseFirebaseEnvironment({
+        mode: 'emulator',
+        projectId: 'demo-pnpe',
+        emulatorHost: '127.0.0.1',
+        firestorePort: port,
+      }),
+    ).toEqual({ mode: 'unconfigured' });
+  },
+);
+test('explicit isolated study ports connect both SDK services to test endpoints', async () => {
+  const app = { name: 'pnpe-emulator', options: { projectId: 'demo-pnpe' } };
+  const connectAuthEmulator = jest.fn();
+  const connectFirestoreEmulator = jest.fn();
+  jest.doMock('@react-native-firebase/app', () => ({ initializeApp: async () => app }));
+  jest.doMock('@react-native-firebase/auth', () => ({
+    getAuth: () => 'auth',
+    connectAuthEmulator,
+  }));
+  jest.doMock('@react-native-firebase/firestore', () => ({
+    getFirestore: () => 'db',
+    connectFirestoreEmulator,
+  }));
+  await jest.isolateModulesAsync(async () => {
+    const native = await import('../../src/core/firebase/native');
+    await native.initializeNativeFirebase(
+      parseFirebaseEnvironment({
+        mode: 'emulator',
+        projectId: 'demo-pnpe',
+        emulatorHost: '10.0.2.2',
+        authPort: 9199,
+        firestorePort: 8180,
+      }),
+    );
+    expect(connectAuthEmulator).toHaveBeenCalledWith('auth', 'http://10.0.2.2:9199', {
+      disableWarnings: true,
+    });
+    expect(connectFirestoreEmulator).toHaveBeenCalledWith('db', '10.0.2.2', 8180);
+  });
+});

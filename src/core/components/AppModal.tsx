@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, type ReactNode } from 'react';
+import { useContext, useEffect, useLayoutEffect, useRef, type ReactNode } from 'react';
 import {
   AccessibilityInfo,
   AppState,
@@ -10,6 +10,7 @@ import {
   type Text,
   type View as NativeView,
 } from 'react-native';
+import { SafeAreaInsetsContext } from 'react-native-safe-area-context';
 import { useTheme } from '../theme/ThemeProvider';
 import { spacing, radii } from '../theme/tokens';
 import { AppText } from './AppText';
@@ -26,14 +27,19 @@ export function AppModal({
   children,
   onClose,
   restoreFocusTarget,
+  presentation = 'dialog',
+  headerAction,
 }: {
   visible: boolean;
   title: string;
   children: ReactNode;
   onClose(): void;
   restoreFocusTarget?: { readonly current: AccessibilityFocusTarget | null };
+  presentation?: 'dialog' | 'sheet';
+  headerAction?: ReactNode;
 }) {
   const { colors } = useTheme();
+  const insets = useContext(SafeAreaInsetsContext);
   const heading = useRef<Text>(null);
   const wasVisible = useRef(visible);
   const pendingRestore = useRef(false);
@@ -68,8 +74,8 @@ export function AppModal({
       <View
         style={{
           flex: 1,
-          justifyContent: 'center',
-          padding: spacing.xl,
+          justifyContent: presentation === 'sheet' ? 'flex-end' : 'center',
+          padding: presentation === 'sheet' ? 0 : spacing.xl,
           backgroundColor: '#00000080',
         }}
       >
@@ -77,18 +83,30 @@ export function AppModal({
           accessibilityViewIsModal
           contentContainerStyle={{
             padding: spacing.xl,
+            ...(presentation === 'sheet'
+              ? {
+                  paddingBottom: spacing.xl + (insets?.bottom ?? 0),
+                  paddingLeft: spacing.xl + (insets?.left ?? 0),
+                  paddingRight: spacing.xl + (insets?.right ?? 0),
+                }
+              : {}),
             gap: spacing.lg,
             backgroundColor: colors.surface,
-            borderRadius: radii.md,
+            borderRadius: presentation === 'sheet' ? 0 : radii.md,
+            borderTopLeftRadius: radii.md,
+            borderTopRightRadius: radii.md,
             width: '100%',
-            maxWidth: 560,
+            maxWidth: presentation === 'sheet' ? 720 : 560,
             alignSelf: 'center',
           }}
-          style={{ flexGrow: 0 }}
+          style={{ flexGrow: 0, ...(presentation === 'sheet' ? { maxHeight: '85%' } : {}) }}
         >
-          <AppText ref={heading} variant="heading" accessibilityRole="header">
-            {title}
-          </AppText>
+          <View style={{ flexDirection: 'row', alignItems: 'center', gap: spacing.sm }}>
+            <AppText ref={heading} variant="heading" accessibilityRole="header" style={{ flex: 1 }}>
+              {title}
+            </AppText>
+            {headerAction}
+          </View>
           {children}
         </ScrollView>
       </View>

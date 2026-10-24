@@ -8,11 +8,11 @@ adaptive
 
 ## Product Purpose
 
-PNPE Exam Reviewer provides structured reviewers and a configured Mock Exam briefing. Repository evidence indicates the audience is people preparing for the PNPE; specific usage environments are not confirmed.
+PNPE Exam Reviewer provides structured reviewers, saved study progress and bookmarks, and timed mock exams with results and history. Repository evidence indicates the audience is people preparing for the PNPE; specific usage environments are not confirmed.
 
 ## Capabilities and Constraints
 
-The existing Expo / React Native application uses authentication to protect exam starts. Mock Exam settings and subject distribution come from remote configuration with local defaults. This development build ends at preflight; it does not create an exam session or start a timer. Preserve these boundaries and all route/authentication behavior.
+The existing Expo / React Native application uses authentication to protect exam starts. Mock Exam settings and subject distribution come from remote configuration with local defaults. Preflight prepares a complete question set before starting a durable timed session. Saved attempts can resume during maintenance, while new starts remain blocked. Preserve owner isolation, offline persistence, and all route/authentication behavior.
 
 ## Brand Commitments
 

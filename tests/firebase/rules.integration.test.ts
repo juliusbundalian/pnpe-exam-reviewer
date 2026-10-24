@@ -1,4 +1,5 @@
 import { readFileSync } from 'node:fs';
+import { integrationEnvironment } from '../fixtures/integrationEnvironment';
 import {
   initializeTestEnvironment,
   assertSucceeds,
@@ -18,14 +19,15 @@ import {
   setLogLevel,
 } from 'firebase/firestore';
 
+const target = integrationEnvironment(process.env);
 let env: RulesTestEnvironment;
 beforeAll(async () => {
   setLogLevel('error'); // Expected permission denials are asserted below.
   env = await initializeTestEnvironment({
-    projectId: 'demo-pnpe',
+    projectId: target.projectId,
     firestore: {
-      host: '127.0.0.1',
-      port: 8080,
+      host: target.firestoreHost,
+      port: target.firestorePort,
       rules: readFileSync('firebase/firestore.rules', 'utf8'),
     },
   });

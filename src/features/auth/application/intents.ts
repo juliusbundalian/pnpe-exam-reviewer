@@ -1,3 +1,5 @@
+import { SafeIdSchema } from '../../content/domain/catalog';
+import { GeneratedIdSchema } from '../../study/domain/study';
 import { z } from 'zod';
 import { isTaxonomyPair, taxonomy } from '../../content/domain/taxonomy';
 
@@ -24,6 +26,8 @@ export const protectedActionSchema = z.discriminatedUnion('type', [
       subcategoryId: subcategoryId.optional(),
     })
     .refine(validPair),
+  z.strictObject({ type: z.literal('resumeReviewer'), sessionId: GeneratedIdSchema }),
+  z.strictObject({ type: z.literal('openBookmark'), questionId: SafeIdSchema }),
   z.strictObject({ type: z.literal('startMockExam') }),
   z.strictObject({ type: z.literal('openProgress') }),
   z.strictObject({ type: z.literal('openBookmarks') }),

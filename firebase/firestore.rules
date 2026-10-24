@@ -26,6 +26,234 @@ service cloud.firestore {
       allow update: if isOwner(uid) && validProfile()
         && request.resource.data.createdAt == resource.data.createdAt;
     }
+    function safeId(v, limit) {
+      return v is string && v.size() > 0 && v.size() <= limit
+        && v.matches('[A-Za-z0-9_-]+') && !v.matches('__.*__');
+    }
+    function natural(v) { return v is int && v >= 0 && v <= 9007199254740991; }
+    function category(v) { return v in ['generalInformation','communicationSkills','quantitativeReasoning','criticalThinking']; }
+    function taxonomyPair(c, s) {
+      return (c == 'generalInformation' && s in ['constitutionAndLaws','pnpHistory','criminalJusticeSystem','currentEvents','publicServiceConduct'])
+        || (c == 'communicationSkills' && s in ['vocabulary','readingComprehension','grammar'])
+        || (c == 'quantitativeReasoning' && s in ['basicConcepts','problemSolving','dataInterpretation'])
+        || (c == 'criticalThinking' && s in ['logicalReasoning','patternAnalysis','deduction','wordAnalogy']);
+    }
+    function scope(s) { return s is map && s.keys().hasOnly(['categoryId','subcategoryId'])
+      && category(s.categoryId) && (!('subcategoryId' in s) || taxonomyPair(s.categoryId, s.subcategoryId)); }
+    function questionRef(r) { return r is map && r.keys().hasOnly(['id','version'])
+      && safeId(r.id,1500) && natural(r.version) && r.version > 0; }
+    // Stimuli are embedded opaque metadata; document-path safeId remains unchanged.
+    function stimulusRef(r) { return r is map && r.keys().hasOnly(['id','version'])
+      && r.id is string && r.id.toUtf8().size() <= 1500
+      && r.id.matches('[^\\x{0000}-\\x{001F}\\x{007F}-\\x{009F}\\x{2028}\\x{2029}\\x{0020}\\x{00A0}\\x{1680}\\x{2000}-\\x{200A}\\x{202F}\\x{205F}\\x{3000}\\x{FEFF}]([^\\x{0000}-\\x{001F}\\x{007F}-\\x{009F}\\x{2028}\\x{2029}]*[^\\x{0000}-\\x{001F}\\x{007F}-\\x{009F}\\x{2028}\\x{2029}\\x{0020}\\x{00A0}\\x{1680}\\x{2000}-\\x{200A}\\x{202F}\\x{205F}\\x{3000}\\x{FEFF}])?')
+      && natural(r.version) && r.version > 0; }
+    function dateText(v) { return v is string && v.matches('[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])'); }
+    function timeText(v) { return v is string && v.size() <= 40
+      && v.matches('[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T([01][0-9]|2[0-3]):[0-5][0-9](:[0-5][0-9](\\.[0-9]+)?)?(Z|[+-]([01][0-9]|2[0-3]):[0-5][0-9])'); }
+    function entry(e) {
+      return e is map && e.keys().hasOnly(['id','version','categoryId','subcategoryId','status','isCurrentEvent','publishedAt','asOfDate','expiresAt','supportedKinds','stimulus','assets'])
+        && safeId(e.id,1500) && natural(e.version) && e.version > 0
+        && taxonomyPair(e.categoryId,e.subcategoryId) && e.status in ['active','inactive','archived']
+        && e.isCurrentEvent is bool && (e.subcategoryId != 'currentEvents' || e.isCurrentEvent)
+        && e.supportedKinds is list && e.supportedKinds.size() > 0 && e.supportedKinds.size() <= 2
+        && e.supportedKinds.hasOnly(['text','math']) && e.supportedKinds.toSet().size() == e.supportedKinds.size()
+        && e.assets is list && e.assets.size() == 0
+        && (!('stimulus' in e) || stimulusRef(e.stimulus))
+        && (!('publishedAt' in e) || timeText(e.publishedAt))
+        && (!('asOfDate' in e) || dateText(e.asOfDate))
+        && (!('expiresAt' in e) || timeText(e.expiresAt))
+        && (!e.isCurrentEvent || e.keys().hasAll(['publishedAt','asOfDate','expiresAt']));
+    }
+    function sessionRoot(d, uid, sid) {
+      return d.keys().hasOnly(['uid','deviceId','sessionId','scope','generation','catalogValidatedAt','createdAt','shuffleQuestions','manifestChunkCount','itemCount','publicationOperationId','lastOperationId','phase','ready','sequence','position','viewedCount','status','writtenAt'])
+        && d.uid == uid && safeId(uid,128) && d.sessionId == sid && safeId(sid,128) && safeId(d.deviceId,128)
+        && scope(d.scope) && d.generation is string && d.generation.matches('[a-f0-9]{64}')
+        && (d.catalogValidatedAt == null || natural(d.catalogValidatedAt))
+        && d.createdAt is timestamp && d.createdAt >= timestamp.value(0)
+        && d.shuffleQuestions is bool && natural(d.manifestChunkCount) && d.manifestChunkCount > 0
+        && natural(d.itemCount) && d.itemCount > 0 && d.manifestChunkCount <= d.itemCount
+        && safeId(d.publicationOperationId,128) && safeId(d.lastOperationId,128)
+        && d.phase in ['preparing','ready'] && d.ready is bool && d.ready == (d.phase == 'ready')
+        && natural(d.sequence) && natural(d.position) && d.position < d.itemCount
+        && natural(d.viewedCount) && d.viewedCount <= d.itemCount
+        && d.status in ['active','completed','archived']
+        && (d.status != 'completed' || d.viewedCount == d.itemCount)
+        && (d.status != 'active' || d.viewedCount < d.itemCount)
+        && (d.phase != 'preparing' || (d.sequence == 0 && d.position == 0 && d.viewedCount == 0 && d.status == 'active' && d.lastOperationId == d.publicationOperationId))
+        && d.writtenAt == request.time;
+    }
+    match /users/{uid}/reviewerSessions/{sid} {
+      allow read: if isOwner(uid);
+      allow create: if isOwner(uid) && sessionRoot(request.resource.data,uid,sid) && request.resource.data.phase == 'preparing';
+      allow update: if isOwner(uid) && sessionRoot(request.resource.data,uid,sid)
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['phase','ready','sequence','position','viewedCount','status','lastOperationId','writtenAt'])
+        && ((resource.data.phase == 'preparing' && request.resource.data.phase == 'ready'
+          && request.resource.data.sequence == 0 && request.resource.data.position == 0 && request.resource.data.viewedCount == 0
+          && request.resource.data.status == 'active' && request.resource.data.lastOperationId == resource.data.publicationOperationId)
+          || (resource.data.phase == 'ready' && request.resource.data.phase == 'ready'
+            && request.resource.data.sequence > resource.data.sequence
+            && request.resource.data.viewedCount >= resource.data.viewedCount
+            && request.resource.data.lastOperationId != resource.data.lastOperationId
+            && (resource.data.status != 'archived' || request.resource.data.status == 'archived')));
+    }
+    function chunkItem(items, i, count) {
+      return items.size() <= i || (items[i] is map && items[i].keys().hasOnly(['ordinal','entry'])
+        && natural(items[i].ordinal) && items[i].ordinal < count
+        && (i == 0 || items[i].ordinal == items[i-1].ordinal + 1) && entry(items[i].entry));
+    }
+    function chunk(d,uid,sid,index) {
+      let root = get(/databases/$(database)/documents/users/$(uid)/reviewerSessions/$(sid)).data;
+      return d.keys().hasOnly(['uid','deviceId','sessionId','index','items','writtenAt'])
+        && d.uid == uid && d.sessionId == sid && d.deviceId == root.deviceId && root.phase == 'preparing'
+        && natural(d.index) && index == string(d.index) && d.index < root.manifestChunkCount
+        && d.items is list && d.items.size() > 0 && d.items.size() <= 2
+        && d.writtenAt == request.time
+        && chunkItem(d.items,0,root.itemCount) && chunkItem(d.items,1,root.itemCount);
+    }
+    match /users/{uid}/reviewerSessions/{sid}/manifest/{index} {
+      allow read: if isOwner(uid);
+      allow create: if isOwner(uid) && chunk(request.resource.data,uid,sid,index);
+    }
+    function viewed(d,uid,sid,ordinal) {
+      let root = get(/databases/$(database)/documents/users/$(uid)/reviewerSessions/$(sid)).data;
+      return d.keys().hasOnly(['uid','deviceId','sessionId','ordinal','entry','viewed','writtenAt'])
+        && d.uid == uid && d.sessionId == sid && d.deviceId == root.deviceId && root.ready
+        && natural(d.ordinal) && ordinal == string(d.ordinal) && d.ordinal < root.itemCount
+        && entry(d.entry) && d.viewed == true && d.writtenAt == request.time;
+    }
+    match /users/{uid}/reviewerSessions/{sid}/items/{ordinal} {
+      allow read: if isOwner(uid);
+      allow create: if isOwner(uid) && viewed(request.resource.data,uid,sid,ordinal);
+    }
+    function bookmark(d,uid,qid) {
+      let receipt = getAfter(/databases/$(database)/documents/users/$(uid)/bookmarks/$(qid)/operations/$(d.lastOperationId)).data;
+      return d.keys().hasOnly(['uid','questionId','entry','createdAt','updatedAt','deleted','serverRevision','lastOperationId','writtenAt'])
+        && d.uid == uid && safeId(uid,128) && d.questionId == qid && safeId(qid,1500) && d.entry.id == qid
+        && entry(d.entry) && d.createdAt is timestamp && d.createdAt >= timestamp.value(0)
+        && d.updatedAt is timestamp && d.updatedAt >= d.createdAt && d.deleted is bool
+        && natural(d.serverRevision) && d.serverRevision > 0 && safeId(d.lastOperationId,128) && d.writtenAt == request.time
+        && receipt.uid == uid && receipt.questionId == qid && receipt.operationId == d.lastOperationId
+        && receipt.revision == d.serverRevision && receipt.writtenAt == request.time;
+    }
+    match /users/{uid}/bookmarks/{qid} {
+      allow read: if isOwner(uid);
+      allow create: if isOwner(uid) && bookmark(request.resource.data,uid,qid) && request.resource.data.serverRevision == 1;
+      allow update: if isOwner(uid) && bookmark(request.resource.data,uid,qid)
+        && request.resource.data.uid == resource.data.uid && request.resource.data.questionId == resource.data.questionId
+        && request.resource.data.serverRevision == resource.data.serverRevision + 1
+        && request.resource.data.lastOperationId != resource.data.lastOperationId;
+    }
+    function receipt(d,uid,qid,oid) {
+      let current = getAfter(/databases/$(database)/documents/users/$(uid)/bookmarks/$(qid)).data;
+      return d.keys().hasOnly(['uid','questionId','operationId','revision','writtenAt'])
+        && d.uid == uid && safeId(uid,128) && d.questionId == qid && safeId(qid,1500)
+        && d.operationId == oid && safeId(oid,128) && natural(d.revision) && d.revision > 0 && d.writtenAt == request.time
+        && current.lastOperationId == oid && current.serverRevision == d.revision && current.writtenAt == request.time;
+    }
+    match /users/{uid}/bookmarks/{qid}/operations/{oid} {
+      allow read: if isOwner(uid);
+      allow create: if isOwner(uid) && receipt(request.resource.data,uid,qid,oid);
+    }
+    function examConfig(c, count) {
+      return c is map && c.keys().hasOnly(['durationMinutes','questionCount','passingPercentage','shuffleQuestions','shuffleAnswers','distribution'])
+        && c.keys().hasAll(['durationMinutes','questionCount','passingPercentage','shuffleQuestions','shuffleAnswers','distribution'])
+        && natural(c.durationMinutes) && c.durationMinutes > 0 && c.durationMinutes <= 1440
+        && natural(c.questionCount) && c.questionCount == count
+        && c.passingPercentage is number && c.passingPercentage >= 0 && c.passingPercentage <= 100
+        && c.shuffleQuestions is bool && c.shuffleAnswers is bool
+        && c.distribution is map
+        && c.distribution.keys().hasOnly(['generalInformation','communicationSkills','quantitativeReasoning','criticalThinking'])
+        && c.distribution.keys().hasAll(['generalInformation','communicationSkills','quantitativeReasoning','criticalThinking'])
+        && natural(c.distribution.generalInformation) && c.distribution.generalInformation > 0
+        && natural(c.distribution.communicationSkills) && c.distribution.communicationSkills > 0
+        && natural(c.distribution.quantitativeReasoning) && c.distribution.quantitativeReasoning > 0
+        && natural(c.distribution.criticalThinking) && c.distribution.criticalThinking > 0
+        && c.distribution.generalInformation + c.distribution.communicationSkills
+          + c.distribution.quantitativeReasoning + c.distribution.criticalThinking == count;
+    }
+    function examScore(s, count) {
+      return s is map && s.keys().hasOnly(['total','correct','incorrect','unanswered','percentage','passed'])
+        && s.keys().hasAll(['total','correct','incorrect','unanswered','percentage','passed'])
+        && s.total == count && natural(s.correct) && natural(s.incorrect) && natural(s.unanswered)
+        && s.correct + s.incorrect + s.unanswered == count
+        && s.percentage is number && s.percentage >= 0 && s.percentage <= 100 && s.passed is bool;
+    }
+    function examSummary(s, uid, aid, device, count) {
+      return s is map && s.keys().hasOnly(['attemptId','uid','deviceId','generation','config','startedAt','deadlineAt','endedAt','durationUsedMs','reason','overall','categories','subcategories'])
+        && s.keys().hasAll(['attemptId','uid','deviceId','generation','config','startedAt','deadlineAt','endedAt','durationUsedMs','reason','overall','categories','subcategories'])
+        && s.attemptId == aid && s.uid == uid && s.deviceId == device
+        && s.generation is string && s.generation.matches('[a-f0-9]{64}')
+        && examConfig(s.config, count)
+        && natural(s.startedAt) && natural(s.deadlineAt) && natural(s.endedAt)
+        && s.startedAt <= s.endedAt && s.endedAt <= s.deadlineAt
+        && s.deadlineAt == s.startedAt + s.config.durationMinutes * 60000
+        && natural(s.durationUsedMs) && s.durationUsedMs == s.endedAt - s.startedAt
+        && s.reason in ['manual','timeExpired']
+        && (s.reason != 'timeExpired' || s.endedAt == s.deadlineAt)
+        && examScore(s.overall, count)
+        && s.categories is list && s.categories.size() == 4
+        && s.subcategories is list && s.subcategories.size() <= 15;
+    }
+    function examRoot(d, uid, aid) {
+      return d.keys().hasOnly(['uid','deviceId','attemptId','itemCount','phase','summary','writtenAt'])
+        && d.keys().hasAll(['uid','deviceId','attemptId','itemCount','phase','summary','writtenAt'])
+        && d.uid == uid && safeId(uid,128) && d.attemptId == aid && safeId(aid,128)
+        && safeId(d.deviceId,128) && natural(d.itemCount) && d.itemCount > 0 && d.itemCount <= 1000
+        && d.phase in ['preparing','ready'] && examSummary(d.summary, uid, aid, d.deviceId, d.itemCount)
+        && d.writtenAt == request.time;
+    }
+    match /users/{uid}/examAttempts/{aid} {
+      allow read: if isOwner(uid);
+      allow create: if isOwner(uid) && examRoot(request.resource.data, uid, aid)
+        && request.resource.data.phase == 'preparing';
+      allow update: if isOwner(uid) && examRoot(request.resource.data, uid, aid)
+        && resource.data.phase == 'preparing' && request.resource.data.phase == 'ready'
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['phase','writtenAt']);
+    }
+    function examQuestion(q) {
+      return q is map
+        && q.keys().hasOnly(['id','version','categoryId','subcategoryId','prompt','choices','correctChoiceId','choiceOrderPolicy','sources','createdAt','updatedAt','status','isCurrentEvent','explanation','difficulty','stimulus','reviewedTimeContext','publishedAt','asOfDate','expiresAt','verification'])
+        && q.keys().hasAll(['id','version','categoryId','subcategoryId','prompt','choices','correctChoiceId','choiceOrderPolicy','sources','createdAt','updatedAt','status','isCurrentEvent'])
+        && safeId(q.id,1500) && natural(q.version) && q.version > 0
+        && taxonomyPair(q.categoryId,q.subcategoryId) && q.status == 'active'
+        && q.prompt is list && q.prompt.size() > 0 && q.prompt.size() <= 100
+        && q.choices is list && q.choices.size() >= 2 && q.choices.size() <= 20
+        && q.correctChoiceId is string && q.correctChoiceId.size() > 0
+        && q.choiceOrderPolicy in ['fixed','shuffle']
+        && q.sources is list && q.sources.size() > 0 && q.sources.size() <= 30
+        && q.createdAt is string && q.updatedAt is string && q.isCurrentEvent is bool
+        && (!('stimulus' in q) || (q.stimulus is map
+          && q.stimulus.keys().hasOnly(['id','version','blocks'])
+          && q.stimulus.keys().hasAll(['id','version','blocks'])
+          && q.stimulus.id is string && q.stimulus.id.toUtf8().size() <= 1500
+          && natural(q.stimulus.version) && q.stimulus.version > 0
+          && q.stimulus.blocks is list && q.stimulus.blocks.size() > 0));
+    }
+    function examItem(d, uid, aid, ordinal) {
+      let root = get(/databases/$(database)/documents/users/$(uid)/examAttempts/$(aid)).data;
+      let item = d.item;
+      return d.keys().hasOnly(['uid','deviceId','attemptId','ordinal','item','writtenAt'])
+        && d.keys().hasAll(['uid','deviceId','attemptId','ordinal','item','writtenAt'])
+        && d.uid == uid && d.attemptId == aid && d.deviceId == root.deviceId
+        && root.phase == 'preparing' && natural(d.ordinal) && ordinal == string(d.ordinal)
+        && d.ordinal < root.itemCount && d.writtenAt == request.time
+        && item is map && item.keys().hasOnly(['entry','question','choiceOrder','selectedChoiceId','flagged'])
+        && item.keys().hasAll(['entry','question','choiceOrder','selectedChoiceId','flagged'])
+        && entry(item.entry) && item.entry.status == 'active'
+        && examQuestion(item.question)
+        && item.question.id == item.entry.id && item.question.version == item.entry.version
+        && item.question.categoryId == item.entry.categoryId
+        && item.question.subcategoryId == item.entry.subcategoryId
+        && ('stimulus' in item.entry) == ('stimulus' in item.question)
+        && (!('stimulus' in item.entry) || (item.question.stimulus.id == item.entry.stimulus.id && item.question.stimulus.version == item.entry.stimulus.version))
+        && item.choiceOrder is list && item.choiceOrder.size() == item.question.choices.size()
+        && (item.selectedChoiceId == null || item.selectedChoiceId is string)
+        && item.flagged is bool;
+    }
+    match /users/{uid}/examAttempts/{aid}/items/{ordinal} {
+      allow read: if isOwner(uid);
+      allow create: if isOwner(uid) && examItem(request.resource.data, uid, aid, ordinal);
+    }
     match /{document=**} { allow read, write: if false; }
   }
 }

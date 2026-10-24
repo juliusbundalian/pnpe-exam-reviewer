@@ -1,3 +1,5 @@
+import { StudyRoute, StudyReviewer } from './StudyRoute';
+import { GeneratedIdSchema } from '../features/study/domain/study';
 import { useEffect, useState } from 'react';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useAppDependencies, useAppNavigation, useConfig } from '../bootstrap/AppProviders';
@@ -14,6 +16,7 @@ export function ReviewerRoute() {
     categoryId?: string;
     subcategoryId?: string;
     stage?: string;
+    sessionId?: string;
   }>();
   const router = useRouter();
   const onBack = useSafeBack({ type: 'reviewerOverview' });
@@ -35,7 +38,11 @@ export function ReviewerRoute() {
   }, [categories]);
   const category = taxonomy.find((entry) => entry.id === params.categoryId);
   const child = category?.subcategories.find((entry) => entry.id === params.subcategoryId);
-  if ((params.categoryId && !category) || (params.subcategoryId && !child))
+  if (
+    (params.categoryId && !category) ||
+    (params.subcategoryId && !child) ||
+    (params.sessionId !== undefined && !GeneratedIdSchema.safeParse(params.sessionId).success)
+  )
     return <FeatureAvailabilityScreen title="Not Found" onBack={onBack} />;
   const action = category
     ? {
@@ -45,13 +52,31 @@ export function ReviewerRoute() {
       }
     : null;
   const blocked = startBlock(config);
-  if (params.stage === 'availability' && action)
+  if (params.sessionId || ((params.stage === 'availability' || params.stage === 'start') && action))
     return (
-      <ProtectedRoute action={action}>
-        <FeatureAvailabilityScreen
-          title={blocked ?? 'Reviewer — development availability'}
-          onBack={onBack}
-        />
+      <ProtectedRoute
+        action={
+          params.sessionId ? { type: 'resumeReviewer', sessionId: params.sessionId } : action!
+        }
+      >
+        <StudyRoute onBack={onBack}>
+          {(study) => (
+            <StudyReviewer
+              key={params.sessionId ?? JSON.stringify(action)}
+              study={study}
+              {...(action
+                ? {
+                    scope: {
+                      categoryId: action.categoryId,
+                      ...(action.subcategoryId ? { subcategoryId: action.subcategoryId } : {}),
+                    },
+                  }
+                : {})}
+              {...(params.sessionId ? { sessionId: params.sessionId } : {})}
+              onBack={onBack}
+            />
+          )}
+        </StudyRoute>
       </ProtectedRoute>
     );
   const overview = metadata.find((entry) => entry.categoryId === category?.id);

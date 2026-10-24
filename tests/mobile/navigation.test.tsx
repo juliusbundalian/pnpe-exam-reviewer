@@ -1,4 +1,5 @@
 import { screen, fireEvent, waitFor, act } from 'expo-router/testing-library';
+import { studyNavigationFactory } from '../fixtures/study-navigation';
 import { createAppHarness } from '../fixtures/app-harness';
 import { authUser, flushTransitions } from '../fixtures/auth-harness';
 const harnesses: ReturnType<typeof createAppHarness>[] = [];
@@ -109,7 +110,7 @@ test('guest cold launch opens Home without Login', async () => {
 });
 
 test('Home Start Mock Exam is a protected start, while its overview remains public', async () => {
-  const h = harness();
+  const h = harness({ study: studyNavigationFactory().factory });
   await h.render('/');
   fireEvent.press(screen.getByRole('button', { name: 'Start Mock Exam' }));
   expect(await screen.findByText('Sign in to continue')).toBeVisible();
@@ -118,12 +119,16 @@ test('Home Start Mock Exam is a protected start, while its overview remains publ
 });
 
 test('authenticated Home Start Mock Exam reaches preflight without an auth prompt or session', async () => {
-  const h = harness({ initialAuth: { status: 'authenticated', user: authUser('alice') } });
+  const h = harness({
+    initialAuth: { status: 'authenticated', user: authUser('alice') },
+    study: studyNavigationFactory().factory,
+  });
   await h.render('/');
   fireEvent.press(screen.getByRole('button', { name: 'Start Mock Exam' }));
   expect(await screen.findByText('Mock Exam preflight')).toBeVisible();
   expect(screen.queryByText('Sign in to continue')).toBeNull();
-  expect(screen.getByText(/No timer or session has started/)).toBeVisible();
+  expect(screen.getByRole('button', { name: 'Start Exam' })).toBeVisible();
+  expect(screen.queryByText('Question 1 of 150')).toBeNull();
 });
 test('guest browses actual category and subcategory routes without authentication', async () => {
   const h = harness();
@@ -137,13 +142,14 @@ test('guest browses actual category and subcategory routes without authenticatio
   expect(await screen.findByRole('button', { name: 'Start Reviewer' })).toBeVisible();
   expect(screen.queryByText('Sign in to continue')).toBeNull();
 });
-test('guest Start Reviewer prompts before reaching a development boundary', async () => {
-  const h = harness();
-  await h.render('/review/generalInformation');
+test('guest Start Reviewer prompts before reaching real study content', async () => {
+  const study = studyNavigationFactory();
+  const h = harness({ study: study.factory });
+  await h.render('/review/communicationSkills');
   fireEvent.press(screen.getByRole('button', { name: 'Start Reviewer' }));
   expect(await screen.findByText('Sign in to continue')).toBeVisible();
   await h.authenticate('alice');
-  expect(await screen.findByText('Reviewer — development availability')).toBeVisible();
+  expect(await screen.findByText('Correct answer')).toBeVisible();
 });
 test('guest Start Mock Exam opens shared authentication prompt', async () => {
   const h = harness();
@@ -152,14 +158,15 @@ test('guest Start Mock Exam opens shared authentication prompt', async () => {
   expect(await screen.findByText('Sign in to continue')).toBeVisible();
 });
 test('Mock Exam login returns to preflight without starting a timer', async () => {
-  const h = harness();
+  const h = harness({ study: studyNavigationFactory().factory });
   await h.render('/mock-exam');
   fireEvent.press(screen.getByRole('button', { name: 'Start Mock Exam' }));
   await screen.findByText('Sign in to continue');
   await h.authenticate('alice');
   expect(await screen.findByText('Mock Exam preflight')).toBeVisible();
-  expect(screen.getByLabelText('150 questions')).toBeVisible();
-  expect(screen.getByText(/No timer or session has started/)).toBeVisible();
+  expect(screen.getByText('150 questions')).toBeVisible();
+  expect(screen.getByRole('button', { name: 'Start Exam' })).toBeVisible();
+  expect(screen.queryByText('Question 1 of 150')).toBeNull();
   expect(h.events).toEqual(['startMockExam']);
 });
 test('voluntary Menu authentication returns to Menu', async () => {
@@ -215,7 +222,7 @@ test('rapid start taps resume exactly once', async () => {
   expect(h.events).toEqual(['startMockExam']);
 });
 test('form switches retain the protected intent through password reset', async () => {
-  const h = harness();
+  const h = harness({ study: studyNavigationFactory().factory });
   const result = await h.render('/mock-exam');
   fireEvent.press(screen.getByRole('button', { name: 'Start Mock Exam' }));
   await screen.findByText('Sign in to continue');

@@ -17,6 +17,11 @@ type Props = {
   onBack: () => void;
 };
 
+const subjectLabels: Record<string, string> = {
+  communicationSkills: 'Verbal Reasoning',
+  criticalThinking: 'Logical Reasoning',
+};
+
 const subjectNotes = {
   generalInformation: 'Laws, public service & current events',
   communicationSkills: 'Vocabulary, grammar & comprehension',
@@ -31,7 +36,10 @@ export function MockExamScreen({ exam, preflight, blocked, startTarget, onStart,
   const stackSummary = width / fontScale < 340;
 
   return (
-    <SafeAreaView style={[styles.screen, { backgroundColor: colors.background }]}>
+    <SafeAreaView
+      edges={['top', 'left', 'right']}
+      style={[styles.screen, { backgroundColor: colors.background }]}
+    >
       <ScrollView contentContainerStyle={styles.scroll}>
         <View style={styles.page}>
           <View style={styles.introduction}>
@@ -93,10 +101,12 @@ export function MockExamScreen({ exam, preflight, blocked, startTarget, onStart,
                   key={category.id}
                   style={[styles.subject, { borderColor: colors.border }]}
                   accessible
-                  accessibilityLabel={`${category.label}: ${exam.distribution[category.id]} questions. ${subjectNotes[category.id]}`}
+                  accessibilityLabel={`${subjectLabels[category.id] ?? category.label}: ${exam.distribution[category.id]} questions. ${subjectNotes[category.id]}`}
                 >
                   <View style={styles.subjectCopy}>
-                    <AppText variant="button">{category.label}</AppText>
+                    <AppText variant="button">
+                      {subjectLabels[category.id] ?? category.label}
+                    </AppText>
                     <AppText variant="caption" tone="secondary">
                       {subjectNotes[category.id]}
                     </AppText>
@@ -170,7 +180,6 @@ export function MockExamScreen({ exam, preflight, blocked, startTarget, onStart,
             ref={preflight ? null : startTarget}
             variant={preflight ? 'secondary' : 'primary'}
             label={preflight ? 'Back' : 'Start Mock Exam'}
-            disabled={!preflight && !!blocked}
             onPress={preflight ? onBack : onStart}
             accessibilityHint={
               preflight

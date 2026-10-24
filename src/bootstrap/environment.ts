@@ -10,6 +10,8 @@ const environmentSchema = z.discriminatedUnion('mode', [
     mode: z.literal('emulator'),
     projectId: z.literal('demo-pnpe'),
     emulatorHost: z.enum(['127.0.0.1', 'localhost', '10.0.2.2']),
+    authPort: z.number().int().min(1).max(65535).optional(),
+    firestorePort: z.number().int().min(1).max(65535).optional(),
   }),
 ]);
 export type FirebaseEnvironment = z.infer<typeof environmentSchema>;

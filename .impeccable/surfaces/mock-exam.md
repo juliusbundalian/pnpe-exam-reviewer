@@ -22,7 +22,7 @@ Native scalable text provides semantic headings and grouped screen-reader summar
 
 ## States and boundaries
 
-Start follows the existing authentication and preflight flow. Preflight reports that exam sessions are unavailable in this development build and offers Back. It creates no session and starts no timer. Configuration continues to supply question count, duration, distribution, and practice threshold.
+Start follows the authentication and preflight flow into `ExamFlow`. Preflight prepares a complete question set and offers Start Exam or Resume Exam; viewing preflight alone starts no timer. During maintenance, overview entry remains available for resuming a saved attempt, while preflight blocks new starts. Configuration continues to supply question count, duration, distribution, and practice threshold.
 
 ## Verification status
 

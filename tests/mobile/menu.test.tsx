@@ -84,7 +84,7 @@ test('unconfigured legal content has no launch action', async () => {
   expect(await screen.findByText('This legal content is currently unavailable.')).toBeVisible();
   expect(screen.queryByRole('button', { name: 'Open Privacy Policy' })).toBeNull();
 });
-test('maintenance preserves Home and browsing but disables new starts', async () => {
+test('maintenance preserves Home and Mock Exam entry for saved attempts', async () => {
   const h = harness({
     config: {
       ...defaults,
@@ -98,9 +98,9 @@ test('maintenance preserves Home and browsing but disables new starts', async ()
   await h.render('/');
   expect(await screen.findByText('Explore reviewers')).toBeVisible();
   expect(screen.getByText('Maintenance in progress')).toBeVisible();
-  expect(screen.getByRole('button', { name: 'Start Mock Exam' })).toBeDisabled();
+  expect(screen.getByRole('button', { name: 'Start Mock Exam' })).toBeEnabled();
   fireEvent.press(screen.getAllByRole('button', { name: 'Mock Exam' })[0]!);
-  expect(await screen.findByRole('button', { name: 'Start Mock Exam' })).toBeDisabled();
+  expect(await screen.findByRole('button', { name: 'Start Mock Exam' })).toBeEnabled();
 });
 test('unsupported version blocks starts but leaves category browsing available', async () => {
   const h = harness({

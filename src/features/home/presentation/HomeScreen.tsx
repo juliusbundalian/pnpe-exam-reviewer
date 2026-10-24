@@ -1,10 +1,11 @@
-import { Pressable, View } from 'react-native';
+import { View } from 'react-native';
 import { useRef } from 'react';
 import { AppButton } from '../../../core/components/AppButton';
-import { AppScreen } from '../../../core/components/AppScreen';
+import { TabPage, PageHeading } from '../../../core/components/TabPage';
+import { NavigationRow } from '../../../core/components/NavigationRow';
 import { AppText } from '../../../core/components/AppText';
 import { useTheme } from '../../../core/theme/ThemeProvider';
-import { spacing, touchTarget } from '../../../core/theme/tokens';
+import { spacing } from '../../../core/theme/tokens';
 import { taxonomy } from '../../content/domain/taxonomy';
 import {
   coverageSummaries,
@@ -18,7 +19,7 @@ export function HomeScreen({
   onExplore,
   onMockExam,
   onStartMockExam = onMockExam,
-  startsBlocked = false,
+  progressEnabled = true,
   onProgress,
   onBookmarks,
   model = initialHomePresentationModel,
@@ -28,7 +29,7 @@ export function HomeScreen({
   onExplore: () => void;
   onMockExam: () => void;
   onStartMockExam?: (target: View | null) => void;
-  startsBlocked?: boolean;
+  progressEnabled?: boolean;
   onProgress: (target: View | null) => void;
   onBookmarks: (target: View | null) => void;
   model?: HomePresentationModel;
@@ -38,14 +39,27 @@ export function HomeScreen({
   const bookmarksTarget = useRef<View | null>(null);
   const mockTarget = useRef<View | null>(null);
   return (
-    <AppScreen>
-      <AppText variant="heading">PNPE Exam Reviewer</AppText>
+    <TabPage>
+      <PageHeading
+        title="Home"
+        description={
+          displayName?.trim() ? `Welcome, ${displayName.trim()}` : 'Your preparation starts here'
+        }
+      />
       {notice ? <AppText accessibilityRole="alert">{notice}</AppText> : null}
-      <View style={{ gap: spacing.md, marginTop: spacing.md }}>
-        <AppText variant="caption" tone="accent">
-          {displayName?.trim() ? `Welcome, ${displayName.trim()}` : 'Your preparation starts here'}
-        </AppText>
-        <AppText variant="title" accessibilityRole="header">
+      <View
+        style={{
+          padding: spacing.xl,
+          backgroundColor: colors.primaryContainer,
+          borderRadius: 16,
+          gap: spacing.lg,
+        }}
+      >
+        <AppText
+          variant="title"
+          accessibilityRole="header"
+          style={{ fontSize: 26, lineHeight: 34, letterSpacing: -0.4 }}
+        >
           Build confidence. One question at a time.
         </AppText>
         <AppText tone="secondary">
@@ -53,65 +67,56 @@ export function HomeScreen({
         </AppText>
         <AppButton variant="primary" label="Explore reviewers" onPress={onExplore} />
       </View>
-      <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm }}>
-        <AppButton variant="text" label="Mock Exam" onPress={onMockExam} />
-        <AppButton
-          ref={progressTarget}
-          variant="text"
-          label="Progress"
-          onPress={() => onProgress(progressTarget.current)}
+      <View>
+        <AppText variant="heading" accessibilityRole="header" style={{ marginBottom: spacing.sm }}>
+          Your study tools
+        </AppText>
+        <NavigationRow
+          icon="document-text-outline"
+          label="Mock Exam"
+          description="Prepare for a complete timed practice exam"
+          onPress={onMockExam}
         />
-        <AppButton
+        {progressEnabled ? (
+          <NavigationRow
+            ref={progressTarget}
+            icon="stats-chart-outline"
+            label="Progress"
+            description="Review your reading activity and exam scores"
+            onPress={() => onProgress(progressTarget.current)}
+          />
+        ) : null}
+        <NavigationRow
           ref={bookmarksTarget}
-          variant="text"
+          icon="bookmark-outline"
           label="Saved Questions"
+          description="Return to the questions you bookmarked"
           onPress={() => onBookmarks(bookmarksTarget.current)}
         />
       </View>
       <View>
-        <AppText variant="heading" accessibilityRole="header">
+        <AppText variant="heading" accessibilityRole="header" style={{ marginBottom: spacing.sm }}>
           Main coverage
         </AppText>
-        {taxonomy.map((category, index) => (
-          <Pressable
+        {taxonomy.map((category) => (
+          <NavigationRow
             key={category.id}
-            accessibilityRole="button"
-            accessibilityLabel={`Explore ${category.label}`}
+            icon={
+              category.id === 'generalInformation'
+                ? 'library-outline'
+                : category.id === 'communicationSkills'
+                  ? 'chatbubbles-outline'
+                  : category.id === 'quantitativeReasoning'
+                    ? 'calculator-outline'
+                    : 'bulb-outline'
+            }
+            label={category.label}
+            description={coverageSummaries[category.id]}
             onPress={onExplore}
-            style={({ pressed }) => ({
-              minHeight: touchTarget,
-              paddingVertical: spacing.xl,
-              flexDirection: 'row',
-              alignItems: 'center',
-              gap: spacing.md,
-              borderBottomWidth: 1,
-              borderColor: colors.border,
-              backgroundColor: pressed ? colors.surfaceVariant : colors.background,
-            })}
-          >
-            <AppText variant="caption" tone="secondary" accessible={false}>
-              {String(index + 1).padStart(2, '0')}
-            </AppText>
-            <View style={{ flex: 1, gap: spacing.xs }}>
-              <AppText variant="button">{category.label}</AppText>
-              <AppText variant="caption" tone="secondary">
-                {coverageSummaries[category.id]}
-              </AppText>
-            </View>
-            <AppText tone="secondary" accessible={false}>
-              ›
-            </AppText>
-          </Pressable>
+          />
         ))}
       </View>
-      <View
-        style={{
-          borderTopWidth: 2,
-          borderColor: colors.border,
-          paddingTop: spacing.xl,
-          gap: spacing.sm,
-        }}
-      >
+      <View style={{ gap: spacing.md, paddingTop: spacing.sm, paddingBottom: spacing.sm }}>
         <AppText variant="heading" accessibilityRole="header">
           Ready for a full Mock Exam?
         </AppText>
@@ -121,12 +126,11 @@ export function HomeScreen({
         >{`${model.mockExam.questionCount} questions · ${model.mockExam.durationMinutes} minutes · All four areas`}</AppText>
         <AppButton
           ref={mockTarget}
-          variant="text"
+          variant="secondary"
           label="Start Mock Exam"
-          disabled={startsBlocked}
           onPress={() => onStartMockExam(mockTarget.current)}
         />
       </View>
-    </AppScreen>
+    </TabPage>
   );
 }
